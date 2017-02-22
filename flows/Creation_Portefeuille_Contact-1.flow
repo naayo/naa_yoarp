@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <name>Portefeuille_de_contact_existant</name>
+        <label>Portefeuille de contact existant ?</label>
+        <locationX>285</locationX>
+        <locationY>245</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>NonExistant</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>PortefeuilleContact</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Creation_Portefeuille_Contact</targetReference>
+            </connector>
+            <label>Non Existant</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Création Portefeuille Contact {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Création Portefeuille Contact</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Creation_Portefeuille_Contact</name>
+        <label>Creation Portefeuille Contact</label>
+        <locationX>284</locationX>
+        <locationY>356</locationY>
+        <inputAssignments>
+            <field>Contact__c</field>
+            <value>
+                <elementReference>Contact_id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User__c</field>
+            <value>
+                <elementReference>User_Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Portefeuille_contacts__c</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Find_Contact_Portfolio</name>
+        <label>Find Contact Portfolio</label>
+        <locationX>283</locationX>
+        <locationY>123</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Portefeuille_de_contact_existant</targetReference>
+        </connector>
+        <filters>
+            <field>Contact__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Contact_id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>User__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>User_Id</elementReference>
+            </value>
+        </filters>
+        <object>Portefeuille_contacts__c</object>
+        <outputAssignments>
+            <assignToReference>PortefeuilleContact</assignToReference>
+            <field>Contact__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <startElementReference>Find_Contact_Portfolio</startElementReference>
+    <variables>
+        <name>Contact_id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ExistingPortefeuilleContact</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>PortefeuilleContact</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>User_Id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

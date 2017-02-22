@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.Code_Agresso_Opportunit__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Recu_ERP_Devis__c</field>
+    </columns>
+    <columns>
+        <field>Account.Code_tiers_societe__c</field>
+    </columns>
+    <description>Liste des devis exportés ou à exporter vers Agresso</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Opportunity.Intra_entreprise</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Accord de principe,Contrat signé</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.type_de_formation__c</column>
+            <operator>equals</operator>
+            <value>OPP-TF10,OPP-TF20</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Code_Agresso_Opportunit__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Code_tiers_societe__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Liste des devis Agresso</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Opportunity.Recu_ERP_Devis__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

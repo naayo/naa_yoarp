@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <description>Nombre total d&apos;opps sur 2016 par statuts commerciaux et par programme.</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Exercice__c</column>
+            <operator>equals</operator>
+            <value>2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r.OpportunityLineItems$PricebookEntry.Product2.ProductCode</column>
+            <operator>equals</operator>
+            <value>PREPA,APA1,SAI,EMM,GEP,MMML,IDEA,IHM,SIM,MA,MAI,MCO,ME,MF,MFDM,MJ,MK,MMS,MSDAI,MT</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Opportunites__r$StageName</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Opportunites__r.OpportunityLineItems$PricebookEntry.Product2.ProductCode</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Opportunites__r$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Total opps/ statuts commerciaux Ex 2016</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_et_opportunit_s_et_produits__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Date_de_cr_ation_contact__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

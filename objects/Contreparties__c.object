@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Action_realise__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Action réalisée</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Commentaire_contrepartie__c</fullName>
+        <externalId>false</externalId>
+        <label>Commentaire contrepartie</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Compte__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Compte</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Contreparties</relationshipLabel>
+        <relationshipName>Contreparties</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Contreparties</relationshipLabel>
+        <relationshipName>Contreparties</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contrepartie__c</fullName>
+        <externalId>false</externalId>
+        <label>Contrepartie</label>
+        <picklist>
+            <controllingField>Programme__c</controllingField>
+            <picklistValues>
+                <fullName>Plaque collective</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Mont Blanc</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Plaque 0,1 x 0,1 m Hall of Fame</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Plaque 0,2 x 0,2 m Hall of Fame</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Kilimandjaro</controllingFieldValues>
+                <controllingFieldValues>B2B_McKinley</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Plaque 0,3 x 0,2 m Hall of Fame</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Annapura</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Plaque 0,5 x 0,2 m Hall of Fame</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_K2</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Plaque 0,5 x 0,5 m Hall of Fame</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Everest</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Panneau 1 m x 1 m Hall of Fame</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Cercle du Président</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1 ouvrage dédicacé d’un professeur EMLYON</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Kilimandjaro</controllingFieldValues>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_McKinley</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 ouvrages dédicacés de professeurs EMLYON</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_McKinley</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 ouvrages dédicacés de professeurs EMLYON</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Annapura</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5 ouvrages dédicacés de professeurs EMLYON</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_K2</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tous ouvrages publiés</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Everest</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gratuité 1 Soirée Performance</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gratuité 2 Soirées Performance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gratuité Soirées Performance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adhésion à vie EMLYON FOREVER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prise de parole à 1 remise des annuaires EMLYON FOREVER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prise de parole à la cérémonie de remise des diplômes</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gratuité Forum</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_K2</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Citation sur toutes les publications</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_K2</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Membre du jury Meilleur projet Etudiant, meilleur travail de recherche</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Everest</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1 journée de recrutement par an</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Everest</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Membre Internationnal Advisory Board</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Citations sur Publications Corporate</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Cercle du Président</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accès VIP gratuit aux manifestations EMLYON</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 journées par an de recrutement et de présentation</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B_Cercle du Président</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mention du nom sur le mur des donateurs</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_Kilimandjaro</controllingFieldValues>
+                <controllingFieldValues>B2C_McKinley</controllingFieldValues>
+                <controllingFieldValues>B2C_Mont Blanc</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mention du nom sur le site de la Fondation</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_Kilimandjaro</controllingFieldValues>
+                <controllingFieldValues>B2C_McKinley</controllingFieldValues>
+                <controllingFieldValues>B2C_Mont Blanc</controllingFieldValues>
+                <controllingFieldValues>B2C_Niveau Zéro</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Certificat de donateur</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_Kilimandjaro</controllingFieldValues>
+                <controllingFieldValues>B2C_McKinley</controllingFieldValues>
+                <controllingFieldValues>B2C_Mont Blanc</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Envoi du rapport annuel</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_Kilimandjaro</controllingFieldValues>
+                <controllingFieldValues>B2C_McKinley</controllingFieldValues>
+                <controllingFieldValues>B2C_Mont Blanc</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Naming fauteuil amphi campus de Lyon ou Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_Kilimandjaro</controllingFieldValues>
+                <controllingFieldValues>B2C_McKinley</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accès salons d’échange &amp; espaces ouverts tous campus</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_Kilimandjaro</controllingFieldValues>
+                <controllingFieldValues>B2C_McKinley</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accès e-library aux Learning Hubs</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_Kilimandjaro</controllingFieldValues>
+                <controllingFieldValues>B2C_McKinley</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invitation VIP soirées Alumni</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_Kilimandjaro</controllingFieldValues>
+                <controllingFieldValues>B2C_McKinley</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accès à 1 Brain Bubble &amp; son équipement</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_McKinley</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Formation individualisée à la veille/Intelligence Economique</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_McKinley</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trophée Donateur</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_McKinley</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trophée nominatif Grand Donateur</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Portrait du donateur écrit/vidéo sur les sites EMLYON</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Naming d’un espace de travail collaboratif pendant 2 ans</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mention spéciale dans l’annuaire</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Organisation d’une soirée « back to school » (1 édition)</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invitation à une réunion annuelle de présentation des orientations stratégiques d’EMLYON</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trophée nominatif Grand Mécène</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Possibilité de donner son nom à une salle de cours sur l’un des campus</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Possibilité de donner son nom à un amphithéâtre (à partir de 200K€)</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Projet sur mesure à développer en fonction du souhait du donateur</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accès à Scholarvox</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C_Annapura</controllingFieldValues>
+                <controllingFieldValues>B2C_Cercle du Président</controllingFieldValues>
+                <controllingFieldValues>B2C_Everest</controllingFieldValues>
+                <controllingFieldValues>B2C_K2</controllingFieldValues>
+                <controllingFieldValues>B2C_Kilimandjaro</controllingFieldValues>
+                <controllingFieldValues>B2C_McKinley</controllingFieldValues>
+                <controllingFieldValues>B2C_Mont Blanc</controllingFieldValues>
+                <controllingFieldValues>B2C_Niveau Zéro</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Date_realisation__c</fullName>
+        <externalId>false</externalId>
+        <label>Date de réalisation de l&apos;action</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Detail_sur_mesure__c</fullName>
+        <externalId>false</externalId>
+        <label>Détail sur mesure</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Programme__c</fullName>
+        <externalId>false</externalId>
+        <label>Programme de reconnaissance</label>
+        <picklist>
+            <controllingField>Type_contrepartie__c</controllingField>
+            <picklistValues>
+                <fullName>B2C_Niveau Zéro</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2B_Mont Blanc</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2C_Mont Blanc</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2B_Kilimandjaro</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2C_Kilimandjaro</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2B_McKinley</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2C_McKinley</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2B_Annapura</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2C_Annapura</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2B_K2</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2C_K2</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2B_Everest</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2C_Everest</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2B_Cercle du Président</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2C_Cercle du Président</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2C_Contrepartie sur-mesure</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2C</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2B_Contrepartie sur-mesure</fullName>
+                <default>false</default>
+                <controllingFieldValues>B2B</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type_contrepartie__c</fullName>
+        <externalId>false</externalId>
+        <label>Type contrepartie</label>
+        <picklist>
+            <picklistValues>
+                <fullName>B2B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2C</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Contrepartie</label>
+    <nameField>
+        <displayFormat>{000}</displayFormat>
+        <label>Nom de Contreparties</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Contreparties</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

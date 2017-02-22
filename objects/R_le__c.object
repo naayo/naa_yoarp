@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Categorie_role__c</fullName>
+        <externalId>false</externalId>
+        <label>Catégorie rôle</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Ambassadeur de programme</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Associations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CCI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Classement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conseils d&apos;Administration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diplômés</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EML-EXEC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employabilité</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Enseignement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entrepreneuriat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jury</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partenariat et Fondation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recherche</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stages</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VIP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>R_les</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Liste_r_le__c</fullName>
+        <externalId>false</externalId>
+        <label>Liste rôle</label>
+        <picklist>
+            <controllingField>Categorie_role__c</controllingField>
+            <picklistValues>
+                <fullName>Ancien BOURSIER EMLYON</fullName>
+                <default>false</default>
+                <controllingFieldValues>Partenariat et Fondation</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Astuce Lycéens</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre BDA</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre BDE</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre BDS</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Beaux Cuis&apos;</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Club Voile</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Corpo</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Déclic</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre EM&apos;icrocrédit</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Forum</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Goût&apos;R&apos;Mets</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre I LINK</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre JET</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Junior Conseil</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Ligne 2 Mire</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Numérik</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Opening</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Petit Paumé</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Planet &amp; Co</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Radio Activ</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Raid Hannibal</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Ski Club</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Solidari&apos;Terre</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Sup de Côteaux</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Transaction</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ancien Membre Verbat&apos;EM</fullName>
+                <default>false</default>
+                <controllingFieldValues>Ancien Membre Associations</controllingFieldValues>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Classement FT MBA</fullName>
+                <default>false</default>
+                <controllingFieldValues>Classement</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Achats Lyon</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Achats Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Administrateurs Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Afrique Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Business Angels Lyon</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Cercle des Dirigeants Lyon</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Chine Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Culture et Management Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club des 100 Diplômés</fullName>
+                <default>false</default>
+                <controllingFieldValues>Partenariat et Fondation</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club des 200 Diplômés</fullName>
+                <default>false</default>
+                <controllingFieldValues>Partenariat et Fondation</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Développement Durable Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Digital Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Distribution Lyon</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Distribution Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club EM LYON au féminin LYON</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club EM LYON au féminin PARIS</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Entrepreneuriat Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Finance Lyon</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Finance Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Immobilier Lyon</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Immobilier Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Inde Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Luxe &amp; Métiers de la Mode Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Média &amp; Communication Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Motards</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club NTIC Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Repreneurs Lyon</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Ressources Humaines Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Santé Lyon</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Santé Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Club Services Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contact principal employabilité</fullName>
+                <default>false</default>
+                <controllingFieldValues>Employabilité</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contacts Recherche /Dean</fullName>
+                <default>false</default>
+                <controllingFieldValues>Recherche</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Correspondants AD</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diplômé en couple</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diplômés EM LYON CI GOLF</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diplômé Sportif de Haut Niveau</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diplômé Who&apos;s Who</fullName>
+                <default>false</default>
+                <controllingFieldValues>Partenariat et Fondation</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dirigeant Créateur</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dirigeant du CAC 40</fullName>
+                <default>false</default>
+                <controllingFieldValues>VIP</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entrepreneurs dans la ville</fullName>
+                <default>false</default>
+                <controllingFieldValues>Entrepreneuriat</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ex Président ADEM</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Global Entrepreneurship Monitor Cibles</fullName>
+                <default>false</default>
+                <controllingFieldValues>Entrepreneuriat</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incubés EMLYON</fullName>
+                <default>false</default>
+                <controllingFieldValues>Entrepreneuriat</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intervenant</fullName>
+                <default>false</default>
+                <controllingFieldValues>EML-EXEC</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jurisclub Paris</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lauréats et Prix</fullName>
+                <default>false</default>
+                <controllingFieldValues>Diplômés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Membre Comex Fondation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Conseils d&apos;Administration</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>membre conseil d&apos;administration Alliance</fullName>
+                <default>false</default>
+                <controllingFieldValues>Conseils d&apos;Administration</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Membre Conseil Surveillance CDME</fullName>
+                <default>false</default>
+                <controllingFieldValues>Conseils d&apos;Administration</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Membre d&apos;un jury de sélection</fullName>
+                <default>false</default>
+                <controllingFieldValues>Jury</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Membre de l&apos;AG AESCRA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Membre de la Conférence Grande Ecole</fullName>
+                <default>false</default>
+                <controllingFieldValues>Classement</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Membre du CA de l&apos;AESCRA</fullName>
+                <default>false</default>
+                <controllingFieldValues>Conseils d&apos;Administration</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Membre Elus CCI</fullName>
+                <default>false</default>
+                <controllingFieldValues>CCI</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Membre PRES</fullName>
+                <default>false</default>
+                <controllingFieldValues>Enseignement</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Membres CA ADEM LYON</fullName>
+                <default>false</default>
+                <controllingFieldValues>Conseils d&apos;Administration</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Newsletter Recherche</fullName>
+                <default>false</default>
+                <controllingFieldValues>Recherche</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partenaire Carrières / Employabilité</fullName>
+                <default>false</default>
+                <controllingFieldValues>Employabilité</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partenaires de l&apos;Incubateur</fullName>
+                <default>false</default>
+                <controllingFieldValues>Entrepreneuriat</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partenaires Fondation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Partenariat et Fondation</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partenaires Fundraising</fullName>
+                <default>false</default>
+                <controllingFieldValues>Partenariat et Fondation</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partenaires IDEA</fullName>
+                <default>false</default>
+                <controllingFieldValues>Partenariat et Fondation</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Participant</fullName>
+                <default>false</default>
+                <controllingFieldValues>EML-EXEC</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescripteur</fullName>
+                <default>false</default>
+                <controllingFieldValues>EML-EXEC</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescripteur Grande Ecole</fullName>
+                <default>false</default>
+                <controllingFieldValues>Enseignement</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recrutement Etudiant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recrutement Etudiant 1</fullName>
+                <default>false</default>
+                <controllingFieldValues>Employabilité</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recrutement Etudiant 2</fullName>
+                <default>false</default>
+                <controllingFieldValues>Employabilité</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recrutement Etudiant 3</fullName>
+                <default>false</default>
+                <controllingFieldValues>Employabilité</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recrutement Etudiant 4</fullName>
+                <default>false</default>
+                <controllingFieldValues>Employabilité</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recrutement Etudiant 5</fullName>
+                <default>false</default>
+                <controllingFieldValues>Employabilité</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Réseaux d&apos;accompagement créateurs d&apos;Eses</fullName>
+                <default>false</default>
+                <controllingFieldValues>Entrepreneuriat</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SUIVEUR OU MAITRE DE STAGE</fullName>
+                <default>false</default>
+                <controllingFieldValues>Stages</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tutorats Etudiants de Lycéens</fullName>
+                <default>false</default>
+                <controllingFieldValues>Enseignement</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VIP DG EMLYON</fullName>
+                <default>false</default>
+                <controllingFieldValues>VIP</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VIP Diplomate</fullName>
+                <default>false</default>
+                <controllingFieldValues>VIP</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VIP Enseignement</fullName>
+                <default>false</default>
+                <controllingFieldValues>VIP</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VIP Institutionnel</fullName>
+                <default>false</default>
+                <controllingFieldValues>VIP</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VIP Internationaux</fullName>
+                <default>false</default>
+                <controllingFieldValues>VIP</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VIP Politique</fullName>
+                <default>false</default>
+                <controllingFieldValues>VIP</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VIP Prisme</fullName>
+                <default>false</default>
+                <controllingFieldValues>VIP</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VIP THE LYINC</fullName>
+                <default>false</default>
+                <controllingFieldValues>VIP</controllingFieldValues>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Reprise_Lot_2015__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Reprise Lot 2015</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>x18caracteres__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>x18caracteres</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Rôle EMLYON</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Categorie_role__c</columns>
+        <columns>Liste_r_le__c</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>Tout</label>
+        <language>fr</language>
+    </listViews>
+    <listViews>
+        <fullName>R_le_EML_Prescripteur</fullName>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Categorie_role__c</columns>
+        <columns>Liste_r_le__c</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Categorie_role__c</field>
+            <operation>contains</operation>
+            <value>EML</value>
+        </filters>
+        <filters>
+            <field>Liste_r_le__c</field>
+            <operation>equals</operation>
+            <value>Prescripteur</value>
+        </filters>
+        <label>Rôle EML : Prescripteur</label>
+        <language>fr</language>
+    </listViews>
+    <nameField>
+        <displayFormat>{000000}</displayFormat>
+        <label>Numéro</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Rôles EMLYON</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Mass_Update_1</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Mass Update 1</masterLabel>
+        <openType>sidebar</openType>
+        <page>Template1_MassUpdateCustomObject</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+</CustomObject>

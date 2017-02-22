@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Name</field>
+    </columns>
+    <description>Nb opps en statut comm: qualifié, probable, chaud, non actif, intérêt suppl. par programme</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunites__r.OpportunityLineItems$PricebookEntry.Product2.ProductCode</column>
+            <operator>equals</operator>
+            <value>BBA,PREPA,APA1,SAI,ENSC,IDEA,EMM,GEP,MMML,IHM,SIM,MA,MCO,ME,MF,MFDM,MJ,MAI,MT,MMS,MSDAI,SIMI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Exercice__c</column>
+            <operator>equals</operator>
+            <value>2017</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$StageName</column>
+            <operator>equals</operator>
+            <value>Prospect qualifié,Prospect probable,Prospect chaud,Intérêt Supplémentaire,Non actif</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Opportunites__r$StageName</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Opportunites__r.OpportunityLineItems$PricebookEntry.Product2.ProductCode</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Nb opps en cours conseillers par prog</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_et_opportunit_s_et_produits__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Ann_e_donation__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

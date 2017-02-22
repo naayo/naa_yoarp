@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r.OpportunityLineItems$X18caracter__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$StageName</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r.OpportunityLineItems$Session_de_formation__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Name</column>
+            <operator>contains</operator>
+            <value>transformation digitale</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$StageName</column>
+            <operator>notEqual</operator>
+            <value>Clos (Perdu),Abandon</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r.OpportunityLineItems$Session_de_formation__c</column>
+            <operator>notEqual</operator>
+            <value>Programme TDO [2017-EMS02-P1]</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Summary</format>
+    <name>Ajout_session_formation_TDO</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_et_opportunit_s_et_produits__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact.Opportunites__r.OpportunityLineItems$Session_de_formation__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

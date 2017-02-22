@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Age maximum --></label>
+        <name>Age_maximum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domaine --></label>
+        <name>Domaine__c</name>
+        <picklistValues>
+            <masterLabel>DCRC</masterLabel>
+            <translation><!-- DCRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FPP</masterLabel>
+            <translation><!-- FPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HA</masterLabel>
+            <translation><!-- HA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I&amp;E</masterLabel>
+            <translation><!-- I&amp;E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LDP</masterLabel>
+            <translation><!-- LDP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MKT</masterLabel>
+            <translation><!-- MKT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRH</masterLabel>
+            <translation><!-- MRH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SG</masterLabel>
+            <translation><!-- SG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSVERSE</masterLabel>
+            <translation><!-- TRANSVERSE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Domaine études --></label>
+        <name>Domaine_tudes__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac ES (économique et sociale)</masterLabel>
+            <translation><!-- Bac ES (économique et sociale) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac L (littéraire)</masterLabel>
+            <translation><!-- Bac L (littéraire) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac S (scientifique)</masterLabel>
+            <translation><!-- Bac S (scientifique) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac STMG</masterLabel>
+            <translation><!-- Bac STMG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droit</masterLabel>
+            <translation><!-- Droit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economie</masterLabel>
+            <translation><!-- Economie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gestion</masterLabel>
+            <translation><!-- Gestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingénieur</masterLabel>
+            <translation><!-- Ingénieur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Santé (pharmacie, vétérinaire,…)</masterLabel>
+            <translation><!-- Santé (pharmacie, vétérinaire,…) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sciences (mathématiques, physique,...)</masterLabel>
+            <translation><!-- Sciences (mathématiques, physique,...) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sciences humaines (lettres,...)</masterLabel>
+            <translation><!-- Sciences humaines (lettres,...) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Domaine études formule --></label>
+        <name>Domaine_tudes_formule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Famille / Domaine --></label>
+        <name>Famille__c</name>
+        <picklistValues>
+            <masterLabel>Accompagnement Carrières</masterLabel>
+            <translation><!-- Accompagnement Carrières --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accompagnement entreprises = RDV</masterLabel>
+            <translation><!-- Accompagnement entreprises = RDV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accompagnement pédagogique</masterLabel>
+            <translation><!-- Accompagnement pédagogique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accord Cadre Formation Continue =</masterLabel>
+            <translation><!-- Accord Cadre Formation Continue = --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Achats</masterLabel>
+            <translation><!-- Achats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alternance</masterLabel>
+            <translation><!-- Alternance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annuaires</masterLabel>
+            <translation><!-- Annuaires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Atelier</masterLabel>
+            <translation><!-- Atelier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Au choix</masterLabel>
+            <translation><!-- Au choix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Weeks</masterLabel>
+            <translation><!-- Business Weeks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CVThèque</masterLabel>
+            <translation><!-- CVThèque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers Days</masterLabel>
+            <translation><!-- Careers Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chaires Conjointes</masterLabel>
+            <translation><!-- Chaires Conjointes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chaires d’enseignement et de recherche (&gt;1Me sur 4/5 ans)</masterLabel>
+            <translation><!-- Chaires d’enseignement et de recherche (&gt;1Me sur 4/5 ans) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colloques</masterLabel>
+            <translation><!-- Colloques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confier 1 projet à 1 étudiant</masterLabel>
+            <translation><!-- Confier 1 projet à 1 étudiant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conférence</masterLabel>
+            <translation><!-- Conférence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conférences non payantes (notoriété)</masterLabel>
+            <translation><!-- Conférences non payantes (notoriété) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conférences non payantes (pédagogiques)</masterLabel>
+            <translation><!-- Conférences non payantes (pédagogiques) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conférences non payantes (type gd public)</masterLabel>
+            <translation><!-- Conférences non payantes (type gd public) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conférences non payantes (type scientifique)</masterLabel>
+            <translation><!-- Conférences non payantes (type scientifique) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conférences payantes (par l&apos;auditeur, participant)</masterLabel>
+            <translation><!-- Conférences payantes (par l&apos;auditeur, participant) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conférences payantes (par l&apos;intervenant-casHEC)</masterLabel>
+            <translation><!-- Conférences payantes (par l&apos;intervenant-casHEC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil institutionnel =</masterLabel>
+            <translation><!-- Conseil institutionnel = --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Discovery Session</masterLabel>
+            <translation><!-- Corporate Discovery Session --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Célébration</masterLabel>
+            <translation><!-- Célébration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dons Fondation =&gt; individu ou entreprise  (idem EMLYON)</masterLabel>
+            <translation><!-- Dons Fondation =&gt; individu ou entreprise  (idem EMLYON) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Développement Commercial et Relation client</masterLabel>
+            <translation><!-- Développement Commercial et Relation client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Développement personnel</masterLabel>
+            <translation><!-- Développement personnel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Educational project</masterLabel>
+            <translation><!-- Educational project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enquêtes et Stats</masterLabel>
+            <translation><!-- Enquêtes et Stats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entretien individuel</masterLabel>
+            <translation><!-- Entretien individuel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evenements EMLYON (à positionner confer supra - voir Bernard)</masterLabel>
+            <translation><!-- Evenements EMLYON (à positionner confer supra - voir Bernard) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evenements EMLYON.</masterLabel>
+            <translation><!-- Evenements EMLYON. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evenements EMLYON. (A voir avec BB)</masterLabel>
+            <translation><!-- Evenements EMLYON. (A voir avec BB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evenements FOREVER co-organisés</masterLabel>
+            <translation><!-- Evenements FOREVER co-organisés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events Projects</masterLabel>
+            <translation><!-- Events Projects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evènements FOREVER organisés par EMLYON FOREVER</masterLabel>
+            <translation><!-- Evènements FOREVER organisés par EMLYON FOREVER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evènements corporate payants organisés par la comm</masterLabel>
+            <translation><!-- Evènements corporate payants organisés par la comm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Calendrier</masterLabel>
+            <translation><!-- Evénement Calendrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Expert</masterLabel>
+            <translation><!-- Evénement Expert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Sur Mesure</masterLabel>
+            <translation><!-- Evénement Sur Mesure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expert Panels OU Table rondes</masterLabel>
+            <translation><!-- Expert Panels OU Table rondes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOREVER : cotisation de rattrapage</masterLabel>
+            <translation><!-- FOREVER : cotisation de rattrapage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOREVER : services associés aux cotisants</masterLabel>
+            <translation><!-- FOREVER : services associés aux cotisants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance et Pilotage de la performance</masterLabel>
+            <translation><!-- Finance et Pilotage de la performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forme CLUB</masterLabel>
+            <translation><!-- Forme CLUB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forum Carrières /Careers Forum</masterLabel>
+            <translation><!-- Forum Carrières /Careers Forum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forum PME</masterLabel>
+            <translation><!-- Forum PME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forum virtuel  / Virtual Forum</masterLabel>
+            <translation><!-- Forum virtuel  / Virtual Forum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fundraising commun (namming…)</masterLabel>
+            <translation><!-- Fundraising commun (namming…) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovation et Entrepreneuriat</masterLabel>
+            <translation><!-- Innovation et Entrepreneuriat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investments Projects</masterLabel>
+            <translation><!-- Investments Projects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journée de conférences ateliers et réseau</masterLabel>
+            <translation><!-- Journée de conférences ateliers et réseau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knowledge Projects</masterLabel>
+            <translation><!-- Knowledge Projects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leadership et Développement personnel</masterLabel>
+            <translation><!-- Leadership et Développement personnel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Locations de salles (EMLYON,EML,ALLIANCE)</masterLabel>
+            <translation><!-- Locations de salles (EMLYON,EML,ALLIANCE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management Général</masterLabel>
+            <translation><!-- Management Général --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management et Ressources Humaines</masterLabel>
+            <translation><!-- Management et Ressources Humaines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partenariats Académiques</masterLabel>
+            <translation><!-- Partenariats Académiques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PhD Doctorat</masterLabel>
+            <translation><!-- PhD Doctorat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plateforme Msc in IDEA (LearningLab, Incubateur, MscinIDEA)</masterLabel>
+            <translation><!-- Plateforme Msc in IDEA (LearningLab, Incubateur, MscinIDEA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme Bachelor</masterLabel>
+            <translation><!-- Programme Bachelor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme COSMETO</masterLabel>
+            <translation><!-- Programme COSMETO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme I.D.E.A Alliance ECL-EM</masterLabel>
+            <translation><!-- Programme I.D.E.A Alliance ECL-EM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme IPIL</masterLabel>
+            <translation><!-- Programme IPIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme MBA Internationaux - formation initiale</masterLabel>
+            <translation><!-- Programme MBA Internationaux - formation initiale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme MBA  - formation continue</masterLabel>
+            <translation><!-- Programme MBA  - formation continue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme « Grande Ecole »</masterLabel>
+            <translation><!-- Programme « Grande Ecole » --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes Entrepreneurs</masterLabel>
+            <translation><!-- Programmes Entrepreneurs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes courts</masterLabel>
+            <translation><!-- Programmes courts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes de formation longs non diplômant  (DUA)</masterLabel>
+            <translation><!-- Programmes de formation longs non diplômant  (DUA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes diplomants</masterLabel>
+            <translation><!-- Programmes diplomants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes longs diplômants - Programmes Opérationnels</masterLabel>
+            <translation><!-- Programmes longs diplômants - Programmes Opérationnels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes longs diplômants - Senior Executive</masterLabel>
+            <translation><!-- Programmes longs diplômants - Senior Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes sur mesure/intra avec appel d&apos;offre/CDC</masterLabel>
+            <translation><!-- Programmes sur mesure/intra avec appel d&apos;offre/CDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes sur mesure/intra hors appel d&apos;offre/CDC</masterLabel>
+            <translation><!-- Programmes sur mesure/intra hors appel d&apos;offre/CDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes « Masters  Internationaux»</masterLabel>
+            <translation><!-- Programmes « Masters  Internationaux» --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes « Masters  en Anglais»</masterLabel>
+            <translation><!-- Programmes « Masters  en Anglais» --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes « Mastères spécialisés »</masterLabel>
+            <translation><!-- Programmes « Mastères spécialisés » --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projets de Recherche</masterLabel>
+            <translation><!-- Projets de Recherche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Push-Mails</masterLabel>
+            <translation><!-- Push-Mails --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relation Editeur - Professeurs</masterLabel>
+            <translation><!-- Relation Editeur - Professeurs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relation informelle</masterLabel>
+            <translation><!-- Relation informelle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relations Presse ?</masterLabel>
+            <translation><!-- Relations Presse ? --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relations Publiques ?</masterLabel>
+            <translation><!-- Relations Publiques ? --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsible Projects</masterLabel>
+            <translation><!-- Responsible Projects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salons commerciaux de l&apos;éducation : France et International</masterLabel>
+            <translation><!-- Salons commerciaux de l&apos;éducation : France et International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salons des entrepreneurs</masterLabel>
+            <translation><!-- Salons des entrepreneurs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services rendus par la DSIT</masterLabel>
+            <translation><!-- Services rendus par la DSIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services rendus par la bibliothèque</masterLabel>
+            <translation><!-- Services rendus par la bibliothèque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services rendus par le registraire</masterLabel>
+            <translation><!-- Services rendus par le registraire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sites Internet CORPORATE</masterLabel>
+            <translation><!-- Sites Internet CORPORATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sites Internet Carrière</masterLabel>
+            <translation><!-- Sites Internet Carrière --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sites Internet EML</masterLabel>
+            <translation><!-- Sites Internet EML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sites Internet FOREVER</masterLabel>
+            <translation><!-- Sites Internet FOREVER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soutien au programmes de bourse et « ouverture sociale » (TUMM)</masterLabel>
+            <translation><!-- Soutien au programmes de bourse et « ouverture sociale » (TUMM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soutien aux pgms/projets entrepreunariat (Incubateur,  WEF, Club CCRE)</masterLabel>
+            <translation><!-- Soutien aux pgms/projets entrepreunariat (Incubateur,  WEF, Club CCRE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speed networking</masterLabel>
+            <translation><!-- Speed networking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsoring entreprise (public visé/bénéficiaire = diplômés)</masterLabel>
+            <translation><!-- Sponsoring entreprise (public visé/bénéficiaire = diplômés) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsoring entreprise (public visé/bénéficiaire = entreprises)</masterLabel>
+            <translation><!-- Sponsoring entreprise (public visé/bénéficiaire = entreprises) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsoring entreprise (public visé/bénéficiaire = étudiants)</masterLabel>
+            <translation><!-- Sponsoring entreprise (public visé/bénéficiaire = étudiants) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsoring incubateur  (public visé/bénéficiaire = incubés)</masterLabel>
+            <translation><!-- Sponsoring incubateur  (public visé/bénéficiaire = incubés) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stratégie et Gouvernance</masterLabel>
+            <translation><!-- Stratégie et Gouvernance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer Sessions (pour différents programmes)</masterLabel>
+            <translation><!-- Summer Sessions (pour différents programmes) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer Sessions Programme Auditeurs</masterLabel>
+            <translation><!-- Summer Sessions Programme Auditeurs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxe d&apos;apprentissage</masterLabel>
+            <translation><!-- Taxe d&apos;apprentissage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transformation Digitale</masterLabel>
+            <translation><!-- Transformation Digitale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transverse</masterLabel>
+            <translation><!-- Transverse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visite face/face</masterLabel>
+            <translation><!-- Visite face/face --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visite face/face (anciens)</masterLabel>
+            <translation><!-- Visite face/face (anciens) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Format --></label>
+        <name>Format__c</name>
+        <picklistValues>
+            <masterLabel>Certificat</masterLabel>
+            <translation><!-- Certificat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Court</masterLabel>
+            <translation><!-- Court --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diplome</masterLabel>
+            <translation><!-- Diplome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parcours</masterLabel>
+            <translation><!-- Parcours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ID suiveur --></label>
+        <name>ID_suiveur__c</name>
+    </fields>
+    <fields>
+        <label><!-- Libellé Produit --></label>
+        <name>Libelle_Produit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Localisation à préciser dans l&apos;opp --></label>
+        <name>Localisation_pr_ciser_dans_l_opp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cocher ce champ pour ne pas exporter sur le site EML --></help>
+        <label><!-- Ne pas afficher sur le site EML --></label>
+        <name>Ne_pas_afficher_sur_le_site_EML__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ne pas synchroniser avec Kreactive --></label>
+        <name>Ne_pas_synchroniser_avec_Kreactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Niveau d&apos;études numéro --></label>
+        <name>Niveau_d_etudes_numero__c</name>
+    </fields>
+    <fields>
+        <label><!-- Niveau d&apos;expérience --></label>
+        <name>Niveau_d_exp_rience__c</name>
+        <picklistValues>
+            <masterLabel>+ de 10 ans</masterLabel>
+            <translation><!-- + de 10 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0-2 ans</masterLabel>
+            <translation><!-- 0-2 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3-5 ans</masterLabel>
+            <translation><!-- 3-5 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6-10 ans</masterLabel>
+            <translation><!-- 6-10 ans --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Niveau d&apos;études --></label>
+        <name>Niveau_d_tudes__c</name>
+        <picklistValues>
+            <masterLabel>Bac</masterLabel>
+            <translation><!-- Bac --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac + 1</masterLabel>
+            <translation><!-- Bac + 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac + 2</masterLabel>
+            <translation><!-- Bac + 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac + 3</masterLabel>
+            <translation><!-- Bac + 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac + 4</masterLabel>
+            <translation><!-- Bac + 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac + 5 et +</masterLabel>
+            <translation><!-- Bac + 5 et + --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Première</masterLabel>
+            <translation><!-- Première --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seconde</masterLabel>
+            <translation><!-- Seconde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminale</masterLabel>
+            <translation><!-- Terminale --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Niveau xp pro numéro --></label>
+        <name>Niveau_xp_pro_num_ro__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre d&apos;heures --></label>
+        <name>Nombre_d_heures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre de jours --></label>
+        <name>Nombre_de_jours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objectif --></label>
+        <name>Objectif__c</name>
+        <picklistValues>
+            <masterLabel>PR-LO10</masterLabel>
+            <translation>DIRIGER</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR-LO20</masterLabel>
+            <translation>PILOTER</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR-LO30</masterLabel>
+            <translation>MAITRISER</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pack à la carte --></label>
+        <name>Pack_la_carte__c</name>
+    </fields>
+    <fields>
+        <label><!-- Produit Pack --></label>
+        <name>Produit_Pack__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reprise Lot 2015 --></label>
+        <name>Reprise_Lot_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suiveur --></label>
+        <name>Suiveur__c</name>
+        <relationshipLabel><!-- Produits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Id Salesforce sur 18 caractères --></help>
+        <label><!-- 18caracter --></label>
+        <name>X18caracter__c</name>
+    </fields>
+    <fields>
+        <label><!-- produit unique --></label>
+        <name>produit_unique__c</name>
+    </fields>
+    <layouts>
+        <layout>Module</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pack</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation du produit</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Relations employeur</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Taxe</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Autre --></label>
+        <name>Autre</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dons --></label>
+        <name>Dons</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Module --></label>
+        <name>Module</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pack --></label>
+        <name>Pack</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Partenariat --></label>
+        <name>Partenariat</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prestation --></label>
+        <name>Prestation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Programme --></label>
+        <name>Programme</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Relations Employeur --></label>
+        <name>Relations_Employeur</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Selection --></label>
+        <name>Selection</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Taxe --></label>
+        <name>Taxe</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+</CustomObjectTranslation>

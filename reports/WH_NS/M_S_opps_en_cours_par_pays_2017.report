@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r.OpportunityLineItems$PricebookEntry.Product2.ProductCode</field>
+    </columns>
+    <description>Opps en intéressé par, qualifié, probable, chaud, non actif, intérêt suppl.</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Exercice__c</column>
+            <operator>equals</operator>
+            <value>2017</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r.OpportunityLineItems$PricebookEntry.Product2.ProductCode</column>
+            <operator>equals</operator>
+            <value>MA,MAI,MCO,ME,MF,MFDM,MJ,MK,MMS,MSDAI,MT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$StageName</column>
+            <operator>equals</operator>
+            <value>Intéressé par,Prospect qualifié,Prospect probable,Prospect chaud,Intérêt Supplémentaire,Non actif</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Pays_de_r_sidence__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>M.S. opps en cours par pays 2017</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_et_opportunit_s_et_produits__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Ann_e_donation__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

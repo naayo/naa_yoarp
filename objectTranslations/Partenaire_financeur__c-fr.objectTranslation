@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partenaire financeur / collecteur OPCA</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partenaires financeurs/ collecteurs OPCA</value>
+    </caseValues>
+    <fields>
+        <label><!-- Compte financeur --></label>
+        <name>Compte_financeur__c</name>
+        <relationshipLabel><!-- Partenaires financeurs/ collecteurs OPCA --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Montant financement --></label>
+        <name>Montant_financement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nom compte financeur --></label>
+        <name>Nom_compte_financeur__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunité financée --></label>
+        <name>Opportunite_financee__c</name>
+        <relationshipLabel><!-- Partenaires financeurs/ collecteurs OPCA --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pourcentage financement --></label>
+        <name>Pourcentage_financement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reprise Lot 2015 --></label>
+        <name>Reprise_Lot_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type de financeur --></label>
+        <name>Role_sur_l_opportunit__c</name>
+        <picklistValues>
+            <masterLabel>BOURSE</masterLabel>
+            <translation><!-- BOURSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entreprise</masterLabel>
+            <translation><!-- Entreprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPCA</masterLabel>
+            <translation><!-- OPCA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- % financement --></label>
+        <name>pourcentage_financement_formule__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Partenaire financeur</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

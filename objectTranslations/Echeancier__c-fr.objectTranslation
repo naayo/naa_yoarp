@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Echéancier</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Echéanciers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Exercice (Non utilisé) --></label>
+        <name>Date_previsionnelle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exercice --></label>
+        <name>Exercice__c</name>
+        <picklistValues>
+            <masterLabel>ECH-EX10</masterLabel>
+            <translation>2010-2011</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX100</masterLabel>
+            <translation>2019-2020</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX20</masterLabel>
+            <translation>2011-2012</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX30</masterLabel>
+            <translation>2012-2013</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX40</masterLabel>
+            <translation>2013-2014</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX50</masterLabel>
+            <translation>2014-2015</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX60</masterLabel>
+            <translation>2015-2016</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX70</masterLabel>
+            <translation>2016-2017</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX80</masterLabel>
+            <translation>2017-2018</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX90</masterLabel>
+            <translation>2018-2019</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Montant total de l&apos;opportunité --></label>
+        <name>Montant_Opp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Montant différentiel avec échéancier --></label>
+        <name>Montant_diff_rentiel_avec_ch_ancier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Montant prévisionnel sur l&apos;exercice --></label>
+        <name>Montant_previsionnel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunité --></label>
+        <name>Opportunite__c</name>
+        <relationshipLabel><!-- Echéancier --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Période --></label>
+        <name>Periode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reprise Lot 2015 --></label>
+        <name>Reprise_Lot_2015__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Echéancier</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Vous devez saisir un exercice --></errorMessage>
+        <name>RV_Echeancier01_ExerciceObligatoire</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Owner</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact_central__c.Salutation</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact_central__c.LastName</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact_central__c.FirstName</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact_central__c.Adresse_Email_Personnelle__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact_central__c.MobilePhone</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact_central__c.HomePhone</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StageName</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityLineItems$Statut_candidature__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 AND 2 AND 3 AND 4) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity$Name</column>
+            <operator>contains</operator>
+            <value>MSC Admission sur Titre Français</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Exercice__c</column>
+            <operator>equals</operator>
+            <value>2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$StageName</column>
+            <operator>equals</operator>
+            <value>Prospect qualifié,Prospect probable,Prospect chaud</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Statut_Canel__c</column>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Contact_central__c.Nombre_opportunit_s__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Msc in Management Mono à vérifier 1</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunites_plus_informations_complementaires__c</reportType>
+    <roleHierarchyFilter>Promo_Recrut_Master</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$LastStageChangeDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

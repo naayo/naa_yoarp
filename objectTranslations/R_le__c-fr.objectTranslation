@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rôle EMLYON</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rôles EMLYON</value>
+    </caseValues>
+    <fields>
+        <label><!-- Catégorie rôle --></label>
+        <name>Categorie_role__c</name>
+        <picklistValues>
+            <masterLabel>Ambassadeur de programme</masterLabel>
+            <translation><!-- Ambassadeur de programme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Associations</masterLabel>
+            <translation><!-- Ancien Membre Associations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCI</masterLabel>
+            <translation><!-- CCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Classement</masterLabel>
+            <translation><!-- Classement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseils d&apos;Administration</masterLabel>
+            <translation><!-- Conseils d&apos;Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diplômés</masterLabel>
+            <translation><!-- Diplômés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EML-EXEC</masterLabel>
+            <translation><!-- EML-EXEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employabilité</masterLabel>
+            <translation><!-- Employabilité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enseignement</masterLabel>
+            <translation><!-- Enseignement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entrepreneuriat</masterLabel>
+            <translation><!-- Entrepreneuriat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jury</masterLabel>
+            <translation><!-- Jury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partenariat et Fondation</masterLabel>
+            <translation><!-- Partenariat et Fondation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recherche</masterLabel>
+            <translation><!-- Recherche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stages</masterLabel>
+            <translation><!-- Stages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP</masterLabel>
+            <translation><!-- VIP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Rôles EMLYON --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Liste rôle --></label>
+        <name>Liste_r_le__c</name>
+        <picklistValues>
+            <masterLabel>Ancien BOURSIER EMLYON</masterLabel>
+            <translation><!-- Ancien BOURSIER EMLYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Astuce Lycéens</masterLabel>
+            <translation><!-- Ancien Membre Astuce Lycéens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre BDA</masterLabel>
+            <translation><!-- Ancien Membre BDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre BDE</masterLabel>
+            <translation><!-- Ancien Membre BDE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre BDS</masterLabel>
+            <translation><!-- Ancien Membre BDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Beaux Cuis&apos;</masterLabel>
+            <translation><!-- Ancien Membre Beaux Cuis&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Club Voile</masterLabel>
+            <translation><!-- Ancien Membre Club Voile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Corpo</masterLabel>
+            <translation><!-- Ancien Membre Corpo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Déclic</masterLabel>
+            <translation><!-- Ancien Membre Déclic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre EM&apos;icrocrédit</masterLabel>
+            <translation><!-- Ancien Membre EM&apos;icrocrédit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Forum</masterLabel>
+            <translation><!-- Ancien Membre Forum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Goût&apos;R&apos;Mets</masterLabel>
+            <translation><!-- Ancien Membre Goût&apos;R&apos;Mets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre I LINK</masterLabel>
+            <translation><!-- Ancien Membre I LINK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre JET</masterLabel>
+            <translation><!-- Ancien Membre JET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Junior Conseil</masterLabel>
+            <translation><!-- Ancien Membre Junior Conseil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Ligne 2 Mire</masterLabel>
+            <translation><!-- Ancien Membre Ligne 2 Mire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Numérik</masterLabel>
+            <translation><!-- Ancien Membre Numérik --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Opening</masterLabel>
+            <translation><!-- Ancien Membre Opening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Petit Paumé</masterLabel>
+            <translation><!-- Ancien Membre Petit Paumé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Planet &amp; Co</masterLabel>
+            <translation><!-- Ancien Membre Planet &amp; Co --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Radio Activ</masterLabel>
+            <translation><!-- Ancien Membre Radio Activ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Raid Hannibal</masterLabel>
+            <translation><!-- Ancien Membre Raid Hannibal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Ski Club</masterLabel>
+            <translation><!-- Ancien Membre Ski Club --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Solidari&apos;Terre</masterLabel>
+            <translation><!-- Ancien Membre Solidari&apos;Terre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Sup de Côteaux</masterLabel>
+            <translation><!-- Ancien Membre Sup de Côteaux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Transaction</masterLabel>
+            <translation><!-- Ancien Membre Transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancien Membre Verbat&apos;EM</masterLabel>
+            <translation><!-- Ancien Membre Verbat&apos;EM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Classement FT MBA</masterLabel>
+            <translation><!-- Classement FT MBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Achats Lyon</masterLabel>
+            <translation><!-- Club Achats Lyon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Achats Paris</masterLabel>
+            <translation><!-- Club Achats Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Administrateurs Paris</masterLabel>
+            <translation><!-- Club Administrateurs Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Afrique Paris</masterLabel>
+            <translation><!-- Club Afrique Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Business Angels Lyon</masterLabel>
+            <translation><!-- Club Business Angels Lyon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Cercle des Dirigeants Lyon</masterLabel>
+            <translation><!-- Club Cercle des Dirigeants Lyon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Chine Paris</masterLabel>
+            <translation><!-- Club Chine Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Culture et Management Paris</masterLabel>
+            <translation><!-- Club Culture et Management Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Digital Paris</masterLabel>
+            <translation><!-- Club Digital Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Distribution Lyon</masterLabel>
+            <translation><!-- Club Distribution Lyon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Distribution Paris</masterLabel>
+            <translation><!-- Club Distribution Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Développement Durable Paris</masterLabel>
+            <translation><!-- Club Développement Durable Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club EM LYON au féminin LYON</masterLabel>
+            <translation><!-- Club EM LYON au féminin LYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club EM LYON au féminin PARIS</masterLabel>
+            <translation><!-- Club EM LYON au féminin PARIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Entrepreneuriat Paris</masterLabel>
+            <translation><!-- Club Entrepreneuriat Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Finance Lyon</masterLabel>
+            <translation><!-- Club Finance Lyon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Finance Paris</masterLabel>
+            <translation><!-- Club Finance Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Immobilier Lyon</masterLabel>
+            <translation><!-- Club Immobilier Lyon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Immobilier Paris</masterLabel>
+            <translation><!-- Club Immobilier Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Inde Paris</masterLabel>
+            <translation><!-- Club Inde Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Luxe &amp; Métiers de la Mode Paris</masterLabel>
+            <translation><!-- Club Luxe &amp; Métiers de la Mode Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Motards</masterLabel>
+            <translation><!-- Club Motards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Média &amp; Communication Paris</masterLabel>
+            <translation><!-- Club Média &amp; Communication Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club NTIC Paris</masterLabel>
+            <translation><!-- Club NTIC Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Repreneurs Lyon</masterLabel>
+            <translation><!-- Club Repreneurs Lyon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Ressources Humaines Paris</masterLabel>
+            <translation><!-- Club Ressources Humaines Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Santé Lyon</masterLabel>
+            <translation><!-- Club Santé Lyon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Santé Paris</masterLabel>
+            <translation><!-- Club Santé Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Services Paris</masterLabel>
+            <translation><!-- Club Services Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club des 100 Diplômés</masterLabel>
+            <translation><!-- Club des 100 Diplômés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club des 200 Diplômés</masterLabel>
+            <translation><!-- Club des 200 Diplômés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact principal employabilité</masterLabel>
+            <translation><!-- Contact principal employabilité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacts Recherche /Dean</masterLabel>
+            <translation><!-- Contacts Recherche /Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correspondants AD</masterLabel>
+            <translation><!-- Correspondants AD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diplômé Sportif de Haut Niveau</masterLabel>
+            <translation><!-- Diplômé Sportif de Haut Niveau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diplômé Who&apos;s Who</masterLabel>
+            <translation><!-- Diplômé Who&apos;s Who --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diplômé en couple</masterLabel>
+            <translation><!-- Diplômé en couple --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diplômés EM LYON CI GOLF</masterLabel>
+            <translation><!-- Diplômés EM LYON CI GOLF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dirigeant Créateur</masterLabel>
+            <translation><!-- Dirigeant Créateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dirigeant du CAC 40</masterLabel>
+            <translation><!-- Dirigeant du CAC 40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entrepreneurs dans la ville</masterLabel>
+            <translation><!-- Entrepreneurs dans la ville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Entrepreneurship Monitor Cibles</masterLabel>
+            <translation><!-- Global Entrepreneurship Monitor Cibles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incubés EMLYON</masterLabel>
+            <translation><!-- Incubés EMLYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intervenant</masterLabel>
+            <translation><!-- Intervenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jurisclub Paris</masterLabel>
+            <translation><!-- Jurisclub Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lauréats et Prix</masterLabel>
+            <translation><!-- Lauréats et Prix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre Comex Fondation</masterLabel>
+            <translation><!-- Membre Comex Fondation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre Conseil Surveillance CDME</masterLabel>
+            <translation><!-- Membre Conseil Surveillance CDME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre Elus CCI</masterLabel>
+            <translation><!-- Membre Elus CCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre PRES</masterLabel>
+            <translation><!-- Membre PRES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre d&apos;un jury de sélection</masterLabel>
+            <translation><!-- Membre d&apos;un jury de sélection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre de l&apos;AG AESCRA</masterLabel>
+            <translation><!-- Membre de l&apos;AG AESCRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre de la Conférence Grande Ecole</masterLabel>
+            <translation><!-- Membre de la Conférence Grande Ecole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre du CA de l&apos;AESCRA</masterLabel>
+            <translation><!-- Membre du CA de l&apos;AESCRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membres CA ADEM LYON</masterLabel>
+            <translation><!-- Membres CA ADEM LYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newsletter Recherche</masterLabel>
+            <translation><!-- Newsletter Recherche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partenaire Carrières / Employabilité</masterLabel>
+            <translation><!-- Partenaire Carrières / Employabilité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partenaires Fondation</masterLabel>
+            <translation><!-- Partenaires Fondation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partenaires Fundraising</masterLabel>
+            <translation><!-- Partenaires Fundraising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partenaires IDEA</masterLabel>
+            <translation><!-- Partenaires IDEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partenaires de l&apos;Incubateur</masterLabel>
+            <translation><!-- Partenaires de l&apos;Incubateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participant</masterLabel>
+            <translation><!-- Participant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescripteur</masterLabel>
+            <translation><!-- Prescripteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescripteur Grande Ecole</masterLabel>
+            <translation><!-- Prescripteur Grande Ecole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recrutement Etudiant</masterLabel>
+            <translation><!-- Recrutement Etudiant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recrutement Etudiant 1</masterLabel>
+            <translation><!-- Recrutement Etudiant 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recrutement Etudiant 2</masterLabel>
+            <translation><!-- Recrutement Etudiant 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recrutement Etudiant 3</masterLabel>
+            <translation><!-- Recrutement Etudiant 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recrutement Etudiant 4</masterLabel>
+            <translation><!-- Recrutement Etudiant 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recrutement Etudiant 5</masterLabel>
+            <translation><!-- Recrutement Etudiant 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réseaux d&apos;accompagement créateurs d&apos;Eses</masterLabel>
+            <translation><!-- Réseaux d&apos;accompagement créateurs d&apos;Eses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUIVEUR OU MAITRE DE STAGE</masterLabel>
+            <translation><!-- SUIVEUR OU MAITRE DE STAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutorats Etudiants de Lycéens</masterLabel>
+            <translation><!-- Tutorats Etudiants de Lycéens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP DG EMLYON</masterLabel>
+            <translation><!-- VIP DG EMLYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP Diplomate</masterLabel>
+            <translation><!-- VIP Diplomate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP Enseignement</masterLabel>
+            <translation><!-- VIP Enseignement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP Institutionnel</masterLabel>
+            <translation><!-- VIP Institutionnel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP Internationaux</masterLabel>
+            <translation><!-- VIP Internationaux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP Politique</masterLabel>
+            <translation><!-- VIP Politique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP Prisme</masterLabel>
+            <translation><!-- VIP Prisme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP THE LYINC</masterLabel>
+            <translation><!-- VIP THE LYINC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ex Président ADEM</masterLabel>
+            <translation><!-- ex Président ADEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>membre conseil d&apos;administration Alliance</masterLabel>
+            <translation><!-- membre conseil d&apos;administration Alliance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reprise Lot 2015 --></label>
+        <name>Reprise_Lot_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- x18caracteres --></label>
+        <name>x18caracteres__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Rôle</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Mass_Update_1 --></label>
+        <name>Mass_Update_1</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Contact_central__c.Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact_central__c.LastName</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact_central__c.FirstName</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact_central__c.RecordType</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Formule_nb_oppo_total__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StageName</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Statut_Canel__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Exercice__c</column>
+            <operator>equals</operator>
+            <value>2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Contact_central__c.Nature_du_premier_contact__c</column>
+            <operator>equals</operator>
+            <value>Forum/ Salon,Salon virtuel</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Provenance__c</column>
+            <operator>equals</operator>
+            <value>Forum/ Salon</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Sous_provenance__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Bilan Salons 2014/2015</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunites_plus_informations_complementaires__c</reportType>
+    <roleHierarchyFilter>Promo_Recrut_Master</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

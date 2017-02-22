@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact$Adresse_Email_Personnelle__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Email_de_repli__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Owner</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Owner</column>
+            <operator>contains</operator>
+            <value>B2B,PLOTTON,JOURNY,POIRET,BASSET,MISSLIN,SOENEN,CHEMLA,CLAUDEVILLE,GEFFE</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Opportunités B2B Marketing</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_et_opportunit_s_et_produits__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

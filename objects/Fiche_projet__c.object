@@ -1,0 +1,1864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Avancement__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>% d&apos;avancement du développement / configuration</inlineHelpText>
+        <label>% Avancement</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Charge_Analyse_J__c</fullName>
+        <externalId>false</externalId>
+        <formula>Charge_J__c * 15/100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Analyse et spécifications (7% du build)</inlineHelpText>
+        <label>Charge (Analyse J)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Charge_Euro__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Charge_Analyse_J__c  * 750) + ( Charge_J__c * 490) + ( Charge_Tests_J__c * 490 * 80/100) + ( Charge_Tests_J__c * 750* 20/100)  + ( Charge_PM_J__c * 980)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Analyse : 750 €
+Build : 490 €
+Tests : 490 80% + 750 20%
+PM : 980 €</inlineHelpText>
+        <label>Charge (€)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Charge_J__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Charge de développement / configuration en jours
+Unité : 0,1</inlineHelpText>
+        <label>Charge (J)</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Charge_PM_J__c</fullName>
+        <externalId>false</externalId>
+        <formula>Charge_J__c * 15/100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Gestion de projet (15% du build)</inlineHelpText>
+        <label>Charge (PM J)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Charge_Tests_J__c</fullName>
+        <externalId>false</externalId>
+        <formula>Charge_J__c * 7/100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Recette utilisateur (7% du build)</inlineHelpText>
+        <label>Charge (Tests J)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Charge_Total_J__c</fullName>
+        <externalId>false</externalId>
+        <formula>Charge_Analyse_J__c + Charge_J__c  +  Charge_Tests_J__c + Charge_PM_J__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Charge (Total J)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_de_fermeture__c</fullName>
+        <description>Lecture seule. Alimentée par workflow...</description>
+        <externalId>false</externalId>
+        <label>Date de fermeture</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_en_prod__c</fullName>
+        <externalId>false</externalId>
+        <label>Date en prod</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_en_test__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date à renseigner exclusivement par Kerensen</inlineHelpText>
+        <label>Date en test</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_limite__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date à renseigner exclusivement par le client</inlineHelpText>
+        <label>Date limite</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Domaine__c</fullName>
+        <externalId>false</externalId>
+        <label>Domaine</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Activité</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Campagne</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chantier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Configurateur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contrat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Courrier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CTI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Devis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Formation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Foyer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Interface</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Migration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Opération</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Profils</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Projet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Requête</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sécurité</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Edit__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://cs7.salesforce.com/&quot; &amp;  Id &amp; &quot;/e&quot;, &quot;Edit&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Edit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>En_retard__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (
+	ISPICKVAL(Statut__c, &quot;Fermé&quot;),
+	IF (
+		Date_de_fermeture__c &gt; Date_limite__c + 5,
+		IMAGE(&quot;https://c.na14.content.force.com/servlet/servlet.ImageServer?id=015d0000000JO69&amp;oid=00Dd0000000ciwW&quot;,&quot;Rouge&quot;),
+		IF (	
+			Date_de_fermeture__c &gt; Date_limite__c,
+			IMAGE(&quot;https://c.na14.content.force.com/servlet/servlet.ImageServer?id=015d0000000JO5o&amp;oid=00Dd0000000ciwW&quot;,&quot;Orange&quot;),
+			IF (
+				Date_de_fermeture__c &lt;= Date_limite__c,
+				IMAGE(&quot;https://c.na14.content.force.com/servlet/servlet.ImageServer?id=015d0000000JO6E&amp;oid=00Dd0000000ciwW&quot;,&quot;Vert&quot;),
+				&quot;&quot;
+				)
+		)
+	),
+	IF (
+		TODAY() &gt; Date_en_test__c,
+		IMAGE(&quot;https://c.na14.content.force.com/servlet/servlet.ImageServer?id=015d0000000JO69&amp;oid=00Dd0000000ciwW&quot;,&quot;Rouge&quot;),
+		IF (
+			TODAY() = Date_en_test__c,
+			IMAGE(&quot;https://c.na14.content.force.com/servlet/servlet.ImageServer?id=015d0000000JO5o&amp;oid=00Dd0000000ciwW&quot;,&quot;Orange&quot;),
+			IF (
+			TODAY() &lt; Date_en_test__c,
+			IMAGE(&quot;https://c.na14.content.force.com/servlet/servlet.ImageServer?id=015d0000000JO6E&amp;oid=00Dd0000000ciwW&quot;,&quot;Vert&quot;),
+			&quot;&quot;
+			)
+		)	
+	)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>- Rouge si fermé et (date fermeture &gt; date limite + 5) ou ouvert et today &gt; date test
+- Orange si fermé et (date fermeture &gt; date limite) ou ouvert et today = date test
+- Vert si fermé et (date fermeture &lt;= date limite) ou ouvert et today &lt; date test</inlineHelpText>
+        <label>En retard ?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fait_en_production__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Cohez cette case si la modification a été reportée manuellement dans l&apos;environnement de production</inlineHelpText>
+        <label>Fait en production ?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fiche_parent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Fiche parent</label>
+        <referenceTo>Fiche_projet__c</referenceTo>
+        <relationshipLabel>Fiches projet</relationshipLabel>
+        <relationshipName>Anomalies</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Liste_des_modifications__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Décrire la liste des modifications de la configuration</inlineHelpText>
+        <label>Liste des modifications</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lot__c</fullName>
+        <externalId>false</externalId>
+        <label>Lot</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Lot 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lot 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lot 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lot 4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lot 5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Origine__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Personne, réunion, contexte</inlineHelpText>
+        <label>Origine</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pas_de_modification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Pas de modification de la configuration (RV, workflow, champ...)</inlineHelpText>
+        <label>Pas de modification</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Priorite__c</fullName>
+        <externalId>false</externalId>
+        <label>Priorité</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Processus__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;Si vous ne pouvez pas traiter la fiche, changez le statut, ajoutez une note et changez le propritétaire en cochant &apos;Notification par Email&apos;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Processus</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Profils_concernes__c</fullName>
+        <externalId>false</externalId>
+        <label>Profils concernés</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Profil 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Profil 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Profil 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Reference_cahier_de_recette__c</fullName>
+        <externalId>false</externalId>
+        <label>Référence cahier de recette</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reference_specifications__c</fullName>
+        <externalId>false</externalId>
+        <label>Référence spécifications</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reproductible__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Reproductible</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Responsable__c</fullName>
+        <description>Alimenter ce champ automatiquement par une règle de workflow en fonction du propriétaire.
+NE PAS OUBLIER DE METTRE EN PLACE LES FILES D&apos;ATTENTE</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Alimenter ce champ automatiquement par une règle de workflow en fonction du propriétaire.
+NE PAS OUBLIER DE METTRE EN PLACE LES FILES D&apos;ATTENTE</inlineHelpText>
+        <label>Responsable</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kerensen</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Risque_planning__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (
+	ISPICKVAL(Statut__c, &quot;Réalisé&quot;) || 
+	ISPICKVAL(Statut__c, &quot;A préciser&quot;) ||  
+	ISPICKVAL(Statut__c, &quot;A arbitrer&quot;) ||  
+	(text(Date_limite__c) &lt;&gt; &quot;&quot; &amp;&amp; (TODAY() +  Charge_J__c = Date_limite__c)) ,  
+	IMAGE(&quot;https://c.na14.content.force.com/servlet/servlet.ImageServer?id=015d0000000JO5z&amp;oid=00Dd0000000ciwW&quot;, &quot;Orange&quot;),
+	IF (
+		ISPICKVAL(Statut__c, &quot;Fermé&quot;) || 
+		ISPICKVAL(Statut__c, &quot;Abandonné&quot;) ||  
+		(text(Date_limite__c) &lt;&gt; &quot;&quot; &amp;&amp; (TODAY() +  Charge_J__c &lt; Date_limite__c)) ,  
+		IMAGE(&quot;https://c.na14.content.force.com/servlet/servlet.ImageServer?id=015d0000000JO64&amp;oid=00Dd0000000ciwW&quot;, &quot;Vert&quot;),
+		IF (
+			(text(Date_limite__c) &lt;&gt; &quot;&quot; &amp;&amp; (TODAY() +  Charge_J__c &gt; Date_limite__c)) ,  
+			IMAGE(&quot;https://c.na14.content.force.com/servlet/servlet.ImageServer?id=015d0000000JO5u&amp;oid=00Dd0000000ciwW&quot;, &quot;Rouge&quot;),
+			&quot;&quot;
+		)
+	)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>- Vert : Fermé, abandonné, risque vert (auj + charge &lt; date limite)
+- Orange : Réalisé (donc à tester avec risque de retour), A préciser, A arbitrer, risque orange (auj + charge = date limite)
+- Rouge : Risque  rouge  (auj + charge &gt; date limite)</inlineHelpText>
+        <label>Risque planning</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solution_specifique__c</fullName>
+        <externalId>false</externalId>
+        <label>Solution spécifique</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solution_standard__c</fullName>
+        <externalId>false</externalId>
+        <label>Solution standard</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Statut__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Nouveau : statut des nouvelles fiches
+A préciser : en attente d&apos;infos du client
+En cours : une réponse / correction est en cours
+Réalisé : la fiche a été réalisée et doit être testée
+Fermé : la fiche est validée
+Abandonné : la fiche est annulée</inlineHelpText>
+        <label>Statut</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Nouveau</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>A préciser</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>A arbitrer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>En cours</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Réalisé</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fermé</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Abandonné</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Validée EMLYON</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Statut_specifications__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>L&apos;anomalie nécessite une mise à jour</inlineHelpText>
+        <label>Statut spécifications</label>
+        <picklist>
+            <picklistValues>
+                <fullName>N/A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>A spécifier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Spécifications à jour</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Sujet__c</fullName>
+        <externalId>true</externalId>
+        <label>Sujet</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Demande</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Action</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Anomalie</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Evolution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Version</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Validee_client__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Validée client</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Validee_par_Kerensen__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Validée par Kerensen</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Version__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Version</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Fiche_projet__c.Type__c</field>
+                <operation>equals</operation>
+                <value>Version</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Fiche_projet__c</referenceTo>
+        <relationshipLabel>Fiches projet</relationshipLabel>
+        <relationshipName>Fiches_projet</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Version_txt__c</fullName>
+        <externalId>false</externalId>
+        <formula>Version__r.Sujet__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Version txt</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Fiche projet</label>
+    <listViews>
+        <fullName>Kerensen_config</fullName>
+        <columns>NAME</columns>
+        <columns>Priorite__c</columns>
+        <columns>Lot__c</columns>
+        <columns>Type__c</columns>
+        <columns>Validee_par_Kerensen__c</columns>
+        <columns>Sujet__c</columns>
+        <columns>Date_limite__c</columns>
+        <columns>Statut__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Charge_J__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Statut__c</field>
+            <operation>notEqual</operation>
+            <value>Fermé,Abandonné</value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operation>notEqual</operation>
+            <value>Version</value>
+        </filters>
+        <filters>
+            <field>Responsable__c</field>
+            <operation>equals</operation>
+            <value>Kerensen</value>
+        </filters>
+        <label>2 - Ouvertes Kerensen</label>
+    </listViews>
+    <listViews>
+        <fullName>X1_Ouvertes_Client</fullName>
+        <columns>NAME</columns>
+        <columns>Priorite__c</columns>
+        <columns>Lot__c</columns>
+        <columns>Type__c</columns>
+        <columns>Validee_par_Kerensen__c</columns>
+        <columns>Sujet__c</columns>
+        <columns>Date_limite__c</columns>
+        <columns>Statut__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Charge_J__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Statut__c</field>
+            <operation>notEqual</operation>
+            <value>Fermé,Abandonné</value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operation>notEqual</operation>
+            <value>Version</value>
+        </filters>
+        <filters>
+            <field>Responsable__c</field>
+            <operation>equals</operation>
+            <value>Client</value>
+        </filters>
+        <label>1 - Ouvertes Client</label>
+    </listViews>
+    <listViews>
+        <fullName>X3_Mes_fiches</fullName>
+        <columns>NAME</columns>
+        <columns>Sujet__c</columns>
+        <columns>Priorite__c</columns>
+        <columns>Type__c</columns>
+        <columns>Lot__c</columns>
+        <columns>Validee_par_Kerensen__c</columns>
+        <columns>Statut__c</columns>
+        <columns>Date_limite__c</columns>
+        <columns>Domaine__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Statut__c</field>
+            <operation>notEqual</operation>
+            <value>Fermé,Abandonné</value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operation>notEqual</operation>
+            <value>Version</value>
+        </filters>
+        <label>3 - Mes fiches ouvertes</label>
+    </listViews>
+    <listViews>
+        <fullName>X4_VERSIONS</fullName>
+        <columns>NAME</columns>
+        <columns>Sujet__c</columns>
+        <columns>Date_en_test__c</columns>
+        <columns>Date_en_prod__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>Version</value>
+        </filters>
+        <label>4 - VERSIONS</label>
+        <language>fr</language>
+    </listViews>
+    <listViews>
+        <fullName>X5_Toutes_les_actions</fullName>
+        <columns>NAME</columns>
+        <columns>Type__c</columns>
+        <columns>Sujet__c</columns>
+        <columns>Statut__c</columns>
+        <columns>Priorite__c</columns>
+        <columns>Date_limite__c</columns>
+        <columns>En_retard__c</columns>
+        <columns>Risque_planning__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Fiche_projet__c.Action</value>
+        </filters>
+        <label>5 - Toutes les actions</label>
+    </listViews>
+    <listViews>
+        <fullName>X5_Toutes_les_fiches</fullName>
+        <columns>NAME</columns>
+        <columns>Type__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Sujet__c</columns>
+        <columns>Statut__c</columns>
+        <columns>Priorite__c</columns>
+        <columns>Date_limite__c</columns>
+        <columns>En_retard__c</columns>
+        <columns>Risque_planning__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>5 - Toutes les fiches</label>
+    </listViews>
+    <nameField>
+        <displayFormat>F-{0000}</displayFormat>
+        <label>Numéro demande</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Fiches projet</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Action</fullName>
+        <active>true</active>
+        <description>Suivi des actions et des demandes</description>
+        <label>Action</label>
+        <picklistValues>
+            <picklist>Domaine__c</picklist>
+            <values>
+                <fullName>Activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CTI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campagne</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chantier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configurateur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contrat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Devis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foyer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opération</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requête</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sécurité</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lot__c</picklist>
+            <values>
+                <fullName>Lot 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priorite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Profils_concernes__c</picklist>
+            <values>
+                <fullName>Profil 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profil 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profil 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Responsable__c</picklist>
+            <values>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kerensen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Statut__c</picklist>
+            <values>
+                <fullName>A préciser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Abandonné</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>En cours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fermé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nouveau</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Réalisé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validée EMLYON</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Statut_specifications__c</picklist>
+            <values>
+                <fullName>A spécifier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spécifications à jour</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Action</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Anomalie</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demande</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Evolution</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Anomalie</fullName>
+        <active>true</active>
+        <description>Suivi des anomalies</description>
+        <label>Anomalie</label>
+        <picklistValues>
+            <picklist>Domaine__c</picklist>
+            <values>
+                <fullName>Activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CTI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campagne</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chantier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configurateur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contrat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Devis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foyer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opération</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requête</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sécurité</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lot__c</picklist>
+            <values>
+                <fullName>Lot 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priorite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Profils_concernes__c</picklist>
+            <values>
+                <fullName>Profil 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profil 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profil 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Responsable__c</picklist>
+            <values>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kerensen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Statut__c</picklist>
+            <values>
+                <fullName>A arbitrer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A préciser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Abandonné</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>En cours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fermé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nouveau</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Réalisé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validée EMLYON</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Statut_specifications__c</picklist>
+            <values>
+                <fullName>A spécifier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spécifications à jour</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Action</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Anomalie</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Demande</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Evolution</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Evolution</fullName>
+        <active>true</active>
+        <description>Suivi des évolutions (solutions std, spécifiques, arbitrage...)</description>
+        <label>Evolution</label>
+        <picklistValues>
+            <picklist>Domaine__c</picklist>
+            <values>
+                <fullName>Activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CTI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campagne</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chantier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configurateur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contrat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Devis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foyer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opération</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requête</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sécurité</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lot__c</picklist>
+            <values>
+                <fullName>Lot 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priorite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Profils_concernes__c</picklist>
+            <values>
+                <fullName>Profil 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profil 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profil 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Responsable__c</picklist>
+            <values>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kerensen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Statut__c</picklist>
+            <values>
+                <fullName>A arbitrer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A préciser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Abandonné</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>En cours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fermé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nouveau</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Réalisé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validée EMLYON</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Statut_specifications__c</picklist>
+            <values>
+                <fullName>A spécifier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spécifications à jour</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Action</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Anomalie</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demande</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Evolution</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Version</fullName>
+        <active>true</active>
+        <description>Organisation des fiches par montée de version</description>
+        <label>Version</label>
+        <picklistValues>
+            <picklist>Domaine__c</picklist>
+            <values>
+                <fullName>Activité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CTI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campagne</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chantier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contrat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Devis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foyer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interface</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opération</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requête</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sécurité</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lot__c</picklist>
+            <values>
+                <fullName>Lot 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lot 5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priorite__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Profils_concernes__c</picklist>
+            <values>
+                <fullName>Profil 1</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Responsable__c</picklist>
+            <values>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kerensen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Statut__c</picklist>
+            <values>
+                <fullName>A arbitrer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A préciser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Abandonné</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>En cours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fermé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nouveau</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Réalisé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validée EMLYON</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Statut_specifications__c</picklist>
+            <values>
+                <fullName>A spécifier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spécifications à jour</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Version</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sujet__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Priorite__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Date_limite__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Statut__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.FIRST_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.LAST_NAME</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Sujet__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Priorite__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Date_limite__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Statut__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sujet__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Priorite__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Date_limite__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Statut__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OWNER.FIRST_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OWNER.LAST_NAME</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Charge_et_date_test_a_renseigner</fullName>
+        <active>false</active>
+        <description>Veuillez renseigner la charge et la date en test</description>
+        <errorConditionFormula>AND( $User.ByPassValidationRule__c =False,
+TEXT( Responsable__c ) = &quot;Kerensen&quot; &amp;&amp; 
+(TEXT( Date_en_test__c ) = &quot;&quot; ||  TEXT(Charge_J__c) = &quot;&quot;) &amp;&amp;
+( $User.LastName = &quot;CONFIG&quot; || 
+ $User.LastName = &quot;DEVELOPPEMENT&quot; || 
+ $User.LastName = &quot;DEV (MAROC)&quot; || 
+ $User.LastName = &quot;OMRAN&quot; || 
+ $User.LastName = &quot;LE GRAND&quot;))</errorConditionFormula>
+        <errorDisplayField>Date_en_test__c</errorDisplayField>
+        <errorMessage>Veuillez renseigner la charge et la date en test</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Date_limite_a_renseigner</fullName>
+        <active>false</active>
+        <description>Veuillez renseigner la date limite</description>
+        <errorConditionFormula>TEXT(Type__c) &lt;&gt; &quot;Version&quot; &amp;&amp; TEXT( Responsable__c ) = &quot;K par K&quot; &amp;&amp; TEXT(Date_limite__c) = &quot;&quot;</errorConditionFormula>
+        <errorDisplayField>Date_limite__c</errorDisplayField>
+        <errorMessage>Veuillez renseigner la date limite</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Date_test_non_modifiable_par_K_par_K</fullName>
+        <active>false</active>
+        <description>La date en test n&apos;est modifiable que par les équipes de Kerensen</description>
+        <errorConditionFormula>ISCHANGED( Date_en_test__c ) &amp;&amp;  $User.CompanyName = &quot;K par K&quot;</errorConditionFormula>
+        <errorDisplayField>Date_en_test__c</errorDisplayField>
+        <errorMessage>La date en test n&apos;est modifiable que par les équipes de Kerensen</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Modification_config</fullName>
+        <active>false</active>
+        <description>Si le statut est réalisé, il faut indiquer les modifications</description>
+        <errorConditionFormula>ISPICKVAL( Statut__c, &quot;Réalisé&quot;) &amp;&amp; ( Pas_de_modification__c = False &amp;&amp; Liste_des_modifications__c = &quot;&quot;)</errorConditionFormula>
+        <errorDisplayField>Pas_de_modification__c</errorDisplayField>
+        <errorMessage>Veuillez renseigner l&apos;un des 2 champs &quot;Pas de modification&quot; ou &quot;Liste des modifications&quot;</errorMessage>
+    </validationRules>
+</CustomObject>

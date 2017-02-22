@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$StageName</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Probability</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r.OpportunityLineItems$Statut_candidature__c</field>
+    </columns>
+    <description>Liste des noms dont la taille est inférieure à 2 caractères ou qui comportent un @</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Contact$Nb_car_Nom__c</column>
+            <operator>lessThan</operator>
+            <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$LastName</column>
+            <operator>contains</operator>
+            <value>@</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Anomalies NOM contact</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_et_opportunit_s_et_produits__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact$LastName</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$Ann_e_donation__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

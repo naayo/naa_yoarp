@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>Account$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Name</field>
+    </columns>
+    <description>Comptes verseurs de Taxe qui auraient été modifiés au cours des 7 derniers jours</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Opportunities$RecordType</column>
+            <operator>equals</operator>
+            <value>Opportunity.Taxe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Opportunities$StageName</column>
+            <operator>equals</operator>
+            <value>Conclu</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Nb_jours_depuis_Modification_Compte__c</column>
+            <operator>lessOrEqual</operator>
+            <value>7</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Emilie WILSON</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Comptes Verseurs TA modifiés_OPP</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_avec_comptes_et_opportunit_s_comptes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

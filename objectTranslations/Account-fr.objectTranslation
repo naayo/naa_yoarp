@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Chiffre d&apos;affaires annuel (€)</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>annual_revenue_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Effectif réel</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>employees_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Adresse Cour Pays WF --></label>
+        <name>Adresse_Cour_Pays_WF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse courante: Etat --></label>
+        <name>Adresse_Etat1__c</name>
+        <relationshipLabel><!-- Comptes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Adresse Etat WF --></label>
+        <name>Adresse_Etat_WF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse Facturation: Rue --></label>
+        <name>Adresse_Facturation_Rue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse Pays WF --></label>
+        <name>Adresse_Pays_WF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse courante: Rue --></label>
+        <name>Adresse_Rue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse courante: Ville --></label>
+        <name>Adresse_Ville__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse courante concaténée --></label>
+        <name>Adresse_courante_concatenee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse facturation: Code Postal --></label>
+        <name>Adresse_facturation_Code_Postal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse facturation: Etat --></label>
+        <name>Adresse_facturation_Etat1__c</name>
+        <relationshipLabel><!-- Comptes (Adresse facturation: Etat) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Adresse facturation: Ligne 2 --></label>
+        <name>Adresse_facturation_Ligne_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse facturation: Ligne 3 --></label>
+        <name>Adresse_facturation_Ligne_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse facturation: NPAI --></label>
+        <name>Adresse_facturation_NPAI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse facturation: Pays --></label>
+        <name>Adresse_facturation_Pays__c</name>
+        <relationshipLabel><!-- Comptes (Adresse facturation: Pays) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Adresse facturation: Région --></label>
+        <name>Adresse_facturation_R_gion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse facturation: département --></label>
+        <name>Adresse_facturation_d_partement__c</name>
+        <relationshipLabel><!-- Comptes (Adresse facturation: département) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Adresse facturation: ville --></label>
+        <name>Adresse_facturation_ville__c</name>
+    </fields>
+    <fields>
+        <label><!-- Année de validité --></label>
+        <name>Annee_validite__c</name>
+        <picklistValues>
+            <masterLabel>CPT-AVA10</masterLabel>
+            <translation><!-- CPT-AVA10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT-AVA20</masterLabel>
+            <translation><!-- CPT-AVA20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT-AVA30</masterLabel>
+            <translation><!-- CPT-AVA30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT-AVA40</masterLabel>
+            <translation><!-- CPT-AVA40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT-AVA50</masterLabel>
+            <translation><!-- CPT-AVA50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT-AVA60</masterLabel>
+            <translation><!-- CPT-AVA60 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CA EML 3 dernières années --></label>
+        <name>CA_EML_3_derni_res_ann_es__c</name>
+    </fields>
+    <fields>
+        <label><!-- CA EML année en cours --></label>
+        <name>CA_EML_ann_e_en_cours__c</name>
+    </fields>
+    <fields>
+        <label><!-- CA Export (€) --></label>
+        <name>CA_Export__c</name>
+    </fields>
+    <fields>
+        <label><!-- CA EML réalisé (€) --></label>
+        <name>CA_Formation_continue__c</name>
+    </fields>
+    <fields>
+        <label><!-- dont CA Inter 3 dernières années --></label>
+        <name>CA_Inter_3_derni_res_ann_es__c</name>
+    </fields>
+    <fields>
+        <label><!-- dont CA Inter année en cours --></label>
+        <name>CA_Inter_ann_e_en_cours__c</name>
+    </fields>
+    <fields>
+        <label><!-- dont CA Intra 3 dernières années --></label>
+        <name>CA_Intra_3_derni_res_ann_es__c</name>
+    </fields>
+    <fields>
+        <label><!-- dont CA Intra année en cours --></label>
+        <name>CA_Intra_ann_e_en_cours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cessation d&apos;activité --></label>
+        <name>Cessation_d_activit__c</name>
+    </fields>
+    <fields>
+        <label><!-- NAF --></label>
+        <name>CodeAPE__c</name>
+        <relationshipLabel><!-- Comptes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NAF Activité réelle --></label>
+        <name>CodeNAFProche__c</name>
+        <relationshipLabel><!-- Comptes (NAF) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Adresse courante: Pays --></label>
+        <name>CodePays__c</name>
+        <relationshipLabel><!-- Comptes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Code_Compte --></label>
+        <name>Code_Compte__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code NAF --></label>
+        <name>Code_NAF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code NAICS --></label>
+        <name>Code_NAICS__c</name>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21</masterLabel>
+            <translation><!-- 21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22</masterLabel>
+            <translation><!-- 22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23</masterLabel>
+            <translation><!-- 23 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31-33</masterLabel>
+            <translation><!-- 31-33 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>42</masterLabel>
+            <translation><!-- 42 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>44-45</masterLabel>
+            <translation><!-- 44-45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48-49</masterLabel>
+            <translation><!-- 48-49 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>51</masterLabel>
+            <translation><!-- 51 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>52</masterLabel>
+            <translation><!-- 52 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>53</masterLabel>
+            <translation><!-- 53 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>54</masterLabel>
+            <translation><!-- 54 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>55</masterLabel>
+            <translation><!-- 55 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>56</masterLabel>
+            <translation><!-- 56 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>61</masterLabel>
+            <translation><!-- 61 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>62</masterLabel>
+            <translation><!-- 62 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>71</masterLabel>
+            <translation><!-- 71 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>72</masterLabel>
+            <translation><!-- 72 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>81</masterLabel>
+            <translation><!-- 81 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>92</masterLabel>
+            <translation><!-- 92 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Adresse courante: Code Postal --></label>
+        <name>Code_Postal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code tiers société --></label>
+        <name>Code_tiers_societe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commentaire Taxe --></label>
+        <name>Commentaire_Taxe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compte Groupe --></label>
+        <name>Compte_Groupe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compte principal Rapport --></label>
+        <name>Compte_Principal_Rapport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compte à valider --></label>
+        <name>Compte_a_valider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compte principal taxe / fundraising --></label>
+        <name>Compte_consolidation_taxe_fundraising__c</name>
+        <relationshipLabel><!-- Comptes (Compte consolidation taxe / fundraising) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Compte principal ID RAPPORT --></label>
+        <name>Compte_principal_ID_RAPPORT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Principal Fundraising --></label>
+        <name>Contact_Principal_Fundraising__c</name>
+        <relationshipLabel><!-- Comptes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contrat cadre --></label>
+        <name>Contrat_cadre__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pays --></label>
+        <name>CountryName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumul CA Intra --></label>
+        <name>Cumul_Intra__c</name>
+    </fields>
+    <fields>
+        <label><!-- Département pour WF --></label>
+        <name>D_partement_pour_WF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Loader Util --></label>
+        <name>Data_Loader_Util__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de création de la société --></label>
+        <name>Date_de_cr_ation_de_la_soci_t__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse courante: Département --></label>
+        <name>Departement__c</name>
+        <relationshipLabel><!-- Comptes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dernier motif de refus --></label>
+        <name>Dernier_motif_de_refus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partenaire B2B --></label>
+        <name>Donateur__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effectif Cadre Groupe --></label>
+        <name>Effectif_Cadre__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effectif Groupe --></label>
+        <name>Effectif_Groupe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effectif sur la France Groupe --></label>
+        <name>Effectif_sur_la_France__c</name>
+    </fields>
+    <fields>
+        <label><!-- Embauche des diplômés --></label>
+        <name>Embauche_des_dipl_m_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entité gérant la taxe dans un groupe --></label>
+        <name>Entit_g_rant_la_taxe_dans_un_groupe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entreprise actuelle --></label>
+        <name>Entreprise_actuelle__c</name>
+        <relationshipLabel><!-- Contacts Individuels --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Entreprise verseuse année actuelle --></label>
+        <name>Entreprise_verseuse_ann_e_actuelle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est un OCTA --></label>
+        <name>Est_un_OCTA__c</name>
+    </fields>
+    <fields>
+        <label><!-- For Mass Update --></label>
+        <name>For_Mass_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID FEG --></label>
+        <name>ID_FEG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indice de proximité --></label>
+        <name>Indice_de_proximit__c</name>
+        <picklistValues>
+            <masterLabel>Crayon</masterLabel>
+            <translation><!-- Crayon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incity</masterLabel>
+            <translation><!-- Incity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Skyline</masterLabel>
+            <translation><!-- Non Skyline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oxygène</masterLabel>
+            <translation><!-- Oxygène --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intérets mécénat --></label>
+        <name>Int_r_t_M_cenat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intérêts sponsoring --></label>
+        <name>Int_r_ts_sponsoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Libellé du groupe --></label>
+        <name>Libell_du_groupe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse courante: Ligne 3 --></label>
+        <name>Ligne_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Méthode de saisie des Offres --></label>
+        <name>M_thode_de_saisie_des_Offres_sur_la_plat__c</name>
+        <picklistValues>
+            <masterLabel>autre agrégateur</masterLabel>
+            <translation><!-- autre agrégateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iQuesta</masterLabel>
+            <translation><!-- iQuesta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>manuel</masterLabel>
+            <translation><!-- manuel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>mutliposting</masterLabel>
+            <translation><!-- mutliposting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Adresse courante: NPAI --></label>
+        <name>NPAI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Numéro TVA intra communautaire --></help>
+        <label><!-- N° TVA intra com --></label>
+        <name>N_TVA_intra_com__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nature d’activité / Forme juridique --></label>
+        <name>Nature_d_activit_Forme_juridique__c</name>
+        <picklistValues>
+            <masterLabel>Association</masterLabel>
+            <translation><!-- Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entreprise Familiale</masterLabel>
+            <translation><!-- Entreprise Familiale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fondation d’entreprise</masterLabel>
+            <translation><!-- Fondation d’entreprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Privée</masterLabel>
+            <translation><!-- Privée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Publique</masterLabel>
+            <translation><!-- Publique --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Nb car Code Postal --></label>
+        <name>Nb_car_Code_Postal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nb jours depuis Création Compte --></label>
+        <name>Nb_jours_depuis_Creation_Compte__c</name>
+    </fields>
+    <fields>
+        <help><!-- Restituer le nb de jours qui s&apos;est écoulé depuis la date de dernière modification du compte --></help>
+        <label><!-- Nb jours depuis Modification Compte --></label>
+        <name>Nb_jours_depuis_Modification_Compte__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ne pas solliciter pour la taxe --></label>
+        <name>Ne_pas_solliciter_pour_la_taxe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Niveau de partenariat groupe --></label>
+        <name>Niveau_de_partenariat_groupe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nom commercial --></label>
+        <name>Nom_commercial__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre opportunités du compte --></label>
+        <name>Nombre_opportunites__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offre Employeurs --></label>
+        <name>Offre__c</name>
+        <picklistValues>
+            <masterLabel>Careers Forum</masterLabel>
+            <translation><!-- Careers Forum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conférence Carrière Etudiants</masterLabel>
+            <translation><!-- Conférence Carrière Etudiants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Discovery Session</masterLabel>
+            <translation><!-- Corporate Discovery Session --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entrepreneurial Leadership Project</masterLabel>
+            <translation><!-- Entrepreneurial Leadership Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>European Human Resources Management</masterLabel>
+            <translation><!-- European Human Resources Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expert Panel</masterLabel>
+            <translation><!-- Expert Panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Careers Day</masterLabel>
+            <translation><!-- Finance Careers Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand Idea</masterLabel>
+            <translation><!-- Grand Idea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Company Project</masterLabel>
+            <translation><!-- In Company Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luxury Careers Week</masterLabel>
+            <translation><!-- Luxury Careers Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MBA Lounge</masterLabel>
+            <translation><!-- MBA Lounge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mock interview</masterLabel>
+            <translation><!-- Mock interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Careers Days</masterLabel>
+            <translation><!-- Online Careers Days --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Programme de reconnaissance --></label>
+        <name>Programme_de_reconnaissance__c</name>
+        <picklistValues>
+            <masterLabel>B2B_Annapura</masterLabel>
+            <translation><!-- B2B_Annapura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Cercle du Président</masterLabel>
+            <translation><!-- B2B_Cercle du Président --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Contrepartie sur-mesure</masterLabel>
+            <translation><!-- B2B_Contrepartie sur-mesure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Everest</masterLabel>
+            <translation><!-- B2B_Everest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_K2</masterLabel>
+            <translation><!-- B2B_K2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Kilimandjaro</masterLabel>
+            <translation><!-- B2B_Kilimandjaro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_McKinley</masterLabel>
+            <translation><!-- B2B_McKinley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Mont Blanc</masterLabel>
+            <translation><!-- B2B_Mont Blanc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Annapura</masterLabel>
+            <translation><!-- B2C_Annapura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Cercle du Président</masterLabel>
+            <translation><!-- B2C_Cercle du Président --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Contrepartie sur-mesure</masterLabel>
+            <translation><!-- B2C_Contrepartie sur-mesure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Everest</masterLabel>
+            <translation><!-- B2C_Everest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_K2</masterLabel>
+            <translation><!-- B2C_K2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Kilimandjaro</masterLabel>
+            <translation><!-- B2C_Kilimandjaro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_McKinley</masterLabel>
+            <translation><!-- B2C_McKinley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Mont Blanc</masterLabel>
+            <translation><!-- B2C_Mont Blanc --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proportion cadre Groupe --></label>
+        <name>Proportion_cadre__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect Sponsoring --></label>
+        <name>Prospect_Sponsoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect donateur --></label>
+        <name>Prospect_donateur__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse courante: Région --></label>
+        <name>R_gion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recu ERP --></label>
+        <name>Recu_ERP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remise interentreprise --></label>
+        <name>Remise_interentreprise__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reprise Lot 2015 --></label>
+        <name>Reprise_Lot_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse courante: Ligne 2 --></label>
+        <name>Rue_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Override DupeCatcher --></label>
+        <name>SFSSDupeCatcher__Override_DupeCatcher__c</name>
+    </fields>
+    <fields>
+        <label><!-- SIREN --></label>
+        <name>SIREN__c</name>
+    </fields>
+    <fields>
+        <label><!-- SIRET --></label>
+        <name>SIRET__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scoring --></label>
+        <name>Scoring__c</name>
+        <picklistValues>
+            <masterLabel>CPT-SCO10</masterLabel>
+            <translation><!-- CPT-SCO10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT-SCO20</masterLabel>
+            <translation><!-- CPT-SCO20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT-SCO30</masterLabel>
+            <translation><!-- CPT-SCO30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT-SCO40</masterLabel>
+            <translation><!-- CPT-SCO40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT-SCO50</masterLabel>
+            <translation><!-- CPT-SCO50 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Secteur d&apos;activité --></label>
+        <name>Secteur_d_activit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secteur d&apos;activité proche --></label>
+        <name>Secteur_d_activit_proche__c</name>
+    </fields>
+    <fields>
+        <label><!-- Société créée par un diplômé --></label>
+        <name>Soci_t_cr_e_par_un_dipl_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total généré don --></label>
+        <name>Somme_Montant_Don__c</name>
+    </fields>
+    <fields>
+        <label><!-- Somme des versements Année N-1 --></label>
+        <name>Somme_des_versements_Annee_N_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Somme versement année en cours --></label>
+        <name>Somme_versement_annee_en_cours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ce champ somme l&apos;ensemble des montants des opportunités liées à ce compte --></help>
+        <label><!-- Versement compte N --></label>
+        <name>Total_opportunit_s_li_es__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tranche d&apos;effectif --></label>
+        <name>Tranche_d_effectif__c</name>
+        <picklistValues>
+            <masterLabel>10 000 et plus</masterLabel>
+            <translation><!-- 10 000 et plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 0 à 9</masterLabel>
+            <translation><!-- De 0 à 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 10 à 49</masterLabel>
+            <translation><!-- De 10 à 49 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 1000 à 1999</masterLabel>
+            <translation><!-- De 1000 à 1999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 2000 à 4999</masterLabel>
+            <translation><!-- De 2000 à 4999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 250 à 499</masterLabel>
+            <translation><!-- De 250 à 499 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 50 à 249</masterLabel>
+            <translation><!-- De 50 à 249 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 500 à 999</masterLabel>
+            <translation><!-- De 500 à 999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 5000 à 9999</masterLabel>
+            <translation><!-- De 5000 à 9999 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tranche de CA / Tranche de CA entité --></label>
+        <name>Tranche_de_CA_Tranche_de_CA_entit__c</name>
+        <picklistValues>
+            <masterLabel>200 M€ ou plus</masterLabel>
+            <translation><!-- 200 M€ ou plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 0,5 a moins de 1 M€</masterLabel>
+            <translation><!-- De 0,5 a moins de 1 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 1 M€ a moins de 2 M€</masterLabel>
+            <translation><!-- De 1 M€ a moins de 2 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 10 M€ a moins de 20 M€</masterLabel>
+            <translation><!-- De 10 M€ a moins de 20 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 100 M€ a moins de 200 M€</masterLabel>
+            <translation><!-- De 100 M€ a moins de 200 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 2 M€ a moins de 5 M€</masterLabel>
+            <translation><!-- De 2 M€ a moins de 5 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 20 M€ a moins de 50 M€</masterLabel>
+            <translation><!-- De 20 M€ a moins de 50 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 5 M€ a moins de 10 M€</masterLabel>
+            <translation><!-- De 5 M€ a moins de 10 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 50 M€ a moins de 100 M€</masterLabel>
+            <translation><!-- De 50 M€ a moins de 100 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moins de 0,5 million d&apos;euros</masterLabel>
+            <translation><!-- Moins de 0,5 million d&apos;euros --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tranche de CA du groupe --></label>
+        <name>Tranche_de_CA_du_groupe__c</name>
+        <picklistValues>
+            <masterLabel>200 M€ ou plus</masterLabel>
+            <translation><!-- 200 M€ ou plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 0,5 a moins de 1 M€</masterLabel>
+            <translation><!-- De 0,5 a moins de 1 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 1 M€ a moins de 2 M€</masterLabel>
+            <translation><!-- De 1 M€ a moins de 2 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 10 M€ a moins de 20 M€</masterLabel>
+            <translation><!-- De 10 M€ a moins de 20 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 100 M€ a moins de 200 M€</masterLabel>
+            <translation><!-- De 100 M€ a moins de 200 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 2 M€ a moins de 5 M€</masterLabel>
+            <translation><!-- De 2 M€ a moins de 5 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 20 M€ a moins de 50 M€</masterLabel>
+            <translation><!-- De 20 M€ a moins de 50 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 5 M€ a moins de 10 M€</masterLabel>
+            <translation><!-- De 5 M€ a moins de 10 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 50 M€ a moins de 100 M€</masterLabel>
+            <translation><!-- De 50 M€ a moins de 100 M€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moins de 0,5 million d&apos;euros</masterLabel>
+            <translation><!-- Moins de 0,5 million d&apos;euros --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tranche effectif groupe --></label>
+        <name>Tranche_effectif_groupe__c</name>
+        <picklistValues>
+            <masterLabel>10 000 et plus</masterLabel>
+            <translation><!-- 10 000 et plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 0 à 9</masterLabel>
+            <translation><!-- De 0 à 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 10 à 49</masterLabel>
+            <translation><!-- De 10 à 49 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 1000 à 1999</masterLabel>
+            <translation><!-- De 1000 à 1999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 2000 à 4999</masterLabel>
+            <translation><!-- De 2000 à 4999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 250 à 499</masterLabel>
+            <translation><!-- De 250 à 499 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 50 à 249</masterLabel>
+            <translation><!-- De 50 à 249 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 500 à 999</masterLabel>
+            <translation><!-- De 500 à 999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 5000 à 9999</masterLabel>
+            <translation><!-- De 5000 à 9999 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Niveau de partenariat --></label>
+        <name>Tranche_verseur__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E</masterLabel>
+            <translation><!-- E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H</masterLabel>
+            <translation><!-- H --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type d&apos;établissement --></label>
+        <name>Type_d_tablissement__c</name>
+        <picklistValues>
+            <masterLabel>Direction Régionale</masterLabel>
+            <translation><!-- Direction Régionale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etablissement Secondaire</masterLabel>
+            <translation><!-- Etablissement Secondaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holding-Maison Mère Groupe</masterLabel>
+            <translation><!-- Holding-Maison Mère Groupe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Siège</masterLabel>
+            <translation><!-- Siège --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Siège Europe</masterLabel>
+            <translation><!-- Siège Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Siège France</masterLabel>
+            <translation><!-- Siège France --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Siège Monde</masterLabel>
+            <translation><!-- Siège Monde --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Count Compte --></label>
+        <name>Util_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Versements groupe N --></label>
+        <name>Versement_consolid_par_gorupe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Versements compte N-1 --></label>
+        <name>Versements_compte_N_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Versement taxe du compte sur l&apos;exercice N-1 --></help>
+        <label><!-- Versements compte N-1 (abandonné) --></label>
+        <name>Versements_compte_N_1_old__c</name>
+    </fields>
+    <fields>
+        <label><!-- Versements compte N-2 --></label>
+        <name>Versements_compte_N_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Versement taxe du compte sur l&apos;exercice N-2 --></help>
+        <label><!-- Versements compte N-2 (abandonné) --></label>
+        <name>Versements_compte_N_2_old__c</name>
+    </fields>
+    <fields>
+        <help><!-- Versements Consolidés Groupe Exercice N-1 --></help>
+        <label><!-- Versements groupe N-1 --></label>
+        <name>Versements_groupe_N_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Versements Consolidés Groupe Exercice N-2 --></help>
+        <label><!-- Versements groupe N-2 --></label>
+        <name>Versements_groupe_N_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone Commentaire Fundraising --></label>
+        <name>Zone_Commentaire_Fundraising__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type Cabinets référents --></label>
+        <name>type_Cabinets_r_f_rents__c</name>
+        <picklistValues>
+            <masterLabel>Associations</masterLabel>
+            <translation><!-- Associations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coaching</masterLabel>
+            <translation><!-- Coaching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outplacement</masterLabel>
+            <translation><!-- Outplacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RH</masterLabel>
+            <translation><!-- RH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recrutement</masterLabel>
+            <translation><!-- Recrutement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Id Salesforce sur 18 caractères --></help>
+        <label><!-- x18caracteres --></label>
+        <name>x18caracteres__c</name>
+    </fields>
+    <layouts>
+        <layout>Présentation Relations Employeur</layout>
+        <sections>
+            <label><!-- Adresse Courante --></label>
+            <section>Adresse Courante</section>
+        </sections>
+        <sections>
+            <label><!-- Adresse Facturation --></label>
+            <section>Adresse Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Employabilité --></label>
+            <section>Employabilité</section>
+        </sections>
+        <sections>
+            <label><!-- Formation continue --></label>
+            <section>Formation continue</section>
+        </sections>
+        <sections>
+            <label><!-- Informations supplémentaires --></label>
+            <section>Informations supplémentaires</section>
+        </sections>
+        <sections>
+            <label><!-- OCTA --></label>
+            <section>OCTA</section>
+        </sections>
+        <sections>
+            <label><!-- Partenariat fundraising --></label>
+            <section>Partenariat fundraising</section>
+        </sections>
+        <sections>
+            <label><!-- Taxe d&apos;apprentissage --></label>
+            <section>Taxe d&apos;apprentissage</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation du compte</layout>
+        <sections>
+            <label><!-- Adresse Courante --></label>
+            <section>Adresse Courante</section>
+        </sections>
+        <sections>
+            <label><!-- Adresse Facturation --></label>
+            <section>Adresse Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Employabilité --></label>
+            <section>Employabilité</section>
+        </sections>
+        <sections>
+            <label><!-- Formation continue --></label>
+            <section>Formation continue</section>
+        </sections>
+        <sections>
+            <label><!-- Informations supplémentaires --></label>
+            <section>Informations supplémentaires</section>
+        </sections>
+        <sections>
+            <label><!-- OCTA --></label>
+            <section>OCTA</section>
+        </sections>
+        <sections>
+            <label><!-- Partenariat fundraising --></label>
+            <section>Partenariat fundraising</section>
+        </sections>
+        <sections>
+            <label><!-- Taxe d&apos;apprentissage --></label>
+            <section>Taxe d&apos;apprentissage</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentationde page EML</layout>
+        <sections>
+            <label><!-- Adresse Courante --></label>
+            <section>Adresse Courante</section>
+        </sections>
+        <sections>
+            <label><!-- Adresse Facturation --></label>
+            <section>Adresse Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Formation continue --></label>
+            <section>Formation continue</section>
+        </sections>
+        <sections>
+            <label><!-- Informations supplémentaires --></label>
+            <section>Informations supplémentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Partenariat fundraising --></label>
+            <section>Partenariat fundraising</section>
+        </sections>
+        <sections>
+            <label><!-- Taxe d&apos;apprentissage --></label>
+            <section>Taxe d&apos;apprentissage</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Business Account --></label>
+        <name>Business_Account</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Le champs Etat est obligatoire --></errorMessage>
+        <name>Etat_ObligatoireCourante</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champs Etat doit être obligatoire --></errorMessage>
+        <name>Etat_ObligatoireFacturation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ Etat est obligatoire --></errorMessage>
+        <name>RG_Compte01_Etat_ObligatoireCourante</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champs Etat doit être obligatoire --></errorMessage>
+        <name>RG_Compte02_Etat_ObligatoireFacturation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vérifiez les champs Région et  Etat dans l&apos;adresse de facturation. --></errorMessage>
+        <name>RG_Compte03_RegionVsEtat_Facturation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vérifiez les informations saisies sur ce champ --></errorMessage>
+        <name>RG_Compte04_SIRET_Controle_integrite</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vérifiez les champs Région et Etat dans l&apos;adresse courante --></errorMessage>
+        <name>RG_Compte05_RegionVsEtat_Courante</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ Pays est obligatoire. --></errorMessage>
+        <name>RG_Compte06_Pays_ObligatoireCourante</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ Pays est obligatoire --></errorMessage>
+        <name>RG_Compte07_Pays_ObligatoireFacturation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vérifiez les champs NAF ou Secteur d&apos;activité --></errorMessage>
+        <name>RG_Compte08_NAF_Secteur_dac_Obl</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ Ville est obligatoire --></errorMessage>
+        <name>RG_Compte09_Ville_Obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- interdiction de créer un compte &quot;Formation Initiale&quot;, &quot;Sans organisation connue&quot;, &quot;Transition professionnelle&quot; --></errorMessage>
+        <name>RG_Compte_CreationCompteFictif</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Il est impossible de modifier le nom de compte --></errorMessage>
+        <name>RG_Compte_NomDuCompte</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Il est impossible de modifier le nom de compte en Formation Initiale ou Sans organisation connue ou Transition professionnelle --></errorMessage>
+        <name>RG_Compte_NomDuCompteBis</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vérifiez les champs Région et Etat --></errorMessage>
+        <name>RegionVsEtat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vérifiez les informations saisies sur ce champ --></errorMessage>
+        <name>SIRET_Controle_integrite</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Changement_de_seuil_B2B</name>
+        <subject><!-- Changement de seuil B2B --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

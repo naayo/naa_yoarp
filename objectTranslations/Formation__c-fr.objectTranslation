@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Formation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Formations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Commentaire --></label>
+        <name>Commentaire__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Formations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Etablissement --></label>
+        <name>Etablissement__c</name>
+        <relationshipLabel><!-- Formations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Numero de Formation --></label>
+        <name>Numero_de_Formation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Titre --></label>
+        <name>Titre__c</name>
+        <relationshipLabel><!-- Formations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type de formation --></label>
+        <name>Type_de_formation__c</name>
+        <picklistValues>
+            <masterLabel>Antérieure</masterLabel>
+            <translation><!-- Antérieure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postérieure</masterLabel>
+            <translation><!-- Postérieure --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

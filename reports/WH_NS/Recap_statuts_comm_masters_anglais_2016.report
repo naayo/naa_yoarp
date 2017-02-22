@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Adresse_Email_Personnelle__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Date_de_cr_ation_contact__c</field>
+    </columns>
+    <description>Récap statuts canel par statuts commerciaux pour masters.</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunites__r.OpportunityLineItems$PricebookEntry.Product2.ProductCode</column>
+            <operator>equals</operator>
+            <value>APA1,SAI,ENSC,EMM,GEP,MMML,SIM,IHM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Exercice__c</column>
+            <operator>equals</operator>
+            <value>2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$StageName</column>
+            <operator>equals</operator>
+            <value>Intéressé par,Prospect report,Prospect qualifié,Prospect probable,Prospect chaud,Candidat,Admis,Pré inscrit,Inscrit,Non actif,Intérêt Supplémentaire,A (ré)orienter,Clos (Perdu)</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Opportunites__r$StageName</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Opportunites__r$Statut_Canel__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Opportunites__r$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Recap statuts masters 2016</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_et_opportunit_s_et_produits__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

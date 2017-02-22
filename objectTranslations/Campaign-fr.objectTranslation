@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- BU --></label>
+        <name>BU__c</name>
+        <picklistValues>
+            <masterLabel>AMP</masterLabel>
+            <translation><!-- AMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communication  Corporate</masterLabel>
+            <translation><!-- Communication  Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DUA</masterLabel>
+            <translation><!-- DUA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMLYON FOREVER</masterLabel>
+            <translation><!-- EMLYON FOREVER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employabilité</masterLabel>
+            <translation><!-- Employabilité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Mastères</masterLabel>
+            <translation><!-- Executive Mastères --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fondation</masterLabel>
+            <translation><!-- Fondation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Formation Initiale</masterLabel>
+            <translation><!-- Formation Initiale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intra</masterLabel>
+            <translation><!-- Intra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MBA</masterLabel>
+            <translation><!-- MBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PGM</masterLabel>
+            <translation><!-- PGM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prog. Courts</masterLabel>
+            <translation><!-- Prog. Courts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projets Partenariats</masterLabel>
+            <translation><!-- Projets Partenariats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxe</masterLabel>
+            <translation><!-- Taxe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Canal de communication sortant --></label>
+        <name>Canal_de_communication_sortant__c</name>
+        <picklistValues>
+            <masterLabel>Courrier</masterLabel>
+            <translation><!-- Courrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réseaux sociaux</masterLabel>
+            <translation><!-- Réseaux sociaux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMS</masterLabel>
+            <translation><!-- SMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Téléphone</masterLabel>
+            <translation><!-- Téléphone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Catégorie --></label>
+        <name>Cat_gorie__c</name>
+        <picklistValues>
+            <masterLabel>Information Corporate</masterLabel>
+            <translation><!-- Information Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information programmes</masterLabel>
+            <translation><!-- Information programmes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invitation événements</masterLabel>
+            <translation><!-- Invitation événements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotion commerciale</masterLabel>
+            <translation><!-- Promotion commerciale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réunion d&apos;information</masterLabel>
+            <translation><!-- Réunion d&apos;information --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dédoublonage effectué --></label>
+        <name>Dedoublonage_effectue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exercice --></label>
+        <name>Exercice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lieu --></label>
+        <name>Lieu__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membres net de la campagne --></label>
+        <name>Membres_net_de_la_campagne__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priorité dédoublonnage --></label>
+        <name>Priorit_dedoublonnage__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reprise LOT 2015 --></label>
+        <name>Reprise_LOT_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taux d&apos;ouverture --></label>
+        <name>Taux_d_ouverture__c</name>
+    </fields>
+    <fields>
+        <help>Cocher ce champ puis enregistrer afin d&apos;activer la connexion à Inxmail Professional</help>
+        <label><!-- Connect with Inxmail Professional --></label>
+        <name>inx__connect_with_Inxmail__c</name>
+    </fields>
+    <fields>
+        <help>Affiche l&apos;état de connexion avec Inxmail Professional</help>
+        <label><!-- Connection Status --></label>
+        <name>inx__connection_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Connection Status Number --></label>
+        <name>inx__connection_status_number__c</name>
+    </fields>
+    <fields>
+        <help>Cocher ce champ pour supprimer la campagne ainsi que l&apos;ensemble de ses membres</help>
+        <label><!-- Delete Campaign --></label>
+        <name>inx__deletecampaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- E-Mail is attached to Campaign --></label>
+        <name>inx__has_mail_attachment__c</name>
+    </fields>
+    <fields>
+        <help>Cocher ce champ puis enregistrer afin de rajouter, a posteriori, des membres à la campagne</help>
+        <label><!-- Synchronise additional campaign members --></label>
+        <name>inx__keep_in_sync__c</name>
+    </fields>
+    <fields>
+        <help>Cocher ce champ afin d&apos;importer en tant que leads les destinataires présents dans Inxmail Professional</help>
+        <label><!-- Can Generate Leads --></label>
+        <name>inx__leadcampaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- List ID --></label>
+        <name>inx__list_id__c</name>
+    </fields>
+    <fields>
+        <help>Joindre le mailing HTML ou Texte à la campagne</help>
+        <label><!-- Attach Mailing To Campaign --></label>
+        <name>inx__mailcontent__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de destinataires pour lesquels le message a abouti</help>
+        <label><!-- Net Campaign Members --></label>
+        <name>inx__net_members__c</name>
+    </fields>
+    <fields>
+        <help>Afficher le taux d&apos;ouverture de la campagne</help>
+        <label><!-- Opening Rate --></label>
+        <name>inx__opening_rate__c</name>
+    </fields>
+    <fields>
+        <help>Indiquer dans ce champ l&apos;adresse email de l&apos;expéditeur</help>
+        <label><!-- Sender Address --></label>
+        <name>inx__sender_address__c</name>
+    </fields>
+    <fields>
+        <help>Activez l’option &quot;Mise à jour des données des Contacts/Pistes&quot; si vous souhaitez que les données de vos contacts/pistes soient actualisées dans Inxmail Professional</help>
+        <label><!-- Synchronise updated contact/lead data --></label>
+        <name>inx__update_data__c</name>
+    </fields>
+    <fields>
+        <label><!-- x18caracteres --></label>
+        <name>x18caracteres__c</name>
+    </fields>
+    <layouts>
+        <layout>Campagne non InxMail</layout>
+        <sections>
+            <label><!-- Campagne --></label>
+            <section>Campagne</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Campagne non Emailing --></label>
+        <name>Campagne_non_Emailing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non Inxmail Professional Email Campaign --></label>
+        <name>Standard_Campaign</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Inxmail Professional Email Campaign --></label>
+        <name>inxmail_professional_email_campaign</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Inxmail Professional Subscription Campaign --></label>
+        <name>inxmail_professional_subscription_campaign</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Campaigns connected with Inxmail Professional should not be deleted if they are still running. --></errorMessage>
+        <name>inx__permit_deleting_campaigns</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Ajouter_des_membres_avec_e_mail --></label>
+        <name>Ajouter_des_membres_avec_e_mail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Dedoublonner --></label>
+        <name>Dedoublonner</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewAllCampaignMembers --></label>
+        <name>ViewAllCampaignMembers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewCampaignInfluenceReport --></label>
+        <name>ViewCampaignInfluenceReport</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- edit_mailing_button --></label>
+        <name>inx__edit_mailing_button</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- edit_mailing_button_canvas --></label>
+        <name>inx__edit_mailing_button_canvas</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- new_email_campaign_button --></label>
+        <name>inx__new_email_campaign_button</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <description>Répartion des opportunités par niveau d&apos;études</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunites__r.OpportunityLineItems$PricebookEntry.Product2.ProductCode</column>
+            <operator>equals</operator>
+            <value>EMM,PREPA,GEP,SIM,SAI,APA1,IHM,MMML,IDEA,MA,MCO,ME,MMS,MK,MSDAI,MT,MJ,MAI,MF,MFDM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Exercice__c</column>
+            <operator>equals</operator>
+            <value>2016</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Niveau_d_tudes__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Opportunites__r.OpportunityLineItems$PricebookEntry.Product2.ProductCode</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Opps par niveau d&apos;études</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_et_opportunit_s_et_produits__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Date_de_cr_ation_contact__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

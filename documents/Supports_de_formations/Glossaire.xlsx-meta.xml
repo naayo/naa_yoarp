@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Glossaire de l&apos;ensemble des termes utilisés au travers des activités de relation client, à la fois outil et métiers.</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Glossaire</name>
+    <public>false</public>
+</Document>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityLineItems$PricebookEntry.Product2.ProductCode</field>
+    </columns>
+    <columns>
+        <field>Opportunity$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>Opportunity$LastModifiedDate</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Interface</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Geoffrey Gacon</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Vincent Bonhomme</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Emmanuel Baur</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Hicham Med Tabbak</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Interface2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Bechaa Mahmoud</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$RecordType</column>
+            <operator>equals</operator>
+            <value>Opportunity.Formation_courte,Opportunity.Fundraising_B2C,Opportunity.Intra_entreprise,Opportunity.Partenariat_Fundraising,Opportunity.Taxe,Opportunity.Programme_Long_Dipl_mant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Données Reprise</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Thomas AUBERT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Données Reprise</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Thierry Cordesse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Mahmoud BECHAA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$LastModifiedBy</column>
+            <operator>notEqual</operator>
+            <value>Top AGRESSO</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$RecordType</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Asc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>Activités Commerciales Dir Entreprise</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunites_plus_informations_complementaires__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Opportunity$LastModifiedBy</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$LastModifiedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

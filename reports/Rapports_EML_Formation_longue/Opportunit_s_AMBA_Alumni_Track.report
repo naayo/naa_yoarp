@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.Opportunites__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact$Adresse_Email_Personnelle__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$StageName</field>
+    </columns>
+    <columns>
+        <field>Contact$Email_de_repli__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Probability</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Account</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Amount</field>
+    </columns>
+    <columns>
+        <field>Contact$Commentaire_du_contact__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Motif_de_fermeture__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Owner</field>
+    </columns>
+    <description>Pour Edith:
+Fermer les doublons en &quot;existe déjà&quot;
+Fermer les tests en &quot;Test emlyon&quot;</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Name</column>
+            <operator>equals</operator>
+            <value>ALUMNI TRACK MBA</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Summary</format>
+    <name>Opportunités AMBA Alumni Track</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contact_Opp__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Ann_e_donation__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

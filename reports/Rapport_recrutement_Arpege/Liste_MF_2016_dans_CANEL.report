@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r.OpportunityLineItems$PricebookEntry.Product2.ProductCode</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Exercice__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$StageName</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Statut_Canel__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$StageName</column>
+            <operator>notContain</operator>
+            <value>Clos (Perdu),Compte doublon,Abandon</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Name</column>
+            <operator>contains</operator>
+            <value>MS Ingénierie Financière</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Statut_Canel__c</column>
+            <operator>notContain</operator>
+            <value>abandon,Non-admis(sible),Non-recevable (Hors profil)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Statut_Canel__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Exercice__c</column>
+            <operator>equals</operator>
+            <value>2016</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Liste MF 2016 dans CANEL</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_et_opportunit_s_et_produits__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact.Opportunites__r$StageName</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$Ann_e_donation__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

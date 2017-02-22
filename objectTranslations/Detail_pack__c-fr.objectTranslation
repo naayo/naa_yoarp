@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Détail pack</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Détails pack</value>
+    </caseValues>
+    <fields>
+        <label><!-- Composant --></label>
+        <name>Composant__c</name>
+        <relationshipLabel><!-- Pack parent --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pack --></label>
+        <name>Pack__c</name>
+        <relationshipLabel><!-- Détails pack --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Détail pack</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

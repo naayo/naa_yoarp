@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>LINEITEM_UNIT_PRICE</field>
+    </columns>
+    <columns>
+        <field>LINEITEM_DESCRIPTION</field>
+    </columns>
+    <description>Rapport matriciel faisant le bilan des reversements TA sur la partie Barème des OCTA.
+Tri par ordre alphabétique de compte
+Détails des produits et des filiales en visuel</description>
+    <filter>
+        <criteriaItems>
+            <column>OPP_RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Opportunity.Taxe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Exercice_de_collecte__c</column>
+            <operator>equals</operator>
+            <value>2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Conclu</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.OCTA__c</column>
+            <operator>startsWith</operator>
+            <value>CCI PARIS</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OpportunityLineItem.OCTA__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OpportunityLineItem.Compte_opportunite__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>OCTA_Bilan Vers_Partie Barème des OCTA</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>ProductOpportunity</reportType>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

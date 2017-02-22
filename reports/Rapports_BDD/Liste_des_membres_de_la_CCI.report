@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SALUTATION</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Code_Postal__c</field>
+    </columns>
+    <columns>
+        <field>Account.Adresse_Ville__c</field>
+    </columns>
+    <columns>
+        <field>R_le__c.Categorie_role__c</field>
+    </columns>
+    <columns>
+        <field>R_le__c.Liste_r_le__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>R_le__c.Categorie_role__c</column>
+            <operator>equals</operator>
+            <value>CCI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>R_le__c.Liste_r_le__c</column>
+            <operator>includes</operator>
+            <value>Membre Elus CCI,Membre Associés CCI,Membre Commision Enseignement CCI</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Liste des membres CCI_Marquages à supp</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$R_le__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

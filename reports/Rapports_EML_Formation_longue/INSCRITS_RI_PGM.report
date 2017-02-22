@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Commentaire__c</field>
+    </columns>
+    <columns>
+        <field>Contact$LastActivityDate</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Sous_provenance__c</field>
+    </columns>
+    <description>INSCRITS RI PGM</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Sous_provenance__c</column>
+            <operator>contains</operator>
+            <value>Form RI/Actualites/Reunion-d-information-PGM-a-Lyon-le-17-novembre-18h30</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r.OpportunityLineItems$Opportunity</column>
+            <operator>equals</operator>
+            <value>Programme Général de Management</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>INSCRITS RI PGM</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_et_opportunit_s_et_produits__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact.Opportunites__r$Sous_provenance__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$Ann_e_donation__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

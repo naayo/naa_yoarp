@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact$Programme_de_reconnaissance__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Birthdate</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$Anniversaire_dans_les_30_jours__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <operator>equals</operator>
+            <value>Contact.Etudiant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.R_les__r$Categorie_role__c</column>
+            <operator>equals</operator>
+            <value>Ancien boursier EMLYON</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>B2C - Anniversaire boursier 30 jours</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_et_r_les_EMLYON__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

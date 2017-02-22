@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cible</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cibles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Catégorie cible --></label>
+        <name>Cat_gorie_cible__c</name>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation><!-- Autres --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cibles sectorielles</masterLabel>
+            <translation><!-- Cibles sectorielles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sociétés proches de l&apos;école</masterLabel>
+            <translation><!-- Sociétés proches de l&apos;école --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cibles --></label>
+        <name>Cibles__c</name>
+        <picklistValues>
+            <masterLabel>120 plus grosses sociétés en Bourse</masterLabel>
+            <translation><!-- 120 plus grosses sociétés en Bourse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BENEFPART</masterLabel>
+            <translation><!-- BENEFPART --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fournisseurs de l&apos;école</masterLabel>
+            <translation><!-- Fournisseurs de l&apos;école --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescripteur CIO GE</masterLabel>
+            <translation><!-- Prescripteur CIO GE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescripteur IDEA</masterLabel>
+            <translation><!-- Prescripteur IDEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sociétés clientes EML</masterLabel>
+            <translation><!-- Sociétés clientes EML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sociétés crées par un diplômé</masterLabel>
+            <translation><!-- Sociétés crées par un diplômé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sociétés dans le secteur du Luxe</masterLabel>
+            <translation><!-- Sociétés dans le secteur du Luxe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sociétés dans le secteur du Sport</masterLabel>
+            <translation><!-- Sociétés dans le secteur du Sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAXEGEST</masterLabel>
+            <translation><!-- TAXEGEST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAXEPRES</masterLabel>
+            <translation><!-- TAXEPRES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAXEPRI</masterLabel>
+            <translation><!-- TAXEPRI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAXEPROC</masterLabel>
+            <translation><!-- TAXEPROC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAXEVIP</masterLabel>
+            <translation><!-- TAXEVIP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Compte --></label>
+        <name>Compte__c</name>
+        <relationshipLabel><!-- Cibles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- x18caracteres --></label>
+        <name>x18caracteres__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

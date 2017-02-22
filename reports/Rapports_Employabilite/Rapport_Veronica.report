@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SALUTATION</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Email_de_repli__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Adresse_Email_Personnelle__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <operator>equals</operator>
+            <value>,1001PACT,ADDEV,ALPHASIGHT,AUTO1.COM,BELINK,CFI - WIZALID,CLASSE EXPORT,CMN PARTNERS,CONVERTEO,CYBEL ANGEL,DRIVY,ESV DIGITAL,GROUPE ZANNIER INTERNATIONAL,HAPPYTAL,HTS CONSULTING,HUTTOPIA,IDEAL,IGNITION PROGRAM,INOVA SOFTWARE,JURATRI SCOP SA,KEYRUS LYON,La Fourchette,LE COLLECTIONIST,LEONTEQ SECURITIES SAM,LINAGORA,OBIZ CONCEPT</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Rapport Veronica</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

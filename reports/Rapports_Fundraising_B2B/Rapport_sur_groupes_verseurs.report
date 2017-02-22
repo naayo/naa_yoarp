@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Adresse_Rue__c</field>
+    </columns>
+    <columns>
+        <field>Account.Rue_2__c</field>
+    </columns>
+    <columns>
+        <field>Account.Code_Postal__c</field>
+    </columns>
+    <columns>
+        <field>Account.Adresse_Ville__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Total_opportunit_s_li_es__c</field>
+    </columns>
+    <description>Rapport qui permet de voir toutes les filiales françaises rattachées à un groupe verseur, qu&apos;elles soient verseuses ou non, pour l&apos;année N</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Versement_consolid_par_gorupe__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.CodePays__c</column>
+            <operator>equals</operator>
+            <value>france</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Libell_du_groupe__c</column>
+            <operator>equals</operator>
+            <value>saint gobain</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Libell_du_groupe__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Rapport sur groupes verseurs TA -Année N</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.Total_opportunit_s_li_es__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Versement OCTA</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Versements OCTA</value>
+    </caseValues>
+    <fields>
+        <label><!-- Banque --></label>
+        <name>Banque__c</name>
+        <picklistValues>
+            <masterLabel>AUTRE</masterLabel>
+            <translation><!-- AUTRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANQUE DE LA REUNION</masterLabel>
+            <translation><!-- BANQUE DE LA REUNION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANQUE POPULAIRE</masterLabel>
+            <translation><!-- BANQUE POPULAIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANQUE SCALBERT DUPONT</masterLabel>
+            <translation><!-- BANQUE SCALBERT DUPONT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANQUE TARNEAUD</masterLabel>
+            <translation><!-- BANQUE TARNEAUD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BNP PARIBAS</masterLabel>
+            <translation><!-- BNP PARIBAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRED - Banque Populaire</masterLabel>
+            <translation><!-- BRED - Banque Populaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BTP BANQUE</masterLabel>
+            <translation><!-- BTP BANQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banque MARTIN MAUREL</masterLabel>
+            <translation><!-- Banque MARTIN MAUREL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAISSE D&apos;EPARGNE</masterLabel>
+            <translation><!-- CAISSE D&apos;EPARGNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIC</masterLabel>
+            <translation><!-- CIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CREDIT AGRICOLE</masterLabel>
+            <translation><!-- CREDIT AGRICOLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CREDIT COOPERATIF</masterLabel>
+            <translation><!-- CREDIT COOPERATIF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CREDIT DU NORD</masterLabel>
+            <translation><!-- CREDIT DU NORD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CREDIT MUTUEL</masterLabel>
+            <translation><!-- CREDIT MUTUEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HERVET</masterLabel>
+            <translation><!-- HERVET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSBC</masterLabel>
+            <translation><!-- HSBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA BANQUE POSTALE</masterLabel>
+            <translation><!-- LA BANQUE POSTALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LCL - CREDIT LYONNAIS</masterLabel>
+            <translation><!-- LCL - CREDIT LYONNAIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LYONNAISE DE BANQUE</masterLabel>
+            <translation><!-- LYONNAISE DE BANQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEUFLIZE OBC</masterLabel>
+            <translation><!-- NEUFLIZE OBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOCIETE GENERALE</masterLabel>
+            <translation><!-- SOCIETE GENERALE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Collecte --></label>
+        <name>Collecte__c</name>
+        <picklistValues>
+            <masterLabel>EMLYON</masterLabel>
+            <translation><!-- EMLYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St Etienne</masterLabel>
+            <translation><!-- St Etienne --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Compte --></label>
+        <name>Compte_Versement_OCTA__c</name>
+        <relationshipLabel><!-- Versements OCTA --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Détail banque --></label>
+        <name>D_tail_banque__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de la pièce --></label>
+        <name>Date_de_la_piece__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de chèque/virement --></label>
+        <name>Date_de_versement__c</name>
+    </fields>
+    <fields>
+        <help><!-- Exercice de collecte --></help>
+        <label><!-- Exercice Collecte --></label>
+        <name>Exercice_Collecte__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exercice de collecte --></label>
+        <name>Exercice_de_collecte__c</name>
+    </fields>
+    <fields>
+        <label><!-- Montant net --></label>
+        <name>Montant_net__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nature versement --></label>
+        <name>Nature_versement__c</name>
+        <picklistValues>
+            <masterLabel>Chèque</masterLabel>
+            <translation><!-- Chèque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virement</masterLabel>
+            <translation><!-- Virement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Numéro du chèque --></label>
+        <name>Num_ro_du_ch_que__c</name>
+    </fields>
+    <fields>
+        <label><!-- Numéro versement (interne) --></label>
+        <name>Num_ro_versement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Numéro de suivi --></label>
+        <name>Numero_de_suivi__c</name>
+    </fields>
+    <fields>
+        <label><!-- Montant A --></label>
+        <name>Octa_Montant_A__c</name>
+    </fields>
+    <fields>
+        <label><!-- Montant B --></label>
+        <name>Octa_Montant_B__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reprise Lot 2015 --></label>
+        <name>Reprise_Lot_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type de versement --></label>
+        <name>Type_de_versement__c</name>
+        <picklistValues>
+            <masterLabel>Barème OCTA</masterLabel>
+            <translation><!-- Barème OCTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fond CCI</masterLabel>
+            <translation><!-- Fond CCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fond Libre</masterLabel>
+            <translation><!-- Fond Libre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fond Libre Subvention</masterLabel>
+            <translation><!-- Fond Libre Subvention --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Versement OPCA</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

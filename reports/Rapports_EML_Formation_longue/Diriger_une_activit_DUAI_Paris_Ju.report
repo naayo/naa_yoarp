@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Adresse_Email_Personnelle__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Email_de_repli__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY.NAME</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Session_de_formation__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>OpportunityLineItem.Session_de_formation__c</column>
+            <operator>equals</operator>
+            <value>Diriger une activité (DUAI) - Paris - Juillet 2016 [2016-DUAI-P1]</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Diriger une activité (DUAI) - Paris - Ju</name>
+    <params>
+        <name>prod_lkp</name>
+        <value>01tw0000005gpFQ</value>
+    </params>
+    <params>
+        <name>include</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityContactProduct@Contact.Adresse_de_repli_Pays__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

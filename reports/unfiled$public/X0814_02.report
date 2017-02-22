@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Famille_Fonction__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Fonctions__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CONTACT_CREATED</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>CONTACT_LAST_UPDATE_BY</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Famille_Fonction__c</column>
+            <operator>equals</operator>
+            <value>Ressources Humaines/Formation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Fonctions__c</column>
+            <operator>equals</operator>
+            <value>Directeur Ressources Humaines,Adjoint Directeur Ressources Humaines,Direct.Relations Hum./Sociales,Responsable Ressources Humaines,Adjoint Dir.Rel.Hum./Sociales,Directeur du Personnel,Adjoint Direct du Personnel,Responsable du Personnel,Cadre de la Fonct.&quot;Personnel&quot;,Responsable Gestion Cadres/Car,Adjoint Resp Gestion Cad./Car.,Directeur du Dvpt Cadres Dirigeants,Conseil en Ress. Humaines/ Outplacement,Directeur de la Formation,Responsable de la Formation,Directeur Formation Commerc.,Responsable Form. des Cadres,Directeur de Ctre Form.Intern.</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Rapport pour fiche Mantis 0814_02</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <endDate>2017-01-06</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-10-21</startDate>
+    </timeFrameFilter>
+</Report>

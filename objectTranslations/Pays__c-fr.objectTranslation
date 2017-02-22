@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Pays</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Pays</value>
+    </caseValues>
+    <fields>
+        <label><!-- Code Pays 2 caractères --></label>
+        <name>Code_Pays_2_caracteres__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code Pays --></label>
+        <name>Code_Pays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indicatif Tel --></label>
+        <name>Indicatif__c</name>
+    </fields>
+    <fields>
+        <label><!-- Réseau --></label>
+        <name>Reseau__c</name>
+        <picklistValues>
+            <masterLabel>HUE</masterLabel>
+            <translation><!-- HUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE</masterLabel>
+            <translation><!-- UE --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Pays</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

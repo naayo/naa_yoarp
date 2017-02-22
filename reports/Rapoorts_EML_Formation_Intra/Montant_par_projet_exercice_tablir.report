@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Ech_anciers__r$Montant_previsionnel__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Marge_Previsionnelle__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$RecordType</column>
+            <operator>equals</operator>
+            <value>Opportunity.Intra_entreprise</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Ech_anciers__r$Exercice__c</column>
+            <operator>equals</operator>
+            <value>ECH-EX50,2014-2015</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Montant par projet (exercice à établir)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunit_s_et_ch_anciers__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Opportunity.Ech_anciers__r$Montant_previsionnel__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$LastStageChangeDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

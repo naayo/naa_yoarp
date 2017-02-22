@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Historique poste et poste supplémentaire</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Historique poste et poste supplémentaire</value>
+    </caseValues>
+    <fields>
+        <label><!-- Compte --></label>
+        <name>Compte__c</name>
+        <relationshipLabel><!-- Historique poste et poste supplémentaire --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Historique poste et poste supplémentaire --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date de début du poste --></label>
+        <name>Date_de_d_but_du_poste__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de fin du poste --></label>
+        <name>Date_de_fin_du_poste__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Professionnel --></label>
+        <name>Email_Professionnel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email direct --></label>
+        <name>Email_direct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Famille Fonction --></label>
+        <name>Famille_Fonction__c</name>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation><!-- Autres --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial/Ventes</masterLabel>
+            <translation><!-- Commercial/Ventes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direction Générale</masterLabel>
+            <translation><!-- Direction Générale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enseignement/Education</masterLabel>
+            <translation><!-- Enseignement/Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etud/Recherche/Dévelop/Qualité</masterLabel>
+            <translation><!-- Etud/Recherche/Dévelop/Qualité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance/Gest./Adminis./Juridi.</masterLabel>
+            <translation><!-- Finance/Gest./Adminis./Juridi. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing/Communication</masterLabel>
+            <translation><!-- Marketing/Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organisation/Systèmes d&apos;Informations</masterLabel>
+            <translation><!-- Organisation/Systèmes d&apos;Informations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production/Achats</masterLabel>
+            <translation><!-- Production/Achats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ressources Humaines/Formation</masterLabel>
+            <translation><!-- Ressources Humaines/Formation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fax direct --></label>
+        <name>Fax_direct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fonction --></label>
+        <name>Fonction__c</name>
+        <relationshipLabel><!-- Historique poste et poste supplémentaire --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fonction exacte --></label>
+        <name>Fonction_exacte__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fonction codée --></label>
+        <name>Fonctions__c</name>
+        <picklistValues>
+            <masterLabel>Actuaire</masterLabel>
+            <translation><!-- Actuaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Dir.Rel.Hum./Sociales</masterLabel>
+            <translation><!-- Adjoint Dir.Rel.Hum./Sociales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Direct du Personnel</masterLabel>
+            <translation><!-- Adjoint Direct du Personnel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Direct. Admini et Financier</masterLabel>
+            <translation><!-- Adjoint Direct. Admini et Financier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Direct. de Programmes</masterLabel>
+            <translation><!-- Adjoint Direct. de Programmes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Direct. de la Communi.</masterLabel>
+            <translation><!-- Adjoint Direct. de la Communi. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Directeur Commercial</masterLabel>
+            <translation><!-- Adjoint Directeur Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Directeur Juridique</masterLabel>
+            <translation><!-- Adjoint Directeur Juridique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Directeur Ressour.Hum.</masterLabel>
+            <translation><!-- Adjoint Directeur Ressour.Hum. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Directeur Régional</masterLabel>
+            <translation><!-- Adjoint Directeur Régional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Directeur d&apos;Etablissement</masterLabel>
+            <translation><!-- Adjoint Directeur d&apos;Etablissement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Resp Gestion Cad./Car.</masterLabel>
+            <translation><!-- Adjoint Resp Gestion Cad./Car. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administrateur</masterLabel>
+            <translation><!-- Administrateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Commercial</masterLabel>
+            <translation><!-- Agent Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent de Change</masterLabel>
+            <translation><!-- Agent de Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent(Général) d&apos;Assurance</masterLabel>
+            <translation><!-- Agent(Général) d&apos;Assurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analyste Financier</masterLabel>
+            <translation><!-- Analyste Financier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Animateur Qualité</masterLabel>
+            <translation><!-- Animateur Qualité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Chef de Marchés</masterLabel>
+            <translation><!-- Assistant Chef de Marchés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant(e) Chef de Prod/Marq.</masterLabel>
+            <translation><!-- Assistant(e) Chef de Prod/Marq. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant(e) Marketing</masterLabel>
+            <translation><!-- Assistant(e) Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant(e) Publicité</masterLabel>
+            <translation><!-- Assistant(e) Publicité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant(e) de la Formation</masterLabel>
+            <translation><!-- Assistant(e) de la Formation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associé</masterLabel>
+            <translation><!-- Associé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attaché(e) Commercial(e)/VRP</masterLabel>
+            <translation><!-- Attaché(e) Commercial(e)/VRP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attaché(e) de Direction</masterLabel>
+            <translation><!-- Attaché(e) de Direction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auditeur Externe</masterLabel>
+            <translation><!-- Auditeur Externe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auditeur Interne</masterLabel>
+            <translation><!-- Auditeur Interne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Achats</masterLabel>
+            <translation><!-- Cadre Achats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Administ. des Ventes</masterLabel>
+            <translation><!-- Cadre Administ. des Ventes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Commercial</masterLabel>
+            <translation><!-- Cadre Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Export</masterLabel>
+            <translation><!-- Cadre Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Logistique</masterLabel>
+            <translation><!-- Cadre Logistique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Organisation/Logistique</masterLabel>
+            <translation><!-- Cadre Organisation/Logistique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Recherche/Développement</masterLabel>
+            <translation><!-- Cadre Recherche/Développement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre SI</masterLabel>
+            <translation><!-- Cadre SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Technique</masterLabel>
+            <translation><!-- Cadre Technique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre de la Fonct.&quot;Personnel&quot;</masterLabel>
+            <translation><!-- Cadre de la Fonct.&quot;Personnel&quot; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre des Services Publics</masterLabel>
+            <translation><!-- Cadre des Services Publics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capital Investissement/Private Equity</masterLabel>
+            <translation><!-- Capital Investissement/Private Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé (e) Fusions/Acquisitions</masterLabel>
+            <translation><!-- Chargé (e) Fusions/Acquisitions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé(e) d&apos;Affaires</masterLabel>
+            <translation><!-- Chargé(e) d&apos;Affaires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé(e) d&apos;Etudes Economiques</masterLabel>
+            <translation><!-- Chargé(e) d&apos;Etudes Economiques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé(e) d&apos;Etudes Marketing</masterLabel>
+            <translation><!-- Chargé(e) d&apos;Etudes Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé(e) de Clientèle</masterLabel>
+            <translation><!-- Chargé(e) de Clientèle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé(e) de Mission</masterLabel>
+            <translation><!-- Chargé(e) de Mission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé(e) des Relations Ecoles</masterLabel>
+            <translation><!-- Chargé(e) des Relations Ecoles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de Centre SI</masterLabel>
+            <translation><!-- Chef de Centre SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de Groupe Marketing</masterLabel>
+            <translation><!-- Chef de Groupe Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de Marchés</masterLabel>
+            <translation><!-- Chef de Marchés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de Produits/Marques</masterLabel>
+            <translation><!-- Chef de Produits/Marques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de Projets</masterLabel>
+            <translation><!-- Chef de Projets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de Publicité</masterLabel>
+            <translation><!-- Chef de Publicité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de projet Marketing</masterLabel>
+            <translation><!-- Chef de projet Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chercheur</masterLabel>
+            <translation><!-- Chercheur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial/Ventes</masterLabel>
+            <translation><!-- Commercial/Ventes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commerçant</masterLabel>
+            <translation><!-- Commerçant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commissaire aux Comptes</masterLabel>
+            <translation><!-- Commissaire aux Comptes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comptable</masterLabel>
+            <translation><!-- Comptable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congé Parental d&apos;Education</masterLabel>
+            <translation><!-- Congé Parental d&apos;Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil Auprès de la DG</masterLabel>
+            <translation><!-- Conseil Auprès de la DG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil Commercial/Ventes</masterLabel>
+            <translation><!-- Conseil Commercial/Ventes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil Etudes/Recherches</masterLabel>
+            <translation><!-- Conseil Etudes/Recherches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil Juridique/Avocat</masterLabel>
+            <translation><!-- Conseil Juridique/Avocat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil Organis./SI</masterLabel>
+            <translation><!-- Conseil Organis./SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil Qualité</masterLabel>
+            <translation><!-- Conseil Qualité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil en Communication/Publ.</masterLabel>
+            <translation><!-- Conseil en Communication/Publ. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil en Formation</masterLabel>
+            <translation><!-- Conseil en Formation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil en Marketing</masterLabel>
+            <translation><!-- Conseil en Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil en Ress. Humaines/ Outplacement</masterLabel>
+            <translation><!-- Conseil en Ress. Humaines/ Outplacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseiller Principal Education</masterLabel>
+            <translation><!-- Conseiller Principal Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseiller du Président</masterLabel>
+            <translation><!-- Conseiller du Président --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consolideur</masterLabel>
+            <translation><!-- Consolideur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant Finance/Gestion/Audit</masterLabel>
+            <translation><!-- Consultant Finance/Gestion/Audit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant en Recrutement</masterLabel>
+            <translation><!-- Consultant en Recrutement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrôleur Financier</masterLabel>
+            <translation><!-- Contrôleur Financier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrôleur de Gestion</masterLabel>
+            <translation><!-- Contrôleur de Gestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrôleur/Inspecteur Impôts</masterLabel>
+            <translation><!-- Contrôleur/Inspecteur Impôts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coordinateur Université Partenaire</masterLabel>
+            <translation><!-- Coordinateur Université Partenaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crédit Manager</masterLabel>
+            <translation><!-- Crédit Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dir. des Compensations Internationales</masterLabel>
+            <translation><!-- Dir. des Compensations Internationales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dir. ou Resp. Administ. et Financier</masterLabel>
+            <translation><!-- Dir. ou Resp. Administ. et Financier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direc. d&apos;un Centre de Formation</masterLabel>
+            <translation><!-- Direc. d&apos;un Centre de Formation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direc. de Départ. Pédagogique</masterLabel>
+            <translation><!-- Direc. de Départ. Pédagogique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct de Programmes Internat.</masterLabel>
+            <translation><!-- Direct de Programmes Internat. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct.Relations Hum./Sociales</masterLabel>
+            <translation><!-- Direct.Relations Hum./Sociales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur</masterLabel>
+            <translation><!-- Directeur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur  Logistique</masterLabel>
+            <translation><!-- Directeur  Logistique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur  des Achats</masterLabel>
+            <translation><!-- Directeur  des Achats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Adjoint</masterLabel>
+            <translation><!-- Directeur Adjoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Adjoint d&apos;Etablissement</masterLabel>
+            <translation><!-- Directeur Adjoint d&apos;Etablissement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Administ. des Ventes</masterLabel>
+            <translation><!-- Directeur Administ. des Ventes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Affaires Internat.</masterLabel>
+            <translation><!-- Directeur Affaires Internat. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Affaires Juridiques</masterLabel>
+            <translation><!-- Directeur Affaires Juridiques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Clientèle</masterLabel>
+            <translation><!-- Directeur Clientèle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Commercial</masterLabel>
+            <translation><!-- Directeur Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Etablissement</masterLabel>
+            <translation><!-- Directeur Etablissement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Etudes/Recherches</masterLabel>
+            <translation><!-- Directeur Etudes/Recherches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Export</masterLabel>
+            <translation><!-- Directeur Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Formation Commerc.</masterLabel>
+            <translation><!-- Directeur Formation Commerc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Général</masterLabel>
+            <translation><!-- Directeur Général --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Général Adjoint</masterLabel>
+            <translation><!-- Directeur Général Adjoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Industriel</masterLabel>
+            <translation><!-- Directeur Industriel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Logistique SI</masterLabel>
+            <translation><!-- Directeur Logistique SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Marketing</masterLabel>
+            <translation><!-- Directeur Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Organi./SI</masterLabel>
+            <translation><!-- Directeur Organi./SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Promotion</masterLabel>
+            <translation><!-- Directeur Promotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Publicité</masterLabel>
+            <translation><!-- Directeur Publicité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Qualité</masterLabel>
+            <translation><!-- Directeur Qualité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Recherche/Dévelop.</masterLabel>
+            <translation><!-- Directeur Recherche/Dévelop. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Ressources Humaines</masterLabel>
+            <translation><!-- Directeur Ressources Humaines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Régional</masterLabel>
+            <translation><!-- Directeur Régional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Réseau &amp; Télécom</masterLabel>
+            <translation><!-- Directeur Réseau &amp; Télécom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur SI</masterLabel>
+            <translation><!-- Directeur SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Technique</masterLabel>
+            <translation><!-- Directeur Technique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur d&apos;Agence</masterLabel>
+            <translation><!-- Directeur d&apos;Agence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur d&apos;Etablissement</masterLabel>
+            <translation><!-- Directeur d&apos;Etablissement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur de Ctre Form.Intern.</masterLabel>
+            <translation><!-- Directeur de Ctre Form.Intern. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur de Filiale</masterLabel>
+            <translation><!-- Directeur de Filiale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur de Production</masterLabel>
+            <translation><!-- Directeur de Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur de Programmes</masterLabel>
+            <translation><!-- Directeur de Programmes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur de la Communication</masterLabel>
+            <translation><!-- Directeur de la Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur de la Formation</masterLabel>
+            <translation><!-- Directeur de la Formation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur des Concours</masterLabel>
+            <translation><!-- Directeur des Concours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur des Etudes</masterLabel>
+            <translation><!-- Directeur des Etudes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur des Relations Exter.</masterLabel>
+            <translation><!-- Directeur des Relations Exter. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur des Ventes</masterLabel>
+            <translation><!-- Directeur des Ventes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur du Dévelop. Cadres Dirigs</masterLabel>
+            <translation><!-- Directeur du Dévelop. Cadres Dirigs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur du Développement</masterLabel>
+            <translation><!-- Directeur du Développement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur du Personnel</masterLabel>
+            <translation><!-- Directeur du Personnel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Conseil en Stratégie</masterLabel>
+            <translation><!-- Directeur ou Conseil en Stratégie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Resp. Juridique et Fiscal</masterLabel>
+            <translation><!-- Directeur ou Resp. Juridique et Fiscal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Responsable  Comptabilité</masterLabel>
+            <translation><!-- Directeur ou Responsable  Comptabilité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Responsable Administratif</masterLabel>
+            <translation><!-- Directeur ou Responsable Administratif --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Responsable Financier</masterLabel>
+            <translation><!-- Directeur ou Responsable Financier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Responsable Juridique</masterLabel>
+            <translation><!-- Directeur ou Responsable Juridique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Responsable Recrutement</masterLabel>
+            <translation><!-- Directeur ou Responsable Recrutement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direction Générale</masterLabel>
+            <translation><!-- Direction Générale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divers Etranger</masterLabel>
+            <translation><!-- Divers Etranger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctorant</masterLabel>
+            <translation><!-- Doctorant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentaliste</masterLabel>
+            <translation><!-- Documentaliste --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elus</masterLabel>
+            <translation><!-- Elus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En Cours de Création d&apos;Entreprise</masterLabel>
+            <translation><!-- En Cours de Création d&apos;Entreprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En Cours de Formation Compl.</masterLabel>
+            <translation><!-- En Cours de Formation Compl. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enseignant</masterLabel>
+            <translation><!-- Enseignant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enseignement/Education</masterLabel>
+            <translation><!-- Enseignement/Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etud/Recherche/Dévelop/Qualité</masterLabel>
+            <translation><!-- Etud/Recherche/Dévelop/Qualité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expert Comptable</masterLabel>
+            <translation><!-- Expert Comptable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exploitant Agricole</masterLabel>
+            <translation><!-- Exploitant Agricole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance/Gest./Adminis./Juridi.</masterLabel>
+            <translation><!-- Finance/Gest./Adminis./Juridi. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fondé de Pouvoir</masterLabel>
+            <translation><!-- Fondé de Pouvoir --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Formateur Interne</masterLabel>
+            <translation><!-- Formateur Interne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gestionnaire de Patrimoine</masterLabel>
+            <translation><!-- Gestionnaire de Patrimoine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gérant(e)</masterLabel>
+            <translation><!-- Gérant(e) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hôtelier/Restaurateur</masterLabel>
+            <translation><!-- Hôtelier/Restaurateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingénieur Commercial</masterLabel>
+            <translation><!-- Ingénieur Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingénieur Etudes/Recherches</masterLabel>
+            <translation><!-- Ingénieur Etudes/Recherches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingénieur d&apos;Affaires</masterLabel>
+            <translation><!-- Ingénieur d&apos;Affaires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journaliste</masterLabel>
+            <translation><!-- Journaliste --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing/Communication</masterLabel>
+            <translation><!-- Marketing/Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Militaire</masterLabel>
+            <translation><!-- Militaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ministre/Député/Haut Fonction.</masterLabel>
+            <translation><!-- Ministre/Député/Haut Fonction. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Renseignée</masterLabel>
+            <translation><!-- Non Renseignée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organisation/Systèmes d&apos;Informations</masterLabel>
+            <translation><!-- Organisation/Systèmes d&apos;Informations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personnel Administratif</masterLabel>
+            <translation><!-- Personnel Administratif --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personnel Technique</masterLabel>
+            <translation><!-- Personnel Technique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Principal/Respons. des Etudes</masterLabel>
+            <translation><!-- Principal/Respons. des Etudes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production/Achats</masterLabel>
+            <translation><!-- Production/Achats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prof Libérales &amp; Act.Diverses</masterLabel>
+            <translation><!-- Prof Libérales &amp; Act.Diverses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prof Médicale/Pharmacie/Vétér.</masterLabel>
+            <translation><!-- Prof Médicale/Pharmacie/Vétér. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professeur</masterLabel>
+            <translation><!-- Professeur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profession Artistique</masterLabel>
+            <translation><!-- Profession Artistique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proviseur</masterLabel>
+            <translation><!-- Proviseur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proviseur Adjoint</masterLabel>
+            <translation><!-- Proviseur Adjoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Président Directeur Général</masterLabel>
+            <translation><!-- Président Directeur Général --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Président du Directoire</masterLabel>
+            <translation><!-- Président du Directoire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Président(e)</masterLabel>
+            <translation><!-- Président(e) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recteur/Doyen</masterLabel>
+            <translation><!-- Recteur/Doyen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Religieux</masterLabel>
+            <translation><!-- Religieux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resp. Communication Financière</masterLabel>
+            <translation><!-- Resp. Communication Financière --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resp. Environ/Risque/Sécurité</masterLabel>
+            <translation><!-- Resp. Environ/Risque/Sécurité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resp. des Nouveaux Produits</masterLabel>
+            <translation><!-- Resp. des Nouveaux Produits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Respons.Relations Gdes Ecoles</masterLabel>
+            <translation><!-- Respons.Relations Gdes Ecoles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Respons.d&apos;Unité de Production</masterLabel>
+            <translation><!-- Respons.d&apos;Unité de Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable  Gestion</masterLabel>
+            <translation><!-- Responsable  Gestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Audio-Visuel</masterLabel>
+            <translation><!-- Responsable Audio-Visuel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Avantages et Rémunérations</masterLabel>
+            <translation><!-- Responsable Avantages et Rémunérations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Classes Préparatoires</masterLabel>
+            <translation><!-- Responsable Classes Préparatoires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Commercial(e)</masterLabel>
+            <translation><!-- Responsable Commercial(e) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Communicat.Interne</masterLabel>
+            <translation><!-- Responsable Communicat.Interne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Edition</masterLabel>
+            <translation><!-- Responsable Edition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Etudes Marketing</masterLabel>
+            <translation><!-- Responsable Etudes Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Etudes/Recherches</masterLabel>
+            <translation><!-- Responsable Etudes/Recherches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Form. des Cadres</masterLabel>
+            <translation><!-- Responsable Form. des Cadres --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Gestion Cadres/Car</masterLabel>
+            <translation><!-- Responsable Gestion Cadres/Car --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Marketing</masterLabel>
+            <translation><!-- Responsable Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Mécénat</masterLabel>
+            <translation><!-- Responsable Mécénat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Organisation</masterLabel>
+            <translation><!-- Responsable Organisation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Relations/Presse</masterLabel>
+            <translation><!-- Responsable Relations/Presse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Ressources Humaines</masterLabel>
+            <translation><!-- Responsable Ressources Humaines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Régional</masterLabel>
+            <translation><!-- Responsable Régional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Réseau et Télécom</masterLabel>
+            <translation><!-- Responsable Réseau et Télécom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable SI</masterLabel>
+            <translation><!-- Responsable SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Sécurité SI</masterLabel>
+            <translation><!-- Responsable Sécurité SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Taxe Apprentissage</masterLabel>
+            <translation><!-- Responsable Taxe Apprentissage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Technique</masterLabel>
+            <translation><!-- Responsable Technique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Trade Marketing</masterLabel>
+            <translation><!-- Responsable Trade Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable de Promotion</masterLabel>
+            <translation><!-- Responsable de Promotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable de Stages</masterLabel>
+            <translation><!-- Responsable de Stages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable de Zone Export</masterLabel>
+            <translation><!-- Responsable de Zone Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable de la Communication</masterLabel>
+            <translation><!-- Responsable de la Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable de la Formation</masterLabel>
+            <translation><!-- Responsable de la Formation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable des Achats</masterLabel>
+            <translation><!-- Responsable des Achats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable des Etudes</masterLabel>
+            <translation><!-- Responsable des Etudes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable des Ventes</masterLabel>
+            <translation><!-- Responsable des Ventes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable du Contrôle de Gestion</masterLabel>
+            <translation><!-- Responsable du Contrôle de Gestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable du Personnel</masterLabel>
+            <translation><!-- Responsable du Personnel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable e-Commerce</masterLabel>
+            <translation><!-- Responsable e-Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ressources Humaines/Formation</masterLabel>
+            <translation><!-- Ressources Humaines/Formation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retraité(e)</masterLabel>
+            <translation><!-- Retraité(e) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Manager</masterLabel>
+            <translation><!-- Risk Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secrétaire Général</masterLabel>
+            <translation><!-- Secrétaire Général --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secrétaire/Assistante</masterLabel>
+            <translation><!-- Secrétaire/Assistante --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spéc.Marchés Financiers/Back Office</masterLabel>
+            <translation><!-- Spéc.Marchés Financiers/Back Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spéc.Marchés Financiers/Front Office</masterLabel>
+            <translation><!-- Spéc.Marchés Financiers/Front Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spéc.Marchés Financiers/Middle Office</masterLabel>
+            <translation><!-- Spéc.Marchés Financiers/Middle Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spécialiste des Marchés Financiers</masterLabel>
+            <translation><!-- Spécialiste des Marchés Financiers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndic d&apos;Immeubles</masterLabel>
+            <translation><!-- Syndic d&apos;Immeubles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trésorier</masterLabel>
+            <translation><!-- Trésorier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VP/VPRH</masterLabel>
+            <translation><!-- VP/VPRH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice-Président</masterLabel>
+            <translation><!-- Vice-Président --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volontariat International en Entreprise</masterLabel>
+            <translation><!-- Volontariat International en Entreprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webmaster</masterLabel>
+            <translation><!-- Webmaster --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ID FEG --></label>
+        <name>ID_FEG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile professionnel --></label>
+        <name>Mobile_professionnel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parti de l&apos;entreprise --></label>
+        <name>Parti_de_l_entreprise__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rémunération annuelle K€ --></label>
+        <name>R_mun_ration_annuelle_K__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rémunération annuelle actuelle en K€ --></label>
+        <name>R_mun_ration_annuelle_actuelle_en_K__c</name>
+    </fields>
+    <fields>
+        <label><!-- Téléphone direct --></label>
+        <name>T_l_phone_direct__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Poste Supplémentaire</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

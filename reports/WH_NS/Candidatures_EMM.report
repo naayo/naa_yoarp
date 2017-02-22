@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$StageName</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Statut_Dossier_CANEL__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Exercice__c</column>
+            <operator>equals</operator>
+            <value>2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r.OpportunityLineItems$PricebookEntry.Product2.ProductCode</column>
+            <operator>equals</operator>
+            <value>EMM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Statut_Canel__c</column>
+            <operator>equals</operator>
+            <value>abandon candidature,incohérent,candidat,abandon après candidature,admissible,non admissible,abandon avant oral,admis,admis board 1,admis board 2,admis sous condition,en liste d&apos;attente,non admis,non admis board 1,non admis board 2,pré-inscrit,inscrit,renonciation,renonciation après paiement,report en attente,report inscrit,report,abandon avant l&apos;écrit,absent à l&apos;écrit,absent à l&apos;oral,non-admis(sible)</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Opportunites__r.OpportunityLineItems$PricebookEntry.Product2.ProductCode</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Opportunites__r$Statut_Canel__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Candidatures EMM</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_et_opportunit_s_et_produits__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Ann_e_donation__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Contact_central__c.Id</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact_central__c.ID_FEG__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact_central__c.Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StageName</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Statut_Canel__c</field>
+    </columns>
+    <description>Donne les prospects sur un statut commercial au dela de candidat dont le statut CANEL est vide</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$StageName</column>
+            <operator>notEqual</operator>
+            <value>Intéressé par,A (ré)orienter,Non actif,Clos (Perdu),Compte doublon,Prospect qualifié,Prospect report,Prospect probable,Prospect chaud,Intérêt Supplémentaire</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Statut_Canel__c</column>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$ExerciceNum_ro__c</column>
+            <operator>greaterOrEqual</operator>
+            <value>2014</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Prospect candidat sans statut CANEL</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunites_plus_informations_complementaires__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$LastStageChangeDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

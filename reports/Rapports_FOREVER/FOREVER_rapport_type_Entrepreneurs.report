@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Contacts$ID_FEG__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Dipl_mes__r$Programme__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Dipl_mes__r$Promo_de_sortie__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Fonctions__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Title</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Entrepreneur__c</field>
+    </columns>
+    <description>Diplômés ayant crée/repris leur société</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contacts$D_c_d__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts$Entrepreneur__c</column>
+            <operator>notEqual</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.Dipl_mes__r$Programme__c</column>
+            <operator>equals</operator>
+            <value>MBA,CPA Lyon,Faculté,European Master in Management,ESC Lyon,MSc in Luxury Management et Marketing,Global Entrepreneurship Program,Mastères Spécialisés,Programme Général de Management,Msc in Sports Industry Management,&quot;MSc in Innovation,Design,Entrep. &amp; Arts&quot;</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>FOREVER_rapport type Entrepreneurs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>comptes_contacts_diplomes_EMLYON__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

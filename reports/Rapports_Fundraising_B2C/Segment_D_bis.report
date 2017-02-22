@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>R_le__c.Liste_r_le__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Identifiant_dipl_m__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Ann_e_du_dipl_me__c</column>
+            <operator>lessOrEqual</operator>
+            <value>2012</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Ann_e_du_dipl_me__c</column>
+            <operator>greaterThan</operator>
+            <value>1995</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>R_le__c.Categorie_role__c</column>
+            <operator>equals</operator>
+            <value>Ancien Membre Associations</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Segment D bis - Diplômés 96-12 asso</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$R_le__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

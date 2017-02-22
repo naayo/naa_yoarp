@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$X18caracter__c</field>
+    </columns>
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact$Adresse_Email_Personnelle__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Name</field>
+    </columns>
+    <description>Liste les contacts BBA ayant 1 ou plusieurs opportunités créées après le 02/02/2015</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact$CreatedDate</column>
+            <operator>lessOrEqual</operator>
+            <value>1/30/2015 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Nombre_opportunit_s__c</column>
+            <operator>greaterOrEqual</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Name</column>
+            <operator>equals</operator>
+            <value>Bachelor in Business Administration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$CreatedDate</column>
+            <operator>greaterThan</operator>
+            <value>2/2/2015 12:00 AM</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>BBA Multi et/ou Mono opp après 02 févrie</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contact_Opp__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- zzzTechField_Company --></label>
+        <name>Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date chargement VF --></label>
+        <name>Date_chargement_VF__c</name>
+    </fields>
+    <fields>
+        <label><!-- zzzTechField_Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- zzzTechField_MembreExistant --></label>
+        <name>MembreExistant__c</name>
+    </fields>
+    <fields>
+        <label><!-- zzzTechField_Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reprise LOT2015 --></label>
+        <name>Reprise_LOT2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- zzzTechField_Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- zzzTechField_Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>inx__email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient ID --></label>
+        <name>inx__recipient_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- synchronization_id --></label>
+        <name>inx__synchronization_id__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- You cannot add members to connected campaigns. Please disconnect the campaign first. --></errorMessage>
+        <name>inx__permit_adding_members</name>
+    </validationRules>
+</CustomObjectTranslation>

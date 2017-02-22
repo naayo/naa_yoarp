@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contreparties__r$Programme__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contreparties__r$Contrepartie__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contreparties__r$Action_realise__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contreparties__r$Date_realisation__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contreparties__r$Commentaire_contrepartie__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contreparties__r$Action_realise__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>B2C - Contreparties non réalisées</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Comptes_et_contreparties__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Diplômes EMLYON</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Diplômes EMLYON</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Diplômes EMLYON --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cycle --></label>
+        <name>Cycle__c</name>
+        <picklistValues>
+            <masterLabel>CPA Lyon</masterLabel>
+            <translation><!-- CPA Lyon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>European Master in Management</masterLabel>
+            <translation><!-- European Master in Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive MBA</masterLabel>
+            <translation><!-- Executive MBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Entrepreneurship Programme</masterLabel>
+            <translation><!-- Global Entrepreneurship Programme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International MBA</masterLabel>
+            <translation><!-- International MBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M.S. Mngt des Ent Vivant et de l&apos;agro.</masterLabel>
+            <translation><!-- M.S. Mngt des Ent Vivant et de l&apos;agro. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M.S. Strat Internat et Marketing Indus</masterLabel>
+            <translation><!-- M.S. Strat Internat et Marketing Indus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Acheteur Manager International</masterLabel>
+            <translation><!-- MS Acheteur Manager International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Agro-Industriel</masterLabel>
+            <translation><!-- MS Agro-Industriel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Audit et Information Financière</masterLabel>
+            <translation><!-- MS Audit et Information Financière --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Conseil en Organisation</masterLabel>
+            <translation><!-- MS Conseil en Organisation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Entreprendre</masterLabel>
+            <translation><!-- MS Entreprendre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Finance de Marché</masterLabel>
+            <translation><!-- MS Finance de Marché --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS GIRIS</masterLabel>
+            <translation><!-- MS GIRIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Ingénierie Financière</masterLabel>
+            <translation><!-- MS Ingénierie Financière --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Ingénierie et Internet</masterLabel>
+            <translation><!-- MS Ingénierie et Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Ingénierie et Mngt des SI</masterLabel>
+            <translation><!-- MS Ingénierie et Mngt des SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Juriste Manager International</masterLabel>
+            <translation><!-- MS Juriste Manager International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Knowledge Management</masterLabel>
+            <translation><!-- MS Knowledge Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Management  Activités Industrielles</masterLabel>
+            <translation><!-- MS Management  Activités Industrielles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Management de la Technologie</masterLabel>
+            <translation><!-- MS Management de la Technologie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Management des Entreprises de Service</masterLabel>
+            <translation><!-- MS Management des Entreprises de Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Marketing Industriel</masterLabel>
+            <translation><!-- MS Marketing Industriel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Mgt et Dvpt Systèmes d&apos;Information</masterLabel>
+            <translation><!-- MS Mgt et Dvpt Systèmes d&apos;Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS NTIC Management</masterLabel>
+            <translation><!-- MS NTIC Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Stratégie et Dvpt d’Affaires Intl</masterLabel>
+            <translation><!-- MS Stratégie et Dvpt d’Affaires Intl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS Stratégie et Marketing des Entr. Ind.</masterLabel>
+            <translation><!-- MS Stratégie et Marketing des Entr. Ind. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSc Luxury Mngt &amp; Mkt</masterLabel>
+            <translation><!-- MSc Luxury Mngt &amp; Mkt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSc in Innovation,Design,Entrep. &amp; Arts</masterLabel>
+            <translation><!-- MSc in Innovation,Design,Entrep. &amp; Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Msc in Sports Industry Management</masterLabel>
+            <translation><!-- Msc in Sports Industry Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PhD in Management</masterLabel>
+            <translation><!-- PhD in Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme Général de Management</masterLabel>
+            <translation><!-- Programme Général de Management --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Programme --></label>
+        <name>Programme__c</name>
+        <picklistValues>
+            <masterLabel>CPA Lyon</masterLabel>
+            <translation><!-- CPA Lyon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESC Lyon</masterLabel>
+            <translation><!-- ESC Lyon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>European Master in Management</masterLabel>
+            <translation><!-- European Master in Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faculté</masterLabel>
+            <translation><!-- Faculté --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Entrepreneurship Program</masterLabel>
+            <translation><!-- Global Entrepreneurship Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MBA</masterLabel>
+            <translation><!-- MBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSc in Innovation,Design,Entrep. &amp; Arts</masterLabel>
+            <translation><!-- MSc in Innovation,Design,Entrep. &amp; Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSc in International Hospitality Management</masterLabel>
+            <translation><!-- MSc in International Hospitality Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSc in Luxury Management et Marketing</masterLabel>
+            <translation><!-- MSc in Luxury Management et Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mastères Spécialisés</masterLabel>
+            <translation><!-- Mastères Spécialisés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Msc in Sports Industry Management</masterLabel>
+            <translation><!-- Msc in Sports Industry Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme Général de Management</masterLabel>
+            <translation><!-- Programme Général de Management --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Promo d&apos;entrée --></label>
+        <name>Promo_d_entr_e__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo de sortie --></label>
+        <name>Promo_de_sortie__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rang diplôme --></label>
+        <name>Rang_dipl_me__c</name>
+    </fields>
+    <fields>
+        <label><!-- Réussi --></label>
+        <name>Reussi__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sous promo --></label>
+        <name>Sous_promo__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

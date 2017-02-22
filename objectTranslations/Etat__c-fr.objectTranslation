@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Etat</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Etats</value>
+    </caseValues>
+    <fields>
+        <label><!-- Code Etat --></label>
+        <name>Code_Etat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code pays --></label>
+        <name>Code_pays__c</name>
+    </fields>
+    <fields>
+        <label><!-- x18caracter --></label>
+        <name>x18caracter__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

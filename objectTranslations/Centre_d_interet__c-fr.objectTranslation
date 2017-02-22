@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Centre d&apos;interet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Centres d&apos;interet</value>
+    </caseValues>
+    <fields>
+        <help><!-- Interet de la personne. --></help>
+        <label><!-- Interet --></label>
+        <name>Interet__c</name>
+        <picklistValues>
+            <masterLabel>Echecs</masterLabel>
+            <translation><!-- Echecs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Golf</masterLabel>
+            <translation><!-- Golf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tennis</masterLabel>
+            <translation><!-- Tennis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voile</masterLabel>
+            <translation><!-- Voile --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Compte --></label>
+        <name>compte__c</name>
+        <relationshipLabel><!-- Centres d&apos;interet --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

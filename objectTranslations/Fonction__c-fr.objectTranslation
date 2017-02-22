@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fonction</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fonctions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Libellé de la fonction --></label>
+        <name>Libell_de_la_fonction__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

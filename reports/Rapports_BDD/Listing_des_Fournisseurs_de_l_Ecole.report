@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Cible__c$Cat_gorie_cible__c</field>
+    </columns>
+    <columns>
+        <field>Cible__c$Cibles__c</field>
+    </columns>
+    <columns>
+        <field>Cible__c$Compte__c</field>
+    </columns>
+    <columns>
+        <field>Cible__c$x18caracteres__c</field>
+    </columns>
+    <description>Liste des comptes marqués fournisseurs de l&apos;école</description>
+    <filter>
+        <criteriaItems>
+            <column>Cible__c$Cibles__c</column>
+            <operator>equals</operator>
+            <value>Fournisseurs de l&apos;école</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Listing des Fournisseurs de l&apos;Ecole</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cibles__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Cible__c$Compte__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Cible__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

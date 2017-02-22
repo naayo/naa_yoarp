@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Email_de_repli__c</field>
+    </columns>
+    <columns>
+        <field>Contact$X18caracter__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Adresse_Email_Personnelle__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$Account</column>
+            <operator>equals</operator>
+            <value>CDME SAS,EML EXECUTIVE DEVELOPMENT,EMLYON BUSINESS SCHOOL - CAMPUS LYON ECULLY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Famille_Fonction__c</column>
+            <operator>equals</operator>
+            <value>Commercial/Ventes</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Test mailing CPM et CF</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

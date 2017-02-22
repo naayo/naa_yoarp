@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Famille_Fonction__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Fonctions__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CONTACT_CREATED</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>CONTACT_LAST_UPDATE_BY</field>
+    </columns>
+    <description>Contacts créés le 20/10/2015 qui ont :-Famille fonction = Ressources Humaines / Formationet Fonction codée = (plusieurs valeurs)</description>
+    <filter>
+        <criteriaItems>
+            <column>CREATED_DATE</column>
+            <operator>greaterOrEqual</operator>
+            <value>10/17/2015 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Famille_Fonction__c</column>
+            <operator>equals</operator>
+            <value>Ressources Humaines/Formation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Fonctions__c</column>
+            <operator>equals</operator>
+            <value>Adjoint Dir.Rel.Hum./Sociales,Adjoint Direct du Personnel,Adjoint Directeur Ressour.Hum.,Adjoint Resp Gestion Cad./Car.,Cadre de la Fonct.&quot;Personnel&quot;,Conseil en Ress. Humaines/ Outplacement,Direct.Relations Hum./Sociales,Directeur de Ctre Form.Intern.,Directeur de la Formation,Directeur du Dévelop. Cadres Dirigs,Directeur du Personnel,Directeur Formation Commerc.,Directeur Ressources Humaines,Responsable de Promotion,Responsable du Personnel,Responsable Form. des Cadres,Responsable Gestion Cadres/Car,Responsable Ressources Humaines</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <operator>equals</operator>
+            <value>Données Reprise</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Contacts Res Hum/Form Reprise Données</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CONTACT_LAST_UPDATE_BY</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

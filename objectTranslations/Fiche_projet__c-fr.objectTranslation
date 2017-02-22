@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fiche projet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fiches projet</value>
+    </caseValues>
+    <fields>
+        <help><!-- % d&apos;avancement du développement / configuration --></help>
+        <label><!-- % Avancement --></label>
+        <name>Avancement__c</name>
+    </fields>
+    <fields>
+        <help><!-- Analyse et spécifications (7% du build) --></help>
+        <label><!-- Charge (Analyse J) --></label>
+        <name>Charge_Analyse_J__c</name>
+    </fields>
+    <fields>
+        <help><!-- Analyse : 750 €
+Build : 490 €
+Tests : 490 80% + 750 20%
+PM : 980 € --></help>
+        <label><!-- Charge (€) --></label>
+        <name>Charge_Euro__c</name>
+    </fields>
+    <fields>
+        <help><!-- Charge de développement / configuration en jours
+Unité : 0,1 --></help>
+        <label><!-- Charge (J) --></label>
+        <name>Charge_J__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gestion de projet (15% du build) --></help>
+        <label><!-- Charge (PM J) --></label>
+        <name>Charge_PM_J__c</name>
+    </fields>
+    <fields>
+        <help><!-- Recette utilisateur (7% du build) --></help>
+        <label><!-- Charge (Tests J) --></label>
+        <name>Charge_Tests_J__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge (Total J) --></label>
+        <name>Charge_Total_J__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de fermeture --></label>
+        <name>Date_de_fermeture__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date en prod --></label>
+        <name>Date_en_prod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date à renseigner exclusivement par Kerensen --></help>
+        <label><!-- Date en test --></label>
+        <name>Date_en_test__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date à renseigner exclusivement par le client --></help>
+        <label><!-- Date limite --></label>
+        <name>Date_limite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domaine --></label>
+        <name>Domaine__c</name>
+        <picklistValues>
+            <masterLabel>Activité</masterLabel>
+            <translation><!-- Activité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CTI</masterLabel>
+            <translation><!-- CTI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campagne</masterLabel>
+            <translation><!-- Campagne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chantier</masterLabel>
+            <translation><!-- Chantier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Configurateur</masterLabel>
+            <translation><!-- Configurateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat</masterLabel>
+            <translation><!-- Contrat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Courrier</masterLabel>
+            <translation><!-- Courrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis</masterLabel>
+            <translation><!-- Devis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Formation</masterLabel>
+            <translation><!-- Formation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foyer</masterLabel>
+            <translation><!-- Foyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interface</masterLabel>
+            <translation><!-- Interface --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Migration</masterLabel>
+            <translation><!-- Migration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opération</masterLabel>
+            <translation><!-- Opération --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profils</masterLabel>
+            <translation><!-- Profils --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projet</masterLabel>
+            <translation><!-- Projet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting</masterLabel>
+            <translation><!-- Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requête</masterLabel>
+            <translation><!-- Requête --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sécurité</masterLabel>
+            <translation><!-- Sécurité --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Edit --></label>
+        <name>Edit__c</name>
+    </fields>
+    <fields>
+        <help><!-- - Rouge si fermé et (date fermeture &gt; date limite + 5) ou ouvert et today &gt; date test
+- Orange si fermé et (date fermeture &gt; date limite) ou ouvert et today = date test
+- Vert si fermé et (date fermeture &lt;= date limite) ou ouvert et today &lt; date test --></help>
+        <label><!-- En retard ? --></label>
+        <name>En_retard__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cohez cette case si la modification a été reportée manuellement dans l&apos;environnement de production --></help>
+        <label><!-- Fait en production ? --></label>
+        <name>Fait_en_production__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fiche parent --></label>
+        <name>Fiche_parent__c</name>
+        <relationshipLabel><!-- Fiches projet --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Décrire la liste des modifications de la configuration --></help>
+        <label><!-- Liste des modifications --></label>
+        <name>Liste_des_modifications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lot --></label>
+        <name>Lot__c</name>
+        <picklistValues>
+            <masterLabel>Lot 1</masterLabel>
+            <translation><!-- Lot 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lot 2</masterLabel>
+            <translation><!-- Lot 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lot 3</masterLabel>
+            <translation><!-- Lot 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lot 4</masterLabel>
+            <translation><!-- Lot 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lot 5</masterLabel>
+            <translation><!-- Lot 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Personne, réunion, contexte --></help>
+        <label><!-- Origine --></label>
+        <name>Origine__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pas de modification de la configuration (RV, workflow, champ...) --></help>
+        <label><!-- Pas de modification --></label>
+        <name>Pas_de_modification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priorité --></label>
+        <name>Priorite__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Processus --></label>
+        <name>Processus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profils concernés --></label>
+        <name>Profils_concernes__c</name>
+        <picklistValues>
+            <masterLabel>Profil 1</masterLabel>
+            <translation><!-- Profil 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profil 2</masterLabel>
+            <translation><!-- Profil 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profil 3</masterLabel>
+            <translation><!-- Profil 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Référence cahier de recette --></label>
+        <name>Reference_cahier_de_recette__c</name>
+    </fields>
+    <fields>
+        <label><!-- Référence spécifications --></label>
+        <name>Reference_specifications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reproductible --></label>
+        <name>Reproductible__c</name>
+    </fields>
+    <fields>
+        <help><!-- Alimenter ce champ automatiquement par une règle de workflow en fonction du propriétaire.
+NE PAS OUBLIER DE METTRE EN PLACE LES FILES D&apos;ATTENTE --></help>
+        <label><!-- Responsable --></label>
+        <name>Responsable__c</name>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kerensen</masterLabel>
+            <translation><!-- Kerensen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- - Vert : Fermé, abandonné, risque vert (auj + charge &lt; date limite)
+- Orange : Réalisé (donc à tester avec risque de retour), A préciser, A arbitrer, risque orange (auj + charge = date limite)
+- Rouge : Risque  rouge  (auj + charge &gt; date limite) --></help>
+        <label><!-- Risque planning --></label>
+        <name>Risque_planning__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution spécifique --></label>
+        <name>Solution_specifique__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution standard --></label>
+        <name>Solution_standard__c</name>
+    </fields>
+    <fields>
+        <help><!-- Nouveau : statut des nouvelles fiches
+A préciser : en attente d&apos;infos du client
+En cours : une réponse / correction est en cours
+Réalisé : la fiche a été réalisée et doit être testée
+Fermé : la fiche est validée
+Abandonné : la fiche est annulée --></help>
+        <label><!-- Statut --></label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>A arbitrer</masterLabel>
+            <translation><!-- A arbitrer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A préciser</masterLabel>
+            <translation><!-- A préciser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Abandonné</masterLabel>
+            <translation><!-- Abandonné --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En cours</masterLabel>
+            <translation><!-- En cours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fermé</masterLabel>
+            <translation><!-- Fermé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nouveau</masterLabel>
+            <translation><!-- Nouveau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réalisé</masterLabel>
+            <translation><!-- Réalisé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validée EMLYON</masterLabel>
+            <translation><!-- Validée EMLYON --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- L&apos;anomalie nécessite une mise à jour --></help>
+        <label><!-- Statut spécifications --></label>
+        <name>Statut_specifications__c</name>
+        <picklistValues>
+            <masterLabel>A spécifier</masterLabel>
+            <translation><!-- A spécifier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spécifications à jour</masterLabel>
+            <translation><!-- Spécifications à jour --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sujet --></label>
+        <name>Sujet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Action</masterLabel>
+            <translation><!-- Action --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anomalie</masterLabel>
+            <translation><!-- Anomalie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demande</masterLabel>
+            <translation><!-- Demande --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evolution</masterLabel>
+            <translation><!-- Evolution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Version</masterLabel>
+            <translation><!-- Version --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Validée client --></label>
+        <name>Validee_client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validée par Kerensen --></label>
+        <name>Validee_par_Kerensen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>Version__c</name>
+        <relationshipLabel><!-- Fiches projet --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Version txt --></label>
+        <name>Version_txt__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Action</layout>
+        <sections>
+            <label><!-- &lt;Font color=&quot;red&quot;&gt;Processus&lt;/font&gt; --></label>
+            <section>&lt;Font color=&quot;red&quot;&gt;Processus&lt;/font&gt;</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaires --></label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Qualification --></label>
+            <section>Qualification</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Anomalie</layout>
+        <sections>
+            <label><!-- &lt;Font color=&quot;red&quot;&gt;Processus&lt;/font&gt; --></label>
+            <section>&lt;Font color=&quot;red&quot;&gt;Processus&lt;/font&gt;</section>
+        </sections>
+        <sections>
+            <label><!-- Avancement config / dev --></label>
+            <section>Avancement config / dev</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaires --></label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Qualification --></label>
+            <section>Qualification</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Evolution</layout>
+        <sections>
+            <label><!-- &lt;Font color=&quot;red&quot;&gt;Processus&lt;/font&gt; --></label>
+            <section>&lt;Font color=&quot;red&quot;&gt;Processus&lt;/font&gt;</section>
+        </sections>
+        <sections>
+            <label><!-- Avancement config / dev --></label>
+            <section>Avancement config / dev</section>
+        </sections>
+        <sections>
+            <label><!-- Chiffrage Kerensen --></label>
+            <section>Chiffrage Kerensen</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaires --></label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Qualification --></label>
+            <section>Qualification</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Version</layout>
+        <sections>
+            <label><!-- Informations --></label>
+            <section>Informations</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Action --></label>
+        <name>Action</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Anomalie --></label>
+        <name>Anomalie</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Evolution --></label>
+        <name>Evolution</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Version --></label>
+        <name>Version</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Veuillez renseigner la charge et la date en test --></errorMessage>
+        <name>Charge_et_date_test_a_renseigner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Veuillez renseigner la date limite --></errorMessage>
+        <name>Date_limite_a_renseigner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La date en test n&apos;est modifiable que par les équipes de Kerensen --></errorMessage>
+        <name>Date_test_non_modifiable_par_K_par_K</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Veuillez renseigner l&apos;un des 2 champs &quot;Pas de modification&quot; ou &quot;Liste des modifications&quot; --></errorMessage>
+        <name>Modification_config</name>
+    </validationRules>
+</CustomObjectTranslation>

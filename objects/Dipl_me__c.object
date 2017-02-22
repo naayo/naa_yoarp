@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Dipl_mes</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Cycle__c</fullName>
+        <externalId>false</externalId>
+        <label>Cycle</label>
+        <picklist>
+            <controllingField>Programme__c</controllingField>
+            <picklistValues>
+                <fullName>International MBA</fullName>
+                <default>false</default>
+                <controllingFieldValues>MBA</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CPA Lyon</fullName>
+                <default>false</default>
+                <controllingFieldValues>CPA Lyon</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Executive MBA</fullName>
+                <default>false</default>
+                <controllingFieldValues>MBA</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>European Master in Management</fullName>
+                <default>false</default>
+                <controllingFieldValues>European Master in Management</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Global Entrepreneurship Programme</fullName>
+                <default>false</default>
+                <controllingFieldValues>Global Entrepreneurship Program</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Ingénierie Financière</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MSc Luxury Mngt &amp; Mkt</fullName>
+                <default>false</default>
+                <controllingFieldValues>MSc in Luxury Management et Marketing</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Ingénierie et Internet</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Acheteur Manager International</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Management  Activités Industrielles</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>M.S. Mngt des Ent Vivant et de l&apos;agro.</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Agro-Industriel</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Audit et Information Financière</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Conseil en Organisation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Stratégie et Dvpt d’Affaires Intl</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Mgt et Dvpt Systèmes d&apos;Information</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Entreprendre</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Finance de Marché</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS GIRIS</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Marketing Industriel</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS NTIC Management</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Ingénierie et Mngt des SI</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Juriste Manager International</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Knowledge Management</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Management des Entreprises de Service</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>M.S. Strat Internat et Marketing Indus</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Management de la Technologie</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Programme Général de Management</fullName>
+                <default>false</default>
+                <controllingFieldValues>Programme Général de Management</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PhD in Management</fullName>
+                <default>false</default>
+                <controllingFieldValues>Faculté</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MS Stratégie et Marketing des Entr. Ind.</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Msc in Sports Industry Management</fullName>
+                <default>false</default>
+                <controllingFieldValues>Msc in Sports Industry Management</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MSc in Innovation,Design,Entrep. &amp; Arts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Programme__c</fullName>
+        <externalId>false</externalId>
+        <label>Programme</label>
+        <picklist>
+            <picklistValues>
+                <fullName>MBA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CPA Lyon</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Faculté</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>European Master in Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ESC Lyon</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MSc in Luxury Management et Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Global Entrepreneurship Program</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mastères Spécialisés</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Programme Général de Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Msc in Sports Industry Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MSc in Innovation,Design,Entrep. &amp; Arts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MSc in International Hospitality Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Promo_d_entr_e__c</fullName>
+        <externalId>false</externalId>
+        <label>Promo d&apos;entrée</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Promo_de_sortie__c</fullName>
+        <externalId>false</externalId>
+        <label>Promo de sortie</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rang_dipl_me__c</fullName>
+        <externalId>false</externalId>
+        <label>Rang diplôme</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reussi__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Réussi</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sous_promo__c</fullName>
+        <externalId>false</externalId>
+        <label>Sous promo</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Diplômes EMLYON</label>
+    <nameField>
+        <displayFormat>{000}</displayFormat>
+        <label>Numéro automatique</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Diplômes EMLYON</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

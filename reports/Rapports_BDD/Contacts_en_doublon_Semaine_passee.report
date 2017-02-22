@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.DuplicateRecordItems$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.DuplicateRecordItems$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Contact.DuplicateRecordItems$CreatedDate</field>
+    </columns>
+    <description>Rapport à envoyer automatiquement à l&apos;équipe BDD tous les lundi</description>
+    <format>Tabular</format>
+    <name>Contacts en doublon - Semaine passée</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_elements_de_doublons__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact.DuplicateRecordItems$CreatedDate</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$Ann_e_donation__c</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

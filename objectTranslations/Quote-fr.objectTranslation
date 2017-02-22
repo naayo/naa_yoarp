@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Date de fin</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>quote_expirationdate</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Total TTC</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>quote_grandtotal</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>TVA *</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>quote_tax</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Commentaire devis --></label>
+        <name>CommentaireDevis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commentaire devis --></label>
+        <name>Commentaire_devisOLD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conditions de restauration --></label>
+        <name>Conditions_de_restauration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de début --></label>
+        <name>Date_de_d_but__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de fin --></label>
+        <name>Date_de_fin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de fin_old --></label>
+        <name>Date_de_fin_old__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de formation --></label>
+        <name>Date_de_formation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de début_old --></label>
+        <name>Date_debut_old__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destinataire --></label>
+        <name>Destinataire__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remise --></label>
+        <name>Discount_devis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Professionnel --></label>
+        <name>Email_Professionnel_DEVIS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entreprise --></label>
+        <name>Entreprise__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entreprise déclarée --></label>
+        <name>Entreprise_d_clar_e__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lieu_OLD --></label>
+        <name>Lieu__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lieu de formation --></label>
+        <name>Lieu_de_formation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre de jours --></label>
+        <name>Nombre_de_jours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre d&apos;heures --></label>
+        <name>Nombre_dheures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre d&apos;heures_OLD --></label>
+        <name>Nombre_heures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre de jours_OLD --></label>
+        <name>Nombre_jours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Société --></label>
+        <name>Societe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Téléphone --></label>
+        <name>T_l_phone_DEVIS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Votre formation --></label>
+        <name>Votre_formation__c</name>
+    </fields>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+</CustomObjectTranslation>

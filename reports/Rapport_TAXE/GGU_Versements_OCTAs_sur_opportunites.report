@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OpportunityLineItem.Compte_opportunite__c</field>
+    </columns>
+    <columns>
+        <field>LINEITEM_DESCRIPTION</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>LINEITEM_UNIT_PRICE</field>
+    </columns>
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <description>Total des versements par OCTA pour les OCTA rattachés à une opportunité de type taxe</description>
+    <filter>
+        <criteriaItems>
+            <column>OPP_RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Opportunity.Taxe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Exercice_de_collecte__c</column>
+            <operator>equals</operator>
+            <value>2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Conclu</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OpportunityLineItem.OCTA__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>GGU - Versements OCTAs sur opportunites</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductOpportunity</reportType>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

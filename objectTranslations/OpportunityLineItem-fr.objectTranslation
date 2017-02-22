@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Taux de remise</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>discount_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Prix unitaire / Versement</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>sales_price_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Total</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>total_price_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Eligibilité de l&apos;âge --></label>
+        <name>C1_eligible_age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligibilité du niveau d&apos;études --></label>
+        <name>C2_eligible_niveau_d_tudes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligibilité du niveau d&apos;expérience pro --></label>
+        <name>C3_eligible_niveau_xp_pro__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligibilité du domaine d&apos;études --></label>
+        <name>C4_eligible_domaine_d_tudes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Champ système pour clonage --></label>
+        <name>Champ_syst_me_pour_clonage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code Agresso Poste Opportunité --></label>
+        <name>CodeAgresso_Poste_Opportunite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code_PO --></label>
+        <name>Code_PO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compte --></label>
+        <name>Compte_opportunite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compteur Poste Opp --></label>
+        <name>Compteur_Poste_Opp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Loader Util --></label>
+        <name>Data_Loader_Util__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de paiement --></label>
+        <name>DatePaiement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Début --></label>
+        <name>Date_de_debut_de_session_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligibilité calculée --></label>
+        <name>Eligible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Etat du paiement --></label>
+        <name>EtatPaiement__c</name>
+        <picklistValues>
+            <masterLabel>Annulé</masterLabel>
+            <translation><!-- Annulé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non payé</masterLabel>
+            <translation><!-- Non payé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payé</masterLabel>
+            <translation><!-- Payé --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Famille --></label>
+        <name>Famille__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fin --></label>
+        <name>Fin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fonction --></label>
+        <name>Fonction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Format --></label>
+        <name>Format__c</name>
+        <picklistValues>
+            <masterLabel>Certificat</masterLabel>
+            <translation><!-- Certificat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Court</masterLabel>
+            <translation><!-- Court --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parcours</masterLabel>
+            <translation><!-- Parcours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gamme --></label>
+        <name>Gamme__c</name>
+    </fields>
+    <fields>
+        <label><!-- Id Opportunité --></label>
+        <name>Id_Opportunite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Id entrée de catalogue --></label>
+        <name>Id_entree_de_catalogue__c</name>
+    </fields>
+    <fields>
+        <label><!-- InterfaceExternalId Poste --></label>
+        <name>InterfaceExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Id paiement --></label>
+        <name>JetonPaiement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lieu de formation --></label>
+        <name>Lieu_de_formation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mode de paiement --></label>
+        <name>ModePaiement__c</name>
+        <picklistValues>
+            <masterLabel>CB online</masterLabel>
+            <translation><!-- CB online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facture</masterLabel>
+            <translation><!-- Facture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gratuit</masterLabel>
+            <translation><!-- Gratuit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Montant payé --></label>
+        <name>MontantPaye__c</name>
+    </fields>
+    <fields>
+        <label><!-- Motifs de non éligibilité --></label>
+        <name>Motifs_de_non_eligibilite__c</name>
+        <picklistValues>
+            <masterLabel>Age trop élevé</masterLabel>
+            <translation><!-- Age trop élevé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Domaine d’études incohérent</masterLabel>
+            <translation><!-- Domaine d’études incohérent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expérience professionnelle incohérente</masterLabel>
+            <translation><!-- Expérience professionnelle incohérente --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niveau d’études insuffisant</masterLabel>
+            <translation><!-- Niveau d’études insuffisant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NB d&apos;heure et jour à calculer --></label>
+        <name>NB_d_heure_et_jour_calculer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nom du payeur --></label>
+        <name>NomPayeur__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nom du Contact --></label>
+        <name>Nom_du_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre d&apos;heures --></label>
+        <name>Nombre_d_heures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre de jours --></label>
+        <name>Nombre_de_jours__c</name>
+    </fields>
+    <fields>
+        <label><!-- OCTA --></label>
+        <name>OCTA__c</name>
+        <relationshipLabel><!-- Poste d&apos;opportunité --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ouverture candidature --></label>
+        <name>Ouverture_candidature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pack à la carte --></label>
+        <name>Pack_la_carte__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prénom du contact --></label>
+        <name>Pr_nom_du_contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- PricebookId --></label>
+        <name>PricebookId__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProduitFiltreSession --></label>
+        <name>ProduitFiltreSession__c</name>
+        <relationshipLabel><!-- Poste d&apos;opportunité --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recu ERP Affaire --></label>
+        <name>Recu_ERP_Affaire__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remplissage Dossier CANEL --></label>
+        <name>RemplissageDossierCANEL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reprise Lot 2015 --></label>
+        <name>Reprise_Lot_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Date derniere modification --></label>
+        <name>SF_Date_derniere_modification__c</name>
+    </fields>
+    <fields>
+        <label><!-- SS Date derniere modification --></label>
+        <name>SS_Date_derniere_modification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Formation pour WF --></label>
+        <name>Session_Formation_pour_WF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Id --></label>
+        <name>Session_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session de formation --></label>
+        <name>Session_de_formation__c</name>
+        <relationshipLabel><!-- Liste prévisionnelle inscrit --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Session formation ancienne valeur --></label>
+        <name>Session_formation_ancienne_valeur__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session selection ancienne valeur --></label>
+        <name>Session_selection_ancienne_valeur__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statut --></label>
+        <name>Statut__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statut Candidature CANEL --></label>
+        <name>Statut_candidature__c</name>
+        <picklistValues>
+            <masterLabel>.</masterLabel>
+            <translation><!-- . --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Abandon</masterLabel>
+            <translation><!-- Abandon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Abandon après candidature</masterLabel>
+            <translation><!-- Abandon après candidature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Abandon avant oral</masterLabel>
+            <translation><!-- Abandon avant oral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Abandon candidature</masterLabel>
+            <translation><!-- Abandon candidature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Admis</masterLabel>
+            <translation><!-- Admis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Admis board 1</masterLabel>
+            <translation><!-- Admis board 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Admis board 2</masterLabel>
+            <translation><!-- Admis board 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Admis sous condition</masterLabel>
+            <translation><!-- Admis sous condition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Admissible</masterLabel>
+            <translation><!-- Admissible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Candidat</masterLabel>
+            <translation><!-- Candidat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dossier avancé</masterLabel>
+            <translation><!-- Dossier avancé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dossier débuté</masterLabel>
+            <translation><!-- Dossier débuté --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En finalisation</masterLabel>
+            <translation><!-- En finalisation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En liste d&apos;attente</masterLabel>
+            <translation><!-- En liste d&apos;attente --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incohérent</masterLabel>
+            <translation><!-- Incohérent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inscrit</masterLabel>
+            <translation><!-- Inscrit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non admis</masterLabel>
+            <translation><!-- Non admis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non admis board 1</masterLabel>
+            <translation><!-- Non admis board 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non admis board 2</masterLabel>
+            <translation><!-- Non admis board 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non admissible</masterLabel>
+            <translation><!-- Non admissible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-admis(sible)</masterLabel>
+            <translation><!-- Non-admis(sible) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-recevable (Hors profil)</masterLabel>
+            <translation><!-- Non-recevable (Hors profil) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pré-inscrit</masterLabel>
+            <translation><!-- Pré-inscrit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renonciation</masterLabel>
+            <translation><!-- Renonciation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renonciation après paiement</masterLabel>
+            <translation><!-- Renonciation après paiement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report</masterLabel>
+            <translation><!-- Report --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Statut Dossier CANEL --></label>
+        <name>Statut_dossier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type produit --></label>
+        <name>Type_produit__c</name>
+    </fields>
+    <fields>
+        <label><!-- 18caracter --></label>
+        <name>X18caracter__c</name>
+    </fields>
+    <fields>
+        <help><!-- CANEL --></help>
+        <label><!-- Session de sélection --></label>
+        <name>session_de_selection__c</name>
+    </fields>
+    <layouts>
+        <layout>Administrateur</layout>
+        <sections>
+            <label><!-- Calcul automatique d&apos;éligibilité --></label>
+            <section>Calcul automatique d&apos;éligibilité</section>
+        </sections>
+        <sections>
+            <label><!-- Historique --></label>
+            <section>Historique</section>
+        </sections>
+        <sections>
+            <label><!-- Informations CANEL --></label>
+            <section>Informations CANEL</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formation Courte</layout>
+        <sections>
+            <label><!-- Historique --></label>
+            <section>Historique</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Intra</layout>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Produits de sélection</layout>
+        <sections>
+            <label><!-- Calcul automatique d&apos;éligibilité --></label>
+            <section>Calcul automatique d&apos;éligibilité</section>
+        </sections>
+        <sections>
+            <label><!-- Historique --></label>
+            <section>Historique</section>
+        </sections>
+        <sections>
+            <label><!-- Informations CANEL --></label>
+            <section>Informations CANEL</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation du produit de l&apos;opportunité</layout>
+        <sections>
+            <label><!-- Calcul automatique d&apos;éligibilité --></label>
+            <section>Calcul automatique d&apos;éligibilité</section>
+        </sections>
+        <sections>
+            <label><!-- Historique --></label>
+            <section>Historique</section>
+        </sections>
+        <sections>
+            <label><!-- Informations CANEL --></label>
+            <section>Informations CANEL</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Relation employeurs</layout>
+        <sections>
+            <label><!-- Calcul automatique d&apos;éligibilité --></label>
+            <section>Calcul automatique d&apos;éligibilité</section>
+        </sections>
+        <sections>
+            <label><!-- Historique --></label>
+            <section>Historique</section>
+        </sections>
+        <sections>
+            <label><!-- Informations CANEL --></label>
+            <section>Informations CANEL</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Taxe</layout>
+        <sections>
+            <label><!-- Historique --></label>
+            <section>Historique</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Le choix de ce produit nécessite que vous remplissiez d&apos;abord la localisation de l&apos;opportunité --></errorMessage>
+        <name>Localisation_obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas modifier ce champ car le produit de l&apos;opportunité n&apos;est pas de type &quot;Selection&quot; --></errorMessage>
+        <name>Ouverture_candidature_non_modifiable</name>
+    </validationRules>
+</CustomObjectTranslation>

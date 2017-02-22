@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.OpportunityContactRoles$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contacts.OpportunityContactRoles$StageName</column>
+            <operator>equals</operator>
+            <value>Intéressé par</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts$Nombre_opportunit_s__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts$CreatedDate</column>
+            <operator>lessOrEqual</operator>
+            <value>5/11/2015 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.OpportunityContactRoles$Name</column>
+            <operator>contains</operator>
+            <value>admission</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts$CreatedDate</column>
+            <operator>lessOrEqual</operator>
+            <value>2/28/2015 12:00 AM</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>test_rapport_mbe</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Rapport_Contacts_et_Opportunites__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

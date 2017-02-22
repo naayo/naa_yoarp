@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$RecordType</field>
+    </columns>
+    <columns>
+        <field>Contact$Nature_du_premier_contact__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Adresse_Email_Personnelle__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Pays_de_r_sidence__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Owner</field>
+    </columns>
+    <columns>
+        <field>Contact$Nombre_opportunit_s__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Nombre_opportunites_sur_criteres__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Niveau_d_tudes__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Niveau_d_exp_rience__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$StageName</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunites__r$Statut_Canel__c</field>
+    </columns>
+    <description>Toutes les opps IMBA sur une période donnée.  Attention aux champs de dates pour la date Création fiche (opp).</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Name</column>
+            <operator>equals</operator>
+            <value>International MBA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Opportunites__r$Exercice__c</column>
+            <operator>equals</operator>
+            <value>2016</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Summary</format>
+    <name>Opps IMBA 2015-2016</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_et_opportunit_s_et_produits__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Ann_e_donation__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

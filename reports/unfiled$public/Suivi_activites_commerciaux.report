@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>Contact</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Contact.Activities$Subject</field>
+        </columns>
+        <columns>
+            <field>Contact.Activities$Status</field>
+        </columns>
+        <columns>
+            <field>Contact.Activities$CreatedBy</field>
+        </columns>
+        <columns>
+            <field>Contact.Activities$LastModifiedDate</field>
+        </columns>
+        <columns>
+            <field>Contact.Activities$Commentaires_EMLYON__c</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Contact.Activities$Status</column>
+                <operator>notEqual</operator>
+                <value>Terminé,Non démarré,En attente d&apos;une autre personne,Reporté</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Contacts avec activités bloc 2</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Contacts_avec_activites__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>Contact$LastActivityDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>Contact</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Contact.OpportunityContactRoles$Owner</field>
+        </columns>
+        <columns>
+            <field>Contact.OpportunityContactRoles$Name</field>
+        </columns>
+        <columns>
+            <field>Contact.OpportunityContactRoles$StageName</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Contact.OpportunityContactRoles$StageName</column>
+                <operator>equals</operator>
+                <value>Identifié,Prospect qualifié,Prospect,Prospect probable,Prospect chaud,Contacté,Intéressé,Intérêt Supplémentaire,Prescription Transformée</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Contacts avec opportunités bloc 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Contacts_avec_opportunites__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>Contact$Ann_e_donation__c</dateColumn>
+            <endDate>2017-02-17</endDate>
+            <interval>INTERVAL_CUSTOM</interval>
+            <startDate>2017-02-13</startDate>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>Contact</joinTable>
+    </blockInfo>
+    <description>Un double rapport joint qui présente les contacts avec activités et contact avec des opportunités</description>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Suivi activités commerciaux</name>
+    <params>
+        <name>lsk</name>
+        <value>48</value>
+    </params>
+    <reportType>Contacts_avec_opportunites__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

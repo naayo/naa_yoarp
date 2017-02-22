@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Dipl_me__c.Promo_d_entr_e__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.Adresse_Email_Personnelle__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.Email_EM_Lyon__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.Email_de_repli__c</field>
+    </columns>
+    <columns>
+        <field>Dipl_me__c.Cycle__c</field>
+    </columns>
+    <columns>
+        <field>Dipl_me__c.Programme__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Dipl_me__c.Promo_d_entr_e__c</column>
+            <operator>equals</operator>
+            <value>2006</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Dipl_me__c.Programme__c</column>
+            <operator>equals</operator>
+            <value>European Master in Management,ESC Lyon,MSc in Luxury Management et Marketing,Global Entrepreneurship Program,Msc in Sports Industry Management,&quot;MSc in Innovation,Design,Entrep. &amp; Arts&quot;,MSc in International Hospitality Management</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Entrés GDE 2006</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Dipl_me__c@Dipl_me__c.Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

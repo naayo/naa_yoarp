@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_96668444</developerName>
+        <masterLabel>Code postal contact</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Contacts$MailingPostalCode</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_35987077</developerName>
+        <masterLabel>Code postal entreprise</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account$Code_Postal__c</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_7838663</developerName>
+        <masterLabel>Code postal perso</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Contacts$Adresse_code_postal__c</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$NumberOfEmployees</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Salutation</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$LastName</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$FirstName</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Email_de_repli__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Adresse_Email_Personnelle__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Opportunites__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Opportunites__r.Contacts_associ_s_l_opportunit__r$Role_sur_opportunite__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_35987077</field>
+    </columns>
+    <columns>
+        <field>BucketField_7838663</field>
+    </columns>
+    <description>Liste des contacts ayant un rôle prescripteur sur une opportunité</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contacts.Opportunites__r.Contacts_associ_s_l_opportunit__r$Role_sur_opportunite__c</column>
+            <operator>equals</operator>
+            <value>Prescripteur agent,Prescripteur coopteur,Prescripteur décideur,Prescripteur gestionnaire RH,Prescripteur achat,Prescripteur</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Contacts avec rôle opp prescripteur</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_avec_opportunites_et_roles_opportunite__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.Contacts$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

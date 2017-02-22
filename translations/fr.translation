@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- ARPEGE - Vente --></label>
+        <name>ARPEGEVente</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- EMLYON --></label>
+        <name>EMLYON</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Mass Update And Mass Edit --></label>
+        <name>Mass_Update_And_Mass_Edit</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Suivi projet --></label>
+        <name>Suivi_projet</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- Lieu1 --></label>
+        <name>Lieu1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lieu2 --></label>
+        <name>Lieu2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lieu3 --></label>
+        <name>Lieu3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lieu4 --></label>
+        <name>Lieu4</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lieu5 --></label>
+        <name>Lieu5</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lieu6 --></label>
+        <name>Lieu6</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- OpportunityCriteria --></label>
+        <name>OpportunityCriteria</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- OpportunityCriteriaSansIP --></label>
+        <name>OpportunityCriteriaSansIP</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProgrammeReconnaissance_Seuil1_B2B --></label>
+        <name>ProgrammeReconnaissance_Seuil1_B2B</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProgrammeReconnaissance_Seuil1_B2C --></label>
+        <name>ProgrammeReconnaissance_Seuil1_B2C</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProgrammeReconnaissance_Seuil2_B2B --></label>
+        <name>ProgrammeReconnaissance_Seuil2_B2B</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProgrammeReconnaissance_Seuil2_B2C --></label>
+        <name>ProgrammeReconnaissance_Seuil2_B2C</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProgrammeReconnaissance_Seuil3_B2B --></label>
+        <name>ProgrammeReconnaissance_Seuil3_B2B</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProgrammeReconnaissance_Seuil3_B2C --></label>
+        <name>ProgrammeReconnaissance_Seuil3_B2C</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProgrammeReconnaissance_Seuil4_B2B --></label>
+        <name>ProgrammeReconnaissance_Seuil4_B2B</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProgrammeReconnaissance_Seuil4_B2C --></label>
+        <name>ProgrammeReconnaissance_Seuil4_B2C</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProgrammeReconnaissance_Seuil5_B2B --></label>
+        <name>ProgrammeReconnaissance_Seuil5_B2B</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProgrammeReconnaissance_Seuil5_B2C --></label>
+        <name>ProgrammeReconnaissance_Seuil5_B2C</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProgrammeReconnaissance_Seuil6_B2B --></label>
+        <name>ProgrammeReconnaissance_Seuil6_B2B</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProgrammeReconnaissance_Seuil6_B2C --></label>
+        <name>ProgrammeReconnaissance_Seuil6_B2C</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProgrammeReconnaissance_Seuil7_B2C --></label>
+        <name>ProgrammeReconnaissance_Seuil7_B2C</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecordTypeEtudiant --></label>
+        <name>RecordTypeEtudiant</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecordTypeProfessionnel --></label>
+        <name>RecordTypeProfessionnel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecordTypeProspectEtudiant --></label>
+        <name>RecordTypeProspectEtudiant</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- X --></label>
+        <name>X</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add all members of subscription campaign --></label>
+        <name>inx__Add_all_members_of_subscription_campaign</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- An email will be sent to when the creation is completed --></label>
+        <name>inx__An_email_will_be_sent_to_when_the_creation_is_completed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- An error occurred while adding campaign members to campaign --></label>
+        <name>inx__An_error_occurred_while_adding_campaign_members_to_campaign</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Campaign completely synced with Inxmail Professional --></label>
+        <name>inx__Campaign_completely_sync_with_Inxmail_Professional</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Campaign connected with Inxmail Professional --></label>
+        <name>inx__Campaign_connected_with_Inxmail_Professional</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Campaign disconnected from Inxmail Professional --></label>
+        <name>inx__Campaign_disconnected_from_Inxmail_Professional</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Amount of campaigns with option &quot;update data&quot; exceeded --></label>
+        <name>inx__Campaign_max_data_campaign_count_reached</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Campaign name --></label>
+        <name>inx__Campaign_name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Campaign synchronizing with Inxmail Professional --></label>
+        <name>inx__Campaign_synchronizing_with_Inxmail_Professional</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Create --></label>
+        <name>inx__Create</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Create new email campaign --></label>
+        <name>inx__Create_new_email_campaign</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Creation of campaign successful --></label>
+        <name>inx__Creation_of_campaign_successful</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error while adding campaign members to campaign --></label>
+        <name>inx__Error_while_adding_campaign_members_to_campaign</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Listname reserved --></label>
+        <name>inx__Invalid_Listname</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please enter a name for the campaign --></label>
+        <name>inx__Please_enter_a_name_for_the_campaign</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Receive an email when the campaign is created --></label>
+        <name>inx__Receive_an_email_when_the_campaign_is_created</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The campaign will be created now --></label>
+        <name>inx__The_campaign_will_be_created_now</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The creation of the campaign can take some minutes --></label>
+        <name>inx__The_creation_of_the_campaign_can_take_some_minutes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Your campaign was successfully created and members have been added --></label>
+        <name>inx__Your_campaign_was_successfully_created_and_members_have_been_added</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Connection failed --></label>
+        <name>inx__inx_connection_failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Connector not active --></label>
+        <name>inx__inx_not_active</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Not connected --></label>
+        <name>inx__inx_not_connected</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- About Mass Update and Mass Edit --></label>
+        <name>About_Mass_Update_and_Mass_Edit</name>
+    </customTabs>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Cibles --></description>
+        <label><!-- Cibles --></label>
+        <name>Cibles</name>
+        <sections>
+            <label><!-- Cilbles --></label>
+            <name>Cilbles</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Codes NAF --></description>
+        <label><!-- Codes NAF --></label>
+        <name>Codes_NAF</name>
+        <sections>
+            <label><!-- NAF --></label>
+            <name>NAF</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes + Contacts + Formation --></description>
+        <label><!-- Comptes + Contacts + Formation --></label>
+        <name>Comptes_Contacts_Formation</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Formations --></label>
+            <name>Formations</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes + Contacts avec rôles EMLYON --></description>
+        <label><!-- Comptes + Contacts avec rôles EMLYON --></label>
+        <name>Comptes_Contacts_avec_ou_sans_opportunites</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Rôles EMLYON --></label>
+            <name>Rôles EMLYON</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes avec opportunités et produits --></description>
+        <label><!-- Comptes avec opportunités et produits --></label>
+        <name>Comptes_avec_opportunit_s_et_produits</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Produits --></label>
+            <name>Produits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes avec opportunité --></description>
+        <label><!-- Comptes avec opportunité --></label>
+        <name>Comptes_avec_opportunite</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes ayant des contacts avec Rôles --></description>
+        <label><!-- Comptes ayant des contacts avec Rôles --></label>
+        <name>Comptes_ayant_des_contacts_avec_R_les</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Rôles --></label>
+            <name>Rôles</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes et Indicateurs --></description>
+        <label><!-- Comptes et Indicateurs --></label>
+        <name>Comptes_et_Indicateurs</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Indicateurs --></label>
+            <name>Indicateurs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes et contreparties --></description>
+        <label><!-- Comptes et contreparties --></label>
+        <name>Comptes_et_contreparties</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contreparties --></label>
+            <name>Contreparties</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes + opportunités avec ou sans rôle contact --></description>
+        <label><!-- Comptes + opportunités avec ou sans rôle contact --></label>
+        <name>Comptes_opportunit_s_avec_ou_sans_r_le_contact</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Rôles du contact --></label>
+            <name>Rôles du contact</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contact &amp; Opp --></description>
+        <label><!-- Contact &amp; Opp --></label>
+        <name>Contact_Opp</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts --></description>
+        <label><!-- Contacts --></label>
+        <name>Contacts</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts + Comptes --></description>
+        <label><!-- Contacts + Comptes --></label>
+        <name>Contacts_Comptes</name>
+        <sections>
+            <columns>
+                <label><!-- Adresse courante: Compte NPAI --></label>
+                <name>Adresse courante: Compte NPAI</name>
+            </columns>
+            <columns>
+                <label><!-- Adresse facturation: Compte NPAI --></label>
+                <name>Adresse facturation: Compte NPAI</name>
+            </columns>
+            <columns>
+                <label><!-- ID FEG Compte --></label>
+                <name>ID FEG Compte</name>
+            </columns>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Contact NPAI --></label>
+                <name>Contact NPAI</name>
+            </columns>
+            <columns>
+                <label><!-- ID FEG Contact --></label>
+                <name>ID FEG Contact</name>
+            </columns>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts Diplômés avec comptes pour campagnes --></description>
+        <label><!-- Contacts Diplômés avec comptes pour campagnes --></label>
+        <name>Contacts_Dipl_m_s_avec_comptes</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Diplômes EMLYON --></label>
+            <name>Diplômes EMLYON</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts avec Diplômes --></description>
+        <label><!-- Contacts avec Diplômes --></label>
+        <name>Contacts_avec_Diplomes</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Diplômes EMLYON --></label>
+            <name>Diplômes EMLYON</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts avec Opportunités+ produits + session --></description>
+        <label><!-- Contacts avec Opportunités+ produits + session --></label>
+        <name>Contacts_avec_Opportunit_s_produits_session</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Produits --></label>
+            <name>Produits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts avec activités --></description>
+        <label><!-- Contacts avec activités --></label>
+        <name>Contacts_avec_activites</name>
+        <sections>
+            <label><!-- Activités --></label>
+            <name>Activités</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes avec opportunités --></description>
+        <label><!-- Comptes avec opportunités --></label>
+        <name>Contacts_avec_comptes_et_opportunit_s_comptes</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Rôles sur opportunité --></label>
+            <name>Rôles sur opportunité</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts avec opportunités --></description>
+        <label><!-- Contacts avec opportunités --></label>
+        <name>Contacts_avec_opportunites</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts avec opportunités et rôles opportunité --></description>
+        <label><!-- Contacts avec opportunités et rôles opportunité --></label>
+        <name>Contacts_avec_opportunites_et_roles_opportunite</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Rôles sur opportunité --></label>
+            <name>Rôles sur opportunité</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts avec ou sans comptes --></description>
+        <label><!-- Contacts avec ou sans comptes --></label>
+        <name>Contacts_avec_ou_sans_comptes</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts avec ou sans opportunités --></description>
+        <label><!-- Contacts avec ou sans opportunités --></label>
+        <name>Contacts_avec_ou_sans_opportunit_s</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts avec rôles --></description>
+        <label><!-- Contacts avec rôles --></label>
+        <name>Contacts_avec_roles</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Rôles EMLYON --></label>
+            <name>Rôles EMLYON</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts - éléments de doublons --></description>
+        <label><!-- Contacts - éléments de doublons --></label>
+        <name>Contacts_elements_de_doublons</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Éléments d&apos;ensembles d&apos;enregistrements dupliqués --></label>
+            <name>Éléments d&apos;ensembles d&apos;enregistrements dupliqués</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts et contreparties --></description>
+        <label><!-- Contacts et contreparties --></label>
+        <name>Contacts_et_contreparties</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Contreparties --></label>
+            <name>Contreparties</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts et opportunités et produits --></description>
+        <label><!-- Contacts et opportunités et produits --></label>
+        <name>Contacts_et_opportunit_s_et_produits</name>
+        <sections>
+            <columns>
+                <label><!-- 18caracter contact --></label>
+                <name>18caracter contact</name>
+            </columns>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- 18caracter Opportunite --></label>
+                <name>18caracter Opportunite</name>
+            </columns>
+            <columns>
+                <label><!-- ID du catalogue de prix --></label>
+                <name>ID du catalogue de prix</name>
+            </columns>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- 18caracter Poste opportunite --></label>
+                <name>18caracter Poste opportunite</name>
+            </columns>
+            <columns>
+                <label><!-- Code du produit --></label>
+                <name>Code du produit</name>
+            </columns>
+            <label><!-- Produits --></label>
+            <name>Produits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts et rôles EMLYON --></description>
+        <label><!-- Contacts et rôles EMLYON --></label>
+        <name>Contacts_et_r_les_EMLYON</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Rôles EM LYON --></label>
+            <name>Rôles EM LYON</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts &amp; opp2 --></description>
+        <label><!-- Contacts &amp; opp2 --></label>
+        <name>Contacts_opp2</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Doublons Comptes --></description>
+        <label><!-- Doublons Comptes --></label>
+        <name>Doublons_Comptes</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- DupeCatcher Potential Duplicates --></label>
+            <name>DupeCatcher Potential Duplicates</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Liste des Comptes --></description>
+        <label><!-- Liste des Comptes --></label>
+        <name>Liste_des_Comptes</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opp &amp; Produit &amp; PBook --></description>
+        <label><!-- Opp &amp; Produit &amp; PBook --></label>
+        <name>Opp_Produit_PBook</name>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Produits --></label>
+            <name>Produits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opp + Rôle de contact + Activités --></description>
+        <label><!-- Opp + Rôle de contact + Activités --></label>
+        <name>Opp_Role_de_contact_Activites</name>
+        <sections>
+            <label><!-- Activités --></label>
+            <name>Activités</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Rôles du contact --></label>
+            <name>Rôles du contact</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opport avec rôle de contact --></description>
+        <label><!-- Opport avec rôle de contact --></label>
+        <name>Opport_avec_r_le_de_contact</name>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Rôles du contact --></label>
+            <name>Rôles du contact</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunités + Echeancier --></description>
+        <label><!-- Opportunités + Echeancier --></label>
+        <name>Opportunit_s_Echeancier</name>
+        <sections>
+            <label><!-- Echéancier --></label>
+            <name>Echéancier</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunités &amp; Rôles sur opportunités --></description>
+        <label><!-- Opportunités &amp; Rôles sur opportunités --></label>
+        <name>Opportunit_s_R_les_sur_opportunit_s</name>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Rôles sur opportunité --></label>
+            <name>Rôles sur opportunité</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunités avec des produits et session --></description>
+        <label><!-- Opportunités avec des produits et session --></label>
+        <name>Opportunit_s_avec_des_produits_et_session</name>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Produits --></label>
+            <name>Produits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunités avec des tendances historiques --></description>
+        <label><!-- Opportunités avec des tendances historiques --></label>
+        <name>Opportunit_s_avec_des_tendances_historiques</name>
+        <sections>
+            <label><!-- Opportunité (historique) --></label>
+            <name>Opportunité (historique)</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunités avec ou sans produit --></description>
+        <label><!-- Opportunités avec ou sans produit --></label>
+        <name>Opportunit_s_avec_ou_sans_produit</name>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Produits --></label>
+            <name>Produits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunités avec ou sans rôle du contact --></description>
+        <label><!-- Opportunités avec ou sans rôle du contact --></label>
+        <name>Opportunit_s_avec_ou_sans_r_le_du_contact</name>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Rôles du contact --></label>
+            <name>Rôles du contact</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunités et activités. --></description>
+        <label><!-- Opportunités et activités. --></label>
+        <name>Opportunit_s_et_activit_s</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunités et échéanciers --></description>
+        <label><!-- Opportunités et échéanciers --></label>
+        <name>Opportunit_s_et_ch_anciers</name>
+        <sections>
+            <label><!-- Echéancier --></label>
+            <name>Echéancier</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunités avec partenaires financeurs --></description>
+        <label><!-- Opportunités avec partenaires financeurs --></label>
+        <name>Opportunites_avec_partenaires_financeurs</name>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Partenaires financeurs/ collecteurs OPCA --></label>
+            <name>Partenaires financeurs/ collecteurs OPCA</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunités avec produits --></description>
+        <label><!-- Opportunités avec produits --></label>
+        <name>Opportunites_avec_produits</name>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Produits --></label>
+            <name>Produits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunités + postes (+ contact comptes) --></description>
+        <label><!-- Opportunités + postes (+ contact comptes) --></label>
+        <name>Opportunites_plus_informations_complementaires</name>
+        <sections>
+            <label><!-- Compte --></label>
+            <name>Compte</name>
+        </sections>
+        <sections>
+            <label><!-- Contact --></label>
+            <name>Contact</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Code produit --></label>
+                <name>Code produit</name>
+            </columns>
+            <columns>
+                <label><!-- Libellé Produit --></label>
+                <name>Libellé Produit</name>
+            </columns>
+            <columns>
+                <label><!-- Type --></label>
+                <name>Type</name>
+            </columns>
+            <label><!-- Produits --></label>
+            <name>Produits</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Date début de session --></label>
+                <name>Date début de session</name>
+            </columns>
+            <columns>
+                <label><!-- Nom du produit --></label>
+                <name>Nom du produit</name>
+            </columns>
+            <label><!-- Session de formation --></label>
+            <name>Session de formation</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Portefeuilles Comptes via NAF --></description>
+        <label><!-- Portefeuilles Comptes via NAF --></label>
+        <name>Portefeuilles_Comptes_via_NAF</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- NAF --></label>
+            <name>NAF</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Produits EMLYON --></description>
+        <label><!-- Produits EMLYON --></label>
+        <name>Produits_EMLYON</name>
+        <sections>
+            <label><!-- Produits --></label>
+            <name>Produits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Produits + Session + Détail Session Pack --></description>
+        <label><!-- Produits + Session + Détail Session Pack --></label>
+        <name>Produits_Session_D_tail_Session_Pack</name>
+        <sections>
+            <label><!-- Liste des sessions packs utilisant la session --></label>
+            <name>Liste des sessions packs utilisant la session</name>
+        </sections>
+        <sections>
+            <label><!-- Produits --></label>
+            <name>Produits</name>
+        </sections>
+        <sections>
+            <label><!-- Sessions de formation --></label>
+            <name>Sessions de formation</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Produits et Session avec Session Packs --></description>
+        <label><!-- Produits et Session avec Session Packs --></label>
+        <name>Produits_et_Session_Packs</name>
+        <sections>
+            <label><!-- Détails des Sessions composant le pack --></label>
+            <name>Détails des Sessions composant le pack</name>
+        </sections>
+        <sections>
+            <label><!-- Produits --></label>
+            <name>Produits</name>
+        </sections>
+        <sections>
+            <label><!-- Sessions de formation --></label>
+            <name>Sessions de formation</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Rapport Contacts et Opportunités --></description>
+        <label><!-- Rapport Contacts et Opportunités --></label>
+        <name>Rapport_Contacts_et_Opportunites</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Rapport Maintenance Doublons Potentiels Contacts --></description>
+        <label><!-- Rapport Maintenance Doublons Potentiels Contacts --></label>
+        <name>Rapport_Maintenance_Doublons_Potentiels_Contacts</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- DupeCatcher Potential Duplicates --></label>
+            <name>DupeCatcher Potential Duplicates</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Rapports Contacts Diplômés EMLYON --></description>
+        <label><!-- Rapports Contacts Diplômés EMLYON --></label>
+        <name>Rapports_Contacts_Dipl_m_s_EMLYON</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Diplômes EMLYON --></label>
+            <name>Diplômes EMLYON</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Rapports Contacts Diplômés EMLYON Avec Rôles --></description>
+        <label><!-- Rapports Contacts Diplômés EMLYON Avec Rôles --></label>
+        <name>Rapports_Contacts_Diplomes_roles</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Diplômes EMLYON --></label>
+            <name>Diplômes EMLYON</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Rapports Contacts avec ou sans Diplômes EMLYON --></description>
+        <label><!-- Rapports Contacts avec ou sans Diplômes EMLYON --></label>
+        <name>Rapports_Contacts_avec_ou_sans_Dipl_mes_EMLYON</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Diplômes EMLYON --></label>
+            <name>Diplômes EMLYON</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Rapports Opportunités Poste Opp et produits --></description>
+        <label><!-- Rapports Opportunités Poste Opp et produits --></label>
+        <name>Rapports_Opportunit_s_Poste_Opp_et_produits</name>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+        <sections>
+            <label><!-- Produits --></label>
+            <name>Produits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Rapports et utilisateurs --></description>
+        <label><!-- Rapports et utilisateurs --></label>
+        <name>Rapports_et_utilisateurs</name>
+        <sections>
+            <label><!-- Rapports (Créé par) --></label>
+            <name>Rapports (Créé par)</name>
+        </sections>
+        <sections>
+            <label><!-- Utilisateurs --></label>
+            <name>Utilisateurs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Rapports liés à des Tableaux de bord --></description>
+        <label><!-- Rapports liés à des Tableaux de bord --></label>
+        <name>Rapports_li_s_des_Tableaux_de_bord</name>
+        <sections>
+            <columns>
+                <label><!-- Tableau de bord Créé par --></label>
+                <name>Tableau de bord Créé par</name>
+            </columns>
+            <label><!-- Composants du tableau de bord --></label>
+            <name>Composants du tableau de bord</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Rapport Créé par --></label>
+                <name>Rapport Créé par</name>
+            </columns>
+            <label><!-- Rapports --></label>
+            <name>Rapports</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Tâches et événements sur opportunités --></description>
+        <label><!-- Tâches et événements sur opportunités --></label>
+        <name>T_ches_et_v_nements_sur_opportunit_s</name>
+        <sections>
+            <label><!-- Activités --></label>
+            <name>Activités</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Tendances historiques pour opportunité --></description>
+        <label><!-- Tendances historiques pour opportunité --></label>
+        <name>Tendances_opp</name>
+        <sections>
+            <label><!-- Opportunité (historique) --></label>
+            <name>Opportunité (historique)</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunités --></label>
+            <name>Opportunités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Utilisateurs Salesforce --></description>
+        <label><!-- Utilisateurs Salesforce --></label>
+        <name>Utilisateurs_Salesforce</name>
+        <sections>
+            <label><!-- Utilisateurs --></label>
+            <name>Utilisateurs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes contacts diplômes EMLYON --></description>
+        <label><!-- Comptes contacts diplômes EMLYON --></label>
+        <name>comptes_contacts_diplomes_EMLYON</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Diplômes EMLYON --></label>
+            <name>Diplômes EMLYON</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- comptes indicateurs --></description>
+        <label><!-- comptes indicateurs --></label>
+        <name>comptes_indicateurs</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Indicateurs --></label>
+            <name>Indicateurs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- contacts avec des activités --></description>
+        <label><!-- contacts avec des activités --></label>
+        <name>contacts_avec_des_activit_s</name>
+        <sections>
+            <label><!-- Activités --></label>
+            <name>Activités</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts, comptes et diplômes EMLYON 2 --></description>
+        <label><!-- Contacts, comptes et diplômes EMLYON 2 --></label>
+        <name>contacts_comptes_et_dipl_mes_EMLYON_2</name>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Diplômes EMLYON --></label>
+            <name>Diplômes EMLYON</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- test --></description>
+        <label><!-- test --></label>
+        <name>test</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- DupeCatcher Potential Duplicates --></label>
+            <name>DupeCatcher Potential Duplicates</name>
+        </sections>
+    </reportTypes>
+    <scontrols>
+        <label><!-- About Mass Update And Mass Edit --></label>
+        <name>About_Mass_Update_And_Mass_Edit</name>
+    </scontrols>
+</Translations>

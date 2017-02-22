@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Indicateur__c.Libelle__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Indicateur__c.Valeur__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Indicateur__c.Libelle__c</column>
+            <operator>equals</operator>
+            <value>Versement Taxe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Indicateur__c.Exercice__c</column>
+            <operator>equals</operator>
+            <value>2013,2014,2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Libell_du_groupe__c</column>
+            <operator>equals</operator>
+            <value>SAINT GOBAIN</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Indicateur__c.Exercice__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Libell_du_groupe__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Versement Taxe par Groupe sur 3 ans Fund</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>AccountCustomEntity$Indicateur__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

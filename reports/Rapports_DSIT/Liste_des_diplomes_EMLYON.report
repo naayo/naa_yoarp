@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_$Contact.Identifiant_dipl_m__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.ID_FEG__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>Dipl_me__c.Cycle__c</field>
+    </columns>
+    <columns>
+        <field>Dipl_me__c.Programme__c</field>
+    </columns>
+    <columns>
+        <field>Dipl_me__c.Promo_de_sortie__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Liste des diplômés EMLYON</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Dipl_me__c@Dipl_me__c.Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>FK_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

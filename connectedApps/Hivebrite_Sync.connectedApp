@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>bechaa@em-lyon.com</contactEmail>
+    <label>Hivebrite Sync</label>
+    <oauthConfig>
+        <callbackUrl>https://hivebrite.com</callbackUrl>
+        <consumerKey>3MVG9A_f29uWoVQsD5oVJjLZrK0JIrgGixpwP4J9ryC9A_NS461HxTksMU5z8tttj0R3TiCLGzfjZhyQ81Z4r</consumerKey>
+        <scopes>Full</scopes>
+    </oauthConfig>
+</ConnectedApp>

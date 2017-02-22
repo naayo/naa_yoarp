@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChoosePricebook</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>C1_eligible_age__c</fullName>
+        <externalId>false</externalId>
+        <label>Eligibilité de l&apos;âge</label>
+        <length>35</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>C2_eligible_niveau_d_tudes__c</fullName>
+        <externalId>false</externalId>
+        <label>Eligibilité du niveau d&apos;études</label>
+        <length>35</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>C3_eligible_niveau_xp_pro__c</fullName>
+        <externalId>false</externalId>
+        <label>Eligibilité du niveau d&apos;expérience pro</label>
+        <length>35</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>C4_eligible_domaine_d_tudes__c</fullName>
+        <externalId>false</externalId>
+        <label>Eligibilité du domaine d&apos;études</label>
+        <length>35</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Champ_syst_me_pour_clonage__c</fullName>
+        <externalId>false</externalId>
+        <label>Champ système pour clonage</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CodeAgresso_Poste_Opportunite__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Ce champ est remplit automatiquement en se basant sur &quot; RecordType + Exercice + Compteur Opp&quot;</description>
+        <externalId>false</externalId>
+        <label>Code Agresso Poste Opportunité</label>
+        <length>60</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Code_PO__c</fullName>
+        <displayFormat>{000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Code_PO</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Compte_opportunite__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Compte</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Compteur_Poste_Opp__c</fullName>
+        <description>Compteur poste opportunité</description>
+        <displayFormat>{000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Compteur Poste Opp</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Data_Loader_Util__c</fullName>
+        <externalId>false</externalId>
+        <label>Data Loader Util</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>DatePaiement__c</fullName>
+        <externalId>false</externalId>
+        <label>Date de paiement</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_de_debut_de_session_f__c</fullName>
+        <externalId>false</externalId>
+        <formula>Session_de_formation__r.Date_de_debut_de_session__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Début</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Discount</fullName>
+    </fields>
+    <fields>
+        <fullName>Eligible__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+ ISPICKVAL(Opportunity.Contact_central__r.Nature_du_premier_contact__c,&quot;Site mobile&quot;),&quot;ELIGIBLE&quot;,
+
+IF(
+ OR( C1_eligible_age__c = &quot;Critère KO&quot;, C2_eligible_niveau_d_tudes__c =&quot;Critère KO&quot;,
+C3_eligible_niveau_xp_pro__c = &quot;Critère KO&quot;, C4_eligible_domaine_d_tudes__c =&quot;Critère KO&quot;) 
+, &quot;NON ELIGIBLE&quot;, 
+ IF(
+ OR( C1_eligible_age__c = &quot;Manque critère&quot;, C2_eligible_niveau_d_tudes__c =&quot;Manque critère&quot;,
+C3_eligible_niveau_xp_pro__c = &quot;Manque critère&quot;, C4_eligible_domaine_d_tudes__c =&quot;Manque critère&quot;) 
+, &quot;MANQUE CRITERE&quot;,
+IF(
+ AND( C1_eligible_age__c = &quot;Critère non actif pour le produit&quot;, C2_eligible_niveau_d_tudes__c =&quot;Critère non actif pour le produit&quot;,
+C3_eligible_niveau_xp_pro__c = &quot;Critère non actif pour le produit&quot;, C4_eligible_domaine_d_tudes__c =&quot;Critère non actif pour le produit&quot;) 
+,&quot;NON DISPONIBLE&quot;,  
+ &quot;ELIGIBLE&quot;
+)))
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Eligibilité calculée</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EtatPaiement__c</fullName>
+        <externalId>false</externalId>
+        <label>Etat du paiement</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Payé</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non payé</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Annulé</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Famille__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(PricebookEntry.Product2.Famille__c)</formula>
+        <label>Famille</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fin__c</fullName>
+        <externalId>false</externalId>
+        <formula>Session_de_formation__r.Date_de_fin_de_session__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Fin</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Fonction__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity.Contact_central__r.Fonctions__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Fonction</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Format__c</fullName>
+        <externalId>false</externalId>
+        <label>Format</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Court</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Parcours</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Certificat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Gamme__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(PricebookEntry.Product2.Family)</formula>
+        <label>Gamme</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Id_Opportunite__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.X18caracter__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Id Opportunité</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Id_entree_de_catalogue__c</fullName>
+        <externalId>false</externalId>
+        <formula>PricebookEntryId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Id entrée de catalogue</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InterfaceExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>InterfaceExternalId Poste</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>JetonPaiement__c</fullName>
+        <externalId>false</externalId>
+        <label>Id paiement</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lieu_de_formation__c</fullName>
+        <externalId>false</externalId>
+        <label>Lieu de formation</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>ModePaiement__c</fullName>
+        <externalId>false</externalId>
+        <label>Mode de paiement</label>
+        <picklist>
+            <picklistValues>
+                <fullName>CB online</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Facture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gratuit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>MontantPaye__c</fullName>
+        <externalId>false</externalId>
+        <label>Montant payé</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Motifs_de_non_eligibilite__c</fullName>
+        <externalId>false</externalId>
+        <label>Motifs de non éligibilité</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Age trop élevé</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Niveau d’études insuffisant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Expérience professionnelle incohérente</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Domaine d’études incohérent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>NB_d_heure_et_jour_calculer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Ce champ se coche par WF : pour tous les produits non Pack et les produits Pack ayant la case à cocher &quot;à la carte&quot;</description>
+        <externalId>false</externalId>
+        <label>NB d&apos;heure et jour à calculer</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NomPayeur__c</fullName>
+        <externalId>false</externalId>
+        <label>Nom du payeur</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nom_du_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.Contact_central__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Nom du Contact</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nombre_d_heures__c</fullName>
+        <externalId>false</externalId>
+        <label>Nombre d&apos;heures</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nombre_de_jours__c</fullName>
+        <externalId>false</externalId>
+        <label>Nombre de jours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OCTA__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>OCTA</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.Est_un_OCTA__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Poste d&apos;opportunité</relationshipLabel>
+        <relationshipName>Poste_d_opportunit</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ouverture_candidature__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Cette coche permet de signaler le déclenchement sur le site EML 3 l’ouverture du dossier de candidature. Valable également pour formation continue longue.</description>
+        <externalId>false</externalId>
+        <label>Ouverture candidature</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Pack_la_carte__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Pack à la carte</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Pr_nom_du_contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.Contact_central__r.FirstName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Prénom du contact</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PricebookId__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.Pricebook2Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PricebookId</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>ProduitFiltreSession__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>ProduitFiltreSession</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Poste d&apos;opportunité</relationshipLabel>
+        <relationshipName>Poste_d_opportunit</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+    </fields>
+    <fields>
+        <fullName>Recu_ERP_Affaire__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Champ qui sera rempli par le web service EMLYON pour définir les postes opportunités (formation courte et programme long diplômant) à envoyer vers à AGRESSO</description>
+        <externalId>false</externalId>
+        <label>Recu ERP Affaire</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RemplissageDossierCANEL__c</fullName>
+        <externalId>false</externalId>
+        <label>Remplissage Dossier CANEL</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Reprise_Lot_2015__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Reprise Lot 2015</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SF_Date_derniere_modification__c</fullName>
+        <externalId>false</externalId>
+        <label>SF Date derniere modification</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SS_Date_derniere_modification__c</fullName>
+        <externalId>false</externalId>
+        <label>SS Date derniere modification</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ServiceDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Session_Formation_pour_WF__c</fullName>
+        <externalId>false</externalId>
+        <formula>Session_de_formation__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Session Formation pour WF</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Session_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Session_de_formation__r.x18caracteres__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Session Id</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Session_de_formation__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Session de formation</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.ProduitFiltreSession__c</field>
+                <operation>equals</operation>
+                <valueField>Session__c.Produits__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Session__c.Statut__c</field>
+                <operation>notEqual</operation>
+                <value>Complète</value>
+            </filterItems>
+            <filterItems>
+                <field>Session__c.Statut__c</field>
+                <operation>notEqual</operation>
+                <value>Abandonnée</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Session__c</referenceTo>
+        <relationshipLabel>Liste prévisionnelle inscrit</relationshipLabel>
+        <relationshipName>Poste_d_opportunit</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Session_formation_ancienne_valeur__c</fullName>
+        <externalId>false</externalId>
+        <label>Session formation ancienne valeur</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Session_selection_ancienne_valeur__c</fullName>
+        <externalId>false</externalId>
+        <label>Session selection ancienne valeur</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Statut__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity.StageName)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Statut</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Statut_candidature__c</fullName>
+        <externalId>false</externalId>
+        <label>Statut Candidature CANEL</label>
+        <picklist>
+            <picklistValues>
+                <fullName>.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-recevable (Hors profil)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Abandon</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dossier débuté</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dossier avancé</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>En finalisation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Candidat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Admissible</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-admis(sible)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Abandon candidature</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Admis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Admis sous condition</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inscrit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Report</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renonciation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incohérent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non admissible</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non admis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Admis board 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Admis board 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non admis board 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non admis board 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pré-inscrit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renonciation après paiement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Abandon après candidature</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Abandon avant oral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>En liste d&apos;attente</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Statut_dossier__c</fullName>
+        <externalId>false</externalId>
+        <label>Statut Dossier CANEL</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Subtotal</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Type_produit__c</fullName>
+        <description>Champ permettant de stocker le type d&apos;enregistrement du produit. Il est nécessaire de la stocker pour des raisons techniques : pour les parcours un roll-up sur l&apos;opportunité permet de savoir si on est dans le cas d&apos;un parcours.</description>
+        <externalId>false</externalId>
+        <label>Type produit</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>X18caracter__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>18caracter</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>session_de_selection__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>CANEL</inlineHelpText>
+        <label>Session de sélection</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>Localisation_obligatoire</fullName>
+        <active>true</active>
+        <description>Ajout de produit localisable que s&apos;il y a une localisation définie sur l&apos;opportunité. Concerne le type d’enregistrement &apos;&apos;relations employeur&apos;&apos;.</description>
+        <errorConditionFormula>AND(
+Opportunity.RecordType.Name = &quot;Relations Employeur&quot;,
+ISBLANK( TEXT(Opportunity.Localisation__c )),
+Product2.Localisation_pr_ciser_dans_l_opp__c = TRUE)</errorConditionFormula>
+        <errorMessage>Le choix de ce produit nécessite que vous remplissiez d&apos;abord la localisation de l&apos;opportunité</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Ouverture_candidature_non_modifiable</fullName>
+        <active>true</active>
+        <description>Si le produit de l&apos;opportunité n&apos;est pas un produit de type &quot;selection&quot;, alors les profils EML ne pourront pas modifier le champ &quot;ouverture candidature&quot; (case à cocher).</description>
+        <errorConditionFormula>AND 
+(ISCHANGED(Ouverture_candidature__c), 
+  $Profile.Name = &quot;EML&quot;, 
+   Product2.RecordType.DeveloperName &lt;&gt; &quot;Selection&quot;)</errorConditionFormula>
+        <errorDisplayField>Ouverture_candidature__c</errorDisplayField>
+        <errorMessage>Vous ne pouvez pas modifier ce champ car le produit de l&apos;opportunité n&apos;est pas de type &quot;Selection&quot;</errorMessage>
+    </validationRules>
+</CustomObject>

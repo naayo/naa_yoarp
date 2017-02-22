@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_82300904</developerName>
+        <masterLabel>OpportunityId</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Contacts.OpportunityContactRoles*Opportunity$X18caracter__c</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Login__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$CreatedDate</field>
+    </columns>
+    <description>Liste des opportunités dont le contact central n&apos;a pas de pays</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contacts$Pays_de_r_sidence__c</column>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts$RecordType</column>
+            <operator>equals</operator>
+            <value>Contact.Prospect_Etudiant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts$CreatedBy</column>
+            <operator>equals</operator>
+            <value>Interface</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>opportunités FI avec contact sans pays</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Rapport_Contacts_et_Opportunites__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

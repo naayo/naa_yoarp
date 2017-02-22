@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Historique de poste</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Historique de postes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Historique de postes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Début --></label>
+        <name>Dbut__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fin --></label>
+        <name>Fin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Société --></label>
+        <name>Societe__c</name>
+        <relationshipLabel><!-- Historique de postes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Société --></label>
+        <name>Socit__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Historique de poste</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Poste --></label>
+            <section>Poste</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

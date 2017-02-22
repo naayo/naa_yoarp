@@ -1,0 +1,1519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActualCost</fullName>
+    </fields>
+    <fields>
+        <fullName>AmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>AmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>BU__c</fullName>
+        <externalId>false</externalId>
+        <label>BU</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Formation Initiale</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Communication  Corporate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EMLYON FOREVER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fondation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Projets Partenariats</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employabilité</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Taxe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MBA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PGM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AMP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Executive Mastères</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DUA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prog. Courts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intra</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>BudgetedCost</fullName>
+    </fields>
+    <fields>
+        <fullName>CampaignMemberRecordTypeId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Canal_de_communication_sortant__c</fullName>
+        <externalId>false</externalId>
+        <label>Canal de communication sortant</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Courrier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Téléphone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Réseaux sociaux</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SMS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Cat_gorie__c</fullName>
+        <externalId>false</externalId>
+        <label>Catégorie</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Réunion d&apos;information</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invitation événements</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Information programmes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Information Corporate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Promotion commerciale</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Dedoublonage_effectue__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Dédoublonage effectué</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Exercice__c</fullName>
+        <description>Champ créé pour la reprise (à faire évoluer si besoin)</description>
+        <externalId>false</externalId>
+        <label>Exercice</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ExpectedResponse</fullName>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyActualCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyBudgetedCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyExpectedRevenue</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberSent</fullName>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+    </fields>
+    <fields>
+        <fullName>Lieu__c</fullName>
+        <description>Champ créé pour la reprise (à faire évoluer si besoin)</description>
+        <externalId>false</externalId>
+        <label>Lieu</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Membres_net_de_la_campagne__c</fullName>
+        <externalId>false</externalId>
+        <label>Membres net de la campagne</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberSent</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Priorit_dedoublonnage__c</fullName>
+        <externalId>false</externalId>
+        <label>Priorité dédoublonnage</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>13</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>14</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>15</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Reprise_LOT_2015__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Reprise LOT 2015</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>En cours</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Terminé</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Annulé</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prévu</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Taux_d_ouverture__c</fullName>
+        <externalId>false</externalId>
+        <label>Taux d&apos;ouverture</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>E-mail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Télémarketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bandeaux publicitaires</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Séminaire/Conférence</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Relations publiques</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partenaires</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Programme de référence</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Publicité</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>inx__connect_with_Inxmail__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Cocher ce champ puis enregistrer afin d&apos;activer la connexion à Inxmail Professional</inlineHelpText>
+        <label>Connect with Inxmail Professional</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>inx__connection_status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( inx__connect_with_Inxmail__c  = false, $Label.inx__Campaign_disconnected_from_Inxmail_Professional, 
+IF( inx__connection_status_number__c  = -1,  $Label.inx__Invalid_Listname ,
+IF( inx__connection_status_number__c  = -2,  $Label.inx__inx_connection_failed ,
+IF( inx__connection_status_number__c  = -3,  $Label.inx__inx_not_active ,
+IF( inx__connection_status_number__c  = 1, $Label.inx__Campaign_completely_sync_with_Inxmail_Professional,
+IF( inx__connection_status_number__c  = 2, $Label.inx__Campaign_synchronizing_with_Inxmail_Professional,  
+IF( inx__connection_status_number__c  = 3   &amp;&amp; inx__connect_with_Inxmail__c  = false, $Label.inx__Campaign_disconnected_from_Inxmail_Professional,  
+IF ( NOT ISBLANK( inx__list_id__c ),  $Label.inx__Campaign_connected_with_Inxmail_Professional ,  $Label.inx__Campaign_disconnected_from_Inxmail_Professional ))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Affiche l&apos;état de connexion avec Inxmail Professional</inlineHelpText>
+        <label>Connection Status</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inx__connection_status_number__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>internal field</description>
+        <externalId>false</externalId>
+        <label>Connection Status Number</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inx__deletecampaign__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Delete the Campaign in Salesforce.com after it has been successfully removed in Inxmail Professional</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Cocher ce champ pour supprimer la campagne ainsi que l&apos;ensemble de ses membres</inlineHelpText>
+        <label>Delete Campaign</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>inx__has_mail_attachment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>internal field: checked if the E-Mail has been attached as binary attachment to the campaign</description>
+        <externalId>false</externalId>
+        <label>E-Mail is attached to Campaign</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>inx__keep_in_sync__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Cocher ce champ puis enregistrer afin de rajouter, a posteriori, des membres à la campagne</inlineHelpText>
+        <label>Synchronise additional campaign members</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>inx__leadcampaign__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked Inxmail Professional will upload Leads</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Cocher ce champ afin d&apos;importer en tant que leads les destinataires présents dans Inxmail Professional</inlineHelpText>
+        <label>Can Generate Leads</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>inx__list_id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>internal field: ID of the list</description>
+        <externalId>true</externalId>
+        <label>List ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>inx__mailcontent__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Attaches Mailing as HTML or as Plaintext to Campaign</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Joindre le mailing HTML ou Texte à la campagne</inlineHelpText>
+        <label>Attach Mailing To Campaign</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>inx__net_members__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Nombre de destinataires pour lesquels le message a abouti</inlineHelpText>
+        <label>Net Campaign Members</label>
+        <summaryFilterItems>
+            <field>CampaignMember.Status</field>
+            <operation>notEqual</operation>
+            <value>Hard Bounced</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>CampaignMember.Status</field>
+            <operation>notEqual</operation>
+            <value>Illegal Value</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>CampaignMember.Status</field>
+            <operation>notEqual</operation>
+            <value>New</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>CampaignMember.Status</field>
+            <operation>notEqual</operation>
+            <value>Blacklist</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>CampaignMember.Status</field>
+            <operation>notEqual</operation>
+            <value>Not Sent</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>CampaignMember.Status</field>
+            <operation>notEqual</operation>
+            <value>Duplicate</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>inx__opening_rate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF ((  inx__net_members__c  ) = 0, 0,(  NumberOfResponses  ) / (  inx__net_members__c ))</formula>
+        <inlineHelpText>Afficher le taux d&apos;ouverture de la campagne</inlineHelpText>
+        <label>Opening Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>inx__sender_address__c</fullName>
+        <defaultValue>$User.Email</defaultValue>
+        <deprecated>false</deprecated>
+        <description>List property in Inxmail Professional for sender address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indiquer dans ce champ l&apos;adresse email de l&apos;expéditeur</inlineHelpText>
+        <label>Sender Address</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>inx__update_data__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Activez l’option &quot;Mise à jour des données des Contacts/Pistes&quot; si vous souhaitez que les données de vos contacts/pistes soient actualisées dans Inxmail Professional</inlineHelpText>
+        <label>Synchronise updated contact/lead data</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>x18caracteres__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>x18caracteres</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllActiveCampaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Active Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>MyActiveCampaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Active Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>Toutes_les_campagnes</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>Membres_net_de_la_campagne__c</columns>
+        <columns>inx__net_members__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Toutes les campagnes</label>
+        <language>fr</language>
+    </listViews>
+    <listViews>
+        <fullName>Toutes_les_campagnes_connect_s_Inxmail</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>inx__connection_status__c</field>
+            <operation>contains</operation>
+            <value>Sync</value>
+        </filters>
+        <label>Toutes les campagnes synch. Inxmail</label>
+    </listViews>
+    <recordTypes>
+        <fullName>Campagne_non_Emailing</fullName>
+        <active>true</active>
+        <description>Campagne non inxmail</description>
+        <label>Campagne non Emailing</label>
+        <picklistValues>
+            <picklist>BU__c</picklist>
+            <values>
+                <fullName>AMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication  Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMLYON FOREVER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employabilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Mastères</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fondation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formation Initiale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intra</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PGM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prog%2E Courts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projets Partenariats</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taxe</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Canal_de_communication_sortant__c</picklist>
+            <values>
+                <fullName>Courrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Réseaux sociaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Téléphone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cat_gorie__c</picklist>
+            <values>
+                <fullName>Information Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information programmes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation événements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promotion commerciale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Réunion d%27information</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priorit_dedoublonnage__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Annulé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>En cours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prévu</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Terminé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bandeaux publicitaires</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partenaires</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programme de référence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publicité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Relations publiques</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Séminaire%2FConférence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Télémarketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>inx__Standard_Campaign</fullName>
+        <active>true</active>
+        <description>This is an example Record Type for Non Inxmail Professional Campaigns. Please do not use. Instead create your own Record Type for other Campaigns.</description>
+        <label>Non Inxmail Professional Email Campaign</label>
+        <picklistValues>
+            <picklist>BU__c</picklist>
+            <values>
+                <fullName>AMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication  Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMLYON FOREVER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employabilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Mastères</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fondation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formation Initiale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intra</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PGM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prog%2E Courts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projets Partenariats</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taxe</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Canal_de_communication_sortant__c</picklist>
+            <values>
+                <fullName>Courrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Réseaux sociaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Téléphone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cat_gorie__c</picklist>
+            <values>
+                <fullName>Information Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information programmes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation événements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promotion commerciale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Réunion d%27information</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>inx__inxmail_professional_email_campaign</fullName>
+        <active>true</active>
+        <description>Use this record type to create and send mailings that will be dispatched only once. You can also check your recipients??? reactions.</description>
+        <label>Inxmail Professional Email Campaign</label>
+        <picklistValues>
+            <picklist>BU__c</picklist>
+            <values>
+                <fullName>AMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication  Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMLYON FOREVER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employabilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Mastères</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fondation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formation Initiale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intra</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PGM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prog%2E Courts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projets Partenariats</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taxe</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Canal_de_communication_sortant__c</picklist>
+            <values>
+                <fullName>Courrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Réseaux sociaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Téléphone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cat_gorie__c</picklist>
+            <values>
+                <fullName>Information Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information programmes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation événements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promotion commerciale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Réunion d%27information</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Annulé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>En cours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prévu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminé</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bandeaux publicitaires</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partenaires</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programme de référence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publicité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Relations publiques</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Séminaire%2FConférence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Télémarketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>inx__inxmail_professional_subscription_campaign</fullName>
+        <active>true</active>
+        <description>Use this record type to manage the subscriptions and unsubscriptions of those recipients who receive your regular, periodical mailings (e.g. newsletter).</description>
+        <label>Inxmail Professional Subscription Campaign</label>
+        <picklistValues>
+            <picklist>BU__c</picklist>
+            <values>
+                <fullName>AMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication  Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMLYON FOREVER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employabilité</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Mastères</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fondation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formation Initiale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intra</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PGM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prog%2E Courts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projets Partenariats</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taxe</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Canal_de_communication_sortant__c</picklist>
+            <values>
+                <fullName>Courrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Réseaux sociaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Téléphone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cat_gorie__c</picklist>
+            <values>
+                <fullName>Information Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information programmes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation événements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promotion commerciale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Réunion d%27information</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CAMPAIGN.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.START_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CAMPAIGN.NAME</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PARENT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.CAMPAIGN_TYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.START_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.END_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NUM_RESPONSES</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>FullAccess</sharingModel>
+    <validationRules>
+        <fullName>inx__permit_deleting_campaigns</fullName>
+        <active>true</active>
+        <description>Campaigns connected with Inxmail Professional should not be deleted if they are still running.</description>
+        <errorConditionFormula>((inx__connect_with_Inxmail__c = true)  &amp;&amp; (ISPICKVAL(Status,&apos;Completed&apos;))  || (inx__connect_with_Inxmail__c = true)  &amp;&amp; (ISPICKVAL(Status,&apos;Aborted&apos;)))</errorConditionFormula>
+        <errorMessage>Campaigns connected with Inxmail Professional should not be deleted if they are still running.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Ajouter_des_membres_avec_e_mail</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Gérer les membres selon l&apos;email</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!$Site.BaseUrl}/apex/VF001CampaignManageMembersAddTab?campaignid={!Campaign.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Dedoublonner</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Dédoublonner</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/16.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/16.0/apex.js&quot;)} 
+
+var result = sforce.apex.execute(&quot;WS001Campaing&quot;,&quot;dedupeContacts&quot;,{CampaingID : &apos;{!Campaign.Id}&apos;});
+
+if (result==&apos;true&apos;) alert(&apos;Dédoublonnage a été lancé avec succès, le résultat est dans quelques minutes&apos;);
+else (&apos;Erreur au dédoublonnage, Merci de communiquer votre administrateur&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Edit</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Mass Edit</masterLabel>
+        <openType>sidebar</openType>
+        <page>MassEditCampaign</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Update</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Mass Update</masterLabel>
+        <openType>sidebar</openType>
+        <page>MassUpdateCampaign</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>ViewAllCampaignMembers</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Afficher tous les membres de campagne</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/camp/rptcmpgncalldown.jsp?scope=1&amp;scopeid={!Campaign.Name}</url>
+        <width>500</width>
+    </webLinks>
+    <webLinks>
+        <fullName>ViewCampaignInfluenceReport</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View Campaign Influence Report</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O?rt=117&amp;break0=CAN&amp;scope=1&amp;scopeid_lkid={!Campaign.Id}&amp;scopeid={!Campaign_Name}&amp;c=CAN&amp;c=MR&amp;c=PCS&amp;c=CFN&amp;c=RN&amp;c=ON&amp;c=OA&amp;c=OS&amp;c=OCD&amp;c=AN&amp;s=OA&amp;duel0=CAN%2CMR%2CCFN%2CRN%2CAN%2CON%2CPCS%2COS%2COCD%2COA&amp;details=yes&amp;format=t</url>
+        <width>500</width>
+    </webLinks>
+    <webLinks>
+        <fullName>inx__edit_mailing_button</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>800</height>
+        <linkType>url</linkType>
+        <masterLabel>Edit Mailing</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>https://salesforce2-webclient.inxmail.com/salesforce-webclient/login.xhtml?p={!API.Partner_Server_URL_280}&amp;s={!API.Session_ID}&amp;c={!Campaign.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>inx__edit_mailing_button_canvas</fullName>
+        <availability>online</availability>
+        <description>Use this button in your campaign layout, if you want to access the webclient as connected app.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>800</height>
+        <linkType>url</linkType>
+        <masterLabel>Edit Mailing</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/inx__webclient?c={!Campaign.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>inx__new_email_campaign_button</fullName>
+        <availability>online</availability>
+        <description>Use this button in your campaign layout, if you want to create an email campaign out of a subscription campaign.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>300</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>New email campaign</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/inx__CreateChildCampaign?campaignId={!Campaign.Id}</url>
+        <width>500</width>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Contacts$LastName</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$FirstName</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Title</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Email_de_repli__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Adresse_Email_Personnelle__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$MobilePhone</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Phone</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Email_EM_Lyon__c</field>
+    </columns>
+    <description>Identification des intervenants EML-EXEC</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contacts.R_les__r$Liste_r_le__c</column>
+            <operator>equals</operator>
+            <value>Intervenant</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Intervenants EML-EXEC</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Comptes_Contacts_avec_ou_sans_opportunites__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

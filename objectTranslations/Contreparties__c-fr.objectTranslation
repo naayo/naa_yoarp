@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contrepartie</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contreparties</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action réalisée --></label>
+        <name>Action_realise__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commentaire contrepartie --></label>
+        <name>Commentaire_contrepartie__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compte --></label>
+        <name>Compte__c</name>
+        <relationshipLabel><!-- Contreparties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Contreparties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contrepartie --></label>
+        <name>Contrepartie__c</name>
+        <picklistValues>
+            <masterLabel>1 journée de recrutement par an</masterLabel>
+            <translation><!-- 1 journée de recrutement par an --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 ouvrage dédicacé d’un professeur EMLYON</masterLabel>
+            <translation><!-- 1 ouvrage dédicacé d’un professeur EMLYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 journées par an de recrutement et de présentation</masterLabel>
+            <translation><!-- 2 journées par an de recrutement et de présentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 ouvrages dédicacés de professeurs EMLYON</masterLabel>
+            <translation><!-- 2 ouvrages dédicacés de professeurs EMLYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 ouvrages dédicacés de professeurs EMLYON</masterLabel>
+            <translation><!-- 3 ouvrages dédicacés de professeurs EMLYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 ouvrages dédicacés de professeurs EMLYON</masterLabel>
+            <translation><!-- 5 ouvrages dédicacés de professeurs EMLYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accès VIP gratuit aux manifestations EMLYON</masterLabel>
+            <translation><!-- Accès VIP gratuit aux manifestations EMLYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accès e-library aux Learning Hubs</masterLabel>
+            <translation><!-- Accès e-library aux Learning Hubs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accès salons d’échange &amp; espaces ouverts tous campus</masterLabel>
+            <translation><!-- Accès salons d’échange &amp; espaces ouverts tous campus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accès à 1 Brain Bubble &amp; son équipement</masterLabel>
+            <translation><!-- Accès à 1 Brain Bubble &amp; son équipement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accès à Scholarvox</masterLabel>
+            <translation><!-- Accès à Scholarvox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adhésion à vie EMLYON FOREVER</masterLabel>
+            <translation><!-- Adhésion à vie EMLYON FOREVER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certificat de donateur</masterLabel>
+            <translation><!-- Certificat de donateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Citation sur toutes les publications</masterLabel>
+            <translation><!-- Citation sur toutes les publications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Citations sur Publications Corporate</masterLabel>
+            <translation><!-- Citations sur Publications Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Envoi du rapport annuel</masterLabel>
+            <translation><!-- Envoi du rapport annuel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Formation individualisée à la veille/Intelligence Economique</masterLabel>
+            <translation><!-- Formation individualisée à la veille/Intelligence Economique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gratuité 1 Soirée Performance</masterLabel>
+            <translation><!-- Gratuité 1 Soirée Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gratuité 2 Soirées Performance</masterLabel>
+            <translation><!-- Gratuité 2 Soirées Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gratuité Forum</masterLabel>
+            <translation><!-- Gratuité Forum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gratuité Soirées Performance</masterLabel>
+            <translation><!-- Gratuité Soirées Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invitation VIP soirées Alumni</masterLabel>
+            <translation><!-- Invitation VIP soirées Alumni --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invitation à une réunion annuelle de présentation des orientations stratégiques d’EMLYON</masterLabel>
+            <translation><!-- Invitation à une réunion annuelle de présentation des orientations stratégiques d’EMLYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre Internationnal Advisory Board</masterLabel>
+            <translation><!-- Membre Internationnal Advisory Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre du jury Meilleur projet Etudiant, meilleur travail de recherche</masterLabel>
+            <translation><!-- Membre du jury Meilleur projet Etudiant, meilleur travail de recherche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mention du nom sur le mur des donateurs</masterLabel>
+            <translation><!-- Mention du nom sur le mur des donateurs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mention du nom sur le site de la Fondation</masterLabel>
+            <translation><!-- Mention du nom sur le site de la Fondation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mention spéciale dans l’annuaire</masterLabel>
+            <translation><!-- Mention spéciale dans l’annuaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Naming d’un espace de travail collaboratif pendant 2 ans</masterLabel>
+            <translation><!-- Naming d’un espace de travail collaboratif pendant 2 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Naming fauteuil amphi campus de Lyon ou Paris</masterLabel>
+            <translation><!-- Naming fauteuil amphi campus de Lyon ou Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organisation d’une soirée « back to school » (1 édition)</masterLabel>
+            <translation><!-- Organisation d’une soirée « back to school » (1 édition) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panneau 1 m x 1 m Hall of Fame</masterLabel>
+            <translation><!-- Panneau 1 m x 1 m Hall of Fame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plaque 0,1 x 0,1 m Hall of Fame</masterLabel>
+            <translation><!-- Plaque 0,1 x 0,1 m Hall of Fame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plaque 0,2 x 0,2 m Hall of Fame</masterLabel>
+            <translation><!-- Plaque 0,2 x 0,2 m Hall of Fame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plaque 0,3 x 0,2 m Hall of Fame</masterLabel>
+            <translation><!-- Plaque 0,3 x 0,2 m Hall of Fame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plaque 0,5 x 0,2 m Hall of Fame</masterLabel>
+            <translation><!-- Plaque 0,5 x 0,2 m Hall of Fame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plaque 0,5 x 0,5 m Hall of Fame</masterLabel>
+            <translation><!-- Plaque 0,5 x 0,5 m Hall of Fame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plaque collective</masterLabel>
+            <translation><!-- Plaque collective --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portrait du donateur écrit/vidéo sur les sites EMLYON</masterLabel>
+            <translation><!-- Portrait du donateur écrit/vidéo sur les sites EMLYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Possibilité de donner son nom à un amphithéâtre (à partir de 200K€)</masterLabel>
+            <translation><!-- Possibilité de donner son nom à un amphithéâtre (à partir de 200K€) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Possibilité de donner son nom à une salle de cours sur l’un des campus</masterLabel>
+            <translation><!-- Possibilité de donner son nom à une salle de cours sur l’un des campus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prise de parole à 1 remise des annuaires EMLYON FOREVER</masterLabel>
+            <translation><!-- Prise de parole à 1 remise des annuaires EMLYON FOREVER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prise de parole à la cérémonie de remise des diplômes</masterLabel>
+            <translation><!-- Prise de parole à la cérémonie de remise des diplômes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projet sur mesure à développer en fonction du souhait du donateur</masterLabel>
+            <translation><!-- Projet sur mesure à développer en fonction du souhait du donateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tous ouvrages publiés</masterLabel>
+            <translation><!-- Tous ouvrages publiés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trophée Donateur</masterLabel>
+            <translation><!-- Trophée Donateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trophée nominatif Grand Donateur</masterLabel>
+            <translation><!-- Trophée nominatif Grand Donateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trophée nominatif Grand Mécène</masterLabel>
+            <translation><!-- Trophée nominatif Grand Mécène --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date de réalisation de l&apos;action --></label>
+        <name>Date_realisation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Détail sur mesure --></label>
+        <name>Detail_sur_mesure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programme de reconnaissance --></label>
+        <name>Programme__c</name>
+        <picklistValues>
+            <masterLabel>B2B_Annapura</masterLabel>
+            <translation><!-- B2B_Annapura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Cercle du Président</masterLabel>
+            <translation><!-- B2B_Cercle du Président --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Contrepartie sur-mesure</masterLabel>
+            <translation><!-- B2B_Contrepartie sur-mesure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Everest</masterLabel>
+            <translation><!-- B2B_Everest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_K2</masterLabel>
+            <translation><!-- B2B_K2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Kilimandjaro</masterLabel>
+            <translation><!-- B2B_Kilimandjaro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_McKinley</masterLabel>
+            <translation><!-- B2B_McKinley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Mont Blanc</masterLabel>
+            <translation><!-- B2B_Mont Blanc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Annapura</masterLabel>
+            <translation><!-- B2C_Annapura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Cercle du Président</masterLabel>
+            <translation><!-- B2C_Cercle du Président --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Contrepartie sur-mesure</masterLabel>
+            <translation><!-- B2C_Contrepartie sur-mesure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Everest</masterLabel>
+            <translation><!-- B2C_Everest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_K2</masterLabel>
+            <translation><!-- B2C_K2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Kilimandjaro</masterLabel>
+            <translation><!-- B2C_Kilimandjaro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_McKinley</masterLabel>
+            <translation><!-- B2C_McKinley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Mont Blanc</masterLabel>
+            <translation><!-- B2C_Mont Blanc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Niveau Zéro</masterLabel>
+            <translation><!-- B2C_Niveau Zéro --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type contrepartie --></label>
+        <name>Type_contrepartie__c</name>
+        <picklistValues>
+            <masterLabel>B2B</masterLabel>
+            <translation><!-- B2B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C</masterLabel>
+            <translation><!-- B2C --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Présentation Contrepartie</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

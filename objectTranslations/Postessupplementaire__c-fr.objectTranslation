@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Poste supplémentaire</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Postes supplémentaires</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Postes supplémentaires --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Début --></label>
+        <name>Debut__c</name>
+    </fields>
+    <fields>
+        <label><!-- Société --></label>
+        <name>Societe__c</name>
+        <relationshipLabel><!-- Postes supplémentaires --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

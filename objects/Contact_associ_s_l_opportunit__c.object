@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Contient l&apos;ensemble des contacts en lien avec l&apos;opportunité ayant un rôle secondaire.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>A_remercier__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>A remercier</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Contacts_associ_s_l_opportunit</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Formule_format_mapping__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPPER(Contact__r.LastName)
+&amp;&quot;, &quot;&amp;
+
+UPPER(LEFT( Contact__r.FirstName ,1))&amp;LOWER(Mid(Contact__r.FirstName, 2, Len(Contact__r.FirstName)-1))</formula>
+        <label>Formule format mapping</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ID_du_contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.Id</formula>
+        <label>ID du contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunit__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunité</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>Contacts_associ_s_l_opportunit</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Reprise_Lot_2015__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Reprise Lot 2015</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Role_sur_l_opportunite__c</fullName>
+        <externalId>false</externalId>
+        <label>Role sur l&apos;opportunité</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Responsable légal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescripteur agent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescripteur coopteur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescripteur décideur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescripteur gestionnaire RH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Agent recruteur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cooptation via diplomés</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Role_sur_opportunite__c</fullName>
+        <externalId>false</externalId>
+        <label>Role sur l&apos;opportunité</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Responsable légal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescripteur agent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescripteur coopteur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescripteur décideur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescripteur gestionnaire RH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Agent recruteur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cooptation via diplomés</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Participant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ambassadeur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Porteur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Relai entreprise</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contact principal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Interlocuteur TAXE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gestionnaire</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TAXEVIP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TAXEPRI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TAXEGEST</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TAXEPRES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescripteur achat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescripteur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TAXEPROC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Responsable pédagogique</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contact secondaire</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>x18caracteres__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(ID_du_contact__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>x18caracteres</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Rôle sur opportunité</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>Tout</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{00000000}</displayFormat>
+        <label>Numéro de lien contact opportunité</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Rôles sur opportunité</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>FC_Programme_Long</fullName>
+        <active>true</active>
+        <label>FC Programme Long</label>
+        <picklistValues>
+            <picklist>Role_sur_l_opportunite__c</picklist>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur coopteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur décideur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur gestionnaire RH</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role_sur_opportunite__c</picklist>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur achat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur coopteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur décideur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur gestionnaire RH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responsable pédagogique</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>FC_Sur_Mesure</fullName>
+        <active>true</active>
+        <label>FC Sur-Mesure</label>
+        <picklistValues>
+            <picklist>Role_sur_l_opportunite__c</picklist>
+            <values>
+                <fullName>Agent recruteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooptation via diplomés</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur coopteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur décideur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur gestionnaire RH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responsable légal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role_sur_opportunite__c</picklist>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur achat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur coopteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur décideur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur gestionnaire RH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responsable pédagogique</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Formation_courte</fullName>
+        <active>true</active>
+        <label>Formation courte</label>
+        <picklistValues>
+            <picklist>Role_sur_l_opportunite__c</picklist>
+            <values>
+                <fullName>Agent recruteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooptation via diplomés</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur coopteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur décideur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur gestionnaire RH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responsable légal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role_sur_opportunite__c</picklist>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur achat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur coopteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur décideur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur gestionnaire RH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responsable pédagogique</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Formation_initiale</fullName>
+        <active>true</active>
+        <label>Formation initiale</label>
+        <picklistValues>
+            <picklist>Role_sur_l_opportunite__c</picklist>
+            <values>
+                <fullName>Agent recruteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooptation via diplomés</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responsable légal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Fundraising</fullName>
+        <active>true</active>
+        <label>Fundraising</label>
+        <picklistValues>
+            <picklist>Role_sur_l_opportunite__c</picklist>
+            <values>
+                <fullName>Agent recruteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooptation via diplomés</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur coopteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur décideur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur gestionnaire RH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responsable légal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role_sur_opportunite__c</picklist>
+            <values>
+                <fullName>Ambassadeur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact principal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact secondaire</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Taxe</fullName>
+        <active>true</active>
+        <label>Taxe</label>
+        <picklistValues>
+            <picklist>Role_sur_l_opportunite__c</picklist>
+            <values>
+                <fullName>Agent recruteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooptation via diplomés</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur coopteur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur décideur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteur gestionnaire RH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Responsable légal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role_sur_opportunite__c</picklist>
+            <values>
+                <fullName>TAXEGEST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TAXEPRES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TAXEPRI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TAXEPROC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TAXEVIP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

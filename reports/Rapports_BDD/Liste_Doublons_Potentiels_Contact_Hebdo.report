@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>Contact$RecordType</field>
+    </columns>
+    <columns>
+        <field>Contact$ID_FEG__c</field>
+    </columns>
+    <columns>
+        <field>Contact.SFSSDupeCatcher__Potential_Duplicates__r$SFSSDupeCatcher__Object_Type__c</field>
+    </columns>
+    <columns>
+        <field>Contact.SFSSDupeCatcher__Potential_Duplicates__r$SFSSDupeCatcher__Warning_Display__c</field>
+    </columns>
+    <columns>
+        <field>Contact.SFSSDupeCatcher__Potential_Duplicates__r$SFSSDupeCatcher__Scenario__c</field>
+    </columns>
+    <description>Liste des doublons potentiels de compte envoyée toutes les semaineshebdomadaires</description>
+    <filter>
+        <booleanFilter>(((1 AND 2) AND 3) ) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>Contact$Nb_jours_depuis_Creation_Contact__c</column>
+            <operator>lessOrEqual</operator>
+            <value>7</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <operator>equals</operator>
+            <value>Contact.Professionnel</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Account</column>
+            <operator>notEqual</operator>
+            <value>Formation initiale</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.SFSSDupeCatcher__Potential_Duplicates__r$SFSSDupeCatcher__Scenario__c</column>
+            <operator>notEqual</operator>
+            <value>Doublon_conversion</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>MAINTENANCE_Doublons Potentiels Contact</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Rapport_Maintenance_Doublons_Potentiels_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Ann_e_donation__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Versement_OCTA__c.Montant_net__c</field>
+    </columns>
+    <description>Total des Fonds Libres versés par les OCTA pour une année de collecte donnée</description>
+    <filter>
+        <criteriaItems>
+            <column>Versement_OCTA__c.Exercice_Collecte__c</column>
+            <operator>equals</operator>
+            <value>2015,2016,2017</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Versement_OCTA__c.Type_de_versement__c</column>
+            <operator>equals</operator>
+            <value>Fond CCI,Fond Libre Subvention,Fond Libre</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Versement_OCTA__c.Exercice_Collecte__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Versement_OCTA__c.Type_de_versement__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>OCTA_Versements_FL</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Versement_OCTA__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

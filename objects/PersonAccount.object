@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <compactLayoutAssignment>SYSTEMPersonAccount</compactLayoutAssignment>
+    <enableHistory>true</enableHistory>
+    <recordTypes>
+        <fullName>PersonAccount</fullName>
+        <active>true</active>
+        <label>Compte personnel</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Formation Intra-entreprise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formation continue courte</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formation continue indéterminée</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formation continue longue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formation initiale BBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formation initiale masters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indéterminé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MBA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contexte_premier_contact__pc</picklist>
+            <values>
+                <fullName>Agent commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Articles de Presse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bouche à oreille</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Classements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diplômés</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Directories%2F Guides</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Display%2F Banner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emailing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Evènements%2F Conférences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forum%2Fsalon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailing %28papier%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parents</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteurs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publicité papier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Réputation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Réseaux sociaux</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Administration Publique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agriculture%2FPêche</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automobile et Matériels de Transport</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BTP%2FHabitat%2FEnvironnement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banque%2FAssurance%2FScs Finan%2E%2FImmobilier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commerce%2FDistribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction%2FBTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edition%2FImprimerie%2FReproduction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Educa%2ESanté%2FAct%2ESociale%2FAct%2Easso%2E%2Fmédia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energie%2FEau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extraction et Industries Extractives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indust%2EElectriq%2FElectroniq%2E%2FInformatique</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrie Agro-alimentaire%2FTabac</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrie Bois%2FPapier%2FCarton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrie Chimique%2FPharmacie%2FPlastiques</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrie Textile%2FHabillement%2FCuir</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metallurgie%2FMachines et Equipement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services aux Entreprises%2FConseil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services aux particuliers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transports%2FLogistique%2FTourisme</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Télécommunication%2Fservices informatiques</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Nature_du_premier_contact__pc</picklist>
+            <values>
+                <fullName>Adwords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agent commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Application mobile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campus Day virtuel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Directories%2F Guides</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Display%2F Banners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emailing Externe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Evénement%2F Conférence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fichiers externes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forum%2F Salon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Import contacts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master class</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Module Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open class</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prescripteurs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Présentation aux écoles%2F universités</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Présentation étudiants</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Réseaux sociaux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Réunion d%27information France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Réunion d%27information Internationale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Salon virtuel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Score test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site mobile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Téléphone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web to lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filiale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Privé</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Programme_de_reconnaissance__pc</picklist>
+            <values>
+                <fullName>B2C_Niveau Zéro</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Chaud</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Froid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tiède</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Test_d_Anglais__pc</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BULATS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cambridge Advanced %28CAE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cambridge First Certificate %28FCE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cambridge Proficiency %28CPE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exempté</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IELTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TOEFL computer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TOEFL ibt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TOEFL papier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TOEIC Listening and Reading</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TOEIC Speaking and Writing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Test_management__pc</picklist>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exempté</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GMAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TAGE 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TAGE MAGE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TAGE Post-Bac</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Analyste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concurrent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intégrateur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investisseur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partenaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Revendeur</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

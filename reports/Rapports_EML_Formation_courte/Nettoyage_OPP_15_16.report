@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Parcours__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityLineItems$Pack_la_carte__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact_central__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityLineItems$PricebookEntry.Product2.Libelle_Produit__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityLineItems$Session_de_formation__c.Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityLineItems$Session_de_formation__c.Code_agresso_for__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityLineItems$Session_de_formation__c.Date_de_debut_de_session__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityLineItems$Session_de_formation__c.Code_Agresso_Session_formation__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StageName</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.OpportunityLineItems$TotalPrice</field>
+    </columns>
+    <description>Personnes en attente de dates 16-17 
+=&gt; terminer leur parcours sur exo 16-17
+=&gt; suite à report
+=&gt; inscriptions &quot;sans dates&quot;</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$StageName</column>
+            <operator>equals</operator>
+            <value>Pré inscrit,Inscrit,Intégré</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$RecordType</column>
+            <operator>equals</operator>
+            <value>Opportunity.Formation_courte</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$Session_de_formation__c.Code_agresso_for__c</column>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>OPP Début 15-16 qui termine sur 16-17</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunites_plus_informations_complementaires__c</reportType>
+    <roleHierarchyFilter>EML_Programmes_Courts</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Opportunity$Contact_central__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$LastStageChangeDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

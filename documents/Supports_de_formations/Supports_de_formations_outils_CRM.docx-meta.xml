@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Support de formation à Salesforces. 
+Ce document sera mis à jour régulièrement  avec l&apos;ensemble des nouveautés</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Supports de formations outils CRM</name>
+    <public>false</public>
+</Document>

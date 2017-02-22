@@ -1,0 +1,2828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Adresse de repli: Téléphone</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>asst_phone_contact</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Ne pas appeler Personnel</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>do_not_call_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Adresse e-mail ( Ne pas utiliser)</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>email_contact</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Nom Complet</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>name_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Fonction Exacte</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>title_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Email Personnel --></label>
+        <name>Adresse_Email_Personnelle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse Personnelle: Ligne 2 --></label>
+        <name>Adresse_Personnelle_Ligne_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse Personnelle: Ligne 3 --></label>
+        <name>Adresse_Personnelle_Ligne_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse Personnelle:Pays WF --></label>
+        <name>Adresse_Personnelle_Pays_WF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse: Règion --></label>
+        <name>Adresse_R_gion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse de Repli: Rue --></label>
+        <name>Adresse_Repli_Rue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse: Rue --></label>
+        <name>Adresse_Rue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse: Ville --></label>
+        <name>Adresse_Ville__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse: code postal --></label>
+        <name>Adresse_code_postal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse de Repli:Pays WF --></label>
+        <name>Adresse_de_Repli_Pays_WF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse de repli: Etat --></label>
+        <name>Adresse_de_repli_Etat__c</name>
+        <relationshipLabel><!-- Contacts (Adresse de repli: Etat) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Adresse de repli: Ligne 2 --></label>
+        <name>Adresse_de_repli_Ligne_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse de repli: Ligne 3 --></label>
+        <name>Adresse_de_repli_Ligne_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse de repli: Pays --></label>
+        <name>Adresse_de_repli_Pays__c</name>
+        <relationshipLabel><!-- Contacts (Adresse de repli: Pays) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Adresse de repli: code postal --></label>
+        <name>Adresse_de_repli_code_postal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse de repli: ville --></label>
+        <name>Adresse_de_repli_ville__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Année donation --></label>
+        <name>Ann_e_donation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Année du diplôme --></label>
+        <name>Ann_e_du_dipl_me__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anniversaire dans les 30 jours --></label>
+        <name>Anniversaire_dans_les_30_jours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Autres formations --></label>
+        <name>Autres_formations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bénéficiaire partenariat --></label>
+        <name>B_n_ficiaire_partenariat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cadre --></label>
+        <name>Cadre__c</name>
+    </fields>
+    <fields>
+        <label><!-- Catégorie rôle --></label>
+        <name>Cat_gorie_r_le__c</name>
+        <picklistValues>
+            <masterLabel>Direction, institutions ou associations apparentées à EMLYON</masterLabel>
+            <translation><!-- Direction, institutions ou associations apparentées à EMLYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dirigeants Entreprises</masterLabel>
+            <translation><!-- Dirigeants Entreprises --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Centre d&apos;intérêt Fundraising --></label>
+        <name>Centre_d_int_r_t_Fundraising__c</name>
+        <picklistValues>
+            <masterLabel>Infrastructure</masterLabel>
+            <translation><!-- Infrastructure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savoir</masterLabel>
+            <translation><!-- Savoir --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social</masterLabel>
+            <translation><!-- Social --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Centre d&apos;interêts --></label>
+        <name>Centre_d_int_r_t__c</name>
+        <picklistValues>
+            <masterLabel>Culture</masterLabel>
+            <translation><!-- Culture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loisirs au sens large</masterLabel>
+            <translation><!-- Loisirs au sens large --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sport</masterLabel>
+            <translation><!-- Sport --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Code Fonction --></label>
+        <name>Code_Fonction__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Code Participant --></label>
+        <name>Code_Participant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code tiers contact --></label>
+        <name>Code_tiers_contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commentaire --></label>
+        <name>Commentaire__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commentaire du contact --></label>
+        <name>Commentaire_du_contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complément Rôle --></label>
+        <name>Compl_ment_R_le__c</name>
+        <picklistValues>
+            <masterLabel>Animateur atelier</masterLabel>
+            <translation><!-- Animateur atelier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Animateur événements/inscriptions</masterLabel>
+            <translation><!-- Animateur événements/inscriptions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bilan d&apos;orientation</masterLabel>
+            <translation><!-- Bilan d&apos;orientation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conférence</masterLabel>
+            <translation><!-- Conférence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe</masterLabel>
+            <translation><!-- Groupe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinars</masterLabel>
+            <translation><!-- Webinars --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Compteur Tiers Contact --></label>
+        <name>Compteur_Tiers_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compteur Tiers Participant --></label>
+        <name>Compteur_Tiers_Participant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confidentiel annuaire Web --></label>
+        <name>Confidentiel_annuaire_Web__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confidentiel annuaire papier --></label>
+        <name>Confidentiel_annuaire_papier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contacté par prestataire --></label>
+        <name>Contact_par_prestataire__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contexte premier contact --></label>
+        <name>Contexte_premier_contact__c</name>
+        <picklistValues>
+            <masterLabel>Agent commercial</masterLabel>
+            <translation><!-- Agent commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Articles de Presse</masterLabel>
+            <translation><!-- Articles de Presse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bouche à oreille</masterLabel>
+            <translation><!-- Bouche à oreille --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Classements</masterLabel>
+            <translation><!-- Classements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diplômés</masterLabel>
+            <translation><!-- Diplômés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directories/ Guides</masterLabel>
+            <translation><!-- Directories/ Guides --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Display/ Banner</masterLabel>
+            <translation><!-- Display/ Banner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emailing</masterLabel>
+            <translation><!-- Emailing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evènements/ Conférences</masterLabel>
+            <translation><!-- Evènements/ Conférences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forum/salon</masterLabel>
+            <translation><!-- Forum/salon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mailing (papier)</masterLabel>
+            <translation><!-- Mailing (papier) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parents</masterLabel>
+            <translation><!-- Parents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescripteurs</masterLabel>
+            <translation><!-- Prescripteurs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Publicité papier</masterLabel>
+            <translation><!-- Publicité papier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réputation</masterLabel>
+            <translation><!-- Réputation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réseaux sociaux</masterLabel>
+            <translation><!-- Réseaux sociaux --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Conversion Contact --></label>
+        <name>Conversion_Contact__c</name>
+        <picklistValues>
+            <masterLabel>Etudiant</masterLabel>
+            <translation><!-- Etudiant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professionnel</masterLabel>
+            <translation><!-- Professionnel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect Etudiant</masterLabel>
+            <translation><!-- Prospect Etudiant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pays du compte --></label>
+        <name>CountryName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Décédé --></label>
+        <name>D_c_d__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse: Département --></label>
+        <name>D_partement__c</name>
+        <relationshipLabel><!-- Contacts (Département) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- précise un sous canal de la fiche piste dans le système --></help>
+        <label><!-- Détail canal d&apos;acquisition --></label>
+        <name>D_tail_canal_d_acquisition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ce champ sert pour simuler des màj depuis Data Loader, ceci afin d&apos;affecter la valeur du champ Date de Mise à Jour --></help>
+        <label><!-- Data Loader Util --></label>
+        <name>Data_Loader_Util__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Modification Fiche --></label>
+        <name>Date_Modification_Fiche__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date création Dynamics --></label>
+        <name>Date_cr_ation_Dynamics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de Création de la fiche --></label>
+        <name>Date_de_Cr_ation_de_la_fiche__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de cotisation --></label>
+        <name>Date_de_cotisation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de création contact --></label>
+        <name>Date_de_cr_ation_contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de début --></label>
+        <name>Date_de_d_but__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de fin --></label>
+        <name>Date_de_fin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date de traitement téléconseiller --></label>
+        <name>Date_de_traitement_t_l_conseiller__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demandeur d&apos;emploi --></label>
+        <name>Demandeur_d_emploi__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dernière fonction --></label>
+        <name>Derni_re_fonction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dernier diplôme (ou en cours) --></label>
+        <name>Dernier_dipl_me_ou_en_cours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Diplômé --></label>
+        <name>Dipl_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Diplôme échoué --></label>
+        <name>Diplome_echoue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domaine d&apos;études --></label>
+        <name>Domaine__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac ES (économique et sociale)</masterLabel>
+            <translation><!-- Bac ES (économique et sociale) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac L (littéraire)</masterLabel>
+            <translation><!-- Bac L (littéraire) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac S (scientifique)</masterLabel>
+            <translation><!-- Bac S (scientifique) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac STMG</masterLabel>
+            <translation><!-- Bac STMG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droit</masterLabel>
+            <translation><!-- Droit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ecole de commerce française</masterLabel>
+            <translation><!-- Ecole de commerce française --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economie</masterLabel>
+            <translation><!-- Economie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gestion</masterLabel>
+            <translation><!-- Gestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingénieur</masterLabel>
+            <translation><!-- Ingénieur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Santé (pharmacie, vétérinaire,…)</masterLabel>
+            <translation><!-- Santé (pharmacie, vétérinaire,…) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sciences (mathématiques, physique,...)</masterLabel>
+            <translation><!-- Sciences (mathématiques, physique,...) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sciences humaines (lettres,...)</masterLabel>
+            <translation><!-- Sciences humaines (lettres,...) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Donateur prospect --></label>
+        <name>Donateur_prospect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email EM Lyon --></label>
+        <name>Email_EM_Lyon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Professionnel(ne pas utilisé) --></label>
+        <name>Email_Professionnel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Professionnel --></label>
+        <name>Email_de_repli__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entrepreneur --></label>
+        <name>Entrepreneur__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entreprise déclarée --></label>
+        <name>Entreprise_d_clar_e__c</name>
+    </fields>
+    <fields>
+        <label><!-- Etablissement --></label>
+        <name>Etablissement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse: Etat --></label>
+        <name>Etat__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Evénements réseau --></label>
+        <name>Evenements_reseau__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook --></label>
+        <name>Facebook__c</name>
+    </fields>
+    <fields>
+        <label><!-- Famille Fonction --></label>
+        <name>Famille_Fonction__c</name>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation><!-- Autres --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial/Ventes</masterLabel>
+            <translation><!-- Commercial/Ventes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direction Générale</masterLabel>
+            <translation><!-- Direction Générale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enseignement/Education</masterLabel>
+            <translation><!-- Enseignement/Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etud/Recherche/Dévelop/Qualité</masterLabel>
+            <translation><!-- Etud/Recherche/Dévelop/Qualité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance/Gest./Adminis./Juridi.</masterLabel>
+            <translation><!-- Finance/Gest./Adminis./Juridi. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing/Communication</masterLabel>
+            <translation><!-- Marketing/Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organisation/Systèmes d&apos;Informations</masterLabel>
+            <translation><!-- Organisation/Systèmes d&apos;Informations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production/Achats</masterLabel>
+            <translation><!-- Production/Achats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ressources Humaines/Formation</masterLabel>
+            <translation><!-- Ressources Humaines/Formation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fan Facebook --></label>
+        <name>Fan_Facebook__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fonction principale --></label>
+        <name>Fonction_principale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fonction codée --></label>
+        <name>Fonctions__c</name>
+        <picklistValues>
+            <masterLabel>Actuaire</masterLabel>
+            <translation><!-- Actuaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Dir.Rel.Hum./Sociales</masterLabel>
+            <translation><!-- Adjoint Dir.Rel.Hum./Sociales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Direct du Personnel</masterLabel>
+            <translation><!-- Adjoint Direct du Personnel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Direct. Admini et Financier</masterLabel>
+            <translation><!-- Adjoint Direct. Admini et Financier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Direct. de Programmes</masterLabel>
+            <translation><!-- Adjoint Direct. de Programmes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Direct. de la Communi.</masterLabel>
+            <translation><!-- Adjoint Direct. de la Communi. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Directeur Commercial</masterLabel>
+            <translation><!-- Adjoint Directeur Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Directeur Juridique</masterLabel>
+            <translation><!-- Adjoint Directeur Juridique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Directeur Ressources Humaines</masterLabel>
+            <translation><!-- Adjoint Directeur Ressources Humaines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Directeur Régional</masterLabel>
+            <translation><!-- Adjoint Directeur Régional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjoint Resp Gestion Cad./Car.</masterLabel>
+            <translation><!-- Adjoint Resp Gestion Cad./Car. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administrateur</masterLabel>
+            <translation><!-- Administrateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Commercial</masterLabel>
+            <translation><!-- Agent Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Général d&apos;Assurance</masterLabel>
+            <translation><!-- Agent Général d&apos;Assurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent de Change</masterLabel>
+            <translation><!-- Agent de Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analyste Financier</masterLabel>
+            <translation><!-- Analyste Financier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Animateur Qualité</masterLabel>
+            <translation><!-- Animateur Qualité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Chef de Marchés</masterLabel>
+            <translation><!-- Assistant Chef de Marchés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Chef de Prod/Marq.</masterLabel>
+            <translation><!-- Assistant Chef de Prod/Marq. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Marketing</masterLabel>
+            <translation><!-- Assistant Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant Publicité</masterLabel>
+            <translation><!-- Assistant Publicité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant de la Formation</masterLabel>
+            <translation><!-- Assistant de la Formation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associé</masterLabel>
+            <translation><!-- Associé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attaché Commercial</masterLabel>
+            <translation><!-- Attaché Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attaché de Direction</masterLabel>
+            <translation><!-- Attaché de Direction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auditeur Externe</masterLabel>
+            <translation><!-- Auditeur Externe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auditeur Interne</masterLabel>
+            <translation><!-- Auditeur Interne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Achats</masterLabel>
+            <translation><!-- Cadre Achats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Administ. des Ventes</masterLabel>
+            <translation><!-- Cadre Administ. des Ventes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Commercial</masterLabel>
+            <translation><!-- Cadre Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Export</masterLabel>
+            <translation><!-- Cadre Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Logistique</masterLabel>
+            <translation><!-- Cadre Logistique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Organisation/Logistique</masterLabel>
+            <translation><!-- Cadre Organisation/Logistique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Recherche/Développement</masterLabel>
+            <translation><!-- Cadre Recherche/Développement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre SI</masterLabel>
+            <translation><!-- Cadre SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre Technique</masterLabel>
+            <translation><!-- Cadre Technique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre de la Fonct.&quot;Personnel&quot;</masterLabel>
+            <translation><!-- Cadre de la Fonct.&quot;Personnel&quot; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre des Services Publics</masterLabel>
+            <translation><!-- Cadre des Services Publics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capital Investissement/Private Equity</masterLabel>
+            <translation><!-- Capital Investissement/Private Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé Fusions/Acquisitions</masterLabel>
+            <translation><!-- Chargé Fusions/Acquisitions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé d&apos;Affaires</masterLabel>
+            <translation><!-- Chargé d&apos;Affaires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé d&apos;Etudes Economiques</masterLabel>
+            <translation><!-- Chargé d&apos;Etudes Economiques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé d&apos;Etudes Marketing</masterLabel>
+            <translation><!-- Chargé d&apos;Etudes Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé de Clientèle</masterLabel>
+            <translation><!-- Chargé de Clientèle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé de Mission</masterLabel>
+            <translation><!-- Chargé de Mission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargé des Relations Ecoles</masterLabel>
+            <translation><!-- Chargé des Relations Ecoles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de Centre SI</masterLabel>
+            <translation><!-- Chef de Centre SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de Groupe Marketing</masterLabel>
+            <translation><!-- Chef de Groupe Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de Marchés</masterLabel>
+            <translation><!-- Chef de Marchés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de Produits/Marques</masterLabel>
+            <translation><!-- Chef de Produits/Marques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de Projet Marketing</masterLabel>
+            <translation><!-- Chef de Projet Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de Projets</masterLabel>
+            <translation><!-- Chef de Projets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef de Publicité</masterLabel>
+            <translation><!-- Chef de Publicité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chercheur</masterLabel>
+            <translation><!-- Chercheur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commerçant</masterLabel>
+            <translation><!-- Commerçant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commissaire aux Comptes</masterLabel>
+            <translation><!-- Commissaire aux Comptes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comptable</masterLabel>
+            <translation><!-- Comptable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congé Parental d&apos;Education</masterLabel>
+            <translation><!-- Congé Parental d&apos;Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil Auprès de la DG</masterLabel>
+            <translation><!-- Conseil Auprès de la DG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil Commercial/Ventes</masterLabel>
+            <translation><!-- Conseil Commercial/Ventes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil Etudes/Recherche</masterLabel>
+            <translation><!-- Conseil Etudes/Recherche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil Juridique/Avocat</masterLabel>
+            <translation><!-- Conseil Juridique/Avocat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil Organis./SI</masterLabel>
+            <translation><!-- Conseil Organis./SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil Qualité</masterLabel>
+            <translation><!-- Conseil Qualité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil en Communication/Publ.</masterLabel>
+            <translation><!-- Conseil en Communication/Publ. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil en Formation</masterLabel>
+            <translation><!-- Conseil en Formation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil en Marketing</masterLabel>
+            <translation><!-- Conseil en Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseil en Ress. Humaines/ Outplacement</masterLabel>
+            <translation><!-- Conseil en Ress. Humaines/ Outplacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseiller Principal Education</masterLabel>
+            <translation><!-- Conseiller Principal Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conseiller du Président</masterLabel>
+            <translation><!-- Conseiller du Président --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consolideur</masterLabel>
+            <translation><!-- Consolideur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant Finance/Gestion/Audit</masterLabel>
+            <translation><!-- Consultant Finance/Gestion/Audit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant en Recrutement</masterLabel>
+            <translation><!-- Consultant en Recrutement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrôleur Financier</masterLabel>
+            <translation><!-- Contrôleur Financier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrôleur de Gestion</masterLabel>
+            <translation><!-- Contrôleur de Gestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrôleur/Inspecteur Impôts</masterLabel>
+            <translation><!-- Contrôleur/Inspecteur Impôts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coordinateur Université Partenaire</masterLabel>
+            <translation><!-- Coordinateur Université Partenaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Manager</masterLabel>
+            <translation><!-- Credit Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dir. des Compensations Internationales</masterLabel>
+            <translation><!-- Dir. des Compensations Internationales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dir. ou Resp. Administ. et Financier</masterLabel>
+            <translation><!-- Dir. ou Resp. Administ. et Financier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direc. d&apos;un Centre de Formation</masterLabel>
+            <translation><!-- Direc. d&apos;un Centre de Formation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direc. de Départ. Pédagogique</masterLabel>
+            <translation><!-- Direc. de Départ. Pédagogique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct de Programmes Internat.</masterLabel>
+            <translation><!-- Direct de Programmes Internat. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct.Relations Hum./Sociales</masterLabel>
+            <translation><!-- Direct.Relations Hum./Sociales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur</masterLabel>
+            <translation><!-- Directeur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur  Logistique</masterLabel>
+            <translation><!-- Directeur  Logistique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur  des Achats</masterLabel>
+            <translation><!-- Directeur  des Achats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Adjoint</masterLabel>
+            <translation><!-- Directeur Adjoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Adjoint d&apos;Etablissement</masterLabel>
+            <translation><!-- Directeur Adjoint d&apos;Etablissement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Administ. des Ventes</masterLabel>
+            <translation><!-- Directeur Administ. des Ventes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Affaires Internationales</masterLabel>
+            <translation><!-- Directeur Affaires Internationales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Affaires Juridiques</masterLabel>
+            <translation><!-- Directeur Affaires Juridiques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Clientèle</masterLabel>
+            <translation><!-- Directeur Clientèle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Commercial</masterLabel>
+            <translation><!-- Directeur Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Etudes/Recherche</masterLabel>
+            <translation><!-- Directeur Etudes/Recherche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Export</masterLabel>
+            <translation><!-- Directeur Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Formation Commerc.</masterLabel>
+            <translation><!-- Directeur Formation Commerc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Général</masterLabel>
+            <translation><!-- Directeur Général --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Général Adjoint</masterLabel>
+            <translation><!-- Directeur Général Adjoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Industriel</masterLabel>
+            <translation><!-- Directeur Industriel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Logistique SI</masterLabel>
+            <translation><!-- Directeur Logistique SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Marketing</masterLabel>
+            <translation><!-- Directeur Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Organi./SI</masterLabel>
+            <translation><!-- Directeur Organi./SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Promotion</masterLabel>
+            <translation><!-- Directeur Promotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Publicité</masterLabel>
+            <translation><!-- Directeur Publicité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Qualité</masterLabel>
+            <translation><!-- Directeur Qualité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Recherche/Développement</masterLabel>
+            <translation><!-- Directeur Recherche/Développement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Ressources Humaines</masterLabel>
+            <translation><!-- Directeur Ressources Humaines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Régional</masterLabel>
+            <translation><!-- Directeur Régional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Réseau &amp; Télécom</masterLabel>
+            <translation><!-- Directeur Réseau &amp; Télécom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur SI</masterLabel>
+            <translation><!-- Directeur SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Technique</masterLabel>
+            <translation><!-- Directeur Technique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur d&apos;Agence</masterLabel>
+            <translation><!-- Directeur d&apos;Agence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur d&apos;Etablissement</masterLabel>
+            <translation><!-- Directeur d&apos;Etablissement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur de Ctre Form.Intern.</masterLabel>
+            <translation><!-- Directeur de Ctre Form.Intern. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur de Filiale</masterLabel>
+            <translation><!-- Directeur de Filiale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur de Production</masterLabel>
+            <translation><!-- Directeur de Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur de Programmes</masterLabel>
+            <translation><!-- Directeur de Programmes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur de la Communication</masterLabel>
+            <translation><!-- Directeur de la Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur de la Formation</masterLabel>
+            <translation><!-- Directeur de la Formation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur des Concours</masterLabel>
+            <translation><!-- Directeur des Concours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur des Etudes</masterLabel>
+            <translation><!-- Directeur des Etudes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur des Relations Exter.</masterLabel>
+            <translation><!-- Directeur des Relations Exter. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur des Ventes</masterLabel>
+            <translation><!-- Directeur des Ventes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur du Dvpt Cadres Dirigeants</masterLabel>
+            <translation><!-- Directeur du Dvpt Cadres Dirigeants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur du Développement</masterLabel>
+            <translation><!-- Directeur du Développement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur du Personnel</masterLabel>
+            <translation><!-- Directeur du Personnel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur et Responsable d&apos;Etablissement</masterLabel>
+            <translation><!-- Directeur et Responsable d&apos;Etablissement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Conseil en Stratégie</masterLabel>
+            <translation><!-- Directeur ou Conseil en Stratégie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Resp. Juridique et Fiscal</masterLabel>
+            <translation><!-- Directeur ou Resp. Juridique et Fiscal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Responsable  Comptabilité</masterLabel>
+            <translation><!-- Directeur ou Responsable  Comptabilité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Responsable Administratif</masterLabel>
+            <translation><!-- Directeur ou Responsable Administratif --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Responsable Financier</masterLabel>
+            <translation><!-- Directeur ou Responsable Financier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Responsable Juridique</masterLabel>
+            <translation><!-- Directeur ou Responsable Juridique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur ou Responsable Recrutement</masterLabel>
+            <translation><!-- Directeur ou Responsable Recrutement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divers Etranger</masterLabel>
+            <translation><!-- Divers Etranger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctorant</masterLabel>
+            <translation><!-- Doctorant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentaliste</masterLabel>
+            <translation><!-- Documentaliste --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elus</masterLabel>
+            <translation><!-- Elus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En Cours de Création d&apos;Entreprise</masterLabel>
+            <translation><!-- En Cours de Création d&apos;Entreprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En Cours de Formation Compl.</masterLabel>
+            <translation><!-- En Cours de Formation Compl. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enseignant</masterLabel>
+            <translation><!-- Enseignant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expert Comptable</masterLabel>
+            <translation><!-- Expert Comptable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exploitant Agricole</masterLabel>
+            <translation><!-- Exploitant Agricole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fondé de Pouvoir</masterLabel>
+            <translation><!-- Fondé de Pouvoir --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Formateur Interne</masterLabel>
+            <translation><!-- Formateur Interne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gestionnaire de Patrimoine</masterLabel>
+            <translation><!-- Gestionnaire de Patrimoine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gérant(e)</masterLabel>
+            <translation><!-- Gérant(e) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hôtelier/Restaurateur</masterLabel>
+            <translation><!-- Hôtelier/Restaurateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingénieur Commercial</masterLabel>
+            <translation><!-- Ingénieur Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingénieur Etudes/Recherche</masterLabel>
+            <translation><!-- Ingénieur Etudes/Recherche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingénieur d&apos;Affaires</masterLabel>
+            <translation><!-- Ingénieur d&apos;Affaires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journaliste</masterLabel>
+            <translation><!-- Journaliste --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Militaire</masterLabel>
+            <translation><!-- Militaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ministre/Député/Haut Fonction.</masterLabel>
+            <translation><!-- Ministre/Député/Haut Fonction. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Renseignée</masterLabel>
+            <translation><!-- Non Renseignée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personnel Administratif</masterLabel>
+            <translation><!-- Personnel Administratif --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personnel Technique</masterLabel>
+            <translation><!-- Personnel Technique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Principal/Respons. des Etudes</masterLabel>
+            <translation><!-- Principal/Respons. des Etudes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prof Libérales &amp; Act.Diverses</masterLabel>
+            <translation><!-- Prof Libérales &amp; Act.Diverses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prof Médicale/Pharmacie/Vétér.</masterLabel>
+            <translation><!-- Prof Médicale/Pharmacie/Vétér. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professeur</masterLabel>
+            <translation><!-- Professeur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profession Artistique</masterLabel>
+            <translation><!-- Profession Artistique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proviseur</masterLabel>
+            <translation><!-- Proviseur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proviseur Adjoint</masterLabel>
+            <translation><!-- Proviseur Adjoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Président Directeur Général</masterLabel>
+            <translation><!-- Président Directeur Général --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Président du Directoire</masterLabel>
+            <translation><!-- Président du Directoire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Président(e)</masterLabel>
+            <translation><!-- Président(e) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recteur/Doyen</masterLabel>
+            <translation><!-- Recteur/Doyen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Religieux</masterLabel>
+            <translation><!-- Religieux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resp. Communication Financière</masterLabel>
+            <translation><!-- Resp. Communication Financière --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resp. Environ/Risque/Sécurité</masterLabel>
+            <translation><!-- Resp. Environ/Risque/Sécurité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Respons. Relations Gdes Ecoles</masterLabel>
+            <translation><!-- Respons. Relations Gdes Ecoles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Respons.d&apos;Unité de Production</masterLabel>
+            <translation><!-- Respons.d&apos;Unité de Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable  Gestion</masterLabel>
+            <translation><!-- Responsable  Gestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Audio-Visuel</masterLabel>
+            <translation><!-- Responsable Audio-Visuel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Avantages et Rémunérations</masterLabel>
+            <translation><!-- Responsable Avantages et Rémunérations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Classes Préparatoires</masterLabel>
+            <translation><!-- Responsable Classes Préparatoires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Commercial</masterLabel>
+            <translation><!-- Responsable Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Communicat.Interne</masterLabel>
+            <translation><!-- Responsable Communicat.Interne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Edition</masterLabel>
+            <translation><!-- Responsable Edition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Etudes Marketing</masterLabel>
+            <translation><!-- Responsable Etudes Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Etudes/Recherche</masterLabel>
+            <translation><!-- Responsable Etudes/Recherche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Form. des Cadres</masterLabel>
+            <translation><!-- Responsable Form. des Cadres --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Gestion Cadres/Car</masterLabel>
+            <translation><!-- Responsable Gestion Cadres/Car --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Marketing</masterLabel>
+            <translation><!-- Responsable Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Mécénat</masterLabel>
+            <translation><!-- Responsable Mécénat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Organisation</masterLabel>
+            <translation><!-- Responsable Organisation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Relations/Presse</masterLabel>
+            <translation><!-- Responsable Relations/Presse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Ressources Humaines</masterLabel>
+            <translation><!-- Responsable Ressources Humaines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Régional</masterLabel>
+            <translation><!-- Responsable Régional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Réseau et Télécom</masterLabel>
+            <translation><!-- Responsable Réseau et Télécom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable SI</masterLabel>
+            <translation><!-- Responsable SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Sécurité SI</masterLabel>
+            <translation><!-- Responsable Sécurité SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Taxe Apprentissage</masterLabel>
+            <translation><!-- Responsable Taxe Apprentissage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Technique</masterLabel>
+            <translation><!-- Responsable Technique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Trade Marketing</masterLabel>
+            <translation><!-- Responsable Trade Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable de Promotion</masterLabel>
+            <translation><!-- Responsable de Promotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable de Stages</masterLabel>
+            <translation><!-- Responsable de Stages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable de Zone Export</masterLabel>
+            <translation><!-- Responsable de Zone Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable de la Communication</masterLabel>
+            <translation><!-- Responsable de la Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable de la Formation</masterLabel>
+            <translation><!-- Responsable de la Formation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable des Achats</masterLabel>
+            <translation><!-- Responsable des Achats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable des Etudes</masterLabel>
+            <translation><!-- Responsable des Etudes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable des Nouveaux Produits</masterLabel>
+            <translation><!-- Responsable des Nouveaux Produits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable des Ventes</masterLabel>
+            <translation><!-- Responsable des Ventes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable du Contrôle de Gestion</masterLabel>
+            <translation><!-- Responsable du Contrôle de Gestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable du Personnel</masterLabel>
+            <translation><!-- Responsable du Personnel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable e-Commerce</masterLabel>
+            <translation><!-- Responsable e-Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retraité</masterLabel>
+            <translation><!-- Retraité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Manager</masterLabel>
+            <translation><!-- Risk Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secrétaire Général</masterLabel>
+            <translation><!-- Secrétaire Général --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secrétaire/Assistante</masterLabel>
+            <translation><!-- Secrétaire/Assistante --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spéc.Marchés Financiers/Back Office</masterLabel>
+            <translation><!-- Spéc.Marchés Financiers/Back Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spéc.Marchés Financiers/Front Office</masterLabel>
+            <translation><!-- Spéc.Marchés Financiers/Front Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spéc.Marchés Financiers/Middle Office</masterLabel>
+            <translation><!-- Spéc.Marchés Financiers/Middle Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spécialiste des Marchés Financiers</masterLabel>
+            <translation><!-- Spécialiste des Marchés Financiers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndic d&apos;Immeubles</masterLabel>
+            <translation><!-- Syndic d&apos;Immeubles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trésorier</masterLabel>
+            <translation><!-- Trésorier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VP/VPRH</masterLabel>
+            <translation><!-- VP/VPRH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice-Président</masterLabel>
+            <translation><!-- Vice-Président --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volontariat International en Entreprise</masterLabel>
+            <translation><!-- Volontariat International en Entreprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webmaster</masterLabel>
+            <translation><!-- Webmaster --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ID FEG --></label>
+        <name>ID_FEG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identifiant Etudiant --></label>
+        <name>Identifiant_Etudiant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identifiant diplômé --></label>
+        <name>Identifiant_dipl_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incubé à l&apos;EMLyon --></label>
+        <name>Incub_l_EMLyon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Informations carrière --></label>
+        <name>Informations_carriere__c</name>
+    </fields>
+    <fields>
+        <label><!-- Informations complémentaires --></label>
+        <name>Informations_compl_mentaires__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intérêt pour --></label>
+        <name>Int_r_t_pour__c</name>
+        <picklistValues>
+            <masterLabel>Conférence Carrière Etudiants</masterLabel>
+            <translation><!-- Conférence Carrière Etudiants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expert Panel</masterLabel>
+            <translation><!-- Expert Panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mock interview</masterLabel>
+            <translation><!-- Mock interview --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interaction LinkedIn --></label>
+        <name>Interaction_LinkedIn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lieu de naissance --></label>
+        <name>Lieu_de_naissance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Linkedin --></label>
+        <name>Linkedin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liste rôle --></label>
+        <name>Liste_r_le__c</name>
+        <picklistValues>
+            <masterLabel>Dirigeant créateur</masterLabel>
+            <translation><!-- Dirigeant créateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dirigeant du CAC 40</masterLabel>
+            <translation><!-- Dirigeant du CAC 40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre  du CA de l&apos;AESCRA</masterLabel>
+            <translation><!-- Membre  du CA de l&apos;AESCRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre Associés CCI</masterLabel>
+            <translation><!-- Membre Associés CCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre Bureau Elus CCI</masterLabel>
+            <translation><!-- Membre Bureau Elus CCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre Comex Fondation</masterLabel>
+            <translation><!-- Membre Comex Fondation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre Commision Enseignement CCI</masterLabel>
+            <translation><!-- Membre Commision Enseignement CCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre Conseil Surveillance CDME</masterLabel>
+            <translation><!-- Membre Conseil Surveillance CDME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre Elus CCI</masterLabel>
+            <translation><!-- Membre Elus CCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre PRES</masterLabel>
+            <translation><!-- Membre PRES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membre de l&apos;AG AESCRA</masterLabel>
+            <translation><!-- Membre de l&apos;AG AESCRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membres CA ADEM LYON</masterLabel>
+            <translation><!-- Membres CA ADEM LYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réseaux d&apos;accompagement créateurs d&apos;Eses</masterLabel>
+            <translation><!-- Réseaux d&apos;accompagement créateurs d&apos;Eses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>membre conseil d&apos;administration Alliance</masterLabel>
+            <translation><!-- membre conseil d&apos;administration Alliance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Remplir avec l&apos;adresse email. --></help>
+        <label><!-- Login --></label>
+        <name>Login__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membre EML Connect --></label>
+        <name>Membre_EML_Connect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membre à vie --></label>
+        <name>Membre_vie__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile professionnel --></label>
+        <name>Mobile_professionnel__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPAI Personnel --></label>
+        <name>NPAI_Personnel__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPAI --></label>
+        <name>NPAI__c</name>
+    </fields>
+    <fields>
+        <label><!-- N&apos;a pas obtenu son diplôme EMLYON --></label>
+        <name>N_a_pas_obtenu_son_dipl_me_EMLYON__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nationalité --></label>
+        <name>Nationalit__c</name>
+        <relationshipLabel><!-- Contacts (Nationalité) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- décrit le canal technique d’arrivée de la fiche piste dans le système --></help>
+        <label><!-- Canal d&apos;acquisition --></label>
+        <name>Nature_du_premier_contact__c</name>
+        <picklistValues>
+            <masterLabel>Adwords</masterLabel>
+            <translation><!-- Adwords --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent commercial</masterLabel>
+            <translation><!-- Agent commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appel d’offre</masterLabel>
+            <translation><!-- Appel d’offre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appel ou Email entrant</masterLabel>
+            <translation><!-- Appel ou Email entrant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application mobile</masterLabel>
+            <translation><!-- Application mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apport Professeur/Intervenant</masterLabel>
+            <translation><!-- Apport Professeur/Intervenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blog</masterLabel>
+            <translation><!-- Blog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campus Day virtuel</masterLabel>
+            <translation><!-- Campus Day virtuel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directories/ Guides</masterLabel>
+            <translation><!-- Directories/ Guides --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Display/ Banners</masterLabel>
+            <translation><!-- Display/ Banners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emailing Externe</masterLabel>
+            <translation><!-- Emailing Externe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement/ Conférence</masterLabel>
+            <translation><!-- Evénement/ Conférence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fichiers externes</masterLabel>
+            <translation><!-- Fichiers externes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foisonnement</masterLabel>
+            <translation><!-- Foisonnement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forum/ Salon</masterLabel>
+            <translation><!-- Forum/ Salon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Import contacts</masterLabel>
+            <translation><!-- Import contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master class</masterLabel>
+            <translation><!-- Master class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Module Chat</masterLabel>
+            <translation><!-- Module Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open class</masterLabel>
+            <translation><!-- Open class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescripteurs</masterLabel>
+            <translation><!-- Prescripteurs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospection</masterLabel>
+            <translation><!-- Prospection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Présentation aux écoles/ universités</masterLabel>
+            <translation><!-- Présentation aux écoles/ universités --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Présentation étudiants</masterLabel>
+            <translation><!-- Présentation étudiants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Récurrence</masterLabel>
+            <translation><!-- Récurrence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réseaux sociaux</masterLabel>
+            <translation><!-- Réseaux sociaux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réunion d&apos;information France</masterLabel>
+            <translation><!-- Réunion d&apos;information France --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réunion d&apos;information Internationale</masterLabel>
+            <translation><!-- Réunion d&apos;information Internationale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salon virtuel</masterLabel>
+            <translation><!-- Salon virtuel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Score test</masterLabel>
+            <translation><!-- Score test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site internet</masterLabel>
+            <translation><!-- Site internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site mobile</masterLabel>
+            <translation><!-- Site mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Day (BBA)</masterLabel>
+            <translation><!-- Training Day (BBA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Téléphone</masterLabel>
+            <translation><!-- Téléphone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visite</masterLabel>
+            <translation><!-- Visite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web to lead</masterLabel>
+            <translation><!-- Web to lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Nb car Nom --></label>
+        <name>Nb_car_Nom__c</name>
+    </fields>
+    <fields>
+        <help><!-- Resitue le nombre de jours écoulés depuis la création du contact. Utilisé pour les filtres dans les rapports. --></help>
+        <label><!-- Nb jours depuis Création Contact --></label>
+        <name>Nb_jours_depuis_Creation_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Resitue le nombre de jours écoulés depuis la dernière modification du contact. Utilisé pour les filtres dans les rapports. --></help>
+        <label><!-- Nb jours depuis modification Contact --></label>
+        <name>Nb_jours_depuis_modification_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ne pas appeler sur professionnel --></label>
+        <name>Ne_pas_appeler_sur_professionnel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ne pas contacter Partenariat/Fundraising --></label>
+        <name>Ne_pas_contacter_PartenariatFundraisin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ne pas contacter par mail TA --></label>
+        <name>Ne_pas_contacter_par_mail_TA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ne pas contacter par téléphone TA --></label>
+        <name>Ne_pas_contacter_par_t_l_phone_TA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ne souhaite pas recevoir de courrier TA --></label>
+        <name>Ne_souhaite_pas_recevoir_de_courrier_TA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Newsletter Forever --></label>
+        <name>Newsletter_Forever__c</name>
+    </fields>
+    <fields>
+        <label><!-- Niveau d&apos;anglais --></label>
+        <name>Niveau_d_anglais__c</name>
+        <picklistValues>
+            <masterLabel>Bon</masterLabel>
+            <translation><!-- Bon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faible</masterLabel>
+            <translation><!-- Faible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moyen</masterLabel>
+            <translation><!-- Moyen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Niveau d&apos;expérience professionnelle --></label>
+        <name>Niveau_d_exp_rience__c</name>
+        <picklistValues>
+            <masterLabel>+ de 10 ans</masterLabel>
+            <translation><!-- + de 10 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>+ de 25 ans</masterLabel>
+            <translation><!-- + de 25 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0-2 ans</masterLabel>
+            <translation><!-- 0-2 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10-15 ans</masterLabel>
+            <translation><!-- 10-15 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11-15 ans</masterLabel>
+            <translation><!-- 11-15 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15-20 ans</masterLabel>
+            <translation><!-- 15-20 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16-20 ans</masterLabel>
+            <translation><!-- 16-20 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20-25 ans</masterLabel>
+            <translation><!-- 20-25 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21-25 ans</masterLabel>
+            <translation><!-- 21-25 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3-5 ans</masterLabel>
+            <translation><!-- 3-5 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5-10 ans</masterLabel>
+            <translation><!-- 5-10 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6-10 ans</masterLabel>
+            <translation><!-- 6-10 ans --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Niveau d&apos;études --></label>
+        <name>Niveau_d_tudes__c</name>
+        <picklistValues>
+            <masterLabel>Bac</masterLabel>
+            <translation><!-- Bac --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac + 1</masterLabel>
+            <translation><!-- Bac + 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac + 2</masterLabel>
+            <translation><!-- Bac + 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac + 3</masterLabel>
+            <translation><!-- Bac + 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac + 4</masterLabel>
+            <translation><!-- Bac + 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac + 5 et +</masterLabel>
+            <translation><!-- Bac + 5 et + --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Première</masterLabel>
+            <translation><!-- Première --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seconde</masterLabel>
+            <translation><!-- Seconde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminale</masterLabel>
+            <translation><!-- Terminale --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Niveau de français --></label>
+        <name>Niveau_de_fran_ais__c</name>
+        <picklistValues>
+            <masterLabel>Bon</masterLabel>
+            <translation><!-- Bon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faible</masterLabel>
+            <translation><!-- Faible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moyen</masterLabel>
+            <translation><!-- Moyen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Niveau d&apos;études numéro --></label>
+        <name>Niveau_detudes_numero__c</name>
+    </fields>
+    <fields>
+        <label><!-- Niveau xp pro numéro --></label>
+        <name>Niveau_xp_pro_num_ro__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nom Compte Formule --></label>
+        <name>Nom_Compte__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nom Prénom --></label>
+        <name>Nom_Prenom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nom de jeune fille --></label>
+        <name>Nom_de_la_jeune_fille__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre d&apos;opportunités total --></label>
+        <name>Nombre_opportunit_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre d&apos;opportunités en cours --></label>
+        <name>Nombre_opportunites_sur_criteres__c</name>
+    </fields>
+    <fields>
+        <label><!-- Particule --></label>
+        <name>Particule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adresse:Pays --></label>
+        <name>Pays__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pays de résidence --></label>
+        <name>Pays_de_r_sidence__c</name>
+        <relationshipLabel><!-- Contacts (Pays de résidence) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Présent Campus Day --></label>
+        <name>Pr_sent_Campus_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Présent Training Day --></label>
+        <name>Pr_sent_Training_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Présent Salon --></label>
+        <name>Present_Salon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programme de reconnaissance --></label>
+        <name>Programme_de_reconnaissance__c</name>
+        <picklistValues>
+            <masterLabel>B2B_Annapura</masterLabel>
+            <translation><!-- B2B_Annapura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Cercle du Président</masterLabel>
+            <translation><!-- B2B_Cercle du Président --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Everest</masterLabel>
+            <translation><!-- B2B_Everest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_K2</masterLabel>
+            <translation><!-- B2B_K2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Kilimandjaro</masterLabel>
+            <translation><!-- B2B_Kilimandjaro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_McKinley</masterLabel>
+            <translation><!-- B2B_McKinley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B_Mont Blanc</masterLabel>
+            <translation><!-- B2B_Mont Blanc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Annapura</masterLabel>
+            <translation><!-- B2C_Annapura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Cercle du Président</masterLabel>
+            <translation><!-- B2C_Cercle du Président --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Everest</masterLabel>
+            <translation><!-- B2C_Everest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_K2</masterLabel>
+            <translation><!-- B2C_K2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Kilimandjaro</masterLabel>
+            <translation><!-- B2C_Kilimandjaro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_McKinley</masterLabel>
+            <translation><!-- B2C_McKinley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Mont Blanc</masterLabel>
+            <translation><!-- B2C_Mont Blanc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C_Niveau Zéro</masterLabel>
+            <translation><!-- B2C_Niveau Zéro --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pyramide --></label>
+        <name>Pyramide__c</name>
+        <picklistValues>
+            <masterLabel>Cœur</masterLabel>
+            <translation><!-- Cœur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cœur 600</masterLabel>
+            <translation><!-- Cœur 600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVIP</masterLabel>
+            <translation><!-- EVIP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platine</masterLabel>
+            <translation><!-- Platine --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Région --></label>
+        <name>R_gion__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rôle --></label>
+        <name>R_le__c</name>
+        <picklistValues>
+            <masterLabel>Administrateur ADEM</masterLabel>
+            <translation><!-- Administrateur ADEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Association étudiant</masterLabel>
+            <translation><!-- Association étudiant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correspondant</masterLabel>
+            <translation><!-- Correspondant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Délégué de promo</masterLabel>
+            <translation><!-- Délégué de promo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intervenant témoin</masterLabel>
+            <translation><!-- Intervenant témoin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prestataire</masterLabel>
+            <translation><!-- Prestataire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Président club</masterLabel>
+            <translation><!-- Président club --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rôle Taxe --></label>
+        <name>R_le_taxe__c</name>
+        <picklistValues>
+            <masterLabel>Décisionnaire versement Taxe</masterLabel>
+            <translation><!-- Décisionnaire versement Taxe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gestionnaire versement Taxe</masterLabel>
+            <translation><!-- Gestionnaire versement Taxe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescripteur fond libre collecteur</masterLabel>
+            <translation><!-- Prescripteur fond libre collecteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescripteur versement Taxe</masterLabel>
+            <translation><!-- Prescripteur versement Taxe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remerciement Taxe DG à Président</masterLabel>
+            <translation><!-- Remerciement Taxe DG à Président --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rémunération Initiale (€) --></label>
+        <name>R_muneration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rémuneration actuelle (€) --></label>
+        <name>R_muneration_actuelle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Souhaite rester en contact --></label>
+        <name>Reconduction_Prospect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Name --></label>
+        <name>Record_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recu ERP Participant --></label>
+        <name>Recu_ERP_Participant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recu ERP Tiers --></label>
+        <name>Recu_ERP_Tiers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reprise Lot 2015 --></label>
+        <name>Reprise_Lot_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retraité --></label>
+        <name>Retrait__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Override DupeCatcher --></label>
+        <name>SFSSDupeCatcher__Override_DupeCatcher__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score d&apos;Anglais --></label>
+        <name>Score_Toefl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score management --></label>
+        <name>Score_Toeic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total généré don --></label>
+        <name>Somme_Montant_Don__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sous origine de la piste --></label>
+        <name>Sous__c</name>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Statut Fundraising --></label>
+        <name>Statut_Fundraising__c</name>
+        <picklistValues>
+            <masterLabel>Donateur</masterLabel>
+            <translation><!-- Donateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identifié</masterLabel>
+            <translation><!-- Identifié --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Informé</masterLabel>
+            <translation><!-- Informé --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Statut --></label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>Etudiant</masterLabel>
+            <translation><!-- Etudiant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professionnel</masterLabel>
+            <translation><!-- Professionnel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect Etudiant</masterLabel>
+            <translation><!-- Prospect Etudiant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Télécopie domicile --></label>
+        <name>T_lecopie_domicile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test d&apos;Anglais --></label>
+        <name>Test_d_Anglais__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BULATS</masterLabel>
+            <translation><!-- BULATS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambridge Advanced (CAE)</masterLabel>
+            <translation><!-- Cambridge Advanced (CAE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambridge First Certificate (FCE)</masterLabel>
+            <translation><!-- Cambridge First Certificate (FCE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambridge Proficiency (CPE)</masterLabel>
+            <translation><!-- Cambridge Proficiency (CPE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempté</masterLabel>
+            <translation><!-- Exempté --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IELTS</masterLabel>
+            <translation><!-- IELTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PTE</masterLabel>
+            <translation><!-- PTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOEFL computer</masterLabel>
+            <translation><!-- TOEFL computer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOEFL ibt</masterLabel>
+            <translation><!-- TOEFL ibt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOEFL papier</masterLabel>
+            <translation><!-- TOEFL papier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOEIC Listening and Reading</masterLabel>
+            <translation><!-- TOEIC Listening and Reading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOEIC Speaking and Writing</masterLabel>
+            <translation><!-- TOEIC Speaking and Writing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Test management --></label>
+        <name>Test_management__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAT</masterLabel>
+            <translation><!-- CAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempté</masterLabel>
+            <translation><!-- Exempté --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GMAT</masterLabel>
+            <translation><!-- GMAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GRE</masterLabel>
+            <translation><!-- GRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAGE 2</masterLabel>
+            <translation><!-- TAGE 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAGE MAGE</masterLabel>
+            <translation><!-- TAGE MAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAGE Post-Bac</masterLabel>
+            <translation><!-- TAGE Post-Bac --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Traité par téléconseiller --></label>
+        <name>Traite_par_teleconseiller_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tranche de rémunération --></label>
+        <name>Tranche_de_r_mun_ration__c</name>
+        <picklistValues>
+            <masterLabel>De 31 à 40K€</masterLabel>
+            <translation><!-- De 31 à 40K€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 41 à 50K€</masterLabel>
+            <translation><!-- De 41 à 50K€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 51 à 60K€</masterLabel>
+            <translation><!-- De 51 à 60K€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 61 à 70K€</masterLabel>
+            <translation><!-- De 61 à 70K€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 71 à 80K€</masterLabel>
+            <translation><!-- De 71 à 80K€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 81 à 90K€</masterLabel>
+            <translation><!-- De 81 à 90K€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 91 à 100K€</masterLabel>
+            <translation><!-- De 91 à 100K€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moins de 30K€</masterLabel>
+            <translation><!-- Moins de 30K€ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plus de 101K€</masterLabel>
+            <translation><!-- Plus de 101K€ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type donation --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Campagne</masterLabel>
+            <translation><!-- Campagne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISF</masterLabel>
+            <translation><!-- ISF --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VIP --></label>
+        <name>VIP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Viadeo --></label>
+        <name>Viadeo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statut NPAI --></label>
+        <name>Warning__c</name>
+    </fields>
+    <fields>
+        <help><!-- Id contact sur 18 caractères --></help>
+        <label><!-- 18caracter --></label>
+        <name>X18caracter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone Commentaire Fundraising --></label>
+        <name>Zone_Commentaire_Fundraising__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone Commentaire --></label>
+        <name>Zone_Commentaire__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Boolean Value 00 --></label>
+        <name>inx__custom_boolean_value_00__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Boolean Value 01 --></label>
+        <name>inx__custom_boolean_value_01__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Boolean Value 02 --></label>
+        <name>inx__custom_boolean_value_02__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Boolean Value 03 --></label>
+        <name>inx__custom_boolean_value_03__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Boolean Value 04 --></label>
+        <name>inx__custom_boolean_value_04__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Date Value 00 --></label>
+        <name>inx__custom_date_value_00__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Date Value 01 --></label>
+        <name>inx__custom_date_value_01__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Date Value 02 --></label>
+        <name>inx__custom_date_value_02__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Date Value 03 --></label>
+        <name>inx__custom_date_value_03__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Date Value 04 --></label>
+        <name>inx__custom_date_value_04__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Float Value 00 --></label>
+        <name>inx__custom_float_value_00__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Float Value 01 --></label>
+        <name>inx__custom_float_value_01__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Float Value 02 --></label>
+        <name>inx__custom_float_value_02__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Float Value 03 --></label>
+        <name>inx__custom_float_value_03__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Float Value 04 --></label>
+        <name>inx__custom_float_value_04__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Integer Value 00 --></label>
+        <name>inx__custom_integer_value_00__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Integer Value 01 --></label>
+        <name>inx__custom_integer_value_01__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Integer Value 02 --></label>
+        <name>inx__custom_integer_value_02__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Integer Value 03 --></label>
+        <name>inx__custom_integer_value_03__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Integer Value 04 --></label>
+        <name>inx__custom_integer_value_04__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Text Value 00 --></label>
+        <name>inx__custom_text_value_00__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Text Value 01 --></label>
+        <name>inx__custom_text_value_01__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Text Value 02 --></label>
+        <name>inx__custom_text_value_02__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Text Value 03 --></label>
+        <name>inx__custom_text_value_03__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Text Value 04 --></label>
+        <name>inx__custom_text_value_04__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Text Value 05 --></label>
+        <name>inx__custom_text_value_05__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Text Value 06 --></label>
+        <name>inx__custom_text_value_06__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Text Value 07 --></label>
+        <name>inx__custom_text_value_07__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Text Value 08 --></label>
+        <name>inx__custom_text_value_08__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Text Value 09 --></label>
+        <name>inx__custom_text_value_09__c</name>
+    </fields>
+    <fields>
+        <help>Hardbounce dans Inxmail Professional</help>
+        <label><!-- Email Invalid --></label>
+        <name>inx__email_is_invalid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient ID --></label>
+        <name>inx__recipient_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nb caractère code postal perso --></label>
+        <name>nbCar_code_postal_perso__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre Opportunités qualifiées en cours --></label>
+        <name>nb_SIP_en_cours__c</name>
+    </fields>
+    <fields>
+        <label><!-- parti de l&apos;entreprise --></label>
+        <name>parti_de_l_entreprise__c</name>
+    </fields>
+    <layouts>
+        <layout>Etudiant</layout>
+        <sections>
+            <label><!-- Coordonnées Personnelles --></label>
+            <section>Coordonnées Personnelles</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnés de repli --></label>
+            <section>Coordonnés de repli</section>
+        </sections>
+        <sections>
+            <label><!-- Diplômé détails --></label>
+            <section>Diplômé détails</section>
+        </sections>
+        <sections>
+            <label><!-- Employabilité --></label>
+            <section>Employabilité</section>
+        </sections>
+        <sections>
+            <label><!-- Poste principal --></label>
+            <section>Poste principal</section>
+        </sections>
+        <sections>
+            <label><!-- Projets/mécénat --></label>
+            <section>Projets/mécénat</section>
+        </sections>
+        <sections>
+            <label><!-- Préférences de communication --></label>
+            <section>Préférences de communication</section>
+        </sections>
+        <sections>
+            <label><!-- Suivi du contact --></label>
+            <section>Suivi du contact</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fundraising</layout>
+        <sections>
+            <label><!-- Coordonnées Personnelles --></label>
+            <section>Coordonnées Personnelles</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées de repli / professionnelles --></label>
+            <section>Coordonnées de repli / professionnelles</section>
+        </sections>
+        <sections>
+            <label><!-- Diplômé EMLYON --></label>
+            <section>Diplômé EMLYON</section>
+        </sections>
+        <sections>
+            <label><!-- Employabilité --></label>
+            <section>Employabilité</section>
+        </sections>
+        <sections>
+            <label><!-- Fundraising --></label>
+            <section>Fundraising</section>
+        </sections>
+        <sections>
+            <label><!-- Information supplémentaires --></label>
+            <section>Information supplémentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Informations sur la formation --></label>
+            <section>Informations sur la formation</section>
+        </sections>
+        <sections>
+            <label><!-- Poste principal --></label>
+            <section>Poste principal</section>
+        </sections>
+        <sections>
+            <label><!-- Préférences de communication --></label>
+            <section>Préférences de communication</section>
+        </sections>
+        <sections>
+            <label><!-- Suivi du contact --></label>
+            <section>Suivi du contact</section>
+        </sections>
+        <sections>
+            <label><!-- Taxe --></label>
+            <section>Taxe</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Professionnel</layout>
+        <sections>
+            <label><!-- Coordonnées Personnelles --></label>
+            <section>Coordonnées Personnelles</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées de repli / professionnelles --></label>
+            <section>Coordonnées de repli / professionnelles</section>
+        </sections>
+        <sections>
+            <label><!-- Diplômé EMLYON --></label>
+            <section>Diplômé EMLYON</section>
+        </sections>
+        <sections>
+            <label><!-- Fundraising --></label>
+            <section>Fundraising</section>
+        </sections>
+        <sections>
+            <label><!-- Information supplémentaires --></label>
+            <section>Information supplémentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Informations sur la formation --></label>
+            <section>Informations sur la formation</section>
+        </sections>
+        <sections>
+            <label><!-- Poste principal --></label>
+            <section>Poste principal</section>
+        </sections>
+        <sections>
+            <label><!-- Préférences de communication --></label>
+            <section>Préférences de communication</section>
+        </sections>
+        <sections>
+            <label><!-- Suivi du contact --></label>
+            <section>Suivi du contact</section>
+        </sections>
+        <sections>
+            <label><!-- Taxe --></label>
+            <section>Taxe</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Prospect Etudiant</layout>
+        <sections>
+            <label><!-- Commentaires --></label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Compte --></label>
+            <section>Compte</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées Personnelles --></label>
+            <section>Coordonnées Personnelles</section>
+        </sections>
+        <sections>
+            <label><!-- Données de création du contact --></label>
+            <section>Données de création du contact</section>
+        </sections>
+        <sections>
+            <label><!-- Profil / Education --></label>
+            <section>Profil / Education</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vision Equipe Relations Employeur</layout>
+        <sections>
+            <label><!-- Commentaires --></label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Compte --></label>
+            <section>Compte</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées Personnelles --></label>
+            <section>Coordonnées Personnelles</section>
+        </sections>
+        <sections>
+            <label><!-- Données de création du contact --></label>
+            <section>Données de création du contact</section>
+        </sections>
+        <sections>
+            <label><!-- Profil / Education --></label>
+            <section>Profil / Education</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Etudiant --></label>
+        <name>Etudiant</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Professionnel --></label>
+        <name>Professionnel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospect Etudiant --></label>
+        <name>Prospect_Etudiant</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- La modification de type d&apos;enregistrement de &quot;Professionnel&quot; vers &quot;Prospect Etudiant&quot; vous est interdite. --></errorMessage>
+        <name>ChargePromoFC_CanChangeProfesToProspect</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La modification de type d&apos;enregistrement de &quot;Prospect Etudiant&quot; vers &quot;Professionnel&quot; vous est interdite. --></errorMessage>
+        <name>ChargePromoFI_CanChangeProspectToProfess</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La modification de type d&apos;enregistrement de &apos;Etudiant&apos; à &apos;Professionnel&apos; est interdite. --></errorMessage>
+        <name>ForbidChangeEtudiantToProfessionnel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La modification de type d&apos;enregistrement de &apos;Etudiant&apos; à &apos;Prospect Etudiant&apos; est interdite. --></errorMessage>
+        <name>ForbidChangeEtudiantToProspect</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La modification de type d&apos;enregistrement de &apos;Professionnel&apos; à &apos;Etudiant&apos; est interdite. --></errorMessage>
+        <name>ForbidChangeProfessionnelToEtudiant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La modification de type d&apos;enregistrement de &apos;Prospect Etudiant&apos; à &apos;Etudiant&apos; est interdite. --></errorMessage>
+        <name>ForbidChangeProspectToEtudiant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La modification de type d&apos;enregistrement vous est interdite. --></errorMessage>
+        <name>ForbidChangeRecordType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ Etat est obligatoire --></errorMessage>
+        <name>RG_Contact01_Etat_ObligatoirePersonnelle</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ Etat est obligatoire --></errorMessage>
+        <name>RG_Contact02_Etat_ObligatoireRepli</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ Pays est obligatoire --></errorMessage>
+        <name>RG_Contact03_Pays_ObligatoirePersonnel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ Pays est obligatoire --></errorMessage>
+        <name>RG_Contact04_Pays_ObligatoireRepli</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vérifiez les champs Région et Etat dans l&apos;adresse Personnelle. --></errorMessage>
+        <name>RG_Contact05_RegionVsEtat_Personnel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ Prénom est obligatoire --></errorMessage>
+        <name>RG_Contact06_Prenom_obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ Civilité est obligatoire --></errorMessage>
+        <name>RG_Contact07_Civilite_Obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ Famille fonction est obligatoire --></errorMessage>
+        <name>RG_Contact08_Famil_fonction_Obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ nom et le champ prénom ne peuvent être modifiés que par les équipes Base de données ou Forever pour ce type d&apos;enregistrement ! --></errorMessage>
+        <name>RG_Contact09_Maj_Nom_Prenom_Etudiant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Cloner_Custom --></label>
+        <name>Cloner_Custom</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Convertir_en_client_individuel --></label>
+        <name>Convertir_en_client_individuel</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Changement_de_seuil_B2C</name>
+        <subject><!-- Changement de seuil B2C --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

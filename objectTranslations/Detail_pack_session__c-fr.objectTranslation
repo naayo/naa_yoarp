@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Détail pack session</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Détails pack session</value>
+    </caseValues>
+    <fields>
+        <label><!-- Composant session --></label>
+        <name>Composant_session__c</name>
+        <relationshipLabel><!-- Liste des sessions packs utilisant la session --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pack Session --></label>
+        <name>Pack_Session__c</name>
+        <relationshipLabel><!-- Détails des Sessions composant le pack --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Détail pack session</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Contacts$LastName</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$FirstName</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Dipl_mes__r$Promo_de_sortie__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Adresse_Email_Personnelle__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Email_de_repli__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Email_EM_Lyon__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$MobilePhone</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Phone</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Dipl_mes__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contacts.Dipl_mes__r$Programme__c</column>
+            <operator>equals</operator>
+            <value>Programme Général de Management</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.Dipl_mes__r$Promo_de_sortie__c</column>
+            <operator>contains</operator>
+            <value>2013,2014,2015</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Summary</format>
+    <name>diplomé PGM_2014 à 2016</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Rapports_Contacts_Dipl_m_s_EMLYON__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Contacts$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
