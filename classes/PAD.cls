@@ -17,6 +17,8 @@ public with sharing class PAD {
         userProfileName = user.Profile.Name;
         //PAD_EAI_WS_Bypass=user.ByPassWorkflowRule__c;
         userLocalKey = user.LanguageLocaleKey;
+        
+        
 
         System.Debug('## >>> PAD constructor : END <<<');
     }
