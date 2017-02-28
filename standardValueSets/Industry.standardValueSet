@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Administration Publique</fullName>
+        <default>false</default>
+        <label>Administration Publique</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Agriculture/Pêche</fullName>
+        <default>false</default>
+        <label>Agriculture/Pêche</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Automobile et Matériels de Transport</fullName>
+        <default>false</default>
+        <label>Automobile et Matériels de Transport</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Autre</fullName>
+        <default>false</default>
+        <label>Autre</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Banque/Assurance/Scs Finan./Immobilier</fullName>
+        <default>false</default>
+        <label>Banque/Assurance/Scs Finan./Immobilier</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BTP/Habitat/Environnement</fullName>
+        <default>false</default>
+        <label>BTP/Habitat/Environnement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commerce/Distribution</fullName>
+        <default>false</default>
+        <label>Commerce/Distribution</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Construction/BTP</fullName>
+        <default>false</default>
+        <label>Construction/BTP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Edition/Imprimerie/Reproduction</fullName>
+        <default>false</default>
+        <label>Edition/Imprimerie/Reproduction</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Educa.Santé/Act.Sociale/Act.asso./média</fullName>
+        <default>false</default>
+        <label>Educa.Santé/Act.Sociale/Act.asso./média</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Energie/Eau</fullName>
+        <default>false</default>
+        <label>Energie/Eau</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Extraction et Industries Extractives</fullName>
+        <default>false</default>
+        <label>Extraction et Industries Extractives</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Indust.Electriq/Electroniq./Informatique</fullName>
+        <default>false</default>
+        <label>Indust.Electriq/Electroniq./Informatique</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Industrie Agro-alimentaire/Tabac</fullName>
+        <default>false</default>
+        <label>Industrie Agro-alimentaire/Tabac</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Industrie Bois/Papier/Carton</fullName>
+        <default>false</default>
+        <label>Industrie Bois/Papier/Carton</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Industrie Chimique/Pharmacie/Plastiques</fullName>
+        <default>false</default>
+        <label>Industrie Chimique/Pharmacie/Plastiques</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Industrie Textile/Habillement/Cuir</fullName>
+        <default>false</default>
+        <label>Industrie Textile/Habillement/Cuir</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Metallurgie/Machines et Equipement</fullName>
+        <default>false</default>
+        <label>Metallurgie/Machines et Equipement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Services aux Entreprises/Conseil</fullName>
+        <default>false</default>
+        <label>Services aux Entreprises/Conseil</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Services aux particuliers</fullName>
+        <default>false</default>
+        <label>Services aux particuliers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Télécommunication/services informatiques</fullName>
+        <default>false</default>
+        <label>Télécommunication/services informatiques</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Transports/Logistique/Tourisme</fullName>
+        <default>false</default>
+        <label>Transports/Logistique/Tourisme</label>
+    </standardValue>
+</StandardValueSet>

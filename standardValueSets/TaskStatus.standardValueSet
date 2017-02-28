@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Non démarré</fullName>
+        <default>true</default>
+        <label>Non démarré</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>En cours</fullName>
+        <default>false</default>
+        <label>En cours</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Terminé</fullName>
+        <default>false</default>
+        <label>Terminé</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>En attente d&apos;une autre personne</fullName>
+        <default>false</default>
+        <label>En attente d&apos;une autre personne</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Reporté</fullName>
+        <default>false</default>
+        <label>Reporté</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

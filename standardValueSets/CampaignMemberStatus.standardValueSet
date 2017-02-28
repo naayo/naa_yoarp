@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>A refusé l&apos;invitation</fullName>
+        <default>false</default>
+        <label>A refusé l&apos;invitation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Blacklist</fullName>
+        <default>false</default>
+        <label>Blacklist</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Duplicate</fullName>
+        <default>false</default>
+        <label>Duplicate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Envoyé</fullName>
+        <default>false</default>
+        <label>Envoyé</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Est inscrit</fullName>
+        <default>false</default>
+        <label>Est inscrit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Est invité</fullName>
+        <default>false</default>
+        <label>Est invité</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Est venu</fullName>
+        <default>false</default>
+        <label>Est venu</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hard Bounced</fullName>
+        <default>false</default>
+        <label>Hard Bounced</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Illegal Value</fullName>
+        <default>false</default>
+        <label>Illegal Value</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Membre</fullName>
+        <default>false</default>
+        <label>Membre</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Non</fullName>
+        <default>false</default>
+        <label>Non</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Sent</fullName>
+        <default>false</default>
+        <label>Not Sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Subscribed</fullName>
+        <default>false</default>
+        <label>Not Subscribed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opened</fullName>
+        <default>false</default>
+        <label>Opened</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opt-Out</fullName>
+        <default>false</default>
+        <label>Opt-Out</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Oui</fullName>
+        <default>false</default>
+        <label>Oui</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Répondu</fullName>
+        <default>false</default>
+        <label>Répondu</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent</fullName>
+        <default>false</default>
+        <label>Sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Soft Bounced</fullName>
+        <default>false</default>
+        <label>Soft Bounced</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unknown Bounced</fullName>
+        <default>false</default>
+        <label>Unknown Bounced</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vient</fullName>
+        <default>false</default>
+        <label>Vient</label>
+    </standardValue>
+</StandardValueSet>
