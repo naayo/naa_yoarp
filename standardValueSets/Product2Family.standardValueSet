@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>ACCOMP. CARRIERE ou CARRIERE RESEAUX</fullName>
+        <default>false</default>
+        <label>ACCOMP. CARRIERE ou CARRIERE RESEAUX</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ACCOMPAGNEMENT PEDAGOGIQUE</fullName>
+        <default>false</default>
+        <label>ACCOMPAGNEMENT PEDAGOGIQUE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AUTRES OFFRES ?</fullName>
+        <default>false</default>
+        <label>AUTRES OFFRES ?</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AUTRES PROGRAMMES</fullName>
+        <default>false</default>
+        <label>AUTRES PROGRAMMES</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AUTRES SERVICES</fullName>
+        <default>false</default>
+        <label>AUTRES SERVICES</label>
+    </standardValue>
+    <standardValue>
+        <fullName>DÉVELOPPEMENT DE LA MARQUE EMPLOYEUR</fullName>
+        <default>false</default>
+        <label>DÉVELOPPEMENT DE LA MARQUE EMPLOYEUR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EVENEMENTS DE RECRUTEMENT</fullName>
+        <default>false</default>
+        <label>EVENEMENTS DE RECRUTEMENT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EVENEMENTS EXPERTS</fullName>
+        <default>false</default>
+        <label>EVENEMENTS EXPERTS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EVENEMENTS IMAGE / RESEAU</fullName>
+        <default>false</default>
+        <label>EVENEMENTS IMAGE / RESEAU</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EVENEMENTS PROMOTIONNELS</fullName>
+        <default>false</default>
+        <label>EVENEMENTS PROMOTIONNELS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fundraising B2B</fullName>
+        <default>false</default>
+        <label>Fundraising B2B</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fundraising B2C</fullName>
+        <default>false</default>
+        <label>Fundraising B2C</label>
+    </standardValue>
+    <standardValue>
+        <fullName>INFORMER (par différents canaux)</fullName>
+        <default>false</default>
+        <label>INFORMER (par différents canaux)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MECENAT (CENTRALE LYON - EMLYON)</fullName>
+        <default>false</default>
+        <label>MECENAT (CENTRALE LYON - EMLYON)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MECENAT EMLYON</fullName>
+        <default>false</default>
+        <label>MECENAT EMLYON</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MECENAT FONDATION EMLYON</fullName>
+        <default>false</default>
+        <label>MECENAT FONDATION EMLYON</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MESURER LA QUALITE ET LA PERFORMANCE</fullName>
+        <default>false</default>
+        <label>MESURER LA QUALITE ET LA PERFORMANCE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OFFRES EXEC DEV Programmes Certifiants</fullName>
+        <default>false</default>
+        <label>OFFRES EXEC DEV Programmes Certifiants</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OFFRES EXEC DEV Programmes Certifiants CASA</fullName>
+        <default>false</default>
+        <label>OFFRES EXEC DEV Programmes Certifiants CASA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OFFRES EXEC DEV Programmes courts</fullName>
+        <default>false</default>
+        <label>OFFRES EXEC DEV Programmes courts</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OFFRES EXEC DEV programmes intra</fullName>
+        <default>false</default>
+        <label>OFFRES EXEC DEV programmes intra</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OFFRES EXEC DEV Programmes longs</fullName>
+        <default>false</default>
+        <label>OFFRES EXEC DEV Programmes longs</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OFFRES EXEC DEV Programmes longs CASA</fullName>
+        <default>false</default>
+        <label>OFFRES EXEC DEV Programmes longs CASA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES BACHELOR</fullName>
+        <default>false</default>
+        <label>PROGRAMMES BACHELOR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES ENTREPRENEURS</fullName>
+        <default>false</default>
+        <label>PROGRAMMES ENTREPRENEURS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES MASTER</fullName>
+        <default>false</default>
+        <label>PROGRAMMES MASTER</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES MASTER CASA</fullName>
+        <default>false</default>
+        <label>PROGRAMMES MASTER CASA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES MASTERES</fullName>
+        <default>false</default>
+        <label>PROGRAMMES MASTERES</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES MASTERES CASA</fullName>
+        <default>false</default>
+        <label>PROGRAMMES MASTERES CASA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES MBA</fullName>
+        <default>false</default>
+        <label>PROGRAMMES MBA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SOLUTIONS DE RECRUTEMENT</fullName>
+        <default>false</default>
+        <label>SOLUTIONS DE RECRUTEMENT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SPONSORING</fullName>
+        <default>false</default>
+        <label>SPONSORING</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TAXE D&apos;APPRENTISSAGE</fullName>
+        <default>false</default>
+        <label>TAXE D&apos;APPRENTISSAGE</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Appel</fullName>
+        <default>false</default>
+        <label>Appel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Envoyer lettre</fullName>
+        <default>false</default>
+        <label>Envoyer lettre</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Envoyer devis</fullName>
+        <default>false</default>
+        <label>Envoyer devis</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Autre</fullName>
+        <default>false</default>
+        <label>Autre</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Relance téléphonique</fullName>
+        <default>false</default>
+        <label>Relance téléphonique</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mail</fullName>
+        <default>false</default>
+        <label>Mail</label>
+    </standardValue>
+</StandardValueSet>
