@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -72,234 +68,384 @@
         <fullName>Cycle__c</fullName>
         <externalId>false</externalId>
         <label>Cycle</label>
-        <picklist>
-            <controllingField>Programme__c</controllingField>
-            <picklistValues>
-                <fullName>International MBA</fullName>
-                <default>false</default>
-                <controllingFieldValues>MBA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CPA Lyon</fullName>
-                <default>false</default>
-                <controllingFieldValues>CPA Lyon</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Executive MBA</fullName>
-                <default>false</default>
-                <controllingFieldValues>MBA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>European Master in Management</fullName>
-                <default>false</default>
-                <controllingFieldValues>European Master in Management</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Global Entrepreneurship Programme</fullName>
-                <default>false</default>
-                <controllingFieldValues>Global Entrepreneurship Program</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Ingénierie Financière</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MSc Luxury Mngt &amp; Mkt</fullName>
-                <default>false</default>
-                <controllingFieldValues>MSc in Luxury Management et Marketing</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Ingénierie et Internet</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Acheteur Manager International</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Management  Activités Industrielles</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M.S. Mngt des Ent Vivant et de l&apos;agro.</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Agro-Industriel</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Audit et Information Financière</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Conseil en Organisation</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Stratégie et Dvpt d’Affaires Intl</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Mgt et Dvpt Systèmes d&apos;Information</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Entreprendre</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Finance de Marché</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS GIRIS</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Marketing Industriel</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS NTIC Management</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Ingénierie et Mngt des SI</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Juriste Manager International</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Knowledge Management</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Management des Entreprises de Service</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M.S. Strat Internat et Marketing Indus</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Management de la Technologie</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programme Général de Management</fullName>
-                <default>false</default>
-                <controllingFieldValues>Programme Général de Management</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PhD in Management</fullName>
-                <default>false</default>
-                <controllingFieldValues>Faculté</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MS Stratégie et Marketing des Entr. Ind.</fullName>
-                <default>false</default>
-                <controllingFieldValues>Mastères Spécialisés</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Msc in Sports Industry Management</fullName>
-                <default>false</default>
-                <controllingFieldValues>Msc in Sports Industry Management</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MSc in Innovation,Design,Entrep. &amp; Arts</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>Programme__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>International MBA</fullName>
+                    <default>false</default>
+                    <label>International MBA</label>
+                </value>
+                <value>
+                    <fullName>CPA Lyon</fullName>
+                    <default>false</default>
+                    <label>CPA Lyon</label>
+                </value>
+                <value>
+                    <fullName>Executive MBA</fullName>
+                    <default>false</default>
+                    <label>Executive MBA</label>
+                </value>
+                <value>
+                    <fullName>European Master in Management</fullName>
+                    <default>false</default>
+                    <label>European Master in Management</label>
+                </value>
+                <value>
+                    <fullName>Global Entrepreneurship Programme</fullName>
+                    <default>false</default>
+                    <label>Global Entrepreneurship Programme</label>
+                </value>
+                <value>
+                    <fullName>MS Ingénierie Financière</fullName>
+                    <default>false</default>
+                    <label>MS Ingénierie Financière</label>
+                </value>
+                <value>
+                    <fullName>MSc Luxury Mngt &amp; Mkt</fullName>
+                    <default>false</default>
+                    <label>MSc Luxury Mngt &amp; Mkt</label>
+                </value>
+                <value>
+                    <fullName>MS Ingénierie et Internet</fullName>
+                    <default>false</default>
+                    <label>MS Ingénierie et Internet</label>
+                </value>
+                <value>
+                    <fullName>MS Acheteur Manager International</fullName>
+                    <default>false</default>
+                    <label>MS Acheteur Manager International</label>
+                </value>
+                <value>
+                    <fullName>MS Management  Activités Industrielles</fullName>
+                    <default>false</default>
+                    <label>MS Management  Activités Industrielles</label>
+                </value>
+                <value>
+                    <fullName>M.S. Mngt des Ent Vivant et de l&apos;agro.</fullName>
+                    <default>false</default>
+                    <label>M.S. Mngt des Ent Vivant et de l&apos;agro.</label>
+                </value>
+                <value>
+                    <fullName>MS Agro-Industriel</fullName>
+                    <default>false</default>
+                    <label>MS Agro-Industriel</label>
+                </value>
+                <value>
+                    <fullName>MS Audit et Information Financière</fullName>
+                    <default>false</default>
+                    <label>MS Audit et Information Financière</label>
+                </value>
+                <value>
+                    <fullName>MS Conseil en Organisation</fullName>
+                    <default>false</default>
+                    <label>MS Conseil en Organisation</label>
+                </value>
+                <value>
+                    <fullName>MS Stratégie et Dvpt d’Affaires Intl</fullName>
+                    <default>false</default>
+                    <label>MS Stratégie et Dvpt d’Affaires Intl</label>
+                </value>
+                <value>
+                    <fullName>MS Mgt et Dvpt Systèmes d&apos;Information</fullName>
+                    <default>false</default>
+                    <label>MS Mgt et Dvpt Systèmes d&apos;Information</label>
+                </value>
+                <value>
+                    <fullName>MS Entreprendre</fullName>
+                    <default>false</default>
+                    <label>MS Entreprendre</label>
+                </value>
+                <value>
+                    <fullName>MS Finance de Marché</fullName>
+                    <default>false</default>
+                    <label>MS Finance de Marché</label>
+                </value>
+                <value>
+                    <fullName>MS GIRIS</fullName>
+                    <default>false</default>
+                    <label>MS GIRIS</label>
+                </value>
+                <value>
+                    <fullName>MS Marketing Industriel</fullName>
+                    <default>false</default>
+                    <label>MS Marketing Industriel</label>
+                </value>
+                <value>
+                    <fullName>MS NTIC Management</fullName>
+                    <default>false</default>
+                    <label>MS NTIC Management</label>
+                </value>
+                <value>
+                    <fullName>MS Ingénierie et Mngt des SI</fullName>
+                    <default>false</default>
+                    <label>MS Ingénierie et Mngt des SI</label>
+                </value>
+                <value>
+                    <fullName>MS Juriste Manager International</fullName>
+                    <default>false</default>
+                    <label>MS Juriste Manager International</label>
+                </value>
+                <value>
+                    <fullName>MS Knowledge Management</fullName>
+                    <default>false</default>
+                    <label>MS Knowledge Management</label>
+                </value>
+                <value>
+                    <fullName>MS Management des Entreprises de Service</fullName>
+                    <default>false</default>
+                    <label>MS Management des Entreprises de Service</label>
+                </value>
+                <value>
+                    <fullName>M.S. Strat Internat et Marketing Indus</fullName>
+                    <default>false</default>
+                    <label>M.S. Strat Internat et Marketing Indus</label>
+                </value>
+                <value>
+                    <fullName>MS Management de la Technologie</fullName>
+                    <default>false</default>
+                    <label>MS Management de la Technologie</label>
+                </value>
+                <value>
+                    <fullName>Programme Général de Management</fullName>
+                    <default>false</default>
+                    <label>Programme Général de Management</label>
+                </value>
+                <value>
+                    <fullName>PhD in Management</fullName>
+                    <default>false</default>
+                    <label>PhD in Management</label>
+                </value>
+                <value>
+                    <fullName>MS Stratégie et Marketing des Entr. Ind.</fullName>
+                    <default>false</default>
+                    <label>MS Stratégie et Marketing des Entr. Ind.</label>
+                </value>
+                <value>
+                    <fullName>Msc in Sports Industry Management</fullName>
+                    <default>false</default>
+                    <label>Msc in Sports Industry Management</label>
+                </value>
+                <value>
+                    <fullName>MSc in Innovation,Design,Entrep. &amp; Arts</fullName>
+                    <default>false</default>
+                    <label>MSc in Innovation,Design,Entrep. &amp; Arts</label>
+                </value>
+                <value>
+                    <fullName>M.S. Strat Internat et Marketing BtoB</fullName>
+                    <default>false</default>
+                    <label>M.S. Strat Internat et Marketing BtoB</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>MBA</controllingFieldValue>
+                <valueName>International MBA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MBA</controllingFieldValue>
+                <valueName>Executive MBA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CPA Lyon</controllingFieldValue>
+                <valueName>CPA Lyon</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Faculté</controllingFieldValue>
+                <valueName>PhD in Management</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>European Master in Management</controllingFieldValue>
+                <valueName>European Master in Management</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MSc in Luxury Management et Marketing</controllingFieldValue>
+                <valueName>MSc Luxury Mngt &amp; Mkt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global Entrepreneurship Program</controllingFieldValue>
+                <valueName>Global Entrepreneurship Programme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Ingénierie Financière</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Ingénierie et Internet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Acheteur Manager International</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Management  Activités Industrielles</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>M.S. Mngt des Ent Vivant et de l&apos;agro.</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Agro-Industriel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Audit et Information Financière</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Conseil en Organisation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Stratégie et Dvpt d’Affaires Intl</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Mgt et Dvpt Systèmes d&apos;Information</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Entreprendre</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Finance de Marché</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS GIRIS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Marketing Industriel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS NTIC Management</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Ingénierie et Mngt des SI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Juriste Manager International</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Knowledge Management</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Management des Entreprises de Service</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>M.S. Strat Internat et Marketing Indus</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Management de la Technologie</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>MS Stratégie et Marketing des Entr. Ind.</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mastères Spécialisés</controllingFieldValue>
+                <valueName>M.S. Strat Internat et Marketing BtoB</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Programme Général de Management</controllingFieldValue>
+                <valueName>Programme Général de Management</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Msc in Sports Industry Management</controllingFieldValue>
+                <valueName>Msc in Sports Industry Management</valueName>
+            </valueSettings>
+        </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
         <fullName>Programme__c</fullName>
         <externalId>false</externalId>
         <label>Programme</label>
-        <picklist>
-            <picklistValues>
-                <fullName>MBA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CPA Lyon</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Faculté</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>European Master in Management</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ESC Lyon</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MSc in Luxury Management et Marketing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Global Entrepreneurship Program</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mastères Spécialisés</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programme Général de Management</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Msc in Sports Industry Management</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MSc in Innovation,Design,Entrep. &amp; Arts</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MSc in International Hospitality Management</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MBA</fullName>
+                    <default>false</default>
+                    <label>MBA</label>
+                </value>
+                <value>
+                    <fullName>CPA Lyon</fullName>
+                    <default>false</default>
+                    <label>CPA Lyon</label>
+                </value>
+                <value>
+                    <fullName>Faculté</fullName>
+                    <default>false</default>
+                    <label>Faculté</label>
+                </value>
+                <value>
+                    <fullName>European Master in Management</fullName>
+                    <default>false</default>
+                    <label>European Master in Management</label>
+                </value>
+                <value>
+                    <fullName>ESC Lyon</fullName>
+                    <default>false</default>
+                    <label>ESC Lyon</label>
+                </value>
+                <value>
+                    <fullName>MSc in Luxury Management et Marketing</fullName>
+                    <default>false</default>
+                    <label>MSc in Luxury Management et Marketing</label>
+                </value>
+                <value>
+                    <fullName>Global Entrepreneurship Program</fullName>
+                    <default>false</default>
+                    <label>Global Entrepreneurship Program</label>
+                </value>
+                <value>
+                    <fullName>Mastères Spécialisés</fullName>
+                    <default>false</default>
+                    <label>Mastères Spécialisés</label>
+                </value>
+                <value>
+                    <fullName>Programme Général de Management</fullName>
+                    <default>false</default>
+                    <label>Programme Général de Management</label>
+                </value>
+                <value>
+                    <fullName>Msc in Sports Industry Management</fullName>
+                    <default>false</default>
+                    <label>Msc in Sports Industry Management</label>
+                </value>
+                <value>
+                    <fullName>MSc in Innovation,Design,Entrep. &amp; Arts</fullName>
+                    <default>false</default>
+                    <label>MSc in Innovation,Design,Entrep. &amp; Arts</label>
+                </value>
+                <value>
+                    <fullName>MSc in International Hospitality Management</fullName>
+                    <default>false</default>
+                    <label>MSc in International Hospitality Management</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Promo_d_entr_e__c</fullName>
@@ -365,4 +511,5 @@
     <pluralLabel>Diplômes EMLYON</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>
