@@ -4,65 +4,40 @@
 
 public class DataExtract010Etat implements Queueable {
 
-    private static String OBJECT_NAME_ETAT = 'Etat__c';
+    public static final String OBJECT_NAME_ETAT = 'Etat__c';
+
+    public DataToExport dataExport{
+        public get;
+        public set;
+    }
+
+    public DataExtract010Etat(DataToExport dataToExport) {
+        this.dataExport = dataToExport;
+    }
 
     public void execute(QueueableContext context) {
         extractEtats();
-        System.enqueueJob(new DataExtract011Formation());
+        if(!Test.isRunningTest()) {
+            System.enqueueJob(new DataExtract020Task(dataExport));
+        }
     }
 
     /**
     Extraction de tous les enregistrements "Etat__c"
      */
-    public static void extractEtats() {
-        String csv = '';
-        String query = 'SELECT ';
+    public void extractEtats() {
 
-        // Recuperation des champs de l'objet Etat__c
-        Schema.DescribeSObjectResult objectDescribe  = Etat__c.SObjectType.getDescribe();
-        Map<String, Schema.SObjectField> fieldMap = objectDescribe.fields.getMap();
+        System.debug('--- BEGIN DataExtract010Etat / extractEtats() ---');
 
-        // Construction de l'en-tete du csv et insertion des champs nécessaires a la requete SQL
-        for( String fieldName : fieldMap.keySet() ) {
-            // Echappement des champs non mettables à jour
-            if (fieldMap.get(fieldName).getDescribe().isUpdateable()) {
-                csv += '"' + fieldName.toUpperCase() + '",';
-                query += fieldName + ',';
-            }
-        }
+        // Stockage des id pour le traitement d'autres objets plus tard
+        dataExport.etatsToExport.addAll(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_ETAT,
+                null, null));
 
-        // Suppression derniere virgule
-        query = query.substring(0, query.length() - 1);
-        query += '\n FROM ' + OBJECT_NAME_ETAT;
-        csv = csv.substring(0, csv.length() - 1);
-        csv += '\n';
+        System.debug('--PARAM dataExport.etatsToExport : ' + dataExport.etatsToExport);
 
-        List<Etat__c> etats = Database.query(query);
+        // Génération du fichier csv
+        DataExtractUtils.extractAllFieldsToCSV('06', OBJECT_NAME_ETAT, null);
 
-        // Remplissage du csv
-        for ( Etat__c etat : etats ) {
-            for ( String field : fieldMap.keySet() ) {
-                // Echappement des champs non mettables à jour
-                if (fieldMap.get(field).getDescribe().isUpdateable()) {
-                    // Traitement si champ null
-                    if ( etat.get(field) == null ) {
-                        csv += '"",';
-                    } // Traitement escapeCsv pour les champs de type STRING et TEXTAREA
-                    else if ( fieldMap.get(field).getDescribe().type == Schema.DisplayType.STRING ||
-                            fieldMap.get(field).getDescribe().type == Schema.DisplayType.TEXTAREA ) {
-                        csv += ((String) etat.get(field)).escapeCsv() + ',';
-                    } else {
-                        csv += '"' + etat.get(field) + '",';
-                    }
-                }
-            }
-            csv += '\r';
-        }
-
-        // Suppression du \r et de la dernière "," à la fin du traitement
-        csv = csv.substring(0, csv.length() - 2);
-
-        // Generation du fichier csv et enregistrement dans les fichiers Chatter
-        DataExtractUtils.generateCsvFile(csv, OBJECT_NAME_ETAT, '10');
+        System.debug('--- END DataExtract010Etat / extractEtats() ---');
     }
 }

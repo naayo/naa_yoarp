@@ -129,8 +129,26 @@ public class TestUtils {
         
         
         Test.stopTest();    
-    }    
-    
+    }
+
+    /**
+    Julie NGUYEN - Modis (24/03/2017)
+    Tests pour la méthode findObjectNameFromRecordIdPrefix(String str)
+     */
+    static testMethod void testFindObjectNameFromRecordIdPrefix(){
+        String opportunityPrefix = '006';
+        String accountPrefix = '001';
+        String contactPrefix = '003';
+        String leadPrefix = '00Q';
+
+        System.assertEquals('Opportunity', Utils.findObjectNameFromRecordIdPrefix(opportunityPrefix));
+        System.assertEquals('Account', Utils.findObjectNameFromRecordIdPrefix(accountPrefix));
+        System.assertEquals('Contact', Utils.findObjectNameFromRecordIdPrefix(contactPrefix));
+        System.assertEquals('Lead', Utils.findObjectNameFromRecordIdPrefix(leadPrefix));
+        System.assertNotEquals('Opportunity', Utils.findObjectNameFromRecordIdPrefix(leadPrefix));
+        System.assertNotEquals('Account', Utils.findObjectNameFromRecordIdPrefix(leadPrefix));
+        System.assertNotEquals('Lead', Utils.findObjectNameFromRecordIdPrefix(accountPrefix));
+    }
     
     public static void TestsetDptAccount(List<Account> listAcctNew, List<D_partement__c> listDpt){
         for(integer i=0;i<listAcctNew.size();i++){

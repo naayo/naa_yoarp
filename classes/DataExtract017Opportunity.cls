@@ -1,77 +1,100 @@
 /**
  * Created by Julie NGUYEN - Modis on 28/02/2017.
  */
-public class DataExtract017Opportunity {
+public class DataExtract017Opportunity implements Queueable {
 
-    private static String OBJECT_NAME_OPPORTUNITY = 'Opportunity';
+    public static String OBJECT_NAME_OPPORTUNITY = 'Opportunity';
+    public static String FIELD_CONTACT_CENTRAL = 'Contact_central__c';
+
+    /**
+    Clauses WHERE pour obtenir un jeu de données pertinent en filtrant les types d'enregistrements
+     */
+    private static String WHERE_REC_TYPE_FORM_COURTE = ' WHERE RecordType.Name = \'Formation courte\' ' +
+            'ORDER BY CreatedDate DESC ';
+    private static String WHERE_REC_TYPE_FORM_INITIALE = ' WHERE RecordType.Name = \'Formation initiale\' ' +
+            'ORDER BY CreatedDate DESC ';
+    private static String WHERE_REC_TYPE_FORM_INTRA_ENTREPRISE = ' WHERE RecordType.Name = \'Formation intra-entreprise\' ' +
+            'ORDER BY CreatedDate DESC ';
+    private static String WHERE_REC_TYPE_FUNDRAISING_B2C = ' WHERE RecordType.Name = \'Fundraising B2C\' ' +
+            'ORDER BY CreatedDate DESC ';
+    private static String WHERE_REC_TYPE_PARTENARIAT_FUNDRAISING = ' WHERE RecordType.Name = \'Partenariat Fundraising\' ' +
+            'ORDER BY CreatedDate DESC ';
+    private static String WHERE_REC_TYPE_PRG_LONG_DIPLOMANT = ' WHERE RecordType.Name = \'Programme Long Diplômant\' ' +
+            'ORDER BY CreatedDate DESC ';
+    private static String WHERE_REC_TYPE_RELATIONS_EMPLOYEUR = ' WHERE RecordType.Name = \'Relations employeur\' ' +
+            'ORDER BY CreatedDate DESC ';
+    private static String WHERE_REC_TYPE_TAXE = ' WHERE RecordType.Name = \'Taxe\' ' +
+            'ORDER BY CreatedDate DESC ';
+
+    public DataToExport dataExport{
+        public get;
+        public set;
+    }
+
+    public DataExtract017Opportunity(DataToExport dataToExport) {
+        this.dataExport = dataToExport;
+    }
 
     public void execute(QueueableContext context) {
         extractOpportunities();
-        System.enqueueJob(new DataExtract012Contact());
+        if ( !Test.isRunningTest() ) {
+            System.enqueueJob(new DataExtract018Account(dataExport));
+        }
     }
 
     /**
-    Extraction de 100 enregistrements "Opportunity" et changement des champs 'A_extraire__c' des contacts liés
-    en true
-    Sélection des 100 portefeuilles contacts les plus récents (Date de création)
+    Sélection d'enregistrements "Opportunity" et changement des champs 'A_extraire__c' des enregistrements et
+    des comptes liés en true. Les quota sont :
+    - 200 Opportunités de type 'Formation courte'
+    - 300 Opportunités de type 'Formation initiale'
+    - 100 Opportunités de type 'Formation intra-entreprise'
+    - 100 Opportunités de type 'Fundraising B2C'
+    - 200 Opportunités de type 'Partenariat Fundraising'
+    - 100 Opportunités de type 'Programme Long Diplômant'
+    - 150 Opportunités de type 'Relations employeur'
+    - 150 Opportunités de type 'Taxe'
      */
-    public static List<Id> extractOpportunities() {
+    public void extractOpportunities() {
 
-        List<Id> relatedContactsIds = new List<Id>();
-        String csv = '';
-        String query = 'SELECT ';
+        System.debug('--- BEGIN DataExtract017Opportunity / extractOpportunities() ---');
 
-        // Recuperation des champs de l'objet Portefeuille_contacts__c
-        Schema.DescribeSObjectResult objectDescribe  = Portefeuille_contacts__c.SObjectType.getDescribe();
-        Map<String, Schema.SObjectField> fieldMap = objectDescribe.fields.getMap();
+        System.debug('-- PARAM : dataExport.contactsToProcess from previous class : ' + dataExport.contactsToProcess);
 
-        // Construction de l'en-tete du csv et insertion des champs nécessaires a la requete SQL
-        for( String fieldName : fieldMap.keySet() ) {
-            // Echappement des champs non mettables à jour
-            if (fieldMap.get(fieldName).getDescribe().isUpdateable()) {
-                csv += '"' + fieldName.toUpperCase() + '",';
-                query += fieldName + ',';
-            }
-        }
+        // Sélection du quota d'opportunités de type 'Formation courte'
+        dataExport.addAllOpportunitiesToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_OPPORTUNITY,
+                WHERE_REC_TYPE_FORM_COURTE, 200));
 
-        // Suppression derniere virgule
-        query = query.substring(0, query.length() - 1);
-        query += '\n FROM ' + OBJECT_NAME_OPPORTUNITY + ' ORDER BY CreatedDate DESC LIMIT 100';
-        csv = csv.substring(0, csv.length() - 1);
-        csv += '\n';
+        // Sélection du quota d'opportunités de type 'Formation initiale'
+        dataExport.addAllOpportunitiesToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_OPPORTUNITY,
+                WHERE_REC_TYPE_FORM_INITIALE, 300));
 
-        List<Portefeuille_contacts__c> portefeuilles = Database.query(query);
+        // Sélection du quota d'opportunités de type 'Formation intra-entreprise'
+        dataExport.addAllOpportunitiesToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_OPPORTUNITY,
+                WHERE_REC_TYPE_FORM_INTRA_ENTREPRISE, 100));
 
-        // Remplissage du csv et de la liste de contacts associée
-        for ( Portefeuille_contacts__c portefeuille : portefeuilles ) {
-            for ( String field : fieldMap.keySet() ) {
-                // Echappement des champs non mettables à jour
-                if (fieldMap.get(field).getDescribe().isUpdateable()) {
-                    // Traitement si champ null
-                    if ( portefeuille.get(field) == null ) {
-                        csv += '"",';
-                    } // Traitement escapeCsv pour les champs de type STRING et TEXTAREA
-                    else if ( fieldMap.get(field).getDescribe().type == Schema.DisplayType.STRING ||
-                            fieldMap.get(field).getDescribe().type == Schema.DisplayType.TEXTAREA ) {
-                        csv += ((String) portefeuille.get(field)).escapeCsv() + ',';
-                    } else {
-                        csv += '"' + portefeuille.get(field) + '",';
-                    }
-                }
-            }
-            csv += '\r';
-            relatedContactsIds.add(portefeuille.Contact__c);
-        }
+        // Sélection du quota d'opportunités de type 'Fundraising B2C'
+        dataExport.addAllOpportunitiesToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_OPPORTUNITY,
+                WHERE_REC_TYPE_FUNDRAISING_B2C, 100));
 
-        // Mise à jour du champ 'A_extraire__c' des contacts liés aux portefeuilles
-        DataExtractUtils.updateFieldBoolean(true, relatedContactsIds, 'Contact');
+        // Sélection du quota d'opportunités de type 'Partenariat Fundraising'
+        dataExport.addAllOpportunitiesToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_OPPORTUNITY,
+                WHERE_REC_TYPE_PARTENARIAT_FUNDRAISING, 200));
 
-        // Suppression du \r et de la dernière "," à la fin du traitement
-        csv = csv.substring(0, csv.length() - 2);
+        // Sélection du quota d'opportunités de type 'Programme Long Diplômant'
+        dataExport.addAllOpportunitiesToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_OPPORTUNITY,
+                WHERE_REC_TYPE_PRG_LONG_DIPLOMANT, 100));
 
-        // Generation du fichier csv et enregistrement dans les fichiers Chatter
-        DataExtractUtils.generateCsvFile(csv, OBJECT_NAME_OPPORTUNITY, '17');
+        // Sélection du quota d'opportunités de type 'Relations employeur'
+        dataExport.addAllOpportunitiesToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_OPPORTUNITY,
+                WHERE_REC_TYPE_RELATIONS_EMPLOYEUR, 150));
 
-        return relatedContactsIds;
+        // Sélection du quota d'opportunités de type 'Taxe'
+        dataExport.addAllOpportunitiesToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_OPPORTUNITY,
+                WHERE_REC_TYPE_TAXE, 150));
+
+
+        System.debug('-- PARAM dataExport.opportunitiesToProcess : ' + dataExport.opportunitiesToProcess);
+
+        System.debug('--- END DataExtract017Opportunity / extractOpportunities() ---');
     }
 }

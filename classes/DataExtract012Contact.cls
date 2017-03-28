@@ -4,63 +4,53 @@
 
 public class DataExtract012Contact implements Queueable {
 
-    private static String OBJECT_NAME_CONTACT = 'Contact';
+    public static final String OBJECT_NAME_CONTACT = 'Contact';
+
+    public static DataToExport dataExp = new DataToExport();
+
+    /**
+    Clauses WHERE pour obtenir un jeu de données pertinent en filtrant les types d'enregistrements
+     */
+    private static final String WHERE_RECORD_TYPE_PROSPECT_ETUDIANT = ' WHERE Record_Type_Name__c = \'Prospect Etudiant\' ' +
+            'ORDER BY CreatedDate DESC ';
+    private static final String WHERE_RECORD_TYPE_ETUDIANT = ' WHERE Record_Type_Name__c = \'Etudiant\' ' +
+            'ORDER BY CreatedDate DESC ';
+    private static final String WHERE_RECORD_TYPE_PROFESSIONNEL = ' WHERE Record_Type_Name__c = \'Professionnel\' ' +
+            'ORDER BY CreatedDate DESC ';
 
     public void execute(QueueableContext context) {
-        extractContacts();
+        extractContacts(dataExp);
+        if(!Test.isRunningTest()) {
+            System.debug('-- PARAM BEFORE EnqueueJob dataToExport.contactsToProcess : ' + dataExp.contactsToProcess);
+            System.enqueueJob(new DataExtract017Opportunity(dataExp));
+        }
     }
 
-    public static void extractContacts() {
-        String csv = '';
-        String query = 'SELECT ';
+    /**
+    Sélection des id de 1000 enregistrements 'Contact'
+    Les contacts sélectionnés sont de type :
+    - 500 de type 'Etudiant'
+    - 250 de type 'Prospect Etudiant'
+    - 250 de type 'Professionnel'
+     */
+    public static void extractContacts(DataToExport dataToExport) {
 
-        // Recuperation des champs de l'objet Contact
-        Schema.DescribeSObjectResult objectDescribe  = Contact.SObjectType.getDescribe();
-        Map<String, Schema.SObjectField> fieldMap = objectDescribe.fields.getMap();
+        System.debug('--- BEGIN DataExtract012Contact / extractContacts() ---');
 
-        // Construction de l'en-tete du csv et insertion des champs nécessaires a la requete SQL
-        for( String fieldName : fieldMap.keySet() ) {
-            // Echappement des champs non mettables à jour
-            if (fieldMap.get(fieldName).getDescribe().isUpdateable()) {
-                csv += '"' + fieldName.toUpperCase() + '",';
-                query += fieldName + ',';
-            }
-        }
+        // Sélection du quota de contacts de type 'Etudiant'
+        dataToExport.addAllContactsToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_CONTACT,
+                WHERE_RECORD_TYPE_ETUDIANT, 500));
 
-        // Suppression derniere virgule
-        query = query.substring(0, query.length() - 1);
-        query += '\n FROM ' + OBJECT_NAME_CONTACT + ' WHERE A_extraire__c = true ';
-        csv = csv.substring(0, csv.length() - 1);
-        csv += '\n';
+        // Sélection du quota de contacts de type 'Prospect Etudiant'
+        dataToExport.addAllContactsToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_CONTACT,
+                WHERE_RECORD_TYPE_PROSPECT_ETUDIANT, 250));
 
-        System.debug('>>>> Query : ' + query);
-        List<Contact> contacts = Database.query(query);
+        // Sélection du quota de contacts de type 'Professionnel'
+        dataToExport.addAllContactsToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_CONTACT,
+                WHERE_RECORD_TYPE_PROFESSIONNEL, 250));
 
-        // Remplissage du csv
-        for ( Contact contact : contacts ) {
-            for ( String field : fieldMap.keySet() ) {
-                // Echappement des champs non mettables à jour
-                if (fieldMap.get(field).getDescribe().isUpdateable()) {
-                    // Traitement si champ null
-                    if ( contact.get(field) == null ) {
-                        csv += '"",';
-                    } // Traitement escapeCsv pour les champs de type STRING et TEXTAREA
-                    else if ( fieldMap.get(field).getDescribe().type == Schema.DisplayType.STRING ||
-                            fieldMap.get(field).getDescribe().type == Schema.DisplayType.TEXTAREA ) {
-                        csv += ((String) contact.get(field)).escapeCsv() + ',';
-                    } else {
-                        csv += '"' + contact.get(field) + '",';
-                    }
-                }
-            }
-            csv += '\r';
-        }
+        System.debug('-- PARAM dataToExport.contactsToProcess : ' + dataToExport.contactsToProcess);
 
-        // Suppression du \r et de la dernière "," à la fin du traitement
-        csv = csv.substring(0, csv.length() - 2);
-
-        // Generation du fichier csv et enregistrement dans les fichiers Chatter
-        DataExtractUtils.generateCsvFile(csv, OBJECT_NAME_CONTACT, '11');
+        System.debug('--- END DataExtract012Contact / extractContacts() ---');
     }
-
 }

@@ -4,79 +4,38 @@
 
 public class DataExtract014Role implements Queueable {
 
-    private static String OBJECT_NAME_ROLE = 'R_le__c';
+    public static final String OBJECT_NAME_ROLE = 'R_le__c';
+
+    private DataToExport dataExport;
+
+    public DataExtract014Role(DataToExport dataToExport) {
+        this.dataExport = dataToExport;
+    }
 
     public void execute(QueueableContext context) {
         extractRoles();
-        System.enqueueJob(new DataExtract015PortefeuilleContacts());
+        if (!Test.isRunningTest()) {
+            System.enqueueJob(new DataExtract015PortefeuilleContacts(dataExport));
+        }
     }
 
     /**
-    Extraction de 200 enregistrements "R_le__c" et changement des champs 'A_extraire__c' des contacts liés
-    en true
-    Sélection des 200 rôles les plus récents (Date de création)
+    Extraction des rôles liés aux contacts déjà traités
      */
-    public static List<Id> extractRoles() {
+    public void extractRoles() {
 
-        List<Id> relatedContactsIds = new List<Id>();
-        String csv = '';
-        String query = 'SELECT ';
+        System.debug('--- BEGIN DataExtract014Role / extractRoles() ---');
 
-        // Recuperation des champs de l'objet R_le__c
-        Schema.DescribeSObjectResult objectDescribe  = R_le__c.SObjectType.getDescribe();
-        Map<String, Schema.SObjectField> fieldMap = objectDescribe.fields.getMap();
+        if ( dataExport.contactsToExport != null && !dataExport.contactsToExport.isEmpty() ) {
+            String whereClause = ' WHERE Contact__c IN ' + DataExtractUtils.convertSetToString(dataExport.contactsToExport);
 
-        // Construction de l'en-tete du csv et insertion des champs nécessaires a la requete SQL
-        for( String fieldName : fieldMap.keySet() ) {
-            // Echappement des champs non mettables à jour
-            if (fieldMap.get(fieldName).getDescribe().isUpdateable()) {
-                csv += '"' + fieldName.toUpperCase() + '",';
-                query += fieldName + ',';
-            } // Prise en compte du champ contact
-            else if (fieldName.equalsIgnoreCase('contact__c')) {
-                csv += '"' + fieldName.toUpperCase() + '",';
-                query += fieldName + ',';
-            }
+            System.debug('--PARAM whereClause for query : ' + whereClause);
+
+            DataExtractUtils.extractAllFieldWithSpecificWhereClause('13', OBJECT_NAME_ROLE, whereClause);
+        } else {
+            System.debug(' Il n\'y a de rôles parmi les contacts traités');
         }
 
-        // Suppression derniere virgule
-        query = query.substring(0, query.length() - 1);
-        query += '\n FROM ' + OBJECT_NAME_ROLE + ' ORDER BY CreatedDate DESC LIMIT 300';
-        csv = csv.substring(0, csv.length() - 1);
-        csv += '\n';
-
-        List<R_le__c> roles = Database.query(query);
-
-        // Remplissage du csv et de la liste de contacts associée
-        for ( R_le__c role : roles ) {
-            for ( String field : fieldMap.keySet() ) {
-                // Echappement des champs non mettables à jour
-                if (fieldMap.get(field).getDescribe().isUpdateable()) {
-                    // Traitement si champ null
-                    if ( role.get(field) == null ) {
-                        csv += '"",';
-                    } // Traitement escapeCsv pour les champs de type STRING et TEXTAREA
-                    else if ( fieldMap.get(field).getDescribe().type == Schema.DisplayType.STRING ||
-                            fieldMap.get(field).getDescribe().type == Schema.DisplayType.TEXTAREA ) {
-                        csv += ((String) role.get(field)).escapeCsv() + ',';
-                    } else {
-                        csv += '"' + role.get(field) + '",';
-                    }
-                }
-            }
-            csv += '\r';
-            relatedContactsIds.add(role.Contact__c);
-        }
-
-        // Mise à jour du champ 'A_extraire__c' des contacts liés aux rôles
-        DataExtractUtils.updateFieldBoolean(true, relatedContactsIds, 'Contact');
-
-        // Suppression du \r et de la dernière "," à la fin du traitement
-        csv = csv.substring(0, csv.length() - 2);
-
-        // Generation du fichier csv et enregistrement dans les fichiers Chatter
-        DataExtractUtils.generateCsvFile(csv, OBJECT_NAME_ROLE, '14');
-
-        return relatedContactsIds;
+        System.debug('--- END DataExtract014Role / extractRoles() ---');
     }
 }

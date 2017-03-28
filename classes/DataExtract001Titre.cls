@@ -4,11 +4,14 @@
 
 public class DataExtract001Titre implements Queueable {
 
-    private static String OBJECT_NAME_TITRE = 'Titre__c';
+    public static final String OBJECT_NAME_TITRE = 'Titre__c';
 
     public void execute(QueueableContext context) {
         extractTitres();
         System.enqueueJob(new DataExtract002User());
+        if(!Test.isRunningTest()) {
+            System.enqueueJob(new DataExtract003Naf());
+        }
     }
 
     /**
@@ -66,5 +69,8 @@ public class DataExtract001Titre implements Queueable {
             // Génération et enregistrement du fichier Csv
             DataExtractUtils.generateCsvFile(csv, OBJECT_NAME_TITRE, '01');
         }
+        System.debug('--- Begin DataExtract001Titre / extractTitres() ---');
+        DataExtractUtils.extractAllFieldsToCSV('01', OBJECT_NAME_TITRE, null);
+        System.debug('--- End DataExtract001Titre / extractTitres() ---');
     }
 }
