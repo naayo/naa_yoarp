@@ -25,10 +25,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -46,6 +42,10 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -74,41 +74,6 @@
     </fields>
     <fields>
         <fullName>AccountSource</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Formation continue courte</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Formation continue indéterminée</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Formation continue longue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Formation initiale BBA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Formation initiale masters</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Formation Intra-entreprise</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Indéterminé</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MBA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>true</sorted>
-        </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
@@ -312,37 +277,45 @@
         <description>L’année de la remise</description>
         <externalId>false</externalId>
         <label>Année de validité</label>
-        <picklist>
-            <picklistValues>
-                <fullName>CPT-AVA10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CPT-AVA20</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CPT-AVA30</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CPT-AVA40</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CPT-AVA50</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CPT-AVA60</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CPT-AVA10</fullName>
+                    <default>false</default>
+                    <label>CPT-AVA10</label>
+                </value>
+                <value>
+                    <fullName>CPT-AVA20</fullName>
+                    <default>false</default>
+                    <label>CPT-AVA20</label>
+                </value>
+                <value>
+                    <fullName>CPT-AVA30</fullName>
+                    <default>false</default>
+                    <label>CPT-AVA30</label>
+                </value>
+                <value>
+                    <fullName>CPT-AVA40</fullName>
+                    <default>false</default>
+                    <label>CPT-AVA40</label>
+                </value>
+                <value>
+                    <fullName>CPT-AVA50</fullName>
+                    <default>false</default>
+                    <label>CPT-AVA50</label>
+                </value>
+                <value>
+                    <fullName>CPT-AVA60</fullName>
+                    <default>false</default>
+                    <label>CPT-AVA60</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>AnnualRevenue</fullName>
@@ -515,93 +488,115 @@
         <fullName>Code_NAICS__c</fullName>
         <externalId>false</externalId>
         <label>Code NAICS</label>
-        <picklist>
-            <picklistValues>
-                <fullName>11</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>21</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>22</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>23</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>31-33</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>42</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>44-45</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>48-49</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>51</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>52</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>53</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>54</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>55</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>56</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>61</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>62</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>71</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>72</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>81</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>92</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                    <label>11</label>
+                </value>
+                <value>
+                    <fullName>21</fullName>
+                    <default>false</default>
+                    <label>21</label>
+                </value>
+                <value>
+                    <fullName>22</fullName>
+                    <default>false</default>
+                    <label>22</label>
+                </value>
+                <value>
+                    <fullName>23</fullName>
+                    <default>false</default>
+                    <label>23</label>
+                </value>
+                <value>
+                    <fullName>31-33</fullName>
+                    <default>false</default>
+                    <label>31-33</label>
+                </value>
+                <value>
+                    <fullName>42</fullName>
+                    <default>false</default>
+                    <label>42</label>
+                </value>
+                <value>
+                    <fullName>44-45</fullName>
+                    <default>false</default>
+                    <label>44-45</label>
+                </value>
+                <value>
+                    <fullName>48-49</fullName>
+                    <default>false</default>
+                    <label>48-49</label>
+                </value>
+                <value>
+                    <fullName>51</fullName>
+                    <default>false</default>
+                    <label>51</label>
+                </value>
+                <value>
+                    <fullName>52</fullName>
+                    <default>false</default>
+                    <label>52</label>
+                </value>
+                <value>
+                    <fullName>53</fullName>
+                    <default>false</default>
+                    <label>53</label>
+                </value>
+                <value>
+                    <fullName>54</fullName>
+                    <default>false</default>
+                    <label>54</label>
+                </value>
+                <value>
+                    <fullName>55</fullName>
+                    <default>false</default>
+                    <label>55</label>
+                </value>
+                <value>
+                    <fullName>56</fullName>
+                    <default>false</default>
+                    <label>56</label>
+                </value>
+                <value>
+                    <fullName>61</fullName>
+                    <default>false</default>
+                    <label>61</label>
+                </value>
+                <value>
+                    <fullName>62</fullName>
+                    <default>false</default>
+                    <label>62</label>
+                </value>
+                <value>
+                    <fullName>71</fullName>
+                    <default>false</default>
+                    <label>71</label>
+                </value>
+                <value>
+                    <fullName>72</fullName>
+                    <default>false</default>
+                    <label>72</label>
+                </value>
+                <value>
+                    <fullName>81</fullName>
+                    <default>false</default>
+                    <label>81</label>
+                </value>
+                <value>
+                    <fullName>92</fullName>
+                    <default>false</default>
+                    <label>92</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Code_Postal__c</fullName>
@@ -938,124 +933,39 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
         <fullName>Indice_de_proximit__c</fullName>
         <externalId>false</externalId>
         <label>Indice de proximité</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Non Skyline</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Oxygène</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Crayon</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Incity</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Non Skyline</fullName>
+                    <default>false</default>
+                    <label>Non Skyline</label>
+                </value>
+                <value>
+                    <fullName>Oxygène</fullName>
+                    <default>false</default>
+                    <label>Oxygène</label>
+                </value>
+                <value>
+                    <fullName>Crayon</fullName>
+                    <default>false</default>
+                    <label>Crayon</label>
+                </value>
+                <value>
+                    <fullName>Incity</fullName>
+                    <default>false</default>
+                    <label>Incity</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Industry</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Administration Publique</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Agriculture/Pêche</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Automobile et Matériels de Transport</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Autre</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Banque/Assurance/Scs Finan./Immobilier</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BTP/Habitat/Environnement</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Commerce/Distribution</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Construction/BTP</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Edition/Imprimerie/Reproduction</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Educa.Santé/Act.Sociale/Act.asso./média</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Energie/Eau</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Extraction et Industries Extractives</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Indust.Electriq/Electroniq./Informatique</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Industrie Agro-alimentaire/Tabac</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Industrie Bois/Papier/Carton</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Industrie Chimique/Pharmacie/Plastiques</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Industrie Textile/Habillement/Cuir</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Metallurgie/Machines et Equipement</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Services aux Entreprises/Conseil</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Services aux particuliers</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Télécommunication/services informatiques</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Transports/Logistique/Tourisme</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>true</sorted>
-        </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
@@ -1109,29 +1019,35 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
         <fullName>M_thode_de_saisie_des_Offres_sur_la_plat__c</fullName>
         <externalId>false</externalId>
         <label>Méthode de saisie des Offres</label>
-        <picklist>
-            <picklistValues>
-                <fullName>manuel</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>mutliposting</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>iQuesta</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>autre agrégateur</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>manuel</fullName>
+                    <default>false</default>
+                    <label>manuel</label>
+                </value>
+                <value>
+                    <fullName>mutliposting</fullName>
+                    <default>false</default>
+                    <label>mutliposting</label>
+                </value>
+                <value>
+                    <fullName>iQuesta</fullName>
+                    <default>false</default>
+                    <label>iQuesta</label>
+                </value>
+                <value>
+                    <fullName>autre agrégateur</fullName>
+                    <default>false</default>
+                    <label>autre agrégateur</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>NPAI__c</fullName>
@@ -1163,33 +1079,40 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
         <fullName>Nature_d_activit_Forme_juridique__c</fullName>
         <externalId>false</externalId>
         <label>Nature d’activité / Forme juridique</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Privée</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fondation d’entreprise</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Association</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Publique</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Entreprise Familiale</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Privée</fullName>
+                    <default>true</default>
+                    <label>Privée</label>
+                </value>
+                <value>
+                    <fullName>Fondation d’entreprise</fullName>
+                    <default>false</default>
+                    <label>Fondation d’entreprise</label>
+                </value>
+                <value>
+                    <fullName>Association</fullName>
+                    <default>false</default>
+                    <label>Association</label>
+                </value>
+                <value>
+                    <fullName>Publique</fullName>
+                    <default>false</default>
+                    <label>Publique</label>
+                </value>
+                <value>
+                    <fullName>Entreprise Familiale</fullName>
+                    <default>false</default>
+                    <label>Entreprise Familiale</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Nb_car_Code_Postal__c</fullName>
@@ -1283,65 +1206,80 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
         <fullName>Offre__c</fullName>
         <externalId>false</externalId>
         <label>Offre Employeurs</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Finance Careers Day</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Luxury Careers Week</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Careers Forum</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Online Careers Days</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Corporate Discovery Session</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MBA Lounge</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Entrepreneurial Leadership Project</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Grand Idea</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Company Project</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>European Human Resources Management</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Expert Panel</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Conférence Carrière Etudiants</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mock interview</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Finance Careers Day</fullName>
+                    <default>false</default>
+                    <label>Finance Careers Day</label>
+                </value>
+                <value>
+                    <fullName>Luxury Careers Week</fullName>
+                    <default>false</default>
+                    <label>Luxury Careers Week</label>
+                </value>
+                <value>
+                    <fullName>Careers Forum</fullName>
+                    <default>false</default>
+                    <label>Careers Forum</label>
+                </value>
+                <value>
+                    <fullName>Online Careers Days</fullName>
+                    <default>false</default>
+                    <label>Online Careers Days</label>
+                </value>
+                <value>
+                    <fullName>Corporate Discovery Session</fullName>
+                    <default>false</default>
+                    <label>Corporate Discovery Session</label>
+                </value>
+                <value>
+                    <fullName>MBA Lounge</fullName>
+                    <default>false</default>
+                    <label>MBA Lounge</label>
+                </value>
+                <value>
+                    <fullName>Entrepreneurial Leadership Project</fullName>
+                    <default>false</default>
+                    <label>Entrepreneurial Leadership Project</label>
+                </value>
+                <value>
+                    <fullName>Grand Idea</fullName>
+                    <default>false</default>
+                    <label>Grand Idea</label>
+                </value>
+                <value>
+                    <fullName>In Company Project</fullName>
+                    <default>false</default>
+                    <label>In Company Project</label>
+                </value>
+                <value>
+                    <fullName>European Human Resources Management</fullName>
+                    <default>false</default>
+                    <label>European Human Resources Management</label>
+                </value>
+                <value>
+                    <fullName>Expert Panel</fullName>
+                    <default>false</default>
+                    <label>Expert Panel</label>
+                </value>
+                <value>
+                    <fullName>Conférence Carrière Etudiants</fullName>
+                    <default>false</default>
+                    <label>Conférence Carrière Etudiants</label>
+                </value>
+                <value>
+                    <fullName>Mock interview</fullName>
+                    <default>false</default>
+                    <label>Mock interview</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>6</visibleLines>
     </fields>
     <fields>
@@ -1352,25 +1290,6 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
     </fields>
     <fields>
         <fullName>Ownership</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Public</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Privé</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Filiale</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Autre</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
@@ -1443,41 +1362,6 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
     </fields>
     <fields>
         <fullName>PersonLeadSource</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Formation continue courte</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Formation continue indéterminée</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Formation continue longue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Formation initiale BBA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Formation initiale masters</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Formation Intra-entreprise</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Indéterminé</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MBA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>true</sorted>
-        </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
@@ -1516,77 +1400,95 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
         <fullName>Programme_de_reconnaissance__c</fullName>
         <externalId>false</externalId>
         <label>Programme de reconnaissance</label>
-        <picklist>
-            <picklistValues>
-                <fullName>B2B_Mont Blanc</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2C_Mont Blanc</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2B_Kilimandjaro</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2C_Kilimandjaro</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2B_McKinley</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2C_McKinley</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2B_Annapura</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2C_Annapura</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2B_K2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2C_K2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2B_Everest</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2C_Everest</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2B_Cercle du Président</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2C_Cercle du Président</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2C_Contrepartie sur-mesure</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B2B_Contrepartie sur-mesure</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>B2B_Mont Blanc</fullName>
+                    <default>false</default>
+                    <label>B2B_Mont Blanc</label>
+                </value>
+                <value>
+                    <fullName>B2C_Mont Blanc</fullName>
+                    <default>false</default>
+                    <label>B2C_Mont Blanc</label>
+                </value>
+                <value>
+                    <fullName>B2B_Kilimandjaro</fullName>
+                    <default>false</default>
+                    <label>B2B_Kilimandjaro</label>
+                </value>
+                <value>
+                    <fullName>B2C_Kilimandjaro</fullName>
+                    <default>false</default>
+                    <label>B2C_Kilimandjaro</label>
+                </value>
+                <value>
+                    <fullName>B2B_McKinley</fullName>
+                    <default>false</default>
+                    <label>B2B_McKinley</label>
+                </value>
+                <value>
+                    <fullName>B2C_McKinley</fullName>
+                    <default>false</default>
+                    <label>B2C_McKinley</label>
+                </value>
+                <value>
+                    <fullName>B2B_Annapura</fullName>
+                    <default>false</default>
+                    <label>B2B_Annapura</label>
+                </value>
+                <value>
+                    <fullName>B2C_Annapura</fullName>
+                    <default>false</default>
+                    <label>B2C_Annapura</label>
+                </value>
+                <value>
+                    <fullName>B2B_K2</fullName>
+                    <default>false</default>
+                    <label>B2B_K2</label>
+                </value>
+                <value>
+                    <fullName>B2C_K2</fullName>
+                    <default>false</default>
+                    <label>B2C_K2</label>
+                </value>
+                <value>
+                    <fullName>B2B_Everest</fullName>
+                    <default>false</default>
+                    <label>B2B_Everest</label>
+                </value>
+                <value>
+                    <fullName>B2C_Everest</fullName>
+                    <default>false</default>
+                    <label>B2C_Everest</label>
+                </value>
+                <value>
+                    <fullName>B2B_Cercle du Président</fullName>
+                    <default>false</default>
+                    <label>B2B_Cercle du Président</label>
+                </value>
+                <value>
+                    <fullName>B2C_Cercle du Président</fullName>
+                    <default>false</default>
+                    <label>B2C_Cercle du Président</label>
+                </value>
+                <value>
+                    <fullName>B2C_Contrepartie sur-mesure</fullName>
+                    <default>false</default>
+                    <label>B2C_Contrepartie sur-mesure</label>
+                </value>
+                <value>
+                    <fullName>B2B_Contrepartie sur-mesure</fullName>
+                    <default>false</default>
+                    <label>B2B_Contrepartie sur-mesure</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Proportion_cadre__c</fullName>
@@ -1630,21 +1532,6 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
     </fields>
     <fields>
         <fullName>Rating</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Chaud</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Tiède</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Froid</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
@@ -1733,33 +1620,40 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
         <description>Il définit le niveau de partenariat</description>
         <externalId>false</externalId>
         <label>Scoring</label>
-        <picklist>
-            <picklistValues>
-                <fullName>CPT-SCO10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CPT-SCO20</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CPT-SCO30</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CPT-SCO40</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CPT-SCO50</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CPT-SCO10</fullName>
+                    <default>false</default>
+                    <label>CPT-SCO10</label>
+                </value>
+                <value>
+                    <fullName>CPT-SCO20</fullName>
+                    <default>false</default>
+                    <label>CPT-SCO20</label>
+                </value>
+                <value>
+                    <fullName>CPT-SCO30</fullName>
+                    <default>false</default>
+                    <label>CPT-SCO30</label>
+                </value>
+                <value>
+                    <fullName>CPT-SCO40</fullName>
+                    <default>false</default>
+                    <label>CPT-SCO40</label>
+                </value>
+                <value>
+                    <fullName>CPT-SCO50</fullName>
+                    <default>false</default>
+                    <label>CPT-SCO50</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Secteur_d_activit__c</fullName>
@@ -1838,7 +1732,7 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
     <fields>
         <fullName>Somme_des_versements_Annee_N_1__c</fullName>
         <externalId>false</externalId>
-        <label>Somme des versements Année N-1</label>
+        <label>Somme versements année N-1</label>
         <summarizedField>Versement_OCTA__c.Montant_net__c</summarizedField>
         <summaryFilterItems>
             <field>Versement_OCTA__c.Exercice_Collecte__c</field>
@@ -1853,7 +1747,7 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
     <fields>
         <fullName>Somme_versement_annee_en_cours__c</fullName>
         <externalId>false</externalId>
-        <label>Somme versement année en cours</label>
+        <label>Somme versements année N</label>
         <summarizedField>Versement_OCTA__c.Montant_net__c</summarizedField>
         <summaryFilterItems>
             <field>Versement_OCTA__c.Exercice_Collecte__c</field>
@@ -1864,6 +1758,19 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
         <summaryOperation>sum</summaryOperation>
         <trackHistory>false</trackHistory>
         <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TECH_External_Id__c</fullName>
+        <description>Champ technique qui contient la copie de l&apos;Id de l&apos;enregistrement 
+en production</description>
+        <externalId>true</externalId>
+        <label>TECH_External_Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>TickerSymbol</fullName>
@@ -1900,287 +1807,299 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
         <fullName>Tranche_d_effectif__c</fullName>
         <externalId>false</externalId>
         <label>Tranche d&apos;effectif</label>
-        <picklist>
-            <picklistValues>
-                <fullName>De 0 à 9</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 10 à 49</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 50 à 249</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 250 à 499</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 500 à 999</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 1000 à 1999</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 2000 à 4999</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 5000 à 9999</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>10 000 et plus</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>De 0 à 9</fullName>
+                    <default>false</default>
+                    <label>De 0 à 9</label>
+                </value>
+                <value>
+                    <fullName>De 10 à 49</fullName>
+                    <default>false</default>
+                    <label>De 10 à 49</label>
+                </value>
+                <value>
+                    <fullName>De 50 à 249</fullName>
+                    <default>false</default>
+                    <label>De 50 à 249</label>
+                </value>
+                <value>
+                    <fullName>De 250 à 499</fullName>
+                    <default>false</default>
+                    <label>De 250 à 499</label>
+                </value>
+                <value>
+                    <fullName>De 500 à 999</fullName>
+                    <default>false</default>
+                    <label>De 500 à 999</label>
+                </value>
+                <value>
+                    <fullName>De 1000 à 1999</fullName>
+                    <default>false</default>
+                    <label>De 1000 à 1999</label>
+                </value>
+                <value>
+                    <fullName>De 2000 à 4999</fullName>
+                    <default>false</default>
+                    <label>De 2000 à 4999</label>
+                </value>
+                <value>
+                    <fullName>De 5000 à 9999</fullName>
+                    <default>false</default>
+                    <label>De 5000 à 9999</label>
+                </value>
+                <value>
+                    <fullName>10 000 et plus</fullName>
+                    <default>false</default>
+                    <label>10 000 et plus</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Tranche_de_CA_Tranche_de_CA_entit__c</fullName>
         <externalId>false</externalId>
         <label>Tranche de CA / Tranche de CA entité</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Moins de 0,5 million d&apos;euros</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 0,5 a moins de 1 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 1 M€ a moins de 2 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 2 M€ a moins de 5 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 5 M€ a moins de 10 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 10 M€ a moins de 20 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 20 M€ a moins de 50 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 50 M€ a moins de 100 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 100 M€ a moins de 200 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>200 M€ ou plus</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Moins de 0,5 million d&apos;euros</fullName>
+                    <default>false</default>
+                    <label>Moins de 0,5 million d&apos;euros</label>
+                </value>
+                <value>
+                    <fullName>De 0,5 a moins de 1 M€</fullName>
+                    <default>false</default>
+                    <label>De 0,5 a moins de 1 M€</label>
+                </value>
+                <value>
+                    <fullName>De 1 M€ a moins de 2 M€</fullName>
+                    <default>false</default>
+                    <label>De 1 M€ a moins de 2 M€</label>
+                </value>
+                <value>
+                    <fullName>De 2 M€ a moins de 5 M€</fullName>
+                    <default>false</default>
+                    <label>De 2 M€ a moins de 5 M€</label>
+                </value>
+                <value>
+                    <fullName>De 5 M€ a moins de 10 M€</fullName>
+                    <default>false</default>
+                    <label>De 5 M€ a moins de 10 M€</label>
+                </value>
+                <value>
+                    <fullName>De 10 M€ a moins de 20 M€</fullName>
+                    <default>false</default>
+                    <label>De 10 M€ a moins de 20 M€</label>
+                </value>
+                <value>
+                    <fullName>De 20 M€ a moins de 50 M€</fullName>
+                    <default>false</default>
+                    <label>De 20 M€ a moins de 50 M€</label>
+                </value>
+                <value>
+                    <fullName>De 50 M€ a moins de 100 M€</fullName>
+                    <default>false</default>
+                    <label>De 50 M€ a moins de 100 M€</label>
+                </value>
+                <value>
+                    <fullName>De 100 M€ a moins de 200 M€</fullName>
+                    <default>false</default>
+                    <label>De 100 M€ a moins de 200 M€</label>
+                </value>
+                <value>
+                    <fullName>200 M€ ou plus</fullName>
+                    <default>false</default>
+                    <label>200 M€ ou plus</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Tranche_de_CA_du_groupe__c</fullName>
         <externalId>false</externalId>
         <label>Tranche de CA du groupe</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Moins de 0,5 million d&apos;euros</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 0,5 a moins de 1 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 1 M€ a moins de 2 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 2 M€ a moins de 5 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 5 M€ a moins de 10 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 10 M€ a moins de 20 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 20 M€ a moins de 50 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 50 M€ a moins de 100 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 100 M€ a moins de 200 M€</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>200 M€ ou plus</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Moins de 0,5 million d&apos;euros</fullName>
+                    <default>false</default>
+                    <label>Moins de 0,5 million d&apos;euros</label>
+                </value>
+                <value>
+                    <fullName>De 0,5 a moins de 1 M€</fullName>
+                    <default>false</default>
+                    <label>De 0,5 a moins de 1 M€</label>
+                </value>
+                <value>
+                    <fullName>De 1 M€ a moins de 2 M€</fullName>
+                    <default>false</default>
+                    <label>De 1 M€ a moins de 2 M€</label>
+                </value>
+                <value>
+                    <fullName>De 2 M€ a moins de 5 M€</fullName>
+                    <default>false</default>
+                    <label>De 2 M€ a moins de 5 M€</label>
+                </value>
+                <value>
+                    <fullName>De 5 M€ a moins de 10 M€</fullName>
+                    <default>false</default>
+                    <label>De 5 M€ a moins de 10 M€</label>
+                </value>
+                <value>
+                    <fullName>De 10 M€ a moins de 20 M€</fullName>
+                    <default>false</default>
+                    <label>De 10 M€ a moins de 20 M€</label>
+                </value>
+                <value>
+                    <fullName>De 20 M€ a moins de 50 M€</fullName>
+                    <default>false</default>
+                    <label>De 20 M€ a moins de 50 M€</label>
+                </value>
+                <value>
+                    <fullName>De 50 M€ a moins de 100 M€</fullName>
+                    <default>false</default>
+                    <label>De 50 M€ a moins de 100 M€</label>
+                </value>
+                <value>
+                    <fullName>De 100 M€ a moins de 200 M€</fullName>
+                    <default>false</default>
+                    <label>De 100 M€ a moins de 200 M€</label>
+                </value>
+                <value>
+                    <fullName>200 M€ ou plus</fullName>
+                    <default>false</default>
+                    <label>200 M€ ou plus</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Tranche_effectif_groupe__c</fullName>
         <externalId>false</externalId>
         <label>Tranche effectif groupe</label>
-        <picklist>
-            <picklistValues>
-                <fullName>De 0 à 9</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 10 à 49</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 50 à 249</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 250 à 499</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 500 à 999</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 1000 à 1999</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 2000 à 4999</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>De 5000 à 9999</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>10 000 et plus</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>De 0 à 9</fullName>
+                    <default>false</default>
+                    <label>De 0 à 9</label>
+                </value>
+                <value>
+                    <fullName>De 10 à 49</fullName>
+                    <default>false</default>
+                    <label>De 10 à 49</label>
+                </value>
+                <value>
+                    <fullName>De 50 à 249</fullName>
+                    <default>false</default>
+                    <label>De 50 à 249</label>
+                </value>
+                <value>
+                    <fullName>De 250 à 499</fullName>
+                    <default>false</default>
+                    <label>De 250 à 499</label>
+                </value>
+                <value>
+                    <fullName>De 500 à 999</fullName>
+                    <default>false</default>
+                    <label>De 500 à 999</label>
+                </value>
+                <value>
+                    <fullName>De 1000 à 1999</fullName>
+                    <default>false</default>
+                    <label>De 1000 à 1999</label>
+                </value>
+                <value>
+                    <fullName>De 2000 à 4999</fullName>
+                    <default>false</default>
+                    <label>De 2000 à 4999</label>
+                </value>
+                <value>
+                    <fullName>De 5000 à 9999</fullName>
+                    <default>false</default>
+                    <label>De 5000 à 9999</label>
+                </value>
+                <value>
+                    <fullName>10 000 et plus</fullName>
+                    <default>false</default>
+                    <label>10 000 et plus</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Tranche_verseur__c</fullName>
         <externalId>false</externalId>
         <label>Niveau de partenariat</label>
-        <picklist>
-            <picklistValues>
-                <fullName>A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>B</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>C</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>D</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>F</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>H</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A</label>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                    <label>B</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C</label>
+                </value>
+                <value>
+                    <fullName>D</fullName>
+                    <default>false</default>
+                    <label>D</label>
+                </value>
+                <value>
+                    <fullName>E</fullName>
+                    <default>false</default>
+                    <label>E</label>
+                </value>
+                <value>
+                    <fullName>F</fullName>
+                    <default>false</default>
+                    <label>F</label>
+                </value>
+                <value>
+                    <fullName>H</fullName>
+                    <default>false</default>
+                    <label>H</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Type</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Analyste</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Concurrent</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Client</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Intégrateur</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Investisseur</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partenaire</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Presse</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Prospect</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Revendeur</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Autre</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
@@ -2189,41 +2108,50 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
         <fullName>Type_d_tablissement__c</fullName>
         <externalId>false</externalId>
         <label>Type d&apos;établissement</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Direction Régionale</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Etablissement Secondaire</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Holding-Maison Mère Groupe</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Siège</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Siège Europe</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Siège France</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Siège Monde</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>true</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Direction Régionale</fullName>
+                    <default>false</default>
+                    <label>Direction Régionale</label>
+                </value>
+                <value>
+                    <fullName>Etablissement Secondaire</fullName>
+                    <default>false</default>
+                    <label>Etablissement Secondaire</label>
+                </value>
+                <value>
+                    <fullName>Holding-Maison Mère Groupe</fullName>
+                    <default>false</default>
+                    <label>Holding-Maison Mère Groupe</label>
+                </value>
+                <value>
+                    <fullName>Siège</fullName>
+                    <default>false</default>
+                    <label>Siège</label>
+                </value>
+                <value>
+                    <fullName>Siège Europe</fullName>
+                    <default>false</default>
+                    <label>Siège Europe</label>
+                </value>
+                <value>
+                    <fullName>Siège France</fullName>
+                    <default>false</default>
+                    <label>Siège France</label>
+                </value>
+                <value>
+                    <fullName>Siège Monde</fullName>
+                    <default>false</default>
+                    <label>Siège Monde</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Util_Count__c</fullName>
@@ -2370,33 +2298,40 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
         <description>Ce champ permet de sélectionner les entreprises intervenants dans le dispositif carrière</description>
         <externalId>false</externalId>
         <label>Type Cabinets référents</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Associations</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Coaching</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Outplacement</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Recrutement</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>RH</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Associations</fullName>
+                    <default>false</default>
+                    <label>Associations</label>
+                </value>
+                <value>
+                    <fullName>Coaching</fullName>
+                    <default>false</default>
+                    <label>Coaching</label>
+                </value>
+                <value>
+                    <fullName>Outplacement</fullName>
+                    <default>false</default>
+                    <label>Outplacement</label>
+                </value>
+                <value>
+                    <fullName>Recrutement</fullName>
+                    <default>false</default>
+                    <label>Recrutement</label>
+                </value>
+                <value>
+                    <fullName>RH</fullName>
+                    <default>false</default>
+                    <label>RH</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>x18caracteres__c</fullName>
@@ -3450,6 +3385,19 @@ $User.LastName&lt;&gt; &apos;Interface&apos;
 )</errorConditionFormula>
         <errorDisplayField>Adresse_Ville__c</errorDisplayField>
         <errorMessage>Le champ Ville est obligatoire</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RG_Compte10_ville_courante_sans_chiffres</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR( ISNUMBER(Adresse_Ville__c), OR(CONTAINS(Adresse_Ville__c, &quot;0&quot;),CONTAINS(Adresse_Ville__c, &quot;1&quot;),CONTAINS(Adresse_Ville__c, &quot;2&quot;),CONTAINS(Adresse_Ville__c, &quot;3&quot;),CONTAINS(Adresse_Ville__c, &quot;4&quot;),CONTAINS(Adresse_Ville__c, &quot;5&quot;),CONTAINS(Adresse_Ville__c, &quot;6&quot;),CONTAINS(Adresse_Ville__c, &quot;7&quot;),CONTAINS(Adresse_Ville__c, &quot;8&quot;),CONTAINS(Adresse_Ville__c, &quot;9&quot;)))</errorConditionFormula>
+        <errorMessage>Le champ adresse courante: Ville ne doit pas contenir de chiffres !</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RG_Compte11_ad_factu_ville_sans_chiffres</fullName>
+        <active>true</active>
+        <description>Empêcher la saisie de chiffre dans le champ adresse facturation: ville</description>
+        <errorConditionFormula>OR( ISNUMBER(Adresse_facturation_ville__c), OR(CONTAINS(Adresse_facturation_ville__c, &quot;0&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;1&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;2&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;3&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;4&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;5&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;6&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;7&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;8&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;9&quot;)))</errorConditionFormula>
+        <errorMessage>Le champ Adresse facturation: ville ne doit pas contenir de chiffres !</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>RG_Compte_CreationCompteFictif</fullName>
