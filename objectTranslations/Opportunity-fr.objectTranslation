@@ -121,6 +121,10 @@
             <masterLabel>Les frais de restauration sont inclus</masterLabel>
             <translation><!-- Les frais de restauration sont inclus --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>Les frais de restauration sont offerts</masterLabel>
+            <translation><!-- Les frais de restauration sont offerts --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Contact : Canal d&apos;acquisition --></label>
@@ -1710,6 +1714,10 @@
     <fields>
         <label><!-- Statut Dossier CANEL --></label>
         <name>Statut_Dossier_CANEL__c</name>
+    </fields>
+    <fields>
+        <label><!-- TECH_External_Id --></label>
+        <name>TECH_External_Id__c</name>
     </fields>
     <fields>
         <help><!-- Thématique de campagne destinée à segmenter les pistes --></help>
