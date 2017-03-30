@@ -32,6 +32,10 @@
             <translation><!-- UE --></translation>
         </picklistValues>
     </fields>
+    <fields>
+        <label><!-- TECH_External_Id --></label>
+        <name>TECH_External_Id__c</name>
+    </fields>
     <gender>Masculine</gender>
     <layouts>
         <layout>Présentation Pays</layout>
