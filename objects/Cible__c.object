@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -59,102 +55,147 @@
         <fullName>Cat_gorie_cible__c</fullName>
         <externalId>false</externalId>
         <label>Catégorie cible</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Cibles sectorielles</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sociétés proches de l&apos;école</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Autres</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cibles sectorielles</fullName>
+                    <default>false</default>
+                    <label>Cibles sectorielles</label>
+                </value>
+                <value>
+                    <fullName>Sociétés proches de l&apos;école</fullName>
+                    <default>false</default>
+                    <label>Sociétés proches de l&apos;école</label>
+                </value>
+                <value>
+                    <fullName>Autres</fullName>
+                    <default>false</default>
+                    <label>Autres</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Cibles__c</fullName>
         <externalId>false</externalId>
         <label>Cibles</label>
-        <picklist>
-            <controllingField>Cat_gorie_cible__c</controllingField>
-            <picklistValues>
-                <fullName>120 plus grosses sociétés en Bourse</fullName>
-                <default>false</default>
-                <controllingFieldValues>Autres</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BENEFPART</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Prescripteur CIO GE</fullName>
-                <default>false</default>
-                <controllingFieldValues>Autres</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Prescripteur IDEA</fullName>
-                <default>false</default>
-                <controllingFieldValues>Autres</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sociétés clientes EML</fullName>
-                <default>false</default>
-                <controllingFieldValues>Sociétés proches de l&apos;école</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sociétés crées par un diplômé</fullName>
-                <default>false</default>
-                <controllingFieldValues>Sociétés proches de l&apos;école</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sociétés dans le secteur du Luxe</fullName>
-                <default>false</default>
-                <controllingFieldValues>Cibles sectorielles</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sociétés dans le secteur du Sport</fullName>
-                <default>false</default>
-                <controllingFieldValues>Cibles sectorielles</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TAXEGEST</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TAXEPRES</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TAXEPRI</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TAXEPROC</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TAXEVIP</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fournisseurs de l&apos;école</fullName>
-                <default>false</default>
-                <controllingFieldValues>Sociétés proches de l&apos;école</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Cat_gorie_cible__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>120 plus grosses sociétés en Bourse</fullName>
+                    <default>false</default>
+                    <label>120 plus grosses sociétés en Bourse</label>
+                </value>
+                <value>
+                    <fullName>BENEFPART</fullName>
+                    <default>false</default>
+                    <label>BENEFPART</label>
+                </value>
+                <value>
+                    <fullName>Prescripteur CIO GE</fullName>
+                    <default>false</default>
+                    <label>Prescripteur CIO GE</label>
+                </value>
+                <value>
+                    <fullName>Prescripteur IDEA</fullName>
+                    <default>false</default>
+                    <label>Prescripteur IDEA</label>
+                </value>
+                <value>
+                    <fullName>Sociétés clientes EML</fullName>
+                    <default>false</default>
+                    <label>Sociétés clientes EML</label>
+                </value>
+                <value>
+                    <fullName>Sociétés crées par un diplômé</fullName>
+                    <default>false</default>
+                    <label>Sociétés crées par un diplômé</label>
+                </value>
+                <value>
+                    <fullName>Sociétés dans le secteur du Luxe</fullName>
+                    <default>false</default>
+                    <label>Sociétés dans le secteur du Luxe</label>
+                </value>
+                <value>
+                    <fullName>Sociétés dans le secteur du Sport</fullName>
+                    <default>false</default>
+                    <label>Sociétés dans le secteur du Sport</label>
+                </value>
+                <value>
+                    <fullName>TAXEGEST</fullName>
+                    <default>false</default>
+                    <label>TAXEGEST</label>
+                </value>
+                <value>
+                    <fullName>TAXEPRES</fullName>
+                    <default>false</default>
+                    <label>TAXEPRES</label>
+                </value>
+                <value>
+                    <fullName>TAXEPRI</fullName>
+                    <default>false</default>
+                    <label>TAXEPRI</label>
+                </value>
+                <value>
+                    <fullName>TAXEPROC</fullName>
+                    <default>false</default>
+                    <label>TAXEPROC</label>
+                </value>
+                <value>
+                    <fullName>TAXEVIP</fullName>
+                    <default>false</default>
+                    <label>TAXEVIP</label>
+                </value>
+                <value>
+                    <fullName>Fournisseurs de l&apos;école</fullName>
+                    <default>false</default>
+                    <label>Fournisseurs de l&apos;école</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Cibles sectorielles</controllingFieldValue>
+                <valueName>Sociétés dans le secteur du Luxe</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cibles sectorielles</controllingFieldValue>
+                <valueName>Sociétés dans le secteur du Sport</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sociétés proches de l&apos;école</controllingFieldValue>
+                <valueName>Sociétés clientes EML</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sociétés proches de l&apos;école</controllingFieldValue>
+                <valueName>Sociétés crées par un diplômé</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sociétés proches de l&apos;école</controllingFieldValue>
+                <valueName>Fournisseurs de l&apos;école</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Autres</controllingFieldValue>
+                <valueName>120 plus grosses sociétés en Bourse</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Autres</controllingFieldValue>
+                <valueName>Prescripteur CIO GE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Autres</controllingFieldValue>
+                <valueName>Prescripteur IDEA</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Compte__c</fullName>
@@ -202,4 +243,5 @@
     <pluralLabel>Cibles</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

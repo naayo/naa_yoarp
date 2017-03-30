@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -210,89 +206,110 @@ Unité : 0,1</inlineHelpText>
         <fullName>Domaine__c</fullName>
         <externalId>false</externalId>
         <label>Domaine</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Activité</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Campagne</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Chantier</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Configurateur</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Contrat</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Courrier</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CTI</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Devis</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Formation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Foyer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Interface</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Lead</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Migration</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Opération</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Profils</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Projet</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Reporting</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Requête</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sécurité</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Activité</fullName>
+                    <default>false</default>
+                    <label>Activité</label>
+                </value>
+                <value>
+                    <fullName>Campagne</fullName>
+                    <default>false</default>
+                    <label>Campagne</label>
+                </value>
+                <value>
+                    <fullName>Chantier</fullName>
+                    <default>false</default>
+                    <label>Chantier</label>
+                </value>
+                <value>
+                    <fullName>Configurateur</fullName>
+                    <default>false</default>
+                    <label>Configurateur</label>
+                </value>
+                <value>
+                    <fullName>Contrat</fullName>
+                    <default>false</default>
+                    <label>Contrat</label>
+                </value>
+                <value>
+                    <fullName>Courrier</fullName>
+                    <default>false</default>
+                    <label>Courrier</label>
+                </value>
+                <value>
+                    <fullName>CTI</fullName>
+                    <default>false</default>
+                    <label>CTI</label>
+                </value>
+                <value>
+                    <fullName>Devis</fullName>
+                    <default>false</default>
+                    <label>Devis</label>
+                </value>
+                <value>
+                    <fullName>Formation</fullName>
+                    <default>false</default>
+                    <label>Formation</label>
+                </value>
+                <value>
+                    <fullName>Foyer</fullName>
+                    <default>false</default>
+                    <label>Foyer</label>
+                </value>
+                <value>
+                    <fullName>Interface</fullName>
+                    <default>false</default>
+                    <label>Interface</label>
+                </value>
+                <value>
+                    <fullName>Lead</fullName>
+                    <default>false</default>
+                    <label>Lead</label>
+                </value>
+                <value>
+                    <fullName>Migration</fullName>
+                    <default>false</default>
+                    <label>Migration</label>
+                </value>
+                <value>
+                    <fullName>Opération</fullName>
+                    <default>false</default>
+                    <label>Opération</label>
+                </value>
+                <value>
+                    <fullName>Profils</fullName>
+                    <default>false</default>
+                    <label>Profils</label>
+                </value>
+                <value>
+                    <fullName>Projet</fullName>
+                    <default>false</default>
+                    <label>Projet</label>
+                </value>
+                <value>
+                    <fullName>Reporting</fullName>
+                    <default>false</default>
+                    <label>Reporting</label>
+                </value>
+                <value>
+                    <fullName>Requête</fullName>
+                    <default>false</default>
+                    <label>Requête</label>
+                </value>
+                <value>
+                    <fullName>Sécurité</fullName>
+                    <default>false</default>
+                    <label>Sécurité</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Edit__c</fullName>
@@ -387,33 +404,40 @@ Unité : 0,1</inlineHelpText>
         <fullName>Lot__c</fullName>
         <externalId>false</externalId>
         <label>Lot</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Lot 1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Lot 2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Lot 3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Lot 4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Lot 5</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lot 1</fullName>
+                    <default>false</default>
+                    <label>Lot 1</label>
+                </value>
+                <value>
+                    <fullName>Lot 2</fullName>
+                    <default>false</default>
+                    <label>Lot 2</label>
+                </value>
+                <value>
+                    <fullName>Lot 3</fullName>
+                    <default>false</default>
+                    <label>Lot 3</label>
+                </value>
+                <value>
+                    <fullName>Lot 4</fullName>
+                    <default>false</default>
+                    <label>Lot 4</label>
+                </value>
+                <value>
+                    <fullName>Lot 5</fullName>
+                    <default>false</default>
+                    <label>Lot 5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Origine__c</fullName>
@@ -441,33 +465,40 @@ Unité : 0,1</inlineHelpText>
         <fullName>Priorite__c</fullName>
         <externalId>false</externalId>
         <label>Priorité</label>
-        <picklist>
-            <picklistValues>
-                <fullName>1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>5</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Processus__c</fullName>
@@ -485,25 +516,30 @@ Unité : 0,1</inlineHelpText>
         <fullName>Profils_concernes__c</fullName>
         <externalId>false</externalId>
         <label>Profils concernés</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Profil 1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Profil 2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Profil 3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Profil 1</fullName>
+                    <default>false</default>
+                    <label>Profil 1</label>
+                </value>
+                <value>
+                    <fullName>Profil 2</fullName>
+                    <default>false</default>
+                    <label>Profil 2</label>
+                </value>
+                <value>
+                    <fullName>Profil 3</fullName>
+                    <default>false</default>
+                    <label>Profil 3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
@@ -545,21 +581,25 @@ NE PAS OUBLIER DE METTRE EN PLACE LES FILES D&apos;ATTENTE</description>
         <inlineHelpText>Alimenter ce champ automatiquement par une règle de workflow en fonction du propriétaire.
 NE PAS OUBLIER DE METTRE EN PLACE LES FILES D&apos;ATTENTE</inlineHelpText>
         <label>Responsable</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Client</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Kerensen</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Client</fullName>
+                    <default>false</default>
+                    <label>Client</label>
+                </value>
+                <value>
+                    <fullName>Kerensen</fullName>
+                    <default>false</default>
+                    <label>Kerensen</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Risque_planning__c</fullName>
@@ -623,70 +663,85 @@ Réalisé : la fiche a été réalisée et doit être testée
 Fermé : la fiche est validée
 Abandonné : la fiche est annulée</inlineHelpText>
         <label>Statut</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Nouveau</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>A préciser</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>A arbitrer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>En cours</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Réalisé</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fermé</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Abandonné</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Validée EMLYON</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Nouveau</fullName>
+                    <default>true</default>
+                    <label>Nouveau</label>
+                </value>
+                <value>
+                    <fullName>A préciser</fullName>
+                    <default>false</default>
+                    <label>A préciser</label>
+                </value>
+                <value>
+                    <fullName>A arbitrer</fullName>
+                    <default>false</default>
+                    <label>A arbitrer</label>
+                </value>
+                <value>
+                    <fullName>En cours</fullName>
+                    <default>false</default>
+                    <label>En cours</label>
+                </value>
+                <value>
+                    <fullName>Réalisé</fullName>
+                    <default>false</default>
+                    <label>Réalisé</label>
+                </value>
+                <value>
+                    <fullName>Fermé</fullName>
+                    <default>false</default>
+                    <label>Fermé</label>
+                </value>
+                <value>
+                    <fullName>Abandonné</fullName>
+                    <default>false</default>
+                    <label>Abandonné</label>
+                </value>
+                <value>
+                    <fullName>Validée EMLYON</fullName>
+                    <default>false</default>
+                    <label>Validée EMLYON</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Statut_specifications__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>L&apos;anomalie nécessite une mise à jour</inlineHelpText>
         <label>Statut spécifications</label>
-        <picklist>
-            <picklistValues>
-                <fullName>N/A</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>A spécifier</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Spécifications à jour</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>A spécifier</fullName>
+                    <default>false</default>
+                    <label>A spécifier</label>
+                </value>
+                <value>
+                    <fullName>Spécifications à jour</fullName>
+                    <default>false</default>
+                    <label>Spécifications à jour</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Sujet__c</fullName>
@@ -703,33 +758,40 @@ Abandonné : la fiche est annulée</inlineHelpText>
         <fullName>Type__c</fullName>
         <externalId>false</externalId>
         <label>Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Demande</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Action</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Anomalie</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Evolution</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Version</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Demande</fullName>
+                    <default>false</default>
+                    <label>Demande</label>
+                </value>
+                <value>
+                    <fullName>Action</fullName>
+                    <default>false</default>
+                    <label>Action</label>
+                </value>
+                <value>
+                    <fullName>Anomalie</fullName>
+                    <default>false</default>
+                    <label>Anomalie</label>
+                </value>
+                <value>
+                    <fullName>Evolution</fullName>
+                    <default>false</default>
+                    <label>Evolution</label>
+                </value>
+                <value>
+                    <fullName>Version</fullName>
+                    <default>false</default>
+                    <label>Version</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Validee_client__c</fullName>
@@ -1861,4 +1923,5 @@ TEXT( Responsable__c ) = &quot;Kerensen&quot; &amp;&amp;
         <errorDisplayField>Pas_de_modification__c</errorDisplayField>
         <errorMessage>Veuillez renseigner l&apos;un des 2 champs &quot;Pas de modification&quot; ou &quot;Liste des modifications&quot;</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
 </CustomObject>

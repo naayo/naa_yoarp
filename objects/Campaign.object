@@ -25,10 +25,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -63,71 +59,88 @@
         <fullName>BU__c</fullName>
         <externalId>false</externalId>
         <label>BU</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Corporate</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Formation Initiale</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Communication  Corporate</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EMLYON FOREVER</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fondation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Projets Partenariats</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Employabilité</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Taxe</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MBA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PGM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AMP</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Executive Mastères</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>DUA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Prog. Courts</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Intra</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Corporate</fullName>
+                    <default>false</default>
+                    <label>Corporate</label>
+                </value>
+                <value>
+                    <fullName>Formation Initiale</fullName>
+                    <default>false</default>
+                    <label>Formation Initiale</label>
+                </value>
+                <value>
+                    <fullName>Communication  Corporate</fullName>
+                    <default>false</default>
+                    <label>Communication  Corporate</label>
+                </value>
+                <value>
+                    <fullName>EMLYON FOREVER</fullName>
+                    <default>false</default>
+                    <label>EMLYON FOREVER</label>
+                </value>
+                <value>
+                    <fullName>Fondation</fullName>
+                    <default>false</default>
+                    <label>Fondation</label>
+                </value>
+                <value>
+                    <fullName>Projets Partenariats</fullName>
+                    <default>false</default>
+                    <label>Projets Partenariats</label>
+                </value>
+                <value>
+                    <fullName>Employabilité</fullName>
+                    <default>false</default>
+                    <label>Employabilité</label>
+                </value>
+                <value>
+                    <fullName>Taxe</fullName>
+                    <default>false</default>
+                    <label>Taxe</label>
+                </value>
+                <value>
+                    <fullName>MBA</fullName>
+                    <default>false</default>
+                    <label>MBA</label>
+                </value>
+                <value>
+                    <fullName>PGM</fullName>
+                    <default>false</default>
+                    <label>PGM</label>
+                </value>
+                <value>
+                    <fullName>AMP</fullName>
+                    <default>false</default>
+                    <label>AMP</label>
+                </value>
+                <value>
+                    <fullName>Executive Mastères</fullName>
+                    <default>false</default>
+                    <label>Executive Mastères</label>
+                </value>
+                <value>
+                    <fullName>DUA</fullName>
+                    <default>false</default>
+                    <label>DUA</label>
+                </value>
+                <value>
+                    <fullName>Prog. Courts</fullName>
+                    <default>false</default>
+                    <label>Prog. Courts</label>
+                </value>
+                <value>
+                    <fullName>Intra</fullName>
+                    <default>false</default>
+                    <label>Intra</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>BudgetedCost</fullName>
@@ -140,61 +153,75 @@
         <fullName>Canal_de_communication_sortant__c</fullName>
         <externalId>false</externalId>
         <label>Canal de communication sortant</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Email</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Courrier</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Téléphone</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Réseaux sociaux</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SMS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Courrier</fullName>
+                    <default>false</default>
+                    <label>Courrier</label>
+                </value>
+                <value>
+                    <fullName>Téléphone</fullName>
+                    <default>false</default>
+                    <label>Téléphone</label>
+                </value>
+                <value>
+                    <fullName>Réseaux sociaux</fullName>
+                    <default>false</default>
+                    <label>Réseaux sociaux</label>
+                </value>
+                <value>
+                    <fullName>SMS</fullName>
+                    <default>false</default>
+                    <label>SMS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Cat_gorie__c</fullName>
         <externalId>false</externalId>
         <label>Catégorie</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Réunion d&apos;information</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Invitation événements</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Information programmes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Information Corporate</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Promotion commerciale</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Réunion d&apos;information</fullName>
+                    <default>false</default>
+                    <label>Réunion d&apos;information</label>
+                </value>
+                <value>
+                    <fullName>Invitation événements</fullName>
+                    <default>false</default>
+                    <label>Invitation événements</label>
+                </value>
+                <value>
+                    <fullName>Information programmes</fullName>
+                    <default>false</default>
+                    <label>Information programmes</label>
+                </value>
+                <value>
+                    <fullName>Information Corporate</fullName>
+                    <default>false</default>
+                    <label>Information Corporate</label>
+                </value>
+                <value>
+                    <fullName>Promotion commerciale</fullName>
+                    <default>false</default>
+                    <label>Promotion commerciale</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Dedoublonage_effectue__c</fullName>
@@ -320,71 +347,88 @@
         <fullName>Priorit_dedoublonnage__c</fullName>
         <externalId>false</externalId>
         <label>Priorité dédoublonnage</label>
-        <picklist>
-            <picklistValues>
-                <fullName>1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>5</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>6</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>7</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>8</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>9</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>11</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>12</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>13</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>14</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>15</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>6</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>7</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>8</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>9</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>10</label>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                    <label>11</label>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                    <label>12</label>
+                </value>
+                <value>
+                    <fullName>13</fullName>
+                    <default>false</default>
+                    <label>13</label>
+                </value>
+                <value>
+                    <fullName>14</fullName>
+                    <default>false</default>
+                    <label>14</label>
+                </value>
+                <value>
+                    <fullName>15</fullName>
+                    <default>false</default>
+                    <label>15</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Reprise_LOT_2015__c</fullName>
@@ -398,25 +442,6 @@
     </fields>
     <fields>
         <fullName>Status</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>En cours</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Terminé</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Annulé</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Prévu</fullName>
-                <default>true</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <type>Picklist</type>
     </fields>
     <fields>
@@ -430,45 +455,6 @@
     </fields>
     <fields>
         <fullName>Type</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>E-mail</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Télémarketing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bandeaux publicitaires</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Séminaire/Conférence</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Relations publiques</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partenaires</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programme de référence</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Autre</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Publicité</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <type>Picklist</type>
     </fields>
     <fields>

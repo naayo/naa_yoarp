@@ -25,7 +25,7 @@
             <fieldName>FirstName</fieldName>
             <matchingMethod>Exact</matchingMethod>
         </matchingRuleItems>
-        <ruleStatus>Active</ruleStatus>
+        <ruleStatus>Inactive</ruleStatus>
     </matchingRules>
     <matchingRules>
         <fullName>EMAIL_EMLYON</fullName>

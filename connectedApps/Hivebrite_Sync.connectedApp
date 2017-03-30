@@ -4,7 +4,7 @@
     <label>Hivebrite Sync</label>
     <oauthConfig>
         <callbackUrl>https://hivebrite.com</callbackUrl>
-        <consumerKey>3MVG9A_f29uWoVQsD5oVJjLZrK0JIrgGixpwP4J9ryC9A_NS461HxTksMU5z8tttj0R3TiCLGzfjZhyQ81Z4r</consumerKey>
+        <consumerKey>3MVG96mGXeuuwTZi1FvcrlwfqoTwpImIm_DHkeeTeuDQJw1vQ8AfueHJsd109Pw1wmRSKOKDAWobwoj8I9YRV</consumerKey>
         <scopes>Full</scopes>
     </oauthConfig>
 </ConnectedApp>

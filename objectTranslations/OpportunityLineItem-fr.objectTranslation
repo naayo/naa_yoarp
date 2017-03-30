@@ -540,6 +540,21 @@
             <section>Liens Personnalisés</section>
         </sections>
     </layouts>
+    <layouts>
+        <layout>Taxe / RE</layout>
+        <sections>
+            <label><!-- Historique --></label>
+            <section>Historique</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
     <validationRules>
         <errorMessage><!-- Le choix de ce produit nécessite que vous remplissiez d&apos;abord la localisation de l&apos;opportunité --></errorMessage>
         <name>Localisation_obligatoire</name>

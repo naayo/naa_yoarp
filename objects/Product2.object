@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -69,107 +65,132 @@
         <fullName>Domaine__c</fullName>
         <externalId>false</externalId>
         <label>Domaine</label>
-        <picklist>
-            <picklistValues>
-                <fullName>MRH</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SG</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FPP</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>DCRC</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MKT</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>LDP</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>I&amp;E</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TRANSVERSE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MRH</fullName>
+                    <default>false</default>
+                    <label>MRH</label>
+                </value>
+                <value>
+                    <fullName>SG</fullName>
+                    <default>false</default>
+                    <label>SG</label>
+                </value>
+                <value>
+                    <fullName>FPP</fullName>
+                    <default>false</default>
+                    <label>FPP</label>
+                </value>
+                <value>
+                    <fullName>DCRC</fullName>
+                    <default>false</default>
+                    <label>DCRC</label>
+                </value>
+                <value>
+                    <fullName>MKT</fullName>
+                    <default>false</default>
+                    <label>MKT</label>
+                </value>
+                <value>
+                    <fullName>HA</fullName>
+                    <default>false</default>
+                    <label>HA</label>
+                </value>
+                <value>
+                    <fullName>LDP</fullName>
+                    <default>false</default>
+                    <label>LDP</label>
+                </value>
+                <value>
+                    <fullName>I&amp;E</fullName>
+                    <default>false</default>
+                    <label>I&amp;E</label>
+                </value>
+                <value>
+                    <fullName>TRANSVERSE</fullName>
+                    <default>false</default>
+                    <label>TRANSVERSE</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Domaine_tudes__c</fullName>
         <externalId>false</externalId>
         <label>Domaine études</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Gestion</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Droit</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Economie</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sciences (mathématiques, physique,...)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sciences humaines (lettres,...)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ingénieur</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Santé (pharmacie, vétérinaire,…)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bac ES (économique et sociale)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bac S (scientifique)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bac L (littéraire)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bac STMG</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Autre</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Gestion</fullName>
+                    <default>false</default>
+                    <label>Gestion</label>
+                </value>
+                <value>
+                    <fullName>Droit</fullName>
+                    <default>false</default>
+                    <label>Droit</label>
+                </value>
+                <value>
+                    <fullName>Economie</fullName>
+                    <default>false</default>
+                    <label>Economie</label>
+                </value>
+                <value>
+                    <fullName>Sciences (mathématiques, physique,...)</fullName>
+                    <default>false</default>
+                    <label>Sciences (mathématiques, physique,...)</label>
+                </value>
+                <value>
+                    <fullName>Sciences humaines (lettres,...)</fullName>
+                    <default>false</default>
+                    <label>Sciences humaines (lettres,...)</label>
+                </value>
+                <value>
+                    <fullName>Ingénieur</fullName>
+                    <default>false</default>
+                    <label>Ingénieur</label>
+                </value>
+                <value>
+                    <fullName>Santé (pharmacie, vétérinaire,…)</fullName>
+                    <default>false</default>
+                    <label>Santé (pharmacie, vétérinaire,…)</label>
+                </value>
+                <value>
+                    <fullName>Bac ES (économique et sociale)</fullName>
+                    <default>false</default>
+                    <label>Bac ES (économique et sociale)</label>
+                </value>
+                <value>
+                    <fullName>Bac S (scientifique)</fullName>
+                    <default>false</default>
+                    <label>Bac S (scientifique)</label>
+                </value>
+                <value>
+                    <fullName>Bac L (littéraire)</fullName>
+                    <default>false</default>
+                    <label>Bac L (littéraire)</label>
+                </value>
+                <value>
+                    <fullName>Bac STMG</fullName>
+                    <default>false</default>
+                    <label>Bac STMG</label>
+                </value>
+                <value>
+                    <fullName>Autre</fullName>
+                    <default>false</default>
+                    <label>Autre</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
@@ -208,661 +229,715 @@ IF(INCLUDES( Domaine_tudes__c ,&quot;Economie&quot;),&quot;Economie &quot;,&quot
         <fullName>Famille__c</fullName>
         <externalId>false</externalId>
         <label>Famille / Domaine</label>
-        <picklist>
-            <controllingField>Family</controllingField>
-            <picklistValues>
-                <fullName>Accompagnement Carrières</fullName>
-                <default>false</default>
-                <controllingFieldValues>DÉVELOPPEMENT DE LA MARQUE EMPLOYEUR</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Accompagnement entreprises = RDV</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Accompagnement pédagogique</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Accord Cadre Formation Continue =</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Achats</fullName>
-                <default>false</default>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes courts</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes longs</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV programmes intra</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Alternance</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Annuaires</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Atelier</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Au choix</fullName>
-                <default>false</default>
-                <controllingFieldValues>Fundraising B2B</controllingFieldValues>
-                <controllingFieldValues>Fundraising B2C</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Business Weeks</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Careers Days</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Célébration</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Chaires Conjointes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Chaires d’enseignement et de recherche (&gt;1Me sur 4/5 ans)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Colloques</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Conférence</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Conférences non payantes (notoriété)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Conférences non payantes (pédagogiques)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Conférences non payantes (type gd public)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Conférences non payantes (type scientifique)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Conférences payantes (par l&apos;auditeur, participant)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Conférences payantes (par l&apos;intervenant-casHEC)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Confier 1 projet à 1 étudiant</fullName>
-                <default>false</default>
-                <controllingFieldValues>DÉVELOPPEMENT DE LA MARQUE EMPLOYEUR</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Conseil institutionnel =</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Corporate Discovery Session</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CVThèque</fullName>
-                <default>false</default>
-                <controllingFieldValues>SOLUTIONS DE RECRUTEMENT</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Développement Commercial et Relation client</fullName>
-                <default>false</default>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes courts</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes longs</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV programmes intra</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Développement personnel</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dons Fondation =&gt; individu ou entreprise  (idem EMLYON)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Educational project</fullName>
-                <default>false</default>
-                <controllingFieldValues>Fundraising B2B</controllingFieldValues>
-                <controllingFieldValues>Fundraising B2C</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Enquêtes et Stats</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Entretien individuel</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Evénement Calendrier</fullName>
-                <default>false</default>
-                <controllingFieldValues>SOLUTIONS DE RECRUTEMENT</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Evénement Expert</fullName>
-                <default>false</default>
-                <controllingFieldValues>DÉVELOPPEMENT DE LA MARQUE EMPLOYEUR</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Evènements corporate payants organisés par la comm</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Evenements EMLYON.</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Evenements EMLYON. (A voir avec BB)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Evenements EMLYON (à positionner confer supra - voir Bernard)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Evenements FOREVER co-organisés</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Evènements FOREVER organisés par EMLYON FOREVER</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Evénement Sur Mesure</fullName>
-                <default>false</default>
-                <controllingFieldValues>SOLUTIONS DE RECRUTEMENT</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Events Projects</fullName>
-                <default>false</default>
-                <controllingFieldValues>Fundraising B2B</controllingFieldValues>
-                <controllingFieldValues>Fundraising B2C</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Expert Panels OU Table rondes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Finance et Pilotage de la performance</fullName>
-                <default>false</default>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes courts</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes longs</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV programmes intra</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FOREVER : cotisation de rattrapage</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FOREVER : services associés aux cotisants</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Forme CLUB</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Forum Carrières /Careers Forum</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Forum PME</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Forum virtuel  / Virtual Forum</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fundraising commun (namming…)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Innovation et Entrepreneuriat</fullName>
-                <default>false</default>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes courts</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes longs</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV programmes intra</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Investments Projects</fullName>
-                <default>false</default>
-                <controllingFieldValues>Fundraising B2B</controllingFieldValues>
-                <controllingFieldValues>Fundraising B2C</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Journée de conférences ateliers et réseau</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Knowledge Projects</fullName>
-                <default>false</default>
-                <controllingFieldValues>Fundraising B2B</controllingFieldValues>
-                <controllingFieldValues>Fundraising B2C</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Leadership et Développement personnel</fullName>
-                <default>false</default>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes courts</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes longs</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV programmes intra</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Locations de salles (EMLYON,EML,ALLIANCE)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Management et Ressources Humaines</fullName>
-                <default>false</default>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes courts</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes longs</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV programmes intra</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Management Général</fullName>
-                <default>false</default>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes courts</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes longs</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV programmes intra</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Marketing</fullName>
-                <default>false</default>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes courts</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes longs</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV programmes intra</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partenariats Académiques</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PhD Doctorat</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Plateforme Msc in IDEA (LearningLab, Incubateur, MscinIDEA)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programme « Grande Ecole »</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programme Bachelor</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programme COSMETO</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programme I.D.E.A Alliance ECL-EM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programme IPIL</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programme MBA  - formation continue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programme MBA Internationaux - formation initiale</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programmes « Mastères spécialisés »</fullName>
-                <default>false</default>
-                <controllingFieldValues>PROGRAMMES MASTERES</controllingFieldValues>
-                <controllingFieldValues>PROGRAMMES MASTERES CASA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programmes « Masters  en Anglais»</fullName>
-                <default>false</default>
-                <controllingFieldValues>PROGRAMMES MASTER</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programmes « Masters  Internationaux»</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programmes courts</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programmes de formation longs non diplômant  (DUA)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programmes diplomants</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programmes Entrepreneurs</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programmes longs diplômants - Programmes Opérationnels</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programmes longs diplômants - Senior Executive</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programmes sur mesure/intra avec appel d&apos;offre/CDC</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Programmes sur mesure/intra hors appel d&apos;offre/CDC</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Projets de Recherche</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Push-Mails</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Relation Editeur - Professeurs</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Relation informelle</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Relations Presse ?</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Relations Publiques ?</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Responsible Projects</fullName>
-                <default>false</default>
-                <controllingFieldValues>Fundraising B2B</controllingFieldValues>
-                <controllingFieldValues>Fundraising B2C</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Salons commerciaux de l&apos;éducation : France et International</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Salons des entrepreneurs</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Services rendus par la bibliothèque</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Services rendus par la DSIT</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Services rendus par le registraire</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sites Internet Carrière</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sites Internet CORPORATE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sites Internet EML</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sites Internet FOREVER</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Soutien au programmes de bourse et « ouverture sociale » (TUMM)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Soutien aux pgms/projets entrepreunariat (Incubateur,  WEF, Club CCRE)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Speed networking</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sponsoring entreprise (public visé/bénéficiaire = diplômés)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sponsoring entreprise (public visé/bénéficiaire = entreprises)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sponsoring entreprise (public visé/bénéficiaire = étudiants)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sponsoring incubateur  (public visé/bénéficiaire = incubés)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Stratégie et Gouvernance</fullName>
-                <default>false</default>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes courts</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes longs</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV programmes intra</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Summer Sessions (pour différents programmes)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Summer Sessions Programme Auditeurs</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Taxe d&apos;apprentissage</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Transformation Digitale</fullName>
-                <default>false</default>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes courts</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Transverse</fullName>
-                <default>false</default>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValues>
-                <controllingFieldValues>OFFRES EXEC DEV Programmes courts</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Visite face/face</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Visite face/face (anciens)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>true</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Family</controllingField>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Accompagnement Carrières</fullName>
+                    <default>false</default>
+                    <label>Accompagnement Carrières</label>
+                </value>
+                <value>
+                    <fullName>Accompagnement entreprises = RDV</fullName>
+                    <default>false</default>
+                    <label>Accompagnement entreprises = RDV</label>
+                </value>
+                <value>
+                    <fullName>Accompagnement pédagogique</fullName>
+                    <default>false</default>
+                    <label>Accompagnement pédagogique</label>
+                </value>
+                <value>
+                    <fullName>Accord Cadre Formation Continue =</fullName>
+                    <default>false</default>
+                    <label>Accord Cadre Formation Continue =</label>
+                </value>
+                <value>
+                    <fullName>Achats</fullName>
+                    <default>false</default>
+                    <label>Achats</label>
+                </value>
+                <value>
+                    <fullName>Alternance</fullName>
+                    <default>false</default>
+                    <label>Alternance</label>
+                </value>
+                <value>
+                    <fullName>Annuaires</fullName>
+                    <default>false</default>
+                    <label>Annuaires</label>
+                </value>
+                <value>
+                    <fullName>Atelier</fullName>
+                    <default>false</default>
+                    <label>Atelier</label>
+                </value>
+                <value>
+                    <fullName>Au choix</fullName>
+                    <default>false</default>
+                    <label>Au choix</label>
+                </value>
+                <value>
+                    <fullName>Business Weeks</fullName>
+                    <default>false</default>
+                    <label>Business Weeks</label>
+                </value>
+                <value>
+                    <fullName>Careers Days</fullName>
+                    <default>false</default>
+                    <label>Careers Days</label>
+                </value>
+                <value>
+                    <fullName>Célébration</fullName>
+                    <default>false</default>
+                    <label>Célébration</label>
+                </value>
+                <value>
+                    <fullName>Chaires Conjointes</fullName>
+                    <default>false</default>
+                    <label>Chaires Conjointes</label>
+                </value>
+                <value>
+                    <fullName>Chaires d’enseignement et de recherche (&gt;1Me sur 4/5 ans)</fullName>
+                    <default>false</default>
+                    <label>Chaires d’enseignement et de recherche (&gt;1Me sur 4/5 ans)</label>
+                </value>
+                <value>
+                    <fullName>Colloques</fullName>
+                    <default>false</default>
+                    <label>Colloques</label>
+                </value>
+                <value>
+                    <fullName>Conférence</fullName>
+                    <default>false</default>
+                    <label>Conférence</label>
+                </value>
+                <value>
+                    <fullName>Conférences non payantes (notoriété)</fullName>
+                    <default>false</default>
+                    <label>Conférences non payantes (notoriété)</label>
+                </value>
+                <value>
+                    <fullName>Conférences non payantes (pédagogiques)</fullName>
+                    <default>false</default>
+                    <label>Conférences non payantes (pédagogiques)</label>
+                </value>
+                <value>
+                    <fullName>Conférences non payantes (type gd public)</fullName>
+                    <default>false</default>
+                    <label>Conférences non payantes (type gd public)</label>
+                </value>
+                <value>
+                    <fullName>Conférences non payantes (type scientifique)</fullName>
+                    <default>false</default>
+                    <label>Conférences non payantes (type scientifique)</label>
+                </value>
+                <value>
+                    <fullName>Conférences payantes (par l&apos;auditeur, participant)</fullName>
+                    <default>false</default>
+                    <label>Conférences payantes (par l&apos;auditeur, participant)</label>
+                </value>
+                <value>
+                    <fullName>Conférences payantes (par l&apos;intervenant-casHEC)</fullName>
+                    <default>false</default>
+                    <label>Conférences payantes (par l&apos;intervenant-casHEC)</label>
+                </value>
+                <value>
+                    <fullName>Confier 1 projet à 1 étudiant</fullName>
+                    <default>false</default>
+                    <label>Confier 1 projet à 1 étudiant</label>
+                </value>
+                <value>
+                    <fullName>Conseil institutionnel =</fullName>
+                    <default>false</default>
+                    <label>Conseil institutionnel =</label>
+                </value>
+                <value>
+                    <fullName>Corporate Discovery Session</fullName>
+                    <default>false</default>
+                    <label>Corporate Discovery Session</label>
+                </value>
+                <value>
+                    <fullName>CVThèque</fullName>
+                    <default>false</default>
+                    <label>CVThèque</label>
+                </value>
+                <value>
+                    <fullName>Développement Commercial et Relation client</fullName>
+                    <default>false</default>
+                    <label>Développement Commercial et Relation client</label>
+                </value>
+                <value>
+                    <fullName>Développement personnel</fullName>
+                    <default>false</default>
+                    <label>Développement personnel</label>
+                </value>
+                <value>
+                    <fullName>Dons Fondation =&gt; individu ou entreprise  (idem EMLYON)</fullName>
+                    <default>false</default>
+                    <label>Dons Fondation =&gt; individu ou entreprise  (idem EMLYON)</label>
+                </value>
+                <value>
+                    <fullName>Educational project</fullName>
+                    <default>false</default>
+                    <label>Educational project</label>
+                </value>
+                <value>
+                    <fullName>Enquêtes et Stats</fullName>
+                    <default>false</default>
+                    <label>Enquêtes et Stats</label>
+                </value>
+                <value>
+                    <fullName>Entretien individuel</fullName>
+                    <default>false</default>
+                    <label>Entretien individuel</label>
+                </value>
+                <value>
+                    <fullName>Evénement Calendrier</fullName>
+                    <default>false</default>
+                    <label>Evénement Calendrier</label>
+                </value>
+                <value>
+                    <fullName>Evénement Expert</fullName>
+                    <default>false</default>
+                    <label>Evénement Expert</label>
+                </value>
+                <value>
+                    <fullName>Evènements corporate payants organisés par la comm</fullName>
+                    <default>false</default>
+                    <label>Evènements corporate payants organisés par la comm</label>
+                </value>
+                <value>
+                    <fullName>Evenements EMLYON.</fullName>
+                    <default>false</default>
+                    <label>Evenements EMLYON.</label>
+                </value>
+                <value>
+                    <fullName>Evenements EMLYON. (A voir avec BB)</fullName>
+                    <default>false</default>
+                    <label>Evenements EMLYON. (A voir avec BB)</label>
+                </value>
+                <value>
+                    <fullName>Evenements EMLYON (à positionner confer supra - voir Bernard)</fullName>
+                    <default>false</default>
+                    <label>Evenements EMLYON (à positionner confer supra - voir Bernard)</label>
+                </value>
+                <value>
+                    <fullName>Evenements FOREVER co-organisés</fullName>
+                    <default>false</default>
+                    <label>Evenements FOREVER co-organisés</label>
+                </value>
+                <value>
+                    <fullName>Evènements FOREVER organisés par EMLYON FOREVER</fullName>
+                    <default>false</default>
+                    <label>Evènements FOREVER organisés par EMLYON FOREVER</label>
+                </value>
+                <value>
+                    <fullName>Evénement Sur Mesure</fullName>
+                    <default>false</default>
+                    <label>Evénement Sur Mesure</label>
+                </value>
+                <value>
+                    <fullName>Events Projects</fullName>
+                    <default>false</default>
+                    <label>Events Projects</label>
+                </value>
+                <value>
+                    <fullName>Expert Panels OU Table rondes</fullName>
+                    <default>false</default>
+                    <label>Expert Panels OU Table rondes</label>
+                </value>
+                <value>
+                    <fullName>Finance et Pilotage de la performance</fullName>
+                    <default>false</default>
+                    <label>Finance et Pilotage de la performance</label>
+                </value>
+                <value>
+                    <fullName>FOREVER : cotisation de rattrapage</fullName>
+                    <default>false</default>
+                    <label>FOREVER : cotisation de rattrapage</label>
+                </value>
+                <value>
+                    <fullName>FOREVER : services associés aux cotisants</fullName>
+                    <default>false</default>
+                    <label>FOREVER : services associés aux cotisants</label>
+                </value>
+                <value>
+                    <fullName>Forme CLUB</fullName>
+                    <default>false</default>
+                    <label>Forme CLUB</label>
+                </value>
+                <value>
+                    <fullName>Forum Carrières /Careers Forum</fullName>
+                    <default>false</default>
+                    <label>Forum Carrières /Careers Forum</label>
+                </value>
+                <value>
+                    <fullName>Forum PME</fullName>
+                    <default>false</default>
+                    <label>Forum PME</label>
+                </value>
+                <value>
+                    <fullName>Forum virtuel  / Virtual Forum</fullName>
+                    <default>false</default>
+                    <label>Forum virtuel  / Virtual Forum</label>
+                </value>
+                <value>
+                    <fullName>Fundraising commun (namming…)</fullName>
+                    <default>false</default>
+                    <label>Fundraising commun (namming…)</label>
+                </value>
+                <value>
+                    <fullName>Innovation et Entrepreneuriat</fullName>
+                    <default>false</default>
+                    <label>Innovation et Entrepreneuriat</label>
+                </value>
+                <value>
+                    <fullName>Investments Projects</fullName>
+                    <default>false</default>
+                    <label>Investments Projects</label>
+                </value>
+                <value>
+                    <fullName>Journée de conférences ateliers et réseau</fullName>
+                    <default>false</default>
+                    <label>Journée de conférences ateliers et réseau</label>
+                </value>
+                <value>
+                    <fullName>Knowledge Projects</fullName>
+                    <default>false</default>
+                    <label>Knowledge Projects</label>
+                </value>
+                <value>
+                    <fullName>Leadership et Développement personnel</fullName>
+                    <default>false</default>
+                    <label>Leadership et Développement personnel</label>
+                </value>
+                <value>
+                    <fullName>Locations de salles (EMLYON,EML,ALLIANCE)</fullName>
+                    <default>false</default>
+                    <label>Locations de salles (EMLYON,EML,ALLIANCE)</label>
+                </value>
+                <value>
+                    <fullName>Management et Ressources Humaines</fullName>
+                    <default>false</default>
+                    <label>Management et Ressources Humaines</label>
+                </value>
+                <value>
+                    <fullName>Management Général</fullName>
+                    <default>false</default>
+                    <label>Management Général</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Partenariats Académiques</fullName>
+                    <default>false</default>
+                    <label>Partenariats Académiques</label>
+                </value>
+                <value>
+                    <fullName>PhD Doctorat</fullName>
+                    <default>false</default>
+                    <label>PhD Doctorat</label>
+                </value>
+                <value>
+                    <fullName>Plateforme Msc in IDEA (LearningLab, Incubateur, MscinIDEA)</fullName>
+                    <default>false</default>
+                    <label>Plateforme Msc in IDEA (LearningLab, Incubateur, MscinIDEA)</label>
+                </value>
+                <value>
+                    <fullName>Programme « Grande Ecole »</fullName>
+                    <default>false</default>
+                    <label>Programme « Grande Ecole »</label>
+                </value>
+                <value>
+                    <fullName>Programme Bachelor</fullName>
+                    <default>false</default>
+                    <label>Programme Bachelor</label>
+                </value>
+                <value>
+                    <fullName>Programme COSMETO</fullName>
+                    <default>false</default>
+                    <label>Programme COSMETO</label>
+                </value>
+                <value>
+                    <fullName>Programme I.D.E.A Alliance ECL-EM</fullName>
+                    <default>false</default>
+                    <label>Programme I.D.E.A Alliance ECL-EM</label>
+                </value>
+                <value>
+                    <fullName>Programme IPIL</fullName>
+                    <default>false</default>
+                    <label>Programme IPIL</label>
+                </value>
+                <value>
+                    <fullName>Programme MBA  - formation continue</fullName>
+                    <default>false</default>
+                    <label>Programme MBA  - formation continue</label>
+                </value>
+                <value>
+                    <fullName>Programme MBA Internationaux - formation initiale</fullName>
+                    <default>false</default>
+                    <label>Programme MBA Internationaux - formation initiale</label>
+                </value>
+                <value>
+                    <fullName>Programmes « Mastères spécialisés »</fullName>
+                    <default>false</default>
+                    <label>Programmes « Mastères spécialisés »</label>
+                </value>
+                <value>
+                    <fullName>Programmes « Masters  en Anglais»</fullName>
+                    <default>false</default>
+                    <label>Programmes « Masters  en Anglais»</label>
+                </value>
+                <value>
+                    <fullName>Programmes « Masters  Internationaux»</fullName>
+                    <default>false</default>
+                    <label>Programmes « Masters  Internationaux»</label>
+                </value>
+                <value>
+                    <fullName>Programmes courts</fullName>
+                    <default>false</default>
+                    <label>Programmes courts</label>
+                </value>
+                <value>
+                    <fullName>Programmes de formation longs non diplômant  (DUA)</fullName>
+                    <default>false</default>
+                    <label>Programmes de formation longs non diplômant  (DUA)</label>
+                </value>
+                <value>
+                    <fullName>Programmes diplomants</fullName>
+                    <default>false</default>
+                    <label>Programmes diplomants</label>
+                </value>
+                <value>
+                    <fullName>Programmes Entrepreneurs</fullName>
+                    <default>false</default>
+                    <label>Programmes Entrepreneurs</label>
+                </value>
+                <value>
+                    <fullName>Programmes longs diplômants - Programmes Opérationnels</fullName>
+                    <default>false</default>
+                    <label>Programmes longs diplômants - Programmes Opérationnels</label>
+                </value>
+                <value>
+                    <fullName>Programmes longs diplômants - Senior Executive</fullName>
+                    <default>false</default>
+                    <label>Programmes longs diplômants - Senior Executive</label>
+                </value>
+                <value>
+                    <fullName>Programmes sur mesure/intra avec appel d&apos;offre/CDC</fullName>
+                    <default>false</default>
+                    <label>Programmes sur mesure/intra avec appel d&apos;offre/CDC</label>
+                </value>
+                <value>
+                    <fullName>Programmes sur mesure/intra hors appel d&apos;offre/CDC</fullName>
+                    <default>false</default>
+                    <label>Programmes sur mesure/intra hors appel d&apos;offre/CDC</label>
+                </value>
+                <value>
+                    <fullName>Projets de Recherche</fullName>
+                    <default>false</default>
+                    <label>Projets de Recherche</label>
+                </value>
+                <value>
+                    <fullName>Push-Mails</fullName>
+                    <default>false</default>
+                    <label>Push-Mails</label>
+                </value>
+                <value>
+                    <fullName>Relation Editeur - Professeurs</fullName>
+                    <default>false</default>
+                    <label>Relation Editeur - Professeurs</label>
+                </value>
+                <value>
+                    <fullName>Relation informelle</fullName>
+                    <default>false</default>
+                    <label>Relation informelle</label>
+                </value>
+                <value>
+                    <fullName>Relations Presse ?</fullName>
+                    <default>false</default>
+                    <label>Relations Presse ?</label>
+                </value>
+                <value>
+                    <fullName>Relations Publiques ?</fullName>
+                    <default>false</default>
+                    <label>Relations Publiques ?</label>
+                </value>
+                <value>
+                    <fullName>Responsible Projects</fullName>
+                    <default>false</default>
+                    <label>Responsible Projects</label>
+                </value>
+                <value>
+                    <fullName>Salons commerciaux de l&apos;éducation : France et International</fullName>
+                    <default>false</default>
+                    <label>Salons commerciaux de l&apos;éducation : France et International</label>
+                </value>
+                <value>
+                    <fullName>Salons des entrepreneurs</fullName>
+                    <default>false</default>
+                    <label>Salons des entrepreneurs</label>
+                </value>
+                <value>
+                    <fullName>Services rendus par la bibliothèque</fullName>
+                    <default>false</default>
+                    <label>Services rendus par la bibliothèque</label>
+                </value>
+                <value>
+                    <fullName>Services rendus par la DSIT</fullName>
+                    <default>false</default>
+                    <label>Services rendus par la DSIT</label>
+                </value>
+                <value>
+                    <fullName>Services rendus par le registraire</fullName>
+                    <default>false</default>
+                    <label>Services rendus par le registraire</label>
+                </value>
+                <value>
+                    <fullName>Sites Internet Carrière</fullName>
+                    <default>false</default>
+                    <label>Sites Internet Carrière</label>
+                </value>
+                <value>
+                    <fullName>Sites Internet CORPORATE</fullName>
+                    <default>false</default>
+                    <label>Sites Internet CORPORATE</label>
+                </value>
+                <value>
+                    <fullName>Sites Internet EML</fullName>
+                    <default>false</default>
+                    <label>Sites Internet EML</label>
+                </value>
+                <value>
+                    <fullName>Sites Internet FOREVER</fullName>
+                    <default>false</default>
+                    <label>Sites Internet FOREVER</label>
+                </value>
+                <value>
+                    <fullName>Soutien au programmes de bourse et « ouverture sociale » (TUMM)</fullName>
+                    <default>false</default>
+                    <label>Soutien au programmes de bourse et « ouverture sociale » (TUMM)</label>
+                </value>
+                <value>
+                    <fullName>Soutien aux pgms/projets entrepreunariat (Incubateur,  WEF, Club CCRE)</fullName>
+                    <default>false</default>
+                    <label>Soutien aux pgms/projets entrepreunariat (Incubateur,  WEF, Club CCRE)</label>
+                </value>
+                <value>
+                    <fullName>Speed networking</fullName>
+                    <default>false</default>
+                    <label>Speed networking</label>
+                </value>
+                <value>
+                    <fullName>Sponsoring entreprise (public visé/bénéficiaire = diplômés)</fullName>
+                    <default>false</default>
+                    <label>Sponsoring entreprise (public visé/bénéficiaire = diplômés)</label>
+                </value>
+                <value>
+                    <fullName>Sponsoring entreprise (public visé/bénéficiaire = entreprises)</fullName>
+                    <default>false</default>
+                    <label>Sponsoring entreprise (public visé/bénéficiaire = entreprises)</label>
+                </value>
+                <value>
+                    <fullName>Sponsoring entreprise (public visé/bénéficiaire = étudiants)</fullName>
+                    <default>false</default>
+                    <label>Sponsoring entreprise (public visé/bénéficiaire = étudiants)</label>
+                </value>
+                <value>
+                    <fullName>Sponsoring incubateur  (public visé/bénéficiaire = incubés)</fullName>
+                    <default>false</default>
+                    <label>Sponsoring incubateur  (public visé/bénéficiaire = incubés)</label>
+                </value>
+                <value>
+                    <fullName>Stratégie et Gouvernance</fullName>
+                    <default>false</default>
+                    <label>Stratégie et Gouvernance</label>
+                </value>
+                <value>
+                    <fullName>Summer Sessions (pour différents programmes)</fullName>
+                    <default>false</default>
+                    <label>Summer Sessions (pour différents programmes)</label>
+                </value>
+                <value>
+                    <fullName>Summer Sessions Programme Auditeurs</fullName>
+                    <default>false</default>
+                    <label>Summer Sessions Programme Auditeurs</label>
+                </value>
+                <value>
+                    <fullName>Taxe d&apos;apprentissage</fullName>
+                    <default>false</default>
+                    <label>Taxe d&apos;apprentissage</label>
+                </value>
+                <value>
+                    <fullName>Transformation Digitale</fullName>
+                    <default>false</default>
+                    <label>Transformation Digitale</label>
+                </value>
+                <value>
+                    <fullName>Transverse</fullName>
+                    <default>false</default>
+                    <label>Transverse</label>
+                </value>
+                <value>
+                    <fullName>Visite face/face</fullName>
+                    <default>false</default>
+                    <label>Visite face/face</label>
+                </value>
+                <value>
+                    <fullName>Visite face/face (anciens)</fullName>
+                    <default>false</default>
+                    <label>Visite face/face (anciens)</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes courts</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes longs</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV programmes intra</controllingFieldValue>
+                <valueName>Achats</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes courts</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes longs</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV programmes intra</controllingFieldValue>
+                <valueName>Développement Commercial et Relation client</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes courts</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes longs</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV programmes intra</controllingFieldValue>
+                <valueName>Finance et Pilotage de la performance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes courts</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes longs</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV programmes intra</controllingFieldValue>
+                <valueName>Innovation et Entrepreneuriat</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes courts</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes longs</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV programmes intra</controllingFieldValue>
+                <valueName>Leadership et Développement personnel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes courts</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes longs</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV programmes intra</controllingFieldValue>
+                <valueName>Management et Ressources Humaines</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes courts</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes longs</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV programmes intra</controllingFieldValue>
+                <valueName>Management Général</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes courts</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes longs</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV programmes intra</controllingFieldValue>
+                <valueName>Marketing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes courts</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes longs</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV programmes intra</controllingFieldValue>
+                <valueName>Stratégie et Gouvernance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes courts</controllingFieldValue>
+                <valueName>Transformation Digitale</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes Certifiants</controllingFieldValue>
+                <controllingFieldValue>OFFRES EXEC DEV Programmes courts</controllingFieldValue>
+                <valueName>Transverse</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fundraising B2C</controllingFieldValue>
+                <controllingFieldValue>Fundraising B2B</controllingFieldValue>
+                <valueName>Au choix</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fundraising B2C</controllingFieldValue>
+                <controllingFieldValue>Fundraising B2B</controllingFieldValue>
+                <valueName>Educational project</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fundraising B2C</controllingFieldValue>
+                <controllingFieldValue>Fundraising B2B</controllingFieldValue>
+                <valueName>Events Projects</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fundraising B2C</controllingFieldValue>
+                <controllingFieldValue>Fundraising B2B</controllingFieldValue>
+                <valueName>Investments Projects</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fundraising B2C</controllingFieldValue>
+                <controllingFieldValue>Fundraising B2B</controllingFieldValue>
+                <valueName>Knowledge Projects</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fundraising B2C</controllingFieldValue>
+                <controllingFieldValue>Fundraising B2B</controllingFieldValue>
+                <valueName>Responsible Projects</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PROGRAMMES MASTERES CASA</controllingFieldValue>
+                <controllingFieldValue>PROGRAMMES MASTERES</controllingFieldValue>
+                <valueName>Programmes « Mastères spécialisés »</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DÉVELOPPEMENT DE LA MARQUE EMPLOYEUR</controllingFieldValue>
+                <valueName>Accompagnement Carrières</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DÉVELOPPEMENT DE LA MARQUE EMPLOYEUR</controllingFieldValue>
+                <valueName>Confier 1 projet à 1 étudiant</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DÉVELOPPEMENT DE LA MARQUE EMPLOYEUR</controllingFieldValue>
+                <valueName>Evénement Expert</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SOLUTIONS DE RECRUTEMENT</controllingFieldValue>
+                <valueName>CVThèque</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SOLUTIONS DE RECRUTEMENT</controllingFieldValue>
+                <valueName>Evénement Calendrier</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SOLUTIONS DE RECRUTEMENT</controllingFieldValue>
+                <valueName>Evénement Sur Mesure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PROGRAMMES MASTER</controllingFieldValue>
+                <valueName>Programmes « Masters  en Anglais»</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Family</fullName>
         <inlineHelpText>GAMMES DE PROGRAMMES OU DE SERVICES</inlineHelpText>
-        <picklist>
-            <picklistValues>
-                <fullName>ACCOMP. CARRIERE ou CARRIERE RESEAUX</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACCOMPAGNEMENT PEDAGOGIQUE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AUTRES OFFRES ?</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AUTRES PROGRAMMES</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AUTRES SERVICES</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>DÉVELOPPEMENT DE LA MARQUE EMPLOYEUR</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EVENEMENTS DE RECRUTEMENT</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EVENEMENTS EXPERTS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EVENEMENTS IMAGE / RESEAU</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EVENEMENTS PROMOTIONNELS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fundraising B2B</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fundraising B2C</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>INFORMER (par différents canaux)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MECENAT (CENTRALE LYON - EMLYON)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MECENAT EMLYON</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MECENAT FONDATION EMLYON</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MESURER LA QUALITE ET LA PERFORMANCE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>OFFRES EXEC DEV Programmes Certifiants</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>OFFRES EXEC DEV Programmes Certifiants CASA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>OFFRES EXEC DEV Programmes courts</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>OFFRES EXEC DEV programmes intra</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>OFFRES EXEC DEV Programmes longs</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>OFFRES EXEC DEV Programmes longs CASA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PROGRAMMES BACHELOR</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PROGRAMMES ENTREPRENEURS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PROGRAMMES MASTER</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PROGRAMMES MASTER CASA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PROGRAMMES MASTERES</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PROGRAMMES MASTERES CASA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PROGRAMMES MBA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SOLUTIONS DE RECRUTEMENT</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SPONSORING</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TAXE D&apos;APPRENTISSAGE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>true</sorted>
-        </picklist>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -870,28 +945,34 @@ IF(INCLUDES( Domaine_tudes__c ,&quot;Economie&quot;),&quot;Economie &quot;,&quot
         <fullName>Format__c</fullName>
         <externalId>false</externalId>
         <label>Format</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Court</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Parcours</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Certificat</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Diplome</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Court</fullName>
+                    <default>false</default>
+                    <label>Court</label>
+                </value>
+                <value>
+                    <fullName>Parcours</fullName>
+                    <default>false</default>
+                    <label>Parcours</label>
+                </value>
+                <value>
+                    <fullName>Certificat</fullName>
+                    <default>false</default>
+                    <label>Certificat</label>
+                </value>
+                <value>
+                    <fullName>Diplome</fullName>
+                    <default>false</default>
+                    <label>Diplome</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>ID_suiveur__c</fullName>
@@ -976,75 +1057,92 @@ Null)</formula>
         <fullName>Niveau_d_exp_rience__c</fullName>
         <externalId>false</externalId>
         <label>Niveau d&apos;expérience</label>
-        <picklist>
-            <picklistValues>
-                <fullName>0-2 ans</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>3-5 ans</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>6-10 ans</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>+ de 10 ans</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0-2 ans</fullName>
+                    <default>false</default>
+                    <label>0-2 ans</label>
+                </value>
+                <value>
+                    <fullName>3-5 ans</fullName>
+                    <default>false</default>
+                    <label>3-5 ans</label>
+                </value>
+                <value>
+                    <fullName>6-10 ans</fullName>
+                    <default>false</default>
+                    <label>6-10 ans</label>
+                </value>
+                <value>
+                    <fullName>+ de 10 ans</fullName>
+                    <default>false</default>
+                    <label>+ de 10 ans</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Niveau_d_tudes__c</fullName>
         <externalId>false</externalId>
         <label>Niveau d&apos;études</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Seconde</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Première</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Terminale</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bac</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bac + 1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bac + 2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bac + 3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bac + 4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bac + 5 et +</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Seconde</fullName>
+                    <default>false</default>
+                    <label>Seconde</label>
+                </value>
+                <value>
+                    <fullName>Première</fullName>
+                    <default>false</default>
+                    <label>Première</label>
+                </value>
+                <value>
+                    <fullName>Terminale</fullName>
+                    <default>false</default>
+                    <label>Terminale</label>
+                </value>
+                <value>
+                    <fullName>Bac</fullName>
+                    <default>false</default>
+                    <label>Bac</label>
+                </value>
+                <value>
+                    <fullName>Bac + 1</fullName>
+                    <default>false</default>
+                    <label>Bac + 1</label>
+                </value>
+                <value>
+                    <fullName>Bac + 2</fullName>
+                    <default>false</default>
+                    <label>Bac + 2</label>
+                </value>
+                <value>
+                    <fullName>Bac + 3</fullName>
+                    <default>false</default>
+                    <label>Bac + 3</label>
+                </value>
+                <value>
+                    <fullName>Bac + 4</fullName>
+                    <default>false</default>
+                    <label>Bac + 4</label>
+                </value>
+                <value>
+                    <fullName>Bac + 5 et +</fullName>
+                    <default>false</default>
+                    <label>Bac + 5 et +</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Niveau_xp_pro_num_ro__c</fullName>
@@ -1090,24 +1188,29 @@ Null)</formula>
         <fullName>Objectif__c</fullName>
         <externalId>false</externalId>
         <label>Objectif</label>
-        <picklist>
-            <picklistValues>
-                <fullName>PR-LO10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PR-LO20</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PR-LO30</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PR-LO10</fullName>
+                    <default>false</default>
+                    <label>PR-LO10</label>
+                </value>
+                <value>
+                    <fullName>PR-LO20</fullName>
+                    <default>false</default>
+                    <label>PR-LO20</label>
+                </value>
+                <value>
+                    <fullName>PR-LO30</fullName>
+                    <default>false</default>
+                    <label>PR-LO30</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Pack_la_carte__c</fullName>
@@ -1132,13 +1235,6 @@ Null)</formula>
     </fields>
     <fields>
         <fullName>QuantityUnitOfMeasure</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Chaque</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -1160,6 +1256,18 @@ Null)</formula>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TECH_External_Id__c</fullName>
+        <description>Champ technique qui contient la copie de l&apos;Id de l&apos;enregistrement 
+en production</description>
+        <externalId>true</externalId>
+        <label>TECH_External_Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>X18caracter__c</fullName>

@@ -51,41 +51,6 @@
     </fields>
     <fields>
         <fullName>TeamMemberRole</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Responsable de compte</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Gestionnaire de réseau</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Cadre délégué</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Chargé de la validation de piste</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Consultant avant-vente</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Directeur commercial</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Représentant des ventes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Suiveur Fund Raising</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <type>Picklist</type>
     </fields>
     <fields>
