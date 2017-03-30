@@ -4,26 +4,21 @@
     <standardValue>
         <fullName>Product Review</fullName>
         <default>false</default>
-        <label>Product Review</label>
     </standardValue>
     <standardValue>
         <fullName>Inquiry</fullName>
         <default>false</default>
-        <label>Inquiry</label>
     </standardValue>
     <standardValue>
         <fullName>Outreach</fullName>
         <default>false</default>
-        <label>Outreach</label>
     </standardValue>
     <standardValue>
         <fullName>Lead</fullName>
         <default>false</default>
-        <label>Lead</label>
     </standardValue>
     <standardValue>
         <fullName>Customer Case</fullName>
         <default>false</default>
-        <label>Customer Case</label>
     </standardValue>
 </StandardValueSet>

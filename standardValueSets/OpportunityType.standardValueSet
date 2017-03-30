@@ -4,11 +4,9 @@
     <standardValue>
         <fullName>Activité existante</fullName>
         <default>false</default>
-        <label>Activité existante</label>
     </standardValue>
     <standardValue>
         <fullName>Nouvelle activité</fullName>
         <default>false</default>
-        <label>Nouvelle activité</label>
     </standardValue>
 </StandardValueSet>

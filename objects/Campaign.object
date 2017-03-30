@@ -67,77 +67,62 @@
                 <value>
                     <fullName>Corporate</fullName>
                     <default>false</default>
-                    <label>Corporate</label>
                 </value>
                 <value>
                     <fullName>Formation Initiale</fullName>
                     <default>false</default>
-                    <label>Formation Initiale</label>
                 </value>
                 <value>
                     <fullName>Communication  Corporate</fullName>
                     <default>false</default>
-                    <label>Communication  Corporate</label>
                 </value>
                 <value>
                     <fullName>EMLYON FOREVER</fullName>
                     <default>false</default>
-                    <label>EMLYON FOREVER</label>
                 </value>
                 <value>
                     <fullName>Fondation</fullName>
                     <default>false</default>
-                    <label>Fondation</label>
                 </value>
                 <value>
                     <fullName>Projets Partenariats</fullName>
                     <default>false</default>
-                    <label>Projets Partenariats</label>
                 </value>
                 <value>
                     <fullName>Employabilité</fullName>
                     <default>false</default>
-                    <label>Employabilité</label>
                 </value>
                 <value>
                     <fullName>Taxe</fullName>
                     <default>false</default>
-                    <label>Taxe</label>
                 </value>
                 <value>
                     <fullName>MBA</fullName>
                     <default>false</default>
-                    <label>MBA</label>
                 </value>
                 <value>
                     <fullName>PGM</fullName>
                     <default>false</default>
-                    <label>PGM</label>
                 </value>
                 <value>
                     <fullName>AMP</fullName>
                     <default>false</default>
-                    <label>AMP</label>
                 </value>
                 <value>
                     <fullName>Executive Mastères</fullName>
                     <default>false</default>
-                    <label>Executive Mastères</label>
                 </value>
                 <value>
                     <fullName>DUA</fullName>
                     <default>false</default>
-                    <label>DUA</label>
                 </value>
                 <value>
                     <fullName>Prog. Courts</fullName>
                     <default>false</default>
-                    <label>Prog. Courts</label>
                 </value>
                 <value>
                     <fullName>Intra</fullName>
                     <default>false</default>
-                    <label>Intra</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -161,27 +146,22 @@
                 <value>
                     <fullName>Email</fullName>
                     <default>false</default>
-                    <label>Email</label>
                 </value>
                 <value>
                     <fullName>Courrier</fullName>
                     <default>false</default>
-                    <label>Courrier</label>
                 </value>
                 <value>
                     <fullName>Téléphone</fullName>
                     <default>false</default>
-                    <label>Téléphone</label>
                 </value>
                 <value>
                     <fullName>Réseaux sociaux</fullName>
                     <default>false</default>
-                    <label>Réseaux sociaux</label>
                 </value>
                 <value>
                     <fullName>SMS</fullName>
                     <default>false</default>
-                    <label>SMS</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -198,27 +178,22 @@
                 <value>
                     <fullName>Réunion d&apos;information</fullName>
                     <default>false</default>
-                    <label>Réunion d&apos;information</label>
                 </value>
                 <value>
                     <fullName>Invitation événements</fullName>
                     <default>false</default>
-                    <label>Invitation événements</label>
                 </value>
                 <value>
                     <fullName>Information programmes</fullName>
                     <default>false</default>
-                    <label>Information programmes</label>
                 </value>
                 <value>
                     <fullName>Information Corporate</fullName>
                     <default>false</default>
-                    <label>Information Corporate</label>
                 </value>
                 <value>
                     <fullName>Promotion commerciale</fullName>
                     <default>false</default>
-                    <label>Promotion commerciale</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -355,77 +330,62 @@
                 <value>
                     <fullName>1</fullName>
                     <default>false</default>
-                    <label>1</label>
                 </value>
                 <value>
                     <fullName>2</fullName>
                     <default>false</default>
-                    <label>2</label>
                 </value>
                 <value>
                     <fullName>3</fullName>
                     <default>false</default>
-                    <label>3</label>
                 </value>
                 <value>
                     <fullName>4</fullName>
                     <default>false</default>
-                    <label>4</label>
                 </value>
                 <value>
                     <fullName>5</fullName>
                     <default>false</default>
-                    <label>5</label>
                 </value>
                 <value>
                     <fullName>6</fullName>
                     <default>false</default>
-                    <label>6</label>
                 </value>
                 <value>
                     <fullName>7</fullName>
                     <default>false</default>
-                    <label>7</label>
                 </value>
                 <value>
                     <fullName>8</fullName>
                     <default>false</default>
-                    <label>8</label>
                 </value>
                 <value>
                     <fullName>9</fullName>
                     <default>false</default>
-                    <label>9</label>
                 </value>
                 <value>
                     <fullName>10</fullName>
                     <default>false</default>
-                    <label>10</label>
                 </value>
                 <value>
                     <fullName>11</fullName>
                     <default>false</default>
-                    <label>11</label>
                 </value>
                 <value>
                     <fullName>12</fullName>
                     <default>false</default>
-                    <label>12</label>
                 </value>
                 <value>
                     <fullName>13</fullName>
                     <default>false</default>
-                    <label>13</label>
                 </value>
                 <value>
                     <fullName>14</fullName>
                     <default>false</default>
-                    <label>14</label>
                 </value>
                 <value>
                     <fullName>15</fullName>
                     <default>false</default>
-                    <label>15</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

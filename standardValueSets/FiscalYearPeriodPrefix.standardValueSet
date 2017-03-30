@@ -4,21 +4,17 @@
     <standardValue>
         <fullName>Période</fullName>
         <default>true</default>
-        <label>Période</label>
     </standardValue>
     <standardValue>
         <fullName>EX</fullName>
         <default>false</default>
-        <label>EX</label>
     </standardValue>
     <standardValue>
         <fullName>P</fullName>
         <default>false</default>
-        <label>P</label>
     </standardValue>
     <standardValue>
         <fullName>Mois</fullName>
         <default>false</default>
-        <label>Mois</label>
     </standardValue>
 </StandardValueSet>

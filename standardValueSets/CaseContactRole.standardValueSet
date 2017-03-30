@@ -4,21 +4,17 @@
     <standardValue>
         <fullName>Contact technique</fullName>
         <default>false</default>
-        <label>Contact technique</label>
     </standardValue>
     <standardValue>
         <fullName>Contact professionnel</fullName>
         <default>false</default>
-        <label>Contact professionnel</label>
     </standardValue>
     <standardValue>
         <fullName>Décisionnaire</fullName>
         <default>false</default>
-        <label>Décisionnaire</label>
     </standardValue>
     <standardValue>
         <fullName>Autre</fullName>
         <default>false</default>
-        <label>Autre</label>
     </standardValue>
 </StandardValueSet>

@@ -166,47 +166,38 @@
                 <value>
                     <fullName>SF-EF10</fullName>
                     <default>false</default>
-                    <label>SF-EF10</label>
                 </value>
                 <value>
                     <fullName>SF-EF20</fullName>
                     <default>false</default>
-                    <label>SF-EF20</label>
                 </value>
                 <value>
                     <fullName>SF-EF30</fullName>
                     <default>false</default>
-                    <label>SF-EF30</label>
                 </value>
                 <value>
                     <fullName>SF-EF40</fullName>
                     <default>false</default>
-                    <label>SF-EF40</label>
                 </value>
                 <value>
                     <fullName>SF-EF50</fullName>
                     <default>false</default>
-                    <label>SF-EF50</label>
                 </value>
                 <value>
                     <fullName>SF-EF60</fullName>
                     <default>false</default>
-                    <label>SF-EF60</label>
                 </value>
                 <value>
                     <fullName>SF-EF70</fullName>
                     <default>false</default>
-                    <label>SF-EF70</label>
                 </value>
                 <value>
                     <fullName>SF-EF80</fullName>
                     <default>false</default>
-                    <label>SF-EF80</label>
                 </value>
                 <value>
                     <fullName>SF-EF90</fullName>
                     <default>false</default>
-                    <label>SF-EF90</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -247,32 +238,26 @@
                 <value>
                     <fullName>SF-LS10</fullName>
                     <default>false</default>
-                    <label>SF-LS10</label>
                 </value>
                 <value>
                     <fullName>SF-LS20</fullName>
                     <default>false</default>
-                    <label>SF-LS20</label>
                 </value>
                 <value>
                     <fullName>SF-LS30</fullName>
                     <default>false</default>
-                    <label>SF-LS30</label>
                 </value>
                 <value>
                     <fullName>SF-LS40</fullName>
                     <default>false</default>
-                    <label>SF-LS40</label>
                 </value>
                 <value>
                     <fullName>SF-LS50</fullName>
                     <default>false</default>
-                    <label>SF-LS50</label>
                 </value>
                 <value>
                     <fullName>SF-LS60</fullName>
                     <default>false</default>
-                    <label>SF-LS60</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -291,17 +276,14 @@
                 <value>
                     <fullName>SF-MA10</fullName>
                     <default>false</default>
-                    <label>SF-MA10</label>
                 </value>
                 <value>
                     <fullName>SF-MA20</fullName>
                     <default>false</default>
-                    <label>SF-MA20</label>
                 </value>
                 <value>
                     <fullName>SF-MA30</fullName>
                     <default>false</default>
-                    <label>SF-MA30</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -423,22 +405,18 @@
                 <value>
                     <fullName>SF-SS10</fullName>
                     <default>false</default>
-                    <label>SF-SS10</label>
                 </value>
                 <value>
                     <fullName>SF-SS20</fullName>
                     <default>false</default>
-                    <label>SF-SS20</label>
                 </value>
                 <value>
                     <fullName>SF-SS30</fullName>
                     <default>false</default>
-                    <label>SF-SS30</label>
                 </value>
                 <value>
                     <fullName>SF-SS40</fullName>
                     <default>false</default>
-                    <label>SF-SS40</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1071,5 +1049,4 @@ en production</description>
         <searchResultsAdditionalFields>Lieu__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

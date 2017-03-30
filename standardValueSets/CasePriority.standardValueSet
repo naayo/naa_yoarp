@@ -4,16 +4,13 @@
     <standardValue>
         <fullName>Élevé</fullName>
         <default>false</default>
-        <label>Élevé</label>
     </standardValue>
     <standardValue>
         <fullName>Moyen</fullName>
         <default>true</default>
-        <label>Moyen</label>
     </standardValue>
     <standardValue>
         <fullName>Faible</fullName>
         <default>false</default>
-        <label>Faible</label>
     </standardValue>
 </StandardValueSet>

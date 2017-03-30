@@ -4,16 +4,13 @@
     <standardValue>
         <fullName>Chaud</fullName>
         <default>false</default>
-        <label>Chaud</label>
     </standardValue>
     <standardValue>
         <fullName>Tiède</fullName>
         <default>false</default>
-        <label>Tiède</label>
     </standardValue>
     <standardValue>
         <fullName>Froid</fullName>
         <default>false</default>
-        <label>Froid</label>
     </standardValue>
 </StandardValueSet>

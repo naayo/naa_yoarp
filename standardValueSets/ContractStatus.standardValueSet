@@ -4,16 +4,13 @@
     <standardValue>
         <fullName>En cours d&apos;approbation</fullName>
         <default>false</default>
-        <label>En cours d&apos;approbation</label>
     </standardValue>
     <standardValue>
         <fullName>Activé</fullName>
         <default>false</default>
-        <label>Activé</label>
     </standardValue>
     <standardValue>
         <fullName>Version préliminaire</fullName>
         <default>false</default>
-        <label>Version préliminaire</label>
     </standardValue>
 </StandardValueSet>

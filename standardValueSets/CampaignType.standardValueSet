@@ -4,46 +4,37 @@
     <standardValue>
         <fullName>E-mail</fullName>
         <default>false</default>
-        <label>E-mail</label>
     </standardValue>
     <standardValue>
         <fullName>Télémarketing</fullName>
         <default>false</default>
-        <label>Télémarketing</label>
     </standardValue>
     <standardValue>
         <fullName>Bandeaux publicitaires</fullName>
         <default>false</default>
-        <label>Bandeaux publicitaires</label>
     </standardValue>
     <standardValue>
         <fullName>Séminaire/Conférence</fullName>
         <default>false</default>
-        <label>Séminaire/Conférence</label>
     </standardValue>
     <standardValue>
         <fullName>Relations publiques</fullName>
         <default>false</default>
-        <label>Relations publiques</label>
     </standardValue>
     <standardValue>
         <fullName>Partenaires</fullName>
         <default>false</default>
-        <label>Partenaires</label>
     </standardValue>
     <standardValue>
         <fullName>Programme de référence</fullName>
         <default>false</default>
-        <label>Programme de référence</label>
     </standardValue>
     <standardValue>
         <fullName>Autre</fullName>
         <default>false</default>
-        <label>Autre</label>
     </standardValue>
     <standardValue>
         <fullName>Publicité</fullName>
         <default>false</default>
-        <label>Publicité</label>
     </standardValue>
 </StandardValueSet>

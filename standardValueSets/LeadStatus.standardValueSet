@@ -4,31 +4,26 @@
     <standardValue>
         <fullName>1er contact</fullName>
         <default>false</default>
-        <label>1er contact</label>
         <converted>false</converted>
     </standardValue>
     <standardValue>
         <fullName>Abandon</fullName>
         <default>false</default>
-        <label>Abandon</label>
         <converted>false</converted>
     </standardValue>
     <standardValue>
         <fullName>Qualifié</fullName>
         <default>false</default>
-        <label>Qualifié</label>
         <converted>true</converted>
     </standardValue>
     <standardValue>
         <fullName>Social suspect</fullName>
         <default>false</default>
-        <label>Social suspect</label>
         <converted>false</converted>
     </standardValue>
     <standardValue>
         <fullName>Suspect</fullName>
         <default>true</default>
-        <label>Suspect</label>
         <converted>false</converted>
     </standardValue>
 </StandardValueSet>

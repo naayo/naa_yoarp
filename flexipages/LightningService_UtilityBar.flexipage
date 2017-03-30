@@ -12,8 +12,6 @@
         <type>Region</type>
     </flexiPageRegions>
     <masterLabel>Barre d&apos;utilitaires de l&apos;application Service Console</masterLabel>
-    <template>
-        <name>one:utilityBarTemplateDesktop</name>
-    </template>
+    <pageTemplate>one:utilityBarTemplateDesktop</pageTemplate>
     <type>UtilityBar</type>
 </FlexiPage>

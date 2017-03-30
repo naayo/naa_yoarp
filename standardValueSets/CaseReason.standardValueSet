@@ -4,31 +4,26 @@
     <standardValue>
         <fullName>L&apos;utilisateur n&apos;a pas participé à la formation</fullName>
         <default>false</default>
-        <label>L&apos;utilisateur n&apos;a pas participé à la formation</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
         <fullName>Fonctionnalité complexe</fullName>
         <default>false</default>
-        <label>Fonctionnalité complexe</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
         <fullName>Problème existant</fullName>
         <default>false</default>
-        <label>Problème existant</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
         <fullName>Instructions pas claires</fullName>
         <default>false</default>
-        <label>Instructions pas claires</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
         <fullName>Nouveau problème</fullName>
         <default>false</default>
-        <label>Nouveau problème</label>
         <cssExposed>false</cssExposed>
     </standardValue>
 </StandardValueSet>

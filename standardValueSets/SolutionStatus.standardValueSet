@@ -4,19 +4,16 @@
     <standardValue>
         <fullName>Version préliminaire</fullName>
         <default>true</default>
-        <label>Version préliminaire</label>
         <reviewed>false</reviewed>
     </standardValue>
     <standardValue>
         <fullName>Révisé</fullName>
         <default>false</default>
-        <label>Révisé</label>
         <reviewed>true</reviewed>
     </standardValue>
     <standardValue>
         <fullName>En double</fullName>
         <default>false</default>
-        <label>En double</label>
         <reviewed>false</reviewed>
     </standardValue>
 </StandardValueSet>

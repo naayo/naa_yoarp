@@ -4,26 +4,21 @@
     <standardValue>
         <fullName>Appel</fullName>
         <default>false</default>
-        <label>Appel</label>
     </standardValue>
     <standardValue>
         <fullName>Réunion</fullName>
         <default>false</default>
-        <label>Réunion</label>
     </standardValue>
     <standardValue>
         <fullName>Autre</fullName>
         <default>false</default>
-        <label>Autre</label>
     </standardValue>
     <standardValue>
         <fullName>Relance téléphonique</fullName>
         <default>false</default>
-        <label>Relance téléphonique</label>
     </standardValue>
     <standardValue>
         <fullName>Mail</fullName>
         <default>false</default>
-        <label>Mail</label>
     </standardValue>
 </StandardValueSet>

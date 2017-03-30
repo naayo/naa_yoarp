@@ -4,25 +4,21 @@
     <standardValue>
         <fullName>En attente</fullName>
         <default>false</default>
-        <label>En attente</label>
         <closed>false</closed>
     </standardValue>
     <standardValue>
         <fullName>Hiérarchisé</fullName>
         <default>false</default>
-        <label>Hiérarchisé</label>
         <closed>false</closed>
     </standardValue>
     <standardValue>
         <fullName>Clôturé</fullName>
         <default>false</default>
-        <label>Clôturé</label>
         <closed>true</closed>
     </standardValue>
     <standardValue>
         <fullName>Nouveau</fullName>
         <default>true</default>
-        <label>Nouveau</label>
         <closed>false</closed>
     </standardValue>
 </StandardValueSet>

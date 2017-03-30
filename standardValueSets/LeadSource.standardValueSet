@@ -4,41 +4,33 @@
     <standardValue>
         <fullName>Formation continue courte</fullName>
         <default>false</default>
-        <label>Formation continue courte</label>
     </standardValue>
     <standardValue>
         <fullName>Formation continue indéterminée</fullName>
         <default>false</default>
-        <label>Formation continue indéterminée</label>
     </standardValue>
     <standardValue>
         <fullName>Formation continue longue</fullName>
         <default>false</default>
-        <label>Formation continue longue</label>
     </standardValue>
     <standardValue>
         <fullName>Formation initiale BBA</fullName>
         <default>false</default>
-        <label>Formation initiale BBA</label>
     </standardValue>
     <standardValue>
         <fullName>Formation initiale masters</fullName>
         <default>false</default>
-        <label>Formation initiale masters</label>
     </standardValue>
     <standardValue>
         <fullName>Formation Intra-entreprise</fullName>
         <default>false</default>
-        <label>Formation Intra-entreprise</label>
     </standardValue>
     <standardValue>
         <fullName>Indéterminé</fullName>
         <default>false</default>
-        <label>Indéterminé</label>
     </standardValue>
     <standardValue>
         <fullName>MBA</fullName>
         <default>false</default>
-        <label>MBA</label>
     </standardValue>
 </StandardValueSet>

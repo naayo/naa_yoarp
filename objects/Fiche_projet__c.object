@@ -216,97 +216,78 @@ Unité : 0,1</inlineHelpText>
                 <value>
                     <fullName>Activité</fullName>
                     <default>false</default>
-                    <label>Activité</label>
                 </value>
                 <value>
                     <fullName>Campagne</fullName>
                     <default>false</default>
-                    <label>Campagne</label>
                 </value>
                 <value>
                     <fullName>Chantier</fullName>
                     <default>false</default>
-                    <label>Chantier</label>
                 </value>
                 <value>
                     <fullName>Configurateur</fullName>
                     <default>false</default>
-                    <label>Configurateur</label>
                 </value>
                 <value>
                     <fullName>Contrat</fullName>
                     <default>false</default>
-                    <label>Contrat</label>
                 </value>
                 <value>
                     <fullName>Courrier</fullName>
                     <default>false</default>
-                    <label>Courrier</label>
                 </value>
                 <value>
                     <fullName>CTI</fullName>
                     <default>false</default>
-                    <label>CTI</label>
                 </value>
                 <value>
                     <fullName>Devis</fullName>
                     <default>false</default>
-                    <label>Devis</label>
                 </value>
                 <value>
                     <fullName>Formation</fullName>
                     <default>false</default>
-                    <label>Formation</label>
                 </value>
                 <value>
                     <fullName>Foyer</fullName>
                     <default>false</default>
-                    <label>Foyer</label>
                 </value>
                 <value>
                     <fullName>Interface</fullName>
                     <default>false</default>
-                    <label>Interface</label>
                 </value>
                 <value>
                     <fullName>Lead</fullName>
                     <default>false</default>
-                    <label>Lead</label>
                 </value>
                 <value>
                     <fullName>Migration</fullName>
                     <default>false</default>
-                    <label>Migration</label>
                 </value>
                 <value>
                     <fullName>Opération</fullName>
                     <default>false</default>
-                    <label>Opération</label>
                 </value>
                 <value>
                     <fullName>Profils</fullName>
                     <default>false</default>
-                    <label>Profils</label>
                 </value>
                 <value>
                     <fullName>Projet</fullName>
                     <default>false</default>
-                    <label>Projet</label>
                 </value>
                 <value>
                     <fullName>Reporting</fullName>
                     <default>false</default>
-                    <label>Reporting</label>
                 </value>
                 <value>
                     <fullName>Requête</fullName>
                     <default>false</default>
-                    <label>Requête</label>
                 </value>
                 <value>
                     <fullName>Sécurité</fullName>
                     <default>false</default>
-                    <label>Sécurité</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -414,27 +395,22 @@ Unité : 0,1</inlineHelpText>
                 <value>
                     <fullName>Lot 1</fullName>
                     <default>false</default>
-                    <label>Lot 1</label>
                 </value>
                 <value>
                     <fullName>Lot 2</fullName>
                     <default>false</default>
-                    <label>Lot 2</label>
                 </value>
                 <value>
                     <fullName>Lot 3</fullName>
                     <default>false</default>
-                    <label>Lot 3</label>
                 </value>
                 <value>
                     <fullName>Lot 4</fullName>
                     <default>false</default>
-                    <label>Lot 4</label>
                 </value>
                 <value>
                     <fullName>Lot 5</fullName>
                     <default>false</default>
-                    <label>Lot 5</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -475,27 +451,22 @@ Unité : 0,1</inlineHelpText>
                 <value>
                     <fullName>1</fullName>
                     <default>false</default>
-                    <label>1</label>
                 </value>
                 <value>
                     <fullName>2</fullName>
                     <default>false</default>
-                    <label>2</label>
                 </value>
                 <value>
                     <fullName>3</fullName>
                     <default>false</default>
-                    <label>3</label>
                 </value>
                 <value>
                     <fullName>4</fullName>
                     <default>false</default>
-                    <label>4</label>
                 </value>
                 <value>
                     <fullName>5</fullName>
                     <default>false</default>
-                    <label>5</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -526,17 +497,14 @@ Unité : 0,1</inlineHelpText>
                 <value>
                     <fullName>Profil 1</fullName>
                     <default>false</default>
-                    <label>Profil 1</label>
                 </value>
                 <value>
                     <fullName>Profil 2</fullName>
                     <default>false</default>
-                    <label>Profil 2</label>
                 </value>
                 <value>
                     <fullName>Profil 3</fullName>
                     <default>false</default>
-                    <label>Profil 3</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -591,12 +559,10 @@ NE PAS OUBLIER DE METTRE EN PLACE LES FILES D&apos;ATTENTE</inlineHelpText>
                 <value>
                     <fullName>Client</fullName>
                     <default>false</default>
-                    <label>Client</label>
                 </value>
                 <value>
                     <fullName>Kerensen</fullName>
                     <default>false</default>
-                    <label>Kerensen</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -673,42 +639,34 @@ Abandonné : la fiche est annulée</inlineHelpText>
                 <value>
                     <fullName>Nouveau</fullName>
                     <default>true</default>
-                    <label>Nouveau</label>
                 </value>
                 <value>
                     <fullName>A préciser</fullName>
                     <default>false</default>
-                    <label>A préciser</label>
                 </value>
                 <value>
                     <fullName>A arbitrer</fullName>
                     <default>false</default>
-                    <label>A arbitrer</label>
                 </value>
                 <value>
                     <fullName>En cours</fullName>
                     <default>false</default>
-                    <label>En cours</label>
                 </value>
                 <value>
                     <fullName>Réalisé</fullName>
                     <default>false</default>
-                    <label>Réalisé</label>
                 </value>
                 <value>
                     <fullName>Fermé</fullName>
                     <default>false</default>
-                    <label>Fermé</label>
                 </value>
                 <value>
                     <fullName>Abandonné</fullName>
                     <default>false</default>
-                    <label>Abandonné</label>
                 </value>
                 <value>
                     <fullName>Validée EMLYON</fullName>
                     <default>false</default>
-                    <label>Validée EMLYON</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -728,17 +686,14 @@ Abandonné : la fiche est annulée</inlineHelpText>
                 <value>
                     <fullName>N/A</fullName>
                     <default>false</default>
-                    <label>N/A</label>
                 </value>
                 <value>
                     <fullName>A spécifier</fullName>
                     <default>false</default>
-                    <label>A spécifier</label>
                 </value>
                 <value>
                     <fullName>Spécifications à jour</fullName>
                     <default>false</default>
-                    <label>Spécifications à jour</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -768,27 +723,22 @@ Abandonné : la fiche est annulée</inlineHelpText>
                 <value>
                     <fullName>Demande</fullName>
                     <default>false</default>
-                    <label>Demande</label>
                 </value>
                 <value>
                     <fullName>Action</fullName>
                     <default>false</default>
-                    <label>Action</label>
                 </value>
                 <value>
                     <fullName>Anomalie</fullName>
                     <default>false</default>
-                    <label>Anomalie</label>
                 </value>
                 <value>
                     <fullName>Evolution</fullName>
                     <default>false</default>
-                    <label>Evolution</label>
                 </value>
                 <value>
                     <fullName>Version</fullName>
                     <default>false</default>
-                    <label>Version</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1923,5 +1873,4 @@ TEXT( Responsable__c ) = &quot;Kerensen&quot; &amp;&amp;
         <errorDisplayField>Pas_de_modification__c</errorDisplayField>
         <errorMessage>Veuillez renseigner l&apos;un des 2 champs &quot;Pas de modification&quot; ou &quot;Liste des modifications&quot;</errorMessage>
     </validationRules>
-    <visibility>Public</visibility>
 </CustomObject>

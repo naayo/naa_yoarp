@@ -4,21 +4,17 @@
     <standardValue>
         <fullName>Resolved</fullName>
         <default>false</default>
-        <label>Resolved</label>
     </standardValue>
     <standardValue>
         <fullName>Submitted</fullName>
         <default>false</default>
-        <label>Submitted</label>
     </standardValue>
     <standardValue>
         <fullName>Reviewed</fullName>
         <default>false</default>
-        <label>Reviewed</label>
     </standardValue>
     <standardValue>
         <fullName>Commented</fullName>
         <default>false</default>
-        <label>Commented</label>
     </standardValue>
 </StandardValueSet>

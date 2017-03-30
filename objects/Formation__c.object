@@ -124,12 +124,10 @@
                 <value>
                     <fullName>Antérieure</fullName>
                     <default>false</default>
-                    <label>Antérieure</label>
                 </value>
                 <value>
                     <fullName>Postérieure</fullName>
                     <default>false</default>
-                    <label>Postérieure</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -144,5 +142,4 @@
     <pluralLabel>Formations</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

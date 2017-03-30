@@ -112,242 +112,194 @@
                 <value>
                     <fullName>Plaque collective</fullName>
                     <default>false</default>
-                    <label>Plaque collective</label>
                 </value>
                 <value>
                     <fullName>Plaque 0,1 x 0,1 m Hall of Fame</fullName>
                     <default>false</default>
-                    <label>Plaque 0,1 x 0,1 m Hall of Fame</label>
                 </value>
                 <value>
                     <fullName>Plaque 0,2 x 0,2 m Hall of Fame</fullName>
                     <default>false</default>
-                    <label>Plaque 0,2 x 0,2 m Hall of Fame</label>
                 </value>
                 <value>
                     <fullName>Plaque 0,3 x 0,2 m Hall of Fame</fullName>
                     <default>false</default>
-                    <label>Plaque 0,3 x 0,2 m Hall of Fame</label>
                 </value>
                 <value>
                     <fullName>Plaque 0,5 x 0,2 m Hall of Fame</fullName>
                     <default>false</default>
-                    <label>Plaque 0,5 x 0,2 m Hall of Fame</label>
                 </value>
                 <value>
                     <fullName>Plaque 0,5 x 0,5 m Hall of Fame</fullName>
                     <default>false</default>
-                    <label>Plaque 0,5 x 0,5 m Hall of Fame</label>
                 </value>
                 <value>
                     <fullName>Panneau 1 m x 1 m Hall of Fame</fullName>
                     <default>false</default>
-                    <label>Panneau 1 m x 1 m Hall of Fame</label>
                 </value>
                 <value>
                     <fullName>1 ouvrage dédicacé d’un professeur EMLYON</fullName>
                     <default>false</default>
-                    <label>1 ouvrage dédicacé d’un professeur EMLYON</label>
                 </value>
                 <value>
                     <fullName>2 ouvrages dédicacés de professeurs EMLYON</fullName>
                     <default>false</default>
-                    <label>2 ouvrages dédicacés de professeurs EMLYON</label>
                 </value>
                 <value>
                     <fullName>3 ouvrages dédicacés de professeurs EMLYON</fullName>
                     <default>false</default>
-                    <label>3 ouvrages dédicacés de professeurs EMLYON</label>
                 </value>
                 <value>
                     <fullName>5 ouvrages dédicacés de professeurs EMLYON</fullName>
                     <default>false</default>
-                    <label>5 ouvrages dédicacés de professeurs EMLYON</label>
                 </value>
                 <value>
                     <fullName>Tous ouvrages publiés</fullName>
                     <default>false</default>
-                    <label>Tous ouvrages publiés</label>
                 </value>
                 <value>
                     <fullName>Gratuité 1 Soirée Performance</fullName>
                     <default>false</default>
-                    <label>Gratuité 1 Soirée Performance</label>
                 </value>
                 <value>
                     <fullName>Gratuité 2 Soirées Performance</fullName>
                     <default>false</default>
-                    <label>Gratuité 2 Soirées Performance</label>
                 </value>
                 <value>
                     <fullName>Gratuité Soirées Performance</fullName>
                     <default>false</default>
-                    <label>Gratuité Soirées Performance</label>
                 </value>
                 <value>
                     <fullName>Adhésion à vie EMLYON FOREVER</fullName>
                     <default>false</default>
-                    <label>Adhésion à vie EMLYON FOREVER</label>
                 </value>
                 <value>
                     <fullName>Prise de parole à 1 remise des annuaires EMLYON FOREVER</fullName>
                     <default>false</default>
-                    <label>Prise de parole à 1 remise des annuaires EMLYON FOREVER</label>
                 </value>
                 <value>
                     <fullName>Prise de parole à la cérémonie de remise des diplômes</fullName>
                     <default>false</default>
-                    <label>Prise de parole à la cérémonie de remise des diplômes</label>
                 </value>
                 <value>
                     <fullName>Gratuité Forum</fullName>
                     <default>false</default>
-                    <label>Gratuité Forum</label>
                 </value>
                 <value>
                     <fullName>Citation sur toutes les publications</fullName>
                     <default>false</default>
-                    <label>Citation sur toutes les publications</label>
                 </value>
                 <value>
                     <fullName>Membre du jury Meilleur projet Etudiant, meilleur travail de recherche</fullName>
                     <default>false</default>
-                    <label>Membre du jury Meilleur projet Etudiant, meilleur travail de recherche</label>
                 </value>
                 <value>
                     <fullName>1 journée de recrutement par an</fullName>
                     <default>false</default>
-                    <label>1 journée de recrutement par an</label>
                 </value>
                 <value>
                     <fullName>Membre Internationnal Advisory Board</fullName>
                     <default>false</default>
-                    <label>Membre Internationnal Advisory Board</label>
                 </value>
                 <value>
                     <fullName>Citations sur Publications Corporate</fullName>
                     <default>false</default>
-                    <label>Citations sur Publications Corporate</label>
                 </value>
                 <value>
                     <fullName>Accès VIP gratuit aux manifestations EMLYON</fullName>
                     <default>false</default>
-                    <label>Accès VIP gratuit aux manifestations EMLYON</label>
                 </value>
                 <value>
                     <fullName>2 journées par an de recrutement et de présentation</fullName>
                     <default>false</default>
-                    <label>2 journées par an de recrutement et de présentation</label>
                 </value>
                 <value>
                     <fullName>Mention du nom sur le mur des donateurs</fullName>
                     <default>false</default>
-                    <label>Mention du nom sur le mur des donateurs</label>
                 </value>
                 <value>
                     <fullName>Mention du nom sur le site de la Fondation</fullName>
                     <default>false</default>
-                    <label>Mention du nom sur le site de la Fondation</label>
                 </value>
                 <value>
                     <fullName>Certificat de donateur</fullName>
                     <default>false</default>
-                    <label>Certificat de donateur</label>
                 </value>
                 <value>
                     <fullName>Envoi du rapport annuel</fullName>
                     <default>false</default>
-                    <label>Envoi du rapport annuel</label>
                 </value>
                 <value>
                     <fullName>Naming fauteuil amphi campus de Lyon ou Paris</fullName>
                     <default>false</default>
-                    <label>Naming fauteuil amphi campus de Lyon ou Paris</label>
                 </value>
                 <value>
                     <fullName>Accès salons d’échange &amp; espaces ouverts tous campus</fullName>
                     <default>false</default>
-                    <label>Accès salons d’échange &amp; espaces ouverts tous campus</label>
                 </value>
                 <value>
                     <fullName>Accès e-library aux Learning Hubs</fullName>
                     <default>false</default>
-                    <label>Accès e-library aux Learning Hubs</label>
                 </value>
                 <value>
                     <fullName>Invitation VIP soirées Alumni</fullName>
                     <default>false</default>
-                    <label>Invitation VIP soirées Alumni</label>
                 </value>
                 <value>
                     <fullName>Accès à 1 Brain Bubble &amp; son équipement</fullName>
                     <default>false</default>
-                    <label>Accès à 1 Brain Bubble &amp; son équipement</label>
                 </value>
                 <value>
                     <fullName>Formation individualisée à la veille/Intelligence Economique</fullName>
                     <default>false</default>
-                    <label>Formation individualisée à la veille/Intelligence Economique</label>
                 </value>
                 <value>
                     <fullName>Trophée Donateur</fullName>
                     <default>false</default>
-                    <label>Trophée Donateur</label>
                 </value>
                 <value>
                     <fullName>Trophée nominatif Grand Donateur</fullName>
                     <default>false</default>
-                    <label>Trophée nominatif Grand Donateur</label>
                 </value>
                 <value>
                     <fullName>Portrait du donateur écrit/vidéo sur les sites EMLYON</fullName>
                     <default>false</default>
-                    <label>Portrait du donateur écrit/vidéo sur les sites EMLYON</label>
                 </value>
                 <value>
                     <fullName>Naming d’un espace de travail collaboratif pendant 2 ans</fullName>
                     <default>false</default>
-                    <label>Naming d’un espace de travail collaboratif pendant 2 ans</label>
                 </value>
                 <value>
                     <fullName>Mention spéciale dans l’annuaire</fullName>
                     <default>false</default>
-                    <label>Mention spéciale dans l’annuaire</label>
                 </value>
                 <value>
                     <fullName>Organisation d’une soirée « back to school » (1 édition)</fullName>
                     <default>false</default>
-                    <label>Organisation d’une soirée « back to school » (1 édition)</label>
                 </value>
                 <value>
                     <fullName>Invitation à une réunion annuelle de présentation des orientations stratégiques d’EMLYON</fullName>
                     <default>false</default>
-                    <label>Invitation à une réunion annuelle de présentation des orientations stratégiques d’EMLYON</label>
                 </value>
                 <value>
                     <fullName>Trophée nominatif Grand Mécène</fullName>
                     <default>false</default>
-                    <label>Trophée nominatif Grand Mécène</label>
                 </value>
                 <value>
                     <fullName>Possibilité de donner son nom à une salle de cours sur l’un des campus</fullName>
                     <default>false</default>
-                    <label>Possibilité de donner son nom à une salle de cours sur l’un des campus</label>
                 </value>
                 <value>
                     <fullName>Possibilité de donner son nom à un amphithéâtre (à partir de 200K€)</fullName>
                     <default>false</default>
-                    <label>Possibilité de donner son nom à un amphithéâtre (à partir de 200K€)</label>
                 </value>
                 <value>
                     <fullName>Projet sur mesure à développer en fonction du souhait du donateur</fullName>
                     <default>false</default>
-                    <label>Projet sur mesure à développer en fonction du souhait du donateur</label>
                 </value>
                 <value>
                     <fullName>Accès à Scholarvox</fullName>
                     <default>false</default>
-                    <label>Accès à Scholarvox</label>
                 </value>
             </valueSetDefinition>
             <valueSettings>
@@ -651,87 +603,70 @@
                 <value>
                     <fullName>B2C_Niveau Zéro</fullName>
                     <default>false</default>
-                    <label>B2C_Niveau Zéro</label>
                 </value>
                 <value>
                     <fullName>B2B_Mont Blanc</fullName>
                     <default>false</default>
-                    <label>B2B_Mont Blanc</label>
                 </value>
                 <value>
                     <fullName>B2C_Mont Blanc</fullName>
                     <default>false</default>
-                    <label>B2C_Mont Blanc</label>
                 </value>
                 <value>
                     <fullName>B2B_Kilimandjaro</fullName>
                     <default>false</default>
-                    <label>B2B_Kilimandjaro</label>
                 </value>
                 <value>
                     <fullName>B2C_Kilimandjaro</fullName>
                     <default>false</default>
-                    <label>B2C_Kilimandjaro</label>
                 </value>
                 <value>
                     <fullName>B2B_McKinley</fullName>
                     <default>false</default>
-                    <label>B2B_McKinley</label>
                 </value>
                 <value>
                     <fullName>B2C_McKinley</fullName>
                     <default>false</default>
-                    <label>B2C_McKinley</label>
                 </value>
                 <value>
                     <fullName>B2B_Annapura</fullName>
                     <default>false</default>
-                    <label>B2B_Annapura</label>
                 </value>
                 <value>
                     <fullName>B2C_Annapura</fullName>
                     <default>false</default>
-                    <label>B2C_Annapura</label>
                 </value>
                 <value>
                     <fullName>B2B_K2</fullName>
                     <default>false</default>
-                    <label>B2B_K2</label>
                 </value>
                 <value>
                     <fullName>B2C_K2</fullName>
                     <default>false</default>
-                    <label>B2C_K2</label>
                 </value>
                 <value>
                     <fullName>B2B_Everest</fullName>
                     <default>false</default>
-                    <label>B2B_Everest</label>
                 </value>
                 <value>
                     <fullName>B2C_Everest</fullName>
                     <default>false</default>
-                    <label>B2C_Everest</label>
                 </value>
                 <value>
                     <fullName>B2B_Cercle du Président</fullName>
                     <default>false</default>
-                    <label>B2B_Cercle du Président</label>
                 </value>
                 <value>
                     <fullName>B2C_Cercle du Président</fullName>
                     <default>false</default>
-                    <label>B2C_Cercle du Président</label>
                 </value>
                 <value>
                     <fullName>B2C_Contrepartie sur-mesure</fullName>
                     <default>false</default>
-                    <label>B2C_Contrepartie sur-mesure</label>
                 </value>
                 <value>
                     <fullName>B2B_Contrepartie sur-mesure</fullName>
                     <default>false</default>
-                    <label>B2B_Contrepartie sur-mesure</label>
                 </value>
             </valueSetDefinition>
             <valueSettings>
@@ -818,12 +753,10 @@
                 <value>
                     <fullName>B2B</fullName>
                     <default>false</default>
-                    <label>B2B</label>
                 </value>
                 <value>
                     <fullName>B2C</fullName>
                     <default>false</default>
-                    <label>B2C</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -839,5 +772,4 @@
     <pluralLabel>Contreparties</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

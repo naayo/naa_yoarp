@@ -112,5 +112,4 @@ en production</description>
     <pluralLabel>Titre</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

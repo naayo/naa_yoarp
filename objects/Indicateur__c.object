@@ -79,107 +79,86 @@
                 <value>
                     <fullName>2010</fullName>
                     <default>false</default>
-                    <label>2010</label>
                 </value>
                 <value>
                     <fullName>2011</fullName>
                     <default>false</default>
-                    <label>2011</label>
                 </value>
                 <value>
                     <fullName>2012</fullName>
                     <default>false</default>
-                    <label>2012</label>
                 </value>
                 <value>
                     <fullName>2013</fullName>
                     <default>false</default>
-                    <label>2013</label>
                 </value>
                 <value>
                     <fullName>2014</fullName>
                     <default>false</default>
-                    <label>2014</label>
                 </value>
                 <value>
                     <fullName>2015</fullName>
                     <default>false</default>
-                    <label>2015</label>
                 </value>
                 <value>
                     <fullName>2016</fullName>
                     <default>false</default>
-                    <label>2016</label>
                 </value>
                 <value>
                     <fullName>2017</fullName>
                     <default>false</default>
-                    <label>2017</label>
                 </value>
                 <value>
                     <fullName>2018</fullName>
                     <default>false</default>
-                    <label>2018</label>
                 </value>
                 <value>
                     <fullName>2019</fullName>
                     <default>false</default>
-                    <label>2019</label>
                 </value>
                 <value>
                     <fullName>2020</fullName>
                     <default>false</default>
-                    <label>2020</label>
                 </value>
                 <value>
                     <fullName>2021</fullName>
                     <default>false</default>
-                    <label>2021</label>
                 </value>
                 <value>
                     <fullName>2022</fullName>
                     <default>false</default>
-                    <label>2022</label>
                 </value>
                 <value>
                     <fullName>2023</fullName>
                     <default>false</default>
-                    <label>2023</label>
                 </value>
                 <value>
                     <fullName>2024</fullName>
                     <default>false</default>
-                    <label>2024</label>
                 </value>
                 <value>
                     <fullName>2025</fullName>
                     <default>false</default>
-                    <label>2025</label>
                 </value>
                 <value>
                     <fullName>2026</fullName>
                     <default>false</default>
-                    <label>2026</label>
                 </value>
                 <value>
                     <fullName>2027</fullName>
                     <default>false</default>
-                    <label>2027</label>
                 </value>
                 <value>
                     <fullName>2028</fullName>
                     <default>false</default>
-                    <label>2028</label>
                 </value>
                 <value>
                     <fullName>2029</fullName>
                     <default>false</default>
-                    <label>2029</label>
                 </value>
                 <value>
                     <fullName>2030</fullName>
                     <default>false</default>
-                    <label>2030</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -198,67 +177,54 @@
                 <value>
                     <fullName>ANCIENNB</fullName>
                     <default>true</default>
-                    <label>ANCIENNB</label>
                 </value>
                 <value>
                     <fullName>ANCIENRCJ</fullName>
                     <default>false</default>
-                    <label>ANCIENRCJ</label>
                 </value>
                 <value>
                     <fullName>ANCIENRCS</fullName>
                     <default>false</default>
-                    <label>ANCIENRCS</label>
                 </value>
                 <value>
                     <fullName>ANCIENREJ</fullName>
                     <default>false</default>
-                    <label>ANCIENREJ</label>
                 </value>
                 <value>
                     <fullName>ANCIENRES</fullName>
                     <default>false</default>
-                    <label>ANCIENRES</label>
                 </value>
                 <value>
                     <fullName>ANCIENRMJ</fullName>
                     <default>false</default>
-                    <label>ANCIENRMJ</label>
                 </value>
                 <value>
                     <fullName>ANCIENRMS</fullName>
                     <default>false</default>
-                    <label>ANCIENRMS</label>
                 </value>
                 <value>
                     <fullName>PARTGEST</fullName>
                     <default>false</default>
-                    <label>PARTGEST</label>
                 </value>
                 <value>
                     <fullName>STAGCES</fullName>
                     <default>false</default>
-                    <label>STAGCES</label>
                 </value>
                 <value>
                     <fullName>STAGESCSA</fullName>
                     <default>false</default>
-                    <label>STAGESCSA</label>
                 </value>
                 <value>
                     <fullName>STAGMAS</fullName>
                     <default>false</default>
-                    <label>STAGMAS</label>
                 </value>
                 <value>
                     <fullName>TAXEPC</fullName>
                     <default>false</default>
-                    <label>TAXEPC</label>
                 </value>
                 <value>
                     <fullName>TAXEVERS</fullName>
                     <default>false</default>
-                    <label>TAXEVERS</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -278,62 +244,50 @@
                 <value>
                     <fullName>Mission Mastère Spécialisé</fullName>
                     <default>false</default>
-                    <label>Mission Mastère Spécialisé</label>
                 </value>
                 <value>
                     <fullName>Mission MBA</fullName>
                     <default>false</default>
-                    <label>Mission MBA</label>
                 </value>
                 <value>
                     <fullName>Nombre d&apos;Anciens</fullName>
                     <default>false</default>
-                    <label>Nombre d&apos;Anciens</label>
                 </value>
                 <value>
                     <fullName>Promesse Taxe</fullName>
                     <default>false</default>
-                    <label>Promesse Taxe</label>
                 </value>
                 <value>
                     <fullName>Recrutement ESC Junior</fullName>
                     <default>false</default>
-                    <label>Recrutement ESC Junior</label>
                 </value>
                 <value>
                     <fullName>Recrutement ESC Senior</fullName>
                     <default>false</default>
-                    <label>Recrutement ESC Senior</label>
                 </value>
                 <value>
                     <fullName>Recrutement Mastère Junior</fullName>
                     <default>false</default>
-                    <label>Recrutement Mastère Junior</label>
                 </value>
                 <value>
                     <fullName>Recrutement Mastère Senior</fullName>
                     <default>false</default>
-                    <label>Recrutement Mastère Senior</label>
                 </value>
                 <value>
                     <fullName>Recrutement MBA Diplômé</fullName>
                     <default>false</default>
-                    <label>Recrutement MBA Diplômé</label>
                 </value>
                 <value>
                     <fullName>Recrutement MBA Senior</fullName>
                     <default>false</default>
-                    <label>Recrutement MBA Senior</label>
                 </value>
                 <value>
                     <fullName>Stages ESC Application</fullName>
                     <default>false</default>
-                    <label>Stages ESC Application</label>
                 </value>
                 <value>
                     <fullName>Versement Taxe</fullName>
                     <default>false</default>
-                    <label>Versement Taxe</label>
                 </value>
             </valueSetDefinition>
             <valueSettings>
@@ -401,12 +355,10 @@
                 <value>
                     <fullName>NB</fullName>
                     <default>false</default>
-                    <label>NB</label>
                 </value>
                 <value>
                     <fullName>EUR</fullName>
                     <default>false</default>
-                    <label>EUR</label>
                 </value>
             </valueSetDefinition>
             <valueSettings>
@@ -453,5 +405,4 @@
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <startsWith>Vowel</startsWith>
-    <visibility>Public</visibility>
 </CustomObject>

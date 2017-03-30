@@ -4,19 +4,16 @@
     <standardValue>
         <fullName>Élevé</fullName>
         <default>false</default>
-        <label>Élevé</label>
         <highPriority>true</highPriority>
     </standardValue>
     <standardValue>
         <fullName>Normal</fullName>
         <default>true</default>
-        <label>Normal</label>
         <highPriority>false</highPriority>
     </standardValue>
     <standardValue>
         <fullName>Faible</fullName>
         <default>false</default>
-        <label>Faible</label>
         <highPriority>false</highPriority>
     </standardValue>
 </StandardValueSet>

@@ -4,26 +4,21 @@
     <standardValue>
         <fullName>Acheté</fullName>
         <default>false</default>
-        <label>Acheté</label>
     </standardValue>
     <standardValue>
         <fullName>Expédié</fullName>
         <default>false</default>
-        <label>Expédié</label>
     </standardValue>
     <standardValue>
         <fullName>Installé</fullName>
         <default>false</default>
-        <label>Installé</label>
     </standardValue>
     <standardValue>
         <fullName>Enregistré</fullName>
         <default>false</default>
-        <label>Enregistré</label>
     </standardValue>
     <standardValue>
         <fullName>Obsolète</fullName>
         <default>false</default>
-        <label>Obsolète</label>
     </standardValue>
 </StandardValueSet>

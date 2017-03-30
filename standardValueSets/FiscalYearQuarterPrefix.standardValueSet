@@ -4,21 +4,17 @@
     <standardValue>
         <fullName>Trimestre</fullName>
         <default>true</default>
-        <label>Trimestre</label>
     </standardValue>
     <standardValue>
         <fullName>Trim d&apos;EX</fullName>
         <default>false</default>
-        <label>Trim d&apos;EX</label>
     </standardValue>
     <standardValue>
         <fullName>T</fullName>
         <default>false</default>
-        <label>T</label>
     </standardValue>
     <standardValue>
         <fullName>Trimester</fullName>
         <default>false</default>
-        <label>Trimester</label>
     </standardValue>
 </StandardValueSet>

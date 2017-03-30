@@ -128,17 +128,14 @@
                 <value>
                     <fullName>OPCA</fullName>
                     <default>false</default>
-                    <label>OPCA</label>
                 </value>
                 <value>
                     <fullName>BOURSE</fullName>
                     <default>false</default>
-                    <label>BOURSE</label>
                 </value>
                 <value>
                     <fullName>Entreprise</fullName>
                     <default>false</default>
-                    <label>Entreprise</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -165,5 +162,4 @@
     <pluralLabel>Partenaires financeurs/ collecteurs OPCA</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

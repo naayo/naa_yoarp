@@ -4,41 +4,33 @@
     <standardValue>
         <fullName>Responsable de compte</fullName>
         <default>false</default>
-        <label>Responsable de compte</label>
     </standardValue>
     <standardValue>
         <fullName>Gestionnaire de réseau</fullName>
         <default>false</default>
-        <label>Gestionnaire de réseau</label>
     </standardValue>
     <standardValue>
         <fullName>Cadre délégué</fullName>
         <default>false</default>
-        <label>Cadre délégué</label>
     </standardValue>
     <standardValue>
         <fullName>Chargé de la validation de piste</fullName>
         <default>false</default>
-        <label>Chargé de la validation de piste</label>
     </standardValue>
     <standardValue>
         <fullName>Consultant avant-vente</fullName>
         <default>false</default>
-        <label>Consultant avant-vente</label>
     </standardValue>
     <standardValue>
         <fullName>Directeur commercial</fullName>
         <default>false</default>
-        <label>Directeur commercial</label>
     </standardValue>
     <standardValue>
         <fullName>Représentant des ventes</fullName>
         <default>false</default>
-        <label>Représentant des ventes</label>
     </standardValue>
     <standardValue>
         <fullName>Suiveur Fund Raising</fullName>
         <default>false</default>
-        <label>Suiveur Fund Raising</label>
     </standardValue>
 </StandardValueSet>

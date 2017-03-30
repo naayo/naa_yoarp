@@ -68,7 +68,6 @@
         <listViewButtons>Mass_Edit</listViewButtons>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <webLinks>
         <fullName>Mass_Edit</fullName>
         <availability>online</availability>

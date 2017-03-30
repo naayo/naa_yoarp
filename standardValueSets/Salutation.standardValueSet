@@ -4,11 +4,9 @@
     <standardValue>
         <fullName>Mme</fullName>
         <default>false</default>
-        <label>Mme</label>
     </standardValue>
     <standardValue>
         <fullName>M</fullName>
         <default>true</default>
-        <label>M</label>
     </standardValue>
 </StandardValueSet>

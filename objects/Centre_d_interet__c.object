@@ -65,22 +65,18 @@
                 <value>
                     <fullName>Echecs</fullName>
                     <default>false</default>
-                    <label>Echecs</label>
                 </value>
                 <value>
                     <fullName>Golf</fullName>
                     <default>false</default>
-                    <label>Golf</label>
                 </value>
                 <value>
                     <fullName>Tennis</fullName>
                     <default>false</default>
-                    <label>Tennis</label>
                 </value>
                 <value>
                     <fullName>Voile</fullName>
                     <default>false</default>
-                    <label>Voile</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -108,5 +104,4 @@
     <pluralLabel>Centres d&apos;interet</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

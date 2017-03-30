@@ -85,5 +85,4 @@
     <pluralLabel>Détails pack session</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

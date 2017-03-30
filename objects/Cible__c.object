@@ -65,17 +65,14 @@
                 <value>
                     <fullName>Cibles sectorielles</fullName>
                     <default>false</default>
-                    <label>Cibles sectorielles</label>
                 </value>
                 <value>
                     <fullName>Sociétés proches de l&apos;école</fullName>
                     <default>false</default>
-                    <label>Sociétés proches de l&apos;école</label>
                 </value>
                 <value>
                     <fullName>Autres</fullName>
                     <default>false</default>
-                    <label>Autres</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -95,72 +92,58 @@
                 <value>
                     <fullName>120 plus grosses sociétés en Bourse</fullName>
                     <default>false</default>
-                    <label>120 plus grosses sociétés en Bourse</label>
                 </value>
                 <value>
                     <fullName>BENEFPART</fullName>
                     <default>false</default>
-                    <label>BENEFPART</label>
                 </value>
                 <value>
                     <fullName>Prescripteur CIO GE</fullName>
                     <default>false</default>
-                    <label>Prescripteur CIO GE</label>
                 </value>
                 <value>
                     <fullName>Prescripteur IDEA</fullName>
                     <default>false</default>
-                    <label>Prescripteur IDEA</label>
                 </value>
                 <value>
                     <fullName>Sociétés clientes EML</fullName>
                     <default>false</default>
-                    <label>Sociétés clientes EML</label>
                 </value>
                 <value>
                     <fullName>Sociétés crées par un diplômé</fullName>
                     <default>false</default>
-                    <label>Sociétés crées par un diplômé</label>
                 </value>
                 <value>
                     <fullName>Sociétés dans le secteur du Luxe</fullName>
                     <default>false</default>
-                    <label>Sociétés dans le secteur du Luxe</label>
                 </value>
                 <value>
                     <fullName>Sociétés dans le secteur du Sport</fullName>
                     <default>false</default>
-                    <label>Sociétés dans le secteur du Sport</label>
                 </value>
                 <value>
                     <fullName>TAXEGEST</fullName>
                     <default>false</default>
-                    <label>TAXEGEST</label>
                 </value>
                 <value>
                     <fullName>TAXEPRES</fullName>
                     <default>false</default>
-                    <label>TAXEPRES</label>
                 </value>
                 <value>
                     <fullName>TAXEPRI</fullName>
                     <default>false</default>
-                    <label>TAXEPRI</label>
                 </value>
                 <value>
                     <fullName>TAXEPROC</fullName>
                     <default>false</default>
-                    <label>TAXEPROC</label>
                 </value>
                 <value>
                     <fullName>TAXEVIP</fullName>
                     <default>false</default>
-                    <label>TAXEVIP</label>
                 </value>
                 <value>
                     <fullName>Fournisseurs de l&apos;école</fullName>
                     <default>false</default>
-                    <label>Fournisseurs de l&apos;école</label>
                 </value>
             </valueSetDefinition>
             <valueSettings>
@@ -243,5 +226,4 @@
     <pluralLabel>Cibles</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

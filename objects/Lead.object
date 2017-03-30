@@ -348,17 +348,14 @@
                 <value>
                     <fullName>Etudiant</fullName>
                     <default>false</default>
-                    <label>Etudiant</label>
                 </value>
                 <value>
                     <fullName>Professionnel</fullName>
                     <default>false</default>
-                    <label>Professionnel</label>
                 </value>
                 <value>
                     <fullName>Prospect Etudiant</fullName>
                     <default>false</default>
-                    <label>Prospect Etudiant</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -407,47 +404,38 @@
                 <value>
                     <fullName>Autres</fullName>
                     <default>false</default>
-                    <label>Autres</label>
                 </value>
                 <value>
                     <fullName>CP littéraires</fullName>
                     <default>false</default>
-                    <label>CP littéraires</label>
                 </value>
                 <value>
                     <fullName>Droit, Economie, Sciences de Gestion</fullName>
                     <default>false</default>
-                    <label>Droit, Economie, Sciences de Gestion</label>
                 </value>
                 <value>
                     <fullName>Ecole de commerce française</fullName>
                     <default>false</default>
-                    <label>Ecole de commerce française</label>
                 </value>
                 <value>
                     <fullName>Gestion</fullName>
                     <default>false</default>
-                    <label>Gestion</label>
                 </value>
                 <value>
                     <fullName>Ingénieur</fullName>
                     <default>false</default>
-                    <label>Ingénieur</label>
                 </value>
                 <value>
                     <fullName>Santé</fullName>
                     <default>false</default>
-                    <label>Santé</label>
                 </value>
                 <value>
                     <fullName>Sciences</fullName>
                     <default>false</default>
-                    <label>Sciences</label>
                 </value>
                 <value>
                     <fullName>Sciences humaines</fullName>
                     <default>false</default>
-                    <label>Sciences humaines</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -466,47 +454,38 @@
                 <value>
                     <fullName>De 0 à 9</fullName>
                     <default>false</default>
-                    <label>De 0 à 9</label>
                 </value>
                 <value>
                     <fullName>De 10 à 49</fullName>
                     <default>false</default>
-                    <label>De 10 à 49</label>
                 </value>
                 <value>
                     <fullName>De 50 à 249</fullName>
                     <default>false</default>
-                    <label>De 50 à 249</label>
                 </value>
                 <value>
                     <fullName>De 250 à 499</fullName>
                     <default>false</default>
-                    <label>De 250 à 499</label>
                 </value>
                 <value>
                     <fullName>De 500 à 999</fullName>
                     <default>false</default>
-                    <label>De 500 à 999</label>
                 </value>
                 <value>
                     <fullName>De 1000 à 1999</fullName>
                     <default>false</default>
-                    <label>De 1000 à 1999</label>
                 </value>
                 <value>
                     <fullName>De 2000 à 4999</fullName>
                     <default>false</default>
-                    <label>De 2000 à 4999</label>
                 </value>
                 <value>
                     <fullName>De 5000 à 9999</fullName>
                     <default>false</default>
-                    <label>De 5000 à 9999</label>
                 </value>
                 <value>
                     <fullName>10 000 et plus</fullName>
                     <default>false</default>
-                    <label>10 000 et plus</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -561,52 +540,42 @@
                 <value>
                     <fullName>Autres</fullName>
                     <default>false</default>
-                    <label>Autres</label>
                 </value>
                 <value>
                     <fullName>Commercial/Ventes</fullName>
                     <default>false</default>
-                    <label>Commercial/Ventes</label>
                 </value>
                 <value>
                     <fullName>Direction Générale</fullName>
                     <default>false</default>
-                    <label>Direction Générale</label>
                 </value>
                 <value>
                     <fullName>Enseignement/Education</fullName>
                     <default>false</default>
-                    <label>Enseignement/Education</label>
                 </value>
                 <value>
                     <fullName>Etud/Recherche/Dévelop/Qualité</fullName>
                     <default>false</default>
-                    <label>Etud/Recherche/Dévelop/Qualité</label>
                 </value>
                 <value>
                     <fullName>Finance/Gest./Adminis./Juridi.</fullName>
                     <default>false</default>
-                    <label>Finance/Gest./Adminis./Juridi.</label>
                 </value>
                 <value>
                     <fullName>Marketing/Communication</fullName>
                     <default>false</default>
-                    <label>Marketing/Communication</label>
                 </value>
                 <value>
                     <fullName>Organisation/Systèmes d&apos;Informations</fullName>
                     <default>false</default>
-                    <label>Organisation/Systèmes d&apos;Informations</label>
                 </value>
                 <value>
                     <fullName>Production/Achats</fullName>
                     <default>false</default>
-                    <label>Production/Achats</label>
                 </value>
                 <value>
                     <fullName>Ressources Humaines/Formation</fullName>
                     <default>false</default>
-                    <label>Ressources Humaines/Formation</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -626,487 +595,390 @@
                 <value>
                     <fullName>Accompagnement entreprises = RDV</fullName>
                     <default>false</default>
-                    <label>Accompagnement entreprises = RDV</label>
                 </value>
                 <value>
                     <fullName>Accompagnement pédagogique</fullName>
                     <default>false</default>
-                    <label>Accompagnement pédagogique</label>
                 </value>
                 <value>
                     <fullName>Accord Cadre Formation Continue =</fullName>
                     <default>false</default>
-                    <label>Accord Cadre Formation Continue =</label>
                 </value>
                 <value>
                     <fullName>Achats</fullName>
                     <default>false</default>
-                    <label>Achats</label>
                 </value>
                 <value>
                     <fullName>Annuaires</fullName>
                     <default>false</default>
-                    <label>Annuaires</label>
                 </value>
                 <value>
                     <fullName>Atelier</fullName>
                     <default>false</default>
-                    <label>Atelier</label>
                 </value>
                 <value>
                     <fullName>Business Weeks</fullName>
                     <default>false</default>
-                    <label>Business Weeks</label>
                 </value>
                 <value>
                     <fullName>Careers Days</fullName>
                     <default>false</default>
-                    <label>Careers Days</label>
                 </value>
                 <value>
                     <fullName>Célébration</fullName>
                     <default>false</default>
-                    <label>Célébration</label>
                 </value>
                 <value>
                     <fullName>Chaires Conjointes</fullName>
                     <default>false</default>
-                    <label>Chaires Conjointes</label>
                 </value>
                 <value>
                     <fullName>Chaires d’enseignement et de recherche (&gt;1Me sur 4/5 ans)</fullName>
                     <default>false</default>
-                    <label>Chaires d’enseignement et de recherche (&gt;1Me sur 4/5 ans)</label>
                 </value>
                 <value>
                     <fullName>Colloques</fullName>
                     <default>false</default>
-                    <label>Colloques</label>
                 </value>
                 <value>
                     <fullName>Conférence</fullName>
                     <default>false</default>
-                    <label>Conférence</label>
                 </value>
                 <value>
                     <fullName>Conférences non payantes (notoriété)</fullName>
                     <default>false</default>
-                    <label>Conférences non payantes (notoriété)</label>
                 </value>
                 <value>
                     <fullName>Conférences non payantes (pédagogiques)</fullName>
                     <default>false</default>
-                    <label>Conférences non payantes (pédagogiques)</label>
                 </value>
                 <value>
                     <fullName>Conférences non payantes (type gd public)</fullName>
                     <default>false</default>
-                    <label>Conférences non payantes (type gd public)</label>
                 </value>
                 <value>
                     <fullName>Conférences non payantes (type scientifique)</fullName>
                     <default>false</default>
-                    <label>Conférences non payantes (type scientifique)</label>
                 </value>
                 <value>
                     <fullName>Conférences payantes (par l&apos;auditeur, participant)</fullName>
                     <default>false</default>
-                    <label>Conférences payantes (par l&apos;auditeur, participant)</label>
                 </value>
                 <value>
                     <fullName>Conférences payantes (par l&apos;intervenant-casHEC)</fullName>
                     <default>false</default>
-                    <label>Conférences payantes (par l&apos;intervenant-casHEC)</label>
                 </value>
                 <value>
                     <fullName>Conseil institutionnel =</fullName>
                     <default>false</default>
-                    <label>Conseil institutionnel =</label>
                 </value>
                 <value>
                     <fullName>Corporate Discovery Session</fullName>
                     <default>false</default>
-                    <label>Corporate Discovery Session</label>
                 </value>
                 <value>
                     <fullName>Développement Commercial &amp; Relation Client</fullName>
                     <default>false</default>
-                    <label>Développement Commercial &amp; Relation Client</label>
                 </value>
                 <value>
                     <fullName>Développement personnel</fullName>
                     <default>false</default>
-                    <label>Développement personnel</label>
                 </value>
                 <value>
                     <fullName>Direction d’activité</fullName>
                     <default>false</default>
-                    <label>Direction d’activité</label>
                 </value>
                 <value>
                     <fullName>Dons Fondation =&gt; individu ou entreprise (idem EMLYON)</fullName>
                     <default>false</default>
-                    <label>Dons Fondation =&gt; individu ou entreprise (idem EMLYON)</label>
                 </value>
                 <value>
                     <fullName>Enquêtes et Stats</fullName>
                     <default>false</default>
-                    <label>Enquêtes et Stats</label>
                 </value>
                 <value>
                     <fullName>Entretien individuel</fullName>
                     <default>false</default>
-                    <label>Entretien individuel</label>
                 </value>
                 <value>
                     <fullName>Evènements corporate payants organisés par la comm</fullName>
                     <default>false</default>
-                    <label>Evènements corporate payants organisés par la comm</label>
                 </value>
                 <value>
                     <fullName>Evenements EMLYON.</fullName>
                     <default>false</default>
-                    <label>Evenements EMLYON.</label>
                 </value>
                 <value>
                     <fullName>Evenements EMLYON. (A voir avec BB)</fullName>
                     <default>false</default>
-                    <label>Evenements EMLYON. (A voir avec BB)</label>
                 </value>
                 <value>
                     <fullName>Evenements EMLYON (à positionner confer supra - voir Bernard)</fullName>
                     <default>false</default>
-                    <label>Evenements EMLYON (à positionner confer supra - voir Bernard)</label>
                 </value>
                 <value>
                     <fullName>Evenements FOREVER co-organisés</fullName>
                     <default>false</default>
-                    <label>Evenements FOREVER co-organisés</label>
                 </value>
                 <value>
                     <fullName>Evènements FOREVER organisés par EMLYON FOREVER</fullName>
                     <default>false</default>
-                    <label>Evènements FOREVER organisés par EMLYON FOREVER</label>
                 </value>
                 <value>
                     <fullName>Expert Panels OU Table rondes</fullName>
                     <default>false</default>
-                    <label>Expert Panels OU Table rondes</label>
                 </value>
                 <value>
                     <fullName>Finance &amp; Pilotage de la Performance</fullName>
                     <default>false</default>
-                    <label>Finance &amp; Pilotage de la Performance</label>
                 </value>
                 <value>
                     <fullName>FOREVER : cotisation de rattrapage</fullName>
                     <default>false</default>
-                    <label>FOREVER : cotisation de rattrapage</label>
                 </value>
                 <value>
                     <fullName>FOREVER : services associés aux cotisants</fullName>
                     <default>false</default>
-                    <label>FOREVER : services associés aux cotisants</label>
                 </value>
                 <value>
                     <fullName>Forme CLUB</fullName>
                     <default>false</default>
-                    <label>Forme CLUB</label>
                 </value>
                 <value>
                     <fullName>Forum Carrières /Careers Forum</fullName>
                     <default>false</default>
-                    <label>Forum Carrières /Careers Forum</label>
                 </value>
                 <value>
                     <fullName>Forum PME</fullName>
                     <default>false</default>
-                    <label>Forum PME</label>
                 </value>
                 <value>
                     <fullName>Forum virtuel / Virtual Forum</fullName>
                     <default>false</default>
-                    <label>Forum virtuel / Virtual Forum</label>
                 </value>
                 <value>
                     <fullName>Fundraising commun (namming…)</fullName>
                     <default>false</default>
-                    <label>Fundraising commun (namming…)</label>
                 </value>
                 <value>
                     <fullName>Innovation &amp; Entreprenariat</fullName>
                     <default>false</default>
-                    <label>Innovation &amp; Entreprenariat</label>
                 </value>
                 <value>
                     <fullName>Journée de conférences ateliers et réseau</fullName>
                     <default>false</default>
-                    <label>Journée de conférences ateliers et réseau</label>
                 </value>
                 <value>
                     <fullName>Leadership &amp; Développement Personnel</fullName>
                     <default>false</default>
-                    <label>Leadership &amp; Développement Personnel</label>
                 </value>
                 <value>
                     <fullName>Locations de salles (EMLYON,EML,ALLIANCE)</fullName>
                     <default>false</default>
-                    <label>Locations de salles (EMLYON,EML,ALLIANCE)</label>
                 </value>
                 <value>
                     <fullName>Management &amp; Ressources humaines</fullName>
                     <default>false</default>
-                    <label>Management &amp; Ressources humaines</label>
                 </value>
                 <value>
                     <fullName>Marketing</fullName>
                     <default>false</default>
-                    <label>Marketing</label>
                 </value>
                 <value>
                     <fullName>Partenariats Académiques</fullName>
                     <default>false</default>
-                    <label>Partenariats Académiques</label>
                 </value>
                 <value>
                     <fullName>PhD Doctorat</fullName>
                     <default>false</default>
-                    <label>PhD Doctorat</label>
                 </value>
                 <value>
                     <fullName>Plateforme Msc in IDEA (LearningLab, Incubateur, MscinIDEA)</fullName>
                     <default>false</default>
-                    <label>Plateforme Msc in IDEA (LearningLab, Incubateur, MscinIDEA)</label>
                 </value>
                 <value>
                     <fullName>Programme « Grande Ecole »</fullName>
                     <default>false</default>
-                    <label>Programme « Grande Ecole »</label>
                 </value>
                 <value>
                     <fullName>Programme Bachelor (entrée post-bac)</fullName>
                     <default>false</default>
-                    <label>Programme Bachelor (entrée post-bac)</label>
                 </value>
                 <value>
                     <fullName>Programme COSMETO</fullName>
                     <default>false</default>
-                    <label>Programme COSMETO</label>
                 </value>
                 <value>
                     <fullName>Programme I.D.E.A Alliance ECL-EM</fullName>
                     <default>false</default>
-                    <label>Programme I.D.E.A Alliance ECL-EM</label>
                 </value>
                 <value>
                     <fullName>Programme IPIL</fullName>
                     <default>false</default>
-                    <label>Programme IPIL</label>
                 </value>
                 <value>
                     <fullName>Programme MBA  - formation continue</fullName>
                     <default>false</default>
-                    <label>Programme MBA  - formation continue</label>
                 </value>
                 <value>
                     <fullName>Programme MBA Internationaux - formation initiale</fullName>
                     <default>false</default>
-                    <label>Programme MBA Internationaux - formation initiale</label>
                 </value>
                 <value>
                     <fullName>Programmes « Mastères spécialisés »</fullName>
                     <default>false</default>
-                    <label>Programmes « Mastères spécialisés »</label>
                 </value>
                 <value>
                     <fullName>Programmes « Masters en anglais»</fullName>
                     <default>false</default>
-                    <label>Programmes « Masters en anglais»</label>
                 </value>
                 <value>
                     <fullName>Programmes courts</fullName>
                     <default>false</default>
-                    <label>Programmes courts</label>
                 </value>
                 <value>
                     <fullName>Programmes de formation longs non diplômant (DUA)</fullName>
                     <default>false</default>
-                    <label>Programmes de formation longs non diplômant (DUA)</label>
                 </value>
                 <value>
                     <fullName>Programmes Entrepreneurs</fullName>
                     <default>false</default>
-                    <label>Programmes Entrepreneurs</label>
                 </value>
                 <value>
                     <fullName>Programmes longs diplômants - Programmes Opérationnels</fullName>
                     <default>false</default>
-                    <label>Programmes longs diplômants - Programmes Opérationnels</label>
                 </value>
                 <value>
                     <fullName>Programmes longs diplômants - Senior Executive</fullName>
                     <default>false</default>
-                    <label>Programmes longs diplômants - Senior Executive</label>
                 </value>
                 <value>
                     <fullName>Programmes sur mesure/intra avec appel d&apos;offre/CDC</fullName>
                     <default>false</default>
-                    <label>Programmes sur mesure/intra avec appel d&apos;offre/CDC</label>
                 </value>
                 <value>
                     <fullName>Programmes sur mesure/intra hors appel d&apos;offre/CDC</fullName>
                     <default>false</default>
-                    <label>Programmes sur mesure/intra hors appel d&apos;offre/CDC</label>
                 </value>
                 <value>
                     <fullName>Projets de Recherche</fullName>
                     <default>false</default>
-                    <label>Projets de Recherche</label>
                 </value>
                 <value>
                     <fullName>Push-Mails</fullName>
                     <default>false</default>
-                    <label>Push-Mails</label>
                 </value>
                 <value>
                     <fullName>Relation Editeur - Professeurs</fullName>
                     <default>false</default>
-                    <label>Relation Editeur - Professeurs</label>
                 </value>
                 <value>
                     <fullName>Relation informelle</fullName>
                     <default>false</default>
-                    <label>Relation informelle</label>
                 </value>
                 <value>
                     <fullName>Relations Presse ?</fullName>
                     <default>false</default>
-                    <label>Relations Presse ?</label>
                 </value>
                 <value>
                     <fullName>Relations Publiques ?</fullName>
                     <default>false</default>
-                    <label>Relations Publiques ?</label>
                 </value>
                 <value>
                     <fullName>Salons commerciaux de l&apos;éducation : France et International</fullName>
                     <default>false</default>
-                    <label>Salons commerciaux de l&apos;éducation : France et International</label>
                 </value>
                 <value>
                     <fullName>Salons des entrepreneurs</fullName>
                     <default>false</default>
-                    <label>Salons des entrepreneurs</label>
                 </value>
                 <value>
                     <fullName>Services rendus par la bibliothèque</fullName>
                     <default>false</default>
-                    <label>Services rendus par la bibliothèque</label>
                 </value>
                 <value>
                     <fullName>Services rendus par la DSIT</fullName>
                     <default>false</default>
-                    <label>Services rendus par la DSIT</label>
                 </value>
                 <value>
                     <fullName>Services rendus par le registraire</fullName>
                     <default>false</default>
-                    <label>Services rendus par le registraire</label>
                 </value>
                 <value>
                     <fullName>Sites Internet Carrière</fullName>
                     <default>false</default>
-                    <label>Sites Internet Carrière</label>
                 </value>
                 <value>
                     <fullName>Sites Internet CORPORATE</fullName>
                     <default>false</default>
-                    <label>Sites Internet CORPORATE</label>
                 </value>
                 <value>
                     <fullName>Sites Internet EML</fullName>
                     <default>false</default>
-                    <label>Sites Internet EML</label>
                 </value>
                 <value>
                     <fullName>Sites Internet FOREVER</fullName>
                     <default>false</default>
-                    <label>Sites Internet FOREVER</label>
                 </value>
                 <value>
                     <fullName>Soutien au programmes de bourse et « ouverture sociale » (TUMM)</fullName>
                     <default>false</default>
-                    <label>Soutien au programmes de bourse et « ouverture sociale » (TUMM)</label>
                 </value>
                 <value>
                     <fullName>Soutien aux pgms/projets entrepreunariat (Incubateur, WEF, Club CCRE)</fullName>
                     <default>false</default>
-                    <label>Soutien aux pgms/projets entrepreunariat (Incubateur, WEF, Club CCRE)</label>
                 </value>
                 <value>
                     <fullName>Speed networking</fullName>
                     <default>false</default>
-                    <label>Speed networking</label>
                 </value>
                 <value>
                     <fullName>Sponsoring entreprise (public visé/bénéficiaire = diplômés)</fullName>
                     <default>false</default>
-                    <label>Sponsoring entreprise (public visé/bénéficiaire = diplômés)</label>
                 </value>
                 <value>
                     <fullName>Sponsoring entreprise (public visé/bénéficiaire = entreprises)</fullName>
                     <default>false</default>
-                    <label>Sponsoring entreprise (public visé/bénéficiaire = entreprises)</label>
                 </value>
                 <value>
                     <fullName>Sponsoring entreprise (public visé/bénéficiaire = étudiants)</fullName>
                     <default>false</default>
-                    <label>Sponsoring entreprise (public visé/bénéficiaire = étudiants)</label>
                 </value>
                 <value>
                     <fullName>Sponsoring incubateur (public visé/bénéficiaire = incubés)</fullName>
                     <default>false</default>
-                    <label>Sponsoring incubateur (public visé/bénéficiaire = incubés)</label>
                 </value>
                 <value>
                     <fullName>Standard</fullName>
                     <default>false</default>
-                    <label>Standard</label>
                 </value>
                 <value>
                     <fullName>Stratégie &amp; Gouvernance</fullName>
                     <default>false</default>
-                    <label>Stratégie &amp; Gouvernance</label>
                 </value>
                 <value>
                     <fullName>Summer Sessions (pour différents programmes)</fullName>
                     <default>false</default>
-                    <label>Summer Sessions (pour différents programmes)</label>
                 </value>
                 <value>
                     <fullName>Summer Sessions Programme Auditeurs</fullName>
                     <default>false</default>
-                    <label>Summer Sessions Programme Auditeurs</label>
                 </value>
                 <value>
                     <fullName>Sur mesure</fullName>
                     <default>false</default>
-                    <label>Sur mesure</label>
                 </value>
                 <value>
                     <fullName>Taxe d&apos;apprentissage</fullName>
                     <default>false</default>
-                    <label>Taxe d&apos;apprentissage</label>
                 </value>
                 <value>
                     <fullName>Visite face/face</fullName>
                     <default>false</default>
-                    <label>Visite face/face</label>
                 </value>
                 <value>
                     <fullName>Visite face/face (anciens)</fullName>
                     <default>false</default>
-                    <label>Visite face/face (anciens)</label>
                 </value>
             </valueSetDefinition>
             <valueSettings>
@@ -1519,1162 +1391,930 @@
                 <value>
                     <fullName>Actuaire</fullName>
                     <default>false</default>
-                    <label>Actuaire</label>
                 </value>
                 <value>
                     <fullName>Adjoint Dir.Rel.Hum./Sociales</fullName>
                     <default>false</default>
-                    <label>Adjoint Dir.Rel.Hum./Sociales</label>
                 </value>
                 <value>
                     <fullName>Adjoint Direct. Admini et Financier</fullName>
                     <default>false</default>
-                    <label>Adjoint Direct. Admini et Financier</label>
                 </value>
                 <value>
                     <fullName>Adjoint Direct. de la Communi.</fullName>
                     <default>false</default>
-                    <label>Adjoint Direct. de la Communi.</label>
                 </value>
                 <value>
                     <fullName>Adjoint Direct. de Programmes</fullName>
                     <default>false</default>
-                    <label>Adjoint Direct. de Programmes</label>
                 </value>
                 <value>
                     <fullName>Adjoint Direct du Personnel</fullName>
                     <default>false</default>
-                    <label>Adjoint Direct du Personnel</label>
                 </value>
                 <value>
                     <fullName>Adjoint Directeur Commercial</fullName>
                     <default>false</default>
-                    <label>Adjoint Directeur Commercial</label>
                 </value>
                 <value>
                     <fullName>Adjoint Directeur d&apos;Etablissement</fullName>
                     <default>false</default>
-                    <label>Adjoint Directeur d&apos;Etablissement</label>
                 </value>
                 <value>
                     <fullName>Adjoint Directeur Juridique</fullName>
                     <default>false</default>
-                    <label>Adjoint Directeur Juridique</label>
                 </value>
                 <value>
                     <fullName>Adjoint Directeur Régional</fullName>
                     <default>false</default>
-                    <label>Adjoint Directeur Régional</label>
                 </value>
                 <value>
                     <fullName>Adjoint Directeur Ressour.Hum.</fullName>
                     <default>false</default>
-                    <label>Adjoint Directeur Ressour.Hum.</label>
                 </value>
                 <value>
                     <fullName>Adjoint Resp Gestion Cad./Car.</fullName>
                     <default>false</default>
-                    <label>Adjoint Resp Gestion Cad./Car.</label>
                 </value>
                 <value>
                     <fullName>Administrateur</fullName>
                     <default>false</default>
-                    <label>Administrateur</label>
                 </value>
                 <value>
                     <fullName>Agent(Général) d&apos;Assurance</fullName>
                     <default>false</default>
-                    <label>Agent(Général) d&apos;Assurance</label>
                 </value>
                 <value>
                     <fullName>Agent Commercial</fullName>
                     <default>false</default>
-                    <label>Agent Commercial</label>
                 </value>
                 <value>
                     <fullName>Agent de Change</fullName>
                     <default>false</default>
-                    <label>Agent de Change</label>
                 </value>
                 <value>
                     <fullName>Analyste Financier</fullName>
                     <default>false</default>
-                    <label>Analyste Financier</label>
                 </value>
                 <value>
                     <fullName>Animateur Qualité</fullName>
                     <default>false</default>
-                    <label>Animateur Qualité</label>
                 </value>
                 <value>
                     <fullName>Assistant(e) Chef de Prod/Marq.</fullName>
                     <default>false</default>
-                    <label>Assistant(e) Chef de Prod/Marq.</label>
                 </value>
                 <value>
                     <fullName>Assistant(e) de la Formation</fullName>
                     <default>false</default>
-                    <label>Assistant(e) de la Formation</label>
                 </value>
                 <value>
                     <fullName>Assistant(e) Marketing</fullName>
                     <default>false</default>
-                    <label>Assistant(e) Marketing</label>
                 </value>
                 <value>
                     <fullName>Assistant(e) Publicité</fullName>
                     <default>false</default>
-                    <label>Assistant(e) Publicité</label>
                 </value>
                 <value>
                     <fullName>Assistant Chef de Marchés</fullName>
                     <default>false</default>
-                    <label>Assistant Chef de Marchés</label>
                 </value>
                 <value>
                     <fullName>Associé</fullName>
                     <default>false</default>
-                    <label>Associé</label>
                 </value>
                 <value>
                     <fullName>Attaché(e) Commercial(e)/VRP</fullName>
                     <default>false</default>
-                    <label>Attaché(e) Commercial(e)/VRP</label>
                 </value>
                 <value>
                     <fullName>Attaché(e) de Direction</fullName>
                     <default>false</default>
-                    <label>Attaché(e) de Direction</label>
                 </value>
                 <value>
                     <fullName>Auditeur Externe</fullName>
                     <default>false</default>
-                    <label>Auditeur Externe</label>
                 </value>
                 <value>
                     <fullName>Auditeur Interne</fullName>
                     <default>false</default>
-                    <label>Auditeur Interne</label>
                 </value>
                 <value>
                     <fullName>Cadre Achats</fullName>
                     <default>false</default>
-                    <label>Cadre Achats</label>
                 </value>
                 <value>
                     <fullName>Cadre Administ. des Ventes</fullName>
                     <default>false</default>
-                    <label>Cadre Administ. des Ventes</label>
                 </value>
                 <value>
                     <fullName>Cadre Commercial</fullName>
                     <default>false</default>
-                    <label>Cadre Commercial</label>
                 </value>
                 <value>
                     <fullName>Cadre de la Fonct.&quot;Personnel&quot;</fullName>
                     <default>false</default>
-                    <label>Cadre de la Fonct.&quot;Personnel&quot;</label>
                 </value>
                 <value>
                     <fullName>Cadre des Services Publics</fullName>
                     <default>false</default>
-                    <label>Cadre des Services Publics</label>
                 </value>
                 <value>
                     <fullName>Cadre Export</fullName>
                     <default>false</default>
-                    <label>Cadre Export</label>
                 </value>
                 <value>
                     <fullName>Cadre Logistique</fullName>
                     <default>false</default>
-                    <label>Cadre Logistique</label>
                 </value>
                 <value>
                     <fullName>Cadre Organisation/Logistique</fullName>
                     <default>false</default>
-                    <label>Cadre Organisation/Logistique</label>
                 </value>
                 <value>
                     <fullName>Cadre Recherche/Développement</fullName>
                     <default>false</default>
-                    <label>Cadre Recherche/Développement</label>
                 </value>
                 <value>
                     <fullName>Cadre SI</fullName>
                     <default>false</default>
-                    <label>Cadre SI</label>
                 </value>
                 <value>
                     <fullName>Cadre Technique</fullName>
                     <default>false</default>
-                    <label>Cadre Technique</label>
                 </value>
                 <value>
                     <fullName>Capital Investissement/Private Equity</fullName>
                     <default>false</default>
-                    <label>Capital Investissement/Private Equity</label>
                 </value>
                 <value>
                     <fullName>Chargé(e) d&apos;Affaires</fullName>
                     <default>false</default>
-                    <label>Chargé(e) d&apos;Affaires</label>
                 </value>
                 <value>
                     <fullName>Chargé(e) d&apos;Etudes Economiques</fullName>
                     <default>false</default>
-                    <label>Chargé(e) d&apos;Etudes Economiques</label>
                 </value>
                 <value>
                     <fullName>Chargé(e) d&apos;Etudes Marketing</fullName>
                     <default>false</default>
-                    <label>Chargé(e) d&apos;Etudes Marketing</label>
                 </value>
                 <value>
                     <fullName>Chargé(e) de Clientèle</fullName>
                     <default>false</default>
-                    <label>Chargé(e) de Clientèle</label>
                 </value>
                 <value>
                     <fullName>Chargé(e) de Mission</fullName>
                     <default>false</default>
-                    <label>Chargé(e) de Mission</label>
                 </value>
                 <value>
                     <fullName>Chargé(e) des Relations Ecoles</fullName>
                     <default>false</default>
-                    <label>Chargé(e) des Relations Ecoles</label>
                 </value>
                 <value>
                     <fullName>Chargé (e) Fusions/Acquisitions</fullName>
                     <default>false</default>
-                    <label>Chargé (e) Fusions/Acquisitions</label>
                 </value>
                 <value>
                     <fullName>Chef de Centre SI</fullName>
                     <default>false</default>
-                    <label>Chef de Centre SI</label>
                 </value>
                 <value>
                     <fullName>Chef de Groupe Marketing</fullName>
                     <default>false</default>
-                    <label>Chef de Groupe Marketing</label>
                 </value>
                 <value>
                     <fullName>Chef de Marchés</fullName>
                     <default>false</default>
-                    <label>Chef de Marchés</label>
                 </value>
                 <value>
                     <fullName>Chef de Produits/Marques</fullName>
                     <default>false</default>
-                    <label>Chef de Produits/Marques</label>
                 </value>
                 <value>
                     <fullName>Chef de projet Marketing</fullName>
                     <default>false</default>
-                    <label>Chef de projet Marketing</label>
                 </value>
                 <value>
                     <fullName>Chef de Projets</fullName>
                     <default>false</default>
-                    <label>Chef de Projets</label>
                 </value>
                 <value>
                     <fullName>Chef de Publicité</fullName>
                     <default>false</default>
-                    <label>Chef de Publicité</label>
                 </value>
                 <value>
                     <fullName>Chercheur</fullName>
                     <default>false</default>
-                    <label>Chercheur</label>
                 </value>
                 <value>
                     <fullName>Commerçant</fullName>
                     <default>false</default>
-                    <label>Commerçant</label>
                 </value>
                 <value>
                     <fullName>Commercial/Ventes</fullName>
                     <default>false</default>
-                    <label>Commercial/Ventes</label>
                 </value>
                 <value>
                     <fullName>Commissaire aux Comptes</fullName>
                     <default>false</default>
-                    <label>Commissaire aux Comptes</label>
                 </value>
                 <value>
                     <fullName>Comptable</fullName>
                     <default>false</default>
-                    <label>Comptable</label>
                 </value>
                 <value>
                     <fullName>Congé Parental d&apos;Education</fullName>
                     <default>false</default>
-                    <label>Congé Parental d&apos;Education</label>
                 </value>
                 <value>
                     <fullName>Conseil Auprès de la DG</fullName>
                     <default>false</default>
-                    <label>Conseil Auprès de la DG</label>
                 </value>
                 <value>
                     <fullName>Conseil Commercial/Ventes</fullName>
                     <default>false</default>
-                    <label>Conseil Commercial/Ventes</label>
                 </value>
                 <value>
                     <fullName>Conseil en Communication/Publ.</fullName>
                     <default>false</default>
-                    <label>Conseil en Communication/Publ.</label>
                 </value>
                 <value>
                     <fullName>Conseil en Formation</fullName>
                     <default>false</default>
-                    <label>Conseil en Formation</label>
                 </value>
                 <value>
                     <fullName>Conseil en Marketing</fullName>
                     <default>false</default>
-                    <label>Conseil en Marketing</label>
                 </value>
                 <value>
                     <fullName>Conseil en Ress. Humaines/ Outplacement</fullName>
                     <default>false</default>
-                    <label>Conseil en Ress. Humaines/ Outplacement</label>
                 </value>
                 <value>
                     <fullName>Conseil Etudes/Recherches</fullName>
                     <default>false</default>
-                    <label>Conseil Etudes/Recherches</label>
                 </value>
                 <value>
                     <fullName>Conseil Juridique/Avocat</fullName>
                     <default>false</default>
-                    <label>Conseil Juridique/Avocat</label>
                 </value>
                 <value>
                     <fullName>Conseiller du Président</fullName>
                     <default>false</default>
-                    <label>Conseiller du Président</label>
                 </value>
                 <value>
                     <fullName>Conseiller Principal Education</fullName>
                     <default>false</default>
-                    <label>Conseiller Principal Education</label>
                 </value>
                 <value>
                     <fullName>Conseil Organis./SI</fullName>
                     <default>false</default>
-                    <label>Conseil Organis./SI</label>
                 </value>
                 <value>
                     <fullName>Conseil Qualité</fullName>
                     <default>false</default>
-                    <label>Conseil Qualité</label>
                 </value>
                 <value>
                     <fullName>Consolideur</fullName>
                     <default>false</default>
-                    <label>Consolideur</label>
                 </value>
                 <value>
                     <fullName>Consultant en Recrutement</fullName>
                     <default>false</default>
-                    <label>Consultant en Recrutement</label>
                 </value>
                 <value>
                     <fullName>Consultant Finance/Gestion/Audit</fullName>
                     <default>false</default>
-                    <label>Consultant Finance/Gestion/Audit</label>
                 </value>
                 <value>
                     <fullName>Contrôleur/Inspecteur Impôts</fullName>
                     <default>false</default>
-                    <label>Contrôleur/Inspecteur Impôts</label>
                 </value>
                 <value>
                     <fullName>Contrôleur de Gestion</fullName>
                     <default>false</default>
-                    <label>Contrôleur de Gestion</label>
                 </value>
                 <value>
                     <fullName>Contrôleur Financier</fullName>
                     <default>false</default>
-                    <label>Contrôleur Financier</label>
                 </value>
                 <value>
                     <fullName>Coordinateur Université Partenaire</fullName>
                     <default>false</default>
-                    <label>Coordinateur Université Partenaire</label>
                 </value>
                 <value>
                     <fullName>Crédit Manager</fullName>
                     <default>false</default>
-                    <label>Crédit Manager</label>
                 </value>
                 <value>
                     <fullName>Dir. des Compensations Internationales</fullName>
                     <default>false</default>
-                    <label>Dir. des Compensations Internationales</label>
                 </value>
                 <value>
                     <fullName>Dir. ou Resp. Administ. et Financier</fullName>
                     <default>false</default>
-                    <label>Dir. ou Resp. Administ. et Financier</label>
                 </value>
                 <value>
                     <fullName>Direc. d&apos;un Centre de Formation</fullName>
                     <default>false</default>
-                    <label>Direc. d&apos;un Centre de Formation</label>
                 </value>
                 <value>
                     <fullName>Direc. de Départ. Pédagogique</fullName>
                     <default>false</default>
-                    <label>Direc. de Départ. Pédagogique</label>
                 </value>
                 <value>
                     <fullName>Direct.Relations Hum./Sociales</fullName>
                     <default>false</default>
-                    <label>Direct.Relations Hum./Sociales</label>
                 </value>
                 <value>
                     <fullName>Direct de Programmes Internat.</fullName>
                     <default>false</default>
-                    <label>Direct de Programmes Internat.</label>
                 </value>
                 <value>
                     <fullName>Directeur</fullName>
                     <default>false</default>
-                    <label>Directeur</label>
                 </value>
                 <value>
                     <fullName>Directeur Adjoint</fullName>
                     <default>false</default>
-                    <label>Directeur Adjoint</label>
                 </value>
                 <value>
                     <fullName>Directeur Adjoint d&apos;Etablissement</fullName>
                     <default>false</default>
-                    <label>Directeur Adjoint d&apos;Etablissement</label>
                 </value>
                 <value>
                     <fullName>Directeur Administ. des Ventes</fullName>
                     <default>false</default>
-                    <label>Directeur Administ. des Ventes</label>
                 </value>
                 <value>
                     <fullName>Directeur Affaires Internat.</fullName>
                     <default>false</default>
-                    <label>Directeur Affaires Internat.</label>
                 </value>
                 <value>
                     <fullName>Directeur Affaires Juridiques</fullName>
                     <default>false</default>
-                    <label>Directeur Affaires Juridiques</label>
                 </value>
                 <value>
                     <fullName>Directeur Clientèle</fullName>
                     <default>false</default>
-                    <label>Directeur Clientèle</label>
                 </value>
                 <value>
                     <fullName>Directeur Commercial</fullName>
                     <default>false</default>
-                    <label>Directeur Commercial</label>
                 </value>
                 <value>
                     <fullName>Directeur d&apos;Agence</fullName>
                     <default>false</default>
-                    <label>Directeur d&apos;Agence</label>
                 </value>
                 <value>
                     <fullName>Directeur d&apos;Etablissement</fullName>
                     <default>false</default>
-                    <label>Directeur d&apos;Etablissement</label>
                 </value>
                 <value>
                     <fullName>Directeur de Ctre Form.Intern.</fullName>
                     <default>false</default>
-                    <label>Directeur de Ctre Form.Intern.</label>
                 </value>
                 <value>
                     <fullName>Directeur de Filiale</fullName>
                     <default>false</default>
-                    <label>Directeur de Filiale</label>
                 </value>
                 <value>
                     <fullName>Directeur de la Communication</fullName>
                     <default>false</default>
-                    <label>Directeur de la Communication</label>
                 </value>
                 <value>
                     <fullName>Directeur de la Formation</fullName>
                     <default>false</default>
-                    <label>Directeur de la Formation</label>
                 </value>
                 <value>
                     <fullName>Directeur de Production</fullName>
                     <default>false</default>
-                    <label>Directeur de Production</label>
                 </value>
                 <value>
                     <fullName>Directeur de Programmes</fullName>
                     <default>false</default>
-                    <label>Directeur de Programmes</label>
                 </value>
                 <value>
                     <fullName>Directeur des Achats</fullName>
                     <default>false</default>
-                    <label>Directeur des Achats</label>
                 </value>
                 <value>
                     <fullName>Directeur des Concours</fullName>
                     <default>false</default>
-                    <label>Directeur des Concours</label>
                 </value>
                 <value>
                     <fullName>Directeur des Etudes</fullName>
                     <default>false</default>
-                    <label>Directeur des Etudes</label>
                 </value>
                 <value>
                     <fullName>Directeur des Relations Exter.</fullName>
                     <default>false</default>
-                    <label>Directeur des Relations Exter.</label>
                 </value>
                 <value>
                     <fullName>Directeur des Ventes</fullName>
                     <default>false</default>
-                    <label>Directeur des Ventes</label>
                 </value>
                 <value>
                     <fullName>Directeur du Dévelop. Cadres Dirigs</fullName>
                     <default>false</default>
-                    <label>Directeur du Dévelop. Cadres Dirigs</label>
                 </value>
                 <value>
                     <fullName>Directeur du Développement</fullName>
                     <default>false</default>
-                    <label>Directeur du Développement</label>
                 </value>
                 <value>
                     <fullName>Directeur du Personnel</fullName>
                     <default>false</default>
-                    <label>Directeur du Personnel</label>
                 </value>
                 <value>
                     <fullName>Directeur Etudes/Recherches</fullName>
                     <default>false</default>
-                    <label>Directeur Etudes/Recherches</label>
                 </value>
                 <value>
                     <fullName>Directeur Export</fullName>
                     <default>false</default>
-                    <label>Directeur Export</label>
                 </value>
                 <value>
                     <fullName>Directeur Formation Commerc.</fullName>
                     <default>false</default>
-                    <label>Directeur Formation Commerc.</label>
                 </value>
                 <value>
                     <fullName>Directeur Général</fullName>
                     <default>false</default>
-                    <label>Directeur Général</label>
                 </value>
                 <value>
                     <fullName>Directeur Général Adjoint</fullName>
                     <default>false</default>
-                    <label>Directeur Général Adjoint</label>
                 </value>
                 <value>
                     <fullName>Directeur Industriel</fullName>
                     <default>false</default>
-                    <label>Directeur Industriel</label>
                 </value>
                 <value>
                     <fullName>Directeur Logistique</fullName>
                     <default>false</default>
-                    <label>Directeur Logistique</label>
                 </value>
                 <value>
                     <fullName>Directeur Logistique SI</fullName>
                     <default>false</default>
-                    <label>Directeur Logistique SI</label>
                 </value>
                 <value>
                     <fullName>Directeur Marketing</fullName>
                     <default>false</default>
-                    <label>Directeur Marketing</label>
                 </value>
                 <value>
                     <fullName>Directeur Organi./SI</fullName>
                     <default>false</default>
-                    <label>Directeur Organi./SI</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Conseil en Stratégie</fullName>
                     <default>false</default>
-                    <label>Directeur ou Conseil en Stratégie</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Resp. Juridique et Fiscal</fullName>
                     <default>false</default>
-                    <label>Directeur ou Resp. Juridique et Fiscal</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Responsable Administratif</fullName>
                     <default>false</default>
-                    <label>Directeur ou Responsable Administratif</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Responsable Comptabilité</fullName>
                     <default>false</default>
-                    <label>Directeur ou Responsable Comptabilité</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Responsable Financier</fullName>
                     <default>false</default>
-                    <label>Directeur ou Responsable Financier</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Responsable Juridique</fullName>
                     <default>false</default>
-                    <label>Directeur ou Responsable Juridique</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Responsable Recrutement</fullName>
                     <default>false</default>
-                    <label>Directeur ou Responsable Recrutement</label>
                 </value>
                 <value>
                     <fullName>Directeur Promotion</fullName>
                     <default>false</default>
-                    <label>Directeur Promotion</label>
                 </value>
                 <value>
                     <fullName>Directeur Publicité</fullName>
                     <default>false</default>
-                    <label>Directeur Publicité</label>
                 </value>
                 <value>
                     <fullName>Directeur Qualité</fullName>
                     <default>false</default>
-                    <label>Directeur Qualité</label>
                 </value>
                 <value>
                     <fullName>Directeur Recherche/Dévelop.</fullName>
                     <default>false</default>
-                    <label>Directeur Recherche/Dévelop.</label>
                 </value>
                 <value>
                     <fullName>Directeur Régional</fullName>
                     <default>false</default>
-                    <label>Directeur Régional</label>
                 </value>
                 <value>
                     <fullName>Directeur Réseau &amp; Télécom</fullName>
                     <default>false</default>
-                    <label>Directeur Réseau &amp; Télécom</label>
                 </value>
                 <value>
                     <fullName>Directeur Ressources Humaines</fullName>
                     <default>false</default>
-                    <label>Directeur Ressources Humaines</label>
                 </value>
                 <value>
                     <fullName>Directeur SI</fullName>
                     <default>false</default>
-                    <label>Directeur SI</label>
                 </value>
                 <value>
                     <fullName>Directeur Technique</fullName>
                     <default>false</default>
-                    <label>Directeur Technique</label>
                 </value>
                 <value>
                     <fullName>Direction Générale</fullName>
                     <default>false</default>
-                    <label>Direction Générale</label>
                 </value>
                 <value>
                     <fullName>Divers Etranger</fullName>
                     <default>false</default>
-                    <label>Divers Etranger</label>
                 </value>
                 <value>
                     <fullName>Doctorant</fullName>
                     <default>false</default>
-                    <label>Doctorant</label>
                 </value>
                 <value>
                     <fullName>Documentaliste</fullName>
                     <default>false</default>
-                    <label>Documentaliste</label>
                 </value>
                 <value>
                     <fullName>Elus</fullName>
                     <default>false</default>
-                    <label>Elus</label>
                 </value>
                 <value>
                     <fullName>En Cours de Création d&apos;Entreprise</fullName>
                     <default>false</default>
-                    <label>En Cours de Création d&apos;Entreprise</label>
                 </value>
                 <value>
                     <fullName>En Cours de Formation Compl.</fullName>
                     <default>false</default>
-                    <label>En Cours de Formation Compl.</label>
                 </value>
                 <value>
                     <fullName>Enseignant</fullName>
                     <default>false</default>
-                    <label>Enseignant</label>
                 </value>
                 <value>
                     <fullName>Enseignement/Education</fullName>
                     <default>false</default>
-                    <label>Enseignement/Education</label>
                 </value>
                 <value>
                     <fullName>Etud/Recherche/Dévelop/Qualité</fullName>
                     <default>false</default>
-                    <label>Etud/Recherche/Dévelop/Qualité</label>
                 </value>
                 <value>
                     <fullName>Expert Comptable</fullName>
                     <default>false</default>
-                    <label>Expert Comptable</label>
                 </value>
                 <value>
                     <fullName>Exploitant Agricole</fullName>
                     <default>false</default>
-                    <label>Exploitant Agricole</label>
                 </value>
                 <value>
                     <fullName>Finance/Gest./Adminis./Juridi.</fullName>
                     <default>false</default>
-                    <label>Finance/Gest./Adminis./Juridi.</label>
                 </value>
                 <value>
                     <fullName>Fondé de Pouvoir</fullName>
                     <default>false</default>
-                    <label>Fondé de Pouvoir</label>
                 </value>
                 <value>
                     <fullName>Formateur Interne</fullName>
                     <default>false</default>
-                    <label>Formateur Interne</label>
                 </value>
                 <value>
                     <fullName>Gérant(e)</fullName>
                     <default>false</default>
-                    <label>Gérant(e)</label>
                 </value>
                 <value>
                     <fullName>Gestionnaire de Patrimoine</fullName>
                     <default>false</default>
-                    <label>Gestionnaire de Patrimoine</label>
                 </value>
                 <value>
                     <fullName>Hôtelier/Restaurateur</fullName>
                     <default>false</default>
-                    <label>Hôtelier/Restaurateur</label>
                 </value>
                 <value>
                     <fullName>Ingénieur Commercial</fullName>
                     <default>false</default>
-                    <label>Ingénieur Commercial</label>
                 </value>
                 <value>
                     <fullName>Ingénieur d&apos;Affaires</fullName>
                     <default>false</default>
-                    <label>Ingénieur d&apos;Affaires</label>
                 </value>
                 <value>
                     <fullName>Ingénieur Etudes/Recherches</fullName>
                     <default>false</default>
-                    <label>Ingénieur Etudes/Recherches</label>
                 </value>
                 <value>
                     <fullName>Journaliste</fullName>
                     <default>false</default>
-                    <label>Journaliste</label>
                 </value>
                 <value>
                     <fullName>Marketing/Communication</fullName>
                     <default>false</default>
-                    <label>Marketing/Communication</label>
                 </value>
                 <value>
                     <fullName>Militaire</fullName>
                     <default>false</default>
-                    <label>Militaire</label>
                 </value>
                 <value>
                     <fullName>Ministre/Député/Haut Fonction.</fullName>
                     <default>false</default>
-                    <label>Ministre/Député/Haut Fonction.</label>
                 </value>
                 <value>
                     <fullName>Non Renseignée</fullName>
                     <default>false</default>
-                    <label>Non Renseignée</label>
                 </value>
                 <value>
                     <fullName>Organisation/Systèmes d&apos;Informations</fullName>
                     <default>false</default>
-                    <label>Organisation/Systèmes d&apos;Informations</label>
                 </value>
                 <value>
                     <fullName>Personnel Administratif</fullName>
                     <default>false</default>
-                    <label>Personnel Administratif</label>
                 </value>
                 <value>
                     <fullName>Personnel Technique</fullName>
                     <default>false</default>
-                    <label>Personnel Technique</label>
                 </value>
                 <value>
                     <fullName>Président(e)</fullName>
                     <default>false</default>
-                    <label>Président(e)</label>
                 </value>
                 <value>
                     <fullName>Président Directeur Général</fullName>
                     <default>false</default>
-                    <label>Président Directeur Général</label>
                 </value>
                 <value>
                     <fullName>Président du Directoire</fullName>
                     <default>false</default>
-                    <label>Président du Directoire</label>
                 </value>
                 <value>
                     <fullName>Principal/Respons. des Etudes</fullName>
                     <default>false</default>
-                    <label>Principal/Respons. des Etudes</label>
                 </value>
                 <value>
                     <fullName>Production/Achats</fullName>
                     <default>false</default>
-                    <label>Production/Achats</label>
                 </value>
                 <value>
                     <fullName>Professeur</fullName>
                     <default>false</default>
-                    <label>Professeur</label>
                 </value>
                 <value>
                     <fullName>Profession Artistique</fullName>
                     <default>false</default>
-                    <label>Profession Artistique</label>
                 </value>
                 <value>
                     <fullName>Prof Libérales &amp; Act.Diverses</fullName>
                     <default>false</default>
-                    <label>Prof Libérales &amp; Act.Diverses</label>
                 </value>
                 <value>
                     <fullName>Prof Médicale/Pharmacie/Vétér.</fullName>
                     <default>false</default>
-                    <label>Prof Médicale/Pharmacie/Vétér.</label>
                 </value>
                 <value>
                     <fullName>Proviseur</fullName>
                     <default>false</default>
-                    <label>Proviseur</label>
                 </value>
                 <value>
                     <fullName>Proviseur Adjoint</fullName>
                     <default>false</default>
-                    <label>Proviseur Adjoint</label>
                 </value>
                 <value>
                     <fullName>Recteur/Doyen</fullName>
                     <default>false</default>
-                    <label>Recteur/Doyen</label>
                 </value>
                 <value>
                     <fullName>Religieux</fullName>
                     <default>false</default>
-                    <label>Religieux</label>
                 </value>
                 <value>
                     <fullName>Resp. Communication Financière</fullName>
                     <default>false</default>
-                    <label>Resp. Communication Financière</label>
                 </value>
                 <value>
                     <fullName>Resp. des Nouveaux Produits</fullName>
                     <default>false</default>
-                    <label>Resp. des Nouveaux Produits</label>
                 </value>
                 <value>
                     <fullName>Resp. Environ/Risque/Sécurité</fullName>
                     <default>false</default>
-                    <label>Resp. Environ/Risque/Sécurité</label>
                 </value>
                 <value>
                     <fullName>Respons.d&apos;Unité de Production</fullName>
                     <default>false</default>
-                    <label>Respons.d&apos;Unité de Production</label>
                 </value>
                 <value>
                     <fullName>Respons.Relations Gdes Ecoles</fullName>
                     <default>false</default>
-                    <label>Respons.Relations Gdes Ecoles</label>
                 </value>
                 <value>
                     <fullName>Responsable Audio-Visuel</fullName>
                     <default>false</default>
-                    <label>Responsable Audio-Visuel</label>
                 </value>
                 <value>
                     <fullName>Responsable Avantages et Rémunérations</fullName>
                     <default>false</default>
-                    <label>Responsable Avantages et Rémunérations</label>
                 </value>
                 <value>
                     <fullName>Responsable Classes Préparatoires</fullName>
                     <default>false</default>
-                    <label>Responsable Classes Préparatoires</label>
                 </value>
                 <value>
                     <fullName>Responsable Commercial(e)</fullName>
                     <default>false</default>
-                    <label>Responsable Commercial(e)</label>
                 </value>
                 <value>
                     <fullName>Responsable Communicat.Interne</fullName>
                     <default>false</default>
-                    <label>Responsable Communicat.Interne</label>
                 </value>
                 <value>
                     <fullName>Responsable de la Communication</fullName>
                     <default>false</default>
-                    <label>Responsable de la Communication</label>
                 </value>
                 <value>
                     <fullName>Responsable de la Formation</fullName>
                     <default>false</default>
-                    <label>Responsable de la Formation</label>
                 </value>
                 <value>
                     <fullName>Responsable de Promotion</fullName>
                     <default>false</default>
-                    <label>Responsable de Promotion</label>
                 </value>
                 <value>
                     <fullName>Responsable des Achats</fullName>
                     <default>false</default>
-                    <label>Responsable des Achats</label>
                 </value>
                 <value>
                     <fullName>Responsable des Etudes</fullName>
                     <default>false</default>
-                    <label>Responsable des Etudes</label>
                 </value>
                 <value>
                     <fullName>Responsable de Stages</fullName>
                     <default>false</default>
-                    <label>Responsable de Stages</label>
                 </value>
                 <value>
                     <fullName>Responsable des Ventes</fullName>
                     <default>false</default>
-                    <label>Responsable des Ventes</label>
                 </value>
                 <value>
                     <fullName>Responsable de Zone Export</fullName>
                     <default>false</default>
-                    <label>Responsable de Zone Export</label>
                 </value>
                 <value>
                     <fullName>Responsable du Contrôle de Gestion</fullName>
                     <default>false</default>
-                    <label>Responsable du Contrôle de Gestion</label>
                 </value>
                 <value>
                     <fullName>Responsable du Personnel</fullName>
                     <default>false</default>
-                    <label>Responsable du Personnel</label>
                 </value>
                 <value>
                     <fullName>Responsable e-Commerce</fullName>
                     <default>false</default>
-                    <label>Responsable e-Commerce</label>
                 </value>
                 <value>
                     <fullName>Responsable Edition</fullName>
                     <default>false</default>
-                    <label>Responsable Edition</label>
                 </value>
                 <value>
                     <fullName>Responsable Etudes/Recherches</fullName>
                     <default>false</default>
-                    <label>Responsable Etudes/Recherches</label>
                 </value>
                 <value>
                     <fullName>Responsable Etudes Marketing</fullName>
                     <default>false</default>
-                    <label>Responsable Etudes Marketing</label>
                 </value>
                 <value>
                     <fullName>Responsable Form. des Cadres</fullName>
                     <default>false</default>
-                    <label>Responsable Form. des Cadres</label>
                 </value>
                 <value>
                     <fullName>Responsable Gestion</fullName>
                     <default>false</default>
-                    <label>Responsable Gestion</label>
                 </value>
                 <value>
                     <fullName>Responsable Gestion Cadres/Car</fullName>
                     <default>false</default>
-                    <label>Responsable Gestion Cadres/Car</label>
                 </value>
                 <value>
                     <fullName>Responsable Marketing</fullName>
                     <default>false</default>
-                    <label>Responsable Marketing</label>
                 </value>
                 <value>
                     <fullName>Responsable Mécénat</fullName>
                     <default>false</default>
-                    <label>Responsable Mécénat</label>
                 </value>
                 <value>
                     <fullName>Responsable Organisation</fullName>
                     <default>false</default>
-                    <label>Responsable Organisation</label>
                 </value>
                 <value>
                     <fullName>Responsable Régional</fullName>
                     <default>false</default>
-                    <label>Responsable Régional</label>
                 </value>
                 <value>
                     <fullName>Responsable Relations/Presse</fullName>
                     <default>false</default>
-                    <label>Responsable Relations/Presse</label>
                 </value>
                 <value>
                     <fullName>Responsable Réseau et Télécom</fullName>
                     <default>false</default>
-                    <label>Responsable Réseau et Télécom</label>
                 </value>
                 <value>
                     <fullName>Responsable Ressources Humaines</fullName>
                     <default>false</default>
-                    <label>Responsable Ressources Humaines</label>
                 </value>
                 <value>
                     <fullName>Responsable Sécurité SI</fullName>
                     <default>false</default>
-                    <label>Responsable Sécurité SI</label>
                 </value>
                 <value>
                     <fullName>Responsable SI</fullName>
                     <default>false</default>
-                    <label>Responsable SI</label>
                 </value>
                 <value>
                     <fullName>Responsable Taxe Apprentissage</fullName>
                     <default>false</default>
-                    <label>Responsable Taxe Apprentissage</label>
                 </value>
                 <value>
                     <fullName>Responsable Technique</fullName>
                     <default>false</default>
-                    <label>Responsable Technique</label>
                 </value>
                 <value>
                     <fullName>Responsable Trade Marketing</fullName>
                     <default>false</default>
-                    <label>Responsable Trade Marketing</label>
                 </value>
                 <value>
                     <fullName>Ressources Humaines/Formation</fullName>
                     <default>false</default>
-                    <label>Ressources Humaines/Formation</label>
                 </value>
                 <value>
                     <fullName>Retraité(e)</fullName>
                     <default>false</default>
-                    <label>Retraité(e)</label>
                 </value>
                 <value>
                     <fullName>Risk Manager</fullName>
                     <default>false</default>
-                    <label>Risk Manager</label>
                 </value>
                 <value>
                     <fullName>Secrétaire/Assistante</fullName>
                     <default>false</default>
-                    <label>Secrétaire/Assistante</label>
                 </value>
                 <value>
                     <fullName>Secrétaire Général</fullName>
                     <default>false</default>
-                    <label>Secrétaire Général</label>
                 </value>
                 <value>
                     <fullName>Spéc.Marchés Financiers/Back Office</fullName>
                     <default>false</default>
-                    <label>Spéc.Marchés Financiers/Back Office</label>
                 </value>
                 <value>
                     <fullName>Spéc.Marchés Financiers/Front Office</fullName>
                     <default>false</default>
-                    <label>Spéc.Marchés Financiers/Front Office</label>
                 </value>
                 <value>
                     <fullName>Spéc.Marchés Financiers/Middle Office</fullName>
                     <default>false</default>
-                    <label>Spéc.Marchés Financiers/Middle Office</label>
                 </value>
                 <value>
                     <fullName>Spécialiste des Marchés Financiers</fullName>
                     <default>false</default>
-                    <label>Spécialiste des Marchés Financiers</label>
                 </value>
                 <value>
                     <fullName>Syndic d&apos;Immeubles</fullName>
                     <default>false</default>
-                    <label>Syndic d&apos;Immeubles</label>
                 </value>
                 <value>
                     <fullName>Trésorier</fullName>
                     <default>false</default>
-                    <label>Trésorier</label>
                 </value>
                 <value>
                     <fullName>Vice-Président</fullName>
                     <default>false</default>
-                    <label>Vice-Président</label>
                 </value>
                 <value>
                     <fullName>Volontariat International en Entreprise</fullName>
                     <default>false</default>
-                    <label>Volontariat International en Entreprise</label>
                 </value>
                 <value>
                     <fullName>VP/VPRH</fullName>
                     <default>false</default>
-                    <label>VP/VPRH</label>
                 </value>
                 <value>
                     <fullName>Webmaster</fullName>
                     <default>false</default>
-                    <label>Webmaster</label>
                 </value>
             </valueSetDefinition>
             <valueSettings>
@@ -3621,117 +3261,94 @@
                 <value>
                     <fullName>ACCOMP. CARRIERE ou CARRIERE RESEAUX</fullName>
                     <default>false</default>
-                    <label>ACCOMP. CARRIERE ou CARRIERE RESEAUX</label>
                 </value>
                 <value>
                     <fullName>AUTRES OFFRES ?</fullName>
                     <default>false</default>
-                    <label>AUTRES OFFRES ?</label>
                 </value>
                 <value>
                     <fullName>AUTRES PROGRAMMES</fullName>
                     <default>false</default>
-                    <label>AUTRES PROGRAMMES</label>
                 </value>
                 <value>
                     <fullName>AUTRES SERVICES</fullName>
                     <default>false</default>
-                    <label>AUTRES SERVICES</label>
                 </value>
                 <value>
                     <fullName>EVENEMENTS DE RECRUTEMENT</fullName>
                     <default>false</default>
-                    <label>EVENEMENTS DE RECRUTEMENT</label>
                 </value>
                 <value>
                     <fullName>EVENEMENTS EXPERTS</fullName>
                     <default>false</default>
-                    <label>EVENEMENTS EXPERTS</label>
                 </value>
                 <value>
                     <fullName>EVENEMENTS IMAGE / RESEAU</fullName>
                     <default>false</default>
-                    <label>EVENEMENTS IMAGE / RESEAU</label>
                 </value>
                 <value>
                     <fullName>EVENEMENTS PROMOTIONNELS</fullName>
                     <default>false</default>
-                    <label>EVENEMENTS PROMOTIONNELS</label>
                 </value>
                 <value>
                     <fullName>INFORMER (par différents canaux)</fullName>
                     <default>false</default>
-                    <label>INFORMER (par différents canaux)</label>
                 </value>
                 <value>
                     <fullName>INTRA</fullName>
                     <default>false</default>
-                    <label>INTRA</label>
                 </value>
                 <value>
                     <fullName>MECENAT (CENTRALE LYON - EMLYON)</fullName>
                     <default>false</default>
-                    <label>MECENAT (CENTRALE LYON - EMLYON)</label>
                 </value>
                 <value>
                     <fullName>MECENAT EMLYON</fullName>
                     <default>false</default>
-                    <label>MECENAT EMLYON</label>
                 </value>
                 <value>
                     <fullName>MECENAT FONDATION EMLYON</fullName>
                     <default>false</default>
-                    <label>MECENAT FONDATION EMLYON</label>
                 </value>
                 <value>
                     <fullName>MESURER LA QUALITE ET LA PERFORMANCE</fullName>
                     <default>false</default>
-                    <label>MESURER LA QUALITE ET LA PERFORMANCE</label>
                 </value>
                 <value>
                     <fullName>OFFRES EXECUTIVE DEVELOPMENT hors MBA</fullName>
                     <default>false</default>
-                    <label>OFFRES EXECUTIVE DEVELOPMENT hors MBA</label>
                 </value>
                 <value>
                     <fullName>Programme certifiant</fullName>
                     <default>false</default>
-                    <label>Programme certifiant</label>
                 </value>
                 <value>
                     <fullName>Programme court</fullName>
                     <default>false</default>
-                    <label>Programme court</label>
                 </value>
                 <value>
                     <fullName>PROGRAMMES ENTREPRENEURS</fullName>
                     <default>false</default>
-                    <label>PROGRAMMES ENTREPRENEURS</label>
                 </value>
                 <value>
                     <fullName>PROGRAMMES MASTER</fullName>
                     <default>false</default>
-                    <label>PROGRAMMES MASTER</label>
                 </value>
                 <value>
                     <fullName>PROGRAMMES MASTERES</fullName>
                     <default>false</default>
-                    <label>PROGRAMMES MASTERES</label>
                 </value>
                 <value>
                     <fullName>PROGRAMMES MBA</fullName>
                     <default>false</default>
-                    <label>PROGRAMMES MBA</label>
                 </value>
                 <value>
                     <fullName>SPONSORING</fullName>
                     <default>false</default>
-                    <label>SPONSORING</label>
                 </value>
                 <value>
                     <fullName>TAXE D&apos;APPRENTISSAGE</fullName>
                     <default>false</default>
-                    <label>TAXE D&apos;APPRENTISSAGE</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -3814,37 +3431,30 @@
                 <value>
                     <fullName>Date légale dépassée</fullName>
                     <default>false</default>
-                    <label>Date légale dépassée</label>
                 </value>
                 <value>
                     <fullName>Doublon</fullName>
                     <default>false</default>
-                    <label>Doublon</label>
                 </value>
                 <value>
                     <fullName>Existe déjà</fullName>
                     <default>false</default>
-                    <label>Existe déjà</label>
                 </value>
                 <value>
                     <fullName>Impossible à contacter</fullName>
                     <default>false</default>
-                    <label>Impossible à contacter</label>
                 </value>
                 <value>
                     <fullName>Non intéressé(e)</fullName>
                     <default>false</default>
-                    <label>Non intéressé(e)</label>
                 </value>
                 <value>
                     <fullName>Obsolète</fullName>
                     <default>false</default>
-                    <label>Obsolète</label>
                 </value>
                 <value>
                     <fullName>Test EMLYON</fullName>
                     <default>false</default>
-                    <label>Test EMLYON</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -3869,97 +3479,78 @@
                 <value>
                     <fullName>Agent commercial</fullName>
                     <default>false</default>
-                    <label>Agent commercial</label>
                 </value>
                 <value>
                     <fullName>Articles de Presse</fullName>
                     <default>false</default>
-                    <label>Articles de Presse</label>
                 </value>
                 <value>
                     <fullName>Autre</fullName>
                     <default>false</default>
-                    <label>Autre</label>
                 </value>
                 <value>
                     <fullName>Bouche à oreille</fullName>
                     <default>false</default>
-                    <label>Bouche à oreille</label>
                 </value>
                 <value>
                     <fullName>Classements</fullName>
                     <default>false</default>
-                    <label>Classements</label>
                 </value>
                 <value>
                     <fullName>Diplômés</fullName>
                     <default>false</default>
-                    <label>Diplômés</label>
                 </value>
                 <value>
                     <fullName>Directories/ Guides</fullName>
                     <default>false</default>
-                    <label>Directories/ Guides</label>
                 </value>
                 <value>
                     <fullName>Display/ Banner</fullName>
                     <default>false</default>
-                    <label>Display/ Banner</label>
                 </value>
                 <value>
                     <fullName>Emailing</fullName>
                     <default>false</default>
-                    <label>Emailing</label>
                 </value>
                 <value>
                     <fullName>Evènements/ Conférences</fullName>
                     <default>false</default>
-                    <label>Evènements/ Conférences</label>
                 </value>
                 <value>
                     <fullName>Forum/salon</fullName>
                     <default>false</default>
-                    <label>Forum/salon</label>
                 </value>
                 <value>
                     <fullName>Mailing (papier)</fullName>
                     <default>false</default>
-                    <label>Mailing (papier)</label>
                 </value>
                 <value>
                     <fullName>Parents</fullName>
                     <default>false</default>
-                    <label>Parents</label>
                 </value>
                 <value>
                     <fullName>Prescripteurs</fullName>
                     <default>false</default>
-                    <label>Prescripteurs</label>
                 </value>
                 <value>
                     <fullName>Publicité papier</fullName>
                     <default>false</default>
-                    <label>Publicité papier</label>
                 </value>
                 <value>
                     <fullName>Réputation</fullName>
                     <default>false</default>
-                    <label>Réputation</label>
                 </value>
                 <value>
                     <fullName>Réseaux sociaux</fullName>
                     <default>false</default>
-                    <label>Réseaux sociaux</label>
                 </value>
                 <value>
                     <fullName>Téléphone</fullName>
                     <default>false</default>
-                    <label>Téléphone</label>
                 </value>
                 <value>
                     <fullName>Web to lead</fullName>
                     <default>false</default>
-                    <label>Web to lead</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -3978,42 +3569,34 @@
                 <value>
                     <fullName>0-2 ans</fullName>
                     <default>false</default>
-                    <label>0-2 ans</label>
                 </value>
                 <value>
                     <fullName>3-5 ans</fullName>
                     <default>false</default>
-                    <label>3-5 ans</label>
                 </value>
                 <value>
                     <fullName>6-10 ans</fullName>
                     <default>false</default>
-                    <label>6-10 ans</label>
                 </value>
                 <value>
                     <fullName>+ de 10 ans</fullName>
                     <default>false</default>
-                    <label>+ de 10 ans</label>
                 </value>
                 <value>
                     <fullName>11-15 ans</fullName>
                     <default>false</default>
-                    <label>11-15 ans</label>
                 </value>
                 <value>
                     <fullName>16-20 ans</fullName>
                     <default>false</default>
-                    <label>16-20 ans</label>
                 </value>
                 <value>
                     <fullName>21-25 ans</fullName>
                     <default>false</default>
-                    <label>21-25 ans</label>
                 </value>
                 <value>
                     <fullName>+ de 25 ans</fullName>
                     <default>false</default>
-                    <label>+ de 25 ans</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4032,32 +3615,26 @@
                 <value>
                     <fullName>Bac</fullName>
                     <default>false</default>
-                    <label>Bac</label>
                 </value>
                 <value>
                     <fullName>Bac + 1</fullName>
                     <default>false</default>
-                    <label>Bac + 1</label>
                 </value>
                 <value>
                     <fullName>Bac + 2</fullName>
                     <default>false</default>
-                    <label>Bac + 2</label>
                 </value>
                 <value>
                     <fullName>Bac + 3</fullName>
                     <default>false</default>
-                    <label>Bac + 3</label>
                 </value>
                 <value>
                     <fullName>Bac + 4</fullName>
                     <default>false</default>
-                    <label>Bac + 4</label>
                 </value>
                 <value>
                     <fullName>Bac + 5 et +</fullName>
                     <default>false</default>
-                    <label>Bac + 5 et +</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4129,27 +3706,22 @@
                 <value>
                     <fullName>Dirigeant</fullName>
                     <default>false</default>
-                    <label>Dirigeant</label>
                 </value>
                 <value>
                     <fullName>Expert métier</fullName>
                     <default>false</default>
-                    <label>Expert métier</label>
                 </value>
                 <value>
                     <fullName>Middle manager</fullName>
                     <default>false</default>
-                    <label>Middle manager</label>
                 </value>
                 <value>
                     <fullName>Primo manager</fullName>
                     <default>false</default>
-                    <label>Primo manager</label>
                 </value>
                 <value>
                     <fullName>Senior manager</fullName>
                     <default>false</default>
-                    <label>Senior manager</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4178,142 +3750,114 @@
                 <value>
                     <fullName>Adwords</fullName>
                     <default>false</default>
-                    <label>Adwords</label>
                 </value>
                 <value>
                     <fullName>Agent commercial</fullName>
                     <default>false</default>
-                    <label>Agent commercial</label>
                 </value>
                 <value>
                     <fullName>Application mobile</fullName>
                     <default>false</default>
-                    <label>Application mobile</label>
                 </value>
                 <value>
                     <fullName>Autre</fullName>
                     <default>false</default>
-                    <label>Autre</label>
                 </value>
                 <value>
                     <fullName>Campus Day virtuel</fullName>
                     <default>false</default>
-                    <label>Campus Day virtuel</label>
                 </value>
                 <value>
                     <fullName>Directories/ Guides</fullName>
                     <default>false</default>
-                    <label>Directories/ Guides</label>
                 </value>
                 <value>
                     <fullName>Display/ Banners</fullName>
                     <default>false</default>
-                    <label>Display/ Banners</label>
                 </value>
                 <value>
                     <fullName>Email</fullName>
                     <default>false</default>
-                    <label>Email</label>
                 </value>
                 <value>
                     <fullName>Fichiers externes</fullName>
                     <default>false</default>
-                    <label>Fichiers externes</label>
                 </value>
                 <value>
                     <fullName>Forum/ Salon</fullName>
                     <default>false</default>
-                    <label>Forum/ Salon</label>
                 </value>
                 <value>
                     <fullName>Import contacts</fullName>
                     <default>false</default>
-                    <label>Import contacts</label>
                 </value>
                 <value>
                     <fullName>Master class</fullName>
                     <default>false</default>
-                    <label>Master class</label>
                 </value>
                 <value>
                     <fullName>Module Chat</fullName>
                     <default>false</default>
-                    <label>Module Chat</label>
                 </value>
                 <value>
                     <fullName>Open class</fullName>
                     <default>false</default>
-                    <label>Open class</label>
                 </value>
                 <value>
                     <fullName>Prescripteurs</fullName>
                     <default>false</default>
-                    <label>Prescripteurs</label>
                 </value>
                 <value>
                     <fullName>Présentation aux écoles/ universités</fullName>
                     <default>false</default>
-                    <label>Présentation aux écoles/ universités</label>
                 </value>
                 <value>
                     <fullName>Présentation étudiants</fullName>
                     <default>false</default>
-                    <label>Présentation étudiants</label>
                 </value>
                 <value>
                     <fullName>Réputation</fullName>
                     <default>false</default>
-                    <label>Réputation</label>
                 </value>
                 <value>
                     <fullName>Réseaux sociaux</fullName>
                     <default>false</default>
-                    <label>Réseaux sociaux</label>
                 </value>
                 <value>
                     <fullName>Réunion d&apos;information France</fullName>
                     <default>false</default>
-                    <label>Réunion d&apos;information France</label>
                 </value>
                 <value>
                     <fullName>Réunion d&apos;information Internationale</fullName>
                     <default>false</default>
-                    <label>Réunion d&apos;information Internationale</label>
                 </value>
                 <value>
                     <fullName>Salon virtuel</fullName>
                     <default>false</default>
-                    <label>Salon virtuel</label>
                 </value>
                 <value>
                     <fullName>Score test</fullName>
                     <default>false</default>
-                    <label>Score test</label>
                 </value>
                 <value>
                     <fullName>Site web</fullName>
                     <default>false</default>
-                    <label>Site web</label>
                 </value>
                 <value>
                     <fullName>Téléphone</fullName>
                     <default>false</default>
-                    <label>Téléphone</label>
                 </value>
                 <value>
                     <fullName>Training Day (BBA)</fullName>
                     <default>false</default>
-                    <label>Training Day (BBA)</label>
                 </value>
                 <value>
                     <fullName>Visite</fullName>
                     <default>false</default>
-                    <label>Visite</label>
                 </value>
                 <value>
                     <fullName>Web to lead</fullName>
                     <default>false</default>
-                    <label>Web to lead</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4338,12 +3882,10 @@
                 <value>
                     <fullName>Des collaborateurs</fullName>
                     <default>false</default>
-                    <label>Des collaborateurs</label>
                 </value>
                 <value>
                     <fullName>Soi</fullName>
                     <default>false</default>
-                    <label>Soi</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4413,87 +3955,70 @@ en production</description>
                 <value>
                     <fullName>Achats</fullName>
                     <default>false</default>
-                    <label>Achats</label>
                 </value>
                 <value>
                     <fullName>Coaching</fullName>
                     <default>false</default>
-                    <label>Coaching</label>
                 </value>
                 <value>
                     <fullName>Commercial</fullName>
                     <default>false</default>
-                    <label>Commercial</label>
                 </value>
                 <value>
                     <fullName>Conduite du changement</fullName>
                     <default>false</default>
-                    <label>Conduite du changement</label>
                 </value>
                 <value>
                     <fullName>Développement personnel</fullName>
                     <default>false</default>
-                    <label>Développement personnel</label>
                 </value>
                 <value>
                     <fullName>Entrepreneuriat/ Innovation</fullName>
                     <default>false</default>
-                    <label>Entrepreneuriat/ Innovation</label>
                 </value>
                 <value>
                     <fullName>Finance</fullName>
                     <default>false</default>
-                    <label>Finance</label>
                 </value>
                 <value>
                     <fullName>Hospitality</fullName>
                     <default>false</default>
-                    <label>Hospitality</label>
                 </value>
                 <value>
                     <fullName>Luxe</fullName>
                     <default>false</default>
-                    <label>Luxe</label>
                 </value>
                 <value>
                     <fullName>Management et ressources humaines</fullName>
                     <default>false</default>
-                    <label>Management et ressources humaines</label>
                 </value>
                 <value>
                     <fullName>Management Général</fullName>
                     <default>false</default>
-                    <label>Management Général</label>
                 </value>
                 <value>
                     <fullName>Marketing</fullName>
                     <default>false</default>
-                    <label>Marketing</label>
                 </value>
                 <value>
                     <fullName>Programmes de leadership</fullName>
                     <default>false</default>
-                    <label>Programmes de leadership</label>
                 </value>
                 <value>
                     <fullName>Programmes pour dirigeants</fullName>
                     <default>false</default>
-                    <label>Programmes pour dirigeants</label>
                 </value>
                 <value>
                     <fullName>Sports</fullName>
                     <default>false</default>
-                    <label>Sports</label>
                 </value>
                 <value>
                     <fullName>Stratégie</fullName>
                     <default>false</default>
-                    <label>Stratégie</label>
                 </value>
                 <value>
                     <fullName>Transport / Logistique</fullName>
                     <default>false</default>
-                    <label>Transport / Logistique</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

@@ -4,21 +4,17 @@
     <standardValue>
         <fullName>En cours</fullName>
         <default>false</default>
-        <label>En cours</label>
     </standardValue>
     <standardValue>
         <fullName>Terminé</fullName>
         <default>false</default>
-        <label>Terminé</label>
     </standardValue>
     <standardValue>
         <fullName>Annulé</fullName>
         <default>false</default>
-        <label>Annulé</label>
     </standardValue>
     <standardValue>
         <fullName>Prévu</fullName>
         <default>true</default>
-        <label>Prévu</label>
     </standardValue>
 </StandardValueSet>
