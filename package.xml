@@ -226,10 +226,10 @@
         <members>LeadConvertSettings</members>
         <name>LeadConvertSettings</name>
     </types>
-    <types>
+    <!-- types>
         <members>*</members>
         <name>Letterhead</name>
-    </types>
+    </types-->
     <types>
         <members>*</members>
         <name>LiveChatAgentConfig</name>
