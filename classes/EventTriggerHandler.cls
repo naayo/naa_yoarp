@@ -5,6 +5,11 @@
 
 public class EventTriggerHandler extends TriggerHandler {
 
+    private static final Id ID_PROD = '00Dw0000000Cp11EAC';
+    private static final Id ID_INT = '00D6E000000CvrTUAS';
+    private static final Id ID_FULL = '00D5E0000008kwVUAQ';
+    private static final Id ID_SANDBOX1 = '00D5E0000008kwyUAA';
+
     public EventTriggerHandler() {}
 
     protected override void beforeInsert() {
@@ -15,24 +20,29 @@ public class EventTriggerHandler extends TriggerHandler {
 
         // Vérification qu'on est bien dans le cas d'une insertion de données de la production vers une sandbox
         for (Event e : events) {
-            if (e.TECH_External_What_Id__c != null || e.TECH_External_Who_Id__c != null) {
+            if (!UserInfo.getOrganizationId().equals(ID_PROD) &&
+                    !UserInfo.getOrganizationId().equals(ID_INT) &&
+                    !UserInfo.getOrganizationId().equals(ID_FULL) &&
+                    !UserInfo.getOrganizationId().equals(ID_SANDBOX1)) {
+                if (e.TECH_External_What_Id__c != null || e.TECH_External_Who_Id__c != null) {
 
                 /**
                 Attribution du premier contact trouvé aux événements pour pouvoir les insérer
                 car les champs polymorphiques WhatId et WhoId ne peuvent pas faire référence à des External Id
                  */
 
-                // Récupération d'un contact quelconque afin de permettre l'insertion des événements dans la sandbox
-                Contact contact = [SELECT Id FROM Contact LIMIT 1];
+                    // Récupération d'un contact quelconque afin de permettre l'insertion des événements dans la sandbox
+                    Contact contact = [SELECT Id FROM Contact LIMIT 1];
 
-                System.debug('-- PARAM contact retrieved : ' + contact );
+                    System.debug('-- PARAM contact retrieved : ' + contact );
 
-                // Attribution de ce contact au champ WhoId des nouveaux événements
-                for (Event event : events) {
-                    event.WhoId = contact.Id;
+                    // Attribution de ce contact au champ WhoId des nouveaux événements
+                    for (Event event : events) {
+                        event.WhoId = contact.Id;
+                    }
+                    System.debug('-- PARAM event.WhoId : ' + event.WhoId);
+                    System.debug('-- PARAM contact.Id : ' + contact.Id);
                 }
-                System.debug('-- PARAM event.WhoId : ' + event.WhoId);
-                System.debug('-- PARAM contact.Id : ' + contact.Id);
             }
         }
 
