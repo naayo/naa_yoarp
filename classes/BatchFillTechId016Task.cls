@@ -5,7 +5,7 @@
  */
 
 global class BatchFillTechId016Task implements Database.Batchable<sObject> {
-    String query = 'SELECT WhoId, WhatId FROM Task';
+    String query = 'SELECT WhoId, WhatId FROM Task WHERE Tech_External_What_Id__c = null AND Tech_External_What_Id__c = null';
 
     global Database.QueryLocator start(Database.BatchableContext bc) {
         System.debug('--- BEGIN BatchFillTechId016Task ---');

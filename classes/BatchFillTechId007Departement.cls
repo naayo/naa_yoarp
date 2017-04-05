@@ -5,7 +5,7 @@
  */
 
 global class BatchFillTechId007Departement implements Database.Batchable<sObject> {
-    String query = 'SELECT Id FROM D_partement__c';
+    String query = 'SELECT Id FROM D_partement__c WHERE Tech_External_Id__c = null';
 
     global Database.QueryLocator start(Database.BatchableContext bc) {
         System.debug('--- BEGIN BatchFillTechId007Departement ---');
