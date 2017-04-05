@@ -6,6 +6,8 @@
 
 public class DataExtractUtils {
 
+    private static final String FIELDNAME_FOR_DATA_TRANSFERRING_BOOLEAN = 'TECH_Is_Data_Transferring__c';
+
     private static void extractDataToCsv(String fileNumber, String objectName,
             Set<String> fieldNamesToExport, Set<String> fieldNamesNotToExport,
             String whereCondition, Integer recordsLimit) {
@@ -101,10 +103,15 @@ public class DataExtractUtils {
                 // Ajout de la valeur nulle si le champ est null
                 if ( sObj.get(fieldName) == null ) {
                     csv += '"",';
-                } else if (fieldMap.get(fieldName).getDescribe().type == Schema.DisplayType.STRING ||
+                } else if ( fieldMap.get(fieldName).getDescribe().type == Schema.DisplayType.STRING ||
                         fieldMap.get(fieldName).getDescribe().type == Schema.DisplayType.TEXTAREA ) {
                     // Traitement escapeCsv pour les champs de type STRING et TEXTAREA
                     csv += ((String) sObj.get(fieldName)).escapeCsv() + ',';
+                } else if ( fieldName.equalsIgnoreCase(FIELDNAME_FOR_DATA_TRANSFERRING_BOOLEAN) ){
+                    /* Changement de la valeur du champ technique TECH_Is_Data_Transferring__c en true
+                    pour que les enregistrements puissent être traités en before et after insert dans les triggers
+                     */
+                    csv += '"true",';
                 } else {
                     csv += '"' + sObj.get(fieldName) + '",';
                 }
