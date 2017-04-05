@@ -26,6 +26,10 @@
         <name>User__c</name>
         <relationshipLabel><!-- Relations avec le contact --></relationshipLabel>
     </fields>
+    <fields>
+        <label><!-- x18caracteres --></label>
+        <name>x18caracteres__c</name>
+    </fields>
     <gender>Feminine</gender>
     <layouts>
         <layout>Relations avec le contact Layout</layout>
