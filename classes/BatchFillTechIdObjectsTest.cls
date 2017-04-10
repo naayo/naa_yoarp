@@ -111,7 +111,7 @@ private class BatchFillTechIdObjectsTest {
         };
         insert sessions;
 
-        Profile p = [SELECT Id FROM Profile WHERE Name='Utilisateur standard' LIMIT 1];
+        Profile p = [SELECT Id FROM Profile WHERE Name='Utilisateur standard' OR Name='Standard User' LIMIT 1];
 
         List<User> users = new List<User>{
                 new User(FirstName = 'UserTest01',
