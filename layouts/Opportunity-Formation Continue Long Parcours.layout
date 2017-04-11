@@ -160,6 +160,10 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Lieu_de_formation__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Provenance__c</field>
             </layoutItems>
             <layoutItems>

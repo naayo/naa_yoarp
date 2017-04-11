@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -160,49 +156,51 @@
         <fullName>Exercice_fiscale__c</fullName>
         <externalId>false</externalId>
         <label>Exercice fiscal</label>
-        <picklist>
-            <picklistValues>
-                <fullName>SF-EF10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-EF20</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-EF30</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-EF40</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-EF50</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-EF60</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-EF70</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-EF80</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-EF90</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SF-EF10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-EF20</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-EF30</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-EF40</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-EF50</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-EF60</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-EF70</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-EF80</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-EF90</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Intervenant__c</fullName>
@@ -230,61 +228,65 @@
         <fullName>Lieu_ls__c</fullName>
         <externalId>false</externalId>
         <label>Lieu</label>
-        <picklist>
-            <picklistValues>
-                <fullName>SF-LS10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-LS20</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-LS30</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-LS40</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-LS50</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-LS60</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SF-LS10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-LS20</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-LS30</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-LS40</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-LS50</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-LS60</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Mode_apprentissage__c</fullName>
         <externalId>false</externalId>
         <label>Mode d&apos;apprentissage</label>
-        <picklist>
-            <picklistValues>
-                <fullName>SF-MA10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-MA20</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-MA30</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SF-MA10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-MA20</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-MA30</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Ne_pas_afficher_sur_le_site_EML__c</fullName>
@@ -393,29 +395,44 @@
         <fullName>Statut__c</fullName>
         <externalId>false</externalId>
         <label>Statut</label>
-        <picklist>
-            <picklistValues>
-                <fullName>SF-SS10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-SS20</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-SS30</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SF-SS40</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SF-SS10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-SS20</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-SS30</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-SS40</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TECH_External_Id__c</fullName>
+        <description>Champ technique qui contient la copie de l&apos;Id de l&apos;enregistrement 
+en production</description>
+        <externalId>true</externalId>
+        <label>TECH_External_Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Taux_TVA__c</fullName>

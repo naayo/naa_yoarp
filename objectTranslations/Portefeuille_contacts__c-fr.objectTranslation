@@ -14,6 +14,10 @@
         <relationshipLabel><!-- Relations avec le contact --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- TECH_External_Id --></label>
+        <name>TECH_External_Id__c</name>
+    </fields>
+    <fields>
         <label><!-- TECH Unicity Value --></label>
         <name>TECH_Unicity_Value_del__c</name>
     </fields>
@@ -21,6 +25,10 @@
         <label><!-- User --></label>
         <name>User__c</name>
         <relationshipLabel><!-- Relations avec le contact --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- x18caracteres --></label>
+        <name>x18caracteres__c</name>
     </fields>
     <gender>Feminine</gender>
     <layouts>

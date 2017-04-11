@@ -197,6 +197,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- TECH_External_Id --></label>
+        <name>TECH_External_Id__c</name>
+    </fields>
+    <fields>
         <label><!-- Taux TVA --></label>
         <name>Taux_TVA__c</name>
     </fields>

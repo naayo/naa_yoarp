@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>ACCOMP. CARRIERE ou CARRIERE RESEAUX</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>ACCOMPAGNEMENT PEDAGOGIQUE</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>AUTRES OFFRES ?</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>AUTRES PROGRAMMES</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>AUTRES SERVICES</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>DÉVELOPPEMENT DE LA MARQUE EMPLOYEUR</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>EVENEMENTS DE RECRUTEMENT</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>EVENEMENTS EXPERTS</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>EVENEMENTS IMAGE / RESEAU</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>EVENEMENTS PROMOTIONNELS</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Fundraising B2B</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Fundraising B2C</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>INFORMER (par différents canaux)</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>MECENAT (CENTRALE LYON - EMLYON)</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>MECENAT EMLYON</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>MECENAT FONDATION EMLYON</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>MESURER LA QUALITE ET LA PERFORMANCE</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>OFFRES EXEC DEV Programmes Certifiants</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>OFFRES EXEC DEV Programmes Certifiants CASA</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>OFFRES EXEC DEV Programmes courts</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>OFFRES EXEC DEV programmes intra</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>OFFRES EXEC DEV Programmes longs</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>OFFRES EXEC DEV Programmes longs CASA</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES BACHELOR</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES ENTREPRENEURS</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES MASTER</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES MASTER CASA</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES MASTERES</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES MASTERES CASA</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>PROGRAMMES MBA</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>SOLUTIONS DE RECRUTEMENT</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>SPONSORING</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>TAXE D&apos;APPRENTISSAGE</fullName>
+        <default>false</default>
+    </standardValue>
+</StandardValueSet>

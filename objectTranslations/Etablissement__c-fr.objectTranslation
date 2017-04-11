@@ -25,9 +25,20 @@
         <name>Code__c</name>
     </fields>
     <fields>
+        <label><!-- TECH_External_Id --></label>
+        <name>TECH_External_Id__c</name>
+    </fields>
+    <fields>
         <label><!-- Ville Etablissement --></label>
         <name>Ville_Etablissement__c</name>
     </fields>
     <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Etablissement</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

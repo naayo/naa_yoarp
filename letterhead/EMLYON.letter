@@ -17,7 +17,6 @@
         <backgroundColor>#FFFFFF</backgroundColor>
         <height>100</height>
         <horizontalAlignment>Left</horizontalAlignment>
-        <logo>Logo_EMLYON/Logo_EMLYON_PNG.png</logo>
         <verticalAlignment>Top</verticalAlignment>
     </header>
     <middleLine>

@@ -18,7 +18,6 @@
         <backgroundColor>#FFFFFF</backgroundColor>
         <height>0</height>
         <horizontalAlignment>Left</horizontalAlignment>
-        <logo>Logo_EMLYON/logo_EML_2.jpg</logo>
         <verticalAlignment>Top</verticalAlignment>
     </header>
     <middleLine>

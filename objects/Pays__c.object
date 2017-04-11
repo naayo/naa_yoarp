@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -93,20 +89,34 @@
         <fullName>Reseau__c</fullName>
         <externalId>false</externalId>
         <label>Réseau</label>
-        <picklist>
-            <picklistValues>
-                <fullName>UE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HUE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>UE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HUE</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TECH_External_Id__c</fullName>
+        <description>Champ technique qui contient la copie de l&apos;Id de l&apos;enregistrement 
+en production</description>
+        <externalId>true</externalId>
+        <label>TECH_External_Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <gender>Masculine</gender>
     <label>Pays</label>

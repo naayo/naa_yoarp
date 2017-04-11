@@ -77,5 +77,39 @@ Public class Utils{
         }
         
     }
+
+    /**
+    @Author : Julie NGUYEN - Modis
+    Created on : 23/03/2017
+    Méthode permettant de récupérer le nom d'un objet à partir du préfix de l'ID d'un enregistrement
+     */
+    public static String findObjectNameFromRecordIdPrefix(String recordIdOrPrefix) {
+        String objectName = '';
+        try{
+
+            // Récupère le préfixe à partir de l'ID de l'enregistrement
+            String myIdPrefix = String.valueOf(recordIdOrPrefix).substring(0,3);
+
+            // Récupération du schéma
+            Map<String, Schema.SObjectType> gd =  Schema.getGlobalDescribe();
+
+            // Boucle à travers tous les types de sObjects retournés par le Schéma
+            for(Schema.SObjectType stype : gd.values()){
+                Schema.DescribeSObjectResult r = stype.getDescribe();
+                String prefix = r.getKeyPrefix();
+                System.debug('-- Prefix is ' + prefix);
+
+                // Vérifie que le préfixe matche avec le préfixe requêté
+                if(prefix!=null && prefix.equals(myIdPrefix)){
+                    objectName = r.getName();
+                    System.debug('-- Object Name! ' + objectName);
+                    break;
+                }
+            }
+        }catch(Exception e){
+            System.debug(e);
+        }
+        return objectName;
+    }
     
 }

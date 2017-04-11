@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -59,121 +55,125 @@
         <fullName>Banque__c</fullName>
         <externalId>false</externalId>
         <label>Banque</label>
-        <picklist>
-            <picklistValues>
-                <fullName>BRED - Banque Populaire</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BNP PARIBAS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BANQUE POPULAIRE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BTP BANQUE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CREDIT AGRICOLE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CREDIT COOPERATIF</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CAISSE D&apos;EPARGNE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CIC</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CREDIT MUTUEL</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CREDIT DU NORD</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HERVET</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HSBC</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>LCL - CREDIT LYONNAIS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>LYONNAISE DE BANQUE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Banque MARTIN MAUREL</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>LA BANQUE POSTALE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BANQUE SCALBERT DUPONT</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SOCIETE GENERALE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AUTRE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BANQUE DE LA REUNION</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BANQUE TARNEAUD</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NEUFLIZE OBC</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BRED - Banque Populaire</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BNP PARIBAS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BANQUE POPULAIRE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BTP BANQUE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CREDIT AGRICOLE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CREDIT COOPERATIF</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAISSE D&apos;EPARGNE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CIC</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CREDIT MUTUEL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CREDIT DU NORD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HERVET</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HSBC</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LCL - CREDIT LYONNAIS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LYONNAISE DE BANQUE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Banque MARTIN MAUREL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LA BANQUE POSTALE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BANQUE SCALBERT DUPONT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SOCIETE GENERALE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AUTRE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BANQUE DE LA REUNION</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BANQUE TARNEAUD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NEUFLIZE OBC</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Collecte__c</fullName>
         <externalId>false</externalId>
         <label>Collecte</label>
-        <picklist>
-            <picklistValues>
-                <fullName>EMLYON</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>St Etienne</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>EMLYON</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>St Etienne</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Compte_Versement_OCTA__c</fullName>
@@ -268,21 +268,23 @@
         <fullName>Nature_versement__c</fullName>
         <externalId>false</externalId>
         <label>Nature versement</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Chèque</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Virement</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Chèque</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Virement</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Num_ro_du_ch_que__c</fullName>
@@ -353,29 +355,31 @@
         <fullName>Type_de_versement__c</fullName>
         <externalId>false</externalId>
         <label>Type de versement</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Barème OCTA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fond CCI</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fond Libre Subvention</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Fond Libre</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Barème OCTA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fond CCI</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fond Libre Subvention</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fond Libre</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <gender>Masculine</gender>
     <label>Versement OCTA</label>

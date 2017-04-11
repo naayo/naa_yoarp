@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Formation continue courte</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Formation continue indéterminée</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Formation continue longue</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Formation initiale BBA</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Formation initiale masters</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Formation Intra-entreprise</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Indéterminé</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>MBA</fullName>
+        <default>false</default>
+    </standardValue>
+</StandardValueSet>

@@ -2221,6 +2221,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- TECH_External_Id --></label>
+        <name>TECH_External_Id__c</name>
+    </fields>
+    <fields>
         <label><!-- Télécopie domicile --></label>
         <name>T_lecopie_domicile__c</name>
     </fields>
@@ -2784,6 +2788,14 @@
     <validationRules>
         <errorMessage><!-- Le champ nom et le champ prénom ne peuvent être modifiés que par les équipes Base de données ou Forever pour ce type d&apos;enregistrement ! --></errorMessage>
         <name>RG_Contact09_Maj_Nom_Prenom_Etudiant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ ville ne doit pas contenir de chiffres ! --></errorMessage>
+        <name>RG_Contact10_ville_sans_chiffres</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ adresse de repli: Ville ne doit pas contenir de chiffres ! --></errorMessage>
+        <name>RG_Contact11_ville_repli_sans_chiffres</name>
     </validationRules>
     <webLinks>
         <label><!-- Cloner_Custom --></label>

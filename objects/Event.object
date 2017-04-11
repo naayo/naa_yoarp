@@ -29,10 +29,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>NewEvent</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -104,68 +100,10 @@
     </fields>
     <fields>
         <fullName>Subject</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Appel</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E-mail</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Réunion</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Envoyer lettre/devis</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Autre</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>RV TEL</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>RV F/F</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Type</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>E-mail</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rendez-vous</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Autre</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Appel</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>RV TEL</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>RV F/F</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <type>Picklist</type>
     </fields>
     <fields>

@@ -17,9 +17,20 @@
         <name>Code_pays__c</name>
     </fields>
     <fields>
+        <label><!-- TECH_External_Id --></label>
+        <name>TECH_External_Id__c</name>
+    </fields>
+    <fields>
         <label><!-- x18caracter --></label>
         <name>x18caracter__c</name>
     </fields>
     <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Etat</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
     <startsWith>Vowel</startsWith>
 </CustomObjectTranslation>

@@ -176,23 +176,25 @@ C3_eligible_niveau_xp_pro__c = &quot;Critère non actif pour le produit&quot;, C
         <fullName>EtatPaiement__c</fullName>
         <externalId>false</externalId>
         <label>Etat du paiement</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Payé</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Non payé</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Annulé</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Payé</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Non payé</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Annulé</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Famille__c</fullName>
@@ -226,23 +228,25 @@ C3_eligible_niveau_xp_pro__c = &quot;Critère non actif pour le produit&quot;, C
         <fullName>Format__c</fullName>
         <externalId>false</externalId>
         <label>Format</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Court</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Parcours</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Certificat</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Court</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Parcours</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Certificat</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Gamme__c</fullName>
@@ -308,23 +312,25 @@ C3_eligible_niveau_xp_pro__c = &quot;Critère non actif pour le produit&quot;, C
         <fullName>ModePaiement__c</fullName>
         <externalId>false</externalId>
         <label>Mode de paiement</label>
-        <picklist>
-            <picklistValues>
-                <fullName>CB online</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Facture</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Gratuit</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CB online</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Facture</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gratuit</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MontantPaye__c</fullName>
@@ -339,27 +345,29 @@ C3_eligible_niveau_xp_pro__c = &quot;Critère non actif pour le produit&quot;, C
         <fullName>Motifs_de_non_eligibilite__c</fullName>
         <externalId>false</externalId>
         <label>Motifs de non éligibilité</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Age trop élevé</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Niveau d’études insuffisant</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Expérience professionnelle incohérente</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Domaine d’études incohérent</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Age trop élevé</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Niveau d’études insuffisant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Expérience professionnelle incohérente</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Domaine d’études incohérent</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
@@ -616,119 +624,121 @@ C3_eligible_niveau_xp_pro__c = &quot;Critère non actif pour le produit&quot;, C
         <fullName>Statut_candidature__c</fullName>
         <externalId>false</externalId>
         <label>Statut Candidature CANEL</label>
-        <picklist>
-            <picklistValues>
-                <fullName>.</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Non-recevable (Hors profil)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Abandon</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dossier débuté</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dossier avancé</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>En finalisation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Candidat</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Admissible</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Non-admis(sible)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Abandon candidature</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Admis</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Admis sous condition</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Inscrit</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Report</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Renonciation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Incohérent</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Non admissible</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Non admis</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Admis board 1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Admis board 2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Non admis board 1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Non admis board 2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pré-inscrit</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Renonciation après paiement</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Abandon après candidature</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Abandon avant oral</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>En liste d&apos;attente</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Non-recevable (Hors profil)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Abandon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dossier débuté</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dossier avancé</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>En finalisation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Candidat</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Admissible</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Non-admis(sible)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Abandon candidature</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Admis</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Admis sous condition</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Inscrit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Report</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Renonciation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incohérent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Non admissible</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Non admis</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Admis board 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Admis board 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Non admis board 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Non admis board 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pré-inscrit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Renonciation après paiement</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Abandon après candidature</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Abandon avant oral</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>En liste d&apos;attente</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Statut_dossier__c</fullName>

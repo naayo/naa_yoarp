@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Administration Publique</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Agriculture/Pêche</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Automobile et Matériels de Transport</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Autre</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Banque/Assurance/Scs Finan./Immobilier</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>BTP/Habitat/Environnement</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Commerce/Distribution</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Construction/BTP</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Edition/Imprimerie/Reproduction</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Educa.Santé/Act.Sociale/Act.asso./média</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Energie/Eau</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Extraction et Industries Extractives</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Indust.Electriq/Electroniq./Informatique</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Industrie Agro-alimentaire/Tabac</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Industrie Bois/Papier/Carton</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Industrie Chimique/Pharmacie/Plastiques</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Industrie Textile/Habillement/Cuir</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Metallurgie/Machines et Equipement</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Services aux Entreprises/Conseil</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Services aux particuliers</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Télécommunication/services informatiques</fullName>
+        <default>false</default>
+    </standardValue>
+    <standardValue>
+        <fullName>Transports/Logistique/Tourisme</fullName>
+        <default>false</default>
+    </standardValue>
+</StandardValueSet>

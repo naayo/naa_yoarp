@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -84,33 +80,35 @@
         <externalId>false</externalId>
         <inlineHelpText>Affectation portefeuille par défaut pour Employabilité</inlineHelpText>
         <label>Portefeuille Employabilité Théorique</label>
-        <picklist>
-            <picklistValues>
-                <fullName>P1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>P2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>P3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>P4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>P5</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>P1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>P2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>P3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>P4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>P5</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Secteur__c</fullName>
@@ -121,6 +119,18 @@
         <scale>0</scale>
         <trackTrending>false</trackTrending>
         <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TECH_External_Id__c</fullName>
+        <description>Champ technique qui contient la copie de l&apos;Id de l&apos;enregistrement 
+en production</description>
+        <externalId>true</externalId>
+        <label>TECH_External_Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>

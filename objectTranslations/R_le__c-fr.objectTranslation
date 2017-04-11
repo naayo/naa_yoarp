@@ -357,6 +357,10 @@
             <translation><!-- Entrepreneurs dans la ville --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Ex Administrateur ADEM</masterLabel>
+            <translation><!-- Ex Administrateur ADEM --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Global Entrepreneurship Monitor Cibles</masterLabel>
             <translation><!-- Global Entrepreneurship Monitor Cibles --></translation>
         </picklistValues>

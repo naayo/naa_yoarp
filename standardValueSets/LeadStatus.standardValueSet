@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>1er contact</fullName>
+        <default>false</default>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Abandon</fullName>
+        <default>false</default>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualifié</fullName>
+        <default>false</default>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Social suspect</fullName>
+        <default>false</default>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Suspect</fullName>
+        <default>true</default>
+        <converted>false</converted>
+    </standardValue>
+</StandardValueSet>

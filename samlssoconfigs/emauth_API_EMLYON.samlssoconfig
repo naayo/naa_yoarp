@@ -5,10 +5,10 @@
     <issuer>https://emauth.em-lyon.com/adfs/services/trust</issuer>
     <loginUrl>https://emauth.em-lyon.com/adfs/ls/</loginUrl>
     <name>EMLYON</name>
-    <oauthTokenEndpoint>https://arpege-emlyon.my.salesforce.com/services/oauth2/token?so=00Dw0000000Cp11</oauthTokenEndpoint>
+    <oauthTokenEndpoint>https://arpege-emlyon--Sandbox1.cs84.my.salesforce.com/services/oauth2/token?so=00D5E0000008kwy</oauthTokenEndpoint>
     <redirectBinding>true</redirectBinding>
     <requestSignatureMethod>0</requestSignatureMethod>
-    <salesforceLoginUrl>https://arpege-emlyon.my.salesforce.com?so=00Dw0000000Cp11</salesforceLoginUrl>
+    <salesforceLoginUrl>https://arpege-emlyon--Sandbox1.cs84.my.salesforce.com?so=00D5E0000008kwy</salesforceLoginUrl>
     <samlEntityId>https://arpege-emlyon.my.salesforce.com/</samlEntityId>
     <samlVersion>SAML2_0</samlVersion>
     <userProvisioning>false</userProvisioning>

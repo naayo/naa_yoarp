@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -123,24 +119,26 @@
         <fullName>Role_sur_l_opportunit__c</fullName>
         <externalId>false</externalId>
         <label>Type de financeur</label>
-        <picklist>
-            <picklistValues>
-                <fullName>OPCA</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BOURSE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Entreprise</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>OPCA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BOURSE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Entreprise</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>pourcentage_financement_formule__c</fullName>

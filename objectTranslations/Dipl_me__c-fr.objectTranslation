@@ -41,6 +41,10 @@
             <translation><!-- M.S. Mngt des Ent Vivant et de l&apos;agro. --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>M.S. Strat Internat et Marketing BtoB</masterLabel>
+            <translation><!-- M.S. Strat Internat et Marketing BtoB --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>M.S. Strat Internat et Marketing Indus</masterLabel>
             <translation><!-- M.S. Strat Internat et Marketing Indus --></translation>
         </picklistValues>

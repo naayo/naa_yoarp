@@ -31,6 +31,17 @@
         <targetObject>OpportunityId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>MAJ_lieu_formation_opp</fullName>
+        <description>Met à jour le champ lieu de formation de l&apos;opportunité en récupérant la valeur stockée dans le champ lieu sur l&apos;objet session</description>
+        <field>Lieu_de_formation__c</field>
+        <formula>IF( ISPICKVAL(Session_de_formation__r.Lieu_ls__c, &quot;SF-LS10&quot;), $Label.Lieu1 , IF( ISPICKVAL(Session_de_formation__r.Lieu_ls__c, &quot;SF-LS20&quot;),$Label.Lieu2, IF( ISPICKVAL(Session_de_formation__r.Lieu_ls__c, &quot;SF-LS30&quot;),$Label.Lieu3, IF( ISPICKVAL(Session_de_formation__r.Lieu_ls__c, &quot;SF-LS40&quot;),$Label.Lieu4, IF( ISPICKVAL(Session_de_formation__r.Lieu_ls__c, &quot;SF-LS50&quot;),$Label.Lieu5, IF( ISPICKVAL(Session_de_formation__r.Lieu_ls__c, &quot;SF-LS60&quot;),$Label.Lieu6,&quot;&quot; ))))))</formula>
+        <name>MAJ lieu formation opp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>OpportunityId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>MAJ_nom_opportunit</fullName>
         <field>Name</field>
         <formula>PricebookEntry.Product2.Name</formula>
@@ -565,6 +576,17 @@ NOT (ISBLANK (Opportunity.Contact_central__r.Login__c )) )</formula>
         </actions>
         <active>true</active>
         <formula>ISCHANGED( session_de_selection__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF lieu formation sur opp</fullName>
+        <actions>
+            <name>MAJ_lieu_formation_opp</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>ce wf gère la localisation sur l&apos;opportunité du lieu de formation déclaré au niveau session de formation</description>
+        <formula>1=1</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

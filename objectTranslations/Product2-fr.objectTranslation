@@ -703,6 +703,10 @@
         <relationshipLabel><!-- Produits --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- TECH_External_Id --></label>
+        <name>TECH_External_Id__c</name>
+    </fields>
+    <fields>
         <help><!-- Id Salesforce sur 18 caractères --></help>
         <label><!-- 18caracter --></label>
         <name>X18caracter__c</name>
