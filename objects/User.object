@@ -116,6 +116,15 @@
                 <value>
                     <fullName>TR007Opp2FieldsNull</fullName>
                     <default>false</default>
+                <value>
+                    <fullName>EventTriggerHandler</fullName>
+                    <default>false</default>
+                    <label>EventTriggerHandler</label>
+                </value>
+                <value>
+                    <fullName>TaskTriggerHandler</fullName>
+                    <default>false</default>
+                    <label>TaskTriggerHandler</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

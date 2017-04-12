@@ -18,7 +18,8 @@ public class DataExtract008Departement implements Queueable {
      */
     public static void extractDepartements() {
         System.debug('--- BEGIN DataExtract008Departement / extractDepartements() ---');
-        DataExtractUtils.extractAllFieldsToCSV('04', OBJECT_NAME_DEPARTEMENT, null);
+        String whereClause = ' WHERE TECH_External_ID__c != null';
+        DataExtractUtils.extractAllFieldWithSpecificWhereClause('04', OBJECT_NAME_DEPARTEMENT, whereClause);
         System.debug('--- END DataExtract008Departement / extractDepartements() ---');
     }
 

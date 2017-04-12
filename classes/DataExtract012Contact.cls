@@ -12,10 +12,13 @@ public class DataExtract012Contact implements Queueable {
     Clauses WHERE pour obtenir un jeu de données pertinent en filtrant les types d'enregistrements
      */
     private static final String WHERE_RECORD_TYPE_PROSPECT_ETUDIANT = ' WHERE Record_Type_Name__c = \'Prospect Etudiant\' ' +
+            ' AND TECH_External_ID__c != null ' +
             'ORDER BY CreatedDate DESC ';
     private static final String WHERE_RECORD_TYPE_ETUDIANT = ' WHERE Record_Type_Name__c = \'Etudiant\' ' +
+            ' AND TECH_External_ID__c != null ' +
             'ORDER BY CreatedDate DESC ';
     private static final String WHERE_RECORD_TYPE_PROFESSIONNEL = ' WHERE Record_Type_Name__c = \'Professionnel\' ' +
+            ' AND TECH_External_ID__c != null ' +
             'ORDER BY CreatedDate DESC ';
 
     public void execute(QueueableContext context) {

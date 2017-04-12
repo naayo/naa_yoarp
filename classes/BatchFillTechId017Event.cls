@@ -5,7 +5,10 @@
  */
 
 global class BatchFillTechId017Event implements Database.Batchable<sObject> {
-    String query = 'SELECT WhoId, WhatId FROM Event WHERE Tech_External_What_Id__c = null AND Tech_External_What_Id__c = null';
+    String query = 'SELECT WhoId, WhatId ' +
+            'FROM Event ' +
+            'WHERE (Tech_External_Who_Id__c = null AND Tech_External_What_Id__c = null) ' +
+            'AND (WhoId != null OR WhatId != null)';
 
     global Database.QueryLocator start(Database.BatchableContext bc) {
         System.debug('--- BEGIN BatchFillTechId017Event ---');

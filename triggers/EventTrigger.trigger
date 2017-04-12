@@ -7,7 +7,9 @@ trigger EventTrigger on Event (before insert, after insert) {
 
     System.debug('--- BEGIN Trigger EventTrigger ---');
 
-    new EventTriggerHandler().run();
+    if (PAD.canTrigger('EventTriggerHandler')) {
+        new EventTriggerHandler().run();
+    }
 
     System.debug('--- END Trigger EventTrigger ---');
 

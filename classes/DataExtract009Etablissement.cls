@@ -18,7 +18,8 @@ public class DataExtract009Etablissement implements Queueable {
      */
     public static void extractEtablissements() {
         System.debug('--- BEGIN DataExtract009Etablissement / extractEtablissements() ---');
-        DataExtractUtils.extractAllFieldsToCSV('05', OBJECT_NAME_ETABLISSEMENT, null);
+        String whereClause = ' WHERE TECH_External_ID__c != null';
+        DataExtractUtils.extractAllFieldWithSpecificWhereClause('05', OBJECT_NAME_ETABLISSEMENT, whereClause);
         System.debug('--- END DataExtract009Etablissement / extractEtablissements() ---');
     }
 }

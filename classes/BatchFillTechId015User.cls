@@ -28,7 +28,7 @@ global class BatchFillTechId015User implements Database.Batchable<sObject> {
     global void finish(Database.BatchableContext bc){
         System.debug('--- END BatchFillTechId015User ---');
         if(!Test.isRunningTest()){
-            Database.executeBatch(new BatchFillTechId016Task());
+            Database.executeBatch(new BatchFillTechId016Task(),1);
         }
     }
 
