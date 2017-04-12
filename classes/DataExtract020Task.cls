@@ -32,7 +32,7 @@ public class DataExtract020Task implements Queueable {
      */
     public void extractTasks() {
         System.debug('--- BEGIN DataExtract020Task / extractTasks() ---');
-        String whoIdClause = ' WHERE (';
+        String whoIdClause = ' WHERE ((';
 
         if ( dataExport.contactsToExport != null && !dataExport.contactsToExport.isEmpty() ) {
             whoIdClause += ' WhoId IN ' + DataExtractUtils.convertSetToString(dataExport.contactsToExport);
@@ -106,7 +106,7 @@ public class DataExtract020Task implements Queueable {
             whatIdClause += ' OR WhatId IN ' + DataExtractUtils.convertSetToString(dataExport.sessionsToExport);
         }
 
-        whatIdClause += ' ) ';
+        whatIdClause += ' )) ';
 
         System.debug('-- PARAM String whatIdClause : ' + whatIdClause);
 

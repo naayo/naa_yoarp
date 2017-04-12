@@ -32,7 +32,7 @@ public class DataExtract022Event implements Queueable {
      */
     public void extractEvents() {
         System.debug('--- BEGIN DataExtract022Event / extractEvents() ---');
-        String whoIdClause = ' WHERE (';
+        String whoIdClause = ' WHERE ((';
 
         if ( dataExport.contactsToExport != null && !dataExport.contactsToExport.isEmpty() ) {
             whoIdClause += ' WhoId IN ' + DataExtractUtils.convertSetToString(dataExport.contactsToExport);
@@ -104,7 +104,7 @@ public class DataExtract022Event implements Queueable {
             whatIdClause += ' OR WhatId IN ' + DataExtractUtils.convertSetToString(dataExport.sessionsToExport);
         }
 
-        whatIdClause += ' ) ';
+        whatIdClause += ' )) ';
 
         System.debug('-- PARAM String whatIdClause : ' + whatIdClause);
 
