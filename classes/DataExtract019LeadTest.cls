@@ -12,6 +12,12 @@ private class DataExtract019LeadTest {
     static testMethod void testExtractLeads() {
         String objName = DataExtract019Lead.OBJECT_NAME_LEAD ;
 
+        List<Lead> leads = [SELECT Id, TECH_External_Id__c FROM Lead];
+        for (Lead l : leads) {
+            l.TECH_External_Id__c = l.Id;
+        }
+        update leads;
+
         DataExtract019Lead de = new DataExtract019Lead(new DataToExport());
 
         Test.startTest();
