@@ -12,6 +12,12 @@ private class DataExtract012ContactTest {
     static testMethod void testSelectContacts() {
         String objName = DataExtract012Contact.OBJECT_NAME_CONTACT;
 
+        List<Contact> contacts = [SELECT Id, TECH_External_Id__c FROM Contact];
+        for (Contact c : contacts) {
+            c.TECH_External_Id__c = c.Id;
+        }
+        update contacts;
+
         DataExtract012Contact de = new DataExtract012Contact();
 
         Test.startTest();
