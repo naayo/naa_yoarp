@@ -5052,11 +5052,6 @@ en production</description>
         <columns>CONTACT.PHONE1</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
-        <filters>
-            <field>CONTACT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Contact.Professionnel</value>
-        </filters>
         <label>Tous les contacts</label>
         <language>fr</language>
         <sharedTo>
@@ -5221,11 +5216,6 @@ en production</description>
         <columns>CONTACT.PHONE1</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
-        <filters>
-            <field>CONTACT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Contact.Professionnel</value>
-        </filters>
         <filters>
             <field>CONTACT.LAST_NAME</field>
             <operation>contains</operation>
@@ -10429,7 +10419,7 @@ en production</description>
  PRIORVALUE(Record_Type_Name__c)=&quot;Professionnel&quot;, 
  Record_Type_Name__c=&quot;Prospect Etudiant&quot;, 
  $User.CommunityNickname&lt;&gt; &quot;aboukaram&quot;,
- $User.CommunityNickname&lt;&gt; &quot;hajric&quot;
+ $User.CommunityNickname&lt;&gt; &quot;dreveton&quot;
 )</errorConditionFormula>
         <errorMessage>La modification de type d&apos;enregistrement de &quot;Professionnel&quot; vers &quot;Prospect Etudiant&quot; vous est interdite.</errorMessage>
     </validationRules>
@@ -10443,7 +10433,7 @@ en production</description>
  Record_Type_Name__c=&quot;Professionnel&quot;,
  AND($User.CommunityNickname&lt;&gt; &quot;seux&quot;, 
      $User.CommunityNickname&lt;&gt; &quot;cesar&quot;,
-     $User.CommunityNickname&lt;&gt; &quot;hajric&quot;
+     $User.CommunityNickname&lt;&gt; &quot;dreveton&quot;
 ) 
 )</errorConditionFormula>
         <errorMessage>La modification de type d&apos;enregistrement de &quot;Prospect Etudiant&quot; vers &quot;Professionnel&quot; vous est interdite.</errorMessage>
@@ -10498,7 +10488,7 @@ en production</description>
  $User.CommunityNickname &lt;&gt; &quot;seux&quot;,
  $User.CommunityNickname &lt;&gt; &quot;cesar&quot;,
  $User.CommunityNickname &lt;&gt; &quot;aboukaram&quot;,
- $User.CommunityNickname &lt;&gt; &quot;hajric&quot;
+ $User.CommunityNickname &lt;&gt; &quot;dreveton&quot;
 )</errorConditionFormula>
         <errorMessage>La modification de type d&apos;enregistrement vous est interdite.</errorMessage>
     </validationRules>

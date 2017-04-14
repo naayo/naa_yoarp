@@ -32,7 +32,7 @@ public class DataExtract022Event implements Queueable {
      */
     public void extractEvents() {
         System.debug('--- BEGIN DataExtract022Event / extractEvents() ---');
-        String whoIdClause = ' WHERE (';
+        String whoIdClause = ' WHERE ((';
 
         if ( dataExport.contactsToExport != null && !dataExport.contactsToExport.isEmpty() ) {
             whoIdClause += ' WhoId IN ' + DataExtractUtils.convertSetToString(dataExport.contactsToExport);
@@ -104,15 +104,17 @@ public class DataExtract022Event implements Queueable {
             whatIdClause += ' OR WhatId IN ' + DataExtractUtils.convertSetToString(dataExport.sessionsToExport);
         }
 
-        whatIdClause += ' ) ';
+        whatIdClause += ' )) ';
 
         System.debug('-- PARAM String whatIdClause : ' + whatIdClause);
 
         // Set qui contient les champs à ne pas prendre en compte pour l'extraction
         Set<String> fieldNamesNotToExport = new Set<String>{'WhatId','WhoId'};
 
+        String techIdClause = ' AND (TECH_External_Who_Id__c != null OR TECH_External_What_Id__c != null) ';
+
         DataExtractUtils.extractFieldsWithExceptionsToCSV('17', OBJECT_NAME_EVENT, fieldNamesNotToExport,
-                whoIdClause + whatIdClause, null);
+                whoIdClause + whatIdClause + techIdClause, null);
 
         System.debug('--- END DataExtract022Event / extractEvents() ---');
     }

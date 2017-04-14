@@ -11,6 +11,13 @@ private class  DataExtract021SessionTest {
 
     static testMethod void testExtractSessions() {
         String objName = DataExtract021Session.OBJECT_NAME_SESSION ;
+
+        List<Session__c> sessions = [SELECT Id, TECH_External_Id__c FROM Session__c];
+        for (Session__c s : sessions) {
+            s.TECH_External_Id__c = s.Id;
+        }
+        update sessions;
+
         DataExtract021Session de = new DataExtract021Session(new DataToExport());
 
         Test.startTest();

@@ -32,7 +32,8 @@ public class DataExtract015PortefeuilleContacts implements Queueable {
         System.debug('--- PARAM dataExport.contactsToExport : ' + dataExport.contactsToExport);
 
         if ( dataExport.contactsToExport != null && !dataExport.contactsToExport.isEmpty() ) {
-            String whereClause = ' WHERE Contact__c IN ' + DataExtractUtils.convertSetToString(dataExport.contactsToExport);
+            String whereClause = ' WHERE Contact__c IN ' + DataExtractUtils.convertSetToString(dataExport.contactsToExport) +
+                    ' AND TECH_External_ID__c != null ';
 
             System.debug('--PARAM whereClause for query : ' + whereClause);
 

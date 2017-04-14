@@ -30,7 +30,7 @@ public class DataExtract021Session implements Queueable{
 
         System.debug('--- BEGIN DataExtract021Session / extractSessions() ---');
 
-        String clause = ' ORDER BY CreatedDate ';
+        String clause = ' WHERE TECH_External_ID__c != null ORDER BY CreatedDate ';
 
         // Stockage des id
         dataExport.sessionsToExport.addAll(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_SESSION,

@@ -76,6 +76,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>BatchCalculateNbDiplomes</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>BatchDataExtract</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -165,6 +169,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>BatchFillTechIdObjectsTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BatchInitNbDiplomes</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -492,6 +500,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>TR009PropagationHierarchie</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TR_session_formation</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -505,6 +517,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>TestCTR001CampaignManageMembersAddTab</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TestNbDiplomesInAccount</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -785,6 +801,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.ComptePrincipal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.Compte_Groupe__c</field>
         <readable>true</readable>
@@ -1002,6 +1023,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Nom_commercial__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Nombre_de_contacts_dipl_m_s__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Nombre_de_contacts_dipl_m_s_groupe__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1973,6 +2004,11 @@
         <editable>false</editable>
         <field>Contact.Compl_ment_R_le__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.ComptePrincipal__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -3407,6 +3443,81 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Fiche_projet__c.Version_txt__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Field_Analysis__c.Field_Trip__Populated_On_Percent__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Field_Analysis__c.Field_Trip__Populated_On__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Field_Analysis__c.Field_Trip__Total_Tally__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Field_Analysis__c.Field_Trip__Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Field_Analysis__c.Field_Trip__isCustom__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Field_Analysis__c.Field_Trip__isRequired__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Fields__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Filter__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Last_Analyzed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Last_Batch_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Object_Label__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Record_Types__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Records__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Tally__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__isCustom__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -5026,66 +5137,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity__hd.Amount__hpr</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity__hd.Amount__hst</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity__hd.CloseDate__hpr</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity__hd.CloseDate__hst</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity__hd.ForecastCategoryName__hpr</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity__hd.ForecastCategoryName__hst</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity__hd.Montant_promesse__c_hpr</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity__hd.Montant_promesse__c_hst</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity__hd.Probability__hpr</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity__hd.Probability__hst</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity__hd.StageName__hpr</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity__hd.StageName__hst</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Order.ActivatedById</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -5291,7 +5342,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Portefeuille_contacts__c.x18caractere__c</field>
+        <field>Portefeuille_contacts__c.x18caracteres__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -5842,6 +5893,226 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>R_le__c.x18caracteres__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Application_Settings__c.SFSSDupeCatcher__Admin_Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Application_Settings__c.SFSSDupeCatcher__Customer_Subdomain_URL__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__P1__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__P2__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__P3__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__P4__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__P5__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__R1__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__T1__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__DcIn__c.SFSSDupeCatcher__stat__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Duplicate_Warning__c.SFSSDupeCatcher__Scenario_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Account__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Contact_Display__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Contact__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Lead_Display__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Lead__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Object_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Phone__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Scenario_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Potential_Duplicate__c.SFSSDupeCatcher__Warning_Display__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__First_N_Letters__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Fuzzy_Match__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Mapping_Approach__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Match_Blanks__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Match_field__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Scenario_Formula__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Scenario_Type_Formula__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Scenario_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario_Rule__c.SFSSDupeCatcher__Target_Match_Field__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Blocked_Duplicates__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Bypass_Security__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Converted_Duplicates__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Create_Tasks_for_Warnings__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Deployed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Duplicate_Warning_Count__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Error_Message__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Match_On_Insert_Action__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Match_On_Update_Action__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Merged_Duplicates__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Person_Account_Filter__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Potential_Duplicate_Count__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Scenario_Rule_Count__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFSSDupeCatcher__Scenario__c.SFSSDupeCatcher__Scenario_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6509,6 +6780,46 @@
         <field>Versement_OCTA__c.Type_de_versement__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>inx__clickdata__c.inx__click_count__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>inx__clickdata__c.inx__contact__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>inx__clickdata__c.inx__external_id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>inx__clickdata__c.inx__first_click_timestamp__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>inx__clickdata__c.inx__last_click_timestamp__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>inx__clickdata__c.inx__lead__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>inx__clickdata__c.inx__linkname__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>inx__clickdata__c.inx__user_agent__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Présentation du compte</layout>
     </layoutAssignments>
@@ -7094,6 +7405,78 @@
         <modifyAllRecords>false</modifyAllRecords>
         <object>R_le__c</object>
         <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>SFSSDupeCatcher__Application_Settings__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>SFSSDupeCatcher__DcIn__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>SFSSDupeCatcher__Duplicate_Warning__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>SFSSDupeCatcher__Override_Cache__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>SFSSDupeCatcher__Potential_Duplicate__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>SFSSDupeCatcher__RequiredFieldSupport__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>SFSSDupeCatcher__Scenario_Rule__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>SFSSDupeCatcher__Scenario__c</object>
+        <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>

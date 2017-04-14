@@ -88,34 +88,52 @@
                 <value>
                     <fullName>TR001ManageContact</fullName>
                     <default>false</default>
+                    <label>TR001ManageContact</label>
                 </value>
                 <value>
                     <fullName>TR002ManageOpportunityLineItem</fullName>
                     <default>false</default>
+                    <label>TR002ManageOpportunityLineItem</label>
                 </value>
                 <value>
                     <fullName>TR003ManageOpportunities</fullName>
                     <default>false</default>
+                    <label>TR003ManageOpportunities</label>
                 </value>
                 <value>
                     <fullName>TR004ManageLead</fullName>
                     <default>false</default>
+                    <label>TR004ManageLead</label>
                 </value>
                 <value>
                     <fullName>TR005OppLineItem</fullName>
                     <default>false</default>
+                    <label>TR005OppLineItem</label>
                 </value>
                 <value>
                     <fullName>TR_session_formation</fullName>
                     <default>false</default>
+                    <label>TR_session_formation</label>
                 </value>
                 <value>
                     <fullName>TR006OppLineItem2FieldsNull</fullName>
                     <default>false</default>
+                    <label>TR006OppLineItem2FieldsNull</label>
                 </value>
                 <value>
                     <fullName>TR007Opp2FieldsNull</fullName>
                     <default>false</default>
+                    <label>TR007Opp2FieldsNull</label>
+                </value>
+                <value>
+                    <fullName>EventTriggerHandler</fullName>
+                    <default>false</default>
+                    <label>EventTriggerHandler</label>
+                </value>
+                <value>
+                    <fullName>TaskTriggerHandler</fullName>
+                    <default>false</default>
+                    <label>TaskTriggerHandler</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

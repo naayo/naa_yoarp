@@ -97,7 +97,7 @@ Public class Utils{
             for(Schema.SObjectType stype : gd.values()){
                 Schema.DescribeSObjectResult r = stype.getDescribe();
                 String prefix = r.getKeyPrefix();
-                System.debug('-- Prefix is ' + prefix);
+                // System.debug('-- Prefix is ' + prefix);
 
                 // Vérifie que le préfixe matche avec le préfixe requêté
                 if(prefix!=null && prefix.equals(myIdPrefix)){
