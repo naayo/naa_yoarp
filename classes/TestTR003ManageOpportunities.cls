@@ -35,11 +35,11 @@ private class TestTR003ManageOpportunities {
             Product2 prod2 = new Product2(Name='prodTest', Suiveur__c = null);
             insert new List<Product2>{prod,prod2};
                 
-                Pricebookentry pricebook1= new PriceBookEntry(Product2Id=prod.Id, UnitPrice=10, Pricebook2Id=Test.getStandardPricebookId(), IsActive = true, UseStandardPrice = false);
+            Pricebookentry pricebook1= new PriceBookEntry(Product2Id=prod.Id, UnitPrice=10, Pricebook2Id=Test.getStandardPricebookId(), IsActive = true, UseStandardPrice = false);
             Pricebookentry pricebook2= new PriceBookEntry(Product2Id=prod2.Id, UnitPrice=10, Pricebook2Id=Test.getStandardPricebookId(), IsActive = true, UseStandardPrice = false);
             insert new List<Pricebookentry>{pricebook1,pricebook2};
                 
-                NAF__c naf = new NAF__c(Name='naf',CODE_APE__c='1234');
+            NAF__c naf = new NAF__c(Name='naf',CODE_APE__c='1234');
             insert naf;
             
             Pays__c pays = new Pays__c();
@@ -378,9 +378,10 @@ private class TestTR003ManageOpportunities {
                                            Salutation='M',
                                            Famille_Fonction__c='Autres');
         try{
-            insert contact;
-        } catch(DmlException dmle)
-        {     System.debug('The following exception has occurred: ' + dmle.getMessage());
+          insert contact;
+        }catch(DmlException dmle)
+        {     
+          System.debug('The following exception has occurred: ' + dmle.getMessage());
         }
         final Opportunity opp= new Opportunity(StageName='Prospect probable',
                                                Name='test',
