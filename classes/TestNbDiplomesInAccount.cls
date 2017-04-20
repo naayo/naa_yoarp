@@ -47,23 +47,47 @@ public class TestNbDiplomesInAccount {
         insert new List<Account>{acc4_1,acc5_1,acc6_1,acc7_1,acc4_2,acc5_2,acc6_2,acc7_2};   
     }
     
-    // Vérifier le recalcul du nombre de diplômés lors de l'ajout d'un compte dans une hiérarchie
+    // Insertion d'un compte dans une hiérarchie
     static testMethod void verifyInsertAccount(){
         // Récupérer un compte 
         Account accParent = [SELECT Id FROM Account WHERE Name='AccountTest1_1' LIMIT 1];
         
+        Test.startTest();
+        // Assigner un contact diplômé au compte
+        Contact ctc1 = new Contact(Salutation='Mr',FirstName='FirstName', LastName='LastName', 
+                                   AccountId=accParent.Id, Identifiant_dipl_m__c='12345678');
+        insert ctc1;
+
         // Créer un compte enfant du compte récupéré
         Pays__c pays = [SELECT Id FROM Pays__c WHERE Name = 'France'];
         Account accEnfant = new Account(Name='AccountTest', Industry='Agriculture', Adresse_Ville__c = 'Marseille', Code_tiers_societe__c ='CodeTest',
-                                     	CodePays__c=pays.Id, SIRET__c='40483304800022', ParentId = accParent.Id);        
+                                     	CodePays__c=pays.Id, SIRET__c='40483304800022');
         insert accEnfant;
+        // Assigner un contact diplômé au compte enfant
+        Contact ctc2 = new Contact(Salutation='Mr',FirstName='FirstName2', LastName='LastName2', 
+                                   AccountId=accEnfant.Id, Identifiant_dipl_m__c='12345678');
+        insert ctc2;
+        // Assigner le parent du compte enfant créé
+        accEnfant.ParentId = accParent.Id;
+        update accEnfant;
+        Test.stopTest();
         
         // Vérifier que le compte principal du nouveau compte a été affecté
-        accEnfant = [SELECT ComptePrincipal__c FROM Account WHERE Name='AccountTest' LIMIT 1];
+        accEnfant = [SELECT ComptePrincipal__c, Nombre_de_contacts_dipl_m_s_groupe__c FROM Account WHERE Name='AccountTest' LIMIT 1];
         System.assertEquals(accParent.Id,accEnfant.ComptePrincipal__c);
+
+        // Vérifier le recalcul du nombre de diplômés du groupe
+        System.assertEquals(2,accEnfant.Nombre_de_contacts_dipl_m_s_groupe__c);
+
+        // Vérifier le recalcul du nombre de diplômés du groupe
+        accParent = [SELECT ComptePrincipal__c, Nombre_de_contacts_dipl_m_s_groupe__c FROM Account WHERE Name='AccountTest1_1' LIMIT 1];
+        System.assertEquals(2,accParent.Nombre_de_contacts_dipl_m_s_groupe__c);
+
     }
     
+    // Changement de hiérarchie d'un compte
     static testMethod void verifyUpdateAccount(){
+        // Récupérer une hiérarchie
         Account acc1_1 = [SELECT Id, Nombre_de_contacts_dipl_m_s_groupe__c FROM Account WHERE Name='AccountTest1_1' LIMIT 1];        
         Account acc2_1 = [SELECT ComptePrincipal__c FROM Account WHERE Name='AccountTest2_1' LIMIT 1]; 
         Account acc3_1 = [SELECT ComptePrincipal__c FROM Account WHERE Name='AccountTest3_1' LIMIT 1];
@@ -257,7 +281,7 @@ public class TestNbDiplomesInAccount {
         Test.startTest();
         // Modifier le parent du compte de la première hiérarchie avec le compte de la seconde hiérarchie
         acc2_1.ParentId = acc1_2.Id;
-		update acc2;        
+		update acc2_1;        
         Test.stopTest();
         
         // Récupérer le compte modifié et ses enfants
