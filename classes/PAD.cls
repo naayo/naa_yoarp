@@ -7,7 +7,6 @@ public with sharing class PAD {
     public static final String userProfileName;//User Profile Name
     public static final Boolean PAD_EAI_WS_Bypass;
     public static final String userLocalKey;
-    public static Set<String> bypassMe ; //List of code that should be bypassed
     
     static{
         System.Debug('## >>> PAD constructor :BEGIN <<< run by ' + UserInfo.getName());
@@ -19,7 +18,7 @@ public with sharing class PAD {
         //PAD_EAI_WS_Bypass=user.ByPassWorkflowRule__c;
         userLocalKey = user.LanguageLocaleKey;
         
-        bypassMe = new Set<String>(); //List of code that should be bypassed
+        
 
         System.Debug('## >>> PAD constructor : END <<<');
     }
@@ -33,30 +32,15 @@ public with sharing class PAD {
             hasRun.add(devNot2exec);
             System.Debug('## >>> NotExecutre: <<<'+devNot2exec);
         }
-    } 
+    }
     
     public static boolean canTrigger(String ApexName){//If no bypass
-        if(bypassMe.contains(ApexName)){
-            return false;
-        } 
-        
         if(requiredOnce.contains(ApexName)){//If it should run Once
             if(hasRun.contains(ApexName))return false;//Already run, should not run
             hasRun.add(ApexName);//Never run, can run only if not bypassed
         }
         return(PAD_BypassTrigger.indexOf(';'+ApexName+';')==-1);
     }
-    
-    //bypass trigger in this session
-    public static void addTriggerBypass(String triggerName){
-    	bypassMe.add(triggerName);
-    }
-
-    //remove bypass trigger in this session
-    public static void removeTriggerBypass(String triggerName){
-        bypassMe.remove(triggerName);
-    } 
-    
      public static boolean canEAI(){//If no bypass
        return !PAD_EAI_WS_Bypass;
     }

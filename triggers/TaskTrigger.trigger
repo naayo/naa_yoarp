@@ -8,6 +8,6 @@ trigger TaskTrigger on Task (before insert, after insert) {
     System.debug('--- BEGIN Trigger TaskTrigger ---');
 
     new TaskTriggerHandler().run();
-    
+
     System.debug('--- END Trigger TaskTrigger ---');
 }

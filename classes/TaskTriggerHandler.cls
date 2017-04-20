@@ -107,13 +107,13 @@ public class TaskTriggerHandler extends TriggerHandler {
               */
             task.TECH_Is_Record_Transferring__c = false;
             if (task.TECH_External_Who_Id__c != null) {
-                System.debug('-- TaskTriggerHandler : task.TECH_External_Who_Id__c : ' + task.TECH_External_Who_Id__c);
+                System.debug('-- task.TECH_External_Who_Id__c : ' + task.TECH_External_Who_Id__c);
 
                 // Récupération du nom de l'objet en fonction du préfixe du TECH_External_Who_Id__c
                 String objName = Utils.findObjectNameFromRecordIdPrefix(task.TECH_External_Who_Id__c);
 
                 // Récupération de l'ID de l'objet
-                String query = 'SELECT ID FROM ' + objName + ' WHERE TECH_External_Id__c = \''
+                String query = 'SELECT ID FROM ' + objName + ' WHERE Id = \''
                         + task.TECH_External_Who_Id__c + '\'';
 
                 System.debug('-- Query : ' + query);
@@ -122,7 +122,6 @@ public class TaskTriggerHandler extends TriggerHandler {
 
                 // Attribution de l'ID récupéré au champ WhoId
                 task.WhoId = obj.Id;
-                System.debug('-- TaskTriggerHandler : task.WhoId : ' + task.WhoId);
             }
 
             if ( task.TECH_External_What_Id__c != null && task.TECH_External_Who_Id__c == null ) {
@@ -131,17 +130,16 @@ public class TaskTriggerHandler extends TriggerHandler {
                  c'est-à-dire qu'on a attribué une valeur de contact juste pour permettre l'insertion
                   */
                 task.WhoId = null;
-                System.debug('>> TaskTriggerHandler  : task.whoId passé à null ? : ' + task.WhoId);
             }
 
             if (task.TECH_External_What_Id__c != null) {
-                System.debug('-- TaskTriggerHandler : task.TECH_External_What_Id__c : ' + task.TECH_External_What_Id__c);
+                System.debug('-- task.TECH_External_What_Id__c : ' + task.TECH_External_What_Id__c);
 
                 // Récupération du nom de l'objet en fonction du préfixe du TECH_External_What_Id__c
                 String objName = Utils.findObjectNameFromRecordIdPrefix(task.TECH_External_What_Id__c);
 
                 // Récupération de l'ID de l'objet
-                String query = 'SELECT ID FROM ' + objName + ' WHERE TECH_External_Id__c = \''
+                String query = 'SELECT ID FROM ' + objName + ' WHERE Id = \''
                         + task.TECH_External_What_Id__c + '\'';
 
                 System.debug('-- Query : ' + query);
@@ -150,8 +148,6 @@ public class TaskTriggerHandler extends TriggerHandler {
 
                 // Attribution de l'ID récupéré au champ WhoId
                 task.WhatId = obj.Id;
-
-                System.debug('-- TaskTriggerHandler AfterInsert : task.WhatId similaire au TECH_External_What_Id__c ? : ' + task.WhatId);
             }
         }
         return tasks;
