@@ -25,15 +25,20 @@ private class TaskTriggerHandlerTest {
     static testMethod void testWithBothTechFields() {
 
         Contact ctc = [SELECT Id, LastName FROM Contact WHERE LastName = 'Owner'];
+        ctc.TECH_External_Id__c = ctc.ID;
+        update ctc;
         System.debug('Contact : ' + ctc);
 
         Opportunity opportunity = [SELECT Id FROM Opportunity];
+        opportunity.TECH_External_Id__c = opportunity.ID;
+        update opportunity;
         System.debug('Opportunity : ' + opportunity);
 
         List<Task> tasks = new List<Task>();
-        for (Integer i = 0 ; i < 10 ; i++) {
+        for (Integer i = 0 ; i < 3 ; i++) {
             tasks.add(new Task(TECH_External_What_Id__c = String.valueOf(opportunity.Id),
-                    TECH_External_Who_Id__c = String.valueOf(ctc.Id)));
+                    TECH_External_Who_Id__c = String.valueOf(ctc.Id),
+                    TECH_Is_Record_Transferring__c = true));
         }
 
         Test.startTest();
@@ -46,37 +51,8 @@ private class TaskTriggerHandlerTest {
             System.debug('task.TECH_External_Who_Id__c : ' + task.TECH_External_Who_Id__c);
 
             // Vérification que les champs WhoId et WhatId ont été remplis à partir des champs TECH
-            System.assertEquals(task.WhoId, task.TECH_External_Who_Id__c);
-            System.assertEquals(task.WhatId, task.TECH_External_What_Id__c);
-        }
-    }
-
-    /**
-    Méthode qui teste que le trigger remplit effectivement les champs WhatId à partir du champ
-    TECH_External_What_Id__c, et qu'il laisse le champ WhoId vide
-     */
-    static testMethod void testWithWhatIdTechField() {
-
-        Opportunity opportunity = [SELECT Id FROM Opportunity];
-        System.debug('Opportunity : ' + opportunity);
-
-        List<Task> tasks = new List<Task>();
-        for (Integer i = 0 ; i < 10 ; i++) {
-            tasks.add(new Task(TECH_External_What_Id__c = String.valueOf(opportunity.Id)));
-        }
-
-        Test.startTest();
-        insert tasks;
-        Test.stopTest();
-
-        tasks = [SELECT Id, WhoId, WhatId, TECH_External_Who_Id__c, TECH_External_What_Id__c FROM Task];
-        for (Task task : tasks) {
-            System.debug('task.whoId : ' + task.whoId);
-            System.debug('task.TECH_External_Who_Id__c : ' + task.TECH_External_Who_Id__c);
-
-            // Vérification que les champs WhoId et WhatId ont été remplis à partir des champs TECH
-            System.assertEquals(task.WhoId, null);
-            System.assertEquals(task.WhatId, task.TECH_External_What_Id__c);
+            System.assertEquals(task.TECH_External_Who_Id__c, task.WhoId);
+            System.assertEquals(task.TECH_External_What_Id__c, task.WhatId);
         }
     }
 }

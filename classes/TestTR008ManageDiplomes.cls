@@ -1,7 +1,7 @@
 @istest
 public class TestTR008ManageDiplomes {
     
-    static  testMethod void majDateContact(){
+    static testMethod void majDateContact(){
         
         Pays__c pays = new Pays__c();
         pays.Name = 'France';
