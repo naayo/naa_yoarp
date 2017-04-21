@@ -606,6 +606,19 @@
         <type>TextArea</type>
     </fields>
     <fields>
+        <fullName>ComptePrincipal__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Compte principal</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Accounts (Compte principal)</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Compte_Groupe__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -1147,6 +1160,32 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nombre_de_contacts_dipl_m_s__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Nombre de contacts diplômés</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nombre_de_contacts_dipl_m_s_groupe__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Nombre de contacts diplômés dans groupe</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
