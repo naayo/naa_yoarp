@@ -115,8 +115,15 @@ public class TR008ManageDiplomes {
             // Parcourir chaque filiale du compte principal
             for(Account accChild :mpAcctIdChildsList.get(parentId))
             {
-                // Calculer la somme du nombre de diplomés au sein des filiales
-                nbDiplomesInParent += (Integer)accChild.Nombre_de_contacts_dipl_m_s__c;
+                // Si le Nombre_de_contacts_dipl_m_s__c n'est initialisé
+                if(accChild.Nombre_de_contacts_dipl_m_s__c == null){
+                    // Calculer la somme du nombre de diplomés au sein des filiales
+                    nbDiplomesInParent += 0;
+                }else{
+                    // Calculer la somme du nombre de diplomés au sein des filiales
+                    nbDiplomesInParent += (Integer)accChild.Nombre_de_contacts_dipl_m_s__c;    
+                }           
+                
             }
             // Alimenter la map de la somme des NbDiplomes des filiales d'un compte principal
             mpNbDiplomesInParent.put(parentId, nbDiplomesInParent);
