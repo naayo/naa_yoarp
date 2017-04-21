@@ -135,11 +135,21 @@ public class TR008ManageDiplomes {
         for(Account acc :lAcct){
             // Si le compte est un compte principal
             if(acc.ComptePrincipal__c == null){
-                // Ajouter l'id du compte principal et son nombre de diplômés
-                mpNbDiplomesByParent.put(acc.Id, (Integer)acc.Nombre_de_contacts_dipl_m_s__c);
+                // Si le Nombre_de_contacts_dipl_m_s__c n'est initialisé
+                if(acc.Nombre_de_contacts_dipl_m_s__c == null){
+                    mpNbDiplomesByParent.put(acc.Id, 0);
+                }else{
+                    // Ajouter l'id du compte principal et son nombre de diplômés
+                    mpNbDiplomesByParent.put(acc.Id, (Integer)acc.Nombre_de_contacts_dipl_m_s__c);    
+                }                
             }else{
-                // Ajouter l'id de son compte principal et son nombre de diplômés
-                mpNbDiplomesByParent.put(acc.ComptePrincipal__c, (Integer)acc.ComptePrincipal__r.Nombre_de_contacts_dipl_m_s__c);    
+                // Si le Nombre_de_contacts_dipl_m_s__c n'est initialisé
+                if(acc.ComptePrincipal__r.Nombre_de_contacts_dipl_m_s__c == null){
+                    mpNbDiplomesByParent.put(acc.ComptePrincipal__c, 0);
+                }else{
+                    // Ajouter l'id du compte principal et son nombre de diplômés
+                    mpNbDiplomesByParent.put(acc.ComptePrincipal__c, (Integer)acc.ComptePrincipal__r.Nombre_de_contacts_dipl_m_s__c);    
+                }   
             }
         }
         
