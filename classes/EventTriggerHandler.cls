@@ -68,7 +68,7 @@ public class EventTriggerHandler extends TriggerHandler {
          tasksToUpdateAfterInsert pour les mettre à jour
           */
         List<Event> eventsInTransferBetweenSandboxs = completeWhoAndWhatIdFields(ids);
-        if (eventsInTransferBetweenSandboxs != null && !eventsInTransferBetweenSandboxs.isEmpty()) {
+        if (eventsInTransferBetweenSandboxs != null && eventsInTransferBetweenSandboxs.isEmpty()) {
             eventsToUpdateAfterInsert.addAll(eventsInTransferBetweenSandboxs);
         }
 
@@ -114,7 +114,7 @@ public class EventTriggerHandler extends TriggerHandler {
                 String objName = Utils.findObjectNameFromRecordIdPrefix(event.TECH_External_Who_Id__c);
 
                 // Récupération de l'ID de l'objet
-                String query = 'SELECT ID FROM ' + objName + ' WHERE TECH_External_Id__c = \''
+                String query = 'SELECT ID FROM ' + objName + ' WHERE Id = \''
                         + event.TECH_External_Who_Id__c + '\'';
 
                 System.debug('-- Query : ' + query);
@@ -123,7 +123,6 @@ public class EventTriggerHandler extends TriggerHandler {
 
                 // Attribution de l'ID récupéré au champ WhoId
                 event.WhoId = obj.Id;
-
             }
 
             if ( event.TECH_External_What_Id__c != null && event.TECH_External_Who_Id__c == null ) {
@@ -132,8 +131,6 @@ public class EventTriggerHandler extends TriggerHandler {
                  c'est-à-dire qu'on a attribué une valeur de contact juste pour permettre l'insertion
                   */
                 event.WhoId = null;
-                System.debug('>> event.whoId passé à null ? : ' + event.WhoId);
-
             }
 
             if (event.TECH_External_What_Id__c != null) {
@@ -143,7 +140,7 @@ public class EventTriggerHandler extends TriggerHandler {
                 String objName = Utils.findObjectNameFromRecordIdPrefix(event.TECH_External_What_Id__c);
 
                 // Récupération de l'ID de l'objet
-                String query = 'SELECT ID FROM ' + objName + ' WHERE TECH_External_Id__c = \''
+                String query = 'SELECT ID FROM ' + objName + ' WHERE Id = \''
                         + event.TECH_External_What_Id__c + '\'';
 
                 System.debug('-- Query : ' + query);
@@ -152,8 +149,6 @@ public class EventTriggerHandler extends TriggerHandler {
 
                 // Attribution de l'ID récupéré au champ WhoId
                 event.WhatId = obj.Id;
-
-                System.debug('-- event.WhatId similaire au TECH_External_What_Id__c ? : ' + event.WhatId);
             }
         }
         return events;
