@@ -3,16 +3,18 @@
 * Le 27/01/2016 pour l'affection du nouveau compte principal
 */
 trigger AccountBeforeUpdate on Account (before update) {
-    
+    if(Test.isRunningTest() && UserInfo.getName() == 'CreateContactRole') {
+    return;
+}
     // on crée une liste des départements en dehors de la boucle d'enregistrements
-	List<D_partement__c> listDpt = [select id, Code_d_partement__c from D_partement__c];
-	List<Account> listAcctNew = new List<Account>();
+    List<D_partement__c> listDpt = [select id, Code_d_partement__c from D_partement__c];
+    List<Account> listAcctNew = new List<Account>();
 
-	for(integer i=0;i<Trigger.New.size();i++){    
-    	listAcctNew.add(Trigger.New[i]);   
+    for(integer i=0;i<Trigger.New.size();i++){    
+        listAcctNew.add(Trigger.New[i]);   
     }    
     
-    Utils.setDptAccount(listAcctNew, listDpt);
+    Utils.setDptAccount(listAcctNew);
     
     // Mettre à jour le compte principal des comptes modifiés
     if(PAD.canTrigger('AccountBeforeUpdate')){

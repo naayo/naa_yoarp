@@ -9,12 +9,14 @@ trigger ContactBeforeInsert on Contact (before insert) {
         if (con.Conversion_Contact__c=='Prospect Etudiant')con.RecordTypeID=Label.RecordTypeProspectEtudiant;
        else if (con.Conversion_Contact__c=='Professionnel')con.RecordTypeID=Label.RecordTypeProfessionnel   ;  
        else if (con.Conversion_Contact__c=='Etudiant')con.RecordTypeID= Label.RecordTypeEtudiant; 
+       // mise en forme casse du nom et prénom
+       Utils.contactToUpper(con);
        ContactsNew.add(con);  
     }
     
     if(ContactsNew.Size() > 0){
     
-          Utils.setDptContact(ContactsNew, listDpt);
+          Utils.setDptContact(ContactsNew);
     
     }
     

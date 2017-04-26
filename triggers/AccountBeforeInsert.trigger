@@ -12,7 +12,7 @@ trigger AccountBeforeInsert on Account (before insert) {
         listAcctNew.add(Trigger.New[i]); 
     }
     
-    Utils.setDptAccount(listAcctNew, listDpt);
+    Utils.setDptAccount(listAcctNew);
     
     // Affecter le compte principal des comptes ajoutés
     // Parcourir tous les comptes insérés
