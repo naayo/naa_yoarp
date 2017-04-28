@@ -1,5 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>ARPEGEVente</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>EMLYON</application>
+        <default>true</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Mass_Update_And_Mass_Edit</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Suivi_projet</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AppLauncher</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Chatter</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Community</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__DataAssessment</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSalesConsole</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningService</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Marketing</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Platform</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Sales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Service</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ServiceConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
     <classAccesses>
         <apexClass>BatchCalculateNbDiplomes</apexClass>
         <enabled>false</enabled>
@@ -2583,6 +2658,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Contact.Type_d_enregistrement_Piste__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Contact.VIP__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3747,6 +3827,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Type_d_enregistrement_Contact__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Viadeo__c</field>
         <readable>true</readable>
@@ -4603,6 +4688,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Statut_Com_d_j_modifi_par_CANEL__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Statut_Dossier_CANEL__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4983,141 +5073,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Order.ActivatedById</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.ActivatedDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.BillToContactId</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Order.BillingAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Order.CompanyAuthorizedById</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.CompanyAuthorizedDate</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.ContractEndDate</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.ContractName</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Order.CustomerAuthorizedById</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.CustomerAuthorizedDate</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Order.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.Name</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.OpportunityId</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.OrderReferenceNumber</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.PoDate</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.PoNumber</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.QuoteId</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.ShipToContactId</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Order.ShippingAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.TotalAmount</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Order.Type</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>OrderItem.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>OrderItem.EndDate</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>OrderItem.ListPrice</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>OrderItem.ProductCode</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>OrderItem.QuoteLineItemId</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>OrderItem.ServiceDate</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Partenaire_financeur__c.Montant_financement__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -5450,276 +5405,6 @@
         <editable>false</editable>
         <field>Product2.produit_unique__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.AccountId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.AdditionalAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.AdditionalName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.BillingAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.BillingName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.CommentaireDevis__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Commentaire_devisOLD__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Conditions_de_restauration__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.ContactId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.ContractId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Date_de_d_but__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Date_de_fin__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Date_de_fin_old__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Date_de_formation__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Date_debut_old__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Destinataire__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Discount</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Discount_devis__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Email</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Email_Professionnel_DEVIS__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Entreprise__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Entreprise_d_clar_e__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.ExpirationDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Fax</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.GrandTotal</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Lieu__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Lieu_de_formation__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Nombre_de_jours__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Nombre_dheures__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Nombre_heures__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Nombre_jours__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Phone</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.QuoteToAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.QuoteToName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.ShippingAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.ShippingHandling</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.ShippingName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Societe__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Status</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Subtotal</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.T_l_phone_DEVIS__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.Tax</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.TotalPrice</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quote.Votre_formation__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>QuoteLineItem.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>QuoteLineItem.Discount</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>QuoteLineItem.ListPrice</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>QuoteLineItem.Prix_de_vente__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>QuoteLineItem.ProductCode</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>QuoteLineItem.ServiceDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>QuoteLineItem.Sous_total__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>QuoteLineItem.Subtotal</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>QuoteLineItem.TotalPrice</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -6406,6 +6091,349 @@
         <field>Versement_OCTA__c.Type_de_versement__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <layoutAssignments>
+        <layout>Account-Présentation du compte</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Présentation du compte</layout>
+        <recordType>Account.Business_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AccountContactRole-Présentation Rôle des contacts du compte</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Asset-Présentation des actifs</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Campaign-Présentation de la campagne</layout>
+        <recordType>Campaign.inx__Standard_Campaign</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CampaignMember-Campaign Member Page Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Présentation de la requête</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseClose-Fermer la présentation de requête</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Centre_d_interet__c-Présentation Centre d%27interet</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cible__c-Présentation Cible</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CollaborationGroup-Présentation Groupe</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Etudiant</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Etudiant</layout>
+        <recordType>Contact.Etudiant</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Professionnel</layout>
+        <recordType>Contact.Professionnel</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Prospect Etudiant</layout>
+        <recordType>Contact.Prospect_Etudiant</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact_associ_s_l_opportunit__c-FC Programme Long</layout>
+        <recordType>Contact_associ_s_l_opportunit__c.FC_Programme_Long</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact_associ_s_l_opportunit__c-Formation initiale</layout>
+        <recordType>Contact_associ_s_l_opportunit__c.Formation_initiale</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact_associ_s_l_opportunit__c-Présentation Contact associé à l%27opportunité</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact_associ_s_l_opportunit__c-Présentation Contact associé à l%27opportunité</layout>
+        <recordType>Contact_associ_s_l_opportunit__c.FC_Sur_Mesure</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact_associ_s_l_opportunit__c-Présentation Contact associé à l%27opportunité</layout>
+        <recordType>Contact_associ_s_l_opportunit__c.Formation_courte</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact_associ_s_l_opportunit__c-Présentation Contact associé à l%27opportunité</layout>
+        <recordType>Contact_associ_s_l_opportunit__c.Fundraising</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact_associ_s_l_opportunit__c-Présentation Contact associé à l%27opportunité</layout>
+        <recordType>Contact_associ_s_l_opportunit__c.Taxe</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contract-Présentation du contrat</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contreparties__c-Présentation Contrepartie</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cycle__c-Présentation Cycle</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>D_partement__c-Présentation Département</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Detail_pack__c-Présentation Détail pack</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Detail_pack_session__c-Présentation Détail pack session</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dipl_me__c-Présentation Diplôme</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DuplicateRecordSet-Présentation Ensemble d%27enregistrements dupliqué</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Echeancier__c-Présentation Echéancier</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EmailMessage-Présentation E-mail</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Etablissement__c-Présentation Etablissement</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Etat__c-Présentation Etat</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Event-Présentation d%27événement</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FeedItem-Présentation Élément de fil</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Fiche_projet__c-Action</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Fiche_projet__c-Action</layout>
+        <recordType>Fiche_projet__c.Action</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Fiche_projet__c-Anomalie</layout>
+        <recordType>Fiche_projet__c.Anomalie</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Fiche_projet__c-Evolution</layout>
+        <recordType>Fiche_projet__c.Evolution</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Fiche_projet__c-Version</layout>
+        <recordType>Fiche_projet__c.Version</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Fonction__c-Présentation Fonction</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Formation__c-Présentation Formation</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Global-Global Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Historique_de_poste__c-Présentation Historique de poste</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Idea-Présentation de l%27idée</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Indicateur__c-Présentation Indicateur</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Formation Courte</layout>
+        <recordType>Lead.Programme_Long_Diplomant</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Présentation de la piste</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Présentation de la piste</layout>
+        <recordType>Lead.Formation_Courte</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Présentation de la piste</layout>
+        <recordType>Lead.Fundraising_B2C</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Présentation de la piste</layout>
+        <recordType>Lead.Partenariat_Fundraising</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Présentation de la piste</layout>
+        <recordType>Lead.Principal</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Présentation de la piste</layout>
+        <recordType>Lead.Sur_Mesure</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Macro-Présentation Macro</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>NAF__c-Présentation NAF</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Formation Continue Long Parcours</layout>
+        <recordType>Opportunity.Programme_Long_Dipl_mant</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Formation Courte</layout>
+        <recordType>Opportunity.Formation_courte</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Formation Initiale</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Formation Initiale</layout>
+        <recordType>Opportunity.Formation_initiale</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Fundraising B2C</layout>
+        <recordType>Opportunity.Fundraising_B2C</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Mécénat</layout>
+        <recordType>Opportunity.Partenariat_Fundraising</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Relations Employeur</layout>
+        <recordType>Opportunity.Relations_Employeur</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Sur Mesure</layout>
+        <recordType>Opportunity.Intra_entreprise</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Taxe</layout>
+        <recordType>Opportunity.Taxe</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OpportunityLineItem-Présentation du produit de l%27opportunité</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OpportunityTeamMember-Présentation Membre d%27équipe d%27opportunité</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Order-Présentation de commande</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItem-Présentation de commande de produit</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partenaire_financeur__c-Présentation Partenaire financeur</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Pays__c-Présentation Pays</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-Présentation du compte personnel</layout>
+        <recordType>PersonAccount.PersonAccount</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Portefeuille_contacts__c-Relations avec le contact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Postes_Suppl_mentaires__c-Présentation Poste Supplémentaire</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Postessupplementaire__c-Présentation Poste actuelle</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Pricebook2-Price Book Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PricebookEntry-Présentation entrée du catalogue de prix</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Module</layout>
+        <recordType>Product2.Module</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Pack</layout>
+        <recordType>Product2.Pack</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Présentation du produit</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Présentation du produit</layout>
+        <recordType>Product2.Autre</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Présentation du produit</layout>
+        <recordType>Product2.Dons</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Présentation du produit</layout>
+        <recordType>Product2.Partenariat</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Présentation du produit</layout>
+        <recordType>Product2.Prestation</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Présentation du produit</layout>
+        <recordType>Product2.Programme</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Présentation du produit</layout>
+        <recordType>Product2.Relations_Employeur</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Présentation du produit</layout>
+        <recordType>Product2.Selection</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Taxe</layout>
+        <recordType>Product2.Taxe</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quote-Présentation du devis</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>QuoteLineItem-Présentation de l%27élément de ligne du devis</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>R_le__c-Présentation Rôle</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Session__c-Présentation Session</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SocialPersona-Social Persona Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SocialPost-Social Post Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Solution-Présentation de la solution</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Présentation de la tâche</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Titre__c-Présentation Titre</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>User-Présentation de l%27utilisateur</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAlt-Présentation Profil de l%27utilisateur</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Versement_OCTA__c-Présentation Versement OPCA</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>abc__c-abc Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -6575,15 +6603,6 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Opportunity</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Order</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -6962,11 +6981,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>PersonAccount.PersonAccount</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Product2.Autre</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -7016,6 +7030,74 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
+        <tab>About_Mass_Update_and_Mass_Edit</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Cible__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Contact_associ_s_l_opportunit__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>D_partement__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Dipl_me__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Etablissement__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Etat__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Fiche_projet__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Fonction__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Formation__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>NAF__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Pays__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Portefeuille_contacts__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Postes_Suppl_mentaires__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>R_le__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Session__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Titre__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -7060,19 +7142,11 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-Order</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>standard-Pricebook2</tab>
         <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Product2</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Quote</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

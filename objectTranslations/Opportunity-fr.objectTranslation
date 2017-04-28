@@ -1712,6 +1712,10 @@
         <name>Statut_Canel__c</name>
     </fields>
     <fields>
+        <label><!-- Statut Com. déjà modifié par CANEL ? --></label>
+        <name>Statut_Com_d_j_modifi_par_CANEL__c</name>
+    </fields>
+    <fields>
         <label><!-- Statut Dossier CANEL --></label>
         <name>Statut_Dossier_CANEL__c</name>
     </fields>

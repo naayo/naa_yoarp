@@ -4673,6 +4673,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Statut_Com_d_j_modifi_par_CANEL__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Statut_Dossier_CANEL__c</field>
         <readable>false</readable>
     </fieldPermissions>
