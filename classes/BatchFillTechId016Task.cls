@@ -31,7 +31,7 @@ global class BatchFillTechId016Task implements Database.Batchable<sObject> {
                 task.TECH_External_Who_Id__c = task.WhoId;
             }
         }
-       update records;
+        Database.update(records, false);
     }
 
     global void finish(Database.BatchableContext bc){

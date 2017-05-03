@@ -17,7 +17,7 @@ global class BatchFillTechId009Naf implements Database.Batchable<sObject> {
         for (NAF__c naf : records) {
             naf.TECH_External_Id__c = naf.Id;
         }
-        update records;
+        Database.update(records, false);
     }
 
     global void finish(Database.BatchableContext bc){

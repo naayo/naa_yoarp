@@ -330,6 +330,9 @@ public class DataExtractUtils {
         System.debug('--- PARAM Set<Id> idsToExport : ' + idsToExport);
         System.debug('--- PARAM Set<String> fieldNamesNotToExportFirst : ' + fieldNamesNotToExportFirst);
         String whereCondition = ' WHERE ID IN ' + convertSetToString(idsToExport);
+        // Génération du premier fichier Csv
+        // DataExtractUtils.extractDataToCSV(firstFileNumber, objectName, null, fieldNamesNotToExportFirst, whereCondition, null);
+        // Génération du second fichier Csv
         List<String> nbForFiles = new List<String> {firstFileNumber, secondFileNumber};
         DataExtractUtils.extractDataToCSV(nbForFiles, objectName, null, null, whereCondition, null);
         System.debug('--- End DataExtractUtils / extractSpecificRecordsHandlingLookupsToCSV(PARAMS) ---');

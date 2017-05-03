@@ -17,7 +17,7 @@ private class  DataExtract021SessionTest {
             s.TECH_External_Id__c = s.Id;
         }
         update sessions;
-
+        
         DataExtract021Session de = new DataExtract021Session(new DataToExport());
 
         Test.startTest();
