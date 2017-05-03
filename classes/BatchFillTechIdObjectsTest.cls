@@ -262,7 +262,7 @@ private class BatchFillTechIdObjectsTest {
     }
 
     private static void testBatchs (String objName) {
-        String query = 'SELECT ID, TECH_External_Id__c FROM ' + objName + ' LIMIT 150';
+        String query = 'SELECT ID, TECH_External_Id__c FROM ' + objName + ' WHERE TECH_External_Id__c != null LIMIT 150';
         List<SObject> objList = Database.query(query);
         System.debug('--- Test Batch for '+ objName + ' ---');
 
