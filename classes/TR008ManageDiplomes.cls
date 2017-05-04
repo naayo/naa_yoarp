@@ -2,7 +2,35 @@
 * Modifié par Tom CHAMART - MODIS
 * Le 16/02/2017
 */
-public class TR008ManageDiplomes {    
+public class TR008ManageDiplomes {  
+    // -------Initialiser les champs Nombre_de_contacts_dipl_m_s__c et Nombre_de_contacts_dipl_m_s_groupe__c à 0
+    public static void initFields(List<Id> lAccIds){
+        Set<Id> sAcctIds = new Set<Id>(lAccIds);
+        
+        // Récuperer tous les comptes
+        List<Account> accs = [
+            SELECT  Id, Nombre_de_contacts_dipl_m_s__c, Nombre_de_contacts_dipl_m_s_groupe__c
+            FROM    Account
+            WHERE   Id IN :sAcctIds
+        ];
+        
+        // Initialiser les champs Nombre_de_contacts_dipl_m_s__c et Nombre_de_contacts_dipl_m_s_groupe__c à 0
+        List<Account> accsToUpdate = new List<Account>();
+        for (Account acc :accs)  {
+            accsToUpdate.add(new Account(
+                Id = acc.Id,
+                Nombre_de_contacts_dipl_m_s__c = 0,
+                Nombre_de_contacts_dipl_m_s_groupe__c = 0
+            ));
+        }
+        
+        // MàJ les comptes en base
+        if(accsToUpdate.size()>0) 
+        {
+            update accsToUpdate;
+        }
+    }
+    
     // -------Mettre à jour toutes les données de diplômés de compte depuis des contacts
     public static void updateDiplomesOfContacts(List<Contact> lCtc){
         Set<Id> sAcctIds = new Set<Id>(); // Set contenant les Ids des comptes concernés par la modification
@@ -115,15 +143,8 @@ public class TR008ManageDiplomes {
             // Parcourir chaque filiale du compte principal
             for(Account accChild :mpAcctIdChildsList.get(parentId))
             {
-                // Si le Nombre_de_contacts_dipl_m_s__c n'est initialisé
-                if(accChild.Nombre_de_contacts_dipl_m_s__c == null){
-                    // Calculer la somme du nombre de diplomés au sein des filiales
-                    nbDiplomesInParent += 0;
-                }else{
-                    // Calculer la somme du nombre de diplomés au sein des filiales
-                    nbDiplomesInParent += (Integer)accChild.Nombre_de_contacts_dipl_m_s__c;    
-                }           
-                
+                // Calculer la somme du nombre de diplomés au sein des filiales
+                nbDiplomesInParent += (Integer)accChild.Nombre_de_contacts_dipl_m_s__c;
             }
             // Alimenter la map de la somme des NbDiplomes des filiales d'un compte principal
             mpNbDiplomesInParent.put(parentId, nbDiplomesInParent);
@@ -135,21 +156,11 @@ public class TR008ManageDiplomes {
         for(Account acc :lAcct){
             // Si le compte est un compte principal
             if(acc.ComptePrincipal__c == null){
-                // Si le Nombre_de_contacts_dipl_m_s__c n'est initialisé
-                if(acc.Nombre_de_contacts_dipl_m_s__c == null){
-                    mpNbDiplomesByParent.put(acc.Id, 0);
-                }else{
-                    // Ajouter l'id du compte principal et son nombre de diplômés
-                    mpNbDiplomesByParent.put(acc.Id, (Integer)acc.Nombre_de_contacts_dipl_m_s__c);    
-                }                
+				// Ajouter l'id du compte principal et son nombre de diplômés
+				mpNbDiplomesByParent.put(acc.Id, (Integer)acc.Nombre_de_contacts_dipl_m_s__c);
             }else{
-                // Si le Nombre_de_contacts_dipl_m_s__c n'est initialisé
-                if(acc.ComptePrincipal__r.Nombre_de_contacts_dipl_m_s__c == null){
-                    mpNbDiplomesByParent.put(acc.ComptePrincipal__c, 0);
-                }else{
-                    // Ajouter l'id du compte principal et son nombre de diplômés
-                    mpNbDiplomesByParent.put(acc.ComptePrincipal__c, (Integer)acc.ComptePrincipal__r.Nombre_de_contacts_dipl_m_s__c);    
-                }   
+				// Ajouter l'id du compte principal et son nombre de diplômés
+				mpNbDiplomesByParent.put(acc.ComptePrincipal__c, (Integer)acc.ComptePrincipal__r.Nombre_de_contacts_dipl_m_s__c);
             }
         }
         
