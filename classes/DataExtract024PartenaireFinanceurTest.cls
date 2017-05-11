@@ -12,6 +12,18 @@ private class DataExtract024PartenaireFinanceurTest {
     static testMethod void testExtractPartenairesFinanceurs() {
         String objName = DataExtract024PartenaireFinanceur.OBJECT_NAME_PARTENAIRE_FINANCEUR ;
 
+        List<Opportunity> opportunities = [SELECT Id, TECH_External_Id__c FROM Opportunity];
+        for (Opportunity o : opportunities) {
+            o.TECH_External_Id__c = o.Id;
+        }
+        update opportunities;
+
+        List<Account> accounts = [SELECT Id, TECH_External_Id__c FROM Account];
+        for (Account a : accounts) {
+            a.TECH_External_Id__c = a.Id;
+        }
+        update accounts;
+
         DataToExport dataExport = new DataToExport();
 
         DataExtractObjectsUtilsTest.addObjectsToProcess(dataExport, DataExtract018Account.OBJECT_NAME_ACCOUNT);

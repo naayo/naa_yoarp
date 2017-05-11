@@ -24,7 +24,7 @@ public class DataExtract012ContactAfterLoop implements Queueable {
 
         System.debug('--- BEGIN DataExtract012ContactAfterLoop / extractContactsToCsv() ---');
 
-        System.debug('-- PARAM dataExport.contactsToExport : ' + dataExport.contactsToExport);
+        System.debug('-- PARAM dataExport.contactsToExport.size : ' + dataExport.contactsToExport.size());
 
         DataExtractUtils.extractAllFieldsSpecificRecordsToCSV('08', DataExtract012Contact.OBJECT_NAME_CONTACT,
             dataExport.contactsToExport);

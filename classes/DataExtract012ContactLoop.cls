@@ -31,16 +31,18 @@ public class DataExtract012ContactLoop implements Queueable {
 
         System.debug('--- BEGIN DataExtract012ContactLoop / processContacts() ---');
 
-        String idsToString = DataExtractUtils.convertSetToString(dataExport.contactsToProcess);
+        if (!dataExport.contactsToProcess.isEmpty() && dataExport.contactsToProcess != null) {
+            String idsToString = DataExtractUtils.convertSetToString(dataExport.contactsToProcess);
 
-        System.debug('-- PARAM contactsToProcess\'Ids converted to String : ' + idsToString);
+            System.debug('-- PARAM contactsToProcess\'Ids converted to String : ' + idsToString);
 
-        // Sélection des opportunités liées aux contacts à traiter
-        selectOpportunitiesRelatedToContacts(idsToString);
+            // Sélection des opportunités liées aux contacts à traiter
+            selectOpportunitiesRelatedToContacts(idsToString);
 
-        // Sélection des comptes liés aux contacts à traiter
-        selectAccountsWhichReferenceContacts(idsToString);
-        selectAccountsRelatedToContacts(idsToString);
+            // Sélection des comptes liés aux contacts à traiter
+            selectAccountsWhichReferenceContacts(idsToString);
+            selectAccountsRelatedToContacts(idsToString);
+        }
 
         System.debug('-- PARAM dataExport.contactsToExport before transfer : ' + dataExport.contactsToExport);
         System.debug('-- PARAM dataExport.contactsToProcess before transfer : ' + dataExport.contactsToProcess);
@@ -64,7 +66,7 @@ public class DataExtract012ContactLoop implements Queueable {
 
         System.debug('--- METHOD : DataExtract012ContactLoop / selectOpportunitiesRelatedToContacts() ---');
 
-        String clause = ' WHERE ' + DataExtract017Opportunity.FIELD_CONTACT_CENTRAL + ' IN ' +
+        String clause = ' WHERE TECH_External_Id__c != null AND ' + DataExtract017Opportunity.FIELD_CONTACT_CENTRAL + ' IN ' +
                 idsToString;
 
         System.debug('--PARAM clause for query : ' + clause);
