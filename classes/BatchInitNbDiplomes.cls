@@ -16,7 +16,8 @@ global class BatchInitNbDiplomes implements Database.Batchable<sObject> {
 				WHERE ParentId != null
     		]);
     }
-	global void execute(Database.BatchableContext BC, List<Account> scope){        
+	
+    global void execute(Database.BatchableContext BC, List<Account> scope){        
         // Parcourir chaque filiale
 		for (Account acc:scope){
             // Assigner le compte principal du compte
@@ -24,12 +25,11 @@ global class BatchInitNbDiplomes implements Database.Batchable<sObject> {
 		}
 		update scope;
 	}
-    global void finish(Database.BatchableContext BC){
-		// Recalculer les nombre de diplômés
-        BatchCalculateNbDiplomes batch = new BatchCalculateNbDiplomes();
-        Database.executeBatch(batch);
-    }
     
+    global void finish(Database.BatchableContext BC){
+		// Initialiser à 0 les compteurs de diplômés
+        Database.executeBatch(new BatchInitFieldsNbDiplomes());
+    }    
     
     private Id setComptePrincipal(Account acc){
         // Si le compte a un parent
