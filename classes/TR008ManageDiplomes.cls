@@ -4,15 +4,8 @@
 */
 public class TR008ManageDiplomes {  
     // -------Initialiser les champs Nombre_de_contacts_dipl_m_s__c et Nombre_de_contacts_dipl_m_s_groupe__c à 0
-    public static void initFields(Set<Id> sAcctIds){        
-        // Récuperer tous les comptes
-        List<Account> accs = [
-            SELECT  Id, Nombre_de_contacts_dipl_m_s__c, Nombre_de_contacts_dipl_m_s_groupe__c
-            FROM    Account
-            WHERE   Id IN :sAcctIds
-        ];
-        
-        // Initialiser les champs Nombre_de_contacts_dipl_m_s__c et Nombre_de_contacts_dipl_m_s_groupe__c à 0
+    public static void initFields(List<Account> accs){
+        // Parcourir les comptes et initialiser les deux compteurs à 0
         List<Account> accsToUpdate = new List<Account>();
         for (Account acc :accs)  {
             accsToUpdate.add(new Account(

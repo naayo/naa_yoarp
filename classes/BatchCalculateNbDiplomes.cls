@@ -10,9 +10,6 @@ global class BatchCalculateNbDiplomes implements Database.Batchable<sObject> {
     }
     
     global void execute(Database.BatchableContext BC, List<Account> scope){
-        // Initialiser les champs Nombre_de_contacts_dipl_m_s__c et Nombre_de_contacts_dipl_m_s_groupe__c
-        TR008ManageDiplomes.initFields(new Map<Id,Account>(scope).keySet());
-
         // Mettre à jour le nombre de diplômés présents dans chaque compte
         TR008ManageDiplomes.updateDiplomesOfAccounts(new List<Id>(new Map<Id,Account>(scope).keySet()));
 	}
