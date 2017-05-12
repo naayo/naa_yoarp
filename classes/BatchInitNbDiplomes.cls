@@ -16,10 +16,7 @@ global class BatchInitNbDiplomes implements Database.Batchable<sObject> {
 				WHERE ParentId != null
     		]);
     }
-	global void execute(Database.BatchableContext BC, List<Account> scope){
-        // Initialiser les champs Nombre_de_contacts_dipl_m_s__c et Nombre_de_contacts_dipl_m_s_groupe__c
-        TR008ManageDiplomes.initFields(new List<Id>(new Map<Id,Account>(scope).keySet()));
-        
+	global void execute(Database.BatchableContext BC, List<Account> scope){        
         // Parcourir chaque filiale
 		for (Account acc:scope){
             // Assigner le compte principal du compte

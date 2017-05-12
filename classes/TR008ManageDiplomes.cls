@@ -4,9 +4,7 @@
 */
 public class TR008ManageDiplomes {  
     // -------Initialiser les champs Nombre_de_contacts_dipl_m_s__c et Nombre_de_contacts_dipl_m_s_groupe__c à 0
-    public static void initFields(List<Id> lAccIds){
-        Set<Id> sAcctIds = new Set<Id>(lAccIds);
-        
+    public static void initFields(Set<Id> sAcctIds){        
         // Récuperer tous les comptes
         List<Account> accs = [
             SELECT  Id, Nombre_de_contacts_dipl_m_s__c, Nombre_de_contacts_dipl_m_s_groupe__c
