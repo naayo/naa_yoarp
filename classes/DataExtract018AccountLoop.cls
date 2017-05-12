@@ -55,12 +55,19 @@ public class DataExtract018AccountLoop implements Queueable {
 
         System.debug('--- METHOD : DataExtract018AccountLoop / selectContactsRelatedToAccounts() ---');
 
-        String query = 'SELECT AccountId FROM ' + DataExtract012Contact.OBJECT_NAME_CONTACT +
-                ' WHERE AccountId IN ' + idsToString;
+        // Sélection de deux contacts par compte afin de ne garder qu'un échantillon
+        String query = 'SELECT (SELECT Id, AccountId FROM Contacts WHERE TECH_External_ID__c != null LIMIT 2) FROM ' +
+                DataExtract018Account.OBJECT_NAME_ACCOUNT +
+                ' WHERE TECH_External_ID__c != null AND Id IN ' + idsToString;
 
         System.debug('--PARAM query : ' + query);
 
-        List<Contact> contacts = Database.query(query);
+        List<Account> accounts = Database.query(query);
+        List<Contact> contacts = new List<Contact>();
+
+        System.debug('accounts.size() ' + accounts.size());
+        contacts = accounts[0].Contacts;
+
         if ( contacts != null && !contacts.isEmpty() ) {
             Set<Id> conIds = new Set<Id>();
             for ( Contact con : contacts ) {

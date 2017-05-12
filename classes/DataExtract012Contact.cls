@@ -9,16 +9,20 @@ public class DataExtract012Contact implements Queueable {
     public static DataToExport dataExp = new DataToExport();
 
     /**
-    Clauses WHERE pour obtenir un jeu de données pertinent en filtrant les types d'enregistrements
+    Clauses WHERE pour obtenir un jeu de données pertinent en filtrant les types d'enregistrements et en choisissant
+    des contacts dont les comptes n'ont pas de compte parent pour faciliter la manipulation des fichiers CSV
      */
-    private static final String WHERE_RECORD_TYPE_PROSPECT_ETUDIANT = ' WHERE Record_Type_Name__c = \'Prospect Etudiant\' ' +
+    private static final String WHERE_RECORD_TYPE_PROSPECT_ETUDIANT = ' WHERE RecordType.Name = \'Prospect Etudiant\' ' +
             ' AND TECH_External_ID__c != null ' +
+            'AND Account.ParentId = null AND Account.TECH_External_Id__c != null ' +
             'ORDER BY CreatedDate DESC ';
-    private static final String WHERE_RECORD_TYPE_ETUDIANT = ' WHERE Record_Type_Name__c = \'Etudiant\' ' +
-            ' AND TECH_External_ID__c != null ' +
+    private static final String WHERE_RECORD_TYPE_ETUDIANT = ' WHERE RecordType.Name = \'Etudiant\' ' +
+            ' AND TECH_External_ID__c != null AND Account.TECH_External_Id__c != null ' +
+            'AND Account.ParentId = null ' +
             'ORDER BY CreatedDate DESC ';
-    private static final String WHERE_RECORD_TYPE_PROFESSIONNEL = ' WHERE Record_Type_Name__c = \'Professionnel\' ' +
+    private static final String WHERE_RECORD_TYPE_PROFESSIONNEL = ' WHERE RecordType.Name = \'Professionnel\' ' +
             ' AND TECH_External_ID__c != null ' +
+            'AND Account.ParentId = null AND Account.TECH_External_Id__c != null ' +
             'ORDER BY CreatedDate DESC ';
 
     public void execute(QueueableContext context) {
@@ -30,11 +34,11 @@ public class DataExtract012Contact implements Queueable {
     }
 
     /**
-    Sélection des id de 1000 enregistrements 'Contact'
+    Sélection des id de 375 enregistrements 'Contact'
     Les contacts sélectionnés sont de type :
-    - 500 de type 'Etudiant'
-    - 250 de type 'Prospect Etudiant'
-    - 250 de type 'Professionnel'
+    - 125 de type 'Etudiant'
+    - 125 de type 'Prospect Etudiant'
+    - 125 de type 'Professionnel'
      */
     public static void extractContacts(DataToExport dataToExport) {
 
@@ -42,15 +46,15 @@ public class DataExtract012Contact implements Queueable {
 
         // Sélection du quota de contacts de type 'Etudiant'
         dataToExport.addAllContactsToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_CONTACT,
-                WHERE_RECORD_TYPE_ETUDIANT, 500));
+                WHERE_RECORD_TYPE_ETUDIANT, 125));
 
         // Sélection du quota de contacts de type 'Prospect Etudiant'
         dataToExport.addAllContactsToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_CONTACT,
-                WHERE_RECORD_TYPE_PROSPECT_ETUDIANT, 250));
+                WHERE_RECORD_TYPE_PROSPECT_ETUDIANT, 125));
 
         // Sélection du quota de contacts de type 'Professionnel'
         dataToExport.addAllContactsToProcess(DataExtractUtils.extractIdsFromSpecificRecords(OBJECT_NAME_CONTACT,
-                WHERE_RECORD_TYPE_PROFESSIONNEL, 250));
+                WHERE_RECORD_TYPE_PROFESSIONNEL, 125));
 
         System.debug('-- PARAM dataToExport.contactsToProcess : ' + dataToExport.contactsToProcess);
 

@@ -25,6 +25,10 @@ global class DataToExport {
         public get;
         private set;
     }
+    public set<Id> contactsToBeExportedRelatedToMinimalQuotas{
+        public get;
+        private set;
+    }
     public Set<Id> accountsToExport{
         public get;
         private set;
@@ -33,11 +37,19 @@ global class DataToExport {
         public get;
         private set;
     }
+    public set<Id> accountsToBeExportedRelatedToMinimalQuotas{
+        public get;
+        private set;
+    }
     public Set<Id> opportunitiesToExport{
         public get;
         private set;
     }
     public Set<Id> opportunitiesToProcess{
+        public get;
+        private set;
+    }
+    public set<Id> opportunitiesToBeExportedRelatedToMinimalQuotas{
         public get;
         private set;
     }
@@ -65,10 +77,13 @@ global class DataToExport {
     public DataToExport() {
         this.contactsToExport = new Set<Id>();
         this.contactsToProcess = new Set<Id>();
+        this.contactsToBeExportedRelatedToMinimalQuotas = new Set<Id>();
         this.accountsToExport = new Set<Id>();
         this.accountsToProcess = new Set<Id>();
+        this.accountsToBeExportedRelatedToMinimalQuotas = new Set<Id>();
         this.opportunitiesToExport = new Set<Id>();
         this.opportunitiesToProcess = new Set<Id>();
+        this.opportunitiesToBeExportedRelatedToMinimalQuotas = new Set<Id>();
         this.leadsToExport = new Set<Id>();
         this.sessionsToExport = new Set<Id>();
         this.portefeuillesToExport = new Set<Id>();

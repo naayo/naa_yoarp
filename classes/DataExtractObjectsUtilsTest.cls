@@ -195,7 +195,7 @@ public class DataExtractObjectsUtilsTest {
     }
 
     public static void addObjectsToProcess(DataToExport dataExp, String objName) {
-        String query = 'SELECT Id FROM ' + objName;
+        String query = 'SELECT Id, Tech_External_Id__c FROM ' + objName;
         List<SObject> objects = Database.query(query);
         Set<Id> objIds = new Set<Id>();
 
@@ -231,12 +231,15 @@ public class DataExtractObjectsUtilsTest {
 
         for ( ContentVersion cv : contentVersions ) {
             System.debug('-- TEST ContentVersion Retrieved : ' + cv);
-            System.assert(cv.Title.contains(objName));
+            if (contentVersions.size() == 1) {
+                System.assert(cv.Title.contains(objName));
+            }
+
             System.assertEquals(cv.FileExtension, 'csv');
-            if (!objName.equalsIgnoreCase(DataExtract018Account.OBJECT_NAME_ACCOUNT)) {
-                System.assertEquals(1, contentVersions.size());
-            } else {
+            if (objName.equalsIgnoreCase(DataExtract018Account.OBJECT_NAME_ACCOUNT)) {
                 System.assertEquals(2, contentVersions.size());
+            }else {
+                System.assertEquals(1, contentVersions.size());
             }
         }
 

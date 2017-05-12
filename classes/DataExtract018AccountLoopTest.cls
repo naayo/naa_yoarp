@@ -10,6 +10,18 @@ private class DataExtract018AccountLoopTest {
     }
 
     static testMethod void testDataTransfer() {
+        List<Account> accounts = [SELECT Id, TECH_External_Id__c FROM Account];
+        for (Account a : accounts) {
+            a.TECH_External_Id__c = a.Id;
+        }
+        update accounts;
+
+        List<Contact> contacts = [SELECT Id, TECH_External_Id__c FROM Contact];
+        for (Contact c : contacts) {
+            c.TECH_External_Id__c = c.Id;
+        }
+        update contacts;
+
         DataToExport dataToExport = new DataToExport();
 
         // Ajout de données à 'Process', dont accountsToProcess

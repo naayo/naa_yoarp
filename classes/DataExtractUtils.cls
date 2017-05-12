@@ -6,7 +6,7 @@
 
 public class DataExtractUtils {
 
-    private static final String FIELDNAME_FOR_DATA_TRANSFERRING_BOOLEAN = 'TECH_Is_Data_Transferring__c';
+    private static final String FIELDNAME_FOR_DATA_TRANSFERRING_BOOLEAN = 'TECH_Is_Record_Transferring__c';
 
     private static void extractDataToCsv(String fileNumber, String objectName,
             Set<String> fieldNamesToExport, Set<String> fieldNamesNotToExport,
@@ -88,6 +88,7 @@ public class DataExtractUtils {
         List<sObject> sObjects = Database.query(query);
 
         if (sObjects.isEmpty()) {
+            System.debug('Aucun enregistrement n\'a été trouvé, pas de fichier CSV généré.');
             return;
         }
 
@@ -104,6 +105,8 @@ public class DataExtractUtils {
     Construction du fichier .csv
      */
     private static String buildCsvFile(String csv, List<sObject> sObjects, Map<String, Schema.SObjectField> fieldMap) {
+        Integer size = sObjects.size();
+        System.debug('--PARAM sObjects.size() : ' + size);
         // Remplissage du csv
         Map<String, Schema.DisplayType > typeMap = new Map<String, Schema.DisplayType >();
         for ( SObject sObj : sObjects ) {
@@ -115,9 +118,12 @@ public class DataExtractUtils {
                 // Ajout de la valeur nulle si le champ est null
                 if ( sObj.get(fieldName) == null ) {
                     csv += '"",';
-                } else if ( type == Schema.DisplayType.STRING || type == Schema.DisplayType.TEXTAREA ) {
+                } else if ( type == Schema.DisplayType.STRING || type == Schema.DisplayType.TEXTAREA || type == Schema.DisplayType.PICKLIST ) {
+                    // Remplacement des retours chariots pour une bonne génération du fichier CSV
+                    String contentField = ((String) sObj.get(fieldName)).replaceAll('\r\n','\n');
+
                     // Traitement escapeCsv pour les champs de type STRING et TEXTAREA
-                    csv += ((String) sObj.get(fieldName)).escapeCsv() + ',';
+                    csv += contentField.escapeCsv() + ',';
                 } else if ( fieldName.equalsIgnoreCase(FIELDNAME_FOR_DATA_TRANSFERRING_BOOLEAN) ){
                     /* Changement de la valeur du champ technique TECH_Is_Data_Transferring__c en true
                     pour que les enregistrements puissent être traités en before et after insert dans les triggers
@@ -377,5 +383,27 @@ public class DataExtractUtils {
 
         System.debug('--- END METHOD DataExtractUtils / extractIdsFromSpecificRecords(PARAMS)---');
         return ids;
+    }
+
+    public static void selectAccountsRelatedToContacts(Set<Id> conIds, DataToExport dataExport) {
+        // Sélection des comptes liés aux contacts précédemment sélectionnés
+        String query = ' SELECT AccountId FROM ' + DataExtract012Contact.OBJECT_NAME_CONTACT + ' WHERE ID IN ' +
+                DataExtractUtils.convertSetToString(conIds);
+
+        List<Contact> contacts = Database.query(query);
+        if (contacts != null && !contacts.isEmpty()) {
+            Set<Id> accountIds = new Set<Id>();
+            for (Contact con : contacts) {
+                if (con.AccountId != null) {
+                    accountIds.add(con.AccountId);
+                }
+            }
+
+            /* Ajout des nouveaux comptes à accountsToBeExportedRelatedToMinimalQuotas pour pouvoir être extraits
+            dans un autre fichier CSV mais aussi à accountsToExport afin de continuer à extraire des enregistrements liés
+            */
+            dataExport.accountsToBeExportedRelatedToMinimalQuotas.addAll(accountIds);
+            dataExport.accountsToExport.addAll(accountIds);
+        }
     }
 }

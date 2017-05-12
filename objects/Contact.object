@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>AddToCampaign</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -397,10 +401,12 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Direction, institutions ou associations apparentées à EMLYON</fullName>
                     <default>false</default>
+                    <label>Direction, institutions ou associations apparentées à EMLYON</label>
                 </value>
                 <value>
                     <fullName>Dirigeants Entreprises</fullName>
                     <default>false</default>
+                    <label>Dirigeants Entreprises</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -419,18 +425,22 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Infrastructure</fullName>
                     <default>false</default>
+                    <label>Infrastructure</label>
                 </value>
                 <value>
                     <fullName>International</fullName>
                     <default>false</default>
+                    <label>International</label>
                 </value>
                 <value>
                     <fullName>Savoir</fullName>
                     <default>false</default>
+                    <label>Savoir</label>
                 </value>
                 <value>
                     <fullName>Social</fullName>
                     <default>false</default>
+                    <label>Social</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -449,14 +459,17 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Sport</fullName>
                     <default>false</default>
+                    <label>Sport</label>
                 </value>
                 <value>
                     <fullName>Culture</fullName>
                     <default>false</default>
+                    <label>Culture</label>
                 </value>
                 <value>
                     <fullName>Loisirs au sens large</fullName>
                     <default>false</default>
+                    <label>Loisirs au sens large</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -536,26 +549,32 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Animateur atelier</fullName>
                     <default>false</default>
+                    <label>Animateur atelier</label>
                 </value>
                 <value>
                     <fullName>Conférence</fullName>
                     <default>false</default>
+                    <label>Conférence</label>
                 </value>
                 <value>
                     <fullName>Groupe</fullName>
                     <default>false</default>
+                    <label>Groupe</label>
                 </value>
                 <value>
                     <fullName>Bilan d&apos;orientation</fullName>
                     <default>false</default>
+                    <label>Bilan d&apos;orientation</label>
                 </value>
                 <value>
                     <fullName>Webinars</fullName>
                     <default>false</default>
+                    <label>Webinars</label>
                 </value>
                 <value>
                     <fullName>Animateur événements/inscriptions</fullName>
                     <default>false</default>
+                    <label>Animateur événements/inscriptions</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -632,70 +651,87 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Agent commercial</fullName>
                     <default>false</default>
+                    <label>Agent commercial</label>
                 </value>
                 <value>
                     <fullName>Articles de Presse</fullName>
                     <default>false</default>
+                    <label>Articles de Presse</label>
                 </value>
                 <value>
                     <fullName>Autre</fullName>
                     <default>false</default>
+                    <label>Autre</label>
                 </value>
                 <value>
                     <fullName>Bouche à oreille</fullName>
                     <default>false</default>
+                    <label>Bouche à oreille</label>
                 </value>
                 <value>
                     <fullName>Classements</fullName>
                     <default>false</default>
+                    <label>Classements</label>
                 </value>
                 <value>
                     <fullName>Diplômés</fullName>
                     <default>false</default>
+                    <label>Diplômés</label>
                 </value>
                 <value>
                     <fullName>Directories/ Guides</fullName>
                     <default>false</default>
+                    <label>Directories/ Guides</label>
                 </value>
                 <value>
                     <fullName>Display/ Banner</fullName>
                     <default>false</default>
+                    <label>Display/ Banner</label>
                 </value>
                 <value>
                     <fullName>Emailing</fullName>
                     <default>false</default>
+                    <label>Emailing</label>
                 </value>
                 <value>
                     <fullName>Evènements/ Conférences</fullName>
                     <default>false</default>
+                    <label>Evènements/ Conférences</label>
                 </value>
                 <value>
                     <fullName>Forum/salon</fullName>
                     <default>false</default>
+                    <label>Forum/salon</label>
                 </value>
                 <value>
                     <fullName>Mailing (papier)</fullName>
                     <default>false</default>
+                    <label>Mailing (papier)</label>
                 </value>
                 <value>
                     <fullName>Parents</fullName>
                     <default>false</default>
+                    <label>Parents</label>
                 </value>
                 <value>
                     <fullName>Prescripteurs</fullName>
                     <default>false</default>
+                    <label>Prescripteurs</label>
                 </value>
                 <value>
                     <fullName>Publicité papier</fullName>
                     <default>false</default>
+                    <label>Publicité papier</label>
                 </value>
                 <value>
                     <fullName>Réputation</fullName>
                     <default>false</default>
+                    <label>Réputation</label>
                 </value>
                 <value>
                     <fullName>Réseaux sociaux</fullName>
                     <default>false</default>
+                    <label>Réseaux sociaux</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -715,14 +751,17 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Prospect Etudiant</fullName>
                     <default>false</default>
+                    <label>Prospect Etudiant</label>
                 </value>
                 <value>
                     <fullName>Etudiant</fullName>
                     <default>false</default>
+                    <label>Etudiant</label>
                 </value>
                 <value>
                     <fullName>Professionnel</fullName>
                     <default>false</default>
+                    <label>Professionnel</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -936,54 +975,67 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Autre</fullName>
                     <default>false</default>
+                    <label>Autre</label>
                 </value>
                 <value>
                     <fullName>Bac ES (économique et sociale)</fullName>
                     <default>false</default>
+                    <label>Bac ES (économique et sociale)</label>
                 </value>
                 <value>
                     <fullName>Bac L (littéraire)</fullName>
                     <default>false</default>
+                    <label>Bac L (littéraire)</label>
                 </value>
                 <value>
                     <fullName>Bac S (scientifique)</fullName>
                     <default>false</default>
+                    <label>Bac S (scientifique)</label>
                 </value>
                 <value>
                     <fullName>Bac STMG</fullName>
                     <default>false</default>
+                    <label>Bac STMG</label>
                 </value>
                 <value>
                     <fullName>Droit</fullName>
                     <default>false</default>
+                    <label>Droit</label>
                 </value>
                 <value>
                     <fullName>Ecole de commerce française</fullName>
                     <default>false</default>
+                    <label>Ecole de commerce française</label>
                 </value>
                 <value>
                     <fullName>Economie</fullName>
                     <default>false</default>
+                    <label>Economie</label>
                 </value>
                 <value>
                     <fullName>Gestion</fullName>
                     <default>false</default>
+                    <label>Gestion</label>
                 </value>
                 <value>
                     <fullName>Ingénieur</fullName>
                     <default>false</default>
+                    <label>Ingénieur</label>
                 </value>
                 <value>
                     <fullName>Santé (pharmacie, vétérinaire,…)</fullName>
                     <default>false</default>
+                    <label>Santé (pharmacie, vétérinaire,…)</label>
                 </value>
                 <value>
                     <fullName>Sciences (mathématiques, physique,...)</fullName>
                     <default>false</default>
+                    <label>Sciences (mathématiques, physique,...)</label>
                 </value>
                 <value>
                     <fullName>Sciences humaines (lettres,...)</fullName>
                     <default>false</default>
+                    <label>Sciences humaines (lettres,...)</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1106,42 +1158,52 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Autres</fullName>
                     <default>true</default>
+                    <label>Autres</label>
                 </value>
                 <value>
                     <fullName>Commercial/Ventes</fullName>
                     <default>false</default>
+                    <label>Commercial/Ventes</label>
                 </value>
                 <value>
                     <fullName>Direction Générale</fullName>
                     <default>false</default>
+                    <label>Direction Générale</label>
                 </value>
                 <value>
                     <fullName>Enseignement/Education</fullName>
                     <default>false</default>
+                    <label>Enseignement/Education</label>
                 </value>
                 <value>
                     <fullName>Etud/Recherche/Dévelop/Qualité</fullName>
                     <default>false</default>
+                    <label>Etud/Recherche/Dévelop/Qualité</label>
                 </value>
                 <value>
                     <fullName>Finance/Gest./Adminis./Juridi.</fullName>
                     <default>false</default>
+                    <label>Finance/Gest./Adminis./Juridi.</label>
                 </value>
                 <value>
                     <fullName>Marketing/Communication</fullName>
                     <default>false</default>
+                    <label>Marketing/Communication</label>
                 </value>
                 <value>
                     <fullName>Organisation/Systèmes d&apos;Informations</fullName>
                     <default>false</default>
+                    <label>Organisation/Systèmes d&apos;Informations</label>
                 </value>
                 <value>
                     <fullName>Production/Achats</fullName>
                     <default>false</default>
+                    <label>Production/Achats</label>
                 </value>
                 <value>
                     <fullName>Ressources Humaines/Formation</fullName>
                     <default>false</default>
+                    <label>Ressources Humaines/Formation</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1186,894 +1248,1117 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Président(e)</fullName>
                     <default>false</default>
+                    <label>Président(e)</label>
                 </value>
                 <value>
                     <fullName>Administrateur</fullName>
                     <default>false</default>
+                    <label>Administrateur</label>
                 </value>
                 <value>
                     <fullName>Vice-Président</fullName>
                     <default>false</default>
+                    <label>Vice-Président</label>
                 </value>
                 <value>
                     <fullName>Président du Directoire</fullName>
                     <default>false</default>
+                    <label>Président du Directoire</label>
                 </value>
                 <value>
                     <fullName>Conseiller du Président</fullName>
                     <default>false</default>
+                    <label>Conseiller du Président</label>
                 </value>
                 <value>
                     <fullName>Président Directeur Général</fullName>
                     <default>false</default>
+                    <label>Président Directeur Général</label>
                 </value>
                 <value>
                     <fullName>Directeur Général</fullName>
                     <default>false</default>
+                    <label>Directeur Général</label>
                 </value>
                 <value>
                     <fullName>Directeur Général Adjoint</fullName>
                     <default>false</default>
+                    <label>Directeur Général Adjoint</label>
                 </value>
                 <value>
                     <fullName>Secrétaire Général</fullName>
                     <default>false</default>
+                    <label>Secrétaire Général</label>
                 </value>
                 <value>
                     <fullName>Directeur du Développement</fullName>
                     <default>false</default>
+                    <label>Directeur du Développement</label>
                 </value>
                 <value>
                     <fullName>Directeur Affaires Internationales</fullName>
                     <default>false</default>
+                    <label>Directeur Affaires Internationales</label>
                 </value>
                 <value>
                     <fullName>Fondé de Pouvoir</fullName>
                     <default>false</default>
+                    <label>Fondé de Pouvoir</label>
                 </value>
                 <value>
                     <fullName>Dir. des Compensations Internationales</fullName>
                     <default>false</default>
+                    <label>Dir. des Compensations Internationales</label>
                 </value>
                 <value>
                     <fullName>Directeur</fullName>
                     <default>false</default>
+                    <label>Directeur</label>
                 </value>
                 <value>
                     <fullName>Directeur Adjoint</fullName>
                     <default>false</default>
+                    <label>Directeur Adjoint</label>
                 </value>
                 <value>
                     <fullName>Attaché de Direction</fullName>
                     <default>false</default>
+                    <label>Attaché de Direction</label>
                 </value>
                 <value>
                     <fullName>Directeur de Filiale</fullName>
                     <default>false</default>
+                    <label>Directeur de Filiale</label>
                 </value>
                 <value>
                     <fullName>Directeur et Responsable d&apos;Etablissement</fullName>
                     <default>false</default>
+                    <label>Directeur et Responsable d&apos;Etablissement</label>
                 </value>
                 <value>
                     <fullName>Associé</fullName>
                     <default>false</default>
+                    <label>Associé</label>
                 </value>
                 <value>
                     <fullName>Gérant(e)</fullName>
                     <default>false</default>
+                    <label>Gérant(e)</label>
                 </value>
                 <value>
                     <fullName>Directeur d&apos;Agence</fullName>
                     <default>false</default>
+                    <label>Directeur d&apos;Agence</label>
                 </value>
                 <value>
                     <fullName>Conseil Auprès de la DG</fullName>
                     <default>false</default>
+                    <label>Conseil Auprès de la DG</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Conseil en Stratégie</fullName>
                     <default>false</default>
+                    <label>Directeur ou Conseil en Stratégie</label>
                 </value>
                 <value>
                     <fullName>Chargé de Mission</fullName>
                     <default>false</default>
+                    <label>Chargé de Mission</label>
                 </value>
                 <value>
                     <fullName>Directeur Technique</fullName>
                     <default>false</default>
+                    <label>Directeur Technique</label>
                 </value>
                 <value>
                     <fullName>Responsable Technique</fullName>
                     <default>false</default>
+                    <label>Responsable Technique</label>
                 </value>
                 <value>
                     <fullName>Cadre Technique</fullName>
                     <default>false</default>
+                    <label>Cadre Technique</label>
                 </value>
                 <value>
                     <fullName>Personnel Technique</fullName>
                     <default>false</default>
+                    <label>Personnel Technique</label>
                 </value>
                 <value>
                     <fullName>Cadre Logistique</fullName>
                     <default>false</default>
+                    <label>Cadre Logistique</label>
                 </value>
                 <value>
                     <fullName>Directeur  Logistique</fullName>
                     <default>false</default>
+                    <label>Directeur  Logistique</label>
                 </value>
                 <value>
                     <fullName>Directeur de Production</fullName>
                     <default>false</default>
+                    <label>Directeur de Production</label>
                 </value>
                 <value>
                     <fullName>Respons.d&apos;Unité de Production</fullName>
                     <default>false</default>
+                    <label>Respons.d&apos;Unité de Production</label>
                 </value>
                 <value>
                     <fullName>Directeur  des Achats</fullName>
                     <default>false</default>
+                    <label>Directeur  des Achats</label>
                 </value>
                 <value>
                     <fullName>Responsable des Achats</fullName>
                     <default>false</default>
+                    <label>Responsable des Achats</label>
                 </value>
                 <value>
                     <fullName>Cadre Achats</fullName>
                     <default>false</default>
+                    <label>Cadre Achats</label>
                 </value>
                 <value>
                     <fullName>Directeur Industriel</fullName>
                     <default>false</default>
+                    <label>Directeur Industriel</label>
                 </value>
                 <value>
                     <fullName>Directeur Recherche/Développement</fullName>
                     <default>false</default>
+                    <label>Directeur Recherche/Développement</label>
                 </value>
                 <value>
                     <fullName>Cadre Recherche/Développement</fullName>
                     <default>false</default>
+                    <label>Cadre Recherche/Développement</label>
                 </value>
                 <value>
                     <fullName>Directeur Etudes/Recherche</fullName>
                     <default>false</default>
+                    <label>Directeur Etudes/Recherche</label>
                 </value>
                 <value>
                     <fullName>Responsable Etudes/Recherche</fullName>
                     <default>false</default>
+                    <label>Responsable Etudes/Recherche</label>
                 </value>
                 <value>
                     <fullName>Ingénieur Etudes/Recherche</fullName>
                     <default>false</default>
+                    <label>Ingénieur Etudes/Recherche</label>
                 </value>
                 <value>
                     <fullName>Conseil Etudes/Recherche</fullName>
                     <default>false</default>
+                    <label>Conseil Etudes/Recherche</label>
                 </value>
                 <value>
                     <fullName>Directeur Qualité</fullName>
                     <default>false</default>
+                    <label>Directeur Qualité</label>
                 </value>
                 <value>
                     <fullName>Animateur Qualité</fullName>
                     <default>false</default>
+                    <label>Animateur Qualité</label>
                 </value>
                 <value>
                     <fullName>Conseil Qualité</fullName>
                     <default>false</default>
+                    <label>Conseil Qualité</label>
                 </value>
                 <value>
                     <fullName>Resp. Environ/Risque/Sécurité</fullName>
                     <default>false</default>
+                    <label>Resp. Environ/Risque/Sécurité</label>
                 </value>
                 <value>
                     <fullName>VP/VPRH</fullName>
                     <default>false</default>
+                    <label>VP/VPRH</label>
                 </value>
                 <value>
                     <fullName>Directeur Ressources Humaines</fullName>
                     <default>false</default>
+                    <label>Directeur Ressources Humaines</label>
                 </value>
                 <value>
                     <fullName>Adjoint Directeur Ressources Humaines</fullName>
                     <default>false</default>
+                    <label>Adjoint Directeur Ressources Humaines</label>
                 </value>
                 <value>
                     <fullName>Direct.Relations Hum./Sociales</fullName>
                     <default>false</default>
+                    <label>Direct.Relations Hum./Sociales</label>
                 </value>
                 <value>
                     <fullName>Responsable Ressources Humaines</fullName>
                     <default>false</default>
+                    <label>Responsable Ressources Humaines</label>
                 </value>
                 <value>
                     <fullName>Adjoint Dir.Rel.Hum./Sociales</fullName>
                     <default>false</default>
+                    <label>Adjoint Dir.Rel.Hum./Sociales</label>
                 </value>
                 <value>
                     <fullName>Directeur du Personnel</fullName>
                     <default>false</default>
+                    <label>Directeur du Personnel</label>
                 </value>
                 <value>
                     <fullName>Adjoint Direct du Personnel</fullName>
                     <default>false</default>
+                    <label>Adjoint Direct du Personnel</label>
                 </value>
                 <value>
                     <fullName>Responsable du Personnel</fullName>
                     <default>false</default>
+                    <label>Responsable du Personnel</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Responsable Recrutement</fullName>
                     <default>false</default>
+                    <label>Directeur ou Responsable Recrutement</label>
                 </value>
                 <value>
                     <fullName>Cadre de la Fonct.&quot;Personnel&quot;</fullName>
                     <default>false</default>
+                    <label>Cadre de la Fonct.&quot;Personnel&quot;</label>
                 </value>
                 <value>
                     <fullName>Responsable Gestion Cadres/Car</fullName>
                     <default>false</default>
+                    <label>Responsable Gestion Cadres/Car</label>
                 </value>
                 <value>
                     <fullName>Adjoint Resp Gestion Cad./Car.</fullName>
                     <default>false</default>
+                    <label>Adjoint Resp Gestion Cad./Car.</label>
                 </value>
                 <value>
                     <fullName>Directeur du Dvpt Cadres Dirigeants</fullName>
                     <default>false</default>
+                    <label>Directeur du Dvpt Cadres Dirigeants</label>
                 </value>
                 <value>
                     <fullName>Responsable Avantages et Rémunérations</fullName>
                     <default>false</default>
+                    <label>Responsable Avantages et Rémunérations</label>
                 </value>
                 <value>
                     <fullName>Respons. Relations Gdes Ecoles</fullName>
                     <default>false</default>
+                    <label>Respons. Relations Gdes Ecoles</label>
                 </value>
                 <value>
                     <fullName>Chargé des Relations Ecoles</fullName>
                     <default>false</default>
+                    <label>Chargé des Relations Ecoles</label>
                 </value>
                 <value>
                     <fullName>Responsable de Stages</fullName>
                     <default>false</default>
+                    <label>Responsable de Stages</label>
                 </value>
                 <value>
                     <fullName>Consultant en Recrutement</fullName>
                     <default>false</default>
+                    <label>Consultant en Recrutement</label>
                 </value>
                 <value>
                     <fullName>Conseil en Ress. Humaines/ Outplacement</fullName>
                     <default>false</default>
+                    <label>Conseil en Ress. Humaines/ Outplacement</label>
                 </value>
                 <value>
                     <fullName>Responsable Taxe Apprentissage</fullName>
                     <default>false</default>
+                    <label>Responsable Taxe Apprentissage</label>
                 </value>
                 <value>
                     <fullName>Directeur de la Formation</fullName>
                     <default>false</default>
+                    <label>Directeur de la Formation</label>
                 </value>
                 <value>
                     <fullName>Responsable de la Formation</fullName>
                     <default>false</default>
+                    <label>Responsable de la Formation</label>
                 </value>
                 <value>
                     <fullName>Directeur Formation Commerc.</fullName>
                     <default>false</default>
+                    <label>Directeur Formation Commerc.</label>
                 </value>
                 <value>
                     <fullName>Responsable Form. des Cadres</fullName>
                     <default>false</default>
+                    <label>Responsable Form. des Cadres</label>
                 </value>
                 <value>
                     <fullName>Directeur de Ctre Form.Intern.</fullName>
                     <default>false</default>
+                    <label>Directeur de Ctre Form.Intern.</label>
                 </value>
                 <value>
                     <fullName>Formateur Interne</fullName>
                     <default>false</default>
+                    <label>Formateur Interne</label>
                 </value>
                 <value>
                     <fullName>Assistant de la Formation</fullName>
                     <default>false</default>
+                    <label>Assistant de la Formation</label>
                 </value>
                 <value>
                     <fullName>Conseil en Formation</fullName>
                     <default>false</default>
+                    <label>Conseil en Formation</label>
                 </value>
                 <value>
                     <fullName>Secrétaire/Assistante</fullName>
                     <default>false</default>
+                    <label>Secrétaire/Assistante</label>
                 </value>
                 <value>
                     <fullName>Directeur Marketing</fullName>
                     <default>false</default>
+                    <label>Directeur Marketing</label>
                 </value>
                 <value>
                     <fullName>Responsable Marketing</fullName>
                     <default>false</default>
+                    <label>Responsable Marketing</label>
                 </value>
                 <value>
                     <fullName>Chef de Groupe Marketing</fullName>
                     <default>false</default>
+                    <label>Chef de Groupe Marketing</label>
                 </value>
                 <value>
                     <fullName>Chef de Marchés</fullName>
                     <default>false</default>
+                    <label>Chef de Marchés</label>
                 </value>
                 <value>
                     <fullName>Assistant Chef de Marchés</fullName>
                     <default>false</default>
+                    <label>Assistant Chef de Marchés</label>
                 </value>
                 <value>
                     <fullName>Chef de Projet Marketing</fullName>
                     <default>false</default>
+                    <label>Chef de Projet Marketing</label>
                 </value>
                 <value>
                     <fullName>Chef de Produits/Marques</fullName>
                     <default>false</default>
+                    <label>Chef de Produits/Marques</label>
                 </value>
                 <value>
                     <fullName>Assistant Chef de Prod/Marq.</fullName>
                     <default>false</default>
+                    <label>Assistant Chef de Prod/Marq.</label>
                 </value>
                 <value>
                     <fullName>Assistant Marketing</fullName>
                     <default>false</default>
+                    <label>Assistant Marketing</label>
                 </value>
                 <value>
                     <fullName>Responsable Etudes Marketing</fullName>
                     <default>false</default>
+                    <label>Responsable Etudes Marketing</label>
                 </value>
                 <value>
                     <fullName>Responsable des Nouveaux Produits</fullName>
                     <default>false</default>
+                    <label>Responsable des Nouveaux Produits</label>
                 </value>
                 <value>
                     <fullName>Chargé d&apos;Etudes Marketing</fullName>
                     <default>false</default>
+                    <label>Chargé d&apos;Etudes Marketing</label>
                 </value>
                 <value>
                     <fullName>Responsable Trade Marketing</fullName>
                     <default>false</default>
+                    <label>Responsable Trade Marketing</label>
                 </value>
                 <value>
                     <fullName>Conseil en Marketing</fullName>
                     <default>false</default>
+                    <label>Conseil en Marketing</label>
                 </value>
                 <value>
                     <fullName>Directeur Publicité</fullName>
                     <default>false</default>
+                    <label>Directeur Publicité</label>
                 </value>
                 <value>
                     <fullName>Chef de Publicité</fullName>
                     <default>false</default>
+                    <label>Chef de Publicité</label>
                 </value>
                 <value>
                     <fullName>Assistant Publicité</fullName>
                     <default>false</default>
+                    <label>Assistant Publicité</label>
                 </value>
                 <value>
                     <fullName>Directeur Promotion</fullName>
                     <default>false</default>
+                    <label>Directeur Promotion</label>
                 </value>
                 <value>
                     <fullName>Responsable de Promotion</fullName>
                     <default>false</default>
+                    <label>Responsable de Promotion</label>
                 </value>
                 <value>
                     <fullName>Directeur Clientèle</fullName>
                     <default>false</default>
+                    <label>Directeur Clientèle</label>
                 </value>
                 <value>
                     <fullName>Directeur des Relations Exter.</fullName>
                     <default>false</default>
+                    <label>Directeur des Relations Exter.</label>
                 </value>
                 <value>
                     <fullName>Directeur de la Communication</fullName>
                     <default>false</default>
+                    <label>Directeur de la Communication</label>
                 </value>
                 <value>
                     <fullName>Adjoint Direct. de la Communi.</fullName>
                     <default>false</default>
+                    <label>Adjoint Direct. de la Communi.</label>
                 </value>
                 <value>
                     <fullName>Responsable de la Communication</fullName>
                     <default>false</default>
+                    <label>Responsable de la Communication</label>
                 </value>
                 <value>
                     <fullName>Responsable Communicat.Interne</fullName>
                     <default>false</default>
+                    <label>Responsable Communicat.Interne</label>
                 </value>
                 <value>
                     <fullName>Responsable Relations/Presse</fullName>
                     <default>false</default>
+                    <label>Responsable Relations/Presse</label>
                 </value>
                 <value>
                     <fullName>Responsable Edition</fullName>
                     <default>false</default>
+                    <label>Responsable Edition</label>
                 </value>
                 <value>
                     <fullName>Responsable Audio-Visuel</fullName>
                     <default>false</default>
+                    <label>Responsable Audio-Visuel</label>
                 </value>
                 <value>
                     <fullName>Responsable Mécénat</fullName>
                     <default>false</default>
+                    <label>Responsable Mécénat</label>
                 </value>
                 <value>
                     <fullName>Conseil en Communication/Publ.</fullName>
                     <default>false</default>
+                    <label>Conseil en Communication/Publ.</label>
                 </value>
                 <value>
                     <fullName>Responsable e-Commerce</fullName>
                     <default>false</default>
+                    <label>Responsable e-Commerce</label>
                 </value>
                 <value>
                     <fullName>Webmaster</fullName>
                     <default>false</default>
+                    <label>Webmaster</label>
                 </value>
                 <value>
                     <fullName>Directeur Commercial</fullName>
                     <default>false</default>
+                    <label>Directeur Commercial</label>
                 </value>
                 <value>
                     <fullName>Adjoint Directeur Commercial</fullName>
                     <default>false</default>
+                    <label>Adjoint Directeur Commercial</label>
                 </value>
                 <value>
                     <fullName>Responsable Commercial</fullName>
                     <default>false</default>
+                    <label>Responsable Commercial</label>
                 </value>
                 <value>
                     <fullName>Directeur Régional</fullName>
                     <default>false</default>
+                    <label>Directeur Régional</label>
                 </value>
                 <value>
                     <fullName>Adjoint Directeur Régional</fullName>
                     <default>false</default>
+                    <label>Adjoint Directeur Régional</label>
                 </value>
                 <value>
                     <fullName>Responsable Régional</fullName>
                     <default>false</default>
+                    <label>Responsable Régional</label>
                 </value>
                 <value>
                     <fullName>Ingénieur d&apos;Affaires</fullName>
                     <default>false</default>
+                    <label>Ingénieur d&apos;Affaires</label>
                 </value>
                 <value>
                     <fullName>Ingénieur Commercial</fullName>
                     <default>false</default>
+                    <label>Ingénieur Commercial</label>
                 </value>
                 <value>
                     <fullName>Cadre Commercial</fullName>
                     <default>false</default>
+                    <label>Cadre Commercial</label>
                 </value>
                 <value>
                     <fullName>Directeur des Ventes</fullName>
                     <default>false</default>
+                    <label>Directeur des Ventes</label>
                 </value>
                 <value>
                     <fullName>Responsable des Ventes</fullName>
                     <default>false</default>
+                    <label>Responsable des Ventes</label>
                 </value>
                 <value>
                     <fullName>Directeur Export</fullName>
                     <default>false</default>
+                    <label>Directeur Export</label>
                 </value>
                 <value>
                     <fullName>Responsable de Zone Export</fullName>
                     <default>false</default>
+                    <label>Responsable de Zone Export</label>
                 </value>
                 <value>
                     <fullName>Cadre Export</fullName>
                     <default>false</default>
+                    <label>Cadre Export</label>
                 </value>
                 <value>
                     <fullName>Directeur Administ. des Ventes</fullName>
                     <default>false</default>
+                    <label>Directeur Administ. des Ventes</label>
                 </value>
                 <value>
                     <fullName>Cadre Administ. des Ventes</fullName>
                     <default>false</default>
+                    <label>Cadre Administ. des Ventes</label>
                 </value>
                 <value>
                     <fullName>Chargé d&apos;Affaires</fullName>
                     <default>false</default>
+                    <label>Chargé d&apos;Affaires</label>
                 </value>
                 <value>
                     <fullName>Attaché Commercial</fullName>
                     <default>false</default>
+                    <label>Attaché Commercial</label>
                 </value>
                 <value>
                     <fullName>Agent Commercial</fullName>
                     <default>false</default>
+                    <label>Agent Commercial</label>
                 </value>
                 <value>
                     <fullName>Conseil Commercial/Ventes</fullName>
                     <default>false</default>
+                    <label>Conseil Commercial/Ventes</label>
                 </value>
                 <value>
                     <fullName>Dir. ou Resp. Administ. et Financier</fullName>
                     <default>false</default>
+                    <label>Dir. ou Resp. Administ. et Financier</label>
                 </value>
                 <value>
                     <fullName>Adjoint Direct. Admini et Financier</fullName>
                     <default>false</default>
+                    <label>Adjoint Direct. Admini et Financier</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Responsable Financier</fullName>
                     <default>false</default>
+                    <label>Directeur ou Responsable Financier</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Responsable Administratif</fullName>
                     <default>false</default>
+                    <label>Directeur ou Responsable Administratif</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Responsable  Comptabilité</fullName>
                     <default>false</default>
+                    <label>Directeur ou Responsable  Comptabilité</label>
                 </value>
                 <value>
                     <fullName>Responsable du Contrôle de Gestion</fullName>
                     <default>false</default>
+                    <label>Responsable du Contrôle de Gestion</label>
                 </value>
                 <value>
                     <fullName>Chargé de Clientèle</fullName>
                     <default>false</default>
+                    <label>Chargé de Clientèle</label>
                 </value>
                 <value>
                     <fullName>Comptable</fullName>
                     <default>false</default>
+                    <label>Comptable</label>
                 </value>
                 <value>
                     <fullName>Responsable  Gestion</fullName>
                     <default>false</default>
+                    <label>Responsable  Gestion</label>
                 </value>
                 <value>
                     <fullName>Contrôleur Financier</fullName>
                     <default>false</default>
+                    <label>Contrôleur Financier</label>
                 </value>
                 <value>
                     <fullName>Contrôleur de Gestion</fullName>
                     <default>false</default>
+                    <label>Contrôleur de Gestion</label>
                 </value>
                 <value>
                     <fullName>Consolideur</fullName>
                     <default>false</default>
+                    <label>Consolideur</label>
                 </value>
                 <value>
                     <fullName>Auditeur Interne</fullName>
                     <default>false</default>
+                    <label>Auditeur Interne</label>
                 </value>
                 <value>
                     <fullName>Chargé d&apos;Etudes Economiques</fullName>
                     <default>false</default>
+                    <label>Chargé d&apos;Etudes Economiques</label>
                 </value>
                 <value>
                     <fullName>Spécialiste des Marchés Financiers</fullName>
                     <default>false</default>
+                    <label>Spécialiste des Marchés Financiers</label>
                 </value>
                 <value>
                     <fullName>Spéc.Marchés Financiers/Back Office</fullName>
                     <default>false</default>
+                    <label>Spéc.Marchés Financiers/Back Office</label>
                 </value>
                 <value>
                     <fullName>Spéc.Marchés Financiers/Middle Office</fullName>
                     <default>false</default>
+                    <label>Spéc.Marchés Financiers/Middle Office</label>
                 </value>
                 <value>
                     <fullName>Spéc.Marchés Financiers/Front Office</fullName>
                     <default>false</default>
+                    <label>Spéc.Marchés Financiers/Front Office</label>
                 </value>
                 <value>
                     <fullName>Capital Investissement/Private Equity</fullName>
                     <default>false</default>
+                    <label>Capital Investissement/Private Equity</label>
                 </value>
                 <value>
                     <fullName>Analyste Financier</fullName>
                     <default>false</default>
+                    <label>Analyste Financier</label>
                 </value>
                 <value>
                     <fullName>Credit Manager</fullName>
                     <default>false</default>
+                    <label>Credit Manager</label>
                 </value>
                 <value>
                     <fullName>Risk Manager</fullName>
                     <default>false</default>
+                    <label>Risk Manager</label>
                 </value>
                 <value>
                     <fullName>Trésorier</fullName>
                     <default>false</default>
+                    <label>Trésorier</label>
                 </value>
                 <value>
                     <fullName>Auditeur Externe</fullName>
                     <default>false</default>
+                    <label>Auditeur Externe</label>
                 </value>
                 <value>
                     <fullName>Commissaire aux Comptes</fullName>
                     <default>false</default>
+                    <label>Commissaire aux Comptes</label>
                 </value>
                 <value>
                     <fullName>Expert Comptable</fullName>
                     <default>false</default>
+                    <label>Expert Comptable</label>
                 </value>
                 <value>
                     <fullName>Agent de Change</fullName>
                     <default>false</default>
+                    <label>Agent de Change</label>
                 </value>
                 <value>
                     <fullName>Gestionnaire de Patrimoine</fullName>
                     <default>false</default>
+                    <label>Gestionnaire de Patrimoine</label>
                 </value>
                 <value>
                     <fullName>Actuaire</fullName>
                     <default>false</default>
+                    <label>Actuaire</label>
                 </value>
                 <value>
                     <fullName>Resp. Communication Financière</fullName>
                     <default>false</default>
+                    <label>Resp. Communication Financière</label>
                 </value>
                 <value>
                     <fullName>Chargé Fusions/Acquisitions</fullName>
                     <default>false</default>
+                    <label>Chargé Fusions/Acquisitions</label>
                 </value>
                 <value>
                     <fullName>Consultant Finance/Gestion/Audit</fullName>
                     <default>false</default>
+                    <label>Consultant Finance/Gestion/Audit</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Resp. Juridique et Fiscal</fullName>
                     <default>false</default>
+                    <label>Directeur ou Resp. Juridique et Fiscal</label>
                 </value>
                 <value>
                     <fullName>Directeur ou Responsable Juridique</fullName>
                     <default>false</default>
+                    <label>Directeur ou Responsable Juridique</label>
                 </value>
                 <value>
                     <fullName>Adjoint Directeur Juridique</fullName>
                     <default>false</default>
+                    <label>Adjoint Directeur Juridique</label>
                 </value>
                 <value>
                     <fullName>Directeur Affaires Juridiques</fullName>
                     <default>false</default>
+                    <label>Directeur Affaires Juridiques</label>
                 </value>
                 <value>
                     <fullName>Conseil Juridique/Avocat</fullName>
                     <default>false</default>
+                    <label>Conseil Juridique/Avocat</label>
                 </value>
                 <value>
                     <fullName>Directeur Organi./SI</fullName>
                     <default>false</default>
+                    <label>Directeur Organi./SI</label>
                 </value>
                 <value>
                     <fullName>Directeur SI</fullName>
                     <default>false</default>
+                    <label>Directeur SI</label>
                 </value>
                 <value>
                     <fullName>Responsable des Etudes</fullName>
                     <default>false</default>
+                    <label>Responsable des Etudes</label>
                 </value>
                 <value>
                     <fullName>Responsable SI</fullName>
                     <default>false</default>
+                    <label>Responsable SI</label>
                 </value>
                 <value>
                     <fullName>Chef de Centre SI</fullName>
                     <default>false</default>
+                    <label>Chef de Centre SI</label>
                 </value>
                 <value>
                     <fullName>Chef de Projets</fullName>
                     <default>false</default>
+                    <label>Chef de Projets</label>
                 </value>
                 <value>
                     <fullName>Responsable Organisation</fullName>
                     <default>false</default>
+                    <label>Responsable Organisation</label>
                 </value>
                 <value>
                     <fullName>Directeur Logistique SI</fullName>
                     <default>false</default>
+                    <label>Directeur Logistique SI</label>
                 </value>
                 <value>
                     <fullName>Cadre SI</fullName>
                     <default>false</default>
+                    <label>Cadre SI</label>
                 </value>
                 <value>
                     <fullName>Cadre Organisation/Logistique</fullName>
                     <default>false</default>
+                    <label>Cadre Organisation/Logistique</label>
                 </value>
                 <value>
                     <fullName>Directeur Réseau &amp; Télécom</fullName>
                     <default>false</default>
+                    <label>Directeur Réseau &amp; Télécom</label>
                 </value>
                 <value>
                     <fullName>Responsable Réseau et Télécom</fullName>
                     <default>false</default>
+                    <label>Responsable Réseau et Télécom</label>
                 </value>
                 <value>
                     <fullName>Responsable Sécurité SI</fullName>
                     <default>false</default>
+                    <label>Responsable Sécurité SI</label>
                 </value>
                 <value>
                     <fullName>Conseil Organis./SI</fullName>
                     <default>false</default>
+                    <label>Conseil Organis./SI</label>
                 </value>
                 <value>
                     <fullName>Recteur/Doyen</fullName>
                     <default>false</default>
+                    <label>Recteur/Doyen</label>
                 </value>
                 <value>
                     <fullName>Directeur de Programmes</fullName>
                     <default>false</default>
+                    <label>Directeur de Programmes</label>
                 </value>
                 <value>
                     <fullName>Adjoint Direct. de Programmes</fullName>
                     <default>false</default>
+                    <label>Adjoint Direct. de Programmes</label>
                 </value>
                 <value>
                     <fullName>Principal/Respons. des Etudes</fullName>
                     <default>false</default>
+                    <label>Principal/Respons. des Etudes</label>
                 </value>
                 <value>
                     <fullName>Proviseur</fullName>
                     <default>false</default>
+                    <label>Proviseur</label>
                 </value>
                 <value>
                     <fullName>Conseiller Principal Education</fullName>
                     <default>false</default>
+                    <label>Conseiller Principal Education</label>
                 </value>
                 <value>
                     <fullName>Proviseur Adjoint</fullName>
                     <default>false</default>
+                    <label>Proviseur Adjoint</label>
                 </value>
                 <value>
                     <fullName>Documentaliste</fullName>
                     <default>false</default>
+                    <label>Documentaliste</label>
                 </value>
                 <value>
                     <fullName>Responsable Classes Préparatoires</fullName>
                     <default>false</default>
+                    <label>Responsable Classes Préparatoires</label>
                 </value>
                 <value>
                     <fullName>Direc. d&apos;un Centre de Formation</fullName>
                     <default>false</default>
+                    <label>Direc. d&apos;un Centre de Formation</label>
                 </value>
                 <value>
                     <fullName>Direc. de Départ. Pédagogique</fullName>
                     <default>false</default>
+                    <label>Direc. de Départ. Pédagogique</label>
                 </value>
                 <value>
                     <fullName>Direct de Programmes Internat.</fullName>
                     <default>false</default>
+                    <label>Direct de Programmes Internat.</label>
                 </value>
                 <value>
                     <fullName>Directeur des Etudes</fullName>
                     <default>false</default>
+                    <label>Directeur des Etudes</label>
                 </value>
                 <value>
                     <fullName>Directeur d&apos;Etablissement</fullName>
                     <default>false</default>
+                    <label>Directeur d&apos;Etablissement</label>
                 </value>
                 <value>
                     <fullName>Directeur Adjoint d&apos;Etablissement</fullName>
                     <default>false</default>
+                    <label>Directeur Adjoint d&apos;Etablissement</label>
                 </value>
                 <value>
                     <fullName>Directeur des Concours</fullName>
                     <default>false</default>
+                    <label>Directeur des Concours</label>
                 </value>
                 <value>
                     <fullName>Chercheur</fullName>
                     <default>false</default>
+                    <label>Chercheur</label>
                 </value>
                 <value>
                     <fullName>Doctorant</fullName>
                     <default>false</default>
+                    <label>Doctorant</label>
                 </value>
                 <value>
                     <fullName>Professeur</fullName>
                     <default>false</default>
+                    <label>Professeur</label>
                 </value>
                 <value>
                     <fullName>Enseignant</fullName>
                     <default>false</default>
+                    <label>Enseignant</label>
                 </value>
                 <value>
                     <fullName>Coordinateur Université Partenaire</fullName>
                     <default>false</default>
+                    <label>Coordinateur Université Partenaire</label>
                 </value>
                 <value>
                     <fullName>Personnel Administratif</fullName>
                     <default>false</default>
+                    <label>Personnel Administratif</label>
                 </value>
                 <value>
                     <fullName>Prof Libérales &amp; Act.Diverses</fullName>
                     <default>false</default>
+                    <label>Prof Libérales &amp; Act.Diverses</label>
                 </value>
                 <value>
                     <fullName>En Cours de Création d&apos;Entreprise</fullName>
                     <default>false</default>
+                    <label>En Cours de Création d&apos;Entreprise</label>
                 </value>
                 <value>
                     <fullName>Volontariat International en Entreprise</fullName>
                     <default>false</default>
+                    <label>Volontariat International en Entreprise</label>
                 </value>
                 <value>
                     <fullName>En Cours de Formation Compl.</fullName>
                     <default>false</default>
+                    <label>En Cours de Formation Compl.</label>
                 </value>
                 <value>
                     <fullName>Retraité</fullName>
                     <default>false</default>
+                    <label>Retraité</label>
                 </value>
                 <value>
                     <fullName>Congé Parental d&apos;Education</fullName>
                     <default>false</default>
+                    <label>Congé Parental d&apos;Education</label>
                 </value>
                 <value>
                     <fullName>Militaire</fullName>
                     <default>false</default>
+                    <label>Militaire</label>
                 </value>
                 <value>
                     <fullName>Profession Artistique</fullName>
                     <default>false</default>
+                    <label>Profession Artistique</label>
                 </value>
                 <value>
                     <fullName>Prof Médicale/Pharmacie/Vétér.</fullName>
                     <default>false</default>
+                    <label>Prof Médicale/Pharmacie/Vétér.</label>
                 </value>
                 <value>
                     <fullName>Religieux</fullName>
                     <default>false</default>
+                    <label>Religieux</label>
                 </value>
                 <value>
                     <fullName>Ministre/Député/Haut Fonction.</fullName>
                     <default>false</default>
+                    <label>Ministre/Député/Haut Fonction.</label>
                 </value>
                 <value>
                     <fullName>Elus</fullName>
                     <default>false</default>
+                    <label>Elus</label>
                 </value>
                 <value>
                     <fullName>Cadre des Services Publics</fullName>
                     <default>false</default>
+                    <label>Cadre des Services Publics</label>
                 </value>
                 <value>
                     <fullName>Exploitant Agricole</fullName>
                     <default>false</default>
+                    <label>Exploitant Agricole</label>
                 </value>
                 <value>
                     <fullName>Journaliste</fullName>
                     <default>false</default>
+                    <label>Journaliste</label>
                 </value>
                 <value>
                     <fullName>Contrôleur/Inspecteur Impôts</fullName>
                     <default>false</default>
+                    <label>Contrôleur/Inspecteur Impôts</label>
                 </value>
                 <value>
                     <fullName>Syndic d&apos;Immeubles</fullName>
                     <default>false</default>
+                    <label>Syndic d&apos;Immeubles</label>
                 </value>
                 <value>
                     <fullName>Hôtelier/Restaurateur</fullName>
                     <default>false</default>
+                    <label>Hôtelier/Restaurateur</label>
                 </value>
                 <value>
                     <fullName>Commerçant</fullName>
                     <default>false</default>
+                    <label>Commerçant</label>
                 </value>
                 <value>
                     <fullName>Agent Général d&apos;Assurance</fullName>
                     <default>false</default>
+                    <label>Agent Général d&apos;Assurance</label>
                 </value>
                 <value>
                     <fullName>Divers Etranger</fullName>
                     <default>false</default>
+                    <label>Divers Etranger</label>
                 </value>
                 <value>
                     <fullName>Non Renseignée</fullName>
                     <default>false</default>
+                    <label>Non Renseignée</label>
                 </value>
             </valueSetDefinition>
             <valueSettings>
@@ -3061,14 +3346,17 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Expert Panel</fullName>
                     <default>false</default>
+                    <label>Expert Panel</label>
                 </value>
                 <value>
                     <fullName>Conférence Carrière Etudiants</fullName>
                     <default>false</default>
+                    <label>Conférence Carrière Etudiants</label>
                 </value>
                 <value>
                     <fullName>Mock interview</fullName>
                     <default>false</default>
+                    <label>Mock interview</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -3135,58 +3423,72 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Membre de l&apos;AG AESCRA</fullName>
                     <default>false</default>
+                    <label>Membre de l&apos;AG AESCRA</label>
                 </value>
                 <value>
                     <fullName>Membre  du CA de l&apos;AESCRA</fullName>
                     <default>false</default>
+                    <label>Membre  du CA de l&apos;AESCRA</label>
                 </value>
                 <value>
                     <fullName>membre conseil d&apos;administration Alliance</fullName>
                     <default>false</default>
+                    <label>membre conseil d&apos;administration Alliance</label>
                 </value>
                 <value>
                     <fullName>Membre Comex Fondation</fullName>
                     <default>false</default>
+                    <label>Membre Comex Fondation</label>
                 </value>
                 <value>
                     <fullName>Réseaux d&apos;accompagement créateurs d&apos;Eses</fullName>
                     <default>false</default>
+                    <label>Réseaux d&apos;accompagement créateurs d&apos;Eses</label>
                 </value>
                 <value>
                     <fullName>Membre Conseil Surveillance CDME</fullName>
                     <default>false</default>
+                    <label>Membre Conseil Surveillance CDME</label>
                 </value>
                 <value>
                     <fullName>Membre Associés CCI</fullName>
                     <default>false</default>
+                    <label>Membre Associés CCI</label>
                 </value>
                 <value>
                     <fullName>Membre Bureau Elus CCI</fullName>
                     <default>false</default>
+                    <label>Membre Bureau Elus CCI</label>
                 </value>
                 <value>
                     <fullName>Membre Elus CCI</fullName>
                     <default>false</default>
+                    <label>Membre Elus CCI</label>
                 </value>
                 <value>
                     <fullName>Membre Commision Enseignement CCI</fullName>
                     <default>false</default>
+                    <label>Membre Commision Enseignement CCI</label>
                 </value>
                 <value>
                     <fullName>Membre PRES</fullName>
                     <default>false</default>
+                    <label>Membre PRES</label>
                 </value>
                 <value>
                     <fullName>Membres CA ADEM LYON</fullName>
                     <default>false</default>
+                    <label>Membres CA ADEM LYON</label>
                 </value>
                 <value>
                     <fullName>Dirigeant du CAC 40</fullName>
                     <default>false</default>
+                    <label>Dirigeant du CAC 40</label>
                 </value>
                 <value>
                     <fullName>Dirigeant créateur</fullName>
                     <default>false</default>
+                    <label>Dirigeant créateur</label>
                 </value>
             </valueSetDefinition>
             <valueSettings>
@@ -3356,154 +3658,192 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Adwords</fullName>
                     <default>false</default>
+                    <label>Adwords</label>
                 </value>
                 <value>
                     <fullName>Agent commercial</fullName>
                     <default>false</default>
+                    <label>Agent commercial</label>
                 </value>
                 <value>
                     <fullName>Appel d’offre</fullName>
                     <default>false</default>
+                    <label>Appel d’offre</label>
                 </value>
                 <value>
                     <fullName>Appel ou Email entrant</fullName>
                     <default>false</default>
+                    <label>Appel ou Email entrant</label>
                 </value>
                 <value>
                     <fullName>Application mobile</fullName>
                     <default>false</default>
+                    <label>Application mobile</label>
                 </value>
                 <value>
                     <fullName>Apport Professeur/Intervenant</fullName>
                     <default>false</default>
+                    <label>Apport Professeur/Intervenant</label>
                 </value>
                 <value>
                     <fullName>Autre</fullName>
                     <default>false</default>
+                    <label>Autre</label>
                 </value>
                 <value>
                     <fullName>Blog</fullName>
                     <default>false</default>
+                    <label>Blog</label>
                 </value>
                 <value>
                     <fullName>Campus Day virtuel</fullName>
                     <default>false</default>
+                    <label>Campus Day virtuel</label>
                 </value>
                 <value>
                     <fullName>Directories/ Guides</fullName>
                     <default>false</default>
+                    <label>Directories/ Guides</label>
                 </value>
                 <value>
                     <fullName>Display/ Banners</fullName>
                     <default>false</default>
+                    <label>Display/ Banners</label>
                 </value>
                 <value>
                     <fullName>Email</fullName>
                     <default>false</default>
+                    <label>Email</label>
                 </value>
                 <value>
                     <fullName>Emailing Externe</fullName>
                     <default>false</default>
+                    <label>Emailing Externe</label>
                 </value>
                 <value>
                     <fullName>Evénement/ Conférence</fullName>
                     <default>false</default>
+                    <label>Evénement/ Conférence</label>
                 </value>
                 <value>
                     <fullName>Fichiers externes</fullName>
                     <default>false</default>
+                    <label>Fichiers externes</label>
                 </value>
                 <value>
                     <fullName>Foisonnement</fullName>
                     <default>false</default>
+                    <label>Foisonnement</label>
                 </value>
                 <value>
                     <fullName>Forum/ Salon</fullName>
                     <default>false</default>
+                    <label>Forum/ Salon</label>
                 </value>
                 <value>
                     <fullName>Import contacts</fullName>
                     <default>false</default>
+                    <label>Import contacts</label>
                 </value>
                 <value>
                     <fullName>Master class</fullName>
                     <default>false</default>
+                    <label>Master class</label>
                 </value>
                 <value>
                     <fullName>Module Chat</fullName>
                     <default>false</default>
+                    <label>Module Chat</label>
                 </value>
                 <value>
                     <fullName>Open class</fullName>
                     <default>false</default>
+                    <label>Open class</label>
                 </value>
                 <value>
                     <fullName>Prescripteurs</fullName>
                     <default>false</default>
+                    <label>Prescripteurs</label>
                 </value>
                 <value>
                     <fullName>Présentation aux écoles/ universités</fullName>
                     <default>false</default>
+                    <label>Présentation aux écoles/ universités</label>
                 </value>
                 <value>
                     <fullName>Présentation étudiants</fullName>
                     <default>false</default>
+                    <label>Présentation étudiants</label>
                 </value>
                 <value>
                     <fullName>Prospection</fullName>
                     <default>false</default>
+                    <label>Prospection</label>
                 </value>
                 <value>
                     <fullName>Récurrence</fullName>
                     <default>false</default>
+                    <label>Récurrence</label>
                 </value>
                 <value>
                     <fullName>Réseaux sociaux</fullName>
                     <default>false</default>
+                    <label>Réseaux sociaux</label>
                 </value>
                 <value>
                     <fullName>Réunion d&apos;information France</fullName>
                     <default>false</default>
+                    <label>Réunion d&apos;information France</label>
                 </value>
                 <value>
                     <fullName>Réunion d&apos;information Internationale</fullName>
                     <default>false</default>
+                    <label>Réunion d&apos;information Internationale</label>
                 </value>
                 <value>
                     <fullName>Salon virtuel</fullName>
                     <default>false</default>
+                    <label>Salon virtuel</label>
                 </value>
                 <value>
                     <fullName>Score test</fullName>
                     <default>false</default>
+                    <label>Score test</label>
                 </value>
                 <value>
                     <fullName>Site internet</fullName>
                     <default>false</default>
+                    <label>Site internet</label>
                 </value>
                 <value>
                     <fullName>Site mobile</fullName>
                     <default>false</default>
+                    <label>Site mobile</label>
                 </value>
                 <value>
                     <fullName>Téléphone</fullName>
                     <default>false</default>
+                    <label>Téléphone</label>
                 </value>
                 <value>
                     <fullName>Training Day (BBA)</fullName>
                     <default>false</default>
+                    <label>Training Day (BBA)</label>
                 </value>
                 <value>
                     <fullName>Visite</fullName>
                     <default>false</default>
+                    <label>Visite</label>
                 </value>
                 <value>
                     <fullName>Webinar</fullName>
                     <default>false</default>
+                    <label>Webinar</label>
                 </value>
                 <value>
                     <fullName>Web to lead</fullName>
                     <default>false</default>
+                    <label>Web to lead</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -3620,14 +3960,17 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Bon</fullName>
                     <default>false</default>
+                    <label>Bon</label>
                 </value>
                 <value>
                     <fullName>Moyen</fullName>
                     <default>false</default>
+                    <label>Moyen</label>
                 </value>
                 <value>
                     <fullName>Faible</fullName>
                     <default>false</default>
+                    <label>Faible</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -3646,50 +3989,62 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>0-2 ans</fullName>
                     <default>false</default>
+                    <label>0-2 ans</label>
                 </value>
                 <value>
                     <fullName>3-5 ans</fullName>
                     <default>false</default>
+                    <label>3-5 ans</label>
                 </value>
                 <value>
                     <fullName>5-10 ans</fullName>
                     <default>false</default>
+                    <label>5-10 ans</label>
                 </value>
                 <value>
                     <fullName>6-10 ans</fullName>
                     <default>false</default>
+                    <label>6-10 ans</label>
                 </value>
                 <value>
                     <fullName>10-15 ans</fullName>
                     <default>false</default>
+                    <label>10-15 ans</label>
                 </value>
                 <value>
                     <fullName>15-20 ans</fullName>
                     <default>false</default>
+                    <label>15-20 ans</label>
                 </value>
                 <value>
                     <fullName>20-25 ans</fullName>
                     <default>false</default>
+                    <label>20-25 ans</label>
                 </value>
                 <value>
                     <fullName>+ de 10 ans</fullName>
                     <default>false</default>
+                    <label>+ de 10 ans</label>
                 </value>
                 <value>
                     <fullName>11-15 ans</fullName>
                     <default>false</default>
+                    <label>11-15 ans</label>
                 </value>
                 <value>
                     <fullName>16-20 ans</fullName>
                     <default>false</default>
+                    <label>16-20 ans</label>
                 </value>
                 <value>
                     <fullName>21-25 ans</fullName>
                     <default>false</default>
+                    <label>21-25 ans</label>
                 </value>
                 <value>
                     <fullName>+ de 25 ans</fullName>
                     <default>false</default>
+                    <label>+ de 25 ans</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -3708,38 +4063,47 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Seconde</fullName>
                     <default>false</default>
+                    <label>Seconde</label>
                 </value>
                 <value>
                     <fullName>Première</fullName>
                     <default>false</default>
+                    <label>Première</label>
                 </value>
                 <value>
                     <fullName>Terminale</fullName>
                     <default>false</default>
+                    <label>Terminale</label>
                 </value>
                 <value>
                     <fullName>Bac</fullName>
                     <default>false</default>
+                    <label>Bac</label>
                 </value>
                 <value>
                     <fullName>Bac + 1</fullName>
                     <default>false</default>
+                    <label>Bac + 1</label>
                 </value>
                 <value>
                     <fullName>Bac + 2</fullName>
                     <default>false</default>
+                    <label>Bac + 2</label>
                 </value>
                 <value>
                     <fullName>Bac + 3</fullName>
                     <default>false</default>
+                    <label>Bac + 3</label>
                 </value>
                 <value>
                     <fullName>Bac + 4</fullName>
                     <default>false</default>
+                    <label>Bac + 4</label>
                 </value>
                 <value>
                     <fullName>Bac + 5 et +</fullName>
                     <default>false</default>
+                    <label>Bac + 5 et +</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -3758,14 +4122,17 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 <value>
                     <fullName>Bon</fullName>
                     <default>false</default>
+                    <label>Bon</label>
                 </value>
                 <value>
                     <fullName>Moyen</fullName>
                     <default>false</default>
+                    <label>Moyen</label>
                 </value>
                 <value>
                     <fullName>Faible</fullName>
                     <default>false</default>
+                    <label>Faible</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -3965,62 +4332,77 @@ Null)</formula>
                 <value>
                     <fullName>B2C_Niveau Zéro</fullName>
                     <default>false</default>
+                    <label>B2C_Niveau Zéro</label>
                 </value>
                 <value>
                     <fullName>B2B_Mont Blanc</fullName>
                     <default>false</default>
+                    <label>B2B_Mont Blanc</label>
                 </value>
                 <value>
                     <fullName>B2C_Mont Blanc</fullName>
                     <default>false</default>
+                    <label>B2C_Mont Blanc</label>
                 </value>
                 <value>
                     <fullName>B2B_Kilimandjaro</fullName>
                     <default>false</default>
+                    <label>B2B_Kilimandjaro</label>
                 </value>
                 <value>
                     <fullName>B2C_Kilimandjaro</fullName>
                     <default>false</default>
+                    <label>B2C_Kilimandjaro</label>
                 </value>
                 <value>
                     <fullName>B2B_McKinley</fullName>
                     <default>false</default>
+                    <label>B2B_McKinley</label>
                 </value>
                 <value>
                     <fullName>B2C_McKinley</fullName>
                     <default>false</default>
+                    <label>B2C_McKinley</label>
                 </value>
                 <value>
                     <fullName>B2B_Annapura</fullName>
                     <default>false</default>
+                    <label>B2B_Annapura</label>
                 </value>
                 <value>
                     <fullName>B2C_Annapura</fullName>
                     <default>false</default>
+                    <label>B2C_Annapura</label>
                 </value>
                 <value>
                     <fullName>B2B_K2</fullName>
                     <default>false</default>
+                    <label>B2B_K2</label>
                 </value>
                 <value>
                     <fullName>B2C_K2</fullName>
                     <default>false</default>
+                    <label>B2C_K2</label>
                 </value>
                 <value>
                     <fullName>B2B_Everest</fullName>
                     <default>false</default>
+                    <label>B2B_Everest</label>
                 </value>
                 <value>
                     <fullName>B2C_Everest</fullName>
                     <default>false</default>
+                    <label>B2C_Everest</label>
                 </value>
                 <value>
                     <fullName>B2B_Cercle du Président</fullName>
                     <default>false</default>
+                    <label>B2B_Cercle du Président</label>
                 </value>
                 <value>
                     <fullName>B2C_Cercle du Président</fullName>
                     <default>false</default>
+                    <label>B2C_Cercle du Président</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4039,22 +4421,27 @@ Null)</formula>
                 <value>
                     <fullName>EVIP</fullName>
                     <default>false</default>
+                    <label>EVIP</label>
                 </value>
                 <value>
                     <fullName>Cœur 600</fullName>
                     <default>false</default>
+                    <label>Cœur 600</label>
                 </value>
                 <value>
                     <fullName>Cœur</fullName>
                     <default>false</default>
+                    <label>Cœur</label>
                 </value>
                 <value>
                     <fullName>Platine</fullName>
                     <default>false</default>
+                    <label>Platine</label>
                 </value>
                 <value>
                     <fullName>Gold</fullName>
                     <default>false</default>
+                    <label>Gold</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4086,30 +4473,37 @@ Null)</formula>
                 <value>
                     <fullName>Association étudiant</fullName>
                     <default>false</default>
+                    <label>Association étudiant</label>
                 </value>
                 <value>
                     <fullName>Délégué de promo</fullName>
                     <default>false</default>
+                    <label>Délégué de promo</label>
                 </value>
                 <value>
                     <fullName>Correspondant</fullName>
                     <default>false</default>
+                    <label>Correspondant</label>
                 </value>
                 <value>
                     <fullName>Président club</fullName>
                     <default>false</default>
+                    <label>Président club</label>
                 </value>
                 <value>
                     <fullName>Administrateur ADEM</fullName>
                     <default>false</default>
+                    <label>Administrateur ADEM</label>
                 </value>
                 <value>
                     <fullName>Intervenant témoin</fullName>
                     <default>false</default>
+                    <label>Intervenant témoin</label>
                 </value>
                 <value>
                     <fullName>Prestataire</fullName>
                     <default>false</default>
+                    <label>Prestataire</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4128,22 +4522,27 @@ Null)</formula>
                 <value>
                     <fullName>Décisionnaire versement Taxe</fullName>
                     <default>false</default>
+                    <label>Décisionnaire versement Taxe</label>
                 </value>
                 <value>
                     <fullName>Gestionnaire versement Taxe</fullName>
                     <default>false</default>
+                    <label>Gestionnaire versement Taxe</label>
                 </value>
                 <value>
                     <fullName>Prescripteur fond libre collecteur</fullName>
                     <default>false</default>
+                    <label>Prescripteur fond libre collecteur</label>
                 </value>
                 <value>
                     <fullName>Prescripteur versement Taxe</fullName>
                     <default>false</default>
+                    <label>Prescripteur versement Taxe</label>
                 </value>
                 <value>
                     <fullName>Remerciement Taxe DG à Président</fullName>
                     <default>false</default>
+                    <label>Remerciement Taxe DG à Président</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4301,6 +4700,7 @@ Null)</formula>
                 <value>
                     <fullName>Test</fullName>
                     <default>false</default>
+                    <label>Test</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4319,14 +4719,17 @@ Null)</formula>
                 <value>
                     <fullName>Identifié</fullName>
                     <default>false</default>
+                    <label>Identifié</label>
                 </value>
                 <value>
                     <fullName>Informé</fullName>
                     <default>false</default>
+                    <label>Informé</label>
                 </value>
                 <value>
                     <fullName>Donateur</fullName>
                     <default>false</default>
+                    <label>Donateur</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4345,14 +4748,17 @@ Null)</formula>
                 <value>
                     <fullName>Prospect Etudiant</fullName>
                     <default>false</default>
+                    <label>Prospect Etudiant</label>
                 </value>
                 <value>
                     <fullName>Etudiant</fullName>
                     <default>false</default>
+                    <label>Etudiant</label>
                 </value>
                 <value>
                     <fullName>Professionnel</fullName>
                     <default>false</default>
+                    <label>Professionnel</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4397,54 +4803,67 @@ en production</description>
                 <value>
                     <fullName>TOEFL ibt</fullName>
                     <default>false</default>
+                    <label>TOEFL ibt</label>
                 </value>
                 <value>
                     <fullName>TOEFL computer</fullName>
                     <default>false</default>
+                    <label>TOEFL computer</label>
                 </value>
                 <value>
                     <fullName>TOEFL papier</fullName>
                     <default>false</default>
+                    <label>TOEFL papier</label>
                 </value>
                 <value>
                     <fullName>TOEIC Listening and Reading</fullName>
                     <default>false</default>
+                    <label>TOEIC Listening and Reading</label>
                 </value>
                 <value>
                     <fullName>TOEIC Speaking and Writing</fullName>
                     <default>false</default>
+                    <label>TOEIC Speaking and Writing</label>
                 </value>
                 <value>
                     <fullName>IELTS</fullName>
                     <default>false</default>
+                    <label>IELTS</label>
                 </value>
                 <value>
                     <fullName>PTE</fullName>
                     <default>false</default>
+                    <label>PTE</label>
                 </value>
                 <value>
                     <fullName>Cambridge First Certificate (FCE)</fullName>
                     <default>false</default>
+                    <label>Cambridge First Certificate (FCE)</label>
                 </value>
                 <value>
                     <fullName>Cambridge Advanced (CAE)</fullName>
                     <default>false</default>
+                    <label>Cambridge Advanced (CAE)</label>
                 </value>
                 <value>
                     <fullName>Cambridge Proficiency (CPE)</fullName>
                     <default>false</default>
+                    <label>Cambridge Proficiency (CPE)</label>
                 </value>
                 <value>
                     <fullName>BULATS</fullName>
                     <default>false</default>
+                    <label>BULATS</label>
                 </value>
                 <value>
                     <fullName>Autre</fullName>
                     <default>false</default>
+                    <label>Autre</label>
                 </value>
                 <value>
                     <fullName>Exempté</fullName>
                     <default>false</default>
+                    <label>Exempté</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4464,34 +4883,42 @@ en production</description>
                 <value>
                     <fullName>TAGE Post-Bac</fullName>
                     <default>false</default>
+                    <label>TAGE Post-Bac</label>
                 </value>
                 <value>
                     <fullName>TAGE 2</fullName>
                     <default>false</default>
+                    <label>TAGE 2</label>
                 </value>
                 <value>
                     <fullName>TAGE MAGE</fullName>
                     <default>false</default>
+                    <label>TAGE MAGE</label>
                 </value>
                 <value>
                     <fullName>GMAT</fullName>
                     <default>false</default>
+                    <label>GMAT</label>
                 </value>
                 <value>
                     <fullName>GRE</fullName>
                     <default>false</default>
+                    <label>GRE</label>
                 </value>
                 <value>
                     <fullName>CAT</fullName>
                     <default>false</default>
+                    <label>CAT</label>
                 </value>
                 <value>
                     <fullName>Autre</fullName>
                     <default>false</default>
+                    <label>Autre</label>
                 </value>
                 <value>
                     <fullName>Exempté</fullName>
                     <default>false</default>
+                    <label>Exempté</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4524,38 +4951,47 @@ en production</description>
                 <value>
                     <fullName>Moins de 30K€</fullName>
                     <default>false</default>
+                    <label>Moins de 30K€</label>
                 </value>
                 <value>
                     <fullName>De 31 à 40K€</fullName>
                     <default>false</default>
+                    <label>De 31 à 40K€</label>
                 </value>
                 <value>
                     <fullName>De 41 à 50K€</fullName>
                     <default>false</default>
+                    <label>De 41 à 50K€</label>
                 </value>
                 <value>
                     <fullName>De 51 à 60K€</fullName>
                     <default>false</default>
+                    <label>De 51 à 60K€</label>
                 </value>
                 <value>
                     <fullName>De 61 à 70K€</fullName>
                     <default>false</default>
+                    <label>De 61 à 70K€</label>
                 </value>
                 <value>
                     <fullName>De 71 à 80K€</fullName>
                     <default>false</default>
+                    <label>De 71 à 80K€</label>
                 </value>
                 <value>
                     <fullName>De 81 à 90K€</fullName>
                     <default>false</default>
+                    <label>De 81 à 90K€</label>
                 </value>
                 <value>
                     <fullName>De 91 à 100K€</fullName>
                     <default>false</default>
+                    <label>De 91 à 100K€</label>
                 </value>
                 <value>
                     <fullName>Plus de 101K€</fullName>
                     <default>false</default>
+                    <label>Plus de 101K€</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4574,13 +5010,27 @@ en production</description>
                 <value>
                     <fullName>Campagne</fullName>
                     <default>false</default>
+                    <label>Campagne</label>
                 </value>
                 <value>
                     <fullName>ISF</fullName>
                     <default>false</default>
+                    <label>ISF</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_d_enregistrement_Piste__c</fullName>
+        <description>Ce champ est utilisé dans le cadre du ticket EML 1671. Il permet d&apos;affecter les Pistes à un Type d&apos;enregistrement Contact spécifique (Professionnel en l&apos;occurrence).</description>
+        <externalId>false</externalId>
+        <label>Type d&apos;enregistrement (Piste)</label>
+        <length>24</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>VIP__c</fullName>
@@ -10647,13 +11097,15 @@ $Profile.Name &lt;&gt; &quot;BDD&quot;, $Profile.Name &lt;&gt; &quot;FOREVER&quo
         <fullName>RG_Contact10_ville_sans_chiffres</fullName>
         <active>true</active>
         <description>Vérifie la non présence de chiffres dans le champ ville</description>
-        <errorConditionFormula>OR( ISNUMBER(Adresse_Ville__c), OR(CONTAINS(Adresse_Ville__c, &quot;0&quot;),CONTAINS(Adresse_Ville__c, &quot;1&quot;),CONTAINS(Adresse_Ville__c, &quot;2&quot;),CONTAINS(Adresse_Ville__c, &quot;3&quot;),CONTAINS(Adresse_Ville__c, &quot;4&quot;),CONTAINS(Adresse_Ville__c, &quot;5&quot;),CONTAINS(Adresse_Ville__c, &quot;6&quot;),CONTAINS(Adresse_Ville__c, &quot;7&quot;),CONTAINS(Adresse_Ville__c, &quot;8&quot;),CONTAINS(Adresse_Ville__c, &quot;9&quot;)))</errorConditionFormula>
+        <errorConditionFormula>AND (!$User.ByPass_RV__c, 
+OR( ISNUMBER(Adresse_Ville__c), OR(CONTAINS(Adresse_Ville__c, &quot;0&quot;),CONTAINS(Adresse_Ville__c, &quot;1&quot;),CONTAINS(Adresse_Ville__c, &quot;2&quot;),CONTAINS(Adresse_Ville__c, &quot;3&quot;),CONTAINS(Adresse_Ville__c, &quot;4&quot;),CONTAINS(Adresse_Ville__c, &quot;5&quot;),CONTAINS(Adresse_Ville__c, &quot;6&quot;),CONTAINS(Adresse_Ville__c, &quot;7&quot;),CONTAINS(Adresse_Ville__c, &quot;8&quot;),CONTAINS(Adresse_Ville__c, &quot;9&quot;))))</errorConditionFormula>
         <errorMessage>Le champ ville ne doit pas contenir de chiffres !</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>RG_Contact11_ville_repli_sans_chiffres</fullName>
         <active>true</active>
-        <errorConditionFormula>OR( ISNUMBER(Adresse_de_repli_ville__c), OR(CONTAINS(Adresse_de_repli_ville__c, &quot;0&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;1&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;2&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;3&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;4&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;5&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;6&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;7&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;8&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;9&quot;)))</errorConditionFormula>
+        <errorConditionFormula>AND (!$User.ByPass_RV__c, 
+OR( ISNUMBER(Adresse_de_repli_ville__c), OR(CONTAINS(Adresse_de_repli_ville__c, &quot;0&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;1&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;2&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;3&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;4&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;5&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;6&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;7&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;8&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;9&quot;))))</errorConditionFormula>
         <errorMessage>Le champ adresse de repli: Ville ne doit pas contenir de chiffres !</errorMessage>
     </validationRules>
     <webLinks>

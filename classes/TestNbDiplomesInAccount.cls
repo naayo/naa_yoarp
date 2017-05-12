@@ -238,54 +238,63 @@ public class TestNbDiplomesInAccount {
     }
     
     // Vérifier le recalcul des nombres de diplômés lors d'une suppression de contact
-    static testMethod void verifyDeleteContactDiplomes(){
+    static testMethod void verifyDeleteContactDiplome(){
         Account acc1 = [SELECT Id FROM Account WHERE Name='AccountTest1_1' LIMIT 1];        
         
-        // Créer et insérer 3 contacts au compte dont 2 diplômés
-        Test.startTest();        
+        // Créer et insérer un diplômé       
         Contact ctc1 = new Contact(Salutation='Mr',FirstName='FirstName1', LastName='LastName1', 
                                    AccountId=acc1.Id, Identifiant_dipl_m__c='12345678');        
-        Contact ctc2 = new Contact(Salutation='Mr',FirstName='FirstName2', LastName='LastName2', 
-                                   AccountId=acc1.Id, Identifiant_dipl_m__c='12345678');        
-        Contact ctc3 = new Contact(Salutation='Mr',FirstName='FirstName3', LastName='LastName3', 
-                                   AccountId=acc1.Id);        
-        insert new List<Contact>{ctc1,ctc2,ctc3};
-        Test.stopTest();
+        insert ctc1;
         
-        // Enlever le diplôme d'un des deux diplômés
-        ctc1.Identifiant_dipl_m__c = null;
-        update ctc1;
-        
-        // Vérifier que le compte ne possède qu'un diplômé
-        acc1 = [SELECT Id, Nombre_de_contacts_dipl_m_s__c, Nombre_de_contacts_dipl_m_s_groupe__c FROM Account WHERE Name='AccountTest1_1' LIMIT 1];
-        System.assertEquals(1,acc1.Nombre_de_contacts_dipl_m_s__c);
-        
-        // Vérifier que les comptes possèdent 1 diplômés dans le groupe
-        System.assertEquals(1,acc1.Nombre_de_contacts_dipl_m_s_groupe__c);
-        Account acc2 = [SELECT Id,Nombre_de_contacts_dipl_m_s_groupe__c FROM Account WHERE Name='AccountTest2_1' LIMIT 1];
-        System.assertEquals(1,acc2.Nombre_de_contacts_dipl_m_s_groupe__c);
-        Account acc3 = [SELECT Id,Nombre_de_contacts_dipl_m_s_groupe__c FROM Account WHERE Name='AccountTest3_1' LIMIT 1];
-        System.assertEquals(1,acc3.Nombre_de_contacts_dipl_m_s_groupe__c);
-        
-
+        Test.startTest();
         // Supprimer un contact diplômé
-		// Récupérer le portefeuille contact
-        List<Portefeuille_contacts__c> pcs = [SELECT Id FROM Portefeuille_contacts__c WHERE Contact__r.Id=:ctc2.Id];
-        // Supprimer le portefeuille contact pour supprimer le contact
+		//  Récupérer le portefeuille contact
+        List<Portefeuille_contacts__c> pcs = [SELECT Id FROM Portefeuille_contacts__c WHERE Contact__r.Id=:ctc1.Id];
+        //  Supprimer le portefeuille contact pour supprimer le contact
         if(pcs.size()>0) delete pcs;
-        // Supprimer le dernier diplômé
-        delete ctc2;
+        //  Supprimer le dernier diplômé
+        delete ctc1;
+        Test.stopTest();
         
         // Vérifier que le compte ne possède plus de diplômés
         acc1 = [SELECT Id, Nombre_de_contacts_dipl_m_s__c,Nombre_de_contacts_dipl_m_s_groupe__c FROM Account WHERE Name='AccountTest1_1' LIMIT 1];
         System.assertEquals(0,acc1.Nombre_de_contacts_dipl_m_s__c);
         
-        // Vérifier que les comptes ne possèdent plus diplômés dans le groupe
+        // Vérifier que le compte ne possède plus diplômé dans le groupe
         System.assertEquals(0,acc1.Nombre_de_contacts_dipl_m_s_groupe__c);
-        acc2 = [SELECT Id,Nombre_de_contacts_dipl_m_s_groupe__c FROM Account WHERE Name='AccountTest2_1' LIMIT 1];
-        System.assertEquals(0,acc2.Nombre_de_contacts_dipl_m_s_groupe__c);
-        acc3 = [SELECT Id,Nombre_de_contacts_dipl_m_s_groupe__c FROM Account WHERE Name='AccountTest3_1' LIMIT 1];
-        System.assertEquals(0,acc3.Nombre_de_contacts_dipl_m_s_groupe__c);
+    }
+    
+    // Vérifier le recalcul des nombres de diplômés lors d'une restauration de contact
+    static testMethod void verifyUndeleteContactDiplome(){
+        Account acc1 = [SELECT Id FROM Account WHERE Name='AccountTest1_1' LIMIT 1];        
+        
+        // Créer et insérer un diplômé       
+        Contact ctc1 = new Contact(Salutation='Mr',FirstName='FirstName1', LastName='LastName1', 
+                                   AccountId=acc1.Id, Identifiant_dipl_m__c='12345678');        
+        insert ctc1;
+       
+        // Supprimer un contact diplômé
+		//  Récupérer le portefeuille contact
+        List<Portefeuille_contacts__c> pcs = [SELECT Id FROM Portefeuille_contacts__c WHERE Contact__r.Id=:ctc1.Id];
+        //  Supprimer le portefeuille contact pour supprimer le contact
+        if(pcs.size()>0) delete pcs;
+        //  Supprimer le dernier diplômé
+        delete ctc1;
+        
+        // Récuperer le contact supprimé
+        Contact ctc = [SELECT Id, FirstName FROM Contact WHERE FirstName='FirstName1' ALL ROWS];        
+        
+        Test.startTest();
+        // Restaurer le contact diplômé
+        undelete ctc;
+        Test.stopTest();
+        
+        // Vérifier que le compte ne possède plus de diplômés
+        acc1 = [SELECT Id, Nombre_de_contacts_dipl_m_s__c,Nombre_de_contacts_dipl_m_s_groupe__c FROM Account WHERE Name='AccountTest1_1' LIMIT 1];
+        System.assertEquals(1,acc1.Nombre_de_contacts_dipl_m_s__c);
+        
+        // Vérifier que le compte ne possède plus diplômé dans le groupe
+        System.assertEquals(1,acc1.Nombre_de_contacts_dipl_m_s_groupe__c);
     }
     
     // Vérifier la réaffectation des comptes principaux lors d'un changement de compte principal d'un contact

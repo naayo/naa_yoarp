@@ -36,6 +36,9 @@ public class DataExtract017OpportunityLoop implements Queueable {
         // Sélection des comptes liés aux opportunités
         selectAccountsRelatedToOpportunities(idsToString);
 
+        // Sélection des contacts liés aux opportunités
+        selectContactsRelatedToOpportunities(idsToString);
+
         System.debug('-- PARAM dataExport.opportunitiesToProcess before transfer : ' + dataExport.opportunitiesToProcess);
         System.debug('-- PARAM dataExport.opportunitiesToExport before transfer : ' + dataExport.opportunitiesToExport);
 
@@ -58,7 +61,7 @@ public class DataExtract017OpportunityLoop implements Queueable {
         System.debug('--- METHOD : DataExtract017OpportunityLoop / selectAccountsRelatedToOpportunities() ---');
 
         String query = 'SELECT Id, AccountId FROM ' + DataExtract017Opportunity.OBJECT_NAME_OPPORTUNITY +
-                ' WHERE ID IN ' + oppIds;
+                ' WHERE TECH_External_Id__c != null AND ID IN ' + oppIds;
 
         System.debug('-- PARAM query : ' + query);
 
@@ -74,5 +77,27 @@ public class DataExtract017OpportunityLoop implements Queueable {
         System.debug('-- PARAM dataExport.accountsToProcess : ' + dataExport.accountsToProcess);
 
         System.debug('--- END METHOD : DataExtract017OpportunityLoop / selectAccountsRelatedToOpportunities() ---');
+    }
+
+    private void selectContactsRelatedToOpportunities(String oppIds) {
+        System.debug('--- METHOD : DataExtract017OpportunityLoop / selectContactsRelatedToOpportunities() ---');
+
+        String query = 'SELECT Id, Contact_central__c FROM ' + DataExtract017Opportunity.OBJECT_NAME_OPPORTUNITY +
+                ' WHERE TECH_External_Id__c != null AND ID IN ' + oppIds;
+
+        System.debug('-- PARAM query : ' + query);
+
+        List<Opportunity> opportunities = Database.query(query);
+        if ( opportunities != null && !opportunities.isEmpty() ) {
+            Set<Id> contactIds = new Set<Id>();
+            for ( Opportunity opp : opportunities ) {
+                contactIds.add(opp.Contact_central__c);
+            }
+            dataExport.addAllContactsToProcess(contactIds);
+        }
+
+        System.debug('-- PARAM dataExport.contactsToProcess : ' + dataExport.contactsToProcess);
+
+        System.debug('--- END METHOD : DataExtract017OpportunityLoop / selectContactsRelatedToOpportunities() ---');
     }
 }

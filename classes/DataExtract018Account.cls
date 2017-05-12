@@ -7,7 +7,7 @@ public class DataExtract018Account implements Queueable {
     public static final String OBJECT_NAME_ACCOUNT = 'Account';
     public static final String FIELD_CONTACT_PRINC_FUND = 'Contact_Principal_Fundraising__c';
 
-    private static final String WHERE_CLAUSE = ' WHERE TECH_External_ID__c != null ORDER BY CreatedDate DESC ';
+    private static final String WHERE_CLAUSE = ' WHERE TECH_External_ID__c != null AND ParentId = null ORDER BY CreatedDate DESC ';
 
     public DataToExport dataExport{
         public get;
