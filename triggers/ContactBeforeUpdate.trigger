@@ -9,13 +9,13 @@ trigger ContactBeforeUpdate on Contact (before update) {
     // on crée une liste des départements en dehors de la boucle d'enregistrements
     // pour la màj automatique du dpt en fonction du code postal saisi
     List<Contact> ContactsUpdtDpt = new List<Contact>();
-    List<D_partement__c> listDpt = [select id, Code_d_partement__c from D_partement__c];
+    
     
     for(integer i=0;i<Trigger.new.size();i++){
 
-            //ContactsUpdtDpt.add(Trigger.new[i]);
+            ContactsUpdtDpt.add(Trigger.new[i]);
             // formatage nom et prénom en majuscules
-            //Utils.contactToUpper(Trigger.new[i]);
+            Utils.contactToUpper(Trigger.new[i]);
             if('Professionnel'.equalsIgnoreCase(Trigger.new[i].Statut__c) ||
                 'Professionnel'.equalsIgnoreCase(Trigger.old[i].Statut__c) ) {
 
@@ -37,12 +37,11 @@ trigger ContactBeforeUpdate on Contact (before update) {
          
       
 }  
-/*
         if(ContactsUpdtDpt.size()>0){
               
-              Utils.setDptContact(ContactsUpdtDpt, listDpt);
+              Utils.setDptContact(ContactsUpdtDpt);
         }
-*/
+
 
        }
         }

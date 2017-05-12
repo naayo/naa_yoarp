@@ -1,7 +1,7 @@
 @isTest(seeAllData=true)
 public class TestUtils {
     
-    static testMethod void testInsert(){
+     static testMethod void TestsetDptAccount(){
         try{
             List<Contact> listContactsNew;
             List<Account> listAccountsNew;
@@ -12,15 +12,13 @@ public class TestUtils {
             D_partement__c d1;
             D_partement__c d2;
             
-            d1=[select id, Code_d_partement__c from D_partement__c where Code_d_partement__c='69' ] ;    
-            d2=[select id, Code_d_partement__c from D_partement__c where Code_d_partement__c='75' ] ; 
+           d1=[select id, Code_d_partement__c from D_partement__c where Code_d_partement__c='69' ] ; 
+           d2=[select id, Code_d_partement__c from D_partement__c where Code_d_partement__c='75' ] ;       
+                       
             
+             
             
-            listDpt.add(d1);
-            listDpt.add(d2);
-            
-            
-            System.debug('Nb de départements : '+listDpt.size());
+            //System.debug('Nb de départements : '+listDpt.size());
             
             NAF__c naf = new NAF__c();
             naf.CODE_APE__c = 'AAAA';
@@ -29,72 +27,41 @@ public class TestUtils {
             insert naf;
             
             Pays__c PaysFrance = [Select id from Pays__c where Name='France'];
-            for(integer i=0;i<=200;i++){
+           
                 
                 Account a = new Account();
-                a.Name = 'Account test '+i;
+                a.Name = 'Account test 1';
                 a.CodePays__c = PaysFrance.Id;
                 a.Code_Postal__c='69500';
                 a.SIRET__c='40483304800022';
                 a.Adresse_Ville__c='Bron';
                 a.CodeAPE__c = naf.id;
                 listAccountsNew.add(a);
-                String myDptCode = listAccountsNew[i].Code_Postal__c.substring(0,2);
-                
-                
-            }
+       
+            insert a;
             
-            for(integer i=0;i<=200;i++){
-                Contact c = new Contact();
-                c.Salutation = 'M';
-                c.LastName='Test '+i;
-                c.FirstName = 'test';
-                c.AccountId = listAccountsNew[i].Id;
-                c.Adresse_code_postal__c = '69500';
-                c.Pays__c=PaysFrance.Id;
-                listContactsNew.add(c);
-            }
+            Account myAccount = [select id,Departement__c from Account];
             
+             System.assertEquals(myAccount.Departement__c, d1.Id);
             
-            insert listAccountsNew;
-            insert listContactsNew;
+            a.Code_Postal__c='75800';
             
+            update a;
             
-            if(listContactsNew.size()>0){    
-                TestsetDptContact(listContactsNew, listDpt);
-                
-            } 
-            if(listAccountsNew.size()>0){
-                TestsetDptAccount(listAccountsNew, listDpt);
-            }
-            
-            for(Account a:listAccountsNew){
+            myAccount = [select id,Departement__c from Account];
+            system.assertEquals(myAccount.Departement__c, d2.id);
+             
                 
                 a.Code_Postal__c='99000';
-            }
-            
-            for(Contact c:listContactsNew){
-                
-                c.Adresse_code_postal__c='99000';
-            }
+              
+           
+           
             Exception e;
             try{
-                update listAccountsNew;
-                update listContactsNew;
+                update a;
+              
             }
             
-            catch(Exception ex){
-                e=ex;   
-            }
-            
-            try{        
-                if(listContactsNew.size()>0){   
-                    
-                    TestsetDptContact(listContactsNew, listDpt);
-                    
-                } 
-                
-            }
             
             catch(Exception ex){
                 e=ex;
@@ -104,31 +71,103 @@ public class TestUtils {
                 system.assert(e.getMessage().contains('Vous ne pouvez pas sélectionner ce code postal pour le pays FRANCE'));
             }
             
+           
+    }
+        
+        catch(Exception e)
+        {
+            System.debug(e);
+        }
+         Test.stopTest();    
+    }
+    
+    static testMethod void TestsetDptContact(){
+        try{
+           
+            List<D_partement__c> listDpt=new List<D_partement__c>();    
+            
+           
+            D_partement__c d1;
+            D_partement__c d2;
+            
+            d1=[select id, Code_d_partement__c from D_partement__c where Code_d_partement__c='69' ] ; 
+            d2=[select id, Code_d_partement__c from D_partement__c where Code_d_partement__c='75' ] ;    
+                       
+            System.debug('Id Département 69 : '+d1.Id);
+            System.debug('Id Département 75 : '+d2.Id);
+            
+            NAF__c naf = new NAF__c();
+            naf.CODE_APE__c = 'AAAA';
+            naf.Code_NACE__c = 'BBBB';
+            naf.Secteur__c = 120;
+            insert naf;
+            
+            Pays__c PaysFrance = [Select id from Pays__c where Name='France'];
+           
+                
+                Account a = new Account();
+                a.Name = 'Account test 1';
+                a.CodePays__c = PaysFrance.Id;
+                a.Code_Postal__c='69500';
+                a.SIRET__c='40483304800022';
+                a.Adresse_Ville__c='Bron';
+                a.CodeAPE__c = naf.id;
+               
+  
+                Contact c = new Contact();
+                c.Salutation = 'M';
+                c.LastName='Dupont';
+                c.FirstName = 'Pierre';
+                c.AccountId = a.Id;
+                c.Adresse_code_postal__c = '69500';
+                c.Pays__c=PaysFrance.Id;
+            	c.Pays_de_r_sidence__c=PaysFrance.id;
+             
+  		
+            insert a;
+            insert c;
+          
+            Contact myContact = [select id, D_partement__c from Contact where id =:c.Id];
+	            
+            
+             System.assertEquals(myContact.D_partement__c, d1.Id);
+            
+             c.Adresse_code_postal__c = '75008';
+            update c;
+            
+             myContact = [select id, D_partement__c from Contact where id =:c.Id];
+
+             System.assertEquals(myContact.D_partement__c, d2.Id);
+            
+           
+                
+              
+                c.Adresse_code_postal__c='99000';
+           		
+           
+            Exception e;
             try{
-                
-                
-                if(listAccountsNew.size()>0){
-                    TestsetDptAccount(listAccountsNew, listDpt);
-                }
+               
+                update c;
             }
             
             
             catch(Exception ex){
                 e=ex;
-                
+                system.assertNotEquals(null, e);
+                system.assert(e instanceOf system.Dmlexception);
+                system.assert(e.getMessage().contains('FIELD_CUSTOM_VALIDATION_EXCEPTION'));
+                system.assert(e.getMessage().contains('Vous ne pouvez pas sélectionner ce code postal pour le pays FRANCE'));
             }
-            system.assertNotEquals(null, e);
-            system.assert(e instanceOf system.Dmlexception);
-            system.assert(e.getMessage().contains('FIELD_CUSTOM_VALIDATION_EXCEPTION'));
-            system.assert(e.getMessage().contains('Vous ne pouvez pas sélectionner ce code postal pour le pays FRANCE'));
             
-        } catch (Exception e){
-            
-        } 
+           
+    }
         
+        catch(Exception e)
+        {
+            System.debug(e);
+        }
         
-        
-        Test.stopTest();    
     }
 
     /**
@@ -150,66 +189,85 @@ public class TestUtils {
         System.assertNotEquals('Lead', Utils.findObjectNameFromRecordIdPrefix(accountPrefix));
     }
     
-    public static void TestsetDptAccount(List<Account> listAcctNew, List<D_partement__c> listDpt){
-        for(integer i=0;i<listAcctNew.size();i++){
+    
+    
+     
+/**
+ * @author : Mahmoud BECHAA
+ * Created on : 12/04/2017
+ * Test pour la méthode 
+ */   
+     static testMethod void testcontactToUpper() {
+        
+        List<Contact> lcon = new List<Contact>();
             
+        
+        Contact c1 = New Contact();
+        c1.LastName='dupont';
+        c1.FirstName='jean-pierre';
+        lcon.add(c1);
+        
+        Contact c2 = new Contact();
+        c2.LastName='durand';
+        c2.FirstName='jean luc';
+        lcon.add(c2);
+        
+        Contact c3 = new Contact();
+        c3.LastName='dumont';
+        c3.FirstName='henri';
+        lcon.add(c3);
+        
+        for(Contact c:lcon){
+         String firstname = c.FirstName.toLowerCase();
+        // mise en majuscule de la 1re lettre
+        
+        String formatedFirstName;
+        String letter='';
+        formatedFirstName=firstname.mid(0,1).toUpperCase();
+        
+        //System.debug('Length : ' + firstname.length());
+        
+        integer size = firstname.length()-1;
+        
+        // balayage du reste des lettres
+        for(Integer i=1; i< firstname.length();i++)
+        {
+            letter = firstname.mid(i, 1);
             
-            
-            String myDptCode = listAcctNew[i].Code_Postal__c.substring(0,2);
-            //System.debug('Département : ' + myDptCode) ;
-            
-            if(listAcctNew[i].CountryName__c == 'FRANCE' && listAcctNew[i].Code_Postal__c.trim().length()==5  ){
-                for(D_partement__c d: listDpt  )
-                {
-                    
-                    if(d.Code_d_partement__c==myDptCode)
-                        listAcctNew[i].Departement__c= d.Id;     
-                    
-                    
-                }
-            }
-            
-            // on ne peux pas choisir un code postal débutant par "99"
-            
-            if(listAcctNew[i].CountryName__c == 'FRANCE' && MyDptCode=='99'  ){
+            if(letter==' ' || letter=='-'){
                 
-                listAcctNew[i].addError('Vous ne pouvez pas sélectionner ce code postal pour le pays FRANCE !');
+                
+                i++;
+                size=size-1;      
+                letter=letter=firstname.mid(i-1,1) + firstname.mid(i,1).toUpperCase();
+                
+            } 
+            else{
+                
+                letter=firstname.mid(i,1).toLowerCase();
             }
+            
+            size=size-1;
+            formatedFirstName+=letter;
             
         }
         
-    }
-    
-    private static void TestsetDptContact(List<Contact> listContactsNew, List<D_partement__c> listDpt){
-        for(integer i=0;i<listContactsNew.size();i++){
-            
-            
-            
-            String myDptCode =  listContactsNew[i].Adresse_code_postal__c.substring(0,2); 
-            
-            if(listContactsNew[i].CountryName__c == 'FRANCE' &&  MyDptCode=='99'  ){
-                for(D_partement__c d: listDpt  )
-                {
-                    
-                    if(d.Code_d_partement__c==myDptCode)
-                        listContactsNew[i].D_partement__c= d.Id;     
-                    
-                    
-                }
-                
-            }
-            
-            // on ne peux pas choisir un code postal débutant par "99"
-            
-            if(listContactsNew[i].CountryName__c == 'FRANCE' && MyDptCode=='99'  ){
-                listContactsNew[i].addError('Vous ne pouvez pas sélectionner ce code postal pour le pays FRANCE !');
-            }
-            
-            
-        }
+        //System.debug('Prénom : '+formatedFirstName);
         
-    }
+        c.FirstName=formatedFirstName;
+        
+        // pour finir : transformation du nom en majuscule 
+        c.LastName=c.LastName.toUpperCase();
+        
+            }
+        // vérification du nom et prénom suite à mise en forme 
+        // (on utilise la fonction AssertEquals pour la comparaison car elle est case-sensitive)
+        System.assertEquals(lcon[0].LastName, 'DUPONT');
+        System.assertEquals(lcon[0].FirstName, 'Jean-Pierre');
+        System.assertEquals(lcon[1].LastName, 'DURAND');
+        System.assertEquals(lcon[1].FirstName, 'Jean Luc');
+        System.assertEquals(lcon[2].LastName, 'DUMONT');
+        System.assertEquals(lcon[2].FirstName, 'Henri');
     
-    
-    
+    }    
 }

@@ -76,6 +76,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>BatchCalculateNbDiplomes</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>BatchDataExtract</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -165,6 +169,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>BatchFillTechIdObjectsTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BatchInitNbDiplomes</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -492,6 +500,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>TR009PropagationHierarchie</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TR_session_formation</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -505,6 +517,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>TestCTR001CampaignManageMembersAddTab</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TestNbDiplomesInAccount</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -533,10 +549,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>TestTR006OppLineItem2FieldsNull</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>TestTR008ManageDiplomes</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -785,6 +797,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.ComptePrincipal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.Compte_Groupe__c</field>
         <readable>true</readable>
@@ -1002,6 +1019,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Nom_commercial__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Nombre_de_contacts_dipl_m_s__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Nombre_de_contacts_dipl_m_s_groupe__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1975,6 +2002,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.ComptePrincipal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Contact.Compteur_Tiers_Contact__c</field>
         <readable>false</readable>
@@ -2130,7 +2162,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Contact.Email_EM_Lyon__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2623,6 +2655,11 @@
         <editable>true</editable>
         <field>Contact.Type__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Type_d_enregistrement_Piste__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -3790,6 +3827,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Type_d_enregistrement_Contact__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Viadeo__c</field>
         <readable>true</readable>
@@ -4643,6 +4685,11 @@
         <editable>false</editable>
         <field>Opportunity.Statut_Canel__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Statut_Com_d_j_modifi_par_CANEL__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>

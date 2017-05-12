@@ -109,7 +109,7 @@ IF(
         <fullName>Mise_Jour_Statut_Dossier_CANEL</fullName>
         <description>Met à jour le champ statut dossier CANEL à l&apos;aide de la valeur contenue dans Statut dossier CANEL du poste opportunité</description>
         <field>Statut_Dossier_CANEL__c</field>
-        <formula>Statut_dossier__c</formula>
+        <formula>(Statut_dossier__c)</formula>
         <name>Mise à Jour Statut Dossier CANEL</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
@@ -518,7 +518,7 @@ NOT (ISBLANK (Opportunity.Contact_central__r.Login__c )) )</formula>
         </actions>
         <active>true</active>
         <formula>1=1</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>WF Mise à jour Remplissage Dossier CANEL</fullName>

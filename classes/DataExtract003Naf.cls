@@ -18,7 +18,8 @@ public class DataExtract003Naf implements Queueable {
      */
     public static void extractNaf() {
         System.debug('--- BEGIN DataExtract003Naf / extractNaf() ---');
-        DataExtractUtils.extractAllFieldsToCSV('02', OBJECT_NAME_NAF, null);
+        String whereClause = ' WHERE TECH_External_ID__c != null';
+        DataExtractUtils.extractAllFieldWithSpecificWhereClause('02', OBJECT_NAME_NAF, whereClause);
         System.debug('--- END DataExtract003Naf / extractNaf() ---');
     }
 }

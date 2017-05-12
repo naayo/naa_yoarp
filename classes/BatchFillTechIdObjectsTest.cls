@@ -111,7 +111,7 @@ private class BatchFillTechIdObjectsTest {
         };
         insert sessions;
 
-        Profile p = [SELECT Id FROM Profile WHERE Name='Utilisateur standard' LIMIT 1];
+        Profile p = [SELECT Id FROM Profile WHERE Name='Utilisateur standard' OR Name='Standard User' LIMIT 1];
 
         List<User> users = new List<User>{
                 new User(FirstName = 'UserTest01',
@@ -262,7 +262,7 @@ private class BatchFillTechIdObjectsTest {
     }
 
     private static void testBatchs (String objName) {
-        String query = 'SELECT ID, TECH_External_Id__c FROM ' + objName + ' LIMIT 150';
+        String query = 'SELECT ID, TECH_External_Id__c FROM ' + objName + ' WHERE TECH_External_Id__c != null LIMIT 150';
         List<SObject> objList = Database.query(query);
         System.debug('--- Test Batch for '+ objName + ' ---');
 

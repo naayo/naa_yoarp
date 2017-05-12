@@ -17,6 +17,17 @@ private class BatchFillTechId017EventTest {
         testTaskBatch();
     }
 
+
+    static testMethod void sendsEmail() {
+        Test.startTest();
+        BatchFillTechId017Event b = new BatchFillTechId017Event();
+        Database.executeBatch(b);
+        Test.stopTest();
+
+        // Vérification qu'un email a été envoyé
+        System.assertEquals(BatchFillTechId017Event.emailLimits, 1);
+    }
+
     private static void testTaskBatch () {
         String query = 'SELECT ID, WhatId, WhoId, TECH_External_What_Id__c, TECH_External_Who_Id__c FROM Event LIMIT 150';
         List<Event> events = Database.query(query);
@@ -34,4 +45,5 @@ private class BatchFillTechId017EventTest {
             System.assertEquals(String.valueOf(event.WhoId), techWhotId);
         }
     }
+
 }

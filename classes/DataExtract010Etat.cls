@@ -36,7 +36,8 @@ public class DataExtract010Etat implements Queueable {
         System.debug('--PARAM dataExport.etatsToExport : ' + dataExport.etatsToExport);
 
         // Génération du fichier csv
-        DataExtractUtils.extractAllFieldsToCSV('06', OBJECT_NAME_ETAT, null);
+        String whereClause = ' WHERE TECH_External_ID__c != null';
+        DataExtractUtils.extractAllFieldWithSpecificWhereClause('06', OBJECT_NAME_ETAT, whereClause);
 
         System.debug('--- END DataExtract010Etat / extractEtats() ---');
     }

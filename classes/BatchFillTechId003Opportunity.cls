@@ -17,7 +17,7 @@ global class BatchFillTechId003Opportunity implements Database.Batchable<sObject
         for (Opportunity opp : records) {
             opp.TECH_External_Id__c = opp.Id;
         }
-        update records;
+        Database.update(records, false);
     }
 
     global void finish(Database.BatchableContext bc){

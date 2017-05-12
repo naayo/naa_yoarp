@@ -17,7 +17,7 @@ global class BatchFillTechId014Pricebook implements Database.Batchable<sObject> 
         for (Pricebook2 pricebook : records) {
             pricebook.TECH_External_Id__c = pricebook.Id;
         }
-        update records;
+        Database.update(records, false);
     }
 
     global void finish(Database.BatchableContext bc){

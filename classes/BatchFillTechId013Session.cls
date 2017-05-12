@@ -17,7 +17,7 @@ global class BatchFillTechId013Session implements Database.Batchable<sObject> {
         for (Session__c session : records) {
             session.TECH_External_Id__c = session.Id;
         }
-        update records;
+        Database.update(records, false);
     }
 
     global void finish(Database.BatchableContext bc){

@@ -71,6 +71,10 @@
                 <behavior>Readonly</behavior>
                 <field>date_crea_fiche_util__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Statut_Com_d_j_modifi_par_CANEL__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -84,6 +88,10 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>StageName</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Statut_Canel__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

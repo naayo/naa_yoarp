@@ -95,6 +95,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Statut_Com_d_j_modifi_par_CANEL__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>A_d_sactiv_son_int_r_t__c</field>
             </layoutItems>
             <layoutItems>

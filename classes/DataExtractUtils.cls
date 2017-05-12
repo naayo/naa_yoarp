@@ -11,6 +11,13 @@ public class DataExtractUtils {
     private static void extractDataToCsv(String fileNumber, String objectName,
             Set<String> fieldNamesToExport, Set<String> fieldNamesNotToExport,
             String whereCondition, Integer recordsLimit) {
+        extractDataToCsv(new List<String> {fileNumber}, objectName, fieldNamesToExport, fieldNamesNotToExport,
+                whereCondition, recordsLimit);
+    }
+
+    private static void extractDataToCsv(List<String> fileNumber, String objectName,
+            Set<String> fieldNamesToExport, Set<String> fieldNamesNotToExport,
+            String whereCondition, Integer recordsLimit) {
 
         System.debug('--- BEGIN DataExtractUtils / extractDataToCsv(PARAMS) ---');
         System.debug('--- PARAM String fileNumber : ' + fileNumber);
@@ -98,13 +105,17 @@ public class DataExtractUtils {
      */
     private static String buildCsvFile(String csv, List<sObject> sObjects, Map<String, Schema.SObjectField> fieldMap) {
         // Remplissage du csv
+        Map<String, Schema.DisplayType > typeMap = new Map<String, Schema.DisplayType >();
         for ( SObject sObj : sObjects ) {
             for ( String fieldName : fieldMap.keySet() ) {
+                if(!typeMap.containsKey(fieldName)){
+                    typeMap.put(fieldName, fieldMap.get(fieldName).getDescribe().type);
+                }
+                Schema.DisplayType type = typeMap.get(fieldName);
                 // Ajout de la valeur nulle si le champ est null
                 if ( sObj.get(fieldName) == null ) {
                     csv += '"",';
-                } else if ( fieldMap.get(fieldName).getDescribe().type == Schema.DisplayType.STRING ||
-                        fieldMap.get(fieldName).getDescribe().type == Schema.DisplayType.TEXTAREA ) {
+                } else if ( type == Schema.DisplayType.STRING || type == Schema.DisplayType.TEXTAREA ) {
                     // Traitement escapeCsv pour les champs de type STRING et TEXTAREA
                     csv += ((String) sObj.get(fieldName)).escapeCsv() + ',';
                 } else if ( fieldName.equalsIgnoreCase(FIELDNAME_FOR_DATA_TRANSFERRING_BOOLEAN) ){
@@ -149,20 +160,28 @@ public class DataExtractUtils {
     @ param objName: Nom de l'objet à traiter
     @ param nbForInsertOrder: Numérotation du fichier pour l'ordre à l'insertion des données
      */
+/*    private static void generateCsvFile(String csv, String objName, String nbForInsertOrder) {
+        generateCsvFile(csv, objName, new List<String>{nbForInsertOrder});
+    }*/
+
     @Future
-    private static void generateCsvFile(String csv, String objName, String nbForInsertOrder) {
+    private static void generateCsvFile(String csv, String objName, List<String> nbForInsertOrder) {
         System.debug('--- METHOD DataExtractUtils / generateCsvFile(PARAMS) ---');
         System.debug('--PARAM csv : ' + csv);
         System.debug('--PARAM objName : ' + csv);
         System.debug('--PARAM nbForInsertOrder : ' + nbForInsertOrder);
         try {
-            ContentVersion file = new ContentVersion(
-                    title = nbForInsertOrder + '-' + objName + '.csv',
-                    versionData = Blob.valueOf(csv),
-                    pathOnClient = '/' + objName + '.csv'
-            );
-            System.debug('--PARAM file : ' + file);
-            insert file;
+            List<ContentVersion> files = new List<ContentVersion>();
+            for(String name : nbForInsertOrder){
+                files.add(
+                    new ContentVersion(
+                        title = name + '-' + objName + '.csv',
+                        versionData = Blob.valueOf(csv),
+                        pathOnClient = '/' + objName + '.csv'
+                    )
+                );
+            }
+            insert files;
         } catch (Exception e) {
             System.debug('Erreur génération du csv pour l\'objet ' + objName + ' : '  + e);
         }
@@ -299,9 +318,8 @@ public class DataExtractUtils {
     }
 
     /**
-    Deux extractions de set d'enregistrements :
-    - La première en excluant des champs lookup
-    - La seconde en prenant en compte tous les champs
+    Génération de deux fichiers excel : utile pour permettre des insertions différentes avec des mappings
+    différents
      */
     public static void extractSpecificRecordsHandlingLookupsToCSV(String firstFileNumber, String secondFileNumber,
             String objectName, Set<Id> idsToExport, Set<String> fieldNamesNotToExportFirst) {
@@ -313,9 +331,10 @@ public class DataExtractUtils {
         System.debug('--- PARAM Set<String> fieldNamesNotToExportFirst : ' + fieldNamesNotToExportFirst);
         String whereCondition = ' WHERE ID IN ' + convertSetToString(idsToExport);
         // Génération du premier fichier Csv
-        DataExtractUtils.extractDataToCSV(firstFileNumber, objectName, null, fieldNamesNotToExportFirst, whereCondition, null);
+        // DataExtractUtils.extractDataToCSV(firstFileNumber, objectName, null, fieldNamesNotToExportFirst, whereCondition, null);
         // Génération du second fichier Csv
-        DataExtractUtils.extractDataToCSV(secondFileNumber, objectName, null, null, whereCondition, null);
+        List<String> nbForFiles = new List<String> {firstFileNumber, secondFileNumber};
+        DataExtractUtils.extractDataToCSV(nbForFiles, objectName, null, null, whereCondition, null);
         System.debug('--- End DataExtractUtils / extractSpecificRecordsHandlingLookupsToCSV(PARAMS) ---');
     }
 

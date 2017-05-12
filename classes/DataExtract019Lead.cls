@@ -16,16 +16,22 @@ public class DataExtract019Lead implements Queueable {
     Clauses WHERE pour obtenir un jeu de données pertinent en filtrant les types d'enregistrements
      */
     private static String WHERE_RECORD_TYPE_FORMATION_COURTE = ' WHERE RecordType.Name = \'Formation courte\' ' +
+            ' AND TECH_External_ID__c != null ' +
             'ORDER BY CreatedDate DESC ';
     private static String WHERE_RECORD_TYPE_INITIALE = ' WHERE RecordType.Name = \'Formation Initiale\' ' +
+            ' AND TECH_External_ID__c != null ' +
             'ORDER BY CreatedDate DESC ';
     private static String WHERE_RECORD_TYPE_INTRA_ENTREPRISE = ' WHERE RecordType.Name = \'Formation intra-entreprise\' ' +
+            ' AND TECH_External_ID__c != null ' +
             'ORDER BY CreatedDate DESC ';
     private static String WHERE_RECORD_TYPE_FUNDRAISING_B2C = ' WHERE RecordType.Name = \'Fundraising B2C\' ' +
+            ' AND TECH_External_ID__c != null ' +
             'ORDER BY CreatedDate DESC ';
     private static String WHERE_RECORD_TYPE_PARTENARIAT_FUNDRAISING = ' WHERE RecordType.Name = \'Partenariat Fundraising\' ' +
+            ' AND TECH_External_ID__c != null ' +
             'ORDER BY CreatedDate DESC ';
     private static String WHERE_RECORD_TYPE_PRG_LONG_DIPLOMANT = ' WHERE RecordType.Name = \'Programme Long Diplômant\' ' +
+            ' AND TECH_External_ID__c != null ' +
             'ORDER BY CreatedDate DESC ';
 
     public DataExtract019Lead(DataToExport dataToExport) {

@@ -561,6 +561,19 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
         </valueSet>
     </fields>
     <fields>
+        <fullName>ComptePrincipal__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Compte principal</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Contacts</relationshipLabel>
+        <relationshipName>Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Compteur_Tiers_Contact__c</fullName>
         <description>Compteur automatique tiers contact ( remplit automatiquement le champ Code tiers contact)</description>
         <displayFormat>8{000000}</displayFormat>

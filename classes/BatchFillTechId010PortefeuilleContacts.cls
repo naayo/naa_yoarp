@@ -17,7 +17,7 @@ global class BatchFillTechId010PortefeuilleContacts implements Database.Batchabl
         for (Portefeuille_contacts__c portContacts : records) {
             portContacts.TECH_External_Id__c = portContacts.Id;
         }
-        update records;
+        Database.update(records, false);
     }
 
     global void finish(Database.BatchableContext bc){

@@ -16,6 +16,12 @@ private class DataExtract015PortefeuilleContactsTest {
 
         DataExtractObjectsUtilsTest.addObjectsToProcess(dataExport, DataExtract012Contact.OBJECT_NAME_CONTACT);
 
+        List<Portefeuille_contacts__c> portefeuilles = [SELECT Id, TECH_External_Id__c FROM Portefeuille_contacts__c];
+        for (Portefeuille_contacts__c p : portefeuilles) {
+            p.TECH_External_Id__c = p.Id;
+        }
+        update portefeuilles;
+
         DataExtract015PortefeuilleContacts de = new DataExtract015PortefeuilleContacts(dataExport);
 
         Test.startTest();

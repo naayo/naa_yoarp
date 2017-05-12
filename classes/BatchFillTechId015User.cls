@@ -22,13 +22,13 @@ global class BatchFillTechId015User implements Database.Batchable<sObject> {
         for (User user : records) {
             user.TECH_External_Id__c = user.Id;
         }
-        update records;
+        Database.update(records, false);
     }
 
     global void finish(Database.BatchableContext bc){
         System.debug('--- END BatchFillTechId015User ---');
         if(!Test.isRunningTest()){
-            Database.executeBatch(new BatchFillTechId016Task());
+            Database.executeBatch(new BatchFillTechId016Task(),1);
         }
     }
 

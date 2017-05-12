@@ -17,7 +17,7 @@ global class BatchFillTechId006Pays implements Database.Batchable<sObject> {
         for (Pays__c pays : records) {
             pays.TECH_External_Id__c = pays.Id;
         }
-        update records;
+        Database.update(records, false);
     }
 
     global void finish(Database.BatchableContext bc){

@@ -3742,6 +3742,16 @@ Ce champ technique est utilisé par l&apos;interface pour définir le catalogue 
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Statut_Com_d_j_modifi_par_CANEL__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Le champ Statut Commercial a-t-il déjà été modifié par la valeur du champ Statut Candidature CANEL ? Si oui, ne pas le remodifier</description>
+        <externalId>false</externalId>
+        <label>Statut Com. déjà modifié par CANEL ?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Statut_Dossier_CANEL__c</fullName>
         <externalId>false</externalId>
         <label>Statut Dossier CANEL</label>
@@ -4025,18 +4035,11 @@ en production</description>
     <listViews>
         <fullName>All_Opportunities</fullName>
         <columns>Contact_central__c</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
         <filterScope>Everything</filterScope>
-        <filters>
-            <field>OPPORTUNITY.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Opportunity.Formation_courte</value>
-        </filters>
-        <filters>
-            <field>Contact_central__c</field>
-            <operation>contains</operation>
-            <value>test</value>
-        </filters>
-        <label>Toutes les opportunités tests</label>
+        <label>Toutes</label>
         <language>fr</language>
     </listViews>
     <listViews>

@@ -41,6 +41,20 @@
         </criteriaItems>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
+        <fullName>L_E_Conseillers_Commerciaux</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Lecture/Ecriture pour les conseillers commerciaux sur les opportunités de type FI ou EML EXEC</description>
+        <label>L/E Conseillers Commerciaux</label>
+        <sharedTo>
+            <group>Conseillers_Commerciaux</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Formation initiale,Formation courte,Formation intra-entreprise,Programme Long Diplômant</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
         <fullName>L_E_EXEC_Masters_Programmes</fullName>
         <accessLevel>Edit</accessLevel>
         <label>L/E EXEC Masters Programmes</label>
@@ -113,6 +127,20 @@
         </criteriaItems>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
+        <fullName>L_E_Toutes_opp_CASABLANCA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>L/E sur toutes les opp Casablanca pour me pôle CASA</description>
+        <label>L/E Toutes opp CASABLANCA</label>
+        <sharedTo>
+            <role>BBA_CASA</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>Casablanca</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
         <fullName>L_E_Transverse_Programmes_Longs</fullName>
         <accessLevel>Edit</accessLevel>
         <label>L/E Transverse Programmes Longs</label>
@@ -123,6 +151,20 @@
             <field>RecordTypeId</field>
             <operation>equals</operation>
             <value>Programme Long Diplômant</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>L_E_VAE_sur_opportunit_s_INTRA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Rôle en lecture / écriture sur les opp INTRA afin de permettre la saisie de partenaires Financeurs</description>
+        <label>L/E VAE sur opportunités INTRA</label>
+        <sharedTo>
+            <role>EML_VAE</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Formation intra-entreprise</value>
         </criteriaItems>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
@@ -256,6 +298,18 @@
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
+        <fullName>L_E_CASA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>L/E sur les opportunités CASA entre membres de l&apos;équipe CASA</description>
+        <label>L/E CASA</label>
+        <sharedTo>
+            <roleAndSubordinates>BBA_CASA</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>BBA_CASA</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
         <fullName>L_E_EXEC_Masters</fullName>
         <accessLevel>Edit</accessLevel>
         <label>L/E EXEC Masters</label>
@@ -376,10 +430,10 @@
         <description>Toutes les personnes de BBA se partagent en lectureécriture les opportunités</description>
         <label>RP_OPPO_02</label>
         <sharedTo>
-            <role>BBA</role>
+            <role>BBA_STE</role>
         </sharedTo>
         <sharedFrom>
-            <role>BBA</role>
+            <role>BBA_STE</role>
         </sharedFrom>
     </sharingOwnerRules>
 </SharingRules>
