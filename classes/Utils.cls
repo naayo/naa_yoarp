@@ -92,7 +92,6 @@ Méthode permettant de récupérer le nom d'un objet à partir du préfix de l'I
     public static String findObjectNameFromRecordIdPrefix(String recordIdOrPrefix) {
         String objectName = '';
         try{
-            
             // Récupère le préfixe à partir de l'ID de l'enregistrement
             String myIdPrefix = String.valueOf(recordIdOrPrefix).substring(0,3);
             
@@ -106,9 +105,9 @@ Méthode permettant de récupérer le nom d'un objet à partir du préfix de l'I
                 // System.debug('-- Prefix is ' + prefix);
                 
                 // Vérifie que le préfixe matche avec le préfixe requêté
-                if(prefix!=null && prefix.equals(myIdPrefix)){
+                if(prefix != null && prefix.equals(myIdPrefix)){
                     objectName = r.getName();
-                    System.debug('-- Object Name! ' + objectName);
+                    //System.debug('-- Object Name! ' + objectName);
                     break;
                 }
             }

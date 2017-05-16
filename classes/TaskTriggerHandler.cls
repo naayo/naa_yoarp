@@ -11,6 +11,9 @@ public class TaskTriggerHandler extends TriggerHandler {
     private List<Task> oldList;
     private List<Task> newList;
 
+    // Préfixe de l'objet Quote
+    private final static String QUOTE_PREFIX = '0Q0';
+
     // Constructor
     public TaskTriggerHandler() {
         this.oldMap = (Map<Id, Task>) Trigger.oldMap;
@@ -22,6 +25,9 @@ public class TaskTriggerHandler extends TriggerHandler {
     protected override void beforeInsert() {
         System.debug('--- BEGIN TaskTriggerHandler beforeInsert() ---');
 
+        // Récupération d'un contact quelconque afin de permettre l'insertion des tâches dans la sandbox
+        Contact contact = [SELECT Id FROM Contact LIMIT 1];
+
         for (Task t : this.newList) {
 
             // Vérification qu'on est bien dans le cas d'une insertion de données de la production vers une sandbox
@@ -32,12 +38,6 @@ public class TaskTriggerHandler extends TriggerHandler {
                 Attribution du premier contact trouvé aux tâches pour pouvoir les insérer
                 car les champs polymorphiques WhatId et WhoId ne peuvent pas faire référence à des External Id
                  */
-
-                    // Récupération d'un contact quelconque afin de permettre l'insertion des tâches dans la sandbox
-                    Contact contact = [SELECT Id FROM Contact LIMIT 1];
-
-                    System.debug('-- PARAM contact retrieved : ' + contact );
-
                     // Attribution de ce contact au champ WhoId des nouvelles tâches
                     t.WhoId = contact.Id;
 
@@ -52,28 +52,22 @@ public class TaskTriggerHandler extends TriggerHandler {
     public override void afterInsert() {
         System.debug('--- BEGIN TaskTriggerHandler afterInsert() ---');
 
-        List<Task> tasksJustInserted = (List<Task>) Trigger.new;
+        List<Task> tasksJustInserted = this.newList;
         // tasksToUpdateAfterInsert est une variable qui pourra être réutilisée pour des update en after insert
         List<Task> tasksToUpdateAfterInsert = new List<Task>();
-        Set<Id> ids = new Set<Id>();
-
-        for (Task task : tasksJustInserted) {
-            System.debug('-- task after insert : ' + task);
-            ids.add(task.Id);
-        }
 
         /*
          Vérification si nous sommes en transfert de données entre sandbox, si oui on ajoute les tasks à la liste
          tasksToUpdateAfterInsert pour les mettre à jour
           */
-        List<Task> tasksInTransferBetweenSandboxs = completeWhoAndWhatIdFields(ids);
+        List<Task> tasksInTransferBetweenSandboxs = completeWhoAndWhatIdFields(tasksJustInserted);
         if (tasksInTransferBetweenSandboxs != null && !tasksInTransferBetweenSandboxs.isEmpty()) {
             tasksToUpdateAfterInsert.addAll(tasksInTransferBetweenSandboxs);
         }
 
         if (tasksToUpdateAfterInsert != null && !tasksToUpdateAfterInsert.isEmpty()) {
             try {
-                update tasksToUpdateAfterInsert;
+                Database.update(tasksToUpdateAfterInsert, false);
             } catch (Exception e) {
                 System.debug('Update impossible pour en after insert de Task' + e);
             }
@@ -88,73 +82,120 @@ public class TaskTriggerHandler extends TriggerHandler {
     afin de les réattribuer aux champs WhatId et WhoId
     Si les champs TECH_External_What_Id__c et TECH_External_Who_Id__c ne sont pas vides, on réattribue leur
     valeur à WhatId et/ou à WhoId. Sinon, on remet le champ à null (car précédemment nous avons inséré un
-    contact au champ WhoId pour permettre l'insertion, mais il n'avait rien à voir avec les événements)
+    contact au champ WhoId pour permettre l'insertion, mais il n'avait rien à voir avec les tâches)
     */
-    private static List<Task> completeWhoAndWhatIdFields(Set<Id> ids) {
-        // Vérification qu'on est dans le cas d'un transfert de données avec le champ TECH_Is_Record_Transferring__c à true
-        String queryString = 'SELECT Id, TECH_External_Who_Id__c, TECH_External_What_Id__c FROM Task ' +
-                'WHERE TECH_Is_Record_Transferring__c = true AND ID IN '
-                + DataExtractUtils.convertSetToString(ids);
-        List<Task> tasks = Database.query(queryString);
+    private static List<Task> completeWhoAndWhatIdFields(List<Task> newTasks) {
+        Set<Id> ids = new Set<Id>();
+        for (Task t : newTasks) {
+            ids.add(t.Id);
+        }
 
-        if (tasks == null || tasks.isEmpty()){
+        List<Task> tasks = [SELECT Id, WhoId, WhatId, TECH_External_Who_Id__c, TECH_External_What_Id__c, TECH_Is_Record_Transferring__c
+                                FROM Task
+                                WHERE Id IN :ids];
+
+        // Vérification qu'on est dans le cas d'un transfert de données avec le champ TECH_Is_Record_Transferring__c à true
+        for (Integer i = 0; i < tasks.size() ; i++) {
+            if (!tasks.get(i).TECH_Is_Record_Transferring__c == true) {
+                tasks.remove(i);
+            }
+        }
+
+        if (tasks.isEmpty()){
             return null;
         }
 
+        // Map qui va stocker les préfixes d'ID et le nom de l'objet correspondant
+        Map<String, String> prefixObjects = new Map<String, String>();
+
+        List<Id> whoAndWhatTechIdsList = new List<Id>();
+        Map<String, List<Id>> whoAndWhatTechIdsMap = new Map<String, List<Id>>();
+
+        List<Task> tasksToUpdate = new List<Task>();
         for (Task task : tasks) {
             /* On repasse le champ TECH_Is_Record_Transferring__c à false pour que les enregistrements ne repassent
              plus dans cette partie de code
               */
             task.TECH_Is_Record_Transferring__c = false;
+
             if (task.TECH_External_Who_Id__c != null) {
                 System.debug('-- TaskTriggerHandler : task.TECH_External_Who_Id__c : ' + task.TECH_External_Who_Id__c);
 
-                // Récupération du nom de l'objet en fonction du préfixe du TECH_External_Who_Id__c
-                String objName = Utils.findObjectNameFromRecordIdPrefix(task.TECH_External_Who_Id__c);
-
-                // Récupération de l'ID de l'objet
-                String query = 'SELECT ID FROM ' + objName + ' WHERE TECH_External_Id__c = \''
-                        + task.TECH_External_Who_Id__c + '\'';
-
-                System.debug('-- Query : ' + query);
-
-                sObject obj = Database.query(query);
-
-                // Attribution de l'ID récupéré au champ WhoId
-                task.WhoId = obj.Id;
-                System.debug('-- TaskTriggerHandler : task.WhoId : ' + task.WhoId);
-            }
-
-            if ( task.TECH_External_What_Id__c != null && task.TECH_External_Who_Id__c == null ) {
                 /*
-                 Retour à une valeur WhoId null dans le cas où à l'insertion on est rentré dans le TaskTrigger en beforeInsert,
-                 c'est-à-dire qu'on a attribué une valeur de contact juste pour permettre l'insertion
-                  */
-                task.WhoId = null;
-                System.debug('>> TaskTriggerHandler  : task.whoId passé à null ? : ' + task.WhoId);
+                Utilisation du préfixe de WhoId pour récupérer le nom de l'objet correspondant
+                 */
+                String whoIdPrefix = task.TECH_External_Who_Id__c.substring(0, 3);
+                if(!prefixObjects.containsKey(whoIdPrefix)) {
+                    prefixObjects.put(whoIdPrefix, Utils.findObjectNameFromRecordIdPrefix(whoIdPrefix));
+
+                    /* Si whoIdPrefix existe, récupération de la liste associée + ajout item, sinon création entrée avec nouveau
+                    préfixe
+                     */
+                    whoAndWhatTechIdsMap.put(whoIdPrefix, new List<Id>{task.TECH_External_Who_Id__c});
+                } else {
+                    whoAndWhatTechIdsMap.get(whoIdPrefix).add(task.TECH_External_Who_Id__c);
+                }
             }
 
             if (task.TECH_External_What_Id__c != null) {
+                if ( task.TECH_External_Who_Id__c == null ) {
+                    /*
+                 Retour à une valeur WhoId null dans le cas où à l'insertion on est rentré dans le TaskTrigger en beforeInsert,
+                 c'est-à-dire qu'on a attribué une valeur de contact juste pour permettre l'insertion
+                  */
+                    task.WhoId = null;
+                }
+
                 System.debug('-- TaskTriggerHandler : task.TECH_External_What_Id__c : ' + task.TECH_External_What_Id__c);
 
-                // Récupération du nom de l'objet en fonction du préfixe du TECH_External_What_Id__c
-                String objName = Utils.findObjectNameFromRecordIdPrefix(task.TECH_External_What_Id__c);
+                /*
+                Utilisation du préfixe de WhatId pour récupérer le nom de l'objet correspondant
+                 */
+                String whatIdPrefix = task.TECH_External_What_Id__c.substring(0, 3);
 
-                // Récupération de l'ID de l'objet
-                String query = 'SELECT ID FROM ' + objName + ' WHERE TECH_External_Id__c = \''
-                        + task.TECH_External_What_Id__c + '\'';
+                if(!prefixObjects.containsKey(whatIdPrefix)) {
+                    prefixObjects.put(whatIdPrefix, Utils.findObjectNameFromRecordIdPrefix(whatIdPrefix));
+                  /* Si whatIdPrefix existe, récupération de la liste associée + ajout item, sinon création entrée avec nouveau
+                    préfixe
+                     */
+                    whoAndWhatTechIdsMap.put(whatIdPrefix, new List<Id>{task.TECH_External_What_Id__c});
+                } else {
+                    whoAndWhatTechIdsMap.get(whatIdPrefix).add(task.TECH_External_What_Id__c);
+                }
+            }
+            tasksToUpdate.add(task);
+        }
 
-                System.debug('-- Query : ' + query);
+        Map<String, Id> recordsRelatedToTasks = new Map<String, Id>();
 
-                sObject obj = Database.query(query);
+        for (String prefix : prefixObjects.keySet()) {
+            // Récupération nom de l'objet
+            String objectName = prefixObjects.get(prefix);
 
-                // Attribution de l'ID récupéré au champ WhoId
-                task.WhatId = obj.Id;
+            Set<Id> whoAndWhatIds = new Set<Id>(whoAndWhatTechIdsMap.get(prefix));
 
-                System.debug('-- TaskTriggerHandler AfterInsert : task.WhatId similaire au TECH_External_What_Id__c ? : ' + task.WhatId);
+            // Requête avec la liste d'ID de la map whoAndWhatTechIdsMap sur le nom de l'objet
+            String query = 'SELECT Id, TECH_External_Id__c FROM ' + objectName + ' WHERE TECH_External_Id__c IN ' +
+                    DataExtractUtils.convertSetToString(whoAndWhatIds);
+            List<sObject> sObjects = Database.query(query);
+
+            // Remplissage d'une map
+            for (sObject record : sObjects) {
+                recordsRelatedToTasks.put((String)record.get('TECH_External_Id__c'), record.Id);
             }
         }
-        return tasks;
+
+        for (Task task : tasksToUpdate) {
+            if (task.TECH_External_Who_Id__c != null) {
+                task.whoId = recordsRelatedToTasks.get(task.TECH_External_Who_Id__c);
+            }
+
+            if (task.TECH_External_What_Id__c != null) {
+                task.whatId = recordsRelatedToTasks.get(task.TECH_External_What_Id__c);
+            }
+        }
+
+        return tasksToUpdate;
     }
 
 }
