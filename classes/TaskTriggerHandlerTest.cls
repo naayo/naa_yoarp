@@ -50,4 +50,33 @@ private class TaskTriggerHandlerTest {
             System.assertEquals(task.TECH_External_What_Id__c, task.WhatId);
         }
     }
+
+    /**
+    Test négatif : on ne rentre pas dans le trigger quand on n'est pas en situation de transfert de données, mais par
+    exemple dans le cas de l'insertion d'une nouvelle tâche
+     */
+    static testMethod void testWhenTechBooleanIsFalse() {
+
+        Contact ctc = [SELECT Id, LastName FROM Contact WHERE LastName = 'Owner'];
+
+        Opportunity opportunity = [SELECT Id FROM Opportunity];
+
+        List<Task> tasks = new List<Task>();
+        for (Integer i = 0 ; i < 3 ; i++) {
+            tasks.add(new Task(whatId = opportunity.Id,
+                    whoId = ctc.Id,
+                    TECH_Is_Record_Transferring__c = false));
+        }
+
+        Test.startTest();
+        insert tasks;
+        Test.stopTest();
+
+        tasks = [SELECT Id, WhoId, WhatId, TECH_External_Who_Id__c, TECH_External_What_Id__c FROM Task];
+        for (Task task : tasks) {
+            // Vérification que les champs WhoId et WhatId ont été remplis à partir des champs TECH
+            System.assertNotEquals(task.TECH_External_Who_Id__c, task.WhoId);
+            System.assertNotEquals(task.TECH_External_What_Id__c, task.WhatId);
+        }
+    }
 }

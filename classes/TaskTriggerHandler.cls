@@ -108,7 +108,7 @@ public class TaskTriggerHandler extends TriggerHandler {
         // Map qui va stocker les préfixes d'ID et le nom de l'objet correspondant
         Map<String, String> prefixObjects = new Map<String, String>();
 
-        List<Id> whoAndWhatTechIdsList = new List<Id>();
+        // Map qui va stocker les préfixes d'ID et la liste des TECH_External_Who_Id__c et TECH_External_What_Id__c
         Map<String, List<Id>> whoAndWhatTechIdsMap = new Map<String, List<Id>>();
 
         List<Task> tasksToUpdate = new List<Task>();
@@ -166,6 +166,9 @@ public class TaskTriggerHandler extends TriggerHandler {
             tasksToUpdate.add(task);
         }
 
+        /* Map qui va stocker les TECH_External_Id__c, TECH_External_Who_Id__c, TECH_External_What_Id__c
+        et les ID correspondants
+        */
         Map<String, Id> recordsRelatedToTasks = new Map<String, Id>();
 
         for (String prefix : prefixObjects.keySet()) {
@@ -197,5 +200,4 @@ public class TaskTriggerHandler extends TriggerHandler {
 
         return tasksToUpdate;
     }
-
 }

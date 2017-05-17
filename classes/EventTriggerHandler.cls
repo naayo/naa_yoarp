@@ -109,7 +109,7 @@ public class EventTriggerHandler extends TriggerHandler {
         // Map qui va stocker les préfixes d'ID et le nom de l'objet correspondant
         Map<String, String> prefixObjects = new Map<String, String>();
 
-        List<Id> whoAndWhatTechIdsList = new List<Id>();
+        // Map qui va stocker les préfixes d'ID et la liste des TECH_External_Who_Id__c et TECH_External_What_Id__c
         Map<String, List<Id>> whoAndWhatTechIdsMap = new Map<String, List<Id>>();
 
         List<Event> eventsToUpdate = new List<Event>();
@@ -168,6 +168,9 @@ public class EventTriggerHandler extends TriggerHandler {
             eventsToUpdate.add(event);
         }
 
+        /* Map qui va stocker les TECH_External_Id__c, TECH_External_Who_Id__c, TECH_External_What_Id__c
+        et les ID correspondants
+        */
         Map<String, Id> recordsRelatedToEvents = new Map<String, Id>();
 
         for (String prefix : prefixObjects.keySet()) {
