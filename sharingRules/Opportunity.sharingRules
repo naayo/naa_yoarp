@@ -217,7 +217,7 @@
         <criteriaItems>
             <field>Code_Produit__c</field>
             <operation>equals</operation>
-            <value>EMM,GEP,IDEA,ENSC,APA1,SAI,IHM,MMML,PREPA,SIM,SP3,BBA,BBA2,BBA3,MFDM,MF,MJ,MT,MMS,ME,MCO,MA,MAI,MSDAI,MK</value>
+            <value>EMM,GEP,IDEA,ENSC,APA1,SAI,IHM,MMML,PREPA,SIM,SP3,BBA,BBA2,BBA3,MFDM,MF,MJ,MT,MMS,ME,MCO,MA,MAI,MSDAI,MK,IMBA,EMBA,PGM,DUA,AMP,EMSO1,EMS02,GDBA</value>
         </criteriaItems>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
@@ -318,6 +318,18 @@
         </sharedTo>
         <sharedFrom>
             <role>EML_EXEC_Masters</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>L_E_Formation_Courte</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Partage en L/E transversal au sein du pôle Formation courte</description>
+        <label>L/E Formation Courte</label>
+        <sharedTo>
+            <role>EML_Programmes_Courts</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>EML_Programmes_Courts</role>
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
