@@ -2306,7 +2306,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Contact.Identifiant_dipl_m__c</field>
         <readable>true</readable>
     </fieldPermissions>
