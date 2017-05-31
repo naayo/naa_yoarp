@@ -417,6 +417,10 @@
             <translation><!-- Membres CA ADEM LYON --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Mentorat Incubateur</masterLabel>
+            <translation><!-- Mentorat Incubateur --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Newsletter Recherche</masterLabel>
             <translation><!-- Newsletter Recherche --></translation>
         </picklistValues>
@@ -451,6 +455,10 @@
         <picklistValues>
             <masterLabel>Prescripteur Grande Ecole</masterLabel>
             <translation><!-- Prescripteur Grande Ecole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescripteur Potentiel</masterLabel>
+            <translation><!-- Prescripteur Potentiel --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Recrutement Etudiant</masterLabel>
@@ -532,6 +540,10 @@
     <fields>
         <label><!-- Reprise Lot 2015 --></label>
         <name>Reprise_Lot_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rôle de prescripteur potentiel --></label>
+        <name>Role_de_prescripteur_potentiel__c</name>
     </fields>
     <fields>
         <label><!-- x18caracteres --></label>
