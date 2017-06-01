@@ -287,32 +287,26 @@
                 <value>
                     <fullName>CPT-AVA10</fullName>
                     <default>false</default>
-                    <label>CPT-AVA10</label>
                 </value>
                 <value>
                     <fullName>CPT-AVA20</fullName>
                     <default>false</default>
-                    <label>CPT-AVA20</label>
                 </value>
                 <value>
                     <fullName>CPT-AVA30</fullName>
                     <default>false</default>
-                    <label>CPT-AVA30</label>
                 </value>
                 <value>
                     <fullName>CPT-AVA40</fullName>
                     <default>false</default>
-                    <label>CPT-AVA40</label>
                 </value>
                 <value>
                     <fullName>CPT-AVA50</fullName>
                     <default>false</default>
-                    <label>CPT-AVA50</label>
                 </value>
                 <value>
                     <fullName>CPT-AVA60</fullName>
                     <default>false</default>
-                    <label>CPT-AVA60</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -498,102 +492,82 @@
                 <value>
                     <fullName>11</fullName>
                     <default>false</default>
-                    <label>11</label>
                 </value>
                 <value>
                     <fullName>21</fullName>
                     <default>false</default>
-                    <label>21</label>
                 </value>
                 <value>
                     <fullName>22</fullName>
                     <default>false</default>
-                    <label>22</label>
                 </value>
                 <value>
                     <fullName>23</fullName>
                     <default>false</default>
-                    <label>23</label>
                 </value>
                 <value>
                     <fullName>31-33</fullName>
                     <default>false</default>
-                    <label>31-33</label>
                 </value>
                 <value>
                     <fullName>42</fullName>
                     <default>false</default>
-                    <label>42</label>
                 </value>
                 <value>
                     <fullName>44-45</fullName>
                     <default>false</default>
-                    <label>44-45</label>
                 </value>
                 <value>
                     <fullName>48-49</fullName>
                     <default>false</default>
-                    <label>48-49</label>
                 </value>
                 <value>
                     <fullName>51</fullName>
                     <default>false</default>
-                    <label>51</label>
                 </value>
                 <value>
                     <fullName>52</fullName>
                     <default>false</default>
-                    <label>52</label>
                 </value>
                 <value>
                     <fullName>53</fullName>
                     <default>false</default>
-                    <label>53</label>
                 </value>
                 <value>
                     <fullName>54</fullName>
                     <default>false</default>
-                    <label>54</label>
                 </value>
                 <value>
                     <fullName>55</fullName>
                     <default>false</default>
-                    <label>55</label>
                 </value>
                 <value>
                     <fullName>56</fullName>
                     <default>false</default>
-                    <label>56</label>
                 </value>
                 <value>
                     <fullName>61</fullName>
                     <default>false</default>
-                    <label>61</label>
                 </value>
                 <value>
                     <fullName>62</fullName>
                     <default>false</default>
-                    <label>62</label>
                 </value>
                 <value>
                     <fullName>71</fullName>
                     <default>false</default>
-                    <label>71</label>
                 </value>
                 <value>
                     <fullName>72</fullName>
                     <default>false</default>
-                    <label>72</label>
                 </value>
                 <value>
                     <fullName>81</fullName>
                     <default>false</default>
-                    <label>81</label>
                 </value>
                 <value>
                     <fullName>92</fullName>
                     <default>false</default>
-                    <label>92</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -957,22 +931,18 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
                 <value>
                     <fullName>Non Skyline</fullName>
                     <default>false</default>
-                    <label>Non Skyline</label>
                 </value>
                 <value>
                     <fullName>Oxygène</fullName>
                     <default>false</default>
-                    <label>Oxygène</label>
                 </value>
                 <value>
                     <fullName>Crayon</fullName>
                     <default>false</default>
-                    <label>Crayon</label>
                 </value>
                 <value>
                     <fullName>Incity</fullName>
                     <default>false</default>
-                    <label>Incity</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1042,22 +1012,18 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
                 <value>
                     <fullName>manuel</fullName>
                     <default>false</default>
-                    <label>manuel</label>
                 </value>
                 <value>
                     <fullName>mutliposting</fullName>
                     <default>false</default>
-                    <label>mutliposting</label>
                 </value>
                 <value>
                     <fullName>iQuesta</fullName>
                     <default>false</default>
-                    <label>iQuesta</label>
                 </value>
                 <value>
                     <fullName>autre agrégateur</fullName>
                     <default>false</default>
-                    <label>autre agrégateur</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1102,27 +1068,22 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
                 <value>
                     <fullName>Privée</fullName>
                     <default>true</default>
-                    <label>Privée</label>
                 </value>
                 <value>
                     <fullName>Fondation d’entreprise</fullName>
                     <default>false</default>
-                    <label>Fondation d’entreprise</label>
                 </value>
                 <value>
                     <fullName>Association</fullName>
                     <default>false</default>
-                    <label>Association</label>
                 </value>
                 <value>
                     <fullName>Publique</fullName>
                     <default>false</default>
-                    <label>Publique</label>
                 </value>
                 <value>
                     <fullName>Entreprise Familiale</fullName>
                     <default>false</default>
-                    <label>Entreprise Familiale</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1255,67 +1216,54 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
                 <value>
                     <fullName>Finance Careers Day</fullName>
                     <default>false</default>
-                    <label>Finance Careers Day</label>
                 </value>
                 <value>
                     <fullName>Luxury Careers Week</fullName>
                     <default>false</default>
-                    <label>Luxury Careers Week</label>
                 </value>
                 <value>
                     <fullName>Careers Forum</fullName>
                     <default>false</default>
-                    <label>Careers Forum</label>
                 </value>
                 <value>
                     <fullName>Online Careers Days</fullName>
                     <default>false</default>
-                    <label>Online Careers Days</label>
                 </value>
                 <value>
                     <fullName>Corporate Discovery Session</fullName>
                     <default>false</default>
-                    <label>Corporate Discovery Session</label>
                 </value>
                 <value>
                     <fullName>MBA Lounge</fullName>
                     <default>false</default>
-                    <label>MBA Lounge</label>
                 </value>
                 <value>
                     <fullName>Entrepreneurial Leadership Project</fullName>
                     <default>false</default>
-                    <label>Entrepreneurial Leadership Project</label>
                 </value>
                 <value>
                     <fullName>Grand Idea</fullName>
                     <default>false</default>
-                    <label>Grand Idea</label>
                 </value>
                 <value>
                     <fullName>In Company Project</fullName>
                     <default>false</default>
-                    <label>In Company Project</label>
                 </value>
                 <value>
                     <fullName>European Human Resources Management</fullName>
                     <default>false</default>
-                    <label>European Human Resources Management</label>
                 </value>
                 <value>
                     <fullName>Expert Panel</fullName>
                     <default>false</default>
-                    <label>Expert Panel</label>
                 </value>
                 <value>
                     <fullName>Conférence Carrière Etudiants</fullName>
                     <default>false</default>
-                    <label>Conférence Carrière Etudiants</label>
                 </value>
                 <value>
                     <fullName>Mock interview</fullName>
                     <default>false</default>
-                    <label>Mock interview</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1436,6 +1384,17 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Portefeuille_Employabilit_Th_orique__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(CodeAPE__r.Portefeuille_Employabilit_Th_orique__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Portefeuille Employabilité Théorique</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Programme_de_reconnaissance__c</fullName>
         <externalId>false</externalId>
         <label>Programme de reconnaissance</label>
@@ -1449,82 +1408,66 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
                 <value>
                     <fullName>B2B_Mont Blanc</fullName>
                     <default>false</default>
-                    <label>B2B_Mont Blanc</label>
                 </value>
                 <value>
                     <fullName>B2C_Mont Blanc</fullName>
                     <default>false</default>
-                    <label>B2C_Mont Blanc</label>
                 </value>
                 <value>
                     <fullName>B2B_Kilimandjaro</fullName>
                     <default>false</default>
-                    <label>B2B_Kilimandjaro</label>
                 </value>
                 <value>
                     <fullName>B2C_Kilimandjaro</fullName>
                     <default>false</default>
-                    <label>B2C_Kilimandjaro</label>
                 </value>
                 <value>
                     <fullName>B2B_McKinley</fullName>
                     <default>false</default>
-                    <label>B2B_McKinley</label>
                 </value>
                 <value>
                     <fullName>B2C_McKinley</fullName>
                     <default>false</default>
-                    <label>B2C_McKinley</label>
                 </value>
                 <value>
                     <fullName>B2B_Annapura</fullName>
                     <default>false</default>
-                    <label>B2B_Annapura</label>
                 </value>
                 <value>
                     <fullName>B2C_Annapura</fullName>
                     <default>false</default>
-                    <label>B2C_Annapura</label>
                 </value>
                 <value>
                     <fullName>B2B_K2</fullName>
                     <default>false</default>
-                    <label>B2B_K2</label>
                 </value>
                 <value>
                     <fullName>B2C_K2</fullName>
                     <default>false</default>
-                    <label>B2C_K2</label>
                 </value>
                 <value>
                     <fullName>B2B_Everest</fullName>
                     <default>false</default>
-                    <label>B2B_Everest</label>
                 </value>
                 <value>
                     <fullName>B2C_Everest</fullName>
                     <default>false</default>
-                    <label>B2C_Everest</label>
                 </value>
                 <value>
                     <fullName>B2B_Cercle du Président</fullName>
                     <default>false</default>
-                    <label>B2B_Cercle du Président</label>
                 </value>
                 <value>
                     <fullName>B2C_Cercle du Président</fullName>
                     <default>false</default>
-                    <label>B2C_Cercle du Président</label>
                 </value>
                 <value>
                     <fullName>B2C_Contrepartie sur-mesure</fullName>
                     <default>false</default>
-                    <label>B2C_Contrepartie sur-mesure</label>
                 </value>
                 <value>
                     <fullName>B2B_Contrepartie sur-mesure</fullName>
                     <default>false</default>
-                    <label>B2B_Contrepartie sur-mesure</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1669,27 +1612,22 @@ IF( ISBLANK( Parent.Parent.Parent.Name),Parent.Parent.Id,Parent.Parent.Parent.Id
                 <value>
                     <fullName>CPT-SCO10</fullName>
                     <default>false</default>
-                    <label>CPT-SCO10</label>
                 </value>
                 <value>
                     <fullName>CPT-SCO20</fullName>
                     <default>false</default>
-                    <label>CPT-SCO20</label>
                 </value>
                 <value>
                     <fullName>CPT-SCO30</fullName>
                     <default>false</default>
-                    <label>CPT-SCO30</label>
                 </value>
                 <value>
                     <fullName>CPT-SCO40</fullName>
                     <default>false</default>
-                    <label>CPT-SCO40</label>
                 </value>
                 <value>
                     <fullName>CPT-SCO50</fullName>
                     <default>false</default>
-                    <label>CPT-SCO50</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1830,7 +1768,7 @@ en production</description>
         <summaryFilterItems>
             <field>Opportunity.Exercice_de_collecte__c</field>
             <operation>equals</operation>
-            <value>2016</value>
+            <value>2017</value>
         </summaryFilterItems>
         <summaryFilterItems>
             <field>Opportunity.StageName</field>
@@ -1856,47 +1794,38 @@ en production</description>
                 <value>
                     <fullName>De 0 à 9</fullName>
                     <default>false</default>
-                    <label>De 0 à 9</label>
                 </value>
                 <value>
                     <fullName>De 10 à 49</fullName>
                     <default>false</default>
-                    <label>De 10 à 49</label>
                 </value>
                 <value>
                     <fullName>De 50 à 249</fullName>
                     <default>false</default>
-                    <label>De 50 à 249</label>
                 </value>
                 <value>
                     <fullName>De 250 à 499</fullName>
                     <default>false</default>
-                    <label>De 250 à 499</label>
                 </value>
                 <value>
                     <fullName>De 500 à 999</fullName>
                     <default>false</default>
-                    <label>De 500 à 999</label>
                 </value>
                 <value>
                     <fullName>De 1000 à 1999</fullName>
                     <default>false</default>
-                    <label>De 1000 à 1999</label>
                 </value>
                 <value>
                     <fullName>De 2000 à 4999</fullName>
                     <default>false</default>
-                    <label>De 2000 à 4999</label>
                 </value>
                 <value>
                     <fullName>De 5000 à 9999</fullName>
                     <default>false</default>
-                    <label>De 5000 à 9999</label>
                 </value>
                 <value>
                     <fullName>10 000 et plus</fullName>
                     <default>false</default>
-                    <label>10 000 et plus</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1915,52 +1844,42 @@ en production</description>
                 <value>
                     <fullName>Moins de 0,5 million d&apos;euros</fullName>
                     <default>false</default>
-                    <label>Moins de 0,5 million d&apos;euros</label>
                 </value>
                 <value>
                     <fullName>De 0,5 a moins de 1 M€</fullName>
                     <default>false</default>
-                    <label>De 0,5 a moins de 1 M€</label>
                 </value>
                 <value>
                     <fullName>De 1 M€ a moins de 2 M€</fullName>
                     <default>false</default>
-                    <label>De 1 M€ a moins de 2 M€</label>
                 </value>
                 <value>
                     <fullName>De 2 M€ a moins de 5 M€</fullName>
                     <default>false</default>
-                    <label>De 2 M€ a moins de 5 M€</label>
                 </value>
                 <value>
                     <fullName>De 5 M€ a moins de 10 M€</fullName>
                     <default>false</default>
-                    <label>De 5 M€ a moins de 10 M€</label>
                 </value>
                 <value>
                     <fullName>De 10 M€ a moins de 20 M€</fullName>
                     <default>false</default>
-                    <label>De 10 M€ a moins de 20 M€</label>
                 </value>
                 <value>
                     <fullName>De 20 M€ a moins de 50 M€</fullName>
                     <default>false</default>
-                    <label>De 20 M€ a moins de 50 M€</label>
                 </value>
                 <value>
                     <fullName>De 50 M€ a moins de 100 M€</fullName>
                     <default>false</default>
-                    <label>De 50 M€ a moins de 100 M€</label>
                 </value>
                 <value>
                     <fullName>De 100 M€ a moins de 200 M€</fullName>
                     <default>false</default>
-                    <label>De 100 M€ a moins de 200 M€</label>
                 </value>
                 <value>
                     <fullName>200 M€ ou plus</fullName>
                     <default>false</default>
-                    <label>200 M€ ou plus</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1979,52 +1898,42 @@ en production</description>
                 <value>
                     <fullName>Moins de 0,5 million d&apos;euros</fullName>
                     <default>false</default>
-                    <label>Moins de 0,5 million d&apos;euros</label>
                 </value>
                 <value>
                     <fullName>De 0,5 a moins de 1 M€</fullName>
                     <default>false</default>
-                    <label>De 0,5 a moins de 1 M€</label>
                 </value>
                 <value>
                     <fullName>De 1 M€ a moins de 2 M€</fullName>
                     <default>false</default>
-                    <label>De 1 M€ a moins de 2 M€</label>
                 </value>
                 <value>
                     <fullName>De 2 M€ a moins de 5 M€</fullName>
                     <default>false</default>
-                    <label>De 2 M€ a moins de 5 M€</label>
                 </value>
                 <value>
                     <fullName>De 5 M€ a moins de 10 M€</fullName>
                     <default>false</default>
-                    <label>De 5 M€ a moins de 10 M€</label>
                 </value>
                 <value>
                     <fullName>De 10 M€ a moins de 20 M€</fullName>
                     <default>false</default>
-                    <label>De 10 M€ a moins de 20 M€</label>
                 </value>
                 <value>
                     <fullName>De 20 M€ a moins de 50 M€</fullName>
                     <default>false</default>
-                    <label>De 20 M€ a moins de 50 M€</label>
                 </value>
                 <value>
                     <fullName>De 50 M€ a moins de 100 M€</fullName>
                     <default>false</default>
-                    <label>De 50 M€ a moins de 100 M€</label>
                 </value>
                 <value>
                     <fullName>De 100 M€ a moins de 200 M€</fullName>
                     <default>false</default>
-                    <label>De 100 M€ a moins de 200 M€</label>
                 </value>
                 <value>
                     <fullName>200 M€ ou plus</fullName>
                     <default>false</default>
-                    <label>200 M€ ou plus</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -2043,47 +1952,38 @@ en production</description>
                 <value>
                     <fullName>De 0 à 9</fullName>
                     <default>false</default>
-                    <label>De 0 à 9</label>
                 </value>
                 <value>
                     <fullName>De 10 à 49</fullName>
                     <default>false</default>
-                    <label>De 10 à 49</label>
                 </value>
                 <value>
                     <fullName>De 50 à 249</fullName>
                     <default>false</default>
-                    <label>De 50 à 249</label>
                 </value>
                 <value>
                     <fullName>De 250 à 499</fullName>
                     <default>false</default>
-                    <label>De 250 à 499</label>
                 </value>
                 <value>
                     <fullName>De 500 à 999</fullName>
                     <default>false</default>
-                    <label>De 500 à 999</label>
                 </value>
                 <value>
                     <fullName>De 1000 à 1999</fullName>
                     <default>false</default>
-                    <label>De 1000 à 1999</label>
                 </value>
                 <value>
                     <fullName>De 2000 à 4999</fullName>
                     <default>false</default>
-                    <label>De 2000 à 4999</label>
                 </value>
                 <value>
                     <fullName>De 5000 à 9999</fullName>
                     <default>false</default>
-                    <label>De 5000 à 9999</label>
                 </value>
                 <value>
                     <fullName>10 000 et plus</fullName>
                     <default>false</default>
-                    <label>10 000 et plus</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -2102,37 +2002,30 @@ en production</description>
                 <value>
                     <fullName>A</fullName>
                     <default>false</default>
-                    <label>A</label>
                 </value>
                 <value>
                     <fullName>B</fullName>
                     <default>false</default>
-                    <label>B</label>
                 </value>
                 <value>
                     <fullName>C</fullName>
                     <default>false</default>
-                    <label>C</label>
                 </value>
                 <value>
                     <fullName>D</fullName>
                     <default>false</default>
-                    <label>D</label>
                 </value>
                 <value>
                     <fullName>E</fullName>
                     <default>false</default>
-                    <label>E</label>
                 </value>
                 <value>
                     <fullName>F</fullName>
                     <default>false</default>
-                    <label>F</label>
                 </value>
                 <value>
                     <fullName>H</fullName>
                     <default>false</default>
-                    <label>H</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -2157,37 +2050,30 @@ en production</description>
                 <value>
                     <fullName>Direction Régionale</fullName>
                     <default>false</default>
-                    <label>Direction Régionale</label>
                 </value>
                 <value>
                     <fullName>Etablissement Secondaire</fullName>
                     <default>false</default>
-                    <label>Etablissement Secondaire</label>
                 </value>
                 <value>
                     <fullName>Holding-Maison Mère Groupe</fullName>
                     <default>false</default>
-                    <label>Holding-Maison Mère Groupe</label>
                 </value>
                 <value>
                     <fullName>Siège</fullName>
                     <default>false</default>
-                    <label>Siège</label>
                 </value>
                 <value>
                     <fullName>Siège Europe</fullName>
                     <default>false</default>
-                    <label>Siège Europe</label>
                 </value>
                 <value>
                     <fullName>Siège France</fullName>
                     <default>false</default>
-                    <label>Siège France</label>
                 </value>
                 <value>
                     <fullName>Siège Monde</fullName>
                     <default>false</default>
-                    <label>Siège Monde</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -2234,7 +2120,7 @@ en production</description>
         <summaryFilterItems>
             <field>Opportunity.Exercice_de_collecte__c</field>
             <operation>equals</operation>
-            <value>2015</value>
+            <value>2016</value>
         </summaryFilterItems>
         <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
         <summaryOperation>sum</summaryOperation>
@@ -2272,7 +2158,7 @@ en production</description>
         <summaryFilterItems>
             <field>Opportunity.Exercice_de_collecte__c</field>
             <operation>equals</operation>
-            <value>2014</value>
+            <value>2015</value>
         </summaryFilterItems>
         <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
         <summaryOperation>sum</summaryOperation>
@@ -2347,27 +2233,22 @@ en production</description>
                 <value>
                     <fullName>Associations</fullName>
                     <default>false</default>
-                    <label>Associations</label>
                 </value>
                 <value>
                     <fullName>Coaching</fullName>
                     <default>false</default>
-                    <label>Coaching</label>
                 </value>
                 <value>
                     <fullName>Outplacement</fullName>
                     <default>false</default>
-                    <label>Outplacement</label>
                 </value>
                 <value>
                     <fullName>Recrutement</fullName>
                     <default>false</default>
-                    <label>Recrutement</label>
                 </value>
                 <value>
                     <fullName>RH</fullName>
                     <default>false</default>
-                    <label>RH</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -3427,14 +3308,14 @@ $User.LastName&lt;&gt; &apos;Interface&apos;
     </validationRules>
     <validationRules>
         <fullName>RG_Compte10_ville_courante_sans_chiffres</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND (!$User.ByPass_RV__c, 
 OR( ISNUMBER(Adresse_Ville__c), OR(CONTAINS(Adresse_Ville__c, &quot;0&quot;),CONTAINS(Adresse_Ville__c, &quot;1&quot;),CONTAINS(Adresse_Ville__c, &quot;2&quot;),CONTAINS(Adresse_Ville__c, &quot;3&quot;),CONTAINS(Adresse_Ville__c, &quot;4&quot;),CONTAINS(Adresse_Ville__c, &quot;5&quot;),CONTAINS(Adresse_Ville__c, &quot;6&quot;),CONTAINS(Adresse_Ville__c, &quot;7&quot;),CONTAINS(Adresse_Ville__c, &quot;8&quot;),CONTAINS(Adresse_Ville__c, &quot;9&quot;))))</errorConditionFormula>
         <errorMessage>Le champ adresse courante: Ville ne doit pas contenir de chiffres !</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>RG_Compte11_ad_factu_ville_sans_chiffres</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Empêcher la saisie de chiffre dans le champ adresse facturation: ville</description>
         <errorConditionFormula>AND (!$User.ByPass_RV__c, 
 OR( ISNUMBER(Adresse_facturation_ville__c), OR(CONTAINS(Adresse_facturation_ville__c, &quot;0&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;1&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;2&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;3&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;4&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;5&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;6&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;7&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;8&quot;),CONTAINS(Adresse_facturation_ville__c, &quot;9&quot;))))</errorConditionFormula>
