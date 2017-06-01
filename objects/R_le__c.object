@@ -532,6 +532,10 @@
                     <default>false</default>
                 </value>
                 <value>
+                    <fullName>Prescripteur Potentiel</fullName>
+                    <default>false</default>
+                </value>
+                <value>
                     <fullName>Recrutement Etudiant</fullName>
                     <default>false</default>
                 </value>
