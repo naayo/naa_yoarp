@@ -496,6 +496,10 @@
                     <default>false</default>
                 </value>
                 <value>
+                    <fullName>Mentorat Incubateur</fullName>
+                    <default>false</default>
+                </value>
+                <value>
                     <fullName>Newsletter Recherche</fullName>
                     <default>false</default>
                 </value>
@@ -1057,6 +1061,10 @@
             <valueSettings>
                 <controllingFieldValue>EML-EXEC</controllingFieldValue>
                 <valueName>Prescripteur</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EML-EXEC</controllingFieldValue>
+                <valueName>Prescripteur Potentiel</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Enseignement</controllingFieldValue>
