@@ -496,10 +496,6 @@
                     <default>false</default>
                 </value>
                 <value>
-                    <fullName>Mentorat Incubateur</fullName>
-                    <default>false</default>
-                </value>
-                <value>
                     <fullName>Newsletter Recherche</fullName>
                     <default>false</default>
                 </value>
@@ -533,10 +529,6 @@
                 </value>
                 <value>
                     <fullName>Prescripteur Grande Ecole</fullName>
-                    <default>false</default>
-                </value>
-                <value>
-                    <fullName>Prescripteur Potentiel</fullName>
                     <default>false</default>
                 </value>
                 <value>
@@ -1044,10 +1036,6 @@
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Entrepreneuriat</controllingFieldValue>
-                <valueName>Mentorat Incubateur</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Entrepreneuriat</controllingFieldValue>
                 <valueName>Partenaires de l&apos;Incubateur</valueName>
             </valueSettings>
             <valueSettings>
@@ -1065,10 +1053,6 @@
             <valueSettings>
                 <controllingFieldValue>EML-EXEC</controllingFieldValue>
                 <valueName>Prescripteur</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>EML-EXEC</controllingFieldValue>
-                <valueName>Prescripteur Potentiel</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Enseignement</controllingFieldValue>

@@ -20,10 +20,6 @@
             <translation>2010-2011</translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>ECH-EX100</masterLabel>
-            <translation>2019-2020</translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>ECH-EX20</masterLabel>
             <translation>2011-2012</translation>
         </picklistValues>
@@ -54,6 +50,30 @@
         <picklistValues>
             <masterLabel>ECH-EX90</masterLabel>
             <translation>2018-2019</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX100</masterLabel>
+            <translation>2019-2020</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX110</masterLabel>
+            <translation>2020-2021</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX120</masterLabel>
+            <translation>2021-2022</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX130</masterLabel>
+            <translation>2022-2023</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX140</masterLabel>
+            <translation>2023-2024</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX150</masterLabel>
+            <translation>2024-2025</translation>
         </picklistValues>
     </fields>
     <fields>
