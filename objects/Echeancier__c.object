@@ -109,6 +109,26 @@
                     <fullName>ECH-EX100</fullName>
                     <default>false</default>
                 </value>
+                <value>
+                    <fullName>ECH-EX110</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ECH-EX120</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ECH-EX130</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ECH-EX140</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ECH-EX150</fullName>
+                    <default>false</default>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>

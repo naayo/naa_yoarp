@@ -118,7 +118,8 @@ public class DataExtractUtils {
                 // Ajout de la valeur nulle si le champ est null
                 if ( sObj.get(fieldName) == null ) {
                     csv += '"",';
-                } else if ( type == Schema.DisplayType.STRING || type == Schema.DisplayType.TEXTAREA || type == Schema.DisplayType.PICKLIST ) {
+                } else if ( type == Schema.DisplayType.STRING || type == Schema.DisplayType.TEXTAREA || type == Schema.DisplayType.PICKLIST
+                        || type == Schema.DisplayType.MULTIPICKLIST || type == Schema.DisplayType.COMBOBOX ) {
                     // Remplacement des retours chariots pour une bonne génération du fichier CSV
                     String contentField = ((String) sObj.get(fieldName)).replaceAll('\r\n','\n');
 
@@ -166,10 +167,6 @@ public class DataExtractUtils {
     @ param objName: Nom de l'objet à traiter
     @ param nbForInsertOrder: Numérotation du fichier pour l'ordre à l'insertion des données
      */
-/*    private static void generateCsvFile(String csv, String objName, String nbForInsertOrder) {
-        generateCsvFile(csv, objName, new List<String>{nbForInsertOrder});
-    }*/
-
     @Future
     private static void generateCsvFile(String csv, String objName, List<String> nbForInsertOrder) {
         System.debug('--- METHOD DataExtractUtils / generateCsvFile(PARAMS) ---');
@@ -336,9 +333,7 @@ public class DataExtractUtils {
         System.debug('--- PARAM Set<Id> idsToExport : ' + idsToExport);
         System.debug('--- PARAM Set<String> fieldNamesNotToExportFirst : ' + fieldNamesNotToExportFirst);
         String whereCondition = ' WHERE ID IN ' + convertSetToString(idsToExport);
-        // Génération du premier fichier Csv
-        // DataExtractUtils.extractDataToCSV(firstFileNumber, objectName, null, fieldNamesNotToExportFirst, whereCondition, null);
-        // Génération du second fichier Csv
+
         List<String> nbForFiles = new List<String> {firstFileNumber, secondFileNumber};
         DataExtractUtils.extractDataToCSV(nbForFiles, objectName, null, null, whereCondition, null);
         System.debug('--- End DataExtractUtils / extractSpecificRecordsHandlingLookupsToCSV(PARAMS) ---');

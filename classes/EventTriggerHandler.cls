@@ -22,22 +22,20 @@ public class EventTriggerHandler extends TriggerHandler {
     protected override void beforeInsert() {
         System.debug('--- BEGIN EventTriggerHandler beforeInsert() ---');
 
+        /* Récupération d'un contact quelconque afin de permettre l'insertion des événements dans la sandbox
+        dans le cadre du transfert de données entre les environnements
+         */
+        Contact contact = [SELECT Id FROM Contact LIMIT 1];
+
         for (Event e : this.newList) {
 
             // Vérification qu'on est bien dans le cas d'une insertion de données de la production vers une sandbox
             if (e.TECH_Is_Record_Transferring__c) {
                 if (e.TECH_External_What_Id__c != null || e.TECH_External_Who_Id__c != null) {
-
                 /**
                 Attribution du premier contact trouvé aux événements pour pouvoir les insérer
                 car les champs polymorphiques WhatId et WhoId ne peuvent pas faire référence à des External Id
                  */
-
-                    // Récupération d'un contact quelconque afin de permettre l'insertion des événements dans la sandbox
-                    Contact contact = [SELECT Id FROM Contact LIMIT 1];
-
-                    System.debug('-- PARAM contact retrieved : ' + contact );
-
                     // Attribution de ce contact au champ WhoId des nouveaux événements
                     e.WhoId = contact.Id;
 
@@ -56,25 +54,19 @@ public class EventTriggerHandler extends TriggerHandler {
         List<Event> eventsJustInserted = this.newList;
         // eventsToUpdateAfterInsert est une variable qui pourra être réutilisée pour des update en after insert
         List<Event> eventsToUpdateAfterInsert = new List<Event>();
-        Set<Id> ids = new Set<Id>();
-
-        for (Event event : eventsJustInserted) {
-            System.debug('-- event after insert : ' + event);
-            ids.add(event.Id);
-        }
 
         /*
          Vérification si nous sommes en transfert de données entre sandbox, si oui on ajoute les tasks à la liste
          tasksToUpdateAfterInsert pour les mettre à jour
           */
-        List<Event> eventsInTransferBetweenSandboxs = completeWhoAndWhatIdFields(ids);
+        List<Event> eventsInTransferBetweenSandboxs = completeWhoAndWhatIdFields(eventsJustInserted);
         if (eventsInTransferBetweenSandboxs != null && !eventsInTransferBetweenSandboxs.isEmpty()) {
             eventsToUpdateAfterInsert.addAll(eventsInTransferBetweenSandboxs);
         }
 
         if (eventsToUpdateAfterInsert != null && !eventsToUpdateAfterInsert.isEmpty()) {
             try {
-                update eventsToUpdateAfterInsert;
+                Database.update(eventsToUpdateAfterInsert, false);
             } catch (Exception e) {
                 System.debug('Update impossible pour en after insert d\'Event' + e);
             }
@@ -91,71 +83,123 @@ public class EventTriggerHandler extends TriggerHandler {
     valeur à WhatId et/ou à WhoId. Sinon, on remet le champ à null (car précédemment nous avons inséré un
     contact au champ WhoId pour permettre l'insertion, mais il n'avait rien à voir avec les événements)
     */
-    private static List<Event> completeWhoAndWhatIdFields(Set<Id> ids) {
-        // Vérification qu'on est dans le cas d'un transfert de données avec le champ TECH_Is_Record_Transferring__c à true
-        String queryString = 'SELECT Id, WhoId, WhatId, TECH_External_Who_Id__c, TECH_External_What_Id__c FROM Event ' +
-                'WHERE TECH_Is_Record_Transferring__c = true AND ID IN '
-                + DataExtractUtils.convertSetToString(ids);
-        List<Event> events = Database.query(queryString);
+    private static List<Event> completeWhoAndWhatIdFields(List<Event> newEvents) {
 
-        if (events == null || events.isEmpty()){
+        Set<Id> ids = new Set<Id>();
+        for (Event e : newEvents) {
+            ids.add(e.Id);
+        }
+
+        List<Event> events = [SELECT Id, WhoId, WhatId, TECH_External_Who_Id__c, TECH_External_What_Id__c, TECH_Is_Record_Transferring__c
+                                    FROM Event
+                                    WHERE Id IN :ids];
+
+
+        // Vérification qu'on est dans le cas d'un transfert de données avec le champ TECH_Is_Record_Transferring__c à true
+        for (Integer i = 0; i < events.size() ; i++) {
+            if (!events.get(i).TECH_Is_Record_Transferring__c == true) {
+                events.remove(i);
+            }
+        }
+
+        if (events.isEmpty()){
             return null;
         }
+
+        // Map qui va stocker les préfixes d'ID et le nom de l'objet correspondant
+        Map<String, String> prefixObjects = new Map<String, String>();
+
+        // Map qui va stocker les préfixes d'ID et la liste des TECH_External_Who_Id__c et TECH_External_What_Id__c
+        Map<String, List<Id>> whoAndWhatTechIdsMap = new Map<String, List<Id>>();
+
+        List<Event> eventsToUpdate = new List<Event>();
 
         for (Event event : events) {
             /* On repasse le champ TECH_Is_Record_Transferring__c à false pour que les enregistrements ne repassent
              plus dans cette partie de code
               */
             event.TECH_Is_Record_Transferring__c = false;
+
             if (event.TECH_External_Who_Id__c != null) {
-                System.debug('-- event.TECH_External_Who_Id__c : ' + event.TECH_External_Who_Id__c);
+                System.debug('-- EventTriggerHandler : event.TECH_External_Who_Id__c : ' + event.TECH_External_Who_Id__c);
 
-                // Récupération du nom de l'objet en fonction du préfixe du TECH_External_Who_Id__c
-                String objName = Utils.findObjectNameFromRecordIdPrefix(event.TECH_External_Who_Id__c);
-
-                // Récupération de l'ID de l'objet
-                String query = 'SELECT ID FROM ' + objName + ' WHERE TECH_External_Id__c = \''
-                        + event.TECH_External_Who_Id__c + '\'';
-
-                System.debug('-- Query : ' + query);
-
-                sObject obj = Database.query(query);
-
-                // Attribution de l'ID récupéré au champ WhoId
-                event.WhoId = obj.Id;
-
-            }
-
-            if ( event.TECH_External_What_Id__c != null && event.TECH_External_Who_Id__c == null ) {
                 /*
-                 Retour à une valeur WhoId null dans le cas où à l'insertion on est rentré dans l'EventTrigger en beforeInsert,
-                 c'est-à-dire qu'on a attribué une valeur de contact juste pour permettre l'insertion
-                  */
-                event.WhoId = null;
-                System.debug('>> event.whoId passé à null ? : ' + event.WhoId);
+                Utilisation du préfixe de WhoId pour récupérer le nom de l'objet correspondant
+                 */
+                String whoIdPrefix = event.TECH_External_Who_Id__c.substring(0, 3);
+                if(!prefixObjects.containsKey(whoIdPrefix)) {
+                    prefixObjects.put(whoIdPrefix, Utils.findObjectNameFromRecordIdPrefix(whoIdPrefix));
 
+                    /* Si whoIdPrefix existe, récupération de la liste associée + ajout item, sinon création entrée avec nouveau
+                    préfixe
+                     */
+                    whoAndWhatTechIdsMap.put(whoIdPrefix, new List<Id>{event.TECH_External_Who_Id__c});
+                } else {
+                    whoAndWhatTechIdsMap.get(whoIdPrefix).add(event.TECH_External_Who_Id__c);
+                }
             }
 
             if (event.TECH_External_What_Id__c != null) {
-                System.debug('-- event.TECH_External_What_Id__c : ' + event.TECH_External_What_Id__c);
+                if ( event.TECH_External_Who_Id__c == null ) {
+                    /*
+                 Retour à une valeur WhoId null dans le cas où à l'insertion on est rentré dans le TaskTrigger en beforeInsert,
+                 c'est-à-dire qu'on a attribué une valeur de contact juste pour permettre l'insertion
+                  */
+                    event.WhoId = null;
+                }
 
-                // Récupération du nom de l'objet en fonction du préfixe du TECH_External_What_Id__c
-                String objName = Utils.findObjectNameFromRecordIdPrefix(event.TECH_External_What_Id__c);
+                System.debug('-- EventTriggerHandler : event.TECH_External_What_Id__c : ' + event.TECH_External_What_Id__c);
 
-                // Récupération de l'ID de l'objet
-                String query = 'SELECT ID FROM ' + objName + ' WHERE TECH_External_Id__c = \''
-                        + event.TECH_External_What_Id__c + '\'';
+                /*
+                Utilisation du préfixe de WhatId pour récupérer le nom de l'objet correspondant
+                 */
+                String whatIdPrefix = event.TECH_External_What_Id__c.substring(0, 3);
 
-                System.debug('-- Query : ' + query);
+                if(!prefixObjects.containsKey(whatIdPrefix)) {
+                    prefixObjects.put(whatIdPrefix, Utils.findObjectNameFromRecordIdPrefix(whatIdPrefix));
+                  /* Si whatIdPrefix existe, récupération de la liste associée + ajout item, sinon création entrée avec nouveau
+                    préfixe
+                     */
+                    whoAndWhatTechIdsMap.put(whatIdPrefix, new List<Id>{event.TECH_External_What_Id__c});
+                } else {
+                    whoAndWhatTechIdsMap.get(whatIdPrefix).add(event.TECH_External_What_Id__c);
+                }
+            }
+            eventsToUpdate.add(event);
+        }
 
-                sObject obj = Database.query(query);
+        /* Map qui va stocker les TECH_External_Id__c, TECH_External_Who_Id__c, TECH_External_What_Id__c
+        et les ID correspondants
+        */
+        Map<String, Id> recordsRelatedToEvents = new Map<String, Id>();
 
-                // Attribution de l'ID récupéré au champ WhoId
-                event.WhatId = obj.Id;
+        for (String prefix : prefixObjects.keySet()) {
+            // Récupération nom de l'objet
+            String objectName = prefixObjects.get(prefix);
 
-                System.debug('-- event.WhatId similaire au TECH_External_What_Id__c ? : ' + event.WhatId);
+            Set<Id> whoAndWhatIds = new Set<Id>(whoAndWhatTechIdsMap.get(prefix));
+
+            // Requête avec la liste d'ID de la map whoAndWhatTechIdsMap sur le nom de l'objet
+            String query = 'SELECT Id, TECH_External_Id__c FROM ' + objectName + ' WHERE TECH_External_Id__c IN ' +
+                    DataExtractUtils.convertSetToString(whoAndWhatIds);
+            List<sObject> sObjects = Database.query(query);
+
+            // Remplissage d'une map
+            for (sObject record : sObjects) {
+                recordsRelatedToEvents.put((String)record.get('TECH_External_Id__c'), record.Id);
             }
         }
-        return events;
+
+        for (Event event : eventsToUpdate) {
+            if (event.TECH_External_Who_Id__c != null) {
+                event.whoId = recordsRelatedToEvents.get(event.TECH_External_Who_Id__c);
+            }
+
+            if (event.TECH_External_What_Id__c != null) {
+                event.whatId = recordsRelatedToEvents.get(event.TECH_External_What_Id__c);
+            }
+        }
+
+        return eventsToUpdate;
     }
 }

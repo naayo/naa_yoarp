@@ -217,7 +217,7 @@
         <criteriaItems>
             <field>Code_Produit__c</field>
             <operation>equals</operation>
-            <value>EMM,GEP,IDEA,ENSC,APA1,SAI,IHM,MMML,PREPA,SIM,SP3,BBA,BBA2,BBA3,MFDM,MF,MJ,MT,MMS,ME,MCO,MA,MAI,MSDAI,MK</value>
+            <value>EMM,GEP,IDEA,ENSC,APA1,SAI,IHM,MMML,PREPA,SIM,SP3,BBA,BBA2,BBA3,MFDM,MF,MJ,MT,MMS,ME,MCO,MA,MAI,MSDAI,MK,IMBA,EMBA,PGM,DUA,AMP,EMSO1,EMS02,GDBA</value>
         </criteriaItems>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
@@ -364,6 +364,18 @@
         </sharedTo>
         <sharedFrom>
             <role>EML_Programme_MBA</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>L_E_avec_Programmes_Courts</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Accès en L/E sur Opportunités appartenant à des utilisateurs du groupe &quot;EML_en_partage_avec_Programmes_Courts&quot;</description>
+        <label>L/E avec Programmes Courts</label>
+        <sharedTo>
+            <role>EML_Programmes_Courts</role>
+        </sharedTo>
+        <sharedFrom>
+            <group>EML_en_partage_avec_Programmes_Courts</group>
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
