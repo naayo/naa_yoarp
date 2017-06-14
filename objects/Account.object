@@ -240,7 +240,7 @@
     <fields>
         <fullName>Adresse_facturation_R_gion__c</fullName>
         <externalId>false</externalId>
-        <formula>IF(  Adresse_facturation_d_partement__c  &lt;&gt; Null,  Adresse_facturation_d_partement__r.Name  , null)</formula>
+        <formula>IF(  Adresse_facturation_d_partement__c  &lt;&gt; Null,  Adresse_facturation_d_partement__r.R_gion__c , null)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Adresse facturation: Région</label>
         <required>false</required>
