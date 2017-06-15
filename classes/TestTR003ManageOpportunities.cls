@@ -29,7 +29,12 @@ private class TestTR003ManageOpportunities {
     
     static testMethod void myUnitTest() {
         try{
-            
+
+            PAD.addTriggerBypass('TR001ManageContact');
+            PAD.addTriggerBypass('TR002ManageOpportunityLineItem');
+            PAD.addTriggerBypass('TR005OppLineItem');
+            PAD.addTriggerBypass('TR006Opp2FieldsNull');
+
             //Data creation
             Product2 prod = new Product2(Name='prodTest', Suiveur__c = UserInfo.getUserId());
             Product2 prod2 = new Product2(Name='prodTest', Suiveur__c = null);
@@ -130,7 +135,7 @@ private class TestTR003ManageOpportunities {
             }
             
             // mis en commentaire suite à erreur lors des déploiements en production
-            //System.assertEquals(exceptionCatched, false);
+            System.assertEquals(exceptionCatched, false);
             
             try {
                 insert opLine4;
@@ -142,7 +147,11 @@ private class TestTR003ManageOpportunities {
             
             Test.stopTest();
             
-            
+            Pad.removeTriggerBypass('TR001ManageContact');
+            Pad.removeTriggerBypass('TR002ManageOpportunityLineItem');
+            Pad.removeTriggerBypass('TR005OppLineItem');
+            Pad.removeTriggerBypass('TR006Opp2FieldsNull');
+
         } catch(DmlException dmle)
         {
             System.debug('The following exception has occurred: ' + dmle.getMessage());
