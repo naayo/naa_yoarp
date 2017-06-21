@@ -5065,9 +5065,9 @@ en production</description>
     </fields>
     <fields>
         <fullName>nb_SIP_en_cours__c</fullName>
-        <description>Le champ permet de calculer le nombre d&apos;opportunités qualifiées liées à un contact. (tous les statuts commerciaux sans interessé par)</description>
+        <description>Le champ permet de calculer le nombre d&apos;opportunités qualifiées liées à un contact. ( - Prospect qualifié - Prospect probable - Prospect chaud - Intérêt supplémentaire)</description>
         <externalId>false</externalId>
-        <label>Nombre Opportunités qualifiées en cours</label>
+        <label>Nombre d&apos;opportunités conseiller</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
