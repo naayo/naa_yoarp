@@ -1,49 +1,81 @@
-/*s
+/*
 * Implementation of methods called by triggers on opportunities and opportunity line items.
 */
 
 global class TR003ManageOpportunities {
     
     public static void UpdateContact(List <Opportunity> oppList)
-    {
+    {        
         List<Contact> contactsList = new List <Contact>();
-        set<id> oppIds =new set<id>();
+        set<id> CtcCentralIds =new set<id>();
         set<Opportunity> myOpportunities =new set<Opportunity>();
         RecordType FundraisingB2C= [Select ID From RecordType Where sObjectType = 'Opportunity' And name like '%Fundraising B2C%'];
         
         for (Opportunity opp : oppList){
-            oppIds.add(opp.Contact_central__c);
+            CtcCentralIds.add(opp.Contact_central__c);
             
-        }
+        }        
         
-        if (oppIds.size()>0 ){
-            contactsList = [Select a.Somme_Montant_Don__c ,a.Id From Contact a where id in: oppIds];
-            myOpportunities = new set<Opportunity>([Select Contact_central__c, Amount, closeDate from Opportunity where Contact_central__c in:oppIds And stageName= 'Conclu' And recordTypeID=:FundraisingB2C.Id]);
+        if (CtcCentralIds.size()>0 ){
+            contactsList = [Select a.Somme_Montant_Don__c ,a.Id From Contact a where id in: CtcCentralIds];
+            myOpportunities = new set<Opportunity>([Select Contact_central__c, Amount, closeDate from Opportunity where Contact_central__c in:CtcCentralIds And stageName= 'Conclu' And recordTypeID=:FundraisingB2C.Id]);
         }
         
         for (Contact con : contactsList)
         {
             con.Somme_Montant_Don__c=0;
             for(Opportunity o : myOpportunities ){
-                if(o.Contact_central__c==con.Id && Date.today()<=o.closeDate.addYears(Integer.valueof(Label.x.trim()))) con.Somme_Montant_Don__c +=o.Amount;
+                if(o.Contact_central__c==con.Id && Date.today()<=o.closeDate.addYears(Integer.valueof(Label.x.trim())))
+                {
+                    con.Somme_Montant_Don__c +=o.Amount;
+                }
             }
-            
         }
-        
-        if (contactsList.size()>0)update contactsList;
-        
-        //Executer un batch pour palier la limite CPU
-        //BatchOpportunityUpdateContact batch = new BatchOpportunityUpdateContact(oppList);
-        //Database.executeBatch(batch);
+        if (contactsList.size()>0){
+            update contactsList;
+        }        
+		
+
+        // F-349 : la classe de test ne passe pas si on remplace ce bloc par l'existant
+        /*
+        Map<Contact, List<Opportunity>> mpOppByContactCentral = new Map<Contact, List<Opportunity>>();
+        // Parcourir chaque opportunité
+        for(Opportunity o :[Select Contact_central__c, Amount, closeDate from Opportunity where Contact_central__c in:CtcCentralIds And stageName= 'Conclu' And recordTypeID=:FundraisingB2C.Id])
+        {
+           // Si son contact central n'a pas été ajouté
+           if(!mpOppByContactCentral.containsKey(o.Contact_central__r)) {
+               // Ajouter son contact central en clé
+               mpOppByContactCentral.put(o.Contact_central__r, new List<Opportunity>());
+           }
+           // Ajouter cette opportunité à la liste des opportunités de son contact central
+           mpOppByContactCentral.get(o.Contact_central__r).add(o);            
+        }
+
+        for(Contact con :mpOppByContactCentral.keySet()){
+            con.Somme_Montant_Don__c=0;
+            for(Opportunity o : mpOppByContactCentral.get(con)){
+                if(Date.today() <= o.closeDate.addYears(Integer.valueof(Label.x.trim())))
+                {
+                    con.Somme_Montant_Don__c += o.Amount;
+                }    
+            }
+        }
+
+        if (mpOppByContactCentral.keySet().size()>0){
+            update new List<Contact>(mpOppByContactCentral.keySet());
+        }*/
+        //F-349   
     }
+
     public static void UpdateOppsNumber(Set<Id> idContacts){
         
         // va servir à forcer la màj lorsque l'on rencontre des suspiscions de doublons Nom/prénom
         Database.DMLOptions dml = new Database.DMLOptions();
         dml.DuplicateRuleHeader.AllowSave = true; 
-        
+  
         List<Contact> contacts = [Select a.Id, a.Nombre_opportunit_s__c From Contact a where a.Id in :idContacts];
         List<Opportunity> opportunities = [Select o.Id, o.Contact_central__c, o.StageName From Opportunity o where o.Contact_central__c  in : idContacts];
+        
         String Criteria = Label.OpportunityCriteria;
         String CriteriaSansIP = Label.OpportunityCriteriaSansIP;
         Set<String> status = new Set<String>(Criteria.split(';',-1));
@@ -51,7 +83,7 @@ global class TR003ManageOpportunities {
         for(Contact cont : contacts){
             Integer nbre=0;
             Integer nbreCriteria=0;
-            Integer nbreQualifSansIP=0;// Nombre d'opportunit? qualifi? (sans "int?ress? par")
+            Integer nbreQualifSansIP=0;// Nombre d'opportunités qualifiées (sans "intéressé par")
             for(Opportunity opp : opportunities){
                 if(opp.Contact_central__c ==cont.Id){
                     nbre++;
@@ -67,15 +99,51 @@ global class TR003ManageOpportunities {
             cont.Nombre_opportunites_sur_criteres__c=string.ValueOf(nbreCriteria);
             cont.nb_SIP_en_cours__c=nbreQualifSansIP;
         }
+
+        Database.SaveResult[] sr = Database.update(contacts, dml);
+
+        // F-349 : la classe de test ne passe pas si on remplace ce bloc par l'existant
+        /*
         
-        Database.SaveResult[] sr = Database.update(contacts, dml); 
-        
-        update contacts;
-        
-        //Executer un batch pour palier la limite CPU
-        //BatchOpportunityUpdateOppsNumber batch = new BatchOpportunityUpdateOppsNumber(idContacts);
-        //Database.executeBatch(batch);
-        
+        Map<Contact, List<Opportunity>> mpOppByContactCentral = new Map<Contact, List<Opportunity>>();
+        String Criteria = Label.OpportunityCriteria;
+        String CriteriaSansIP = Label.OpportunityCriteriaSansIP;
+        Set<String> status = new Set<String>(Criteria.split(';',-1));
+        Set<String> statusSansIP = new Set<String>(CriteriaSansIP.split(';',-1));
+
+        // Parcourir chaque opportunité
+        for(Opportunity o :[Select o.Id, o.Contact_central__c, o.StageName From Opportunity o where o.Contact_central__c  in : idContacts])
+        {
+           // Si son contact central n'a pas été ajouté
+           if(!mpOppByContactCentral.containsKey(o.Contact_central__r)) {
+               // Ajouter son contact central en clé
+               mpOppByContactCentral.put(o.Contact_central__r, new List<Opportunity>());
+           }
+           // Ajouter cette opportunité à la liste des opportunités de son contact central
+           mpOppByContactCentral.get(o.Contact_central__r).add(o);            
+        }
+
+        for(Contact cont :mpOppByContactCentral.keySet()){
+            Integer nbre=0;
+            Integer nbreCriteria=0;
+            Integer nbreQualifSansIP=0;// Nombre d'opportunités qualifiées (sans "intéressé par")            
+            for(Opportunity opp : mpOppByContactCentral.get(cont)){
+                nbre++;
+                if(status.contains(opp.StageName)){
+                    nbreCriteria++;
+                }
+                if(statusSansIP.contains(opp.StageName)) {
+                    nbreQualifSansIP++;
+                }   
+            }
+			cont.Nombre_opportunit_s__c=string.ValueOf(nbre);
+            cont.Nombre_opportunites_sur_criteres__c=string.ValueOf(nbreCriteria);
+            cont.nb_SIP_en_cours__c=nbreQualifSansIP;
+        }
+
+        Database.SaveResult[] sr = Database.update(new List<Contact>(mpOppByContactCentral.keySet()), dml);
+        */
+        //F-349        
     }
     
     public static void createContactRole(List<Opportunity> opportunities) {
@@ -97,7 +165,6 @@ global class TR003ManageOpportunities {
     
     
     public static void checkOwnerIdChange(List<Opportunity> lOpp, String oldOwnerId){
-        
         Profile p = [Select id, Name from Profile where Id =: userinfo.getProfileid() limit 1];  
         User currentUser = [Select ProfileId, UserRole.Id from User where Id =:userinfo.getUserId() limit 1 ]; 
         
@@ -106,7 +173,6 @@ global class TR003ManageOpportunities {
             From Group
             Where Name = 'Administrateurs Opportunités'
         ]);
-        
         
         Map<Id, GroupMember> groupAdminOpp = New Map<Id, GroupMember>([
             Select  Id, UserOrGroupId
@@ -120,22 +186,15 @@ global class TR003ManageOpportunities {
         if(groupAdminOpp.size()>0 || p.Name=='Administrateur système' || p.Name =='Interface'){
             
             return;
-        }
-        
-        else {
-            
+        }else {
             for(Opportunity o:lOpp){
-                
                 // cette partie de trigger n'est utilisé que lorsque l'on est en mode saisie manuelle
                 // elle ne s'exécute pas pour les traitements en rafale constitués d'un tableau
                 // d'enregistrements
                 User newOwner = [Select ProfileId, UserRole.Id from User where Id =:o.OwnerId limit 1]; 
-                //Profile p2 = [Select Name from Profile where Id =: newOwner.ProfileId limit 1];  
     
-                {              
-                    
+                {
                     User oldOwner = [select id, UserRole.id from User where id=: oldOwnerId limit 1] ;
-              
                     
                     if (newOwner.UserRole.id != oldOwner.UserRole.id ) {  
                         o.Adderror('le propriétaire actuel de l\'opportunité  et le nouveau propriétaire doivent avoir le même rôle !');
@@ -148,12 +207,8 @@ global class TR003ManageOpportunities {
                         return;
                     }
                 }
-            }  
-            
-            
+            }
         }
-        
-        
     }
     
     
@@ -224,10 +279,8 @@ global class TR003ManageOpportunities {
             }
             
             try {
-                
                 update opptyListToUpdate;
-                
-            } catch (System.DMLException e) {
+            }catch (System.DMLException e) {
                 Boolean errorLogged = false;
                 for (Integer i=0; i<e.getNumDml();i++) {
                     Id opptyId = e.getDmlId(i);
@@ -236,6 +289,7 @@ global class TR003ManageOpportunities {
                         errorLogged = true;
                     }
                 }
+
                 if (!errorLogged)
                     throw e;
             }
