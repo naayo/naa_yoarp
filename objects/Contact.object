@@ -346,6 +346,33 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Appliquer_l_e_mail_EM_Lyon__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Appliquer l&apos;e-mail EM Lyon</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Appliquer_l_e_mail_personnel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Appliquer l&apos;e-mail personnel</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Appliquer_l_e_mail_professionnel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Appliquer l&apos;e-mail professionnel</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>AssistantName</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -563,19 +590,6 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>ComptePrincipal__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Compte principal</label>
-        <referenceTo>Account</referenceTo>
-        <relationshipLabel>Contacts</relationshipLabel>
-        <relationshipName>Contacts</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Compteur_Tiers_Contact__c</fullName>
@@ -3301,6 +3315,18 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
         <type>Phone</type>
     </fields>
     <fields>
+        <fullName>NB_Opportunit_s_principales_en_cours__c</fullName>
+        <externalId>false</externalId>
+        <label>NB Opportunités principales en cours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>NPAI_Personnel__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -3511,6 +3537,18 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Nb_Opportunites_actives__c</fullName>
+        <externalId>false</externalId>
+        <label>Nb Opportunités actives</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Nb_car_Nom__c</fullName>
@@ -3864,6 +3902,28 @@ Null)</formula>
         <externalId>false</externalId>
         <label>Nombre d&apos;opportunités en cours</label>
         <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunite_Statut_Candidature_CANEL__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunité-Statut Candidature CANEL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunite_Statut_Dossier_CANEL__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunité-Statut Dossier CANEL</label>
+        <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -4306,6 +4366,19 @@ Utilisé dans le process builder &quot;Création automatique d&apos;un nouveau r
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Souhait_programme__c</fullName>
+        <description>Champ alimenté depuis l&apos;opportunité</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Champ alimenté depuis l&apos;opportunité</inlineHelpText>
+        <label>Souhait programme</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Sous__c</fullName>
@@ -5030,7 +5103,7 @@ en production</description>
         <deprecated>false</deprecated>
         <description>Hardbounce from Inxmail Professional</description>
         <externalId>false</externalId>
-        <inlineHelpText>Hardbounce from Inxmail Professional</inlineHelpText>
+        <inlineHelpText>Hardbounce dans Inxmail Professional</inlineHelpText>
         <label>Email Invalid</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -10557,7 +10630,7 @@ isblank(  Etat__c  )
     </validationRules>
     <validationRules>
         <fullName>RG_Contact02_Etat_ObligatoireRepli</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>! $User.ByPass_RV__c 
 &amp;&amp; 
 ( 
@@ -10599,7 +10672,7 @@ Adresse_code_postal__c  &lt;&gt; &quot;&quot;,
     </validationRules>
     <validationRules>
         <fullName>RG_Contact04_Pays_ObligatoireRepli</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>! $User.ByPass_RV__c 
 &amp;&amp; 
 ( 
@@ -10689,6 +10762,39 @@ OR( ISNUMBER(Adresse_Ville__c), OR(CONTAINS(Adresse_Ville__c, &quot;0&quot;),CON
         <errorConditionFormula>AND (!$User.ByPass_RV__c, 
 OR( ISNUMBER(Adresse_de_repli_ville__c), OR(CONTAINS(Adresse_de_repli_ville__c, &quot;0&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;1&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;2&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;3&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;4&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;5&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;6&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;7&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;8&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;9&quot;))))</errorConditionFormula>
         <errorMessage>Le champ adresse de repli: Ville ne doit pas contenir de chiffres !</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RV_Contact_Blocage_Plusieurs_emails_coch</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(
+AND(
+Appliquer_l_e_mail_professionnel__c=true,
+Appliquer_l_e_mail_personnel__c=true,
+Appliquer_l_e_mail_EM_Lyon__c=true
+)
+,
+
+
+AND(
+Appliquer_l_e_mail_professionnel__c=true,
+Appliquer_l_e_mail_personnel__c=true
+)
+,
+
+
+AND(
+Appliquer_l_e_mail_professionnel__c=true,
+Appliquer_l_e_mail_EM_Lyon__c=true
+)
+,
+
+
+AND(
+Appliquer_l_e_mail_personnel__c=true,
+Appliquer_l_e_mail_EM_Lyon__c=true
+)
+)</errorConditionFormula>
+        <errorMessage>Merci d&apos;appliquer un seul email à ce contact (en cochant une seule case)</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Cloner_Custom</fullName>

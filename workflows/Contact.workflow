@@ -53,6 +53,36 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>FU_MAJ_Email_standard_par_celui_de_l_EM</fullName>
+        <field>Email</field>
+        <formula>Email_EM_Lyon__c</formula>
+        <name>FU. MAJ Email standard par celui de l&apos;EM</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_MAJ_email_standard_par_le_PRO</fullName>
+        <field>Email</field>
+        <formula>Email_de_repli__c</formula>
+        <name>FU.MAJ email standard par le PRO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_MAJ_email_standard_par_le_personnel</fullName>
+        <field>Email</field>
+        <formula>Adresse_Email_Personnelle__c</formula>
+        <name>FU.MAJ email standard par le personnel</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Login_mettre_jour</fullName>
         <field>Login__c</field>
         <formula>Adresse_Email_Personnelle__c</formula>
@@ -132,6 +162,16 @@
         <name>MAJ Ville</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Mise_jour_du_Type_d_enregistrement</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Professionnel</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Mise à jour du Type d&apos;enregistrement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -277,6 +317,20 @@
         </criteriaItems>
         <description>Envoie une alerte email toutes les fois qu&apos;un contact âgé de 40 ans ou plus est détecté</description>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Forcer type d%27enregistrement à Professionnel</fullName>
+        <actions>
+            <name>Mise_jour_du_Type_d_enregistrement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.Type_d_enregistrement_Piste__c</field>
+            <operation>equals</operation>
+            <value>Professionnel</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
         <fullName>WF Date Modification Fiche</fullName>
@@ -426,6 +480,56 @@ AND(ISPICKVAL(Programme_de_reconnaissance__c,&quot;B2C_Cercle du Président&quot
         <description>prend date de création standard et la met dans date de création contact</description>
         <formula>TRUE</formula>
         <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>WK_Contact_MAJ E-mail standard par l%27email EM Lyon</fullName>
+        <actions>
+            <name>FU_MAJ_Email_standard_par_celui_de_l_EM</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(
+ISBLANK(Adresse_Email_Personnelle__c),
+ISBLANK(Email_de_repli__c),
+
+ISBLANK(Email),
+Appliquer_l_e_mail_professionnel__c=false,
+Appliquer_l_e_mail_EM_Lyon__c=false,
+Appliquer_l_e_mail_personnel__c=false
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WK_Contact_MAJ E-mail standard par le personnel</fullName>
+        <actions>
+            <name>FU_MAJ_email_standard_par_le_personnel</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(
+ISBLANK(Email),
+
+Appliquer_l_e_mail_professionnel__c=false,
+Appliquer_l_e_mail_EM_Lyon__c=false,
+Appliquer_l_e_mail_personnel__c=false
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WK_Contact_MAJ E-mail standard par le professionnel</fullName>
+        <actions>
+            <name>FU_MAJ_email_standard_par_le_PRO</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(
+ISBLANK(Adresse_Email_Personnelle__c),
+ISBLANK(Email),
+Appliquer_l_e_mail_professionnel__c=false,
+Appliquer_l_e_mail_EM_Lyon__c=false,
+Appliquer_l_e_mail_personnel__c=false
+)</formula>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <tasks>
         <fullName>Changement_de_seuil_B2C</fullName>

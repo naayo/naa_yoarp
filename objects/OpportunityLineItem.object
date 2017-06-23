@@ -484,6 +484,16 @@ C3_eligible_niveau_xp_pro__c = &quot;Critère non actif pour le produit&quot;, C
         <fullName>ProductCode</fullName>
     </fields>
     <fields>
+        <fullName>ProductCodeText__c</fullName>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.ProductCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ProductCodeText</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>ProduitFiltreSession__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>

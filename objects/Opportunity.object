@@ -3023,6 +3023,19 @@ Image(&quot;/resource/information&quot;,&quot;Image indisponible&quot;,18,18)
         </valueSet>
     </fields>
     <fields>
+        <fullName>Nb_Opportunite_active__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Opportunite_active__c = true, 1, 0 )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Nb Opportunité active</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Nb_PO__c</fullName>
         <externalId>false</externalId>
         <label>Nb PO</label>
@@ -3208,6 +3221,54 @@ Image(&quot;/resource/information&quot;,&quot;Image indisponible&quot;,18,18)
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Opportunite_active__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+NOT( 
+OR( 
+ISPICKVAL (StageName, &quot;Clos (Perdu)&quot;), 
+ISPICKVAL (StageName, &quot;Compte doublon&quot;) 
+) 
+) 
+, 
+true, 
+false 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunité active</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunite_principale__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Opportunité principale</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunite_principale_en_cours__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+AND
+(Opportunite_principale__c=true,
+ISPICKVAL(ForecastCategoryName,&quot;En-cours&quot;))
+,
+1,
+0
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunité principale en cours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
@@ -3769,12 +3830,55 @@ Ce champ technique est utilisé par l&apos;interface pour définir le catalogue 
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>TECH_Code_du_produit__c</fullName>
+        <externalId>false</externalId>
+        <label>TECH Code du produit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TECH_Date_de_creation__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(CreatedDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TECH Date de création</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>TECH_External_Id__c</fullName>
         <description>Champ technique qui contient la copie de l&apos;Id de l&apos;enregistrement 
 en production</description>
         <externalId>true</externalId>
         <label>TECH_External_Id</label>
         <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TECH_Famille__c</fullName>
+        <externalId>false</externalId>
+        <label>TECH Famille</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TECH_Gamme__c</fullName>
+        <externalId>false</externalId>
+        <label>TECH Gamme</label>
+        <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -5036,6 +5140,23 @@ en production</description>
         </filters>
         <label>FI end of IDEA closure for the year</label>
         <language>fr</language>
+    </listViews>
+    <listViews>
+        <fullName>Formation_intra_entrepriseee</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Intra_entreprise</value>
+        </filters>
+        <label>Formation intra-entreprise</label>
+        <language>en_US</language>
     </listViews>
     <listViews>
         <fullName>Interface_cree</fullName>
@@ -15803,8 +15924,18 @@ $Profile.Name= &quot;DPM&quot;
         <errorMessage>Vous ne pouvez pas modifier la valeur du champ Exercice EMLYON</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>RG_OPPO_01_DON_001</fullName>
+        <fullName>OPP_VR_OPP_principale_en_cours_associee</fullName>
         <active>true</active>
+        <errorConditionFormula>AND(
+Opportunite_principale__c=true,
+ISPICKVAL(ForecastCategoryName,&quot;En-cours&quot;),
+Contact_central__r.NB_Opportunit_s_principales_en_cours__c=1
+)</errorConditionFormula>
+        <errorMessage>Le contact associé à l&apos;opportunité a déjà une opportunité principale en-cours. Merci de définir une seule opportunité principale en cours pour ce contact.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RG_OPPO_01_DON_001</fullName>
+        <active>false</active>
         <description>Règle de validation qui empêchera la création d&apos;une opportunité sans contact central par un utilisateur avec un profil &quot;Interface&quot;</description>
         <errorConditionFormula>! $User.ByPass_RV__c 
 &amp;&amp; 
