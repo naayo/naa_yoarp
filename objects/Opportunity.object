@@ -1099,6 +1099,40 @@ ExerciceNum_ro__c = &quot;2020&quot;,&quot;2019/2020&quot;,&quot;2020/2021&quot;
         <fullName>ExpectedRevenue</fullName>
     </fields>
     <fields>
+        <fullName>FORM_Exercice_en_cours__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND
+(
+TODAY()&gt;FORM_debut_annee_scolaire__c
+,
+TODAY()&lt;FORM_fin_annee_scolaire__c
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FORM Exercice en cours</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FORM_debut_annee_scolaire__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(TEXT(VALUE(TEXT(Exercice__c))-1)&amp;&quot;-09-01&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FORM - debut annee scolaire</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FORM_fin_annee_scolaire__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(text(Exercice__c)&amp;&quot;-08-01&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FORM - fin annee scolaire</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>Famille__c</fullName>
         <externalId>false</externalId>
         <label>Famille</label>
@@ -16049,7 +16083,7 @@ Somme_Montant_Ech_ancier__c &lt;&gt; 0,
 ( 
 AND( 
 RecordType.Name = &quot;Formation intra-entreprise&quot;, 
-NOT ISPICKVAL(PRIORVALUE(StageName), &quot;Accord de principe&quot;) , 
+NOT ISPICKVAL(PRIORVALUE(StageName), &quot;Accord de principe&quot;),NOT ISPICKVAL(PRIORVALUE(StageName), &quot;Contrat signé&quot;) , 
 ISPICKVAL(StageName, &quot;Contrat signé&quot;) 
 ) 
 )</errorConditionFormula>
