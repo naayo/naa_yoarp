@@ -93,7 +93,7 @@
         <label>Code Agresso Session formation</label>
         <length>10</length>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -116,7 +116,7 @@
         <label>Code agresso Formation</label>
         <length>15</length>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -139,7 +139,7 @@
         <externalId>false</externalId>
         <label>Date de début de session</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -148,7 +148,7 @@
         <externalId>false</externalId>
         <label>Date de fin de session</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -157,7 +157,7 @@
         <externalId>false</externalId>
         <label>Exercice fiscal</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -229,7 +229,7 @@
         <externalId>false</externalId>
         <label>Lieu</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -267,7 +267,7 @@
         <externalId>false</externalId>
         <label>Mode d&apos;apprentissage</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -295,7 +295,7 @@
         <externalId>false</externalId>
         <inlineHelpText>Cocher ce champ pour ne pas exporter sur le site EML</inlineHelpText>
         <label>Ne pas afficher sur le site EML</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -332,7 +332,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
@@ -1024,7 +1024,7 @@ en production</description>
     </listViews>
     <nameField>
         <label>Nom de Session</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Sessions de formation</pluralLabel>
