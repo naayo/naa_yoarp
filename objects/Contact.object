@@ -1102,6 +1102,52 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>FORM_Is_FC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF
+(
+    OR
+    (
+    TEXT(LeadSource) = &quot;Formation continue courte&quot;
+    ,
+    TEXT(LeadSource) = &quot;Formation continue indéterminée&quot;
+    ,
+    TEXT(LeadSource) = &quot;Formation continue longue&quot;
+    ,
+    TEXT(LeadSource) = &quot;Formation inra-entreprise&quot;
+    )
+,
+true
+,
+false
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FORM - Is FC</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FORM_Is_FI__c</fullName>
+        <externalId>false</externalId>
+        <formula>if
+(
+    OR
+    (
+    text(LeadSource) = &quot;Formation initiale BBA&quot;
+    ,
+    text(LeadSource) = &quot;Formation initiale masters&quot;
+    )
+,
+true
+,
+false
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FORM - Is FI</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Facebook__c</fullName>
         <externalId>false</externalId>
         <label>Facebook</label>
