@@ -9,7 +9,7 @@
             <fieldName>Adresse_Email_Personnelle__c</fieldName>
             <matchingMethod>Exact</matchingMethod>
         </matchingRuleItems>
-        <ruleStatus>Active</ruleStatus>
+        <ruleStatus>Inactive</ruleStatus>
     </matchingRules>
     <matchingRules>
         <fullName>Correspondance_NOM_PRENOM_pour_les_professionnels</fullName>
@@ -36,7 +36,7 @@
             <fieldName>Email_EM_Lyon__c</fieldName>
             <matchingMethod>Exact</matchingMethod>
         </matchingRuleItems>
-        <ruleStatus>Active</ruleStatus>
+        <ruleStatus>Inactive</ruleStatus>
     </matchingRules>
     <matchingRules>
         <fullName>EMAIL_PERSO</fullName>
@@ -47,7 +47,7 @@
             <fieldName>Adresse_Email_Personnelle__c</fieldName>
             <matchingMethod>Exact</matchingMethod>
         </matchingRuleItems>
-        <ruleStatus>Active</ruleStatus>
+        <ruleStatus>Inactive</ruleStatus>
     </matchingRules>
     <matchingRules>
         <fullName>EMAIL_PRO</fullName>
@@ -58,7 +58,7 @@
             <fieldName>Email_de_repli__c</fieldName>
             <matchingMethod>Exact</matchingMethod>
         </matchingRuleItems>
-        <ruleStatus>Active</ruleStatus>
+        <ruleStatus>Inactive</ruleStatus>
     </matchingRules>
     <matchingRules>
         <fullName>R_gle_de_correspondance_Doublon_de_contact</fullName>
@@ -96,6 +96,28 @@
         <matchingRuleItems>
             <blankValueBehavior>NullNotAllowed</blankValueBehavior>
             <fieldName>Adresse_Email_Personnelle__c</fieldName>
+            <matchingMethod>Exact</matchingMethod>
+        </matchingRuleItems>
+        <ruleStatus>Active</ruleStatus>
+    </matchingRules>
+    <matchingRules>
+        <fullName>Tout_type_d_email</fullName>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <description>Règle de correspondance qui prend comme critère les 3 types de champs e-mail de l&apos;EM LYON : personnel, pro et EM LYON</description>
+        <label>Tout type d&apos;email</label>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>Email_EM_Lyon__c</fieldName>
+            <matchingMethod>Exact</matchingMethod>
+        </matchingRuleItems>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>Adresse_Email_Personnelle__c</fieldName>
+            <matchingMethod>Exact</matchingMethod>
+        </matchingRuleItems>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>Email_de_repli__c</fieldName>
             <matchingMethod>Exact</matchingMethod>
         </matchingRuleItems>
         <ruleStatus>Active</ruleStatus>
