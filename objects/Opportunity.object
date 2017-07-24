@@ -1871,6 +1871,7 @@ LEN(InterfaceExternalId__c ) -6)</formula>
         <externalId>false</externalId>
         <formula>Contact_central__r.Nombre_opportunites_sur_criteres__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Indique le nombre total d&apos;opportunités en cours pour le contact central de cette opportunité</inlineHelpText>
         <label>Nombre d&apos;opportunités en cours</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -1882,6 +1883,7 @@ LEN(InterfaceExternalId__c ) -6)</formula>
         <externalId>false</externalId>
         <formula>Contact_central__r.Nombre_opportunit_s__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Indique le nombre total d&apos;opportunités pour le contact central de cette opportunité</inlineHelpText>
         <label>Nombre d&apos;opportunités total</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -3136,7 +3138,8 @@ Image(&quot;/resource/information&quot;,&quot;Image indisponible&quot;,18,18)
         <externalId>false</externalId>
         <formula>Contact_central__r.nb_SIP_en_cours__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Nombre d&apos;opportunité qualifiées en cours</label>
+        <inlineHelpText>Indique le nombre d&apos;opportunités à traiter par les conseillers</inlineHelpText>
+        <label>Nombre d&apos;opportunités conseiller</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -3274,35 +3277,6 @@ false
         <label>Opportunité active</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Opportunite_principale__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Opportunité principale</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Opportunite_principale_en_cours__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF(
-AND
-(Opportunite_principale__c=true,
-ISPICKVAL(ForecastCategoryName,&quot;En-cours&quot;))
-,
-1,
-0
-)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Opportunité principale en cours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
@@ -15958,18 +15932,8 @@ $Profile.Name= &quot;DPM&quot;
         <errorMessage>Vous ne pouvez pas modifier la valeur du champ Exercice EMLYON</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>OPP_VR_OPP_principale_en_cours_associee</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-Opportunite_principale__c=true,
-ISPICKVAL(ForecastCategoryName,&quot;En-cours&quot;),
-Contact_central__r.NB_Opportunit_s_principales_en_cours__c=1
-)</errorConditionFormula>
-        <errorMessage>Le contact associé à l&apos;opportunité a déjà une opportunité principale en-cours. Merci de définir une seule opportunité principale en cours pour ce contact.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>RG_OPPO_01_DON_001</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Règle de validation qui empêchera la création d&apos;une opportunité sans contact central par un utilisateur avec un profil &quot;Interface&quot;</description>
         <errorConditionFormula>! $User.ByPass_RV__c 
 &amp;&amp; 
