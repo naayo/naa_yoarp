@@ -1016,6 +1016,16 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>ERP_Force_Export__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Demandé par TAU le 07/07/2017 à la demande de Christine Neveux pour forcer l&apos;export des tiers sans affaires vers UNIT4</description>
+        <externalId>false</externalId>
+        <label>Forcer l’envoi vers UNIT4</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Email</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -1098,52 +1108,6 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
         <externalId>false</externalId>
         <label>Evénements réseau</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>FORM_Is_FC__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF
-(
-    OR
-    (
-    TEXT(LeadSource) = &quot;Formation continue courte&quot;
-    ,
-    TEXT(LeadSource) = &quot;Formation continue indéterminée&quot;
-    ,
-    TEXT(LeadSource) = &quot;Formation continue longue&quot;
-    ,
-    TEXT(LeadSource) = &quot;Formation inra-entreprise&quot;
-    )
-,
-true
-,
-false
-)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>FORM - Is FC</label>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>FORM_Is_FI__c</fullName>
-        <externalId>false</externalId>
-        <formula>if
-(
-    OR
-    (
-    text(LeadSource) = &quot;Formation initiale BBA&quot;
-    ,
-    text(LeadSource) = &quot;Formation initiale masters&quot;
-    )
-,
-true
-,
-false
-)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>FORM - Is FI</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -3361,18 +3325,6 @@ false
         <type>Phone</type>
     </fields>
     <fields>
-        <fullName>NB_Opportunit_s_principales_en_cours__c</fullName>
-        <externalId>false</externalId>
-        <label>NB Opportunités principales en cours</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>NPAI_Personnel__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -3583,18 +3535,6 @@ false
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>Nb_Opportunites_actives__c</fullName>
-        <externalId>false</externalId>
-        <label>Nb Opportunités actives</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Nb_car_Nom__c</fullName>
@@ -4134,6 +4074,17 @@ Null)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Proprietaire_du_contact_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner.FirstName +&quot; &quot; + Owner.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Propriétaire du contact 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Pyramide__c</fullName>
@@ -10577,27 +10528,29 @@ en production</description>
     <validationRules>
         <fullName>ChargePromoFC_CanChangeProfesToProspect</fullName>
         <active>true</active>
-        <description>Autoriser seulement Safae ABOUKARAM et Leila HAJRIC à modifier le type d&apos;enregistrement de &quot;Professionnel&quot; vers &quot;Prospect Etudiant&quot; .</description>
+        <description>Autoriser seulement Safae ABOUKARAM, Leila HAJRIC et Top Agresso à modifier le type d&apos;enregistrement de &quot;Professionnel&quot; vers &quot;Prospect Etudiant&quot; .</description>
         <errorConditionFormula>AND( 
  !$User.ByPass_RV__c,
  PRIORVALUE(Record_Type_Name__c)=&quot;Professionnel&quot;, 
  Record_Type_Name__c=&quot;Prospect Etudiant&quot;, 
  $User.CommunityNickname&lt;&gt; &quot;aboukaram&quot;,
- $User.CommunityNickname&lt;&gt; &quot;dreveton&quot;
+ $User.CommunityNickname&lt;&gt; &quot;dreveton&quot;,
+	$User.CommunityNickname &lt;&gt; &quot;topagresso&quot; 
 )</errorConditionFormula>
         <errorMessage>La modification de type d&apos;enregistrement de &quot;Professionnel&quot; vers &quot;Prospect Etudiant&quot; vous est interdite.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>ChargePromoFI_CanChangeProspectToProfess</fullName>
         <active>true</active>
-        <description>Autoriser seulement Nathalie SEUX et Delphine CESAR à modifier le type d&apos;enregistrement de &quot;Prospect Etudiant&quot; vers &quot;Professionnel&quot; .</description>
+        <description>Autoriser seulement Nathalie SEUX, Delphine CESAR, DREVETON et Top Agresso à modifier le type d&apos;enregistrement de &quot;Prospect Etudiant&quot; vers &quot;Professionnel&quot; .</description>
         <errorConditionFormula>AND(
  !$User.ByPass_RV__c,
  PRIORVALUE(Record_Type_Name__c)=&quot;Prospect Etudiant&quot;,
  Record_Type_Name__c=&quot;Professionnel&quot;,
  AND($User.CommunityNickname&lt;&gt; &quot;seux&quot;, 
      $User.CommunityNickname&lt;&gt; &quot;cesar&quot;,
-     $User.CommunityNickname&lt;&gt; &quot;dreveton&quot;
+     $User.CommunityNickname&lt;&gt; &quot;dreveton&quot;,
+					$User.CommunityNickname &lt;&gt; &quot;topagresso&quot; 
 ) 
 )</errorConditionFormula>
         <errorMessage>La modification de type d&apos;enregistrement de &quot;Prospect Etudiant&quot; vers &quot;Professionnel&quot; vous est interdite.</errorMessage>
@@ -10652,7 +10605,8 @@ en production</description>
  $User.CommunityNickname &lt;&gt; &quot;seux&quot;,
  $User.CommunityNickname &lt;&gt; &quot;cesar&quot;,
  $User.CommunityNickname &lt;&gt; &quot;aboukaram&quot;,
- $User.CommunityNickname &lt;&gt; &quot;dreveton&quot;
+ $User.CommunityNickname &lt;&gt; &quot;dreveton&quot;,
+	$User.CommunityNickname &lt;&gt; &quot;topagresso&quot;
 )</errorConditionFormula>
         <errorMessage>La modification de type d&apos;enregistrement vous est interdite.</errorMessage>
     </validationRules>
@@ -10676,7 +10630,7 @@ isblank(  Etat__c  )
     </validationRules>
     <validationRules>
         <fullName>RG_Contact02_Etat_ObligatoireRepli</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>! $User.ByPass_RV__c 
 &amp;&amp; 
 ( 
@@ -10718,7 +10672,7 @@ Adresse_code_postal__c  &lt;&gt; &quot;&quot;,
     </validationRules>
     <validationRules>
         <fullName>RG_Contact04_Pays_ObligatoireRepli</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>! $User.ByPass_RV__c 
 &amp;&amp; 
 ( 
