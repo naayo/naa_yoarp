@@ -74,7 +74,7 @@ global class TR003ManageOpportunities {
         dml.DuplicateRuleHeader.AllowSave = true; 
   
         List<Contact> contacts = [Select a.Id, a.Nombre_opportunit_s__c From Contact a where a.Id in :idContacts];
-        List<Opportunity> opportunities = [Select o.Id, o.Contact_central__c, o.StageName From Opportunity o where o.Contact_central__c  in : idContacts];
+        List<Opportunity> opportunities = [Select o.Id, o.Contact_central__c, o.StageName, o.Exercice__c From Opportunity o where o.Contact_central__c  in : idContacts];
         
         String Criteria = Label.OpportunityCriteria;
         String CriteriaSansIP = Label.OpportunityCriteriaSansIP;
@@ -87,10 +87,10 @@ global class TR003ManageOpportunities {
             for(Opportunity opp : opportunities){
                 if(opp.Contact_central__c ==cont.Id){
                     nbre++;
-                    if(status.contains(opp.StageName)){
+                    if(status.contains(opp.StageName) && Integer.valueOf(opp.Exercice__c) == System.Today().year()){
                         nbreCriteria++;
                     }
-                    if (statusSansIP.contains(opp.StageName)) {
+                    if (statusSansIP.contains(opp.StageName) && Integer.valueOf(opp.Exercice__c) == System.Today().year()){
                         nbreQualifSansIP++;
                     }
                 }
