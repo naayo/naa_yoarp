@@ -29,6 +29,7 @@ private class DataExtract017OpportunityTest {
             opp.TECH_External_Id__c = opp.Id;
             opp.Contact_central__c = contacts[0].Id;
             opp.AccountId = accounts[0].Id;
+            opp.Exercice__c = String.valueOf(System.Today().year());
         }
         update opportunities;
 

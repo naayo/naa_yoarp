@@ -30,6 +30,7 @@ private class DataExtract017OpportunityLoopTest {
             o.TECH_External_Id__c = o.Id;
             o.AccountId = accounts[0].Id;
             o.Contact_central__c = contacts[0].Id;
+            o.Exercice__c = String.valueOf(System.Today().year());
         }
         update opportunities;
 
