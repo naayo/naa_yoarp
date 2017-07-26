@@ -64,7 +64,7 @@ global class TR003ManageOpportunities {
         if (mpOppByContactCentral.keySet().size()>0){
             update new List<Contact>(mpOppByContactCentral.keySet());
         }*/
-        //F-349   
+        //F-349
     }
 
     public static void UpdateOppsNumber(Set<Id> idContacts){
@@ -76,28 +76,41 @@ global class TR003ManageOpportunities {
         List<Contact> contacts = [Select a.Id, a.Nombre_opportunit_s__c From Contact a where a.Id in :idContacts];
         List<Opportunity> opportunities = [Select o.Id, o.Contact_central__c, o.StageName, o.Exercice__c From Opportunity o where o.Contact_central__c  in : idContacts];
         
-        String Criteria = Label.OpportunityCriteria;
-        String CriteriaSansIP = Label.OpportunityCriteriaSansIP;
-        Set<String> status = new Set<String>(Criteria.split(';',-1));
-        Set<String> statusSansIP = new Set<String>(CriteriaSansIP.split(';',-1));
+        String CriteriaEnCours = Label.OpportunityCriteria;
+        String CriteriaConseillers = Label.OpportunityCriteriaSansIP;
+        Set<String> statusEnCours = new Set<String>(CriteriaEnCours.split(';',-1));
+        Set<String> statusConseillers = new Set<String>(CriteriaConseillers.split(';',-1));
         for(Contact cont : contacts){
             Integer nbre=0;
-            Integer nbreCriteria=0;
-            Integer nbreQualifSansIP=0;// Nombre d'opportunités qualifiées (sans "intéressé par")
+            Integer nbreEnCours=0;
+            Integer nbreConseillers=0;
             for(Opportunity opp : opportunities){
                 if(opp.Contact_central__c ==cont.Id){
-                    nbre++;
-                    if(status.contains(opp.StageName) && Integer.valueOf(opp.Exercice__c) == System.Today().year()){
-                        nbreCriteria++;
+                    // Détermination de l'exercice actuel
+                    Date endExerciceDate = Date.newinstance(System.Today().year(), 8, 31);
+                    Date actualDate = Date.today();
+                    Integer actualExercice = 0;
+                    if(actualDate>endExerciceDate){
+                        actualExercice = actualDate.year() + 1;
+                    }else{
+                        actualExercice = actualDate.year();
                     }
-                    if (statusSansIP.contains(opp.StageName) && Integer.valueOf(opp.Exercice__c) == System.Today().year()){
-                        nbreQualifSansIP++;
+
+                    //Calcul du compteur d'opp total
+                    nbre++;
+                    // Calcul du compteur d'opp en cours
+                    if (statusEnCours.contains(opp.StageName) && Integer.valueOf(opp.Exercice__c) == actualExercice){
+                        nbreEnCours++;
+                    }
+                    // Calcul du compteur d'opp conseillers
+                    if (statusConseillers.contains(opp.StageName) && Integer.valueOf(opp.Exercice__c) == actualExercice){
+                        nbreConseillers++;
                     }
                 }
             }
             cont.Nombre_opportunit_s__c=string.ValueOf(nbre);
-            cont.Nombre_opportunites_sur_criteres__c=string.ValueOf(nbreCriteria);
-            cont.nb_SIP_en_cours__c=nbreQualifSansIP;
+            cont.Nombre_opportunites_sur_criteres__c=string.ValueOf(nbreEnCours);
+            cont.nb_SIP_en_cours__c=nbreConseillers;
         }
 
         Database.SaveResult[] sr = Database.update(contacts, dml);
