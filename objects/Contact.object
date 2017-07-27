@@ -3874,6 +3874,7 @@ Null)</formula>
     </fields>
     <fields>
         <fullName>Nombre_opportunit_s__c</fullName>
+        <defaultValue>&quot;0&quot;</defaultValue>
         <externalId>false</externalId>
         <label>Nombre d&apos;opportunités total</label>
         <length>4</length>
@@ -3885,6 +3886,7 @@ Null)</formula>
     </fields>
     <fields>
         <fullName>Nombre_opportunites_sur_criteres__c</fullName>
+        <defaultValue>&quot;0&quot;</defaultValue>
         <externalId>false</externalId>
         <label>Nombre d&apos;opportunités en cours</label>
         <length>4</length>
@@ -5135,6 +5137,7 @@ en production</description>
     </fields>
     <fields>
         <fullName>nb_SIP_en_cours__c</fullName>
+        <defaultValue>0</defaultValue>
         <description>Le champ permet de calculer le nombre d&apos;opportunités qualifiées liées à un contact. ( - Prospect qualifié - Prospect probable - Prospect chaud - Intérêt supplémentaire)</description>
         <externalId>false</externalId>
         <label>Nombre d&apos;opportunités conseiller</label>
