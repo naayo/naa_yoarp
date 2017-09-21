@@ -29,7 +29,6 @@ private class TestTR003ManageOpportunities {
     
     static testMethod void myUnitTest() {
         try{
-
             PAD.addTriggerBypass('TR001ManageContact');
             PAD.addTriggerBypass('TR002ManageOpportunityLineItem');
             PAD.addTriggerBypass('TR005OppLineItem');
@@ -131,6 +130,7 @@ private class TestTR003ManageOpportunities {
               insert opLine3;
             }catch (System.DMLException e) {
               exceptionCatched = true;
+              System.debug('Insert opLine3 failed: '+e.getMessage());
             }
             System.assertEquals(exceptionCatched, false);
 
@@ -714,14 +714,14 @@ private class TestTR003ManageOpportunities {
                                        InterfaceExternalId__c = 'blabla',
                                        Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
 
-        Test.startTest();
+        Test.startTest();        
         insert new List<Opportunity>{opp1, opp2, opp3, opp4, opp5, opp6};
         insert new List<Opportunity>{opp1_2, opp2_2, opp3_2, opp4_2, opp5_2, opp6_2};
         Test.stopTest();
 
         contact1 = [SELECT Id, Nombre_opportunit_s__c, Nombre_opportunites_sur_criteres__c, nb_SIP_en_cours__c
                     FROM Contact
-                    WHERE FirstName =:'Contact1'];
+                    WHERE FirstName ='Contact1'];
 
         // Test du nombre total d'opportunité 
         System.assertEquals(6, Integer.valueOf(contact1.Nombre_opportunit_s__c));
@@ -734,12 +734,12 @@ private class TestTR003ManageOpportunities {
 
         contact2 = [SELECT Id, Nombre_opportunit_s__c, Nombre_opportunites_sur_criteres__c, nb_SIP_en_cours__c
                     FROM Contact
-                    WHERE FirstName =:'Contact2'];
+                    WHERE FirstName ='Contact2'];
 
         // Test du nombre total d'opportunité 
         System.assertEquals(6, Integer.valueOf(contact2.Nombre_opportunit_s__c));
 
-        // Test du nombre total d'opportunité 
+        // Test du nombre total d'opportunité
         System.assertEquals(2, Integer.valueOf(contact2.Nombre_opportunites_sur_criteres__c));
 
         // Test du nombre total d'opportunité 
