@@ -19,10 +19,9 @@ trigger OpportunityAfterInsert on Opportunity (after insert) {
                 oppToUpdateContactsRole.add(o);
             }
             
-            if (    rt_map.get(o.recordTypeID).name.containsIgnoreCase('Fundraising B2C')
+            if (rt_map.get(o.recordTypeID).name.containsIgnoreCase('Fundraising B2C')
                 &&  o.stageName== 'Conclu'
-                &&  o.Contact_central__c!=null
-               ){
+                &&  o.Contact_central__c!=null){
                 oppToUpdateContacts.add(o);
             }
 
@@ -36,8 +35,6 @@ trigger OpportunityAfterInsert on Opportunity (after insert) {
             TR003ManageOpportunities.UpdateContact(oppToUpdateContacts);
         }
     }
-    
-    System.debug('### test debug message');
     
  //RM   List<Portefeuille_contacts__c> pcList = new List<Portefeuille_contacts__c>();
     

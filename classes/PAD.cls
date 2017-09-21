@@ -10,7 +10,6 @@ public with sharing class PAD {
     public static Set<String> bypassMe ; //List of code that should be bypassed
     
     static{
-        System.Debug('## >>> PAD constructor :BEGIN <<< run by ' + UserInfo.getName());
         User user=[SELECT UserRole.Name,Profile.Name,UserPreferencesApexPagesDeveloperMode,BypassTrigger__c,LanguageLocaleKey FROM User WHERE Id =:UserInfo.getUserId() LIMIT 1];
         PAD_BypassTrigger=';'+user.BypassTrigger__c+';';
         PAD_DebugMode=user.UserPreferencesApexPagesDeveloperMode;
@@ -20,8 +19,6 @@ public with sharing class PAD {
         userLocalKey = user.LanguageLocaleKey;
         
         bypassMe = new Set<String>(); //List of code that should be bypassed
-
-        System.Debug('## >>> PAD constructor : END <<<');
     }
     
     /** doNotExecuteAfterMe allows a dev to prevent the execution of 
