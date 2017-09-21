@@ -1,5 +1,7 @@
 trigger OpportunityLineItemAfterUpdate on OpportunityLineItem (after update) {
-
+  
+    if(PAD.isFirstAfterOliUpdateRun())
+  { 
    //Add By mouad modifier session de formation de l'objet OpportunityLineItem de type module
         if (PAD.canTrigger('TR_session_formation')){
          set<Id> id_opp = new set<Id>();
@@ -9,7 +11,7 @@ trigger OpportunityLineItemAfterUpdate on OpportunityLineItem (after update) {
          for(OpportunityLineItem po : trigger.new)  
          {
            if(po.Session_de_formation__c != null && po.Type_produit__c == 'Pack')
-           {
+           { 
             id_opp.add(po.OpportunityId);
             id_session.add(po.Session_de_formation__c);
            }
@@ -33,6 +35,6 @@ trigger OpportunityLineItemAfterUpdate on OpportunityLineItem (after update) {
          
          TR_session_formation.attach_session(po_module,map_module);  
         }
-
+  }
 
 }

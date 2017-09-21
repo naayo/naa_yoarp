@@ -8,7 +8,8 @@ public with sharing class PAD {
     public static final Boolean PAD_EAI_WS_Bypass;
     public static final String userLocalKey;
     public static Set<String> bypassMe ; //List of code that should be bypassed
-    
+    public static  Integer countTrig = 0;
+    public static Boolean isUpdate = true;
     static{
         User user=[SELECT UserRole.Name,Profile.Name,UserPreferencesApexPagesDeveloperMode,BypassTrigger__c,LanguageLocaleKey FROM User WHERE Id =:UserInfo.getUserId() LIMIT 1];
         PAD_BypassTrigger=';'+user.BypassTrigger__c+';';
@@ -143,6 +144,58 @@ public with sharing class PAD {
         limits();
         myColor(0,0);myColor(0,3);myColor(2,3);myColor(3,3);PAD myPAD=new PAD();myPAD.getPAD_logs();
         PAD.canTrigger('');
+    }
+     // Add by BTO => 18/09/2017
+      public static boolean firstRun = true;
+    
+     private static boolean firstAfterOliUpdateRun = true;
+     public static boolean isFirstAfterOliUpdateRun(){
+      if(firstAfterOliUpdateRun){
+       firstAfterOliUpdateRun = false;
+       return true;
+     }else{
+        return firstAfterOliUpdateRun;
+      }
+    }
+    
+     private static boolean firstBeforeOliInsertRun = true;
+     public static boolean isFirstBeforeOliInsertRun(){
+      if(firstBeforeOliInsertRun){
+       firstBeforeOliInsertRun = false;
+       return true;
+     }else{
+        return firstBeforeOliInsertRun;
+      }
+    }
+    
+     private static boolean firstAfterOliInsertRun = true;
+     public static boolean isFirstAfterOliInsertRun(){
+      if(firstAfterOliInsertRun){
+       firstAfterOliInsertRun = false;
+       return true;
+     }else{
+        return firstAfterOliInsertRun;
+      }
+    }
+
+    private static boolean firstInsertOpp = true;
+     public static boolean isFirstInsertOppRun(){
+      if(firstInsertOpp){
+       firstInsertOpp = false;
+       return true;
+     }else{
+        return firstInsertOpp;
+      }
+    }
+    
+    private static boolean firstUpdateOpp = true;
+     public static boolean isFirstUpdateOppRun(){
+      if(firstUpdateOpp){
+       firstUpdateOpp = false;
+       return true;
+     }else{
+        return firstUpdateOpp;
+      }
     }
     
 }

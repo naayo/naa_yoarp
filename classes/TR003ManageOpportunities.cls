@@ -182,13 +182,9 @@ global class TR003ManageOpportunities {
                  User oldOwner = [select id, UserRole.id from User where id=: oldOwnerId limit 1] ;            
 
                 for(Opportunity o:lOpp){
-                // cette partie de trigger n'est utilisé que lorsque l'on est en mode saisie manuelle
-                // elle ne s'exécute pas pour les traitements en rafale constitués d'un tableau
-                // d'enregistrements
-               // User newOwner = [Select ProfileId, UserRole.Id from User where Id =:o.OwnerId limit 1]; 
-                
-                  //  User oldOwner = [select id, UserRole.id from User where id=: oldOwnerId limit 1] ;
-                    
+                    // cette partie de trigger n'est utilisé que lorsque l'on est en mode saisie manuelle
+                    // elle ne s'exécute pas pour les traitements en rafale constitués d'un tableau
+                    // d'enregistrements
                     if (newOwner.UserRole.id != oldOwner.UserRole.id ) {  
                         o.Adderror('le propriétaire actuel de l\'opportunité  et le nouveau propriétaire doivent avoir le même rôle !');
                         return;

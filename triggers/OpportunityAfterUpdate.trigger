@@ -1,12 +1,14 @@
 trigger OpportunityAfterUpdate on Opportunity (after update) {
     if (PAD.canTrigger('TR003ManageOpportunities')){ 
+   
+  
         RecordType FundraisingB2C= [Select ID From RecordType Where sObjectType = 'Opportunity' And name like '%Fundraising B2C%'];
         Set<Id> idContacts = new Set<Id>();
         Set<Id> sContactRoles = new Set<Id>();
         List<Opportunity> oppToUpdateContacts = new List<Opportunity>();
         List<Opportunity> oppToUpdateContactRoles = new List<Opportunity>();
         Set<Id> sOpportunities = new Set<Id>();
-               
+         
         for(Opportunity o: Trigger.new){
             // on vérifie si l'opportunité en cours de modification ne possède pas de rôle contact central   
             if(o.Contact_central__c!=null) 
@@ -27,9 +29,9 @@ trigger OpportunityAfterUpdate on Opportunity (after update) {
             }
         }
         
-        List<OpportunityContactRole> lContactsRoles= [select OpportunityId from OpportunityContactRole where Role = 'Contact central' and OpportunityId in:sOpportunities];
+        //List<OpportunityContactRole> lContactsRoles= [select OpportunityId from OpportunityContactRole where Role = 'Contact central' and OpportunityId in:sOpportunities];
         
-        for(OpportunityContactRole ocr: lContactsRoles){
+        for(OpportunityContactRole ocr: [select OpportunityId from OpportunityContactRole where Role = 'Contact central' and OpportunityId in:sOpportunities]){
             sContactRoles.add(ocr.OpportunityId);
         }  
         
@@ -48,11 +50,13 @@ trigger OpportunityAfterUpdate on Opportunity (after update) {
         }
    
         if(!idContacts.isEmpty()){
-            TR003ManageOpportunities.UpdateOppsNumber(idContacts);
+           TR003ManageOpportunities.UpdateOppsNumber(idContacts);
+           
         }
         
         if (!oppToUpdateContacts.isEmpty()){
             TR003ManageOpportunities.UpdateContact(oppToUpdateContacts);
         }
     }
+    
 }

@@ -21,40 +21,56 @@ public class TR006OppLineItem2FieldsNull{
             if (oppLineByOpp.containsKey(oppLineItem.OpportunityId)) {
                 oppLineByOpp.get(oppLineItem.OpportunityId).add(oppLineItem);
             } else {
-                List<OpportunityLineItem> newOppLines = new List<OpportunityLineItem>();
-                newOppLines.add(oppLineItem);
-                oppLineByOpp.put(oppLineItem.OpportunityId, newOppLines);
+                // List<OpportunityLineItem> newOppLines = new List<OpportunityLineItem>();
+               // newOppLines.add(oppLineItem);                
+                oppLineByOpp.put(oppLineItem.OpportunityId, new List<OpportunityLineItem>{ oppLineItem });
             }
         }
         
-        // Récupération des Opportunités pour obtenir le RecordType des Opportunités
-        Map<Id, Opportunity> opportunities = new Map<Id, Opportunity>([SELECT Id, RecordTypeId FROM Opportunity WHERE Id IN :oppLineByOpp.keySet()]);
+        // Récupération des Opportunités pour obtenir le RecordType des Opportunités (modification pour récupérer les oppportunité ayant le recordtype Taxe)
+        /*Map<Id, Opportunity> opportunities = new Map<Id, Opportunity>([SELECT Id, RecordTypeId FROM Opportunity WHERE Id IN :oppLineByOpp.keySet()
+                                                                      AND RecordTypeId IN (SELECT Id FROM RecordType WHERE DeveloperName = 'Taxe' AND sObjectType = 'Opportunity')
+                                                                      ]);*/
         
         //////////	EMERGENCY DEBUG	 ////////////
-        System.debug('TR006OppLineItem2FieldsNull - initFieldOpportunityLineItem - number of references to opportunities that don\'t exist : '
-                     + (oppLineByOpp.keySet().size() - opportunities.size()) );
+       // System.debug('TR006OppLineItem2FieldsNull - initFieldOpportunityLineItem - number of references to opportunities that don\'t exist : '
+        //             + (oppLineByOpp.keySet().size() - opportunities.size()) );
         //////////	END OF EMERGENCY DEBUG	 ////////////
         
         // Mise en mémoire de l'ID du RecordType TAXE sur les Opportunités
-        Id recordTypeTaxeId = [SELECT Id, sObjectType FROM RecordType WHERE DeveloperName = 'Taxe' AND sObjectType = 'Opportunity'].Id;
-        System.debug('RECORD TYPE 01 :' + recordTypeTaxeId);
+       // Id recordTypeTaxeId = [SELECT Id, sObjectType FROM RecordType WHERE DeveloperName = 'Taxe' AND sObjectType = 'Opportunity'].Id;
+      //  System.debug('RECORD TYPE 01 :' + recordTypeTaxeId);
         
         // Déclarion des variables utilisées pour stocker la valeurs par défaut
-        String descriptionD;
-        String octaD;
-        
-        for(Id oppId : oppLineByOpp.keySet()) {
-            
-            //////////	EMERGENCY DEBUG	 ////////////
-            System.debug('TR006OppLineItem2FieldsNull - initFieldOpportunityLineItem - opportunities.get(oppId) : ' + opportunities.get(oppId));
-            //////////	END OF EMERGENCY DEBUG	 ////////////
-            
-            // Avant tout traitement vérification que l'opportunité est bien de type TAXE
-            if(opportunities.get(oppId) == null) {
-                System.debug('TR006OppLineItem2FieldsNull - initFieldOpportunityLineItem - missing opportunity ID : ' + oppId);
-                System.debug('TR006OppLineItem2FieldsNull - initFieldOpportunityLineItem - missing opportunity : '
-                             + [SELECT Id FROM Opportunity WHERE Id = :oppId]);
+        String descriptionD ;
+        String octaD ;      
+            for(Opportunity opp: [SELECT Id FROM Opportunity WHERE Id IN :oppLineByOpp.keySet()
+                           AND RecordTypeId IN (SELECT Id FROM RecordType WHERE DeveloperName = 'Taxe' AND sObjectType = 'Opportunity')
+                                                                      ]){                                                                     
+              
+                 // Pour chaque ligne de produit on détermine la valeur par défaut s'il elle n'est pas déjà mise en mémoire
+                for (OpportunityLineItem oli : oppLineByOpp.get(opp.Id)) {
+                    if (String.isEmpty(descriptionD) && oli.Description != null) {
+                        descriptionD = oli.Description;
+                    }
+                    if(String.isEmpty(octaD) && oli.OCTA__c != null) {
+                        octaD = oli.OCTA__c;
+                    }
+                     if(String.isEmpty(oli.Description)) {
+                        oli.Description = descriptionD;
+                    }
+                    if(String.isEmpty(oli.OCTA__c)) {
+                        oli.OCTA__c = octaD;
+                    }
+                    if(String.isNotEmpty(descriptionD) && String.isNotEmpty(octaD)) {
+                        break;
+                    }
+                }
             }
+            
+        
+        /*for(Id oppId : oppLineByOpp.keySet()) {            
+           
             
             
             if (opportunities.get(oppId).RecordTypeId == recordTypeTaxeId) {
@@ -84,7 +100,7 @@ public class TR006OppLineItem2FieldsNull{
                     }
                 }
             }
-        }
+        }*/
     }
     
 }
