@@ -96,18 +96,18 @@ global class TR003ManageOpportunities {
         for (AggregateResult aggregateResult : ctcCentralByStage){
             Id conId = (Id)aggregateResult.get('Contact_central__c');
             // Gestion du contact traité précedemment
-			if(!mapIdCon.containsKey(conId)){
-	            mapIdCon.put(conId,new Contact(Id=conId,
+            if(!mapIdCon.containsKey(conId)){
+                mapIdCon.put(conId,new Contact(Id=conId,
                                                Nombre_opportunit_s__c='0',
                                                Nombre_opportunites_sur_criteres__c='0',
                                                nb_SIP_en_cours__c=0));
             }
             Contact lastCtc = mapIdCon.get(conId);
-			
+            
             // Calcul du compteur d'opp total
             lastCtc.Nombre_opportunit_s__c = String.valueOf(
-	            	Integer.valueOf(lastCtc.Nombre_opportunit_s__c)
-                + 	Integer.valueOf(aggregateResult.get('expr0'))
+                    Integer.valueOf(lastCtc.Nombre_opportunit_s__c)
+                +   Integer.valueOf(aggregateResult.get('expr0'))
             );
             
             // Calcul du compteur d'opp en cours sur l'exercice en cours
@@ -115,7 +115,7 @@ global class TR003ManageOpportunities {
                 && Integer.valueOf(aggregateResult.get('Exercice__c')) == actualExercice){
                 lastCtc.Nombre_opportunites_sur_criteres__c = String.valueOf(
                         Integer.valueOf(aggregateResult.get('expr0'))
-                    +	Integer.valueOf(lastCtc.Nombre_opportunites_sur_criteres__c)
+                    +   Integer.valueOf(lastCtc.Nombre_opportunites_sur_criteres__c)
                 ); 
             }
             
@@ -146,8 +146,7 @@ global class TR003ManageOpportunities {
         if(roles.size()>0){
             insert roles;
         }
-    }
-    
+    }    
     
     public static void checkOwnerIdChange(List<Opportunity> lOpp, String oldOwnerId){
         Profile p = [Select id, Name from Profile where Id =: userinfo.getProfileid() limit 1];  
@@ -198,9 +197,7 @@ global class TR003ManageOpportunities {
                 
            }
         }
-    }
-    
-    
+    }    
     
     // 20150212_ABO: Nouveau traitement d'assignation de suiveur à une opportunité.
     // Déclenché en after insert sur OpportunityLineItem
@@ -257,31 +254,30 @@ global class TR003ManageOpportunities {
                     && firstOpptyByContactId.get(oppty.Contact_central__c).Id != oppty.Id && oppty.RecordTypeId == fi.id) {
                         // => On affecte le suiveur de la premi?re opportunit?
                         oppty.OwnerId = firstOpptyByContactId.get(oppty.Contact_central__c).OwnerId;
-                        } else {
-                        // Cas 2 : Il n'existe pas d'autre opportunité pour ce m?me contact central VBO ou si on est pas formation initiale
-                        // => On affecte le suiveur du produit
-                        Id productId = productIdByOpptyId.get(oppty.Id);
-                        Product2 p = productMap.get(productId);
-                        oppty.OwnerId = p.Suiveur__c;
-                    }
-                }
-
-                try {
-                    update opptyListToUpdate;
-                    }catch (System.DMLException e) {
-                        Boolean errorLogged = false;
-                        for (Integer i=0; i<e.getNumDml();i++) {
-                            Id opptyId = e.getDmlId(i);
-                            if (opptyLineByOpptyId.containsKey(opptyId)) {
-                                opptyLineByOpptyId.get(opptyId).addError(e.getDmlMessage(i));
-                                errorLogged = true;
-                            }
-                        }
-
-                        if (!errorLogged)
-                        throw e;
-                    }
+                } else {
+                // Cas 2 : Il n'existe pas d'autre opportunité pour ce m?me contact central VBO ou si on est pas formation initiale
+                // => On affecte le suiveur du produit
+                Id productId = productIdByOpptyId.get(oppty.Id);
+                Product2 p = productMap.get(productId);
+                oppty.OwnerId = p.Suiveur__c;
                 }
             }
 
-        }
+            try {
+                update opptyListToUpdate;
+            }catch (System.DMLException e) {
+                Boolean errorLogged = false;
+                for (Integer i=0; i<e.getNumDml();i++) {
+                    Id opptyId = e.getDmlId(i);
+                    if (opptyLineByOpptyId.containsKey(opptyId)) {
+                        opptyLineByOpptyId.get(opptyId).addError(e.getDmlMessage(i));
+                        errorLogged = true;
+                    }
+                }
+
+                if (!errorLogged)
+                    throw e;
+            }
+        }   
+    }
+}
