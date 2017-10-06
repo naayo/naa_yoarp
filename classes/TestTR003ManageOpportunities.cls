@@ -579,11 +579,15 @@ private class TestTR003ManageOpportunities {
         System.debug('actual exercice'+actualExercice);
 
         Contact contact1= new Contact(AccountId=acc.Id,
-                                   statut__c='Etudiant',
-                                   FirstName='Contact1',
-                                   LastName='Contact1',
-                                   Salutation='Mme',
-                                   Famille_Fonction__c='Autres');
+                                      statut__c='Etudiant',
+                                      FirstName='Contact1',
+                                      LastName='Contact1',
+                                      Salutation='Mme',
+                                      Famille_Fonction__c='Autres',
+                                      Nombre_opportunit_s__c = '0',
+                                      Nombre_opportunites_sur_criteres__c = '0',
+                                      nb_SIP_en_cours__c = 0
+                                     );
         insert contact1;
 
         // Opp pour nb total
@@ -646,82 +650,13 @@ private class TestTR003ManageOpportunities {
                                        InterfaceExternalId__c = 'blabla',
                                        Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
 
-        Contact contact2= new Contact(AccountId=acc.Id,
-                                   statut__c='Etudiant',
-                                   FirstName='Contact2',
-                                   LastName='Contact2',
-                                   Salutation='Mme',
-                                   Famille_Fonction__c='Autres');
-        insert contact2;
-
-        // Opp pour nb total
-        Opportunity opp1_2= new Opportunity(StageName='Sollicité',
-                                       Name='test1_2',
-                                       Contact_central__c=contact2.Id,
-                                       AccountId=acc.Id,
-                                       Exercice__c='2016',
-                                       CloseDate=Date.valueOf('2017-08-31'),
-                                       InterfaceExternalId__c = 'blabla',
-                                       Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
-
-        // Opp pour nb En cours
-        Opportunity opp2_2= new Opportunity(StageName='Intéressé par',
-                                       Name='test2_2',
-                                       Contact_central__c=contact2.Id,
-                                       AccountId=acc.Id,
-                                       Exercice__c='2016',
-                                       CloseDate=Date.valueOf('2017-08-31'),
-                                       InterfaceExternalId__c = 'blabla',
-                                       Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
-        
-        // Opp pour nb En cours sur l'exercice en cours
-        Opportunity opp3_2= new Opportunity(StageName='Sollicité',
-                                       Name='test3_2',
-                                       Contact_central__c=contact2.Id,
-                                       AccountId=acc.Id,
-                                       Exercice__c=String.valueOf(actualExercice),
-                                       CloseDate=Date.valueOf('2017-08-31'),
-                                       InterfaceExternalId__c = 'blabla',
-                                       Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
-
-        // Opp pour nb Conseillers
-        Opportunity opp4_2= new Opportunity(StageName='Prospect chaud',
-                                       Name='test4_2',
-                                       Contact_central__c=contact2.Id,
-                                       AccountId=acc.Id,
-                                       Exercice__c='2016',
-                                       CloseDate=Date.valueOf('2017-08-31'),
-                                       InterfaceExternalId__c = 'blabla',
-                                       Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
-
-        // Opp pour nb Conseillers sur l'exercice en cours
-        Opportunity opp5_2= new Opportunity(StageName='Prospect chaud',
-                                       Name='test5_2',
-                                       Contact_central__c=contact2.Id,
-                                       AccountId=acc.Id,
-                                       Exercice__c=String.valueOf(actualExercice),
-                                       CloseDate=Date.valueOf('2017-08-31'),
-                                       InterfaceExternalId__c = 'blabla',
-                                       Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
-
-        // opp pour nb En cours et Conseillers sur l'exercice en cours
-        Opportunity opp6_2= new Opportunity(StageName='Intérêt Supplémentaire',
-                                       Name='test6_2',
-                                       Contact_central__c=contact2.Id,
-                                       AccountId=acc.Id,
-                                       Exercice__c=String.valueOf(actualExercice),
-                                       CloseDate=Date.valueOf('2017-08-31'),
-                                       InterfaceExternalId__c = 'blabla',
-                                       Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
-
-        Test.startTest();        
+        Test.startTest();
         insert new List<Opportunity>{opp1, opp2, opp3, opp4, opp5, opp6};
-        insert new List<Opportunity>{opp1_2, opp2_2, opp3_2, opp4_2, opp5_2, opp6_2};
         Test.stopTest();
 
         contact1 = [SELECT Id, Nombre_opportunit_s__c, Nombre_opportunites_sur_criteres__c, nb_SIP_en_cours__c
                     FROM Contact
-                    WHERE FirstName ='Contact1'];
+                    WHERE FirstName =:'Contact1'];
 
         // Test du nombre total d'opportunité 
         System.assertEquals(6, Integer.valueOf(contact1.Nombre_opportunit_s__c));
@@ -731,18 +666,5 @@ private class TestTR003ManageOpportunities {
 
         // Test du nombre total d'opportunité 
         System.assertEquals(2, contact1.nb_SIP_en_cours__c);
-
-        contact2 = [SELECT Id, Nombre_opportunit_s__c, Nombre_opportunites_sur_criteres__c, nb_SIP_en_cours__c
-                    FROM Contact
-                    WHERE FirstName ='Contact2'];
-
-        // Test du nombre total d'opportunité 
-        System.assertEquals(6, Integer.valueOf(contact2.Nombre_opportunit_s__c));
-
-        // Test du nombre total d'opportunité
-        System.assertEquals(2, Integer.valueOf(contact2.Nombre_opportunites_sur_criteres__c));
-
-        // Test du nombre total d'opportunité 
-        System.assertEquals(2, contact2.nb_SIP_en_cours__c);
     }
 }
