@@ -346,6 +346,33 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Appliquer_l_e_mail_EM_Lyon__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Appliquer l&apos;e-mail EM Lyon</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Appliquer_l_e_mail_personnel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Appliquer l&apos;e-mail personnel</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Appliquer_l_e_mail_professionnel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Appliquer l&apos;e-mail professionnel</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>AssistantName</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -563,19 +590,6 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>ComptePrincipal__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Compte principal</label>
-        <referenceTo>Account</referenceTo>
-        <relationshipLabel>Contacts</relationshipLabel>
-        <relationshipName>Contacts</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Compteur_Tiers_Contact__c</fullName>
@@ -997,6 +1011,16 @@ TODAY()&lt;=DATE(YEAR(TODAY()),MONTH(Birthdate),DAY(Birthdate))
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Donateur prospect</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ERP_Force_Export__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Demandé par TAU le 07/07/2017 à la demande de Christine Neveux pour forcer l&apos;export des tiers sans affaires vers UNIT4</description>
+        <externalId>false</externalId>
+        <label>Forcer l’envoi vers UNIT4</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
@@ -3850,6 +3874,7 @@ Null)</formula>
     </fields>
     <fields>
         <fullName>Nombre_opportunit_s__c</fullName>
+        <defaultValue>&quot;0&quot;</defaultValue>
         <externalId>false</externalId>
         <label>Nombre d&apos;opportunités total</label>
         <length>4</length>
@@ -3861,9 +3886,32 @@ Null)</formula>
     </fields>
     <fields>
         <fullName>Nombre_opportunites_sur_criteres__c</fullName>
+        <defaultValue>&quot;0&quot;</defaultValue>
         <externalId>false</externalId>
         <label>Nombre d&apos;opportunités en cours</label>
         <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunite_Statut_Candidature_CANEL__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunité-Statut Candidature CANEL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunite_Statut_Dossier_CANEL__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunité-Statut Dossier CANEL</label>
+        <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -4028,6 +4076,17 @@ Null)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Proprietaire_du_contact_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner.FirstName +&quot; &quot; + Owner.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Propriétaire du contact 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Pyramide__c</fullName>
@@ -4306,6 +4365,19 @@ Utilisé dans le process builder &quot;Création automatique d&apos;un nouveau r
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Souhait_programme__c</fullName>
+        <description>Champ alimenté depuis l&apos;opportunité</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Champ alimenté depuis l&apos;opportunité</inlineHelpText>
+        <label>Souhait programme</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Sous__c</fullName>
@@ -5030,7 +5102,7 @@ en production</description>
         <deprecated>false</deprecated>
         <description>Hardbounce from Inxmail Professional</description>
         <externalId>false</externalId>
-        <inlineHelpText>Hardbounce from Inxmail Professional</inlineHelpText>
+        <inlineHelpText>Hardbounce dans Inxmail Professional</inlineHelpText>
         <label>Email Invalid</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -5065,9 +5137,10 @@ en production</description>
     </fields>
     <fields>
         <fullName>nb_SIP_en_cours__c</fullName>
-        <description>Le champ permet de calculer le nombre d&apos;opportunités qualifiées liées à un contact. (tous les statuts commerciaux sans interessé par)</description>
+        <defaultValue>0</defaultValue>
+        <description>Le champ permet de calculer le nombre d&apos;opportunités qualifiées liées à un contact. ( - Prospect qualifié - Prospect probable - Prospect chaud - Intérêt supplémentaire)</description>
         <externalId>false</externalId>
-        <label>Nombre Opportunités qualifiées en cours</label>
+        <label>Nombre d&apos;opportunités conseiller</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -10458,27 +10531,29 @@ en production</description>
     <validationRules>
         <fullName>ChargePromoFC_CanChangeProfesToProspect</fullName>
         <active>true</active>
-        <description>Autoriser seulement Safae ABOUKARAM et Leila HAJRIC à modifier le type d&apos;enregistrement de &quot;Professionnel&quot; vers &quot;Prospect Etudiant&quot; .</description>
+        <description>Autoriser seulement Safae ABOUKARAM, Leila HAJRIC et Top Agresso à modifier le type d&apos;enregistrement de &quot;Professionnel&quot; vers &quot;Prospect Etudiant&quot; .</description>
         <errorConditionFormula>AND( 
  !$User.ByPass_RV__c,
  PRIORVALUE(Record_Type_Name__c)=&quot;Professionnel&quot;, 
  Record_Type_Name__c=&quot;Prospect Etudiant&quot;, 
  $User.CommunityNickname&lt;&gt; &quot;aboukaram&quot;,
- $User.CommunityNickname&lt;&gt; &quot;dreveton&quot;
+ $User.CommunityNickname&lt;&gt; &quot;dreveton&quot;,
+	$User.CommunityNickname &lt;&gt; &quot;topagresso&quot; 
 )</errorConditionFormula>
         <errorMessage>La modification de type d&apos;enregistrement de &quot;Professionnel&quot; vers &quot;Prospect Etudiant&quot; vous est interdite.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>ChargePromoFI_CanChangeProspectToProfess</fullName>
         <active>true</active>
-        <description>Autoriser seulement Nathalie SEUX et Delphine CESAR à modifier le type d&apos;enregistrement de &quot;Prospect Etudiant&quot; vers &quot;Professionnel&quot; .</description>
+        <description>Autoriser seulement Nathalie SEUX, Delphine CESAR, DREVETON et Top Agresso à modifier le type d&apos;enregistrement de &quot;Prospect Etudiant&quot; vers &quot;Professionnel&quot; .</description>
         <errorConditionFormula>AND(
  !$User.ByPass_RV__c,
  PRIORVALUE(Record_Type_Name__c)=&quot;Prospect Etudiant&quot;,
  Record_Type_Name__c=&quot;Professionnel&quot;,
  AND($User.CommunityNickname&lt;&gt; &quot;seux&quot;, 
      $User.CommunityNickname&lt;&gt; &quot;cesar&quot;,
-     $User.CommunityNickname&lt;&gt; &quot;dreveton&quot;
+     $User.CommunityNickname&lt;&gt; &quot;dreveton&quot;,
+					$User.CommunityNickname &lt;&gt; &quot;topagresso&quot; 
 ) 
 )</errorConditionFormula>
         <errorMessage>La modification de type d&apos;enregistrement de &quot;Prospect Etudiant&quot; vers &quot;Professionnel&quot; vous est interdite.</errorMessage>
@@ -10533,7 +10608,8 @@ en production</description>
  $User.CommunityNickname &lt;&gt; &quot;seux&quot;,
  $User.CommunityNickname &lt;&gt; &quot;cesar&quot;,
  $User.CommunityNickname &lt;&gt; &quot;aboukaram&quot;,
- $User.CommunityNickname &lt;&gt; &quot;dreveton&quot;
+ $User.CommunityNickname &lt;&gt; &quot;dreveton&quot;,
+	$User.CommunityNickname &lt;&gt; &quot;topagresso&quot;
 )</errorConditionFormula>
         <errorMessage>La modification de type d&apos;enregistrement vous est interdite.</errorMessage>
     </validationRules>
@@ -10689,6 +10765,39 @@ OR( ISNUMBER(Adresse_Ville__c), OR(CONTAINS(Adresse_Ville__c, &quot;0&quot;),CON
         <errorConditionFormula>AND (!$User.ByPass_RV__c, 
 OR( ISNUMBER(Adresse_de_repli_ville__c), OR(CONTAINS(Adresse_de_repli_ville__c, &quot;0&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;1&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;2&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;3&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;4&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;5&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;6&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;7&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;8&quot;),CONTAINS(Adresse_de_repli_ville__c, &quot;9&quot;))))</errorConditionFormula>
         <errorMessage>Le champ adresse de repli: Ville ne doit pas contenir de chiffres !</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RV_Contact_Blocage_Plusieurs_emails_coch</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(
+AND(
+Appliquer_l_e_mail_professionnel__c=true,
+Appliquer_l_e_mail_personnel__c=true,
+Appliquer_l_e_mail_EM_Lyon__c=true
+)
+,
+
+
+AND(
+Appliquer_l_e_mail_professionnel__c=true,
+Appliquer_l_e_mail_personnel__c=true
+)
+,
+
+
+AND(
+Appliquer_l_e_mail_professionnel__c=true,
+Appliquer_l_e_mail_EM_Lyon__c=true
+)
+,
+
+
+AND(
+Appliquer_l_e_mail_personnel__c=true,
+Appliquer_l_e_mail_EM_Lyon__c=true
+)
+)</errorConditionFormula>
+        <errorMessage>Merci d&apos;appliquer un seul email à ce contact (en cochant une seule case)</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Cloner_Custom</fullName>

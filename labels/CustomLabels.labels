@@ -44,17 +44,17 @@
     </labels>
     <labels>
         <fullName>OpportunityCriteria</fullName>
-        <language>en_US</language>
+        <language>fr</language>
         <protected>false</protected>
         <shortDescription>OpportunityCriteria</shortDescription>
-        <value>Intéressé par;Prospect qualifié;Prospect probable;Prospect chaud;Candidat;Admis;Pré inscrit;Prospect;Sollicité;Promesse;Candidat;Besoin identifié;Offre en rédaction;Offre à valider;Offre validée;Offre envoyée;Short list;Négociation avancée;Accord de principe;Non actif</value>
+        <value>Intéressé par;Envoyé Prestataire;Prospect qualifié;Prospect probable;Prospect chaud;Intérêt Supplémentaire;Non actif;Candidat;Admis;Pré inscrit;</value>
     </labels>
     <labels>
         <fullName>OpportunityCriteriaSansIP</fullName>
         <language>fr</language>
         <protected>false</protected>
         <shortDescription>OpportunityCriteriaSansIP</shortDescription>
-        <value>Prospect qualifié;Prospect probable;Prospect chaud;Candidat;Admis;Pré inscrit</value>
+        <value>Prospect qualifié;Prospect probable;Prospect chaud;Intérêt Supplémentaire</value>
     </labels>
     <labels>
         <fullName>ProgrammeReconnaissance_Seuil1_B2B</fullName>

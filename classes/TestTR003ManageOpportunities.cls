@@ -29,23 +29,27 @@ private class TestTR003ManageOpportunities {
     
     static testMethod void myUnitTest() {
         try{
-            
+            PAD.addTriggerBypass('TR001ManageContact');
+            PAD.addTriggerBypass('TR002ManageOpportunityLineItem');
+            PAD.addTriggerBypass('TR005OppLineItem');
+            PAD.addTriggerBypass('TR006Opp2FieldsNull');
+
             //Data creation
             Product2 prod = new Product2(Name='prodTest', Suiveur__c = UserInfo.getUserId());
             Product2 prod2 = new Product2(Name='prodTest', Suiveur__c = null);
             insert new List<Product2>{prod,prod2};
-                
-                Pricebookentry pricebook1= new PriceBookEntry(Product2Id=prod.Id, UnitPrice=10, Pricebook2Id=Test.getStandardPricebookId(), IsActive = true, UseStandardPrice = false);
+              
+            Pricebookentry pricebook1= new PriceBookEntry(Product2Id=prod.Id, UnitPrice=10, Pricebook2Id=Test.getStandardPricebookId(), IsActive = true, UseStandardPrice = false);
             Pricebookentry pricebook2= new PriceBookEntry(Product2Id=prod2.Id, UnitPrice=10, Pricebook2Id=Test.getStandardPricebookId(), IsActive = true, UseStandardPrice = false);
             insert new List<Pricebookentry>{pricebook1,pricebook2};
-                
-                NAF__c naf = new NAF__c(Name='naf',CODE_APE__c='1234');
+              
+            NAF__c naf = new NAF__c(Name='naf',CODE_APE__c='1234');
             insert naf;
-            
+
             Pays__c pays = new Pays__c();
             pays.Name = 'France';
             insert pays;
-            
+
             Account acc = new Account(Name='test');
             acc.SIRET__c='00000000000000';
             acc.CodeAPE__c=naf.Id;
@@ -53,107 +57,103 @@ private class TestTR003ManageOpportunities {
             acc.CodePays__c = pays.id;
             acc.Adresse_Ville__c = 'Nantes';
             insert acc;
-            
+
             Contact contact= new Contact(AccountId=acc.Id,
-                                         statut__c='Etudiant',
-                                         FirstName='Asmae',
-                                         LastName='Ettahiri',
-                                         Salutation='Mme',
-                                         Famille_Fonction__c='Autres');
+                                       statut__c='Etudiant',
+                                       FirstName='Asmae',
+                                       LastName='Ettahiri',
+                                       Salutation='Mme',
+                                       Famille_Fonction__c='Autres');
             insert contact;
-            
+
             Opportunity opp= new Opportunity(StageName='Prospect probable',
+                                           Name='test',
+                                           Contact_central__c=contact.Id,
+                                           AccountId=acc.Id,
+                                           Exercice__c='2015',
+                                           CloseDate=Date.valueOf('2015-08-15'),
+                                           InterfaceExternalId__c = 'blabla',
+                                           Date_de_mise__c = DateTime.valueOf('2014-12-01 10:00:00'));
+
+            Test.startTest();
+            insert opp;
+
+
+            OpportunityLineItem opLine = new OpportunityLineItem(OpportunityId = opp.Id,
+                                                               InterfaceExternalId__c='blabla',
+                                                               PricebookentryId=pricebook1.Id,
+                                                               Totalprice=10,
+                                                               Quantity = 1);
+            insert opLine;
+
+            opp.StageName='Inscrit';
+            update opp;
+
+            Opportunity opp2 = new Opportunity(StageName='Prospect probable',
                                              Name='test',
                                              Contact_central__c=contact.Id,
                                              AccountId=acc.Id,
                                              Exercice__c='2015',
                                              CloseDate=Date.valueOf('2015-08-15'),
-                                             InterfaceExternalId__c = 'blabla',
-                                             Date_de_mise__c = DateTime.valueOf('2014-12-01 10:00:00'));
-            
-            Test.startTest();
-            insert opp;
-            
-            
-            OpportunityLineItem opLine = new OpportunityLineItem(OpportunityId = opp.Id,
-                                                                 InterfaceExternalId__c='blabla',
-                                                                 PricebookentryId=pricebook1.Id,
-                                                                 Totalprice=10,
-                                                                 Quantity = 1);
-            insert opLine;
-            
-            opp.StageName='Inscrit';
-            update opp;
-            
-            Opportunity opp2 = new Opportunity(StageName='Prospect probable',
-                                               Name='test',
-                                               Contact_central__c=contact.Id,
-                                               AccountId=acc.Id,
-                                               Exercice__c='2015',
-                                               CloseDate=Date.valueOf('2015-08-15'),
-                                               InterfaceExternalId__c = 'blabla2',
-                                               Date_de_mise__c = DateTime.now());
+                                             InterfaceExternalId__c = 'blabla2',
+                                             Date_de_mise__c = DateTime.now());
             insert opp2;
-            
+
             OpportunityLineItem opLine2 = new OpportunityLineItem(OpportunityId = opp2.Id,
-                                                                  InterfaceExternalId__c='blabla2',
-                                                                  PricebookentryId=pricebook1.Id,
-                                                                  Totalprice=10,
-                                                                  Quantity = 1);
+                                                                InterfaceExternalId__c='blabla2',
+                                                                PricebookentryId=pricebook1.Id,
+                                                                Totalprice=10,
+                                                                Quantity = 1);
             insert opLine2;
-            
+
             Opportunity opp3 = new Opportunity(StageName='Prospect probable',
-                                               Name='test',
-                                               Contact_central__c=null,// No contact central
-                                               AccountId=acc.Id,
-                                               Exercice__c='2015',
-                                               CloseDate=Date.valueOf('2015-08-15'),
-                                               InterfaceExternalId__c = 'blabla3',
-                                               Date_de_mise__c = DateTime.now());
+                                             Name='test',
+                                             Contact_central__c=null,// No contact central
+                                             AccountId=acc.Id,
+                                             Exercice__c='2015',
+                                             CloseDate=Date.valueOf('2015-08-15'),
+                                             InterfaceExternalId__c = 'blabla3',
+                                             Date_de_mise__c = DateTime.now());
             insert opp3;
-            
+
             OpportunityLineItem opLine3 = new OpportunityLineItem(OpportunityId = opp3.Id,
-                                                                  InterfaceExternalId__c='blabla3',
-                                                                  PricebookentryId=pricebook2.Id,
-                                                                  Totalprice=10,
-                                                                  Quantity = 1);
-            
+                                                                InterfaceExternalId__c='blabla3',
+                                                                PricebookentryId=pricebook2.Id,
+                                                                Totalprice=10,
+                                                                Quantity = 1);
+
             OpportunityLineItem opLine4 = new OpportunityLineItem();
-            
+
             Boolean exceptionCatched = false;
             //Assert Tests
             try {
-                insert opLine3;
-            } catch (System.DMLException e) {
-                exceptionCatched = true;
-				System.debug('###DEBUG 1750 e.getMessage(): '+e.getMessage());
+              insert opLine3;
+            }catch (System.DMLException e) {
+              exceptionCatched = true;
+              System.debug('Insert opLine3 failed: '+e.getMessage());
             }
-            
-            // mis en commentaire suite à erreur lors des déploiements en production
-            //System.assertEquals(exceptionCatched, false);
-            
+            System.assertEquals(exceptionCatched, false);
+
             try {
-                insert opLine4;
+              insert opLine4;
             } catch (System.DMLException e) {
-                exceptionCatched = true;
+              exceptionCatched = true;
             }
-            
+
             System.assertEquals(exceptionCatched, true);
-            
+
             Test.stopTest();
-            
-            
-        } catch(DmlException dmle)
-        {
-            System.debug('The following exception has occurred: ' + dmle.getMessage());
-        }
-        
-        
+
+            PAD.removeTriggerBypass('TR001ManageContact');
+            PAD.removeTriggerBypass('TR002ManageOpportunityLineItem');
+            PAD.removeTriggerBypass('TR005OppLineItem');
+            PAD.removeTriggerBypass('TR006Opp2FieldsNull');
+
+        }catch(DmlException dmle){
+          System.debug('The following exception has occurred: ' + dmle.getMessage());
+        }       
     }
-    
-    
-    
-    
+
     static testMethod void CheckOwnerIdChange(){
         Test.startTest();
         
@@ -214,10 +214,7 @@ private class TestTR003ManageOpportunities {
                 TimeZoneSidKey='Europe/Paris'
             );  
             
-            
             insert newOwner;
-            
-            
             
             NAF__c naf = new NAF__c(Name='naf',CODE_APE__c='1234Z');
             insert naf;
@@ -259,11 +256,8 @@ private class TestTR003ManageOpportunities {
             // ou si l'utilisateur actuel est dans le profil administrateur ou interface
             // on ne fait rien            
             if(groupAdminOpp.size()>0 || p.Name=='Administrateur système' || p.Name =='Interface'){
-                
                 return;
-            }
-            
-            else {
+            }else{
                 Boolean exceptionCatched=false;
                 for(Opportunity o:lOpp){
                     
@@ -271,94 +265,59 @@ private class TestTR003ManageOpportunities {
                     // elle ne s'exécute pas pour les traitements en rafale constitués d'un tableau
                     // d'enregistrements
                     newOwner = [Select ProfileId, UserRole.Id from User where Id =:o.OwnerId limit 1]; 
-                    //Profile p2 = [Select Name from Profile where Id =: newOwner.ProfileId limit 1];  
-                    
-                    
+                    //Profile p2 = [Select Name from Profile where Id =: newOwner.ProfileId limit 1];
+
                     try{
-                        
                         if (newOwner.UserRole.id != oldOwner.UserRole.id ) {  
                             throw new DmlException('le propriétaire actuel de l\'opportunité  et le nouveau propriétaire doivent avoir le même rôle !');
-                            
-                            
                         }
                         
                         if(newOwner.UserRole.id != currentUser.UserRole.Id){
-                            
                             throw new DmlException('Vous ne pouvez pas réaffecter une opportunité qui n\'est pas dans votre pôle !');
-                            
                         }
-                        
-                    }
-                    
-                    catch(System.DMLException e){
-                        
+                    }catch(System.DMLException e){
                         exceptionCatched=true;
-                        
-                        
                     }
-                    System.assertEquals(exceptionCatched, true);
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                    System.assertEquals(exceptionCatched, true);    
                 }  
                 for(Opportunity o:lOpp){
-                    
                     newOwner.UserRoleId=oldOwner.UserRoleId;
                     update newOwner;
                     
                     newOwner = [Select ProfileId, UserRole.Id from User where Id =:o.OwnerId limit 1]; 
                     
                     try{
-                        
                         if (newOwner.UserRole.id != oldOwner.UserRole.id ) {  
                             throw new DmlException('le propriétaire actuel de l\'opportunité  et le nouveau propriétaire doivent avoir le même rôle !');
-                            
-                            
                         }
                         
                         if(newOwner.UserRole.id != currentUser.UserRole.Id){
-                            
                             throw new DmlException('Vous ne pouvez pas réaffecter une opportunité qui n\'est pas dans votre pôle !');
-                            
                         }
                         
-                    }
-                    
-                    catch(System.DMLException e){
-                        
+                    }catch(System.DMLException e){
                         exceptionCatched=true;
-                        
-                        
                     }
                     System.assertEquals(exceptionCatched, true);
-                    
-                }
-                
-                
+                } 
             }
-            
-        }
-        Test.stopTest();
+            Test.stopTest();
+            }
     }
     
-    
     static testMethod void CreateContactRole(){
-        
-        
         //Data creation
-        test.startTest();
+        Test.startTest();
+
         Product2 prod = new Product2(Name='prodTest', Suiveur__c = UserInfo.getUserId());
         Product2 prod2 = new Product2(Name='prodTest', Suiveur__c = null);
         insert new List<Product2>{prod,prod2};
-            Pricebookentry pricebook1= new PriceBookEntry(Product2Id=prod.Id, UnitPrice=10, Pricebook2Id=Test.getStandardPricebookId(), IsActive = true, UseStandardPrice = false);
+
+        Pricebookentry pricebook1= new PriceBookEntry(Product2Id=prod.Id, UnitPrice=10, Pricebook2Id=Test.getStandardPricebookId(), IsActive = true, UseStandardPrice = false);
         Pricebookentry pricebook2= new PriceBookEntry(Product2Id=prod2.Id, UnitPrice=10, Pricebook2Id=Test.getStandardPricebookId(), IsActive = true, UseStandardPrice = false);
         insert new List<Pricebookentry>{pricebook1,pricebook2};
             
-            Pays__c pays = new Pays__c();
+        Pays__c pays = new Pays__c();
         pays.Name = 'France';
         insert pays;
         
@@ -380,9 +339,9 @@ private class TestTR003ManageOpportunities {
                                            Salutation='M',
                                            Famille_Fonction__c='Autres');
         try{
-            insert contact;
-        } catch(DmlException dmle)
-        {     System.debug('The following exception has occurred: ' + dmle.getMessage());
+          insert contact;
+        }catch(DmlException dmle){     
+          System.debug('The following exception has occurred: ' + dmle.getMessage());
         }
         final Opportunity opp= new Opportunity(StageName='Prospect probable',
                                                Name='test',
@@ -394,10 +353,9 @@ private class TestTR003ManageOpportunities {
                                                Date_de_mise__c = DateTime.valueOf('2014-12-01 10:00:00'));
         
         
-        try{   
+        try{  
             insert opp;
-        } catch(DmlException dmle)
-        {
+        }catch(DmlException dmle){
             System.debug('The following exception has occurred: ' + dmle.getMessage());
         }
         
@@ -409,8 +367,7 @@ private class TestTR003ManageOpportunities {
         
         try{ 
             insert opLine;
-        } catch(DmlException dmle)
-        {
+        }catch(DmlException dmle){
             System.debug('The following exception has occurred: ' + dmle.getMessage());
         }
         final Opportunity opp2 = new Opportunity(StageName='Prospect probable',
@@ -425,7 +382,7 @@ private class TestTR003ManageOpportunities {
         
         try{ 
             insert opp2;
-        } catch(DmlException dmle)
+        }catch(DmlException dmle)
         {
             System.debug('The following exception has occurred: ' + dmle.getMessage());
         }
@@ -439,7 +396,7 @@ private class TestTR003ManageOpportunities {
         
         try{ 
             insert opLine2;
-        } catch(DmlException dmle)
+        }catch(DmlException dmle)
         {
             System.debug('The following exception has occurred: ' + dmle.getMessage());
         }
@@ -464,8 +421,6 @@ private class TestTR003ManageOpportunities {
                                                                     PricebookentryId=pricebook2.Id,
                                                                     Totalprice=10,
                                                                     Quantity = 1);
-        
-        
         
         Set<Id> idContacts = new Set<Id>();
         idContacts.add(contact.Id);
@@ -492,16 +447,11 @@ private class TestTR003ManageOpportunities {
         }
         insert role;
         
-        
         Test.stopTest();
-        
-        
-        
-    }    
+    }      
     
     static testMethod void UpdateContactUnitTests() {
         try{
-            System.debug('####In UpdateContactUnitTests');
             //Data creation
             NAF__c naf = new NAF__c(Name='naf',CODE_APE__c='1234');
             insert naf;
@@ -534,7 +484,6 @@ private class TestTR003ManageOpportunities {
             }
             
             
-            System.debug('####contact.Somme_Montant_Don__c'+contact.Somme_Montant_Don__c);
             RecordType FundraisingB2C= [Select ID From RecordType Where sObjectType = 'Opportunity' And name like '%Fundraising B2C%'];
             final Opportunity opp1= new Opportunity(RecordTypeId= FundraisingB2C.id,StageName='Prospect probable',
                                                     Name='test opp 1',
@@ -561,29 +510,30 @@ private class TestTR003ManageOpportunities {
             myOpportunities.add(opp1);
             myOpportunities.add(opp2);
             
-            try{insert myOpportunities; }catch (Exception e){
-                System.debug('Exception' +e);
+            Boolean exceptionCatched = false;
+            String err ='';
+            try{
+                insert myOpportunities; 
+            }catch (System.DMLException e){
+                exceptionCatched = true;
+                err = e.getMessage();
             }
+            System.assertEquals(exceptionCatched, false, err); 
+
             opp1.StageName='Conclu';
             opp2.StageName='Prospect probable';
             
             //Assert Test
             Test.startTest();
-            System.debug('####contact.Somme_Montant_Don__c'+contact.Somme_Montant_Don__c);
             
-            Boolean exceptionCatched = false;
+            exceptionCatched = false;
             try {
-                if(Test.isRunningTest()) {
-                    // Cause DMLException
-                    update myOpportunities;
-                }
+                update myOpportunities;
             } catch (System.DMLException e) {
                 exceptionCatched = true;
+                err = e.getMessage();
             }
-           System.assertEquals(exceptionCatched, false); 
-        // System.assertEquals(exceptionCatched, true);
-            
-            System.debug('####contact.Somme_Montant_Don__c'+contact.Somme_Montant_Don__c);
+            System.assertEquals(exceptionCatched, false, err);
             
             final Opportunity opp3= new Opportunity();
             myOpportunities.add(opp3);
@@ -595,9 +545,126 @@ private class TestTR003ManageOpportunities {
             
             System.assertEquals(exceptionCatched, true);
             Test.stopTest();
-        } catch(DmlException dmle)
+        }catch(DmlException dmle)
         {
             System.debug('The following exception has occurred: ' + dmle.getMessage());
         }
+    }
+
+    static testMethod void UpdateOppsNumberUnitTest(){
+        NAF__c naf = new NAF__c(Name='naf',CODE_APE__c='1234');
+        insert naf ;
+
+        Pays__c pays = new Pays__c();
+        pays.Name = 'France';
+        insert pays;
+
+        Account acc = new Account(Name='test');
+        acc.SIRET__c='00000000000000';
+        acc.CodeAPE__c=naf.Id;
+        acc.Industry='Agriculture';
+        acc.CodePays__c = pays.id;
+        acc.Adresse_Ville__c = 'Lyon';
+        insert acc;
+
+        // Détermination de l'exercice actuel
+        Date endExerciceDate = Date.newinstance(System.Today().year(), 8, 31);
+        Date actualDate = Date.today();
+        Integer actualExercice = 0;
+        if(actualDate>endExerciceDate){
+            actualExercice = actualDate.year() + 1;
+        }else{
+            actualExercice = actualDate.year();
+        }
+        System.debug('actual exercice'+actualExercice);
+
+        Contact contact1= new Contact(AccountId=acc.Id,
+                                      statut__c='Etudiant',
+                                      FirstName='Contact1',
+                                      LastName='Contact1',
+                                      Salutation='Mme',
+                                      Famille_Fonction__c='Autres',
+                                      Nombre_opportunit_s__c = '0',
+                                      Nombre_opportunites_sur_criteres__c = '0',
+                                      nb_SIP_en_cours__c = 0
+                                     );
+        insert contact1;
+
+        // Opp pour nb total
+        Opportunity opp1= new Opportunity(StageName='Sollicité',
+                                       Name='test1',
+                                       Contact_central__c=contact1.Id,
+                                       AccountId=acc.Id,
+                                       Exercice__c='2016',
+                                       CloseDate=Date.valueOf('2017-08-31'),
+                                       InterfaceExternalId__c = 'blabla',
+                                       Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
+
+        // Opp pour nb En cours
+        Opportunity opp2= new Opportunity(StageName='Intéressé par',
+                                       Name='test2',
+                                       Contact_central__c=contact1.Id,
+                                       AccountId=acc.Id,
+                                       Exercice__c='2016',
+                                       CloseDate=Date.valueOf('2017-08-31'),
+                                       InterfaceExternalId__c = 'blabla',
+                                       Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
+        
+        // Opp pour nb En cours sur l'exercice en cours
+        Opportunity opp3= new Opportunity(StageName='Sollicité',
+                                       Name='test3',
+                                       Contact_central__c=contact1.Id,
+                                       AccountId=acc.Id,
+                                       Exercice__c=String.valueOf(actualExercice),
+                                       CloseDate=Date.valueOf('2017-08-31'),
+                                       InterfaceExternalId__c = 'blabla',
+                                       Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
+
+        // Opp pour nb Conseillers
+        Opportunity opp4= new Opportunity(StageName='Prospect chaud',
+                                       Name='test4',
+                                       Contact_central__c=contact1.Id,
+                                       AccountId=acc.Id,
+                                       Exercice__c='2016',
+                                       CloseDate=Date.valueOf('2017-08-31'),
+                                       InterfaceExternalId__c = 'blabla',
+                                       Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
+
+        // Opp pour nb Conseillers sur l'exercice en cours
+        Opportunity opp5= new Opportunity(StageName='Prospect chaud',
+                                       Name='test5',
+                                       Contact_central__c=contact1.Id,
+                                       AccountId=acc.Id,
+                                       Exercice__c=String.valueOf(actualExercice),
+                                       CloseDate=Date.valueOf('2017-08-31'),
+                                       InterfaceExternalId__c = 'blabla',
+                                       Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
+
+        // opp pour nb En cours et Conseillers sur l'exercice en cours
+        Opportunity opp6= new Opportunity(StageName='Intérêt Supplémentaire',
+                                       Name='test6',
+                                       Contact_central__c=contact1.Id,
+                                       AccountId=acc.Id,
+                                       Exercice__c=String.valueOf(actualExercice),
+                                       CloseDate=Date.valueOf('2017-08-31'),
+                                       InterfaceExternalId__c = 'blabla',
+                                       Date_de_mise__c = DateTime.valueOf('2017-08-31 10:00:00'));
+
+        Test.startTest();
+        insert new List<Opportunity>{opp1, opp2, opp3, opp4, opp5, opp6};
+        Test.stopTest();
+
+        contact1 = [SELECT Id, Nombre_opportunit_s__c, Nombre_opportunites_sur_criteres__c, nb_SIP_en_cours__c
+                    FROM Contact
+                    WHERE FirstName =:'Contact1'];
+
+        // Test du nombre total d'opportunité 
+        System.assertEquals(6, Integer.valueOf(contact1.Nombre_opportunit_s__c));
+
+        // Test du nombre total d'opportunité 
+        System.assertEquals(2, Integer.valueOf(contact1.Nombre_opportunites_sur_criteres__c));
+
+        // Test du nombre total d'opportunité 
+        System.assertEquals(2, contact1.nb_SIP_en_cours__c);
     }
 }

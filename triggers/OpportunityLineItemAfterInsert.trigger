@@ -1,14 +1,18 @@
 trigger OpportunityLineItemAfterInsert on OpportunityLineItem (after insert) {
+     if(PAD.isFirstAfterOliInsertRun())
+  {
     if (PAD.canTrigger('TR003ManageOpportunities')){
+       
         // ABO_20150212: Assignation de suiveur
         TR003ManageOpportunities.AssignOwnerToOppty(Trigger.newMap);
     }
     
-    if (PAD.canTrigger('TR005OppLineItem')){
-    // GGA 30/11 - Le trigger ne doit pas se déclencher si le champ système est rempli (il est rempli par WF à la création). En cas de clonage, le champ serait rempli donc ne se déclenche pas.
+    if (PAD.canTrigger('TR005OppLineItem')){        
+    // GGA 30/11 - Le trigger ne doit pas se déclencher si le champ système est rempli (il est rempli par WF à la création). 
+    // En cas de clonage, le champ serait rempli donc ne se déclenche pas.
         list<OpportunityLineItem> po_clonage = new list<OpportunityLineItem>();
         for(OpportunityLineItem clonepo : trigger.new)  
-         {
+         {              
            if(clonepo.Champ_syst_me_pour_clonage__c == null)
            {
              po_clonage.add(clonepo);
@@ -17,7 +21,7 @@ trigger OpportunityLineItemAfterInsert on OpportunityLineItem (after insert) {
         
         if (po_clonage.size() > 0)
         {
-        	TR005OppLineItem.CreateOppLineItem(po_clonage);              
+        TR005OppLineItem.CreateOppLineItem(po_clonage);              
         }
     }
     
@@ -53,5 +57,5 @@ trigger OpportunityLineItemAfterInsert on OpportunityLineItem (after insert) {
          }*/
          TR_session_formation.attach_session(po_module,map_module);  
         }
-
+  }
 }

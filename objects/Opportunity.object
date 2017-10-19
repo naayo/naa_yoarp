@@ -1099,6 +1099,40 @@ ExerciceNum_ro__c = &quot;2020&quot;,&quot;2019/2020&quot;,&quot;2020/2021&quot;
         <fullName>ExpectedRevenue</fullName>
     </fields>
     <fields>
+        <fullName>FORM_Exercice_en_cours__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND
+(
+TODAY()&gt;FORM_debut_annee_scolaire__c
+,
+TODAY()&lt;FORM_fin_annee_scolaire__c
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FORM Exercice en cours</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FORM_debut_annee_scolaire__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(TEXT(VALUE(TEXT(Exercice__c))-1)&amp;&quot;-09-01&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FORM - debut annee scolaire</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FORM_fin_annee_scolaire__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(text(Exercice__c)&amp;&quot;-08-01&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FORM - fin annee scolaire</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>Famille__c</fullName>
         <externalId>false</externalId>
         <label>Famille</label>
@@ -1837,6 +1871,7 @@ LEN(InterfaceExternalId__c ) -6)</formula>
         <externalId>false</externalId>
         <formula>Contact_central__r.Nombre_opportunites_sur_criteres__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Indique le nombre total d&apos;opportunités en cours pour le contact central de cette opportunité</inlineHelpText>
         <label>Nombre d&apos;opportunités en cours</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -1848,6 +1883,7 @@ LEN(InterfaceExternalId__c ) -6)</formula>
         <externalId>false</externalId>
         <formula>Contact_central__r.Nombre_opportunit_s__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Indique le nombre total d&apos;opportunités pour le contact central de cette opportunité</inlineHelpText>
         <label>Nombre d&apos;opportunités total</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -3023,6 +3059,19 @@ Image(&quot;/resource/information&quot;,&quot;Image indisponible&quot;,18,18)
         </valueSet>
     </fields>
     <fields>
+        <fullName>Nb_Opportunite_active__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Opportunite_active__c = true, 1, 0 )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Nb Opportunité active</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Nb_PO__c</fullName>
         <externalId>false</externalId>
         <label>Nb PO</label>
@@ -3089,7 +3138,8 @@ Image(&quot;/resource/information&quot;,&quot;Image indisponible&quot;,18,18)
         <externalId>false</externalId>
         <formula>Contact_central__r.nb_SIP_en_cours__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Nombre d&apos;opportunité qualifiées en cours</label>
+        <inlineHelpText>Indique le nombre d&apos;opportunités à traiter par les conseillers</inlineHelpText>
+        <label>Nombre d&apos;opportunités conseiller</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -3208,6 +3258,25 @@ Image(&quot;/resource/information&quot;,&quot;Image indisponible&quot;,18,18)
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Opportunite_active__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+NOT( 
+OR( 
+ISPICKVAL (StageName, &quot;Clos (Perdu)&quot;), 
+ISPICKVAL (StageName, &quot;Compte doublon&quot;) 
+) 
+) 
+, 
+true, 
+false 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunité active</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
@@ -3769,12 +3838,55 @@ Ce champ technique est utilisé par l&apos;interface pour définir le catalogue 
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>TECH_Code_du_produit__c</fullName>
+        <externalId>false</externalId>
+        <label>TECH Code du produit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TECH_Date_de_creation__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(CreatedDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TECH Date de création</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>TECH_External_Id__c</fullName>
         <description>Champ technique qui contient la copie de l&apos;Id de l&apos;enregistrement 
 en production</description>
         <externalId>true</externalId>
         <label>TECH_External_Id</label>
         <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TECH_Famille__c</fullName>
+        <externalId>false</externalId>
+        <label>TECH Famille</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TECH_Gamme__c</fullName>
+        <externalId>false</externalId>
+        <label>TECH Gamme</label>
+        <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -5036,6 +5148,23 @@ en production</description>
         </filters>
         <label>FI end of IDEA closure for the year</label>
         <language>fr</language>
+    </listViews>
+    <listViews>
+        <fullName>Formation_intra_entrepriseee</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Intra_entreprise</value>
+        </filters>
+        <label>Formation intra-entreprise</label>
+        <language>en_US</language>
     </listViews>
     <listViews>
         <fullName>Interface_cree</fullName>
@@ -15918,7 +16047,7 @@ Somme_Montant_Ech_ancier__c &lt;&gt; 0,
 ( 
 AND( 
 RecordType.Name = &quot;Formation intra-entreprise&quot;, 
-NOT ISPICKVAL(PRIORVALUE(StageName), &quot;Accord de principe&quot;) , 
+NOT ISPICKVAL(PRIORVALUE(StageName), &quot;Accord de principe&quot;),NOT ISPICKVAL(PRIORVALUE(StageName), &quot;Contrat signé&quot;) , 
 ISPICKVAL(StageName, &quot;Contrat signé&quot;) 
 ) 
 )</errorConditionFormula>

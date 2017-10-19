@@ -1044,6 +1044,10 @@
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Entrepreneuriat</controllingFieldValue>
+                <valueName>Mentorat Incubateur</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Entrepreneuriat</controllingFieldValue>
                 <valueName>Partenaires de l&apos;Incubateur</valueName>
             </valueSettings>
             <valueSettings>

@@ -88,11 +88,13 @@ public class DataExtractObjectsUtilsTest {
                 new Account(Name = 'Account01',
                         CodePays__c = pays[0].Id,
                         Adresse_Ville__c = 'AdresseTest',
-                        CodeAPE__c = nafs[0].Id),
+                        CodeAPE__c = nafs[0].Id,
+                        SIRET__c = '73282932000074'),
                 new Account(Name = 'Account02',
                         CodePays__c = pays[0].Id,
                         Adresse_Ville__c = 'AdresseTest',
-                        CodeAPE__c = nafs[0].Id)
+                        CodeAPE__c = nafs[0].Id,
+                        SIRET__c = '73282932000074')
         };
         insert accounts;
 

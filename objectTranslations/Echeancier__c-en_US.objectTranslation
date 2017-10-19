@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Echéancier --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Echéancier --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Exercice (Non utilisé) --></label>
+        <name>Date_previsionnelle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exercice --></label>
+        <name>Exercice__c</name>
+        <picklistValues>
+            <masterLabel>ECH-EX10</masterLabel>
+            <translation>2010-2011</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX100</masterLabel>
+            <translation><!-- ECH-EX100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX110</masterLabel>
+            <translation><!-- ECH-EX110 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX120</masterLabel>
+            <translation><!-- ECH-EX120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX130</masterLabel>
+            <translation><!-- ECH-EX130 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX140</masterLabel>
+            <translation><!-- ECH-EX140 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX150</masterLabel>
+            <translation><!-- ECH-EX150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX20</masterLabel>
+            <translation><!-- ECH-EX20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX30</masterLabel>
+            <translation><!-- ECH-EX30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX40</masterLabel>
+            <translation><!-- ECH-EX40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX50</masterLabel>
+            <translation><!-- ECH-EX50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX60</masterLabel>
+            <translation><!-- ECH-EX60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX70</masterLabel>
+            <translation><!-- ECH-EX70 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX80</masterLabel>
+            <translation><!-- ECH-EX80 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECH-EX90</masterLabel>
+            <translation><!-- ECH-EX90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Montant total de l&apos;opportunité --></label>
+        <name>Montant_Opp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Montant différentiel avec échéancier --></label>
+        <name>Montant_diff_rentiel_avec_ch_ancier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Montant prévisionnel sur l&apos;exercice --></label>
+        <name>Montant_previsionnel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunité --></label>
+        <name>Opportunite__c</name>
+        <relationshipLabel><!-- Echéancier --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Période --></label>
+        <name>Periode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reprise Lot 2015 --></label>
+        <name>Reprise_Lot_2015__c</name>
+    </fields>
+    <layouts>
+        <layout>Présentation Echéancier</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Nom de Echéancier --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+    <validationRules>
+        <errorMessage><!-- Vous devez saisir un exercice --></errorMessage>
+        <name>RV_Echeancier01_ExerciceObligatoire</name>
+    </validationRules>
+</CustomObjectTranslation>
