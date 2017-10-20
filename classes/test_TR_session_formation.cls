@@ -70,8 +70,8 @@ private class test_TR_session_formation {
   Test.startTest();
   insert oli;
 
-  OpportunityLineItem controlOppLI = [select id,Session_de_formation__c from OpportunityLineItem where OpportunityId =: opp.Id and Session_de_formation__c =:ses_module.id];
-  System.assert(controlOppLI!=null);
+  List<OpportunityLineItem> lcontrolOppLI = [select id,Session_de_formation__c from OpportunityLineItem where OpportunityId =: opp.Id and Session_de_formation__c =:ses_module.id];
+  System.assert(lcontrolOppLI!=null);
 
   Test.stopTest();
  }
