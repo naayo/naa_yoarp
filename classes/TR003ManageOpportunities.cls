@@ -43,7 +43,7 @@ global class TR003ManageOpportunities {
             }
         }
 
-        Set<Contact> conToUpdate = new Set<Contact>();
+        Set<Contact> sConToUpdate = new Set<Contact>();
         for(Id conId :mpOppByContactCentral.keySet()){
             Contact con = mpIdContact.get(conId);
             con.Somme_Montant_Don__c=0;
@@ -52,16 +52,17 @@ global class TR003ManageOpportunities {
                 {
                     con.Somme_Montant_Don__c += o.Amount;
                 }    
-                if (!conToUpdate.contains(con)) {
-                    conToUpdate.add(mpIdContact.get(conId));                
+                if (!sConToUpdate.contains(con)) {
+                    sConToUpdate.add(mpIdContact.get(conId));                
                 }
             }
         }
                 
-        List<Contact> lConToUpdate= new List<Contact>(conToUpdate);
+        Map<Id,Contact> mpConToUpdate = new Map<Id,Contact>();
+        mpConToUpdate.putAll(new List<Contact>(sConToUpdate));
 
-        if (mpOppByContactCentral.keySet().size()>0){
-            update lConToUpdate;
+        if (mpConToUpdate.size()>0){
+            update mpConToUpdate.values();
         }
     }
 
